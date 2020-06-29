@@ -1,10 +1,22 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: kysgramo <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/06/29 13:00:29 by kysgramo          #+#    #+#             */
+/*   Updated: 2020/06/29 13:00:39 by kysgramo         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "lem-in.h"
 
-t_lem_in	*init_lem_in()
+t_lem_in	*init_lem_in(void)
 {
 	t_lem_in	*lem_in;
 
-    if (!(lem_in = (t_lem_in*)malloc(sizeof(t_lem_in))))
+	if (!(lem_in = (t_lem_in*)malloc(sizeof(t_lem_in))))
 	{
 		return (NULL);
 	}
@@ -14,8 +26,7 @@ t_lem_in	*init_lem_in()
 	return (lem_in);
 }
 
-
-t_lem_in 	*parse(char *av, t_line *input)
+t_lem_in	*parse(char *av, t_line **input)
 {
 	t_lem_in	*lem_in;
 	int			fd;
@@ -30,19 +41,18 @@ t_lem_in 	*parse(char *av, t_line *input)
 void		lem(char *av)
 {
 	t_lem_in	*lem_in;
-	t_line		**input;
+	t_line		*input;
 
-	if (!(input = (t_line*)(malloc(sizeof(t_line)))))
-		return (NULL);
+	input = NULL;
 	lem_in = parse(av, &input);
 	printf("ants %d\n", lem_in->ant_num);
+
 }
 
 int			main(int ac, char **av)
 {
-	errno = 0;
 	if (ac == 1)
-		lem(av[0]);	
+		lem(av[0]);
 	if (ac == 2)
 		lem(av[1]);
 	return (0);

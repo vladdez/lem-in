@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
 
 static int		ft_wordss(char const *s, char c)
 {
@@ -96,3 +97,4 @@ char			**ft_strsplit(char const *s, char c)
 	array[j] = NULL;
 	return (array);
 }
+

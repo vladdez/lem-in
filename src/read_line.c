@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   read_line.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: kysgramo <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/06/29 13:02:35 by kysgramo          #+#    #+#             */
+/*   Updated: 2020/06/29 13:02:40 by kysgramo         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "lem-in.h"
 
 t_line	*create_line(char *line)
@@ -12,41 +24,39 @@ t_line	*create_line(char *line)
 }
 
 void	link_inputs(t_line **input, t_line *input1)
-{	
+{
 	t_line *current;
 
 	if (input && *input)
 	{
-		printf("4\n");
 		current = *input;
 		while (current->next)
 		{
 			current = current->next;
 			//printf("- %s\n", current->data);
 		}
-		printf("5\n");
 		current->next = input1;
 	}
 	else if (input)
 		*input = input1;
 }
 
-t_line  *read_line(t_line **input, int fd)
+t_line	*read_line(t_line **input, int fd)
 {
 	t_line	*input1;
 	char	*line;
-	int 	size;
+	int		size;
 
-	printf("1\n");
-    if ((size = get_next_line(fd, &line) > 0))
+	input1 = NULL;
+	if ((size = get_next_line(fd, &line) > 0))
 	{
 		input1 = create_line(line);
-		printf("2 %s\n", input1->data);
+		//printf("input1->data: %s\n", input1->data);
 		link_inputs(input, input1);
-		printf("3\n");
+		free(line);
 	}
 	if (size == -1)
 		terminate(ERR_READING);
-	free(line);  
-	return(input1);
+
+	return (input1);
 }

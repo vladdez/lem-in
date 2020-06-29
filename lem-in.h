@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   lem-in.h                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: kysgramo <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/06/29 13:03:30 by kysgramo          #+#    #+#             */
+/*   Updated: 2020/06/29 13:03:33 by kysgramo         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef LEM_IN_H
 # define LEM_IN_H
 
@@ -51,7 +63,7 @@ void    				*terminate(char *er);
 int						ft_isint(char *tmp);
 int						is_command(char *str);
 void					parse_ants(t_lem_in **lem_in, int fd);
-void					parse_room(t_lem_in *lem_in, int fd, t_line *input);
+void					parse_room(t_lem_in *lem_in, int fd, t_line **input);
 int						is_room(char *str);
 t_line  				*read_line(t_line **input, int fd);
 
