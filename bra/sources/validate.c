@@ -13,7 +13,7 @@
 #include "lem_in.h"
 #include "error_message.h"
 
-void		validate_room(t_lem_in *lem_in, t_room *room)
+void		  (t_lem_in *lem_in, t_room *room)
 {
 	t_room	*i;
 

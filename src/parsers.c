@@ -42,7 +42,7 @@ int			get_type(char *line)
 		i = 3;
 	else
 		i = 2;
-	printf("g %s %d\n", line, i);
+	//printf("g %s %d\n", line, i);
 	return (i);
 	
 }
@@ -61,8 +61,6 @@ t_room		*create_room(char *line, int roomtype)
 	room->x = ft_atoi(words[1]);
 	room->y = ft_atoi(words[2]);
 	room->type = roomtype;
-	printf("n %s\n", room->name);
-	printf("t %d\n\n", roomtype);
 	return (room);
 }
 
@@ -70,6 +68,8 @@ void		add_room(t_lem_in *lem_in, t_room *room)
 {
 	t_room *tmp;
 
+	//printf("n %s\n", room->name);
+	//printf("t %d\n\n", room->type);
 	if ((tmp = lem_in->rooms))
 	{
 		while (tmp->next)
@@ -78,6 +78,7 @@ void		add_room(t_lem_in *lem_in, t_room *room)
 	}
 	else
 		lem_in->rooms = room;
+	printf("lem_in->rooms %d\n\n", lem_in->rooms->y);
 	if (room->type == 1)
 		lem_in->start = room;
 	else if (room->type == 3)
@@ -92,17 +93,14 @@ void		parse_room(t_lem_in *lem_in, int fd, t_line **input)
 	roomtype = 2;
 	while (((*input) = read_line(input, fd)))
 	{
-		printf("%s\n", (*input)->data);
 		if (is_command((*input)->data) == 1)
-		{
-				roomtype = get_type((*input)->data);
-			printf("tt %d\n\n", roomtype);
-		}
+			roomtype = get_type((*input)->data);
 		else if (is_room((*input)->data) == 1)
 		{
 			room = create_room((*input)->data, roomtype);
 			roomtype = 2;
 			add_room(lem_in, room);
+			validate_room(lem_in, room);
 		}
 		else
 			roomtype = 2;

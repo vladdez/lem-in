@@ -66,6 +66,7 @@ void					parse_ants(t_lem_in **lem_in, int fd);
 void					parse_room(t_lem_in *lem_in, int fd, t_line **input);
 int						is_room(char *str);
 t_line  				*read_line(t_line **input, int fd);
+void		  			validate_room(t_lem_in *lem_in, t_room *room);
 
 
 
@@ -78,5 +79,7 @@ t_line  				*read_line(t_line **input, int fd);
 # define ERR_ROOM_INIT			"ERROR: Can\'t initialize room"
 # define ERR_LINE_INIT			"ERROR: Can\'t initialize line"
 # define ERR_READING			"ERROR: Reading error"
+# define ERR_ROOM_NAME_DUP		"ERROR: Input has room name duplicate"
+# define ERR_ROOM_COORDS_DUP	"ERROR: Input has room coordinates duplicate"
 
 #endif

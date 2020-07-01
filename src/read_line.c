@@ -33,7 +33,7 @@ void	link_inputs(t_line **input, t_line *input1)
 		while (current->next)
 		{
 			current = current->next;
-			//printf("- %s\n", current->data);
+			printf("- %s\n", current->data);
 		}
 		current->next = input1;
 	}
