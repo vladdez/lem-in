@@ -29,6 +29,8 @@ typedef struct			s_line
 	struct s_line		*next;
 }						t_line;
 
+
+
 typedef struct			s_room
 {
 	char				*name;
@@ -42,6 +44,14 @@ typedef struct			s_room
 	struct s_room		*next;
 }						t_room;
 
+typedef struct			s_link
+{
+	t_room				*start;
+	t_room				*end;
+	struct s_link		*next;
+	struct s_link		*prev;
+}						t_link;
+
 typedef struct			s_lem_in
 {
 	int					ants_start;
@@ -50,8 +60,8 @@ typedef struct			s_lem_in
 	t_room				*rooms;
 	t_room				*start;
 	t_room				*end;
-	/*t_link				*links;
-	int					bfs_level;
+	t_link				*links;
+	/*int					bfs_level;
 	t_path				*paths;
 	t_location			*locations;
 	t_turn				*turns;
@@ -60,14 +70,22 @@ typedef struct			s_lem_in
 
 int						main(int ac, char **av);
 void    				*terminate(char *er);
+
+void					parse_ants(t_lem_in **lem_in, int fd);
+void					parse_room(t_lem_in *lem_in, int fd, t_line **input, t_line **line);
+void					parse_link(t_lem_in *lem_in, int fd, t_line **input, t_line **line);
+
+
+
+int						is_room(char *str);
+int						is_comment(char *str);
 int						ft_isint(char *tmp);
 int						is_command(char *str);
-void					parse_ants(t_lem_in **lem_in, int fd);
-void					parse_room(t_lem_in *lem_in, int fd, t_line **input);
-int						is_room(char *str);
+
+
 t_line  				*read_line(t_line **input, int fd);
 void		  			validate_room(t_lem_in *lem_in, t_room *room);
-
+void		  			validate_link(t_lem_in *lem_in, t_link *link);
 
 
 
@@ -81,5 +99,14 @@ void		  			validate_room(t_lem_in *lem_in, t_room *room);
 # define ERR_READING			"ERROR: Reading error"
 # define ERR_ROOM_NAME_DUP		"ERROR: Input has room name duplicate"
 # define ERR_ROOM_COORDS_DUP	"ERROR: Input has room coordinates duplicate"
+# define ERR_LINK_INIT			"ERROR: Can\'t initialize link"
+# define ERR_LINK_PARSING		"ERROR: Can\'t parse link"
+# define ERR_LINK_DUP			"ERROR: Input has link duplicate"
+# define ERR_NO_LINKS			"ERROR: Input has no links"
+# define ERR_START_END_ROOM		"ERROR: Input has no start or end room"
+
+
+
+
 
 #endif

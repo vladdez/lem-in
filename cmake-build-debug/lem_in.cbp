@@ -47,6 +47,7 @@
 					<Add directory="/Users/kysgramo/lem-in/."/>
 					<Add directory="/Users/kysgramo/lem-in/libft/libft"/>
 					<Add directory="/Users/kysgramo/lem-in/libft/printf"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
@@ -70,6 +71,7 @@
 					<Add directory="/Users/kysgramo/lem-in/."/>
 					<Add directory="/Users/kysgramo/lem-in/libft/libft"/>
 					<Add directory="/Users/kysgramo/lem-in/libft/printf"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
@@ -354,10 +356,16 @@
 		<Unit filename="/Users/kysgramo/lem-in/src/main.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/Users/kysgramo/lem-in/src/parsers.c">
+		<Unit filename="/Users/kysgramo/lem-in/src/parse_ants_rooms.c">
+			<Option target="lem_in"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/lem-in/src/parse_link.c">
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/Users/kysgramo/lem-in/src/read_line.c">
+			<Option target="lem_in"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/lem-in/src/validator.c">
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/Users/kysgramo/lem-in/CMakeLists.txt">

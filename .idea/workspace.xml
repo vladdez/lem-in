@@ -12,20 +12,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30b215e4-c186-4ee7-a924-0d140b951c90" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/lem_in.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/lem_in.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/launch.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/launch.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/sources/find_room.c" beforeDir="false" afterPath="$PROJECT_DIR$/bra/sources/find_room.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/src/is.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/src/is.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/src/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/src/main.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/src/parsers.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/src/read_line.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/src/read_line.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lem_in" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lem_in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lem_in.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lem_in.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator" beforeDir="false" afterPath="$PROJECT_DIR$/generator" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lem-in" beforeDir="false" afterPath="$PROJECT_DIR$/lem-in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lem-in.h" beforeDir="false" afterPath="$PROJECT_DIR$/lem-in.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libft/libft.a" beforeDir="false" afterPath="$PROJECT_DIR$/libft/libft.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/is.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/is.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/is.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/is.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parsers.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/parsers.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parsers.c" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/parsers.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/parsers.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/read_line.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/read_line.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/read_line.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/read_line.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/validator.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/validator.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/validator.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/validator.o" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +100,16 @@
       <option name="presentableId" value="Default" />
       <updated>1588853597544</updated>
       <workItem from="1588853598634" duration="1640000" />
-      <workItem from="1593621374405" duration="3121000" />
+      <workItem from="1593621374405" duration="3766000" />
+      <workItem from="1593861094487" duration="222000" />
+      <workItem from="1593861318679" duration="173000" />
+      <workItem from="1593861537202" duration="33000" />
+      <workItem from="1593861582575" duration="116000" />
+      <workItem from="1593861783104" duration="759000" />
+      <workItem from="1593862544479" duration="291000" />
+      <workItem from="1593862950140" duration="561000" />
+      <workItem from="1593878005778" duration="70000" />
+      <workItem from="1593878077379" duration="2845000" />
     </task>
     <servers />
   </component>
@@ -95,62 +129,80 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="744" y="353" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593621720026">
+    <state x="744" y="353" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593878117458">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state x="744" y="353" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1593621720026" />
+    <state x="744" y="353" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1593878117458" />
     <state x="1067" y="403" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1593621714338">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="1067" y="403" key="#com.intellij.ide.macro.MacrosDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1593621714338" />
-    <state width="1646" height="381" key="GridCell.Tab.0.bottom" timestamp="1593624743524">
+    <state width="1646" height="448" key="GridCell.Tab.0.bottom" timestamp="1593880974173">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="2518" height="335" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1593622321567" />
-    <state width="1646" height="381" key="GridCell.Tab.0.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1593624743524" />
-    <state width="1646" height="381" key="GridCell.Tab.0.center" timestamp="1593624743523">
+    <state width="1646" height="448" key="GridCell.Tab.0.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1593880974173" />
+    <state width="1646" height="448" key="GridCell.Tab.0.center" timestamp="1593880974173">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="2518" height="335" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1593622321567" />
-    <state width="1646" height="381" key="GridCell.Tab.0.center/0.23.2560.1337@0.23.2560.1337" timestamp="1593624743523" />
-    <state width="1646" height="381" key="GridCell.Tab.0.left" timestamp="1593624743523">
+    <state width="1646" height="448" key="GridCell.Tab.0.center/0.23.2560.1337@0.23.2560.1337" timestamp="1593880974173" />
+    <state width="1646" height="448" key="GridCell.Tab.0.left" timestamp="1593880974172">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="2518" height="335" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1593622321566" />
-    <state width="1646" height="381" key="GridCell.Tab.0.left/0.23.2560.1337@0.23.2560.1337" timestamp="1593624743523" />
-    <state width="1646" height="381" key="GridCell.Tab.0.right" timestamp="1593624743524">
+    <state width="1646" height="448" key="GridCell.Tab.0.left/0.23.2560.1337@0.23.2560.1337" timestamp="1593880974172" />
+    <state width="1646" height="448" key="GridCell.Tab.0.right" timestamp="1593880974173">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="2518" height="335" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1593622321567" />
-    <state width="1646" height="381" key="GridCell.Tab.0.right/0.23.2560.1337@0.23.2560.1337" timestamp="1593624743524" />
-    <state width="1646" height="448" key="GridCell.Tab.1.bottom" timestamp="1593624743129">
+    <state width="1646" height="448" key="GridCell.Tab.0.right/0.23.2560.1337@0.23.2560.1337" timestamp="1593880974173" />
+    <state width="1646" height="448" key="GridCell.Tab.1.bottom" timestamp="1593880974645">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="2518" height="335" key="GridCell.Tab.1.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1593622323000" />
-    <state width="1646" height="448" key="GridCell.Tab.1.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1593624743129" />
-    <state width="1646" height="448" key="GridCell.Tab.1.center" timestamp="1593624743129">
+    <state width="1646" height="448" key="GridCell.Tab.1.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1593880974645" />
+    <state width="1646" height="448" key="GridCell.Tab.1.center" timestamp="1593880974644">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="2518" height="335" key="GridCell.Tab.1.center/0.0.2560.1440@0.0.2560.1440" timestamp="1593622322999" />
-    <state width="1646" height="448" key="GridCell.Tab.1.center/0.23.2560.1337@0.23.2560.1337" timestamp="1593624743129" />
-    <state width="1646" height="448" key="GridCell.Tab.1.left" timestamp="1593624743128">
+    <state width="1646" height="448" key="GridCell.Tab.1.center/0.23.2560.1337@0.23.2560.1337" timestamp="1593880974644" />
+    <state width="1646" height="448" key="GridCell.Tab.1.left" timestamp="1593880974643">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="2518" height="335" key="GridCell.Tab.1.left/0.0.2560.1440@0.0.2560.1440" timestamp="1593622322999" />
-    <state width="1646" height="448" key="GridCell.Tab.1.left/0.23.2560.1337@0.23.2560.1337" timestamp="1593624743128" />
-    <state width="1646" height="448" key="GridCell.Tab.1.right" timestamp="1593624743129">
+    <state width="1646" height="448" key="GridCell.Tab.1.left/0.23.2560.1337@0.23.2560.1337" timestamp="1593880974643" />
+    <state width="1646" height="448" key="GridCell.Tab.1.right" timestamp="1593880974645">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="2518" height="335" key="GridCell.Tab.1.right/0.0.2560.1440@0.0.2560.1440" timestamp="1593622323000" />
-    <state width="1646" height="448" key="GridCell.Tab.1.right/0.23.2560.1337@0.23.2560.1337" timestamp="1593624743129" />
+    <state width="1646" height="448" key="GridCell.Tab.1.right/0.23.2560.1337@0.23.2560.1337" timestamp="1593880974645" />
+    <state width="640" height="204" key="ImportCMakeProjectWizard.bottomPanel" timestamp="1593878071851">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state width="640" height="204" key="ImportCMakeProjectWizard.bottomPanel/0.23.2560.1337@0.23.2560.1337" timestamp="1593878071851" />
+    <state width="640" height="476" key="ImportCMakeProjectWizard.topPanel" timestamp="1593878071850">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state width="640" height="476" key="ImportCMakeProjectWizard.topPanel/0.23.2560.1337@0.23.2560.1337" timestamp="1593878071850" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/parsers.c</url>
-          <line>89</line>
-          <option name="timeStamp" value="1" />
+          <url>file://$PROJECT_DIR$/src/parse_link.c</url>
+          <line>87</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/parse_link.c</url>
+          <line>78</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/parse_link.c</url>
+          <line>58</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

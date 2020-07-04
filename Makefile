@@ -12,7 +12,7 @@
 
 NAME = lem-in
 
-FLAGS = -Wall -Wextra -Werror -I. -I ./libft/libft -I ./libft/printf
+FLAGS = -Wall -Wextra  -I. -I ./libft/libft -I ./libft/printf
 
 LIB = -L libft/ -lft 
 
@@ -20,7 +20,7 @@ LEMIN_SRC_DIR = src/
 
 HEADER = lem-in.h
 
-CLEMIN = main.c errors.c is.c parsers.c read_line.c validator.c
+CLEMIN = main.c errors.c is.c parse_ants_rooms.c parse_link.c read_line.c validator.c
 
 LEMIN_SRC = $(addprefix $(LEMIN_SRC_DIR),$(CLEMIN))
 

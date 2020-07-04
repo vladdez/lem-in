@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   find_room.c                                        :+:      :+:    :+:   */
+/*   .c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vbrazhni <vbrazhni@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,7 +12,7 @@
 
 #include "lem_in.h"
 
-t_room	*find_room(t_lem_in *lem_in, char *name)
+t_room	*(t_lem_in *lem_in, char *name)
 {
 	t_room	*current;
 

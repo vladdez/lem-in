@@ -60,7 +60,8 @@ int		is_comment(char *str)
 {
 	if (str)
 	{
-		if (ft_strlen(str) >= 2 && !ft_strncmp(str, "# ", 2))
+		if (ft_strlen(str) >= 1 && !is_command(str)
+		&& !ft_strncmp(str, "#", 1))
 			return (1);
 	}
 	return (0);

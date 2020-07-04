@@ -26,3 +26,21 @@ void		  validate_room(t_lem_in *lem_in, t_room *room)
         compare = compare->next;
     }
 }
+
+void		  validate_link(t_lem_in *lem_in, t_link *link)
+{
+    t_link *compare;
+
+    compare = lem_in->links;
+    while (compare)
+    {
+        if (compare != link && 
+        ((!ft_strcmp(link->start->name, compare->start->name) &&
+        !ft_strcmp(link->end->name, compare->end->name)) ||
+        (!ft_strcmp(link->start->name, compare->end->name) &&
+        !ft_strcmp(link->end->name, compare->start->name)))) 
+            terminate(ERR_LINK_DUP);
+        compare = compare->next;
+        
+    }
+}

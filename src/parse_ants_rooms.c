@@ -78,31 +78,37 @@ void		add_room(t_lem_in *lem_in, t_room *room)
 	}
 	else
 		lem_in->rooms = room;
-	printf("lem_in->rooms %d\n\n", lem_in->rooms->y);
+	//printf("lem_in->rooms %d\n\n", lem_in->rooms->y);
 	if (room->type == 1)
 		lem_in->start = room;
 	else if (room->type == 3)
 		lem_in->end = room;
 }
 
-void		parse_room(t_lem_in *lem_in, int fd, t_line **input)
+void		parse_room(t_lem_in *lem_in, int fd, t_line **input, t_line **line)
 {
 	int			roomtype;
 	t_room		*room;
 
 	roomtype = 2;
-	while (((*input) = read_line(input, fd)))
+	while (((*line) = read_line(input, fd)) && 
+		(is_command((*line)->data)
+		|| is_comment((*line)->data)
+		|| is_room((*line)->data)))
 	{
-		if (is_command((*input)->data) == 1)
-			roomtype = get_type((*input)->data);
-		else if (is_room((*input)->data) == 1)
+		
+		//printf("-%s\n", line->data);
+		if (is_command((*line)->data) == 1)
+			roomtype = get_type((*line)->data);
+		else if (is_room((*line)->data) == 1)
 		{
-			room = create_room((*input)->data, roomtype);
+			room = create_room((*line)->data, roomtype);
 			roomtype = 2;
 			add_room(lem_in, room);
 			validate_room(lem_in, room);
 		}
 		else
 			roomtype = 2;
+		(*line) = NULL;
 	}
 }

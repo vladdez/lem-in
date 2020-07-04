@@ -97,6 +97,8 @@ add_executable(lem_in
         src/errors.c
         src/is.c
         src/main.c
-        src/parsers.c
+        src/parse_ants_rooms.c
+        src/parse_link.c
         src/read_line.c
+        src/validator.c
         lem-in.h)

@@ -1188,22 +1188,35 @@ CMakeFiles/lem_in.dir/src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in.dir/src/main.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/kysgramo/lem-in/src/main.c -o CMakeFiles/lem_in.dir/src/main.c.s
 
-CMakeFiles/lem_in.dir/src/parsers.c.o: CMakeFiles/lem_in.dir/flags.make
-CMakeFiles/lem_in.dir/src/parsers.c.o: ../src/parsers.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kysgramo/lem-in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/lem_in.dir/src/parsers.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in.dir/src/parsers.c.o   -c /Users/kysgramo/lem-in/src/parsers.c
+CMakeFiles/lem_in.dir/src/parse_ants_rooms.c.o: CMakeFiles/lem_in.dir/flags.make
+CMakeFiles/lem_in.dir/src/parse_ants_rooms.c.o: ../src/parse_ants_rooms.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kysgramo/lem-in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/lem_in.dir/src/parse_ants_rooms.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in.dir/src/parse_ants_rooms.c.o   -c /Users/kysgramo/lem-in/src/parse_ants_rooms.c
 
-CMakeFiles/lem_in.dir/src/parsers.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lem_in.dir/src/parsers.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/kysgramo/lem-in/src/parsers.c > CMakeFiles/lem_in.dir/src/parsers.c.i
+CMakeFiles/lem_in.dir/src/parse_ants_rooms.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lem_in.dir/src/parse_ants_rooms.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/kysgramo/lem-in/src/parse_ants_rooms.c > CMakeFiles/lem_in.dir/src/parse_ants_rooms.c.i
 
-CMakeFiles/lem_in.dir/src/parsers.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in.dir/src/parsers.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/kysgramo/lem-in/src/parsers.c -o CMakeFiles/lem_in.dir/src/parsers.c.s
+CMakeFiles/lem_in.dir/src/parse_ants_rooms.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in.dir/src/parse_ants_rooms.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/kysgramo/lem-in/src/parse_ants_rooms.c -o CMakeFiles/lem_in.dir/src/parse_ants_rooms.c.s
+
+CMakeFiles/lem_in.dir/src/parse_link.c.o: CMakeFiles/lem_in.dir/flags.make
+CMakeFiles/lem_in.dir/src/parse_link.c.o: ../src/parse_link.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kysgramo/lem-in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/lem_in.dir/src/parse_link.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in.dir/src/parse_link.c.o   -c /Users/kysgramo/lem-in/src/parse_link.c
+
+CMakeFiles/lem_in.dir/src/parse_link.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lem_in.dir/src/parse_link.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/kysgramo/lem-in/src/parse_link.c > CMakeFiles/lem_in.dir/src/parse_link.c.i
+
+CMakeFiles/lem_in.dir/src/parse_link.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in.dir/src/parse_link.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/kysgramo/lem-in/src/parse_link.c -o CMakeFiles/lem_in.dir/src/parse_link.c.s
 
 CMakeFiles/lem_in.dir/src/read_line.c.o: CMakeFiles/lem_in.dir/flags.make
 CMakeFiles/lem_in.dir/src/read_line.c.o: ../src/read_line.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kysgramo/lem-in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/lem_in.dir/src/read_line.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kysgramo/lem-in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/lem_in.dir/src/read_line.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in.dir/src/read_line.c.o   -c /Users/kysgramo/lem-in/src/read_line.c
 
 CMakeFiles/lem_in.dir/src/read_line.c.i: cmake_force
@@ -1213,6 +1226,19 @@ CMakeFiles/lem_in.dir/src/read_line.c.i: cmake_force
 CMakeFiles/lem_in.dir/src/read_line.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in.dir/src/read_line.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/kysgramo/lem-in/src/read_line.c -o CMakeFiles/lem_in.dir/src/read_line.c.s
+
+CMakeFiles/lem_in.dir/src/validator.c.o: CMakeFiles/lem_in.dir/flags.make
+CMakeFiles/lem_in.dir/src/validator.c.o: ../src/validator.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kysgramo/lem-in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object CMakeFiles/lem_in.dir/src/validator.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in.dir/src/validator.c.o   -c /Users/kysgramo/lem-in/src/validator.c
+
+CMakeFiles/lem_in.dir/src/validator.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lem_in.dir/src/validator.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/kysgramo/lem-in/src/validator.c > CMakeFiles/lem_in.dir/src/validator.c.i
+
+CMakeFiles/lem_in.dir/src/validator.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in.dir/src/validator.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/kysgramo/lem-in/src/validator.c -o CMakeFiles/lem_in.dir/src/validator.c.s
 
 # Object files for target lem_in
 lem_in_OBJECTS = \
@@ -1303,8 +1329,10 @@ lem_in_OBJECTS = \
 "CMakeFiles/lem_in.dir/src/errors.c.o" \
 "CMakeFiles/lem_in.dir/src/is.c.o" \
 "CMakeFiles/lem_in.dir/src/main.c.o" \
-"CMakeFiles/lem_in.dir/src/parsers.c.o" \
-"CMakeFiles/lem_in.dir/src/read_line.c.o"
+"CMakeFiles/lem_in.dir/src/parse_ants_rooms.c.o" \
+"CMakeFiles/lem_in.dir/src/parse_link.c.o" \
+"CMakeFiles/lem_in.dir/src/read_line.c.o" \
+"CMakeFiles/lem_in.dir/src/validator.c.o"
 
 # External object files for target lem_in
 lem_in_EXTERNAL_OBJECTS =
@@ -1396,11 +1424,13 @@ lem_in: CMakeFiles/lem_in.dir/libft/printf/tools.c.o
 lem_in: CMakeFiles/lem_in.dir/src/errors.c.o
 lem_in: CMakeFiles/lem_in.dir/src/is.c.o
 lem_in: CMakeFiles/lem_in.dir/src/main.c.o
-lem_in: CMakeFiles/lem_in.dir/src/parsers.c.o
+lem_in: CMakeFiles/lem_in.dir/src/parse_ants_rooms.c.o
+lem_in: CMakeFiles/lem_in.dir/src/parse_link.c.o
 lem_in: CMakeFiles/lem_in.dir/src/read_line.c.o
+lem_in: CMakeFiles/lem_in.dir/src/validator.c.o
 lem_in: CMakeFiles/lem_in.dir/build.make
 lem_in: CMakeFiles/lem_in.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/kysgramo/lem-in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Linking C executable lem_in"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/kysgramo/lem-in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Linking C executable lem_in"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lem_in.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

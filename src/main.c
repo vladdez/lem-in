@@ -33,13 +33,18 @@ t_lem_in	*init_lem_in(void)
 t_lem_in	*parse(char *av, t_line **input)
 {
 	t_lem_in	*lem_in;
+	t_line		*line;
 	int			fd;
 
 	fd = open(av, O_RDONLY, 0);
 	lem_in = init_lem_in();
 	parse_ants(&lem_in, fd);
-	parse_room(lem_in, fd, input);
-
+	parse_room(lem_in, fd, input, &line);
+	if (!lem_in->start || !lem_in->end)
+		terminate(ERR_START_END_ROOM);
+	parse_link(lem_in, fd, input, &line);
+	if (!lem_in->links)
+		terminate(ERR_NO_LINKS);
 	return (lem_in);
 }
 
@@ -50,10 +55,6 @@ void		lem(char *av)
 
 	input = NULL;
 	lem_in = parse(av, &input);
-	printf("ants %d\n", lem_in->ant_num);
-	printf("ants_start %d\n", lem_in->ants_start);
-			printf("name %d\n", lem_in->rooms->x);
-
 }
 
 int			main(int ac, char **av)
@@ -62,6 +63,5 @@ int			main(int ac, char **av)
 		lem(av[0]);
 	if (ac == 2)
 		lem(av[1]);
-	printf("name");
 	return (0);
 }

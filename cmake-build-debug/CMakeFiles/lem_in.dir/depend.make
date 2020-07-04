@@ -277,13 +277,23 @@ CMakeFiles/lem_in.dir/src/main.c.o: ../libft/libft/libft.h
 CMakeFiles/lem_in.dir/src/main.c.o: ../libft/printf/ft_printf.h
 CMakeFiles/lem_in.dir/src/main.c.o: ../src/main.c
 
-CMakeFiles/lem_in.dir/src/parsers.c.o: ../lem-in.h
-CMakeFiles/lem_in.dir/src/parsers.c.o: ../libft/libft/libft.h
-CMakeFiles/lem_in.dir/src/parsers.c.o: ../libft/printf/ft_printf.h
-CMakeFiles/lem_in.dir/src/parsers.c.o: ../src/parsers.c
+CMakeFiles/lem_in.dir/src/parse_ants_rooms.c.o: ../lem-in.h
+CMakeFiles/lem_in.dir/src/parse_ants_rooms.c.o: ../libft/libft/libft.h
+CMakeFiles/lem_in.dir/src/parse_ants_rooms.c.o: ../libft/printf/ft_printf.h
+CMakeFiles/lem_in.dir/src/parse_ants_rooms.c.o: ../src/parse_ants_rooms.c
+
+CMakeFiles/lem_in.dir/src/parse_link.c.o: ../lem-in.h
+CMakeFiles/lem_in.dir/src/parse_link.c.o: ../libft/libft/libft.h
+CMakeFiles/lem_in.dir/src/parse_link.c.o: ../libft/printf/ft_printf.h
+CMakeFiles/lem_in.dir/src/parse_link.c.o: ../src/parse_link.c
 
 CMakeFiles/lem_in.dir/src/read_line.c.o: ../lem-in.h
 CMakeFiles/lem_in.dir/src/read_line.c.o: ../libft/libft/libft.h
 CMakeFiles/lem_in.dir/src/read_line.c.o: ../libft/printf/ft_printf.h
 CMakeFiles/lem_in.dir/src/read_line.c.o: ../src/read_line.c
+
+CMakeFiles/lem_in.dir/src/validator.c.o: ../lem-in.h
+CMakeFiles/lem_in.dir/src/validator.c.o: ../libft/libft/libft.h
+CMakeFiles/lem_in.dir/src/validator.c.o: ../libft/printf/ft_printf.h
+CMakeFiles/lem_in.dir/src/validator.c.o: ../src/validator.c
 
