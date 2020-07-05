@@ -44,33 +44,7 @@ stdarg.h
 stdio.h
 ../libft/printf/stdio.h
 
-/Users/kysgramo/lem-in/src/errors.c
-lem-in.h
-/Users/kysgramo/lem-in/src/lem-in.h
-errno.h
--
-
-/Users/kysgramo/lem-in/src/is.c
-lem-in.h
-/Users/kysgramo/lem-in/src/lem-in.h
-
 /Users/kysgramo/lem-in/src/main.c
-lem-in.h
-/Users/kysgramo/lem-in/src/lem-in.h
-
-/Users/kysgramo/lem-in/src/parse_ants_rooms.c
-lem-in.h
-/Users/kysgramo/lem-in/src/lem-in.h
-
-/Users/kysgramo/lem-in/src/parse_link.c
-lem-in.h
-/Users/kysgramo/lem-in/src/lem-in.h
-
-/Users/kysgramo/lem-in/src/read_line.c
-lem-in.h
-/Users/kysgramo/lem-in/src/lem-in.h
-
-/Users/kysgramo/lem-in/src/validator.c
 lem-in.h
 /Users/kysgramo/lem-in/src/lem-in.h
 

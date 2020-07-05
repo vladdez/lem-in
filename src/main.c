@@ -26,7 +26,7 @@ t_lem_in	*init_lem_in(void)
 	lem_in->rooms = NULL;
 	lem_in->start = NULL;
 	lem_in->end = NULL;
-	//lem_in->links = NULL;
+	lem_in->links = NULL;
 	return (lem_in);
 }
 

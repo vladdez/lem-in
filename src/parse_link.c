@@ -75,10 +75,8 @@ void		add_link(t_lem_in *lem_in, t_link *link)
 	tmp = lem_in->links;	
 	if (tmp)
 	{
-		
 		while (tmp->next)
 			tmp = tmp->next;
-			printf("======\n");
 		tmp->next = link;
 	}
 	else
