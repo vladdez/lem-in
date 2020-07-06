@@ -44,6 +44,10 @@ stdarg.h
 stdio.h
 ../libft/printf/stdio.h
 
+/Users/kysgramo/lem-in/src/is.c
+lem-in.h
+/Users/kysgramo/lem-in/src/lem-in.h
+
 /Users/kysgramo/lem-in/src/main.c
 lem-in.h
 /Users/kysgramo/lem-in/src/lem-in.h
@@ -57,6 +61,10 @@ lem-in.h
 /Users/kysgramo/lem-in/src/lem-in.h
 
 /Users/kysgramo/lem-in/src/read_line.c
+lem-in.h
+/Users/kysgramo/lem-in/src/lem-in.h
+
+/Users/kysgramo/lem-in/src/validator.c
 lem-in.h
 /Users/kysgramo/lem-in/src/lem-in.h
 

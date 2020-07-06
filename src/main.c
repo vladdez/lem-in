@@ -27,6 +27,7 @@ t_lem_in	*init_lem_in(void)
 	lem_in->start = NULL;
 	lem_in->end = NULL;
 	lem_in->links = NULL;
+	lem_in->bfs = 0;
 	return (lem_in);
 }
 
@@ -60,6 +61,7 @@ void		lem(char **av)
 			fd = 0;
 	}
 	lem_in = parse(fd, &input);
+	bfs(lem_in);
 }
 
 int			main(int ac, char **av)

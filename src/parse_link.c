@@ -52,7 +52,7 @@ t_link		*create_link(t_lem_in *lem_in, char *str)
 	{
 		if (!(start = ft_strsub(str, 0, d - str)))
 			terminate(ERR_LINK_INIT);
-		if (!(end = ft_strsub(d + 1, 0, ft_strlen(d) + 1)))
+		if (!(end = ft_strsub(d + 1, 0, ft_strlen(d + 1))))
 			terminate(ERR_LINK_INIT);
 		start_room = find_room(lem_in, start);
 		end_room = find_room(lem_in, end);

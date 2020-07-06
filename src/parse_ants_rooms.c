@@ -57,6 +57,7 @@ t_room		*create_room(char *line, int roomtype)
 	room->x = ft_atoi(words[1]);
 	room->y = ft_atoi(words[2]);
 	room->type = roomtype;
+	room->bfs_level = -1;
 	return (room);
 }
 
@@ -99,6 +100,9 @@ void		parse_room(t_lem_in *lem_in, int fd, t_line **input, t_line **line)
 		}
 		else
 			roomtype = 2;
+		if ((roomtype == 1 && lem_in->start)
+			|| (roomtype == 3 && lem_in->end))
+			terminate(ERR_ROOM_PARSING);
 		(*line) = NULL;
 	}
 }
