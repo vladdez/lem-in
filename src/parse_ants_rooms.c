@@ -68,8 +68,6 @@ void		add_room(t_lem_in *lem_in, t_room *room)
 {
 	t_room *tmp;
 
-	//printf("n %s\n", room->name);
-	//printf("t %d\n\n", room->type);
 	if ((tmp = lem_in->rooms))
 	{
 		while (tmp->next)
@@ -78,7 +76,6 @@ void		add_room(t_lem_in *lem_in, t_room *room)
 	}
 	else
 		lem_in->rooms = room;
-	//printf("lem_in->rooms %d\n\n", lem_in->rooms->y);
 	if (room->type == 1)
 		lem_in->start = room;
 	else if (room->type == 3)
@@ -96,8 +93,6 @@ void		parse_room(t_lem_in *lem_in, int fd, t_line **input, t_line **line)
 		|| is_comment((*line)->data)
 		|| is_room((*line)->data)))
 	{
-		
-		//printf("-%s\n", line->data);
 		if (is_command((*line)->data) == 1)
 			roomtype = get_type((*line)->data);
 		else if (is_room((*line)->data) == 1)

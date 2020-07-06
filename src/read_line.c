@@ -51,7 +51,6 @@ t_line	*read_line(t_line **input, int fd)
 	if ((size = get_next_line(fd, &line) > 0))
 	{
 		input1 = create_line(line);
-		printf("input1->data: %s\n", input1->data);
 		link_inputs(input, input1);
 		free(line);
 	}

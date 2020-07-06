@@ -30,13 +30,11 @@ t_lem_in	*init_lem_in(void)
 	return (lem_in);
 }
 
-t_lem_in	*parse(char *av, t_line **input)
+t_lem_in	*parse(int fd, t_line **input)
 {
 	t_lem_in	*lem_in;
 	t_line		*line;
-	int			fd;
 
-	fd = open(av, O_RDONLY, 0);
 	lem_in = init_lem_in();
 	parse_ants(&lem_in, fd);
 	parse_room(lem_in, fd, input, &line);
@@ -48,20 +46,25 @@ t_lem_in	*parse(char *av, t_line **input)
 	return (lem_in);
 }
 
-void		lem(char *av)
+void		lem(char **av)
 {
 	t_lem_in	*lem_in;
 	t_line		*input;
+	int			fd;
 
 	input = NULL;
-	lem_in = parse(av, &input);
+	fd = 0;
+	if (av[1] && (fd = open(av[1], O_RDONLY, 0)) == -1)
+	{
+		if (fd == -1)
+			fd = 0;
+	}
+	lem_in = parse(fd, &input);
 }
 
 int			main(int ac, char **av)
 {
-	if (ac == 1)
-		lem(av[0]);
-	if (ac == 2)
-		lem(av[1]);
+	if (ac <= 2)
+		lem(av);	
 	return (0);
 }

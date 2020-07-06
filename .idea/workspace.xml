@@ -14,9 +14,20 @@
     <list default="true" id="30b215e4-c186-4ee7-a924-0d140b951c90" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/src/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/src/main.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/src/parse_ants_rooms.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/src/parse_ants_rooms.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/src/parse_link.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/src/parse_link.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/src/read_line.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/src/read_line.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/lem_in" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lem_in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lem-in" beforeDir="false" afterPath="$PROJECT_DIR$/lem-in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parse_ants_rooms.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/parse_ants_rooms.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/parse_link.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/parse_link.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parse_link.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/parse_link.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parsers.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/read_line.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/read_line.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/read_line.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/read_line.o" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +60,7 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="lem_in" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="1.map" REDIRECT_INPUT="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lem_in" TARGET_NAME="lem_in" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="lem_in" RUN_TARGET_NAME="lem_in">
+    <configuration name="lem_in" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lem_in" TARGET_NAME="lem_in" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="lem_in" RUN_TARGET_NAME="lem_in">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -76,7 +87,7 @@
       <workItem from="1593862950140" duration="561000" />
       <workItem from="1593878005778" duration="70000" />
       <workItem from="1593878077379" duration="3175000" />
-      <workItem from="1593939223414" duration="1268000" />
+      <workItem from="1593939223414" duration="3588000" />
     </task>
     <servers />
   </component>
@@ -96,54 +107,54 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="744" y="353" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593878117458">
+    <state x="744" y="353" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593967014183">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state x="744" y="353" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1593878117458" />
+    <state x="744" y="353" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1593967014183" />
     <state x="1067" y="403" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1593621714338">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="1067" y="403" key="#com.intellij.ide.macro.MacrosDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1593621714338" />
-    <state width="1646" height="448" key="GridCell.Tab.0.bottom" timestamp="1593947945076">
+    <state width="1646" height="381" key="GridCell.Tab.0.bottom" timestamp="1593969329566">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="2518" height="335" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1593622321567" />
-    <state width="1646" height="448" key="GridCell.Tab.0.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1593947945076" />
-    <state width="1646" height="448" key="GridCell.Tab.0.center" timestamp="1593947945075">
+    <state width="1646" height="381" key="GridCell.Tab.0.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1593969329566" />
+    <state width="1646" height="381" key="GridCell.Tab.0.center" timestamp="1593969329565">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="2518" height="335" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1593622321567" />
-    <state width="1646" height="448" key="GridCell.Tab.0.center/0.23.2560.1337@0.23.2560.1337" timestamp="1593947945075" />
-    <state width="1646" height="448" key="GridCell.Tab.0.left" timestamp="1593947945074">
+    <state width="1646" height="381" key="GridCell.Tab.0.center/0.23.2560.1337@0.23.2560.1337" timestamp="1593969329565" />
+    <state width="1646" height="381" key="GridCell.Tab.0.left" timestamp="1593969329565">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="2518" height="335" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1593622321566" />
-    <state width="1646" height="448" key="GridCell.Tab.0.left/0.23.2560.1337@0.23.2560.1337" timestamp="1593947945074" />
-    <state width="1646" height="448" key="GridCell.Tab.0.right" timestamp="1593947945076">
+    <state width="1646" height="381" key="GridCell.Tab.0.left/0.23.2560.1337@0.23.2560.1337" timestamp="1593969329565" />
+    <state width="1646" height="381" key="GridCell.Tab.0.right" timestamp="1593969329566">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="2518" height="335" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1593622321567" />
-    <state width="1646" height="448" key="GridCell.Tab.0.right/0.23.2560.1337@0.23.2560.1337" timestamp="1593947945076" />
-    <state width="1646" height="448" key="GridCell.Tab.1.bottom" timestamp="1593947946354">
+    <state width="1646" height="381" key="GridCell.Tab.0.right/0.23.2560.1337@0.23.2560.1337" timestamp="1593969329566" />
+    <state width="1646" height="448" key="GridCell.Tab.1.bottom" timestamp="1593969329558">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="2518" height="335" key="GridCell.Tab.1.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1593622323000" />
-    <state width="1646" height="448" key="GridCell.Tab.1.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1593947946354" />
-    <state width="1646" height="448" key="GridCell.Tab.1.center" timestamp="1593947946354">
+    <state width="1646" height="448" key="GridCell.Tab.1.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1593969329558" />
+    <state width="1646" height="448" key="GridCell.Tab.1.center" timestamp="1593969329558">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="2518" height="335" key="GridCell.Tab.1.center/0.0.2560.1440@0.0.2560.1440" timestamp="1593622322999" />
-    <state width="1646" height="448" key="GridCell.Tab.1.center/0.23.2560.1337@0.23.2560.1337" timestamp="1593947946354" />
-    <state width="1646" height="448" key="GridCell.Tab.1.left" timestamp="1593947946353">
+    <state width="1646" height="448" key="GridCell.Tab.1.center/0.23.2560.1337@0.23.2560.1337" timestamp="1593969329558" />
+    <state width="1646" height="448" key="GridCell.Tab.1.left" timestamp="1593969329558">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="2518" height="335" key="GridCell.Tab.1.left/0.0.2560.1440@0.0.2560.1440" timestamp="1593622322999" />
-    <state width="1646" height="448" key="GridCell.Tab.1.left/0.23.2560.1337@0.23.2560.1337" timestamp="1593947946353" />
-    <state width="1646" height="448" key="GridCell.Tab.1.right" timestamp="1593947946354">
+    <state width="1646" height="448" key="GridCell.Tab.1.left/0.23.2560.1337@0.23.2560.1337" timestamp="1593969329558" />
+    <state width="1646" height="448" key="GridCell.Tab.1.right" timestamp="1593969329558">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="2518" height="335" key="GridCell.Tab.1.right/0.0.2560.1440@0.0.2560.1440" timestamp="1593622323000" />
-    <state width="1646" height="448" key="GridCell.Tab.1.right/0.23.2560.1337@0.23.2560.1337" timestamp="1593947946354" />
+    <state width="1646" height="448" key="GridCell.Tab.1.right/0.23.2560.1337@0.23.2560.1337" timestamp="1593969329558" />
     <state width="640" height="204" key="ImportCMakeProjectWizard.bottomPanel" timestamp="1593878071851">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
@@ -163,8 +174,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/src/parse_link.c</url>
-          <line>72</line>
+          <line>70</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/main.c</url>
+          <line>60</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

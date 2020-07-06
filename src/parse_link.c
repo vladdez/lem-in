@@ -49,7 +49,6 @@ t_link		*create_link(t_lem_in *lem_in, char *str)
 	char	*d;
 
 	d = str;
-	printf("d %s\n", d);
 	if ((d = ft_strchr(d, '-')))
 	{
 		if (!(start = ft_strsub(str, 0, d - str)))
@@ -60,7 +59,6 @@ t_link		*create_link(t_lem_in *lem_in, char *str)
 		end_room = find_room(lem_in, end);
 		free(start);
 		free(end);
-		printf("d %s\n", d);
 		if (start_room && end_room)
 			return (init_link(start_room, end_room));
 	}
@@ -89,7 +87,6 @@ void		parse_link(t_lem_in *lem_in, int fd, t_line **input, t_line **line)
 
 	while ((*line) || ((*line) = read_line(input, fd)))
 	{
-		printf("+%s\n", (*line)->data);
 		if (is_command((*line)->data) != 1 && is_comment((*line)->data) != 1)
 		{
 			
