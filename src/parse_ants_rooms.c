@@ -6,7 +6,7 @@
 /*   By: kysgramo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/29 13:02:17 by kysgramo          #+#    #+#             */
-/*   Updated: 2020/06/29 13:02:22 by kysgramo         ###   ########.fr       */
+/*   Updated: 2020/07/06 17:03:44 by kysgramo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@ void		parse_ants(t_lem_in **lem_in, int fd)
 
 	if ((get_next_line(fd, &line)))
 	{
-		//printf("%s\n", line);
 		if (ft_isint(line) == 1)
 		{
 			(*lem_in)->ant_num = ft_atoi(line);
@@ -33,18 +32,15 @@ void		parse_ants(t_lem_in **lem_in, int fd)
 
 int			get_type(char *line)
 {
-	int i;
+	int	i;
 
-	
 	if (!ft_strcmp(line, "##start"))
 		i = 1;
 	else if (!ft_strcmp(line, "##end"))
 		i = 3;
 	else
 		i = 2;
-	//printf("g %s %d\n", line, i);
 	return (i);
-	
 }
 
 t_room		*create_room(char *line, int roomtype)
@@ -88,10 +84,9 @@ void		parse_room(t_lem_in *lem_in, int fd, t_line **input, t_line **line)
 	t_room		*room;
 
 	roomtype = 2;
-	while (((*line) = read_line(input, fd)) && 
-		(is_command((*line)->data)
-		|| is_comment((*line)->data)
-		|| is_room((*line)->data)))
+	while (((*line) = read_line(input, fd)) &&
+	(is_command((*line)->data)
+	|| is_comment((*line)->data) || is_room((*line)->data)))
 	{
 		if (is_command((*line)->data) == 1)
 			roomtype = get_type((*line)->data);

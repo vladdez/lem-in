@@ -6,7 +6,7 @@
 /*   By: kysgramo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/29 13:00:29 by kysgramo          #+#    #+#             */
-/*   Updated: 2020/06/29 13:00:39 by kysgramo         ###   ########.fr       */
+/*   Updated: 2020/07/06 17:03:27 by kysgramo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,6 +65,6 @@ void		lem(char **av)
 int			main(int ac, char **av)
 {
 	if (ac <= 2)
-		lem(av);	
+		lem(av);
 	return (0);
 }

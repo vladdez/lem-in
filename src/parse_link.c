@@ -6,10 +6,9 @@
 /*   By: kysgramo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/04 13:01:00 by kysgramo          #+#    #+#             */
-/*   Updated: 2020/07/04 13:01:04 by kysgramo         ###   ########.fr       */
+/*   Updated: 2020/07/06 17:04:04 by kysgramo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #include "lem-in.h"
 
@@ -53,7 +52,7 @@ t_link		*create_link(t_lem_in *lem_in, char *str)
 	{
 		if (!(start = ft_strsub(str, 0, d - str)))
 			terminate(ERR_LINK_INIT);
-		if (!(end = ft_strsub(d + 1, 0, ft_strlen(d) +1)))
+		if (!(end = ft_strsub(d + 1, 0, ft_strlen(d) + 1)))
 			terminate(ERR_LINK_INIT);
 		start_room = find_room(lem_in, start);
 		end_room = find_room(lem_in, end);
@@ -67,10 +66,9 @@ t_link		*create_link(t_lem_in *lem_in, char *str)
 
 void		add_link(t_lem_in *lem_in, t_link *link)
 {
-
 	t_link	*tmp;
-	
-	tmp = lem_in->links;	
+
+	tmp = lem_in->links;
 	if (tmp)
 	{
 		while (tmp->next)
@@ -83,13 +81,12 @@ void		add_link(t_lem_in *lem_in, t_link *link)
 
 void		parse_link(t_lem_in *lem_in, int fd, t_line **input, t_line **line)
 {
-	t_link *link;
+	t_link	*link;
 
 	while ((*line) || ((*line) = read_line(input, fd)))
 	{
 		if (is_command((*line)->data) != 1 && is_comment((*line)->data) != 1)
 		{
-			
 			if (!(link = create_link(lem_in, (*line)->data)))
 				terminate(ERR_LINK_PARSING);
 			add_link(lem_in, link);
@@ -97,5 +94,4 @@ void		parse_link(t_lem_in *lem_in, int fd, t_line **input, t_line **line)
 		}
 		(*line) = NULL;
 	}
-
 }

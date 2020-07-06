@@ -31,10 +31,7 @@ void	link_inputs(t_line **input, t_line *input1)
 	{
 		current = *input;
 		while (current->next)
-		{
 			current = current->next;
-			//printf("- %s\n", current->data);
-		}
 		current->next = input1;
 	}
 	else if (input)
@@ -56,6 +53,5 @@ t_line	*read_line(t_line **input, int fd)
 	}
 	if (size == -1)
 		terminate(ERR_READING);
-
 	return (input1);
 }

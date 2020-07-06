@@ -24,9 +24,9 @@ int		is_room_name(char *str)
 
 int		is_room(char *str)
 {
-	char **words;
-	int q;
-	char *s;
+	char	**words;
+	int		q;
+	char	*s;
 
 	if (str)
 	{
@@ -39,7 +39,7 @@ int		is_room(char *str)
 			if (is_room_name(words[0]) && ft_isint(words[1])
 			&& ft_isint(words[2]))
 				return (1);
-			free(s);		
+			free(s);
 		}
 	}
 	return (0);
