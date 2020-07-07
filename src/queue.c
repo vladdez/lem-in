@@ -6,7 +6,7 @@
 /*   By: kysgramo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/06 19:01:31 by kysgramo          #+#    #+#             */
-/*   Updated: 2020/07/06 19:01:33 by kysgramo         ###   ########.fr       */
+/*   Updated: 2020/07/07 18:04:01 by kysgramo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,27 +16,53 @@ t_queue	*create_q_elem(t_room *room)
 {
 	t_queue *q;
 
-	if (!(q = (t_room *)ft_memalloc(sizeof(t_room *))))
+	if (!(q = (t_queue *)ft_memalloc(sizeof(t_queue *))))
 		terminate(ERR_QUEUE_INIT);
 	q->room = room;
 	q->next = NULL;
-	return (q)
+	return (q);
 }
 
 void	add_q_elem(t_queue **q, t_queue	*elem)
 {
 	t_queue	*curr;
 
-	curr = NULL;
-	if (elem && *elem)
+	if (q && *q)
 	{
-		curr = *q
+		curr = *q;
 		while (curr->next)
 			curr = curr->next;
 		curr->next = elem;
 	}
 	else if (elem)
 		*q = elem;
+}
+
+void	enqueue(t_lem_in *lem_in, t_queue **q, t_room *room)
+{
+	t_link *curr;
+
+	curr = lem_in->links;
+	while (curr)
+	{
+		if (curr->start == room)
+		{
+			if (curr->end->bfs_level == -1)
+			{
+				curr->end->bfs_level = room->bfs_level + 1;
+				add_q_elem(q, create_q_elem(curr->end));
+			}
+		}
+		else if (curr->end == room)
+		{
+			if (curr->end->bfs_level == -1)
+			{
+				curr->end->bfs_level = room->bfs_level + 1;
+				add_q_elem(q, create_q_elem(curr->start));
+			}
+		}
+		curr = curr->next;
+	}
 }
 
 t_queue	*first_elem(t_queue **q)
@@ -47,12 +73,12 @@ t_queue	*first_elem(t_queue **q)
 	if (q && *q)
 	{
 		curr = *q;
-		*q = *q->next;
+		*q = (*q)->next;
 	}
-	return(curr);
+	return (curr);
 }
 
-void	bfs(t_lem_in **lem_in)
+void	bfs(t_lem_in *lem_in)
 {
 	t_queue *curr;
 	t_queue *q;
@@ -65,12 +91,11 @@ void	bfs(t_lem_in **lem_in)
 		curr = first_elem(&q);
 		if (curr->room != lem_in->end)
 		{
-
-			lem_in->bfs_level = curr->room->bfs_level;
-
+			enqueue(lem_in, &q, curr->room);
+			lem_in->bfs_length = curr->room->bfs_level;          
 		}
 		else
-			lem_in->bfs_level = 2147483647;
+			lem_in->end->bfs_level = 2147483647;
 		free(curr);
 	}
 }

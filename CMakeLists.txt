@@ -99,6 +99,7 @@ add_executable(lem_in
         src/main.c
         src/parse_ants_rooms.c
         src/parse_link.c
+        src/queue.c
         src/read_line.c
         src/validator.c
         lem-in.h)

@@ -2526,6 +2526,33 @@ src/parse_link.c.s:
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/parse_link.c.s
 .PHONY : src/parse_link.c.s
 
+src/queue.o: src/queue.c.o
+
+.PHONY : src/queue.o
+
+# target to build an object file
+src/queue.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/queue.c.o
+.PHONY : src/queue.c.o
+
+src/queue.i: src/queue.c.i
+
+.PHONY : src/queue.i
+
+# target to preprocess a source file
+src/queue.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/queue.c.i
+.PHONY : src/queue.c.i
+
+src/queue.s: src/queue.c.s
+
+.PHONY : src/queue.s
+
+# target to generate assembly for a file
+src/queue.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/queue.c.s
+.PHONY : src/queue.c.s
+
 src/read_line.o: src/read_line.c.o
 
 .PHONY : src/read_line.o
@@ -2856,6 +2883,9 @@ help:
 	@echo "... src/parse_link.o"
 	@echo "... src/parse_link.i"
 	@echo "... src/parse_link.s"
+	@echo "... src/queue.o"
+	@echo "... src/queue.i"
+	@echo "... src/queue.s"
 	@echo "... src/read_line.o"
 	@echo "... src/read_line.i"
 	@echo "... src/read_line.s"

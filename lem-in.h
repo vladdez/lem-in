@@ -61,7 +61,7 @@ typedef struct			s_lem_in
 	t_room				*start;
 	t_room				*end;
 	t_link				*links;
-	int					bfs_level;
+	int					bfs_length;
 	/*t_path				*paths;
 	t_location			*locations;
 	t_turn				*turns;
@@ -70,7 +70,7 @@ typedef struct			s_lem_in
 
 typedef struct			s_queue
 {
-	char				*data;
+	t_room				*room;
 	struct s_queue		*next;
 }						t_queue;
 
@@ -93,8 +93,8 @@ int						is_command(char *str);
 t_line  				*read_line(t_line **input, int fd);
 void		  			validate_room(t_lem_in *lem_in, t_room *room);
 void		  			validate_link(t_lem_in *lem_in, t_link *link);
-void					bfs(t_lem_in **lem_in);
-
+void					bfs(t_lem_in *lem_in);
+void					free_lem_in(t_lem_in **lem_in);
 
 
 
@@ -111,7 +111,7 @@ void					bfs(t_lem_in **lem_in);
 # define ERR_LINK_DUP			"ERROR: Input has link duplicate"
 # define ERR_NO_LINKS			"ERROR: Input has no links"
 # define ERR_START_END_ROOM		"ERROR: Input has no start or end room"
-
+# define ERR_NO_PATH			"ERROR: Input has no path from start to end"
 
 # define ERR_QUEUE_INIT			"ERROR: Can\'t initialize queue"
 

@@ -27,7 +27,7 @@ t_lem_in	*init_lem_in(void)
 	lem_in->start = NULL;
 	lem_in->end = NULL;
 	lem_in->links = NULL;
-	lem_in->bfs = 0;
+	lem_in->bfs_length = 0;
 	return (lem_in);
 }
 
@@ -62,6 +62,9 @@ void		lem(char **av)
 	}
 	lem_in = parse(fd, &input);
 	bfs(lem_in);
+	if (lem_in->end->bfs_level == -1)
+		terminate(ERR_NO_PATH);
+	free_lem_in(&lem_in);
 }
 
 int			main(int ac, char **av)

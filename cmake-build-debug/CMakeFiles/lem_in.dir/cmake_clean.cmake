@@ -88,6 +88,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/lem_in.dir/src/main.c.o"
   "CMakeFiles/lem_in.dir/src/parse_ants_rooms.c.o"
   "CMakeFiles/lem_in.dir/src/parse_link.c.o"
+  "CMakeFiles/lem_in.dir/src/queue.c.o"
   "CMakeFiles/lem_in.dir/src/read_line.c.o"
   "CMakeFiles/lem_in.dir/src/validator.c.o"
   "lem_in"

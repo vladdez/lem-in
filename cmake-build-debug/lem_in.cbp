@@ -362,6 +362,9 @@
 		<Unit filename="/Users/kysgramo/lem-in/src/parse_link.c">
 			<Option target="lem_in"/>
 		</Unit>
+		<Unit filename="/Users/kysgramo/lem-in/src/queue.c">
+			<Option target="lem_in"/>
+		</Unit>
 		<Unit filename="/Users/kysgramo/lem-in/src/read_line.c">
 			<Option target="lem_in"/>
 		</Unit>

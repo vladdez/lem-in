@@ -287,6 +287,11 @@ CMakeFiles/lem_in.dir/src/parse_link.c.o: ../libft/libft/libft.h
 CMakeFiles/lem_in.dir/src/parse_link.c.o: ../libft/printf/ft_printf.h
 CMakeFiles/lem_in.dir/src/parse_link.c.o: ../src/parse_link.c
 
+CMakeFiles/lem_in.dir/src/queue.c.o: ../lem-in.h
+CMakeFiles/lem_in.dir/src/queue.c.o: ../libft/libft/libft.h
+CMakeFiles/lem_in.dir/src/queue.c.o: ../libft/printf/ft_printf.h
+CMakeFiles/lem_in.dir/src/queue.c.o: ../src/queue.c
+
 CMakeFiles/lem_in.dir/src/read_line.c.o: ../lem-in.h
 CMakeFiles/lem_in.dir/src/read_line.c.o: ../libft/libft/libft.h
 CMakeFiles/lem_in.dir/src/read_line.c.o: ../libft/printf/ft_printf.h
