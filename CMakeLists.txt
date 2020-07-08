@@ -94,8 +94,10 @@ add_executable(lem_in
         libft/printf/substr.c
         libft/printf/sum_char.c
         libft/printf/tools.c
+        src/cut_links.c
         src/errors.c
         src/is.c
+        src/let_me_free.c
         src/main.c
         src/parse_ants_rooms.c
         src/parse_link.c

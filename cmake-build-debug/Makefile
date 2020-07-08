@@ -2391,6 +2391,33 @@ libft/printf/tools.c.s:
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/libft/printf/tools.c.s
 .PHONY : libft/printf/tools.c.s
 
+src/cut_links.o: src/cut_links.c.o
+
+.PHONY : src/cut_links.o
+
+# target to build an object file
+src/cut_links.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/cut_links.c.o
+.PHONY : src/cut_links.c.o
+
+src/cut_links.i: src/cut_links.c.i
+
+.PHONY : src/cut_links.i
+
+# target to preprocess a source file
+src/cut_links.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/cut_links.c.i
+.PHONY : src/cut_links.c.i
+
+src/cut_links.s: src/cut_links.c.s
+
+.PHONY : src/cut_links.s
+
+# target to generate assembly for a file
+src/cut_links.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/cut_links.c.s
+.PHONY : src/cut_links.c.s
+
 src/errors.o: src/errors.c.o
 
 .PHONY : src/errors.o
@@ -2444,6 +2471,33 @@ src/is.s: src/is.c.s
 src/is.c.s:
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/is.c.s
 .PHONY : src/is.c.s
+
+src/let_me_free.o: src/let_me_free.c.o
+
+.PHONY : src/let_me_free.o
+
+# target to build an object file
+src/let_me_free.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/let_me_free.c.o
+.PHONY : src/let_me_free.c.o
+
+src/let_me_free.i: src/let_me_free.c.i
+
+.PHONY : src/let_me_free.i
+
+# target to preprocess a source file
+src/let_me_free.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/let_me_free.c.i
+.PHONY : src/let_me_free.c.i
+
+src/let_me_free.s: src/let_me_free.c.s
+
+.PHONY : src/let_me_free.s
+
+# target to generate assembly for a file
+src/let_me_free.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/let_me_free.c.s
+.PHONY : src/let_me_free.c.s
 
 src/main.o: src/main.c.o
 
@@ -2868,12 +2922,18 @@ help:
 	@echo "... libft/printf/tools.o"
 	@echo "... libft/printf/tools.i"
 	@echo "... libft/printf/tools.s"
+	@echo "... src/cut_links.o"
+	@echo "... src/cut_links.i"
+	@echo "... src/cut_links.s"
 	@echo "... src/errors.o"
 	@echo "... src/errors.i"
 	@echo "... src/errors.s"
 	@echo "... src/is.o"
 	@echo "... src/is.i"
 	@echo "... src/is.s"
+	@echo "... src/let_me_free.o"
+	@echo "... src/let_me_free.i"
+	@echo "... src/let_me_free.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

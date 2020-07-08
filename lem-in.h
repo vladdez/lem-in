@@ -38,9 +38,9 @@ typedef struct			s_room
 	int					y;
 	int					type;
 	int					bfs_level;
-	/*int					input_links;
+	int					input_links;
 	int					output_links;
-	int					ant_number;*/
+	/*int					ant_number;*/
 	struct s_room		*next;
 }						t_room;
 
@@ -76,7 +76,7 @@ typedef struct			s_queue
 
 
 int						main(int ac, char **av);
-void    				*terminate(char *er);
+void					*terminate(char *er);
 
 void					parse_ants(t_lem_in **lem_in, int fd);
 void					parse_room(t_lem_in *lem_in, int fd, t_line **input, t_line **line);
@@ -90,13 +90,14 @@ int						ft_isint(char *tmp);
 int						is_command(char *str);
 
 
-t_line  				*read_line(t_line **input, int fd);
-void		  			validate_room(t_lem_in *lem_in, t_room *room);
-void		  			validate_link(t_lem_in *lem_in, t_link *link);
+t_line					*read_line(t_line **input, int fd);
+void					validate_room(t_lem_in *lem_in, t_room *room);
+void					validate_link(t_lem_in *lem_in, t_link *link);
 void					bfs(t_lem_in *lem_in);
 void					free_lem_in(t_lem_in **lem_in);
-
-
+void					check_links(t_lem_in *lem_in);
+void					free_input(t_line **input);	
+void					ft_strsplit_free(char ***strsplit);
 
 
 # define ERR_ANTS_NUM_PARSING	"ERROR: Number of ants is incorrent"

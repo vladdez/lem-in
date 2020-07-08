@@ -50,7 +50,7 @@ t_room		*create_room(char *line, int roomtype)
 
 	if (!(words = ft_strsplit(line, ' ')))
 		terminate(ERR_ROOM_INIT);
-	if (!(room = (t_room *)ft_memalloc(sizeof(t_room))))
+	if (!(room = (t_room *)malloc(sizeof(t_room))))
 		terminate(ERR_ROOM_INIT);
 	if (!(room->name = ft_strdup(words[0])))
 		terminate(ERR_ROOM_INIT);
@@ -58,6 +58,9 @@ t_room		*create_room(char *line, int roomtype)
 	room->y = ft_atoi(words[2]);
 	room->type = roomtype;
 	room->bfs_level = -1;
+	room->output_links = 0;
+	room->input_links = 0;
+	ft_strsplit_free(&words);
 	return (room);
 }
 
@@ -89,6 +92,7 @@ void		parse_room(t_lem_in *lem_in, int fd, t_line **input, t_line **line)
 	(is_command((*line)->data)
 	|| is_comment((*line)->data) || is_room((*line)->data)))
 	{
+		printf("(*line)->data %s\n", (*line)->data);
 		if (is_command((*line)->data) == 1)
 			roomtype = get_type((*line)->data);
 		else if (is_room((*line)->data) == 1)

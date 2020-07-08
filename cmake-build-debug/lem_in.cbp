@@ -347,10 +347,16 @@
 		<Unit filename="/Users/kysgramo/lem-in/libft/printf/tools.c">
 			<Option target="lem_in"/>
 		</Unit>
+		<Unit filename="/Users/kysgramo/lem-in/src/cut_links.c">
+			<Option target="lem_in"/>
+		</Unit>
 		<Unit filename="/Users/kysgramo/lem-in/src/errors.c">
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/Users/kysgramo/lem-in/src/is.c">
+			<Option target="lem_in"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/lem-in/src/let_me_free.c">
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/Users/kysgramo/lem-in/src/main.c">

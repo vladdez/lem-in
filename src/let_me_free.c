@@ -12,6 +12,20 @@
 
 #include "lem-in.h"
 
+void	ft_strsplit_free(char ***strsplit)
+{
+	char	**curr;
+
+	if (strsplit && *strsplit)
+	{
+		curr = ((*strsplit));
+		while ((*curr))
+			free((*(curr++)));
+		free((*strsplit));
+		(*strsplit) = NULL;
+	}
+}
+
 void    free_rooms(t_room **sentenced)
 {
 	t_room *kill;
@@ -21,6 +35,7 @@ void    free_rooms(t_room **sentenced)
 		{
 			kill = (*sentenced);
 			(*sentenced) = (*sentenced)->next;
+			free(kill->name);
 			free(kill);
 		}
 }
@@ -47,4 +62,19 @@ void    free_lem_in(t_lem_in **lem_in)
 		free((*lem_in));
 		(*lem_in) = NULL;
 	}
+}
+
+void	free_input(t_line **input)
+{
+	t_line	*curr;
+	t_line	*kill;
+
+	curr = *(input);
+	while (curr)
+	{
+		kill = curr;
+		curr = curr->next;
+		free(kill);
+	}
+	*input = NULL;
 }

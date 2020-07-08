@@ -64,7 +64,10 @@ void		lem(char **av)
 	bfs(lem_in);
 	if (lem_in->end->bfs_level == -1)
 		terminate(ERR_NO_PATH);
+	check_links(lem_in);
+	free_input(&input);
 	free_lem_in(&lem_in);
+	
 }
 
 int			main(int ac, char **av)

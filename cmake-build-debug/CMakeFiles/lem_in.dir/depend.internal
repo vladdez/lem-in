@@ -262,6 +262,11 @@ CMakeFiles/lem_in.dir/libft/printf/tools.c.o
  /Users/kysgramo/lem-in/libft/libft/libft.h
  /Users/kysgramo/lem-in/libft/printf/ft_printf.h
  /Users/kysgramo/lem-in/libft/printf/tools.c
+CMakeFiles/lem_in.dir/src/cut_links.c.o
+ ../lem-in.h
+ ../libft/libft/libft.h
+ ../libft/printf/ft_printf.h
+ /Users/kysgramo/lem-in/src/cut_links.c
 CMakeFiles/lem_in.dir/src/errors.c.o
  ../lem-in.h
  ../libft/libft/libft.h
@@ -272,6 +277,11 @@ CMakeFiles/lem_in.dir/src/is.c.o
  ../libft/libft/libft.h
  ../libft/printf/ft_printf.h
  /Users/kysgramo/lem-in/src/is.c
+CMakeFiles/lem_in.dir/src/let_me_free.c.o
+ ../lem-in.h
+ ../libft/libft/libft.h
+ ../libft/printf/ft_printf.h
+ /Users/kysgramo/lem-in/src/let_me_free.c
 CMakeFiles/lem_in.dir/src/main.c.o
  ../lem-in.h
  ../libft/libft/libft.h

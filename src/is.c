@@ -27,22 +27,26 @@ int		is_room(char *str)
 	char	**words;
 	int		q;
 	char	*s;
+	int		res;
 
+	res = 0;
 	if (str)
 	{
 		s = ft_strdup(str);
 		q = ft_words(s, ' ');
-		if (!(words = ft_strsplit(s, ' ')))
+		if (!(words = ft_strsplit(str, ' ')))
 			terminate(ERR_ROOM_PARSING);
 		if (q == 3)
 		{
 			if (is_room_name(words[0]) && ft_isint(words[1])
 			&& ft_isint(words[2]))
-				return (1);
-			free(s);
+				res = 1;
+			free(words);
+			return(res);
 		}
+		free(words);
 	}
-	return (0);
+	return (res);
 }
 
 int		is_command(char *str)
