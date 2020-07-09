@@ -30,25 +30,25 @@ void		parse_ants(t_lem_in **lem_in, int fd)
 	}
 }
 
-int			get_type(char *line)
+int			get_type(char *tmp)
 {
 	int	i;
 
-	if (!ft_strcmp(line, "##start"))
+	if (!ft_strcmp(tmp, "##start"))
 		i = 1;
-	else if (!ft_strcmp(line, "##end"))
+	else if (!ft_strcmp(tmp, "##end"))
 		i = 3;
 	else
 		i = 2;
 	return (i);
 }
 
-t_room		*create_room(char *line, int roomtype)
+t_room		*create_room(char *tmp, int roomtype)
 {
 	t_room		*room;
 	char		**words;
 
-	if (!(words = ft_strsplit(line, ' ')))
+	if (!(words = ft_strsplit(tmp, ' ')))
 		terminate(ERR_ROOM_INIT);
 	if (!(room = (t_room *)malloc(sizeof(t_room))))
 		terminate(ERR_ROOM_INIT);
@@ -60,6 +60,7 @@ t_room		*create_room(char *line, int roomtype)
 	room->bfs_level = -1;
 	room->output_links = 0;
 	room->input_links = 0;
+	room->next = NULL;
 	ft_strsplit_free(&words);
 	return (room);
 }
@@ -82,31 +83,31 @@ void		add_room(t_lem_in *lem_in, t_room *room)
 		lem_in->end = room;
 }
 
-void		parse_room(t_lem_in *lem_in, int fd, t_line **input, t_line **line)
+void		parse_room(t_lem_in *lem_in, int fd, t_line **input, t_line **tmp)
 {
 	int			roomtype;
 	t_room		*room;
 
 	roomtype = 2;
-	while (((*line) = read_line(input, fd)) &&
-	(is_command((*line)->data)
-	|| is_comment((*line)->data) || is_room((*line)->data)))
+	while ((*tmp || ((*tmp) = read_line(input, fd))) &&
+	(is_command((*tmp)->data)
+	|| is_comment((*tmp)->data) || is_room((*tmp)->data)))
 	{
-		printf("(*line)->data %s\n", (*line)->data);
-		if (is_command((*line)->data) == 1)
-			roomtype = get_type((*line)->data);
-		else if (is_room((*line)->data) == 1)
+		//printf("(*tmp)->data %s\n", (*tmp)->data);
+		if (is_command((*tmp)->data) == 1)
+			roomtype = get_type((*tmp)->data);
+		else if (is_room((*tmp)->data) == 1)
 		{
-			room = create_room((*line)->data, roomtype);
-			roomtype = 2;
+			room = create_room((*tmp)->data, roomtype);
 			add_room(lem_in, room);
 			validate_room(lem_in, room);
+			roomtype = 2;
 		}
 		else
 			roomtype = 2;
 		if ((roomtype == 1 && lem_in->start)
 			|| (roomtype == 3 && lem_in->end))
 			terminate(ERR_ROOM_PARSING);
-		(*line) = NULL;
+		(*tmp) = NULL;
 	}
 }

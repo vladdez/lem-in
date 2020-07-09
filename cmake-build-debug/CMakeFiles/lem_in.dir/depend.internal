@@ -262,53 +262,58 @@ CMakeFiles/lem_in.dir/libft/printf/tools.c.o
  /Users/kysgramo/lem-in/libft/libft/libft.h
  /Users/kysgramo/lem-in/libft/printf/ft_printf.h
  /Users/kysgramo/lem-in/libft/printf/tools.c
-CMakeFiles/lem_in.dir/src/cut_links.c.o
+CMakeFiles/lem_in.dir/src/0.1.errors.c.o
  ../lem-in.h
  ../libft/libft/libft.h
  ../libft/printf/ft_printf.h
- /Users/kysgramo/lem-in/src/cut_links.c
-CMakeFiles/lem_in.dir/src/errors.c.o
+ /Users/kysgramo/lem-in/src/0.1.errors.c
+CMakeFiles/lem_in.dir/src/0.2.read_line.c.o
  ../lem-in.h
  ../libft/libft/libft.h
  ../libft/printf/ft_printf.h
- /Users/kysgramo/lem-in/src/errors.c
-CMakeFiles/lem_in.dir/src/is.c.o
+ /Users/kysgramo/lem-in/src/0.2.read_line.c
+CMakeFiles/lem_in.dir/src/0.3.validator.c.o
  ../lem-in.h
  ../libft/libft/libft.h
  ../libft/printf/ft_printf.h
- /Users/kysgramo/lem-in/src/is.c
+ /Users/kysgramo/lem-in/src/0.3.validator.c
+CMakeFiles/lem_in.dir/src/0.4.is.c.o
+ ../lem-in.h
+ ../libft/libft/libft.h
+ ../libft/printf/ft_printf.h
+ /Users/kysgramo/lem-in/src/0.4.is.c
+CMakeFiles/lem_in.dir/src/1.main.c.o
+ ../lem-in.h
+ ../libft/libft/libft.h
+ ../libft/printf/ft_printf.h
+ /Users/kysgramo/lem-in/src/1.main.c
+CMakeFiles/lem_in.dir/src/2.parse_ants_rooms.c.o
+ ../lem-in.h
+ ../libft/libft/libft.h
+ ../libft/printf/ft_printf.h
+ /Users/kysgramo/lem-in/src/2.parse_ants_rooms.c
+CMakeFiles/lem_in.dir/src/3.parse_link.c.o
+ ../lem-in.h
+ ../libft/libft/libft.h
+ ../libft/printf/ft_printf.h
+ /Users/kysgramo/lem-in/src/3.parse_link.c
+CMakeFiles/lem_in.dir/src/4.bfs.c.o
+ ../lem-in.h
+ ../libft/libft/libft.h
+ ../libft/printf/ft_printf.h
+ /Users/kysgramo/lem-in/src/4.bfs.c
+CMakeFiles/lem_in.dir/src/5.cut_links.c.o
+ ../lem-in.h
+ ../libft/libft/libft.h
+ ../libft/printf/ft_printf.h
+ /Users/kysgramo/lem-in/src/5.cut_links.c
+CMakeFiles/lem_in.dir/src/7.print.c.o
+ ../lem-in.h
+ ../libft/libft/libft.h
+ ../libft/printf/ft_printf.h
+ /Users/kysgramo/lem-in/src/7.print.c
 CMakeFiles/lem_in.dir/src/let_me_free.c.o
  ../lem-in.h
  ../libft/libft/libft.h
  ../libft/printf/ft_printf.h
  /Users/kysgramo/lem-in/src/let_me_free.c
-CMakeFiles/lem_in.dir/src/main.c.o
- ../lem-in.h
- ../libft/libft/libft.h
- ../libft/printf/ft_printf.h
- /Users/kysgramo/lem-in/src/main.c
-CMakeFiles/lem_in.dir/src/parse_ants_rooms.c.o
- ../lem-in.h
- ../libft/libft/libft.h
- ../libft/printf/ft_printf.h
- /Users/kysgramo/lem-in/src/parse_ants_rooms.c
-CMakeFiles/lem_in.dir/src/parse_link.c.o
- ../lem-in.h
- ../libft/libft/libft.h
- ../libft/printf/ft_printf.h
- /Users/kysgramo/lem-in/src/parse_link.c
-CMakeFiles/lem_in.dir/src/queue.c.o
- ../lem-in.h
- ../libft/libft/libft.h
- ../libft/printf/ft_printf.h
- /Users/kysgramo/lem-in/src/queue.c
-CMakeFiles/lem_in.dir/src/read_line.c.o
- ../lem-in.h
- ../libft/libft/libft.h
- ../libft/printf/ft_printf.h
- /Users/kysgramo/lem-in/src/read_line.c
-CMakeFiles/lem_in.dir/src/validator.c.o
- ../lem-in.h
- ../libft/libft/libft.h
- ../libft/printf/ft_printf.h
- /Users/kysgramo/lem-in/src/validator.c

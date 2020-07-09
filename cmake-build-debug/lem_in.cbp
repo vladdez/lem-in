@@ -347,34 +347,37 @@
 		<Unit filename="/Users/kysgramo/lem-in/libft/printf/tools.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/Users/kysgramo/lem-in/src/cut_links.c">
+		<Unit filename="/Users/kysgramo/lem-in/src/0.1.errors.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/Users/kysgramo/lem-in/src/errors.c">
+		<Unit filename="/Users/kysgramo/lem-in/src/0.2.read_line.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/Users/kysgramo/lem-in/src/is.c">
+		<Unit filename="/Users/kysgramo/lem-in/src/0.3.validator.c">
+			<Option target="lem_in"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/lem-in/src/0.4.is.c">
+			<Option target="lem_in"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/lem-in/src/1.main.c">
+			<Option target="lem_in"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/lem-in/src/2.parse_ants_rooms.c">
+			<Option target="lem_in"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/lem-in/src/3.parse_link.c">
+			<Option target="lem_in"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/lem-in/src/4.bfs.c">
+			<Option target="lem_in"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/lem-in/src/5.cut_links.c">
+			<Option target="lem_in"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/lem-in/src/7.print.c">
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/Users/kysgramo/lem-in/src/let_me_free.c">
-			<Option target="lem_in"/>
-		</Unit>
-		<Unit filename="/Users/kysgramo/lem-in/src/main.c">
-			<Option target="lem_in"/>
-		</Unit>
-		<Unit filename="/Users/kysgramo/lem-in/src/parse_ants_rooms.c">
-			<Option target="lem_in"/>
-		</Unit>
-		<Unit filename="/Users/kysgramo/lem-in/src/parse_link.c">
-			<Option target="lem_in"/>
-		</Unit>
-		<Unit filename="/Users/kysgramo/lem-in/src/queue.c">
-			<Option target="lem_in"/>
-		</Unit>
-		<Unit filename="/Users/kysgramo/lem-in/src/read_line.c">
-			<Option target="lem_in"/>
-		</Unit>
-		<Unit filename="/Users/kysgramo/lem-in/src/validator.c">
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/Users/kysgramo/lem-in/CMakeLists.txt">

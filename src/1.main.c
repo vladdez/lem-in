@@ -34,16 +34,18 @@ t_lem_in	*init_lem_in(void)
 t_lem_in	*parse(int fd, t_line **input)
 {
 	t_lem_in	*lem_in;
-	t_line		*line;
+	t_line		*tmp;
 
+	tmp = NULL;
 	lem_in = init_lem_in();
 	parse_ants(&lem_in, fd);
-	parse_room(lem_in, fd, input, &line);
+	parse_room(lem_in, fd, input, &tmp);
 	if (!lem_in->start || !lem_in->end)
 		terminate(ERR_START_END_ROOM);
-	parse_link(lem_in, fd, input, &line);
+	parse_link(lem_in, fd, input, &tmp);
 	if (!lem_in->links)
 		terminate(ERR_NO_LINKS);
+	free_input(&tmp);
 	return (lem_in);
 }
 
@@ -65,6 +67,7 @@ void		lem(char **av)
 	if (lem_in->end->bfs_level == -1)
 		terminate(ERR_NO_PATH);
 	check_links(lem_in);
+	print_input(input, lem_in->ant_num);
 	free_input(&input);
 	free_lem_in(&lem_in);
 	

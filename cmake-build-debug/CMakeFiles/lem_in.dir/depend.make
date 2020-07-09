@@ -262,53 +262,58 @@ CMakeFiles/lem_in.dir/libft/printf/tools.c.o: ../libft/libft/libft.h
 CMakeFiles/lem_in.dir/libft/printf/tools.c.o: ../libft/printf/ft_printf.h
 CMakeFiles/lem_in.dir/libft/printf/tools.c.o: ../libft/printf/tools.c
 
-CMakeFiles/lem_in.dir/src/cut_links.c.o: ../lem-in.h
-CMakeFiles/lem_in.dir/src/cut_links.c.o: ../libft/libft/libft.h
-CMakeFiles/lem_in.dir/src/cut_links.c.o: ../libft/printf/ft_printf.h
-CMakeFiles/lem_in.dir/src/cut_links.c.o: ../src/cut_links.c
+CMakeFiles/lem_in.dir/src/0.1.errors.c.o: ../lem-in.h
+CMakeFiles/lem_in.dir/src/0.1.errors.c.o: ../libft/libft/libft.h
+CMakeFiles/lem_in.dir/src/0.1.errors.c.o: ../libft/printf/ft_printf.h
+CMakeFiles/lem_in.dir/src/0.1.errors.c.o: ../src/0.1.errors.c
 
-CMakeFiles/lem_in.dir/src/errors.c.o: ../lem-in.h
-CMakeFiles/lem_in.dir/src/errors.c.o: ../libft/libft/libft.h
-CMakeFiles/lem_in.dir/src/errors.c.o: ../libft/printf/ft_printf.h
-CMakeFiles/lem_in.dir/src/errors.c.o: ../src/errors.c
+CMakeFiles/lem_in.dir/src/0.2.read_line.c.o: ../lem-in.h
+CMakeFiles/lem_in.dir/src/0.2.read_line.c.o: ../libft/libft/libft.h
+CMakeFiles/lem_in.dir/src/0.2.read_line.c.o: ../libft/printf/ft_printf.h
+CMakeFiles/lem_in.dir/src/0.2.read_line.c.o: ../src/0.2.read_line.c
 
-CMakeFiles/lem_in.dir/src/is.c.o: ../lem-in.h
-CMakeFiles/lem_in.dir/src/is.c.o: ../libft/libft/libft.h
-CMakeFiles/lem_in.dir/src/is.c.o: ../libft/printf/ft_printf.h
-CMakeFiles/lem_in.dir/src/is.c.o: ../src/is.c
+CMakeFiles/lem_in.dir/src/0.3.validator.c.o: ../lem-in.h
+CMakeFiles/lem_in.dir/src/0.3.validator.c.o: ../libft/libft/libft.h
+CMakeFiles/lem_in.dir/src/0.3.validator.c.o: ../libft/printf/ft_printf.h
+CMakeFiles/lem_in.dir/src/0.3.validator.c.o: ../src/0.3.validator.c
+
+CMakeFiles/lem_in.dir/src/0.4.is.c.o: ../lem-in.h
+CMakeFiles/lem_in.dir/src/0.4.is.c.o: ../libft/libft/libft.h
+CMakeFiles/lem_in.dir/src/0.4.is.c.o: ../libft/printf/ft_printf.h
+CMakeFiles/lem_in.dir/src/0.4.is.c.o: ../src/0.4.is.c
+
+CMakeFiles/lem_in.dir/src/1.main.c.o: ../lem-in.h
+CMakeFiles/lem_in.dir/src/1.main.c.o: ../libft/libft/libft.h
+CMakeFiles/lem_in.dir/src/1.main.c.o: ../libft/printf/ft_printf.h
+CMakeFiles/lem_in.dir/src/1.main.c.o: ../src/1.main.c
+
+CMakeFiles/lem_in.dir/src/2.parse_ants_rooms.c.o: ../lem-in.h
+CMakeFiles/lem_in.dir/src/2.parse_ants_rooms.c.o: ../libft/libft/libft.h
+CMakeFiles/lem_in.dir/src/2.parse_ants_rooms.c.o: ../libft/printf/ft_printf.h
+CMakeFiles/lem_in.dir/src/2.parse_ants_rooms.c.o: ../src/2.parse_ants_rooms.c
+
+CMakeFiles/lem_in.dir/src/3.parse_link.c.o: ../lem-in.h
+CMakeFiles/lem_in.dir/src/3.parse_link.c.o: ../libft/libft/libft.h
+CMakeFiles/lem_in.dir/src/3.parse_link.c.o: ../libft/printf/ft_printf.h
+CMakeFiles/lem_in.dir/src/3.parse_link.c.o: ../src/3.parse_link.c
+
+CMakeFiles/lem_in.dir/src/4.bfs.c.o: ../lem-in.h
+CMakeFiles/lem_in.dir/src/4.bfs.c.o: ../libft/libft/libft.h
+CMakeFiles/lem_in.dir/src/4.bfs.c.o: ../libft/printf/ft_printf.h
+CMakeFiles/lem_in.dir/src/4.bfs.c.o: ../src/4.bfs.c
+
+CMakeFiles/lem_in.dir/src/5.cut_links.c.o: ../lem-in.h
+CMakeFiles/lem_in.dir/src/5.cut_links.c.o: ../libft/libft/libft.h
+CMakeFiles/lem_in.dir/src/5.cut_links.c.o: ../libft/printf/ft_printf.h
+CMakeFiles/lem_in.dir/src/5.cut_links.c.o: ../src/5.cut_links.c
+
+CMakeFiles/lem_in.dir/src/7.print.c.o: ../lem-in.h
+CMakeFiles/lem_in.dir/src/7.print.c.o: ../libft/libft/libft.h
+CMakeFiles/lem_in.dir/src/7.print.c.o: ../libft/printf/ft_printf.h
+CMakeFiles/lem_in.dir/src/7.print.c.o: ../src/7.print.c
 
 CMakeFiles/lem_in.dir/src/let_me_free.c.o: ../lem-in.h
 CMakeFiles/lem_in.dir/src/let_me_free.c.o: ../libft/libft/libft.h
 CMakeFiles/lem_in.dir/src/let_me_free.c.o: ../libft/printf/ft_printf.h
 CMakeFiles/lem_in.dir/src/let_me_free.c.o: ../src/let_me_free.c
-
-CMakeFiles/lem_in.dir/src/main.c.o: ../lem-in.h
-CMakeFiles/lem_in.dir/src/main.c.o: ../libft/libft/libft.h
-CMakeFiles/lem_in.dir/src/main.c.o: ../libft/printf/ft_printf.h
-CMakeFiles/lem_in.dir/src/main.c.o: ../src/main.c
-
-CMakeFiles/lem_in.dir/src/parse_ants_rooms.c.o: ../lem-in.h
-CMakeFiles/lem_in.dir/src/parse_ants_rooms.c.o: ../libft/libft/libft.h
-CMakeFiles/lem_in.dir/src/parse_ants_rooms.c.o: ../libft/printf/ft_printf.h
-CMakeFiles/lem_in.dir/src/parse_ants_rooms.c.o: ../src/parse_ants_rooms.c
-
-CMakeFiles/lem_in.dir/src/parse_link.c.o: ../lem-in.h
-CMakeFiles/lem_in.dir/src/parse_link.c.o: ../libft/libft/libft.h
-CMakeFiles/lem_in.dir/src/parse_link.c.o: ../libft/printf/ft_printf.h
-CMakeFiles/lem_in.dir/src/parse_link.c.o: ../src/parse_link.c
-
-CMakeFiles/lem_in.dir/src/queue.c.o: ../lem-in.h
-CMakeFiles/lem_in.dir/src/queue.c.o: ../libft/libft/libft.h
-CMakeFiles/lem_in.dir/src/queue.c.o: ../libft/printf/ft_printf.h
-CMakeFiles/lem_in.dir/src/queue.c.o: ../src/queue.c
-
-CMakeFiles/lem_in.dir/src/read_line.c.o: ../lem-in.h
-CMakeFiles/lem_in.dir/src/read_line.c.o: ../libft/libft/libft.h
-CMakeFiles/lem_in.dir/src/read_line.c.o: ../libft/printf/ft_printf.h
-CMakeFiles/lem_in.dir/src/read_line.c.o: ../src/read_line.c
-
-CMakeFiles/lem_in.dir/src/validator.c.o: ../lem-in.h
-CMakeFiles/lem_in.dir/src/validator.c.o: ../libft/libft/libft.h
-CMakeFiles/lem_in.dir/src/validator.c.o: ../libft/printf/ft_printf.h
-CMakeFiles/lem_in.dir/src/validator.c.o: ../src/validator.c
 

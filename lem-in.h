@@ -79,8 +79,8 @@ int						main(int ac, char **av);
 void					*terminate(char *er);
 
 void					parse_ants(t_lem_in **lem_in, int fd);
-void					parse_room(t_lem_in *lem_in, int fd, t_line **input, t_line **line);
-void					parse_link(t_lem_in *lem_in, int fd, t_line **input, t_line **line);
+void					parse_room(t_lem_in *lem_in, int fd, t_line **input, t_line **tmp);
+void					parse_link(t_lem_in *lem_in, int fd, t_line **input, t_line **tmp);
 
 
 
@@ -98,7 +98,7 @@ void					free_lem_in(t_lem_in **lem_in);
 void					check_links(t_lem_in *lem_in);
 void					free_input(t_line **input);	
 void					ft_strsplit_free(char ***strsplit);
-
+void					print_input(t_line *input, int n);
 
 # define ERR_ANTS_NUM_PARSING	"ERROR: Number of ants is incorrent"
 # define ERR_ROOM_PARSING		"ERROR: Can\'t parse room"

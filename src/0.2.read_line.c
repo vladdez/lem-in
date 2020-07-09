@@ -41,15 +41,14 @@ void	link_inputs(t_line **input, t_line *input1)
 t_line	*read_line(t_line **input, int fd)
 {
 	t_line	*input1;
-	char	*line;
+	char	*tmp;
 	int		size;
 
 	input1 = NULL;
-	if ((size = get_next_line(fd, &line) > 0))
+	if ((size = get_next_line(fd, &tmp) > 0))
 	{
-		input1 = create_line(line);
+		input1 = create_line(tmp);
 		link_inputs(input, input1);
-		free(line);
 	}
 	if (size == -1)
 		terminate(ERR_READING);

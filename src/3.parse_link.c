@@ -79,19 +79,19 @@ void		add_link(t_lem_in *lem_in, t_link *link)
 		lem_in->links = link;
 }
 
-void		parse_link(t_lem_in *lem_in, int fd, t_line **input, t_line **line)
+void		parse_link(t_lem_in *lem_in, int fd, t_line **input, t_line **tmp)
 {
 	t_link	*link;
 
-	while ((*line) || ((*line) = read_line(input, fd)))
+	while ((*tmp) || ((*tmp) = read_line(input, fd)))
 	{
-		if (is_command((*line)->data) != 1 && is_comment((*line)->data) != 1)
+		if (is_command((*tmp)->data) != 1 && is_comment((*tmp)->data) != 1)
 		{
-			if (!(link = create_link(lem_in, (*line)->data)))
+			if (!(link = create_link(lem_in, (*tmp)->data)))
 				terminate(ERR_LINK_PARSING);
 			add_link(lem_in, link);
 			validate_link(lem_in, link);
 		}
-		(*line) = NULL;
+		(*tmp) = NULL;
 	}
 }
