@@ -74,6 +74,7 @@ void	free_input(t_line **input)
 	{
 		kill = curr;
 		curr = curr->next;
+		free(kill->data);
 		free(kill);
 	}
 	*input = NULL;
