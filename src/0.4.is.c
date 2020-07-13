@@ -41,10 +41,10 @@ int		is_room(char *str)
 			if (is_room_name(words[0]) && ft_isint(words[1])
 			&& ft_isint(words[2]))
 				res = 1;
-			free(words);
+			ft_strsplit_free(&words);
 			return(res);
 		}
-		free(words);
+		ft_strsplit_free(&words);
 	}
 	return (res);
 }

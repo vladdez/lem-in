@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
-project(lem_in C)
+project(l2 C)
 
 set(CMAKE_C_STANDARD 11)
 
@@ -7,7 +7,7 @@ include_directories(.)
 include_directories(libft/libft)
 include_directories(libft/printf)
 
-add_executable(lem_in
+add_executable(l2
         libft/libft/ft_atoi.c
         libft/libft/ft_bzero.c
         libft/libft/ft_isalnum.c
