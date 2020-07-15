@@ -116,6 +116,7 @@ void					print_input(t_line *input, int n);
 
 # define ERR_QUEUE_INIT			"ERROR: Can\'t initialize queue"
 
+# define ROOM 2;
 
 
 #endif

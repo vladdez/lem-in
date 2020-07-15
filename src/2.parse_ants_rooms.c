@@ -12,11 +12,11 @@
 
 #include "lem-in.h"
 
-void		parse_ants(t_lem_in **lem_in, int fd)
+void		parse_ants(t_lem_in **lem_in, int fd)   // нет необходимости передовать через двой указатель
 {
-	char		*line;
+	char		*line;                             // Добавить line = NULL
 
-	if ((get_next_line(fd, &line)))
+	if ((get_next_line(fd, &line)))                // else  terminate(ошибкой что не отработал GNL)
 	{
 		if (ft_isint(line) == 1)
 		{
@@ -83,20 +83,24 @@ void		add_room(t_lem_in *lem_in, t_room *room)
 		lem_in->end = room;
 }
 
+// хочу подумать как ниже сделать рефакторинг
+
 void		parse_room(t_lem_in *lem_in, int fd, t_line **input, t_line **tmp)
 {
 	int			roomtype;
 	t_room		*room;
+	int res;
+
 
 	roomtype = 2;
-	while ((*tmp || ((*tmp) = read_line(input, fd))) &&
-	(is_command((*tmp)->data)
+	while ((*tmp || ((*tmp) = read_line(input, fd))) &&         // первое условие *tmp лишнее
+	(res = is_command((*tmp)->data)                                   // записать результат выполнения как макросы START_END и (ROOM), чтобы второй раз в цикле не пересчитывать эти функции
 	|| is_comment((*tmp)->data) || is_room((*tmp)->data)))
 	{
 		//printf("(*tmp)->data %s\n", (*tmp)->data);
-		if (is_command((*tmp)->data) == 1)
-			roomtype = get_type((*tmp)->data);
-		else if (is_room((*tmp)->data) == 1)
+		if (is_command((*tmp)->data) == 1)    / if (res == ROOM)                   // тогда будет if (res == COMMAND)
+			roomtype = get_type((*tmp)->data);                      // функция не выдаст ответ 2 можно в самой функции это поправить
+		else if (is_room((*tmp)->data) == 1)                       // тогда будет if (res == ROOM)
 		{
 			room = create_room((*tmp)->data, roomtype);
 			add_room(lem_in, room);
@@ -105,9 +109,8 @@ void		parse_room(t_lem_in *lem_in, int fd, t_line **input, t_line **tmp)
 		}
 		else
 			roomtype = 2;
-		if ((roomtype == 1 && lem_in->start)
-			|| (roomtype == 3 && lem_in->end))
-			terminate(ERR_ROOM_PARSING);
-		(*tmp) = NULL;
+		if ((roomtype == 1 && lem_in->start) || (roomtype == 3 && lem_in->end))
+		    terminate(ERR_ROOM_PARSING);
+		(*tmp) = NULL;                                          // ощущение что free(tmp)
 	}
 }

@@ -33,7 +33,7 @@ int		is_room(char *str)
 	if (str)
 	{
 		s = ft_strdup(str);
-		q = ft_words(s, ' ');
+		q = ft_words(s, ' ');                       // сразу проверить что слова три
 		if (!(words = ft_strsplit(str, ' ')))
 			terminate(ERR_ROOM_PARSING);
 		free(s);
@@ -50,13 +50,13 @@ int		is_room(char *str)
 	return (res);
 }
 
-int		is_command(char *str)
+int		is_command(char *str)                   // сравнить сразу с командой ft_strncmp(str, "##start", 7)) || ft_strncmp(str, "##end", 5))
 {
 	if (str)
 	{
 		if (ft_strlen(str) >= 2
 			&& !ft_strncmp(str, "##", 2))
-			return (1);
+			return (ROOM);
 	}
 	return (0);
 }

@@ -11,14 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30b215e4-c186-4ee7-a924-0d140b951c90" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/l2.dir/src/0.2.read_line.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/l2.dir/src/0.2.read_line.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/l2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/l2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/l2.dSYM/Contents/Resources/DWARF/l2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/l2.dSYM/Contents/Resources/DWARF/l2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lem-in" beforeDir="false" afterPath="$PROJECT_DIR$/lem-in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/0.2.read_line.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/0.2.read_line.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/0.2.read_line.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/0.2.read_line.o" afterDir="false" />
-    </list>
+    <list default="true" id="30b215e4-c186-4ee7-a924-0d140b951c90" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -198,11 +191,6 @@
         <breakpoint enabled="true" type="CidrWatchpoint">
           <option name="timeStamp" value="11" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/1.main.c</url>
-          <line>41</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
