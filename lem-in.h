@@ -99,6 +99,7 @@ void					check_links(t_lem_in *lem_in);
 void					free_input(t_line **input);	
 void					ft_strsplit_free(char ***strsplit);
 void					print_input(t_line *input, int n);
+int						iswhat(char *str);
 
 # define ERR_ANTS_NUM_PARSING	"ERROR: Number of ants is incorrent"
 # define ERR_ROOM_PARSING		"ERROR: Can\'t parse room"

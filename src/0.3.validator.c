@@ -43,3 +43,15 @@ void		validate_link(t_lem_in *lem_in, t_link *link)
 		compare = compare->next;
 	}
 }
+
+int			iswhat(char *str)
+{
+	if 	(is_command(str) == 1)
+		return (1);
+	if (is_room(str) == 1)
+		return (2);
+	if 	(is_comment(str) == 1)
+		return (3);
+	else
+		return (-1);
+}

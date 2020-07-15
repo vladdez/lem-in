@@ -83,18 +83,6 @@ void		add_room(t_lem_in *lem_in, t_room *room)
 		lem_in->end = room;
 }
 
-int			iswhat(char *str)
-{
-	if 	(is_command(str) == 1)
-		return (1);
-	if (is_room(str) == 1)
-		return (2);
-	if 	(is_comment(str) == 1)
-		return (3);
-	else
-		return (-1);
-}
-
 void		parse_room(t_lem_in *lem_in, int fd, t_line **input, t_line **tmp)
 {
 	int			roomtype;
