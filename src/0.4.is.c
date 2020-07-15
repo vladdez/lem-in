@@ -50,7 +50,7 @@ int		is_room(char *str)
 	return (res);
 }
 
-int		is_command(char *str)                   // сравнить сразу с командой ft_strncmp(str, "##start", 7)) || ft_strncmp(str, "##end", 5))
+int		is_command(char *str)                   //   сравнить сразу с командой ft_strncmp(str, "##start", 7)) || ft_strncmp(str, "##end", 5))
 {
 	if (str)
 	{

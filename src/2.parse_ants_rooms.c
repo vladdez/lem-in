@@ -93,7 +93,7 @@ void		parse_room(t_lem_in *lem_in, int fd, t_line **input, t_line **tmp)
 
 
 	roomtype = 2;
-	while ((*tmp || ((*tmp) = read_line(input, fd))) &&         // первое условие *tmp лишнее
+	while ((*tmp || ((*tmp) = read_line(input, fd))) &&         //   первое условие *tmp лишнее
 	(res = is_command((*tmp)->data)                                   // записать результат выполнения как макросы START_END и (ROOM), чтобы второй раз в цикле не пересчитывать эти функции
 	|| is_comment((*tmp)->data) || is_room((*tmp)->data)))
 	{

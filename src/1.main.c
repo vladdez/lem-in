@@ -76,6 +76,6 @@ void		lem(char **av)
 int			main(int ac, char **av)
 {
 	if (ac <= 2)
-		lem(av);                         // сразу подавать аргумент av[1]
+		lem(av);                         // сразу подавать аргумент av[1] а не все
 	return (0);
 }
