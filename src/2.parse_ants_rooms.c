@@ -83,20 +83,31 @@ void		add_room(t_lem_in *lem_in, t_room *room)
 		lem_in->end = room;
 }
 
+int			iswhat(char *str)
+{
+	if 	(is_command(str) == 1)
+		return (1);
+	if (is_room(str) == 1)
+		return (2);
+	if 	(is_comment(str) == 1)
+		return (3);
+	else
+		return (-1);
+}
+
 void		parse_room(t_lem_in *lem_in, int fd, t_line **input, t_line **tmp)
 {
 	int			roomtype;
 	t_room		*room;
+	int			r;
 
+	r = 1;
 	roomtype = 2;
-	while ((*tmp || ((*tmp) = read_line(input, fd))) &&
-	(is_command((*tmp)->data)
-	|| is_comment((*tmp)->data) || is_room((*tmp)->data)))
+	while (((*tmp) = read_line(input, fd)) && ((r = iswhat((*tmp)->data)) > 0))
 	{
-		//printf("(*tmp)->data %s\n", (*tmp)->data);
-		if (is_command((*tmp)->data) == 1)
+		if (r == 1)
 			roomtype = get_type((*tmp)->data);
-		else if (is_room((*tmp)->data) == 1)
+		else if (r == 2)
 		{
 			room = create_room((*tmp)->data, roomtype);
 			add_room(lem_in, room);
@@ -110,4 +121,6 @@ void		parse_room(t_lem_in *lem_in, int fd, t_line **input, t_line **tmp)
 			terminate(ERR_ROOM_PARSING);
 		(*tmp) = NULL;
 	}
+	if (!(lem_in->end))
+        terminate(ERR_ROOM_PARSING);
 }

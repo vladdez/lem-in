@@ -115,7 +115,6 @@ void					print_input(t_line *input, int n);
 # define ERR_NO_PATH			"ERROR: Input has no path from start to end"
 
 # define ERR_QUEUE_INIT			"ERROR: Can\'t initialize queue"
-
-
+# define ERR_DASH_NAME			"ERROR: We do not parse names with dashes"
 
 #endif

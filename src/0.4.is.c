@@ -79,7 +79,13 @@ int		ft_isint(char *tmp)
 	i = 0;
 	while (tmp[i] != '\0')
 	{
-		if (!(tmp[i] >= '0' && tmp[i] <= '9'))
+		if (i == 0)
+		{
+			if (!((tmp[i] >= '0' && tmp[i] <= '9') ||
+			tmp[i] == '-'))
+				return (0);
+		}
+		else if (!(tmp[i] >= '0' && tmp[i] <= '9'))
 			return (0);
 		i++;
 	}

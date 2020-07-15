@@ -54,6 +54,8 @@ t_link		*create_link(t_lem_in *lem_in, char *str)
 			terminate(ERR_LINK_INIT);
 		if (!(end = ft_strsub(d + 1, 0, ft_strlen(d + 1))))
 			terminate(ERR_LINK_INIT);
+		if (ft_strchr(end, '-') != NULL)
+			terminate(ERR_DASH_NAME);
 		start_room = find_room(lem_in, start);
 		end_room = find_room(lem_in, end);
 		free(start);
