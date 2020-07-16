@@ -61,6 +61,7 @@ typedef struct			s_lem_in
 	t_room				*start;
 	t_room				*end;
 	t_link				*links;
+	t_room              *hash_table;
 	int					bfs_length;
 	/*t_path				*paths;
 	t_location			*locations;
@@ -99,6 +100,7 @@ void					check_links(t_lem_in *lem_in);
 void					free_input(t_line **input);	
 void					ft_strsplit_free(char ***strsplit);
 void					print_input(t_line *input, int n);
+void create_hash_table(t_lem_in *lem_in);
 
 # define ERR_ANTS_NUM_PARSING	"ERROR: Number of ants is incorrent"
 # define ERR_ROOM_PARSING		"ERROR: Can\'t parse room"
@@ -115,7 +117,7 @@ void					print_input(t_line *input, int n);
 # define ERR_NO_PATH			"ERROR: Input has no path from start to end"
 
 # define ERR_QUEUE_INIT			"ERROR: Can\'t initialize queue"
-
+# define ERR_ALLOCATION         "ERROR: the memory is not allocated"
 # define ROOM 2;
 
 

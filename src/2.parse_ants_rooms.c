@@ -98,7 +98,7 @@ void		parse_room(t_lem_in *lem_in, int fd, t_line **input, t_line **tmp)
 	|| is_comment((*tmp)->data) || is_room((*tmp)->data)))
 	{
 		//printf("(*tmp)->data %s\n", (*tmp)->data);
-		if (is_command((*tmp)->data) == 1)    / if (res == ROOM)                   // тогда будет if (res == COMMAND)
+		if (is_command((*tmp)->data) == 1)                 // тогда будет if (res == COMMAND)
 			roomtype = get_type((*tmp)->data);                      // функция не выдаст ответ 2 можно в самой функции это поправить
 		else if (is_room((*tmp)->data) == 1)                       // тогда будет if (res == ROOM)
 		{

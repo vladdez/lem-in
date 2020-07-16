@@ -42,6 +42,7 @@ t_lem_in	*parse(int fd, t_line **input)
 	parse_room(lem_in, fd, input, &tmp);   // можно через адресс передавать
 	if (!lem_in->start || !lem_in->end)    // можно перенести эту проверку в parse_room
 		terminate(ERR_START_END_ROOM);
+	lem_in->hash_table = create_hash_table(lem_in);
 	parse_link(lem_in, fd, input, &tmp);
 	if (!lem_in->links)
 		terminate(ERR_NO_LINKS);

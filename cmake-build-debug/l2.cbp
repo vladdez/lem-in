@@ -375,6 +375,9 @@
 		<Unit filename="/Users/irinadeeva/shool21/lem-in/src/7.print.c">
 			<Option target="l2"/>
 		</Unit>
+		<Unit filename="/Users/irinadeeva/shool21/lem-in/src/implement_hash_table.c">
+			<Option target="l2"/>
+		</Unit>
 		<Unit filename="/Users/irinadeeva/shool21/lem-in/src/let_me_free.c">
 			<Option target="l2"/>
 		</Unit>

@@ -56,7 +56,7 @@ int		is_command(char *str)                   //   сравнить сразу с
 	{
 		if (ft_strlen(str) >= 2
 			&& !ft_strncmp(str, "##", 2))
-			return (ROOM);
+			return (1);
 	}
 	return (0);
 }
