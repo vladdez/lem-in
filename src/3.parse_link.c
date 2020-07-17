@@ -25,18 +25,27 @@ t_link		*init_link(t_room *start, t_room *end)
 	return (link);
 }
 
-t_room		*find_room(t_lem_in *lem_in, char *str)
+t_room		find_room(t_room *hash_table, int room_num ,char *str)
 {
-	t_room	*tmp;
+    int i;
+    struct s_room tmp;
 
-	tmp = lem_in->rooms;
-	while (tmp)
-	{
-		if (!ft_strcmp(tmp->name, str))
-			return (tmp);
-		tmp = tmp->next;
-	}
-	return (NULL);
+    i = sum_ascii(str) % room_num;
+    if (ft_strcmp(hash_table[i].name, str))
+        return (hash_table[i]);
+    else
+    {
+        while (tmp)
+        {
+            tmp = hash_table[i].next;
+            if (ft_strcmp(hash_table[i].name, str))
+                return (tmp);
+            else
+                tmp = tmp->next;
+        }
+        terminate(ERR_LINK_PARSING);
+    }
+
 }
 
 t_link		*create_link(t_lem_in *lem_in, char *str)
@@ -54,7 +63,7 @@ t_link		*create_link(t_lem_in *lem_in, char *str)
 			terminate(ERR_LINK_INIT);
 		if (!(end = ft_strsub(d + 1, 0, ft_strlen(d + 1))))
 			terminate(ERR_LINK_INIT);
-		start_room = find_room(lem_in, start);
+		start_room = find_room(lem_in->hash_table, lem_in->room_num, start);
 		end_room = find_room(lem_in, end);
 		free(start);
 		free(end);
@@ -83,7 +92,7 @@ void		parse_link(t_lem_in *lem_in, int fd, t_line **input, t_line **tmp)
 {
 	t_link	*link;
 
-	while ((*tmp) || ((*tmp) = read_line(input, fd)))
+	while (((*tmp) = read_line(input, fd)))
 	{
 		if (is_command((*tmp)->data) != 1 && is_comment((*tmp)->data) != 1)
 		{
@@ -95,3 +104,4 @@ void		parse_link(t_lem_in *lem_in, int fd, t_line **input, t_line **tmp)
 		(*tmp) = NULL;
 	}
 }
+ // try

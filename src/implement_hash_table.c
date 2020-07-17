@@ -71,16 +71,15 @@ t_room *create_hash_table(t_lem_in *lem_in)
     t_room *tmp2;
     t_room *tmp3;
     t_room *hash_table;
-    int num_room;
     int i;
 
     hash_table = NULL;
-    num_room = count_rooms(lem_in->start);
-    hash_table = init_hash_table(num_room);
+    lem_in->room_num = count_rooms(lem_in->start);
+    hash_table = init_hash_table(lem_in->room_num);
     tmp = lem_in->start;
     while (tmp)
     {
-        i = sum_ascii(tmp->name) % num_room;
+        i = sum_ascii(tmp->name) % lem_in->room_num;
         tmp2 = tmp;                                   // этого колдовства не будет если сразу так сохранять команты после обработки комнаты
         tmp = tmp->next;                             // и этого тоже
         tmp2->next = NULL;                           //

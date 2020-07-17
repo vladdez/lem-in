@@ -29,7 +29,11 @@ typedef struct			s_line
 	struct s_line		*next;
 }						t_line;
 
-
+typedef struct			s_neighbours   // связыный список для соседей
+{
+    char				*toward;  //  куда
+    struct s_neighbours		*next;  // узлы одного уровня
+}						t_neighbours;
 
 typedef struct			s_room
 {
@@ -38,11 +42,13 @@ typedef struct			s_room
 	int					y;
 	int					type;
 	int					bfs_level;
+	t_neighbours        link;
 	int					input_links;
 	int					output_links;
 	/*int					ant_number;*/
 	struct s_room		*next;
 }						t_room;
+
 
 typedef struct			s_link
 {
@@ -57,6 +63,7 @@ typedef struct			s_lem_in
 	int					ants_start;
 	int					ants_end;
 	int					ant_num;
+	int                 room_num;
 	t_room				*rooms;
 	t_room				*start;
 	t_room				*end;
@@ -100,7 +107,8 @@ void					check_links(t_lem_in *lem_in);
 void					free_input(t_line **input);	
 void					ft_strsplit_free(char ***strsplit);
 void					print_input(t_line *input, int n);
-void create_hash_table(t_lem_in *lem_in);
+t_room *create_hash_table(t_lem_in *lem_in);
+int sum_ascii(char *room_name);
 
 # define ERR_ANTS_NUM_PARSING	"ERROR: Number of ants is incorrent"
 # define ERR_ROOM_PARSING		"ERROR: Can\'t parse room"
