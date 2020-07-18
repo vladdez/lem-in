@@ -17,16 +17,13 @@ t_lem_in	*init_lem_in(void)
 	t_lem_in	*lem_in;
 
 	if (!(lem_in = (t_lem_in*)malloc(sizeof(t_lem_in))))
-	{
-		return (NULL);
-	}
+		terminate(ERR_ALLOCATION);
 	lem_in->ants_start = 0;
 	lem_in->ants_end = 0;
 	lem_in->ant_num = 0;
 	lem_in->rooms = NULL;
 	lem_in->start = NULL;
 	lem_in->end = NULL;
-	lem_in->links = NULL;
 	lem_in->bfs_length = 0;
 	return (lem_in);
 }
@@ -38,16 +35,53 @@ t_lem_in	*parse(int fd, t_line **input)
 
 	tmp = NULL;
 	lem_in = init_lem_in();
-	parse_ants(&lem_in, fd);
-	parse_room(lem_in, fd, input, &tmp);
+	parse_ants(lem_in, fd);
+	create_hash_table(lem_in);
+	
+	parse_room(lem_in, fd, input, tmp);
 	if (!lem_in->start || !lem_in->end)
 		terminate(ERR_START_END_ROOM);
-	parse_link(lem_in, fd, input, &tmp);
-	if (!lem_in->links)
-		terminate(ERR_NO_LINKS);
+	parse_link(lem_in, fd, input, tmp);
 	free_input(&tmp);
 	return (lem_in);
 }
+
+void print_list(t_room *t)
+{
+	t_nei	*n;
+
+	while (t)
+	{
+		printf("%s->", t->name);
+		if (t->nei)
+		{
+			n = t->nei;
+			while (n)
+			{
+				printf("(%s->)", n->to);
+				n = n->next;
+			}
+		}
+
+		t = t->next;
+	}
+	printf("\n");
+}
+
+void print_ht(t_room **gr)
+{
+	int i;
+
+	i = 0;
+	while (i < TABLEN)
+	{
+		if (gr[i] == NULL)
+			printf("NULL\n");
+		else
+			print_list(gr[i]);
+		i++;
+	}
+} 
 
 void		lem(char **av)
 {
@@ -63,11 +97,15 @@ void		lem(char **av)
 			fd = 0;
 	}
 	lem_in = parse(fd, &input);
-	bfs(lem_in);
+	print_ht(lem_in->hash_table);
+	/*bfs(lem_in);
 	if (lem_in->end->bfs_level == -1)
 		terminate(ERR_NO_PATH);
-	check_links(lem_in);
+	check_links(lem_in);*/
 	print_input(input, lem_in->ant_num);
+	/*loo_rooms(&lem_in->rooms);
+	loo_links(&lem_in->links);*/
+
 	free_input(&input);
 	free_lem_in(&lem_in);
 	

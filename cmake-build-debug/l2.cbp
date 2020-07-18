@@ -357,6 +357,9 @@
 		<Unit filename="/Users/kysgramo/l2/src/0.4.is.c">
 			<Option target="l2"/>
 		</Unit>
+		<Unit filename="/Users/kysgramo/l2/src/0.5.implement_hash_table.c">
+			<Option target="l2"/>
+		</Unit>
 		<Unit filename="/Users/kysgramo/l2/src/1.main.c">
 			<Option target="l2"/>
 		</Unit>
@@ -366,13 +369,10 @@
 		<Unit filename="/Users/kysgramo/l2/src/3.parse_link.c">
 			<Option target="l2"/>
 		</Unit>
-		<Unit filename="/Users/kysgramo/l2/src/4.bfs.c">
-			<Option target="l2"/>
-		</Unit>
-		<Unit filename="/Users/kysgramo/l2/src/5.cut_links.c">
-			<Option target="l2"/>
-		</Unit>
 		<Unit filename="/Users/kysgramo/l2/src/7.print.c">
+			<Option target="l2"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/l2/src/8.create_paths.c">
 			<Option target="l2"/>
 		</Unit>
 		<Unit filename="/Users/kysgramo/l2/src/let_me_free.c">

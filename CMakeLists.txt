@@ -98,11 +98,11 @@ add_executable(l2
         src/0.2.read_line.c
         src/0.3.validator.c
         src/0.4.is.c
+        src/0.5.implement_hash_table.c
         src/1.main.c
         src/2.parse_ants_rooms.c
         src/3.parse_link.c
-        src/4.bfs.c
-        src/5.cut_links.c
         src/7.print.c
+        src/8.create_paths.c
         src/let_me_free.c
         lem-in.h)

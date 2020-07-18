@@ -12,42 +12,58 @@
 
 #include "lem-in.h"
 
-t_link		*init_link(t_room *start, t_room *end)
+void		create_nei(t_room *room, char *to)
 {
-	t_link	*link;
+	t_nei	*tmp;
+	t_nei	*mem;
 
-	if (!(link = (t_link *)ft_memalloc(sizeof(t_link))))
-		terminate(ERR_LINK_INIT);
-	link->start = start;
-	link->end = end;
-	link->next = NULL;
-	link->prev = NULL;
-	return (link);
+    if (!(mem = (t_nei *)ft_memalloc(sizeof(t_nei))))
+        terminate(ERR_LINK_INIT);
+	mem->to = ft_strdup(to);
+	mem->next = NULL;
+	if (room->nei == NULL)
+        room->nei = mem;
+	else
+    {
+	    tmp = mem;
+		tmp->next = room->nei;
+        room->nei = tmp;
+    }
 }
 
-t_room		*find_room(t_lem_in *lem_in, char *str)
+void		find_room(t_room *room, char *from, char *to)
 {
-	t_room	*tmp;
+	int i;
+	t_room *tmp;
 
-	tmp = lem_in->rooms;
-	while (tmp)
+	i = 0;
+	if (!ft_strcmp(room->name, from))
+		 create_nei(room, to);
+	else
 	{
-		if (!ft_strcmp(tmp->name, str))
-			return (tmp);
-		tmp = tmp->next;
+		tmp = room;
+		while (tmp)
+		{
+			if (!ft_strcmp(room->name, from))
+			{
+                create_nei(tmp, to);
+                break;
+			}
+			else
+				tmp = tmp->next;
+		}
 	}
-	return (NULL);
 }
 
-t_link		*create_link(t_lem_in *lem_in, char *str)
+void		use_link(t_lem_in *lem_in, char *str)
 {
 	char	*start;
 	char	*end;
-	t_room	*start_room;
-	t_room	*end_room;
+	int		i;
 	char	*d;
 
 	d = str;
+	i = -1;
 	if ((d = ft_strchr(d, '-')))
 	{
 		if (!(start = ft_strsub(str, 0, d - str)))
@@ -56,44 +72,22 @@ t_link		*create_link(t_lem_in *lem_in, char *str)
 			terminate(ERR_LINK_INIT);
 		if (ft_strchr(end, '-') != NULL)
 			terminate(ERR_DASH_NAME);
-		start_room = find_room(lem_in, start);
-		end_room = find_room(lem_in, end);
+		i = hash_fun(start);
+		find_room(lem_in->hash_table[i], start, end);
 		free(start);
 		free(end);
-		if (start_room && end_room)
-			return (init_link(start_room, end_room));
 	}
-	return (NULL);
 }
 
-void		add_link(t_lem_in *lem_in, t_link *link)
+void		parse_link(t_lem_in *lem_in, int fd, t_line **input, t_line *tmp)
 {
-	t_link	*tmp;
-
-	tmp = lem_in->links;
-	if (tmp)
+	while (tmp|| (tmp = read_line(input, fd)))
 	{
-		while (tmp->next)
-			tmp = tmp->next;
-		tmp->next = link;
-	}
-	else
-		lem_in->links = link;
-}
-
-void		parse_link(t_lem_in *lem_in, int fd, t_line **input, t_line **tmp)
-{
-	t_link	*link;
-
-	while ((*tmp) || ((*tmp) = read_line(input, fd)))
-	{
-		if (is_command((*tmp)->data) != 1 && is_comment((*tmp)->data) != 1)
+		if (is_command(tmp->data) != 1 && is_comment(tmp->data) != 1)
 		{
-			if (!(link = create_link(lem_in, (*tmp)->data)))
-				terminate(ERR_LINK_PARSING);
-			add_link(lem_in, link);
-			validate_link(lem_in, link);
+			use_link(lem_in, tmp->data);
+			//validate_link(lem_in, link);
 		}
-		(*tmp) = NULL;
+		tmp = NULL;
 	}
 }

@@ -26,7 +26,7 @@ void		validate_room(t_lem_in *lem_in, t_room *room)
 		compare = compare->next;
 	}
 }
-
+/*
 void		validate_link(t_lem_in *lem_in, t_link *link)
 {
 	t_link *compare;
@@ -43,7 +43,7 @@ void		validate_link(t_lem_in *lem_in, t_link *link)
 		compare = compare->next;
 	}
 }
-
+*/
 int			iswhat(char *str)
 {
 	if 	(is_command(str) == 1)

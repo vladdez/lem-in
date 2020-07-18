@@ -12,16 +12,17 @@
 
 #include "lem-in.h"
 
-void		parse_ants(t_lem_in **lem_in, int fd)
+void		parse_ants(t_lem_in *lem_in, int fd)
 {
 	char		*line;
 
+	line = NULL;
 	if ((get_next_line(fd, &line)))
 	{
 		if (ft_isint(line) == 1)
 		{
-			(*lem_in)->ant_num = ft_atoi(line);
-			if ((*lem_in)->ant_num <= 0)
+			lem_in->ant_num = ft_atoi(line);
+			if (lem_in->ant_num <= 0)
 				terminate(ERR_ANTS_NUM_PARSING);
 		}
 		else
@@ -60,46 +61,47 @@ t_room		*create_room(char *tmp, int roomtype)
 	room->bfs_level = -1;
 	room->output_links = 0;
 	room->input_links = 0;
+	room->nei = NULL;
 	room->next = NULL;
 	ft_strsplit_free(&words);
 	return (room);
 }
 
-void		add_room(t_lem_in *lem_in, t_room *room)
+void		check_room(t_lem_in *lem_in, t_room *room)
 {
-	t_room *tmp;
-
-	if ((tmp = lem_in->rooms))
-	{
-		while (tmp->next)
-			tmp = tmp->next;
-		tmp->next = room;
-	}
-	else
-		lem_in->rooms = room;
 	if (room->type == 1)
 		lem_in->start = room;
 	else if (room->type == 3)
 		lem_in->end = room;
 }
 
-void		parse_room(t_lem_in *lem_in, int fd, t_line **input, t_line **tmp)
+void		parse_room(t_lem_in *lem_in, int fd, t_line **input, t_line *tmp)
 {
 	int			roomtype;
-	t_room		*room;
+	t_room		*tmpr;
 	int			r;
+	int			i;
 
 	r = 1;
+	i = -1;
 	roomtype = 2;
-	while (((*tmp) = read_line(input, fd)) && ((r = iswhat((*tmp)->data)) > 0))
+	while ((tmp = read_line(input, fd)) && ((r = iswhat(tmp->data)) > 0))
 	{
 		if (r == 1)
-			roomtype = get_type((*tmp)->data);
+			roomtype = get_type(tmp->data);
 		else if (r == 2)
 		{
-			room = create_room((*tmp)->data, roomtype);
-			add_room(lem_in, room);
-			validate_room(lem_in, room);
+			i = hash_fun_room(tmp->data);
+			if (lem_in->hash_table[i] == NULL)
+				lem_in->hash_table[i] = create_room(tmp->data, roomtype);
+			else
+			{
+				tmpr = create_room(tmp->data, roomtype);
+				tmpr->next = lem_in->hash_table[i];
+				lem_in->hash_table[i] = tmpr;
+			}
+			check_room(lem_in, lem_in->hash_table[i]);
+			validate_room(lem_in, lem_in->hash_table[i]);
 			roomtype = 2;
 		}
 		else
@@ -107,7 +109,7 @@ void		parse_room(t_lem_in *lem_in, int fd, t_line **input, t_line **tmp)
 		if ((roomtype == 1 && lem_in->start)
 			|| (roomtype == 3 && lem_in->end))
 			terminate(ERR_ROOM_PARSING);
-		(*tmp) = NULL;
+		tmp = NULL;
 	}
 	if (!(lem_in->end))
         terminate(ERR_ROOM_PARSING);

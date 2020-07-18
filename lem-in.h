@@ -29,6 +29,11 @@ typedef struct			s_line
 	struct s_line		*next;
 }						t_line;
 
+typedef struct			s_nei   // связыный список для соседей
+{
+    char				*to;  //  куда
+    struct s_nei		*next;  // узлы одного уровня
+}						t_nei;
 
 
 typedef struct			s_room
@@ -41,26 +46,21 @@ typedef struct			s_room
 	int					input_links;
 	int					output_links;
 	/*int					ant_number;*/
+	t_nei				*nei;
 	struct s_room		*next;
 }						t_room;
 
-typedef struct			s_link
-{
-	t_room				*start;
-	t_room				*end;
-	struct s_link		*next;
-	struct s_link		*prev;
-}						t_link;
 
 typedef struct			s_lem_in
 {
 	int					ants_start;
 	int					ants_end;
 	int					ant_num;
+	int                 room_num;
 	t_room				*rooms;
 	t_room				*start;
 	t_room				*end;
-	t_link				*links;
+	t_room              **hash_table;
 	int					bfs_length;
 	/*t_path				*paths;
 	t_location			*locations;
@@ -78,9 +78,9 @@ typedef struct			s_queue
 int						main(int ac, char **av);
 void					*terminate(char *er);
 
-void					parse_ants(t_lem_in **lem_in, int fd);
-void					parse_room(t_lem_in *lem_in, int fd, t_line **input, t_line **tmp);
-void					parse_link(t_lem_in *lem_in, int fd, t_line **input, t_line **tmp);
+void					parse_ants(t_lem_in *lem_in, int fd);
+void					parse_room(t_lem_in *lem_in, int fd, t_line **input, t_line *tmp);
+void					parse_link(t_lem_in *lem_in, int fd, t_line **input, t_line *tmp);
 
 
 
@@ -92,7 +92,7 @@ int						is_command(char *str);
 
 t_line					*read_line(t_line **input, int fd);
 void					validate_room(t_lem_in *lem_in, t_room *room);
-void					validate_link(t_lem_in *lem_in, t_link *link);
+//void					validate_link(t_lem_in *lem_in, t_link *link);
 void					bfs(t_lem_in *lem_in);
 void					free_lem_in(t_lem_in **lem_in);
 void					check_links(t_lem_in *lem_in);
@@ -100,6 +100,9 @@ void					free_input(t_line **input);
 void					ft_strsplit_free(char ***strsplit);
 void					print_input(t_line *input, int n);
 int						iswhat(char *str);
+void					create_hash_table(t_lem_in *lem_in);
+int						hash_fun(char *room_name);
+int						hash_fun_room(char *str);
 
 # define ERR_ANTS_NUM_PARSING	"ERROR: Number of ants is incorrent"
 # define ERR_ROOM_PARSING		"ERROR: Can\'t parse room"
@@ -117,5 +120,7 @@ int						iswhat(char *str);
 
 # define ERR_QUEUE_INIT			"ERROR: Can\'t initialize queue"
 # define ERR_DASH_NAME			"ERROR: We do not parse names with dashes"
+# define ERR_ALLOCATION			"ERROR: Memory allocation error"
 
+# define TABLEN 100	
 #endif

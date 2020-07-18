@@ -26,7 +26,7 @@ void	ft_strsplit_free(char ***strsplit)
 	}
 }
 
-void    free_rooms(t_room **sentenced)
+void	free_rooms(t_room **sentenced)
 {
 	t_room *kill;
 
@@ -40,25 +40,50 @@ void    free_rooms(t_room **sentenced)
 		}
 }
 
-void    free_links(t_link **sentenced)
+void	free_nei(t_nei **sentenced)
 {
-	t_link *kill;
+	t_nei *kill;
 
 	if (sentenced)
 		while ((*sentenced))
 		{
 			kill = (*sentenced);
 			(*sentenced) = (*sentenced)->next;
+			free(kill->to);
 			free(kill);
 		}
 }
 
-void    free_lem_in(t_lem_in **lem_in)
+void	free_ht(t_room **ht)
+{
+	int i;
+	t_room *kill;
+
+	i = 0;
+	while (i < TABLEN)
+	{
+		if (ht[i] != NULL)
+		{
+			while (ht[i])
+			{
+				kill = ht[i];
+				ht[i] = ht[i]->next;
+				free(kill->name);
+				free_nei(&kill->nei);
+				free(kill);
+			}
+		}
+		i++;
+	}
+	free(ht);
+} 
+
+void	free_lem_in(t_lem_in **lem_in)
 {
 	if (lem_in && *lem_in)
 	{
 		free_rooms(&(*lem_in)->rooms);
-		free_links(&(*lem_in)->links);
+		free_ht((*lem_in)->hash_table);
 		free((*lem_in));
 		(*lem_in) = NULL;
 	}
