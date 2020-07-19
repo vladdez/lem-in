@@ -21,7 +21,7 @@ LEMIN_SRC_DIR = src/
 HEADER = lem-in.h
 
 CLEMIN =  0.1.errors.c 0.2.read_line.c 0.3.validator.c 0.4.is.c 0.5.implement_hash_table.c \
-1.main.c 2.parse_ants_rooms.c  3.parse_link.c \
+1.main.c 2.parse_ants_rooms.c  3.parse_link.c 4.bfs.c \
  7.print.c let_me_free.c 
 
 LEMIN_SRC = $(addprefix $(LEMIN_SRC_DIR),$(CLEMIN))

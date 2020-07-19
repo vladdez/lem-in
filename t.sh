@@ -27,3 +27,69 @@ valgrind --leak-check=full ./lem-in < maps/valid/vs/one_way/2.map
 valgrind --leak-check=full ./lem-in < maps/valid/vs/one_way/3.map
 valgrind --leak-check=full ./lem-in < maps/valid/vs/one_way/4.map
 valgrind --leak-check=full ./lem-in < maps/valid/vs/one_way/5.map
+
+t_queue	*create_q_elem(t_room *room)
+{
+	t_queue *q;
+
+	if (!(q = (t_queue *)ft_memalloc(sizeof(t_queue *))))
+		terminate(ERR_QUEUE_INIT);
+	q->room = room;
+	q->next = NULL;
+	return (q);
+}
+
+void	add_q_elem(t_queue **q, t_queue	*elem)
+{
+	t_queue	*curr;
+
+	if (q && *q)
+	{
+		curr = *q;
+		while (curr->next)
+			curr = curr->next;
+		curr->next = elem;
+	}
+	else if (elem)
+		*q = elem;
+}
+
+void	enqueue(t_lem_in *lem_in, t_queue **q, t_room *room)
+{
+	t_link *curr;
+
+	curr = lem_in->links;
+	while (curr)
+	{
+		if (curr->start == room)
+		{
+			if (curr->end->bfs_level == -1)
+			{
+				curr->end->bfs_level = room->bfs_level + 1;
+				add_q_elem(q, create_q_elem(curr->end));
+			}
+		}
+		else if (curr->end == room)
+		{
+			if (curr->end->bfs_level == -1)
+			{
+				curr->end->bfs_level = room->bfs_level + 1;
+				add_q_elem(q, create_q_elem(curr->start));
+			}
+		}
+		curr = curr->next;
+	}
+}
+
+t_queue	*first_elem(t_queue **q)
+{
+	t_queue	*curr;
+
+	curr = NULL;
+	if (q && *q)
+	{
+		curr = *q;
+		*q = (*q)->next;
+	}
+	return (curr);
+}

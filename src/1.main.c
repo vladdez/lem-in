@@ -38,10 +38,10 @@ t_lem_in	*parse(int fd, t_line **input)
 	parse_ants(lem_in, fd);
 	create_hash_table(lem_in);
 	
-	parse_room(lem_in, fd, input, tmp);
+	parse_room(lem_in, fd, input, &tmp);
 	if (!lem_in->start || !lem_in->end)
 		terminate(ERR_START_END_ROOM);
-	parse_link(lem_in, fd, input, tmp);
+	parse_link(lem_in, fd, input, &tmp);
 	free_input(&tmp);
 	return (lem_in);
 }
@@ -52,7 +52,7 @@ void print_list(t_room *t)
 
 	while (t)
 	{
-		printf("%s->", t->name);
+		printf("%s[%d]->", t->name, t->bfs_level);
 		if (t->nei)
 		{
 			n = t->nei;
@@ -97,11 +97,11 @@ void		lem(char **av)
 			fd = 0;
 	}
 	lem_in = parse(fd, &input);
+	bfs(lem_in);
 	print_ht(lem_in->hash_table);
-	/*bfs(lem_in);
 	if (lem_in->end->bfs_level == -1)
 		terminate(ERR_NO_PATH);
-	check_links(lem_in);*/
+	/*check_links(lem_in);*/
 	print_input(input, lem_in->ant_num);
 	/*loo_rooms(&lem_in->rooms);
 	loo_links(&lem_in->links);*/

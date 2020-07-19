@@ -29,8 +29,9 @@ typedef struct			s_line
 	struct s_line		*next;
 }						t_line;
 
-typedef struct			s_nei   // связыный список для соседей
+typedef struct			s_nei   // связный список для соседей
 {
+	//int					b; 
     char				*to;  //  куда
     struct s_nei		*next;  // узлы одного уровня
 }						t_nei;
@@ -70,7 +71,7 @@ typedef struct			s_lem_in
 
 typedef struct			s_queue
 {
-	t_room				*room;
+	char				*name;
 	struct s_queue		*next;
 }						t_queue;
 
@@ -79,8 +80,8 @@ int						main(int ac, char **av);
 void					*terminate(char *er);
 
 void					parse_ants(t_lem_in *lem_in, int fd);
-void					parse_room(t_lem_in *lem_in, int fd, t_line **input, t_line *tmp);
-void					parse_link(t_lem_in *lem_in, int fd, t_line **input, t_line *tmp);
+void					parse_room(t_lem_in *lem_in, int fd, t_line **input, t_line **tmp);
+void					parse_link(t_lem_in *lem_in, int fd, t_line **input, t_line **tmp);
 
 
 
@@ -103,7 +104,7 @@ int						iswhat(char *str);
 void					create_hash_table(t_lem_in *lem_in);
 int						hash_fun(char *room_name);
 int						hash_fun_room(char *str);
-
+void					free_nei(t_nei **sentenced);
 # define ERR_ANTS_NUM_PARSING	"ERROR: Number of ants is incorrent"
 # define ERR_ROOM_PARSING		"ERROR: Can\'t parse room"
 # define ERR_ROOM_INIT			"ERROR: Can\'t initialize room"

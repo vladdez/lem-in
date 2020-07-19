@@ -102,6 +102,7 @@ add_executable(l2
         src/1.main.c
         src/2.parse_ants_rooms.c
         src/3.parse_link.c
+        src/4.bfs.c
         src/7.print.c
         src/8.create_paths.c
         src/let_me_free.c

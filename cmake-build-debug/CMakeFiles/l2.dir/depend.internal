@@ -302,6 +302,11 @@ CMakeFiles/l2.dir/src/3.parse_link.c.o
  ../libft/libft/libft.h
  ../libft/printf/ft_printf.h
  /Users/kysgramo/l2/src/3.parse_link.c
+CMakeFiles/l2.dir/src/4.bfs.c.o
+ ../lem-in.h
+ ../libft/libft/libft.h
+ ../libft/printf/ft_printf.h
+ /Users/kysgramo/l2/src/4.bfs.c
 CMakeFiles/l2.dir/src/7.print.c.o
  ../lem-in.h
  ../libft/libft/libft.h

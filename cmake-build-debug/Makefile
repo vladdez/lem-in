@@ -2607,6 +2607,33 @@ src/3.parse_link.c.s:
 	$(MAKE) -f CMakeFiles/l2.dir/build.make CMakeFiles/l2.dir/src/3.parse_link.c.s
 .PHONY : src/3.parse_link.c.s
 
+src/4.bfs.o: src/4.bfs.c.o
+
+.PHONY : src/4.bfs.o
+
+# target to build an object file
+src/4.bfs.c.o:
+	$(MAKE) -f CMakeFiles/l2.dir/build.make CMakeFiles/l2.dir/src/4.bfs.c.o
+.PHONY : src/4.bfs.c.o
+
+src/4.bfs.i: src/4.bfs.c.i
+
+.PHONY : src/4.bfs.i
+
+# target to preprocess a source file
+src/4.bfs.c.i:
+	$(MAKE) -f CMakeFiles/l2.dir/build.make CMakeFiles/l2.dir/src/4.bfs.c.i
+.PHONY : src/4.bfs.c.i
+
+src/4.bfs.s: src/4.bfs.c.s
+
+.PHONY : src/4.bfs.s
+
+# target to generate assembly for a file
+src/4.bfs.c.s:
+	$(MAKE) -f CMakeFiles/l2.dir/build.make CMakeFiles/l2.dir/src/4.bfs.c.s
+.PHONY : src/4.bfs.c.s
+
 src/7.print.o: src/7.print.c.o
 
 .PHONY : src/7.print.o
@@ -2973,6 +3000,9 @@ help:
 	@echo "... src/3.parse_link.o"
 	@echo "... src/3.parse_link.i"
 	@echo "... src/3.parse_link.s"
+	@echo "... src/4.bfs.o"
+	@echo "... src/4.bfs.i"
+	@echo "... src/4.bfs.s"
 	@echo "... src/7.print.o"
 	@echo "... src/7.print.i"
 	@echo "... src/7.print.s"

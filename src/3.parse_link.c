@@ -21,6 +21,7 @@ void		create_nei(t_room *room, char *to)
         terminate(ERR_LINK_INIT);
 	mem->to = ft_strdup(to);
 	mem->next = NULL;
+	//mem->b = -1;
 	if (room->nei == NULL)
         room->nei = mem;
 	else
@@ -31,7 +32,7 @@ void		create_nei(t_room *room, char *to)
     }
 }
 
-void		find_room(t_room *room, char *from, char *to)
+void		find_room_nei(t_room *room, char *from, char *to)
 {
 	int i;
 	t_room *tmp;
@@ -73,21 +74,21 @@ void		use_link(t_lem_in *lem_in, char *str)
 		if (ft_strchr(end, '-') != NULL)
 			terminate(ERR_DASH_NAME);
 		i = hash_fun(start);
-		find_room(lem_in->hash_table[i], start, end);
+		find_room_nei(lem_in->hash_table[i], start, end);
 		free(start);
 		free(end);
 	}
 }
 
-void		parse_link(t_lem_in *lem_in, int fd, t_line **input, t_line *tmp)
+void		parse_link(t_lem_in *lem_in, int fd, t_line **input, t_line **tmp)
 {
-	while (tmp|| (tmp = read_line(input, fd)))
+	while ((*tmp)|| ((*tmp) = read_line(input, fd)))
 	{
-		if (is_command(tmp->data) != 1 && is_comment(tmp->data) != 1)
+		if (is_command((*tmp)->data) != 1 && is_comment((*tmp)->data) != 1)
 		{
-			use_link(lem_in, tmp->data);
+			use_link(lem_in, (*tmp)->data);
 			//validate_link(lem_in, link);
 		}
-		tmp = NULL;
+		(*tmp) = NULL;
 	}
 }
