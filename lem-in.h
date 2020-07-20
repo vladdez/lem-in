@@ -31,7 +31,7 @@ typedef struct			s_line
 
 typedef struct			s_nei   // связный список для соседей
 {
-	//int					b; 
+	int					b; 
     char				*to;  //  куда
     struct s_nei		*next;  // узлы одного уровня
 }						t_nei;
@@ -63,6 +63,7 @@ typedef struct			s_lem_in
 	t_room				*end;
 	t_room              **hash_table;
 	int					bfs_length;
+	int					visited;
 	/*t_path				*paths;
 	t_location			*locations;
 	t_turn				*turns;

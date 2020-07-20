@@ -59,6 +59,7 @@ t_room		*create_room(char *tmp, int roomtype)
 	room->y = ft_atoi(words[2]);
 	room->type = roomtype;
 	room->bfs_level = -1;
+	//room->visited = 0;
 	room->output_links = 0;
 	room->input_links = 0;
 	room->nei = NULL;

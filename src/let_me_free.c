@@ -50,7 +50,10 @@ void	free_nei(t_nei **sentenced)
 			kill = (*sentenced);
 			(*sentenced) = (*sentenced)->next;
 			free(kill->to);
+			kill->to = NULL;
+			kill->b = -1;
 			free(kill);
+			kill = NULL;
 		}
 }
 

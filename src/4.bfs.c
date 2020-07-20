@@ -20,32 +20,29 @@ t_nei	*create_q_elem(t_room *room)
 
 	curr = NULL;
 	nei = NULL;
-	if (!(q = (t_nei *)ft_memalloc(sizeof(t_nei *))))
+	if (!(q = (t_nei *)ft_memalloc(sizeof(t_nei))))
 		terminate(ERR_QUEUE_INIT);
 	q->to = ft_strdup(room->name);
 	q->next = NULL;
-	//q->b = 0;
+	q->b = 0;
 	curr = q;
 	nei = room->nei;
-	//printf("-%s\n", nei->to);
 	while (nei)
 	{
-		if (!(curr->next = (t_nei *)ft_memalloc(sizeof(t_nei *))))
+		if (!(curr->next = (t_nei *)ft_memalloc(sizeof(t_nei))))
 			terminate(ERR_QUEUE_INIT);
-
 		curr = curr->next;
 		curr->to = ft_strdup(nei->to);
-		//curr->b = 0;
+		curr->b = 1;
 		curr->next = NULL;
-		//printf("+%s\n", curr->to);
-		//printf("+%s\n", nei->to);
+		printf("+%s\n", nei->to);
 		nei = nei->next;
 		
 	}
 	return (q);
 }
 
-t_nei	*add_nei(t_room *room)
+t_nei	*add_nei(t_room *room, int i)
 {
 	t_nei	*q;
 	t_nei	*curr;
@@ -55,20 +52,19 @@ t_nei	*add_nei(t_room *room)
 	q = NULL;
 	if (nei)
 	{
-		if (!(q = (t_nei *)ft_memalloc(sizeof(t_nei *))))
+		if (!(q = (t_nei *)ft_memalloc(sizeof(t_nei))))
 			terminate(ERR_QUEUE_INIT);
 		q->to = ft_strdup(nei->to);
 		q->next = NULL;
-		//q->b = 0;
+		q->b = i;
 		curr = q;
 		while (nei)
 		{
-			if (!(curr->next = (t_nei *)ft_memalloc(sizeof(t_nei *))))
+			if (!(curr->next = (t_nei *)ft_memalloc(sizeof(t_nei))))
 				terminate(ERR_QUEUE_INIT);
 			curr = curr->next;
 			curr->to = ft_strdup(nei->to);
-			//curr->b = 0;
-			//printf("+%s\n", curr->to);
+			curr->b = i;
 			curr->next = NULL;
 			nei = nei->next;
 		}
@@ -120,15 +116,17 @@ void	bfs(t_lem_in *lem_in)
 		while (tail->next != NULL)
 			tail = tail->next;
 		room = find_room(lem_in->hash_table[i], curr->to);
-		len = room->bfs_level;
-		tail->next = add_nei(room);
+		
 		if ((ft_strcmp(curr->to, lem_in->end->name)))
 		{
-			room->bfs_level = len;
-			lem_in->bfs_length = len;          
+			room->bfs_level = curr->b;
+			tail->next = add_nei(room, room->bfs_level + 1);
 		}
 		else
+		{
+			lem_in->bfs_length = curr->b;
 			lem_in->end->bfs_level = 2147483647;
+		}
 	}
 	free_nei(&q);
 }
