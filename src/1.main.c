@@ -23,6 +23,7 @@ t_lem_in	*init_lem_in(void)
 	lem_in->ant_num = 0;
 	lem_in->rooms = NULL;
 	lem_in->start = NULL;
+	lem_in->links = NULL;
 	lem_in->end = NULL;
 	lem_in->bfs_length = 0;
 	return (lem_in);
@@ -98,9 +99,10 @@ void		lem(char **av)
 	}
 	lem_in = parse(fd, &input);
 	bfs(lem_in);
-	print_ht(lem_in->hash_table);
 	if (lem_in->end->bfs_level == -1)
 		terminate(ERR_NO_PATH);
+	align_links(lem_in);
+	print_ht(lem_in->hash_table);
 	/*check_links(lem_in);*/
 	print_input(input, lem_in->ant_num);
 	/*loo_rooms(&lem_in->rooms);

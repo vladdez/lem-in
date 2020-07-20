@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "lem-in.h"
-
+/*
 void	delete_link(t_lem_in *lem_in, t_link *link)
 {
 	t_link	*prev;
@@ -50,4 +50,26 @@ void	check_links(t_lem_in *lem_in)
 		if (tmp->start->bfs_level == tmp->end->bfs_level)
 			delete_link(lem_in, tmp);
 	}
-} 
+} */
+
+static void	swap_rooms(t_room **start, t_room **end)
+{
+	t_room	*tmp;
+
+	tmp = *start;
+	*start = *end;
+	*end = tmp;
+}
+
+void		align_links(t_lem_in *lem_in)
+{
+	t_link	*current;
+
+	current = lem_in->links;
+	while (current)
+	{
+		if (current->start->bfs_level > current->end->bfs_level)
+			swap_rooms(&current->start, &current->end);
+		current = current->next;
+	}
+}

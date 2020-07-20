@@ -12,6 +12,62 @@
 
 #include "lem-in.h"
 
+static void		add_link(t_lem_in *lem_in, t_link *link)
+{
+	t_link	*current;
+
+	current = lem_in->links;
+	if (current)
+	{
+		while (current->next)
+			current = current->next;
+		current->next = link;
+	}
+	else
+		lem_in->links = link;
+}
+
+static t_link	*init_link(t_room *start, t_room *end)
+{
+	t_link	*link;
+
+	if (!(link = (t_link *)ft_memalloc(sizeof(t_link))))
+		terminate(ERR_LINK_INIT);
+	link->start = start;
+	link->end = end;
+	link->next = NULL;
+	link->prev = NULL;
+	return (link);
+}
+
+static t_link	*create_link(t_lem_in *lem_in, char *str)
+{
+	char	*dash;
+	char	*start_name;
+	char	*end_name;
+	t_room	*start_room;
+	t_room	*end_room;
+	int		i;
+
+	dash = str;
+	while ((dash = ft_strchr(dash + 1, '-')))
+	{
+		if (!(start_name = ft_strsub(str, 0, dash - str)))
+			terminate(ERR_LINK_INIT);
+		if (!(end_name = ft_strsub(dash + 1, 0, ft_strlen(dash + 1))))
+			terminate(ERR_LINK_INIT);
+		i = hash_fun(start_name);
+		start_room = find_room(lem_in->hash_table[i], start_name);
+		i = hash_fun(end_name);
+		end_room = find_room(lem_in->hash_table[i], end_name);
+		free(start_name);
+		free(end_name);
+		if (start_room && end_room)
+			return (init_link(start_room, end_room));
+	}
+	return (NULL);
+}
+
 void		create_nei(t_room *room, char *to)
 {
 	t_nei	*tmp;
@@ -21,7 +77,6 @@ void		create_nei(t_room *room, char *to)
         terminate(ERR_LINK_INIT);
 	mem->to = ft_strdup(to);
 	mem->next = NULL;
-	//mem->b = -1;
 	if (room->nei == NULL)
         room->nei = mem;
 	else
@@ -36,7 +91,9 @@ void		find_room_nei(t_room *room, char *from, char *to)
 {
 	int i;
 	t_room *tmp;
-
+	
+	if (room == NULL)
+		terminate(ERR_NO_ROOM);
 	i = 0;
 	if (!ft_strcmp(room->name, from))
 		 create_nei(room, to);
@@ -82,12 +139,17 @@ void		use_link(t_lem_in *lem_in, char *str)
 
 void		parse_link(t_lem_in *lem_in, int fd, t_line **input, t_line **tmp)
 {
+	t_link	*link;
+
 	while ((*tmp)|| ((*tmp) = read_line(input, fd)))
 	{
 		if (is_command((*tmp)->data) != 1 && is_comment((*tmp)->data) != 1)
 		{
 			use_link(lem_in, (*tmp)->data);
-			//validate_link(lem_in, link);
+			if (!(link = create_link(lem_in, (*tmp)->data)))
+				terminate(ERR_LINK_PARSING);
+			add_link(lem_in, link);
+			validate_link(lem_in, link);
 		}
 		(*tmp) = NULL;
 	}

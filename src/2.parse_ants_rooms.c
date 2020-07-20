@@ -59,7 +59,6 @@ t_room		*create_room(char *tmp, int roomtype)
 	room->y = ft_atoi(words[2]);
 	room->type = roomtype;
 	room->bfs_level = -1;
-	//room->visited = 0;
 	room->output_links = 0;
 	room->input_links = 0;
 	room->nei = NULL;
@@ -102,7 +101,7 @@ void		parse_room(t_lem_in *lem_in, int fd, t_line **input, t_line **tmp)
 				lem_in->hash_table[i] = tmpr;
 			}
 			check_room(lem_in, lem_in->hash_table[i]);
-			validate_room(lem_in, lem_in->hash_table[i]);
+			validate_room(lem_in->hash_table[i]);
 			roomtype = 2;
 		}
 		else

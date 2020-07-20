@@ -35,9 +35,7 @@ t_nei	*create_q_elem(t_room *room)
 		curr->to = ft_strdup(nei->to);
 		curr->b = 1;
 		curr->next = NULL;
-		printf("+%s\n", nei->to);
 		nei = nei->next;
-		
 	}
 	return (q);
 }
@@ -78,6 +76,8 @@ t_room		*find_room(t_room *room, char *name)
 	t_room *tmp;
 
 	i = 0;
+	if (room == NULL)
+		terminate(ERR_NO_ROOM);
 	if (!ft_strcmp(room->name, name))
 		 return(room);
 	else
@@ -119,8 +119,11 @@ void	bfs(t_lem_in *lem_in)
 		
 		if ((ft_strcmp(curr->to, lem_in->end->name)))
 		{
-			room->bfs_level = curr->b;
-			tail->next = add_nei(room, room->bfs_level + 1);
+			if (room->bfs_level == -1)
+			{
+				room->bfs_level = curr->b;
+				tail->next = add_nei(room, room->bfs_level + 1);
+			}
 		}
 		else
 		{

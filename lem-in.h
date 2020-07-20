@@ -51,6 +51,13 @@ typedef struct			s_room
 	struct s_room		*next;
 }						t_room;
 
+typedef struct			s_link
+{
+	t_room				*start;
+	t_room				*end;
+	struct s_link		*next;
+	struct s_link		*prev;
+}						t_link;
 
 typedef struct			s_lem_in
 {
@@ -62,6 +69,7 @@ typedef struct			s_lem_in
 	t_room				*start;
 	t_room				*end;
 	t_room              **hash_table;
+	t_link				*links;
 	int					bfs_length;
 	int					visited;
 	/*t_path				*paths;
@@ -75,6 +83,7 @@ typedef struct			s_queue
 	char				*name;
 	struct s_queue		*next;
 }						t_queue;
+
 
 
 int						main(int ac, char **av);
@@ -93,8 +102,8 @@ int						is_command(char *str);
 
 
 t_line					*read_line(t_line **input, int fd);
-void					validate_room(t_lem_in *lem_in, t_room *room);
-//void					validate_link(t_lem_in *lem_in, t_link *link);
+void					validate_room(t_room *room);
+void					validate_link(t_lem_in *lem_in, t_link *link);
 void					bfs(t_lem_in *lem_in);
 void					free_lem_in(t_lem_in **lem_in);
 void					check_links(t_lem_in *lem_in);
@@ -106,6 +115,9 @@ void					create_hash_table(t_lem_in *lem_in);
 int						hash_fun(char *room_name);
 int						hash_fun_room(char *str);
 void					free_nei(t_nei **sentenced);
+t_room					*find_room(t_room *room, char *name);
+void					align_links(t_lem_in *lem_in);
+
 # define ERR_ANTS_NUM_PARSING	"ERROR: Number of ants is incorrent"
 # define ERR_ROOM_PARSING		"ERROR: Can\'t parse room"
 # define ERR_ROOM_INIT			"ERROR: Can\'t initialize room"
@@ -120,6 +132,7 @@ void					free_nei(t_nei **sentenced);
 # define ERR_START_END_ROOM		"ERROR: Input has no start or end room"
 # define ERR_NO_PATH			"ERROR: Input has no path from start to end"
 
+# define ERR_NO_ROOM			"ERROR: No such room given"
 # define ERR_QUEUE_INIT			"ERROR: Can\'t initialize queue"
 # define ERR_DASH_NAME			"ERROR: We do not parse names with dashes"
 # define ERR_ALLOCATION			"ERROR: Memory allocation error"

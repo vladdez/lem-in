@@ -81,12 +81,26 @@ void	free_ht(t_room **ht)
 	free(ht);
 } 
 
+void	free_links(t_link **current)
+{
+	t_link	*delete;
+
+	if (current)
+		while ((*current))
+		{
+			delete = (*current);
+			(*current) = (*current)->next;
+			free(delete);
+		}
+}
+
 void	free_lem_in(t_lem_in **lem_in)
 {
 	if (lem_in && *lem_in)
 	{
 		free_rooms(&(*lem_in)->rooms);
 		free_ht((*lem_in)->hash_table);
+		free_links(&(*lem_in)->links);
 		free((*lem_in));
 		(*lem_in) = NULL;
 	}
