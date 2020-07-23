@@ -12,96 +12,113 @@
 
 #include "lem-in.h"
 
-t_link		*init_link(t_room *start, t_room *end)
+
+void    add_link(t_neighbours *link, char *toward)
 {
-	t_link	*link;
+    t_neighbours *tmp;
 
-	if (!(link = (t_link *)ft_memalloc(sizeof(t_link))))
-		terminate(ERR_LINK_INIT);
-	link->start = start;
-	link->end = end;
-	link->next = NULL;
-	link->prev = NULL;
-	return (link);
-}
-
-t_room		find_room(t_room *hash_table, int room_num ,char *str)
-{
-    int i;
-    struct s_room tmp;
-
-    i = sum_ascii(str) % room_num;
-    if (ft_strcmp(hash_table[i].name, str))
-        return (hash_table[i]);
+    if (link->toward == NULL)
+    {
+        link->toward = toward;
+        link->next = NULL;
+    }
     else
     {
+        tmp = link;
         while (tmp)
         {
-            tmp = hash_table[i].next;
-            if (ft_strcmp(hash_table[i].name, str))
-                return (tmp);
-            else
+            if (ft_strcmp(tmp->toward, toward) == 0)
+                terminate(ERR_LINK_PARSING);
+            if (tmp->next == NULL)
+            {
+                tmp->next = neighbour_init();
                 tmp = tmp->next;
+                tmp->toward = toward;
+                break;
+            }
+            tmp = tmp->next;
         }
-        terminate(ERR_LINK_PARSING);
     }
-
 }
 
-t_link		*create_link(t_lem_in *lem_in, char *str)
+void    find_toward(t_hashtable *hash_table, char *toward)
 {
-	char	*start;
-	char	*end;
-	t_room	*start_room;
-	t_room	*end_room;
-	char	*d;
+    t_room *tmp;
+    int  i;
 
-	d = str;
-	if ((d = ft_strchr(d, '-')))
-	{
-		if (!(start = ft_strsub(str, 0, d - str)))
-			terminate(ERR_LINK_INIT);
-		if (!(end = ft_strsub(d + 1, 0, ft_strlen(d + 1))))
-			terminate(ERR_LINK_INIT);
-		start_room = find_room(lem_in->hash_table, lem_in->room_num, start);
-		end_room = find_room(lem_in, end);
-		free(start);
-		free(end);
-		if (start_room && end_room)
-			return (init_link(start_room, end_room));
-	}
-	return (NULL);
+    i = sum_ascii(toward) % TABLE_SIZE;
+    if (hash_table->room[i] != NULL)
+    {
+        tmp = hash_table->room[i];
+        while (tmp)
+        {
+            if (ft_strcmp(tmp->name, toward) == 0)
+                return;
+            tmp = tmp->next;
+        }
+        if (tmp->next == NULL)
+            terminate(ERR_LINK_PARSING);
+    }
+    else
+        terminate(ERR_LINK_PARSING);
 }
 
-void		add_link(t_lem_in *lem_in, t_link *link)
+void    find_start(t_hashtable *hash_table, char *start, char *toward)
 {
-	t_link	*tmp;
+    t_room *tmp;
+    int  i;
 
-	tmp = lem_in->links;
-	if (tmp)
-	{
-		while (tmp->next)
-			tmp = tmp->next;
-		tmp->next = link;
-	}
-	else
-		lem_in->links = link;
+    i = sum_ascii(start) % TABLE_SIZE;
+    if (hash_table->room[i] != NULL)
+    {
+        tmp = hash_table->room[i];
+        while (tmp)
+        {
+            if (ft_strcmp(tmp->name, start) == 0)
+            {
+                find_toward(hash_table, toward);
+                return(add_link(tmp->link, toward));
+            }
+            tmp = tmp->next;
+        }
+        if (tmp->link->toward != NULL)
+            return;
+    }
+    else
+        terminate(ERR_LINK_PARSING);
 }
+
+
+void    create_link(t_lem_in *lem_in, char *str)
+{
+    char	*start;
+    char	*toward;
+    char	*d;
+
+    d = str;
+    if ((d = ft_strchr(d, '-')))
+    {
+        if (!(start = ft_strsub(str, 0, d - str)))
+            terminate(ERR_LINK_INIT);
+        if (!(toward = ft_strsub(d + 1, 0, ft_strlen(d + 1))))
+            terminate(ERR_LINK_INIT);
+        find_start(lem_in->hash_table, start, toward);
+        free(start);
+    }
+    else
+        terminate(ERR_LINK_PARSING);
+}
+
 
 void		parse_link(t_lem_in *lem_in, int fd, t_line **input, t_line **tmp)
 {
-	t_link	*link;
-
-	while (((*tmp) = read_line(input, fd)))
+	while ((*tmp) || ((*tmp) = read_line(input, fd)))
 	{
-		if (is_command((*tmp)->data) != 1 && is_comment((*tmp)->data) != 1)
+		if (is_command((*tmp) ->data) != COMMAND && is_comment((*tmp)->data) != 1)
 		{
-			if (!(link = create_link(lem_in, (*tmp)->data)))
-				terminate(ERR_LINK_PARSING);
-			add_link(lem_in, link);
-			validate_link(lem_in, link);
+			create_link(lem_in, (*tmp)->data);
+			//validate_link(lem_in, link);
 		}
-		(*tmp) = NULL;
+        (*tmp) = NULL;
 	}
 }
- // try

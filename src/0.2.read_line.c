@@ -16,7 +16,7 @@ t_line	*create_line(char *line)
 {
 	t_line *input1;
 
-	while (!(input1 = (t_line *)malloc(sizeof(t_line))))   //   зачем while
+	if (!(input1 = (t_line *)malloc(sizeof(t_line))))   //   зачем while
 		terminate(ERR_LINE_INIT);
 	input1->data = line;
 	input1->next = NULL;
@@ -27,14 +27,14 @@ void	link_inputs(t_line **input, t_line *input1)
 {
 	t_line *current;
 
-	if (input && *input)
+	if (*input != NULL)
 	{
 		current = *input;
 		while (current->next)
 			current = current->next;
 		current->next = input1;
 	}
-	else if (input)
+	else
 		*input = input1;
 }
 

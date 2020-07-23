@@ -35,6 +35,7 @@ typedef struct			s_neighbours   // связыный список для сосе
     struct s_neighbours		*next;  // узлы одного уровня
 }						t_neighbours;
 
+
 typedef struct			s_room
 {
 	char				*name;
@@ -42,13 +43,17 @@ typedef struct			s_room
 	int					y;
 	int					type;
 	int					bfs_level;
-	t_neighbours        link;
+	t_neighbours        *link;
 	int					input_links;
 	int					output_links;
 	/*int					ant_number;*/
 	struct s_room		*next;
 }						t_room;
 
+
+typedef struct {
+    t_room **room;
+}          t_hashtable;
 
 typedef struct			s_link
 {
@@ -63,12 +68,11 @@ typedef struct			s_lem_in
 	int					ants_start;
 	int					ants_end;
 	int					ant_num;
-	int                 room_num;
 	t_room				*rooms;
 	t_room				*start;
 	t_room				*end;
 	t_link				*links;
-	t_room              *hash_table;
+	t_hashtable         *hash_table;
 	int					bfs_length;
 	/*t_path				*paths;
 	t_location			*locations;
@@ -86,11 +90,10 @@ typedef struct			s_queue
 int						main(int ac, char **av);
 void					*terminate(char *er);
 
-void					parse_ants(t_lem_in **lem_in, int fd);
-void					parse_room(t_lem_in *lem_in, int fd, t_line **input, t_line **tmp);
-void					parse_link(t_lem_in *lem_in, int fd, t_line **input, t_line **tmp);
-
-
+void		parse_ants(t_lem_in *lem_in, int fd);
+void		parse_room(t_lem_in *lem_in, int fd, t_line **input, t_line **tmp);
+void		parse_link(t_lem_in *lem_in, int fd, t_line **input, t_line **tmp);
+t_neighbours *neighbour_init();
 
 int						is_room(char *str);
 int						is_comment(char *str);
@@ -102,12 +105,12 @@ t_line					*read_line(t_line **input, int fd);
 void					validate_room(t_lem_in *lem_in, t_room *room);
 void					validate_link(t_lem_in *lem_in, t_link *link);
 void					bfs(t_lem_in *lem_in);
-void					free_lem_in(t_lem_in **lem_in);
+void					free_lem_in(t_lem_in *lem_in);
 void					check_links(t_lem_in *lem_in);
-void					free_input(t_line **input);	
+void					free_input(t_line *input);
 void					ft_strsplit_free(char ***strsplit);
 void					print_input(t_line *input, int n);
-t_room *create_hash_table(t_lem_in *lem_in);
+void create_hash_table(t_lem_in *lem_in);
 int sum_ascii(char *room_name);
 
 # define ERR_ANTS_NUM_PARSING	"ERROR: Number of ants is incorrent"
@@ -126,7 +129,10 @@ int sum_ascii(char *room_name);
 
 # define ERR_QUEUE_INIT			"ERROR: Can\'t initialize queue"
 # define ERR_ALLOCATION         "ERROR: the memory is not allocated"
-# define ROOM 2;
+# define ROOM 2
+# define COMMAND 3
+# define TABLE_SIZE 10
+
 
 
 #endif

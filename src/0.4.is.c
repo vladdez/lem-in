@@ -27,9 +27,7 @@ int		is_room(char *str)
 	char	**words;
 	int		q;
 	char	*s;
-	int		res;
 
-	res = 0;
 	if (str)
 	{
 		s = ft_strdup(str);
@@ -39,24 +37,24 @@ int		is_room(char *str)
 		free(s);
 		if (q == 3)
 		{
-			if (is_room_name(words[0]) && ft_isint(words[1])
+			if ((is_room_name(words[0])) && ft_isint(words[1])
 			&& ft_isint(words[2]))
-				res = 1;
-			ft_strsplit_free(&words);
-			return(res);
+            {
+			    ft_strsplit_free(&words);
+			    return(ROOM);
+            }
 		}
 		ft_strsplit_free(&words);
 	}
-	return (res);
+	return (0);
 }
 
-int		is_command(char *str)                   //   сравнить сразу с командой ft_strncmp(str, "##start", 7)) || ft_strncmp(str, "##end", 5))
+int		is_command(char *str)
 {
 	if (str)
 	{
-		if (ft_strlen(str) >= 2
-			&& !ft_strncmp(str, "##", 2))
-			return (1);
+		if ((ft_strncmp(str, "##start", 7) == 0) || (ft_strncmp(str, "##end", 5)) == 0)
+		    return (COMMAND);
 	}
 	return (0);
 }

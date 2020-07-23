@@ -14,20 +14,22 @@
 
 void		validate_room(t_lem_in *lem_in, t_room *room)
 {
-	t_room *compare;
+    int  i;
+    t_room *compare;
 
-	compare = lem_in->rooms;
+    i = sum_ascii(room->name) % TABLE_SIZE;
+	compare = lem_in->hash_table->room[i];
 	while (compare)
 	{
 		if (compare != room && !ft_strcmp(compare->name, room->name))
 			terminate(ERR_ROOM_NAME_DUP);
-		if (compare != room && compare->x == room->x && compare->y == room->y)
-			terminate(ERR_ROOM_COORDS_DUP);
+		//if (compare != room && compare->x == room->x && compare->y == room->y)
+		//	terminate(ERR_ROOM_COORDS_DUP);
 		compare = compare->next;
 	}
 }
 
-void		validate_link(t_lem_in *lem_in, t_link *link)
+/*void		validate_link(t_lem_in *lem_in, t_link *link)
 {
 	t_link *compare;
 
@@ -42,4 +44,4 @@ void		validate_link(t_lem_in *lem_in, t_link *link)
 			terminate(ERR_LINK_DUP);
 		compare = compare->next;
 	}
-}
+}*/

@@ -26,50 +26,50 @@ void	ft_strsplit_free(char ***strsplit)
 	}
 }
 
-void    free_rooms(t_room **sentenced)
+void    free_rooms(t_room *sentenced)
 {
 	t_room *kill;
 
 	if (sentenced)
-		while ((*sentenced))
+		while ((sentenced))
 		{
-			kill = (*sentenced);
-			(*sentenced) = (*sentenced)->next;
+			kill = (sentenced);
+			(sentenced) = (sentenced)->next;
 			free(kill->name);
 			free(kill);
 		}
 }
 
-void    free_links(t_link **sentenced)
+void    free_links(t_link *sentenced)
 {
 	t_link *kill;
 
 	if (sentenced)
-		while ((*sentenced))
+		while ((sentenced))
 		{
-			kill = (*sentenced);
-			(*sentenced) = (*sentenced)->next;
+			kill = (sentenced);
+			(sentenced) = (sentenced)->next;
 			free(kill);
 		}
 }
 
-void    free_lem_in(t_lem_in **lem_in)
+void    free_lem_in(t_lem_in *lem_in)
 {
-	if (lem_in && *lem_in)
+	if (lem_in)
 	{
-		free_rooms(&(*lem_in)->rooms);
-		free_links(&(*lem_in)->links);
-		free((*lem_in));
-		(*lem_in) = NULL;
+		free_rooms(lem_in->rooms);
+		free_links(lem_in->links);
+		free((lem_in));
+		(lem_in) = NULL;
 	}
 }
 
-void	free_input(t_line **input)
+void	free_input(t_line *input)
 {
 	t_line	*curr;
 	t_line	*kill;
 
-	curr = *(input);
+	curr = input;
 	while (curr)
 	{
 		kill = curr;
@@ -77,5 +77,5 @@ void	free_input(t_line **input)
 		free(kill->data);
 		free(kill);
 	}
-	*input = NULL;
+	input = NULL;
 }
