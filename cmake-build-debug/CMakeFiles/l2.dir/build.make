@@ -1266,9 +1266,22 @@ CMakeFiles/l2.dir/src/4.bfs.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/l2.dir/src/4.bfs.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/kysgramo/l2/src/4.bfs.c -o CMakeFiles/l2.dir/src/4.bfs.c.s
 
+CMakeFiles/l2.dir/src/5.cut_links.c.o: CMakeFiles/l2.dir/flags.make
+CMakeFiles/l2.dir/src/5.cut_links.c.o: ../src/5.cut_links.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kysgramo/l2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building C object CMakeFiles/l2.dir/src/5.cut_links.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/l2.dir/src/5.cut_links.c.o   -c /Users/kysgramo/l2/src/5.cut_links.c
+
+CMakeFiles/l2.dir/src/5.cut_links.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/l2.dir/src/5.cut_links.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/kysgramo/l2/src/5.cut_links.c > CMakeFiles/l2.dir/src/5.cut_links.c.i
+
+CMakeFiles/l2.dir/src/5.cut_links.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/l2.dir/src/5.cut_links.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/kysgramo/l2/src/5.cut_links.c -o CMakeFiles/l2.dir/src/5.cut_links.c.s
+
 CMakeFiles/l2.dir/src/7.print.c.o: CMakeFiles/l2.dir/flags.make
 CMakeFiles/l2.dir/src/7.print.c.o: ../src/7.print.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kysgramo/l2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building C object CMakeFiles/l2.dir/src/7.print.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kysgramo/l2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building C object CMakeFiles/l2.dir/src/7.print.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/l2.dir/src/7.print.c.o   -c /Users/kysgramo/l2/src/7.print.c
 
 CMakeFiles/l2.dir/src/7.print.c.i: cmake_force
@@ -1281,7 +1294,7 @@ CMakeFiles/l2.dir/src/7.print.c.s: cmake_force
 
 CMakeFiles/l2.dir/src/8.create_paths.c.o: CMakeFiles/l2.dir/flags.make
 CMakeFiles/l2.dir/src/8.create_paths.c.o: ../src/8.create_paths.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kysgramo/l2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building C object CMakeFiles/l2.dir/src/8.create_paths.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kysgramo/l2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building C object CMakeFiles/l2.dir/src/8.create_paths.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/l2.dir/src/8.create_paths.c.o   -c /Users/kysgramo/l2/src/8.create_paths.c
 
 CMakeFiles/l2.dir/src/8.create_paths.c.i: cmake_force
@@ -1294,7 +1307,7 @@ CMakeFiles/l2.dir/src/8.create_paths.c.s: cmake_force
 
 CMakeFiles/l2.dir/src/let_me_free.c.o: CMakeFiles/l2.dir/flags.make
 CMakeFiles/l2.dir/src/let_me_free.c.o: ../src/let_me_free.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kysgramo/l2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building C object CMakeFiles/l2.dir/src/let_me_free.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kysgramo/l2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building C object CMakeFiles/l2.dir/src/let_me_free.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/l2.dir/src/let_me_free.c.o   -c /Users/kysgramo/l2/src/let_me_free.c
 
 CMakeFiles/l2.dir/src/let_me_free.c.i: cmake_force
@@ -1400,6 +1413,7 @@ l2_OBJECTS = \
 "CMakeFiles/l2.dir/src/2.parse_ants_rooms.c.o" \
 "CMakeFiles/l2.dir/src/3.parse_link.c.o" \
 "CMakeFiles/l2.dir/src/4.bfs.c.o" \
+"CMakeFiles/l2.dir/src/5.cut_links.c.o" \
 "CMakeFiles/l2.dir/src/7.print.c.o" \
 "CMakeFiles/l2.dir/src/8.create_paths.c.o" \
 "CMakeFiles/l2.dir/src/let_me_free.c.o"
@@ -1500,12 +1514,13 @@ l2: CMakeFiles/l2.dir/src/1.main.c.o
 l2: CMakeFiles/l2.dir/src/2.parse_ants_rooms.c.o
 l2: CMakeFiles/l2.dir/src/3.parse_link.c.o
 l2: CMakeFiles/l2.dir/src/4.bfs.c.o
+l2: CMakeFiles/l2.dir/src/5.cut_links.c.o
 l2: CMakeFiles/l2.dir/src/7.print.c.o
 l2: CMakeFiles/l2.dir/src/8.create_paths.c.o
 l2: CMakeFiles/l2.dir/src/let_me_free.c.o
 l2: CMakeFiles/l2.dir/build.make
 l2: CMakeFiles/l2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/kysgramo/l2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Linking C executable l2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/kysgramo/l2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Linking C executable l2"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/l2.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

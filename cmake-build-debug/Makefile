@@ -2634,6 +2634,33 @@ src/4.bfs.c.s:
 	$(MAKE) -f CMakeFiles/l2.dir/build.make CMakeFiles/l2.dir/src/4.bfs.c.s
 .PHONY : src/4.bfs.c.s
 
+src/5.cut_links.o: src/5.cut_links.c.o
+
+.PHONY : src/5.cut_links.o
+
+# target to build an object file
+src/5.cut_links.c.o:
+	$(MAKE) -f CMakeFiles/l2.dir/build.make CMakeFiles/l2.dir/src/5.cut_links.c.o
+.PHONY : src/5.cut_links.c.o
+
+src/5.cut_links.i: src/5.cut_links.c.i
+
+.PHONY : src/5.cut_links.i
+
+# target to preprocess a source file
+src/5.cut_links.c.i:
+	$(MAKE) -f CMakeFiles/l2.dir/build.make CMakeFiles/l2.dir/src/5.cut_links.c.i
+.PHONY : src/5.cut_links.c.i
+
+src/5.cut_links.s: src/5.cut_links.c.s
+
+.PHONY : src/5.cut_links.s
+
+# target to generate assembly for a file
+src/5.cut_links.c.s:
+	$(MAKE) -f CMakeFiles/l2.dir/build.make CMakeFiles/l2.dir/src/5.cut_links.c.s
+.PHONY : src/5.cut_links.c.s
+
 src/7.print.o: src/7.print.c.o
 
 .PHONY : src/7.print.o
@@ -3003,6 +3030,9 @@ help:
 	@echo "... src/4.bfs.o"
 	@echo "... src/4.bfs.i"
 	@echo "... src/4.bfs.s"
+	@echo "... src/5.cut_links.o"
+	@echo "... src/5.cut_links.i"
+	@echo "... src/5.cut_links.s"
 	@echo "... src/7.print.o"
 	@echo "... src/7.print.i"
 	@echo "... src/7.print.s"

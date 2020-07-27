@@ -26,7 +26,7 @@ t_nei	*create_q_elem(t_room *room)
 	q->next = NULL;
 	q->b = 0;
 	curr = q;
-	nei = room->nei;
+	nei = room->output_nei;
 	while (nei)
 	{
 		if (!(curr->next = (t_nei *)ft_memalloc(sizeof(t_nei))))
@@ -46,7 +46,7 @@ t_nei	*add_nei(t_room *room, int i)
 	t_nei	*curr;
 	t_nei	*nei;
 
-	nei = room->nei;
+	nei = room->output_nei;
 	q = NULL;
 	if (nei)
 	{

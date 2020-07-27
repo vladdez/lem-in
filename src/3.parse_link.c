@@ -68,7 +68,7 @@ static t_link	*create_link(t_lem_in *lem_in, char *str)
 	return (NULL);
 }
 
-void		create_nei(t_room *room, char *to)
+void		create_nei_o(t_room *room, char *to)
 {
 	t_nei	*tmp;
 	t_nei	*mem;
@@ -77,26 +77,45 @@ void		create_nei(t_room *room, char *to)
         terminate(ERR_LINK_INIT);
 	mem->to = ft_strdup(to);
 	mem->next = NULL;
-	if (room->nei == NULL)
-        room->nei = mem;
+	if (room->output_nei == NULL)
+        room->output_nei = mem;
 	else
     {
 	    tmp = mem;
-		tmp->next = room->nei;
-        room->nei = tmp;
+		tmp->next = room->output_nei;
+        room->output_nei = tmp;
     }
 }
 
-void		find_room_nei(t_room *room, char *from, char *to)
+void		create_nei_i(t_room *room, char *to)
+{
+	t_nei	*tmp;
+	t_nei	*mem;
+
+    if (!(mem = (t_nei *)ft_memalloc(sizeof(t_nei))))
+        terminate(ERR_LINK_INIT);
+	mem->to = ft_strdup(to);
+	mem->next = NULL;
+	if (room->input_nei == NULL)
+        room->input_nei = mem;
+	else
+    {
+	    tmp = mem;
+		tmp->next = room->input_nei;
+        room->input_nei = tmp;
+    }
+}
+
+void		find_room_i_nei(t_room *room, char *from, char *to)
 {
 	int i;
 	t_room *tmp;
 	
-	if (room == NULL)
+	if (room == NULL)  
 		terminate(ERR_NO_ROOM);
 	i = 0;
 	if (!ft_strcmp(room->name, from))
-		 create_nei(room, to);
+		 create_nei_i(room, to);
 	else
 	{
 		tmp = room;
@@ -104,7 +123,33 @@ void		find_room_nei(t_room *room, char *from, char *to)
 		{
 			if (!ft_strcmp(room->name, from))
 			{
-                create_nei(tmp, to);
+                create_nei_i(tmp, to);
+                break;
+			}
+			else
+				tmp = tmp->next;
+		}
+	}
+}
+
+void		find_room_o_nei(t_room *room, char *from, char *to)
+{
+	int i;
+	t_room *tmp;
+	
+	if (room == NULL)  
+		terminate(ERR_NO_ROOM);
+	i = 0;
+	if (!ft_strcmp(room->name, from))
+		 create_nei_o(room, to);
+	else
+	{
+		tmp = room;
+		while (tmp)
+		{
+			if (!ft_strcmp(room->name, from))
+			{
+                create_nei_o(tmp, to);
                 break;
 			}
 			else
@@ -130,8 +175,10 @@ void		use_link(t_lem_in *lem_in, char *str)
 			terminate(ERR_LINK_INIT);
 		if (ft_strchr(end, '-') != NULL)
 			terminate(ERR_DASH_NAME);
+		i = hash_fun(end);
+		find_room_i_nei(lem_in->hash_table[i], end, start);
 		i = hash_fun(start);
-		find_room_nei(lem_in->hash_table[i], start, end);
+		find_room_o_nei(lem_in->hash_table[i], start, end);
 		free(start);
 		free(end);
 	}

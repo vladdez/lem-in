@@ -23,6 +23,13 @@
 # include <unistd.h>
 # include <limits.h>
 
+typedef struct			s_path
+{
+	int					len;
+	char				*name;
+	struct s_path		*next;
+}						t_path;
+
 typedef struct			s_line
 {
 	char				*data;
@@ -44,10 +51,10 @@ typedef struct			s_room
 	int					y;
 	int					type;
 	int					bfs_level;
-	int					input_links;
-	int					output_links;
+	int					visited;
 	/*int					ant_number;*/
-	t_nei				*nei;
+	t_nei				*input_nei;
+	t_nei				*output_nei;
 	struct s_room		*next;
 }						t_room;
 
@@ -65,15 +72,15 @@ typedef struct			s_lem_in
 	int					ants_end;
 	int					ant_num;
 	int                 room_num;
+	int					path_num;
 	t_room				*rooms;
 	t_room				*start;
 	t_room				*end;
 	t_room              **hash_table;
 	t_link				*links;
 	int					bfs_length;
-	int					visited;
-	/*t_path				*paths;
-	t_location			*locations;
+	t_path				**paths;
+	/*t_location			*locations;
 	t_turn				*turns;
 	t_ant				*ants;*/
 }						t_lem_in;
@@ -117,6 +124,8 @@ int						hash_fun_room(char *str);
 void					free_nei(t_nei **sentenced);
 t_room					*find_room(t_room *room, char *name);
 void					align_links(t_lem_in *lem_in);
+void					create_paths(t_lem_in *lem_in);
+void					flow(t_lem_in *lem_in);
 
 # define ERR_ANTS_NUM_PARSING	"ERROR: Number of ants is incorrent"
 # define ERR_ROOM_PARSING		"ERROR: Can\'t parse room"
@@ -136,6 +145,7 @@ void					align_links(t_lem_in *lem_in);
 # define ERR_QUEUE_INIT			"ERROR: Can\'t initialize queue"
 # define ERR_DASH_NAME			"ERROR: We do not parse names with dashes"
 # define ERR_ALLOCATION			"ERROR: Memory allocation error"
+# define ERR_PATH_INIT			"ERROR: Can\t init path"
 
 # define TABLEN 100	
 #endif

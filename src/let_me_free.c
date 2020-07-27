@@ -40,6 +40,30 @@ void	free_rooms(t_room **sentenced)
 		}
 }
 
+void	free_paths(t_path **pa, int path_num)
+{
+	int i;
+	t_path *kill;
+
+	i = 1;
+
+	while (i <= path_num)
+	{
+		if (pa[i] != NULL)
+		{
+			while (pa[i])
+			{
+				kill = pa[i];
+                pa[i] = pa[i]->next;
+				free(kill->name);
+				free(kill);
+			}
+		}
+		i++;
+	}
+	free(pa);
+} 
+
 void	free_nei(t_nei **sentenced)
 {
 	t_nei *kill;
@@ -72,7 +96,8 @@ void	free_ht(t_room **ht)
 				kill = ht[i];
 				ht[i] = ht[i]->next;
 				free(kill->name);
-				free_nei(&kill->nei);
+				free_nei(&kill->input_nei);
+				free_nei(&kill->output_nei);
 				free(kill);
 			}
 		}
@@ -101,6 +126,7 @@ void	free_lem_in(t_lem_in **lem_in)
 		free_rooms(&(*lem_in)->rooms);
 		free_ht((*lem_in)->hash_table);
 		free_links(&(*lem_in)->links);
+		free_paths((*lem_in)->paths, (*lem_in)->path_num);
 		free((*lem_in));
 		(*lem_in) = NULL;
 	}

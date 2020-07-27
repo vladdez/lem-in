@@ -21,11 +21,13 @@ t_lem_in	*init_lem_in(void)
 	lem_in->ants_start = 0;
 	lem_in->ants_end = 0;
 	lem_in->ant_num = 0;
+	lem_in->path_num = 0;
 	lem_in->rooms = NULL;
 	lem_in->start = NULL;
 	lem_in->links = NULL;
 	lem_in->end = NULL;
 	lem_in->bfs_length = 0;
+	lem_in->paths = NULL;
 	return (lem_in);
 }
 
@@ -49,21 +51,27 @@ t_lem_in	*parse(int fd, t_line **input)
 
 void print_list(t_room *t)
 {
-	t_nei	*n;
+	t_nei	*n1;
+	t_nei	*n2;
 
 	while (t)
 	{
 		printf("%s[%d]->", t->name, t->bfs_level);
-		if (t->nei)
+		if (t->input_nei)
 		{
-			n = t->nei;
-			while (n)
+			n1 = t->input_nei;
+			n2 = t->output_nei;
+			while (n1)
 			{
-				printf("(%s->)", n->to);
-				n = n->next;
+				printf("(i->%s)", n1->to);
+				n1 = n1->next;
+			}
+			while (n2)
+			{
+				printf("(o->%s)", n2->to);
+				n2 = n2->next;
 			}
 		}
-
 		t = t->next;
 	}
 	printf("\n");
@@ -84,6 +92,42 @@ void print_ht(t_room **gr)
 	}
 } 
 
+void print_links(t_link *links)
+{
+	t_link *curr;
+
+	curr = links;
+	ft_printf("\n");
+	while (curr)
+	{
+		ft_printf("L%s-%s\n", curr->start->name, curr->end->name);
+		curr = curr->next;
+	}
+}
+
+void print_paths(t_path **paths, int path_num)
+{
+	t_path *curr;
+	int		i;
+
+	i = 1;
+	ft_printf("paths\n");
+	while (i <= path_num)
+	{
+		if (paths[i] != NULL)
+			curr = paths[i];
+		while (curr)
+		{
+			ft_printf("%s-", curr->name);
+			curr = curr->next;
+		}
+		curr = NULL;
+		i++;
+		ft_printf("\n");
+	}
+	
+} 
+
 void		lem(char **av)
 {
 	t_lem_in	*lem_in;
@@ -101,13 +145,14 @@ void		lem(char **av)
 	bfs(lem_in);
 	if (lem_in->end->bfs_level == -1)
 		terminate(ERR_NO_PATH);
-	align_links(lem_in);
-	print_ht(lem_in->hash_table);
+	//align_links(lem_in);
+	//print_ht(lem_in->hash_table);
 	/*check_links(lem_in);*/
-	print_input(input, lem_in->ant_num);
-	/*loo_rooms(&lem_in->rooms);
-	loo_links(&lem_in->links);*/
-
+	//print_input(input, lem_in->ant_num);
+	//print_links(lem_in->links);
+	create_paths(lem_in);
+	print_paths(lem_in->paths, lem_in->path_num);
+	flow(lem_in);
 	free_input(&input);
 	free_lem_in(&lem_in);
 	

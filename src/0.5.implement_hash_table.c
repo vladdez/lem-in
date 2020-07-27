@@ -29,25 +29,17 @@ int		hash_fun(char *room_name)
 
 int		hash_fun_room(char *str)
 {
-	int		value;
-	int		i;
 	char	*d;
+	int		i;
 	char	*room_name;
 
 	d = str;
-
 	d = ft_strchr(d, ' ');
 	if (!(room_name = ft_strsub(str, 0, d - str)))
 		terminate(ERR_ROOM_PARSING);
-	value = 0;
-	i = 0;
-	while (room_name[i])
-	{
-		value = value + room_name[i] * 41;
-		i++;
-	}
+	i = hash_fun(room_name);
 	free(room_name);
-	return (value % TABLEN);
+	return (i);
 }
 
 void		create_hash_table(t_lem_in *lem_in)

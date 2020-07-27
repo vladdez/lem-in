@@ -92,6 +92,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/l2.dir/src/2.parse_ants_rooms.c.o"
   "CMakeFiles/l2.dir/src/3.parse_link.c.o"
   "CMakeFiles/l2.dir/src/4.bfs.c.o"
+  "CMakeFiles/l2.dir/src/5.cut_links.c.o"
   "CMakeFiles/l2.dir/src/7.print.c.o"
   "CMakeFiles/l2.dir/src/8.create_paths.c.o"
   "CMakeFiles/l2.dir/src/let_me_free.c.o"
