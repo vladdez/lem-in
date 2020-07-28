@@ -56,7 +56,7 @@ void    find_toward(t_hashtable *hash_table, char *toward, char *start)
                 return(add_link(tmp->link, start));
             tmp = tmp->next;
         }
-        if (tmp->next == NULL)
+        if (tmp == NULL)
             terminate(ERR_LINK_PARSING);
     }
     else
