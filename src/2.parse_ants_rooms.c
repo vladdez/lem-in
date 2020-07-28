@@ -38,19 +38,44 @@ int			get_type(char *tmp)
     return !ft_strcmp(tmp, "##start") ? 1 : 3;
 }
 
-t_neighbours *neighbour_init()
+t_node *neighbour_init()
 {
-    t_neighbours *link;
+    t_node *link;
 
-    if (!(link = malloc(sizeof(t_neighbours) * 1)))
+    if (!(link = malloc(sizeof(t_node) * 1)))
         terminate(ERR_ALLOCATION);
-    link->toward = NULL;
+    link->node = NULL;
     link->next = NULL;
     return(link);
 }
 
+void        write_coor(t_coordinate *coordinate, char **words)
+{
+    t_coordinate *tmp;
+    t_coordinate *tmp2;
 
-t_room		*create_room(char *tmp, int roomtype)
+    if (coordinate->name == NULL)
+    {
+        if (!(coordinate->name = ft_strdup(words[0])))
+            terminate(ERR_ROOM_INIT);
+        coordinate->x = ft_atoi(words[1]);
+        coordinate->y = ft_atoi(words[2]);
+    }
+    else
+    {
+        tmp = coordinate;
+        while (tmp->next)
+            tmp = tmp->next;
+        tmp2 = coordinate_create();
+        tmp->next = tmp2;
+        if (!(tmp2->name = ft_strdup(words[0])))
+            terminate(ERR_ROOM_INIT);
+        tmp2->x = ft_atoi(words[1]);
+        tmp2->y = ft_atoi(words[2]);
+    }
+}
+
+t_room		*create_room(t_coordinate *coordinate, char *tmp)
 {
 	t_room		*room;
 	char		**words;
@@ -61,9 +86,7 @@ t_room		*create_room(char *tmp, int roomtype)
 		terminate(ERR_ROOM_INIT);
 	if (!(room->name = ft_strdup(words[0])))
 		terminate(ERR_ROOM_INIT);
-	room->x = ft_atoi(words[1]);
-	room->y = ft_atoi(words[2]);
-	room->type = roomtype;
+	write_coor(coordinate, words);
 	room->bfs_level = -1;
 	room->output_links = 0;
 	room->input_links = 0;
@@ -115,10 +138,11 @@ void		parse_room(t_lem_in *lem_in, int fd, t_line **input, t_line **tmp)
 			roomtype = get_type((*tmp)->data);
 		else if (res == ROOM)
 		{
-			room = create_room((*tmp)->data, roomtype);
+			room = create_room(lem_in->coordinate, (*tmp)->data);
 			start_end(lem_in, room, roomtype);
 			add_room(lem_in, room);
-			validate_room(lem_in, room);                      // встроить в add_room
+			validate_room(lem_in, room);
+			lem_in->room_num++;
 			roomtype = 2;
 		}
 		else

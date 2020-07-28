@@ -26,39 +26,13 @@ void	ft_strsplit_free(char ***strsplit)
 	}
 }
 
-void    free_rooms(t_room *sentenced)
-{
-	t_room *kill;
 
-	if (sentenced)
-		while ((sentenced))
-		{
-			kill = (sentenced);
-			(sentenced) = (sentenced)->next;
-			free(kill->name);
-			free(kill);
-		}
-}
 
-void    free_links(t_link *sentenced)
-{
-	t_link *kill;
-
-	if (sentenced)
-		while ((sentenced))
-		{
-			kill = (sentenced);
-			(sentenced) = (sentenced)->next;
-			free(kill);
-		}
-}
 
 void    free_lem_in(t_lem_in *lem_in)
 {
 	if (lem_in)
 	{
-		free_rooms(lem_in->rooms);
-		free_links(lem_in->links);
 		free((lem_in));
 		(lem_in) = NULL;
 	}

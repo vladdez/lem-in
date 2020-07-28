@@ -12,7 +12,7 @@
 
 #include "lem-in.h"
 
-t_queue	*create_q_elem(t_room *room)
+/*t_queue	*create_q_elem(t_room *room)
 {
 	t_queue *q;
 
@@ -98,4 +98,78 @@ void	bfs(t_lem_in *lem_in)
 			lem_in->end->bfs_level = 2147483647;
 		free(curr);
 	}
+}*/
+
+// Create a queue
+t_queue *create_queue(int room_num)
+{
+    t_queue *q;
+
+    if (!(q = malloc(sizeof(t_queue)*(room_num + 1))))
+        terminate(ERR_ALLOCATION);
+    //q[room_num] = NULL;
+    q->toward = -1;
+    q->from = -1;
+    return (q);
+}
+
+
+// Adding elements into queue
+void enqueue(t_queue *q, t_room *room, int room_num)
+{
+    if (q->from == room_num - 1)
+        printf("\nQueue is Full!!");
+    else {
+        if (q->toward == -1)
+            q->toward = 0;
+        q->from++;
+        q->room[q->from] = room->name;
+    }
+}
+
+// Check if the queue is empty
+int is_empty(t_queue *q)
+{
+    if (q->from == -1)
+        return 1;
+    else
+        return 0;
+}
+
+// Removing elements from queue
+t_room *dequeue(t_queue *q)
+{
+    t_room *item;
+
+    if (is_empty(q))
+    {
+        printf("Queue is empty");
+        //item = -1;
+    }
+    else
+        {
+        //item = q->room[q->toward];
+        q->toward++;
+        if (q->toward > q->from)
+        {
+            printf("Resetting queue ");
+            q->toward = q->from = -1;
+        }
+    }
+    return item;
+}
+
+void	bfs(t_lem_in *lem_in)
+{
+    t_queue *q;
+    int i;
+
+    q = create_queue(lem_in->room_num);
+    i = sum_ascii(lem_in->start->name) % TABLE_SIZE;
+    lem_in->hash_table->room[i]->visit = 1;
+    enqueue(q, lem_in->hash_table->room[i], lem_in->room_num);
+    while (!is_empty(q))
+    {
+
+    }
 }

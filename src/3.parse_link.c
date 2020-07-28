@@ -13,13 +13,13 @@
 #include "lem-in.h"
 
 
-void    add_link(t_neighbours *link, char *toward)
+void    add_link(t_node *link, char *toward)
 {
-    t_neighbours *tmp;
+    t_node *tmp;
 
-    if (link->toward == NULL)
+    if (link->node == NULL)
     {
-        link->toward = toward;
+        link->node = toward;
         link->next = NULL;
     }
     else
@@ -27,13 +27,13 @@ void    add_link(t_neighbours *link, char *toward)
         tmp = link;
         while (tmp)
         {
-            if (ft_strcmp(tmp->toward, toward) == 0)
+            if (ft_strcmp(tmp->node, toward) == 0)
                 terminate(ERR_LINK_PARSING);
             if (tmp->next == NULL)
             {
                 tmp->next = neighbour_init();
                 tmp = tmp->next;
-                tmp->toward = toward;
+                tmp->node = toward;
                 break;
             }
             tmp = tmp->next;
@@ -41,7 +41,7 @@ void    add_link(t_neighbours *link, char *toward)
     }
 }
 
-void    find_toward(t_hashtable *hash_table, char *toward)
+void    find_toward(t_hashtable *hash_table, char *toward, char *start)
 {
     t_room *tmp;
     int  i;
@@ -53,7 +53,7 @@ void    find_toward(t_hashtable *hash_table, char *toward)
         while (tmp)
         {
             if (ft_strcmp(tmp->name, toward) == 0)
-                return;
+                return(add_link(tmp->link, start));
             tmp = tmp->next;
         }
         if (tmp->next == NULL)
@@ -76,12 +76,12 @@ void    find_start(t_hashtable *hash_table, char *start, char *toward)
         {
             if (ft_strcmp(tmp->name, start) == 0)
             {
-                find_toward(hash_table, toward);
+                find_toward(hash_table, toward, start);
                 return(add_link(tmp->link, toward));
             }
             tmp = tmp->next;
         }
-        if (tmp->link->toward != NULL)
+        if (tmp->link->node != NULL)
             return;
     }
     else
@@ -103,7 +103,6 @@ void    create_link(t_lem_in *lem_in, char *str)
         if (!(toward = ft_strsub(d + 1, 0, ft_strlen(d + 1))))
             terminate(ERR_LINK_INIT);
         find_start(lem_in->hash_table, start, toward);
-        free(start);
     }
     else
         terminate(ERR_LINK_PARSING);

@@ -12,7 +12,7 @@
 
 #include "lem-in.h"
 
-void	delete_link(t_lem_in *lem_in, t_link *link)
+/*void	delete_link(t_lem_in *lem_in, t_link *link)
 {
 	t_link	*prev;
 	t_link	*curr;
@@ -50,4 +50,4 @@ void	check_links(t_lem_in *lem_in)
 		if (tmp->start->bfs_level == tmp->end->bfs_level)
 			delete_link(lem_in, tmp);
 	}
-} 
+} */

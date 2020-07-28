@@ -29,49 +29,44 @@ typedef struct			s_line
 	struct s_line		*next;
 }						t_line;
 
-typedef struct			s_neighbours   // связыный список для соседей
+typedef struct			s_node   // связыный список для соседей
 {
-    char				*toward;  //  куда
-    struct s_neighbours		*next;  // узлы одного уровня
-}						t_neighbours;
-
+    char				*node;  //
+    struct s_node	*next;  // узлы одного уровня
+}						t_node;
 
 typedef struct			s_room
 {
 	char				*name;
-	int					x;
-	int					y;
-	int					type;
+	int                 visit;      // 0 no 1 yes
 	int					bfs_level;
-	t_neighbours        *link;
+	t_node              *link;
 	int					input_links;
 	int					output_links;
-	/*int					ant_number;*/
 	struct s_room		*next;
 }						t_room;
 
-
-typedef struct {
-    t_room **room;
-}          t_hashtable;
-
-typedef struct			s_link
+typedef struct          s_hashtable
 {
-	t_room				*start;
-	t_room				*end;
-	struct s_link		*next;
-	struct s_link		*prev;
-}						t_link;
+    t_room              **room;
+}                       t_hashtable;
+
+typedef struct          s_coordinate
+{
+    char                *name;
+    int					x;
+    int					y;
+    struct s_coordinate *next;
+}                       t_coordinate;
+
 
 typedef struct			s_lem_in
 {
-	int					ants_start;
-	int					ants_end;
 	int					ant_num;
-	t_room				*rooms;
+	int                 room_num;
 	t_room				*start;
 	t_room				*end;
-	t_link				*links;
+	t_coordinate        *coordinate;
 	t_hashtable         *hash_table;
 	int					bfs_length;
 	/*t_path				*paths;
@@ -82,8 +77,9 @@ typedef struct			s_lem_in
 
 typedef struct			s_queue
 {
-	t_room				*room;
-	struct s_queue		*next;
+	char				**room;
+	int                 toward;
+	int       		    from;
 }						t_queue;
 
 
@@ -93,7 +89,8 @@ void					*terminate(char *er);
 void		parse_ants(t_lem_in *lem_in, int fd);
 void		parse_room(t_lem_in *lem_in, int fd, t_line **input, t_line **tmp);
 void		parse_link(t_lem_in *lem_in, int fd, t_line **input, t_line **tmp);
-t_neighbours *neighbour_init();
+t_node      *neighbour_init();
+t_coordinate *coordinate_create();
 
 int						is_room(char *str);
 int						is_comment(char *str);
@@ -103,15 +100,14 @@ int						is_command(char *str);
 
 t_line					*read_line(t_line **input, int fd);
 void					validate_room(t_lem_in *lem_in, t_room *room);
-void					validate_link(t_lem_in *lem_in, t_link *link);
 void					bfs(t_lem_in *lem_in);
 void					free_lem_in(t_lem_in *lem_in);
 void					check_links(t_lem_in *lem_in);
 void					free_input(t_line *input);
 void					ft_strsplit_free(char ***strsplit);
 void					print_input(t_line *input, int n);
-void create_hash_table(t_lem_in *lem_in);
 int sum_ascii(char *room_name);
+void print_hash_table(t_hashtable *hash_table);
 
 # define ERR_ANTS_NUM_PARSING	"ERROR: Number of ants is incorrent"
 # define ERR_ROOM_PARSING		"ERROR: Can\'t parse room"
