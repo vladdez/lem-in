@@ -22,7 +22,7 @@ void print_hash_table(t_hashtable *hash_table)
     {
         if (hash_table->room[i] != NULL)
         {
-            ft_printf("%s", hash_table->room[i]->name);
+            ft_printf("%s [%d]", hash_table->room[i]->name, hash_table->room[i]->bfs_level);
             if (hash_table->room[i]->link != NULL)
             {
                 tmp = hash_table->room[i]->link;

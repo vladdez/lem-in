@@ -78,9 +78,9 @@ void		lem(char *av)
 	if ((fd = open(av, O_RDONLY, 0)) == -1)
 	    fd = 0;
 	lem_in = parse(fd, &input);
-	//bfs(lem_in);
-	//if (lem_in->end->bfs_level == -1)
-	//	terminate(ERR_NO_PATH);
+	bfs(lem_in);
+	//if (lem_in->end->visit == -1)
+	 //   terminate(ERR_NO_PATH);
 	//check_links(lem_in);
 	print_hash_table(lem_in->hash_table);
 	print_input(input, lem_in->ant_num);

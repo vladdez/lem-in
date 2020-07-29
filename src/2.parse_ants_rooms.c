@@ -87,6 +87,7 @@ t_room		*create_room(t_coordinate *coordinate, char *tmp)
 	if (!(room->name = ft_strdup(words[0])))
 		terminate(ERR_ROOM_INIT);
 	write_coor(coordinate, words);
+	room->visit = 0;
 	room->bfs_level = -1;
 	room->output_links = 0;
 	room->input_links = 0;
