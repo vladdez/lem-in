@@ -106,5 +106,6 @@ add_executable(l2
         src/5.cut_links.c
         src/7.print.c
         src/8.create_paths.c
+        src/9.flow.c
         src/let_me_free.c
         lem-in.h)

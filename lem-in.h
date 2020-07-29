@@ -26,6 +26,8 @@
 typedef struct			s_path
 {
 	int					len;
+	int					ant_index;
+	int					head;
 	char				*name;
 	struct s_path		*next;
 }						t_path;

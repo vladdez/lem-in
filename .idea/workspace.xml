@@ -13,9 +13,7 @@
   <component name="ChangeListManager">
     <list default="true" id="30b215e4-c186-4ee7-a924-0d140b951c90" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.map" beforeDir="false" afterPath="$PROJECT_DIR$/1.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/l2.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/l2.dir/C.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/l2.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/l2.dir/DependInfo.cmake" afterDir="false" />
@@ -32,6 +30,7 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/l2.dir/src/2.parse_ants_rooms.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/l2.dir/src/2.parse_ants_rooms.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/l2.dir/src/3.parse_link.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/l2.dir/src/3.parse_link.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/l2.dir/src/4.bfs.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/l2.dir/src/4.bfs.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/l2.dir/src/5.cut_links.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/l2.dir/src/5.cut_links.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/l2.dir/src/7.print.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/l2.dir/src/7.print.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/l2.dir/src/8.create_paths.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/l2.dir/src/8.create_paths.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/l2.dir/src/let_me_free.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/l2.dir/src/let_me_free.c.o" afterDir="false" />
@@ -39,23 +38,13 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/l2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/l2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/l2.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/l2.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/l2.dSYM/Contents/Resources/DWARF/l2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/l2.dSYM/Contents/Resources/DWARF/l2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lem-in" beforeDir="false" afterPath="$PROJECT_DIR$/lem-in" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lem-in.h" beforeDir="false" afterPath="$PROJECT_DIR$/lem-in.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/0.3.validator.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/0.3.validator.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/0.5.implement_hash_table.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/0.5.implement_hash_table.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/0.5.implement_hash_table.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/0.5.implement_hash_table.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/1.main.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/1.main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/1.main.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/1.main.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/2.parse_ants_rooms.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/2.parse_ants_rooms.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/2.parse_ants_rooms.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/2.parse_ants_rooms.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/3.parse_link.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/3.parse_link.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/3.parse_link.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/3.parse_link.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/4.bfs.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/4.bfs.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/4.bfs.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/4.bfs.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/5.cut_links.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/5.cut_links.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/8.create_paths.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/8.create_paths.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/let_me_free.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/let_me_free.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/8.create_paths.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/8.create_paths.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/9.flow.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/9.flow.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/9.flow.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/9.flow.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/let_me_free.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/let_me_free.o" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -96,7 +85,7 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="lem_in" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="3.map" REDIRECT_INPUT="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="l2" TARGET_NAME="l2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="l2" RUN_TARGET_NAME="l2">
+    <configuration name="lem_in" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="1.map" REDIRECT_INPUT="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="l2" TARGET_NAME="l2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="l2" RUN_TARGET_NAME="l2">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -151,7 +140,10 @@
       <workItem from="1595767543063" duration="85000" />
       <workItem from="1595767631846" duration="3263000" />
       <workItem from="1595837404886" duration="6605000" />
-      <workItem from="1595851454891" duration="4896000" />
+      <workItem from="1595851454891" duration="5293000" />
+      <workItem from="1595935562459" duration="899000" />
+      <workItem from="1596020865913" duration="324000" />
+      <workItem from="1596022954223" duration="1800000" />
     </task>
     <servers />
   </component>
@@ -171,72 +163,72 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="744" y="353" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595856185915">
-      <screen x="0" y="23" width="2560" height="1337" />
+    <state x="626" y="391" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596022963551">
+      <screen x="0" y="23" width="2048" height="1049" />
     </state>
-    <state x="595" y="282" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2048.1049@0.23.2048.1049" timestamp="1594816004805" />
+    <state x="626" y="391" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2048.1049@0.23.2048.1049" timestamp="1596022963551" />
     <state x="744" y="353" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1595856185915" />
     <state x="1067" y="403" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1593621714338">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="1067" y="403" key="#com.intellij.ide.macro.MacrosDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1593621714338" />
-    <state width="1348" height="482" key="GridCell.Tab.0.bottom" timestamp="1595856242487">
-      <screen x="0" y="23" width="2560" height="1337" />
+    <state width="1348" height="372" key="GridCell.Tab.0.bottom" timestamp="1596024218013">
+      <screen x="0" y="23" width="2048" height="1049" />
     </state>
     <state width="2518" height="335" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1593622321567" />
-    <state width="1646" height="371" key="GridCell.Tab.0.bottom/0.23.2048.1049@0.23.2048.1049" timestamp="1594825138771" />
-    <state width="1348" height="482" key="GridCell.Tab.0.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1595856242487" />
-    <state width="1348" height="482" key="GridCell.Tab.0.center" timestamp="1595856242486">
-      <screen x="0" y="23" width="2560" height="1337" />
+    <state width="1348" height="372" key="GridCell.Tab.0.bottom/0.23.2048.1049@0.23.2048.1049" timestamp="1596024218013" />
+    <state width="1348" height="482" key="GridCell.Tab.0.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1595867806923" />
+    <state width="1348" height="372" key="GridCell.Tab.0.center" timestamp="1596024218012">
+      <screen x="0" y="23" width="2048" height="1049" />
     </state>
     <state width="2518" height="335" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1593622321567" />
-    <state width="1646" height="371" key="GridCell.Tab.0.center/0.23.2048.1049@0.23.2048.1049" timestamp="1594825138770" />
-    <state width="1348" height="482" key="GridCell.Tab.0.center/0.23.2560.1337@0.23.2560.1337" timestamp="1595856242486" />
-    <state width="1348" height="482" key="GridCell.Tab.0.left" timestamp="1595856242485">
-      <screen x="0" y="23" width="2560" height="1337" />
+    <state width="1348" height="372" key="GridCell.Tab.0.center/0.23.2048.1049@0.23.2048.1049" timestamp="1596024218012" />
+    <state width="1348" height="482" key="GridCell.Tab.0.center/0.23.2560.1337@0.23.2560.1337" timestamp="1595867806922" />
+    <state width="1348" height="372" key="GridCell.Tab.0.left" timestamp="1596024218012">
+      <screen x="0" y="23" width="2048" height="1049" />
     </state>
     <state width="2518" height="335" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1593622321566" />
-    <state width="1646" height="371" key="GridCell.Tab.0.left/0.23.2048.1049@0.23.2048.1049" timestamp="1594825138770" />
-    <state width="1348" height="482" key="GridCell.Tab.0.left/0.23.2560.1337@0.23.2560.1337" timestamp="1595856242485" />
-    <state width="1348" height="482" key="GridCell.Tab.0.right" timestamp="1595856242486">
-      <screen x="0" y="23" width="2560" height="1337" />
+    <state width="1348" height="372" key="GridCell.Tab.0.left/0.23.2048.1049@0.23.2048.1049" timestamp="1596024218012" />
+    <state width="1348" height="482" key="GridCell.Tab.0.left/0.23.2560.1337@0.23.2560.1337" timestamp="1595867806922" />
+    <state width="1348" height="372" key="GridCell.Tab.0.right" timestamp="1596024218013">
+      <screen x="0" y="23" width="2048" height="1049" />
     </state>
     <state width="2518" height="335" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1593622321567" />
-    <state width="1646" height="371" key="GridCell.Tab.0.right/0.23.2048.1049@0.23.2048.1049" timestamp="1594825138770" />
-    <state width="1348" height="482" key="GridCell.Tab.0.right/0.23.2560.1337@0.23.2560.1337" timestamp="1595856242486" />
-    <state width="1348" height="482" key="GridCell.Tab.1.bottom" timestamp="1595856243102">
-      <screen x="0" y="23" width="2560" height="1337" />
+    <state width="1348" height="372" key="GridCell.Tab.0.right/0.23.2048.1049@0.23.2048.1049" timestamp="1596024218013" />
+    <state width="1348" height="482" key="GridCell.Tab.0.right/0.23.2560.1337@0.23.2560.1337" timestamp="1595867806923" />
+    <state width="1348" height="372" key="GridCell.Tab.1.bottom" timestamp="1596024218985">
+      <screen x="0" y="23" width="2048" height="1049" />
     </state>
     <state width="2518" height="335" key="GridCell.Tab.1.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1593622323000" />
-    <state width="1646" height="371" key="GridCell.Tab.1.bottom/0.23.2048.1049@0.23.2048.1049" timestamp="1594825138771" />
-    <state width="1348" height="482" key="GridCell.Tab.1.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1595856243102" />
-    <state width="1348" height="482" key="GridCell.Tab.1.center" timestamp="1595856243101">
-      <screen x="0" y="23" width="2560" height="1337" />
+    <state width="1348" height="372" key="GridCell.Tab.1.bottom/0.23.2048.1049@0.23.2048.1049" timestamp="1596024218985" />
+    <state width="1348" height="482" key="GridCell.Tab.1.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1595867806923" />
+    <state width="1348" height="372" key="GridCell.Tab.1.center" timestamp="1596024218984">
+      <screen x="0" y="23" width="2048" height="1049" />
     </state>
     <state width="2518" height="335" key="GridCell.Tab.1.center/0.0.2560.1440@0.0.2560.1440" timestamp="1593622322999" />
-    <state width="1646" height="371" key="GridCell.Tab.1.center/0.23.2048.1049@0.23.2048.1049" timestamp="1594825138771" />
-    <state width="1348" height="482" key="GridCell.Tab.1.center/0.23.2560.1337@0.23.2560.1337" timestamp="1595856243101" />
-    <state width="1348" height="482" key="GridCell.Tab.1.left" timestamp="1595856243101">
-      <screen x="0" y="23" width="2560" height="1337" />
+    <state width="1348" height="372" key="GridCell.Tab.1.center/0.23.2048.1049@0.23.2048.1049" timestamp="1596024218984" />
+    <state width="1348" height="482" key="GridCell.Tab.1.center/0.23.2560.1337@0.23.2560.1337" timestamp="1595867806923" />
+    <state width="1348" height="372" key="GridCell.Tab.1.left" timestamp="1596024218984">
+      <screen x="0" y="23" width="2048" height="1049" />
     </state>
     <state width="2518" height="335" key="GridCell.Tab.1.left/0.0.2560.1440@0.0.2560.1440" timestamp="1593622322999" />
-    <state width="1646" height="371" key="GridCell.Tab.1.left/0.23.2048.1049@0.23.2048.1049" timestamp="1594825138771" />
-    <state width="1348" height="482" key="GridCell.Tab.1.left/0.23.2560.1337@0.23.2560.1337" timestamp="1595856243101" />
-    <state width="1348" height="482" key="GridCell.Tab.1.right" timestamp="1595856243101">
-      <screen x="0" y="23" width="2560" height="1337" />
+    <state width="1348" height="372" key="GridCell.Tab.1.left/0.23.2048.1049@0.23.2048.1049" timestamp="1596024218984" />
+    <state width="1348" height="482" key="GridCell.Tab.1.left/0.23.2560.1337@0.23.2560.1337" timestamp="1595867806923" />
+    <state width="1348" height="372" key="GridCell.Tab.1.right" timestamp="1596024218984">
+      <screen x="0" y="23" width="2048" height="1049" />
     </state>
     <state width="2518" height="335" key="GridCell.Tab.1.right/0.0.2560.1440@0.0.2560.1440" timestamp="1593622323000" />
-    <state width="1646" height="371" key="GridCell.Tab.1.right/0.23.2048.1049@0.23.2048.1049" timestamp="1594825138771" />
-    <state width="1348" height="482" key="GridCell.Tab.1.right/0.23.2560.1337@0.23.2560.1337" timestamp="1595856243101" />
-    <state width="640" height="204" key="ImportCMakeProjectWizard.bottomPanel" timestamp="1595767626759">
-      <screen x="0" y="23" width="2560" height="1337" />
+    <state width="1348" height="372" key="GridCell.Tab.1.right/0.23.2048.1049@0.23.2048.1049" timestamp="1596024218984" />
+    <state width="1348" height="482" key="GridCell.Tab.1.right/0.23.2560.1337@0.23.2560.1337" timestamp="1595867806923" />
+    <state width="512" height="160" key="ImportCMakeProjectWizard.bottomPanel" timestamp="1596022949797">
+      <screen x="0" y="23" width="2048" height="1049" />
     </state>
-    <state width="512" height="160" key="ImportCMakeProjectWizard.bottomPanel/0.23.2048.1049@0.23.2048.1049" timestamp="1594315380421" />
+    <state width="512" height="160" key="ImportCMakeProjectWizard.bottomPanel/0.23.2048.1049@0.23.2048.1049" timestamp="1596022949797" />
     <state width="640" height="204" key="ImportCMakeProjectWizard.bottomPanel/0.23.2560.1337@0.23.2560.1337" timestamp="1595767626759" />
-    <state width="640" height="476" key="ImportCMakeProjectWizard.topPanel" timestamp="1595767626759">
-      <screen x="0" y="23" width="2560" height="1337" />
+    <state width="512" height="375" key="ImportCMakeProjectWizard.topPanel" timestamp="1596022949796">
+      <screen x="0" y="23" width="2048" height="1049" />
     </state>
-    <state width="512" height="375" key="ImportCMakeProjectWizard.topPanel/0.23.2048.1049@0.23.2048.1049" timestamp="1594315380420" />
+    <state width="512" height="375" key="ImportCMakeProjectWizard.topPanel/0.23.2048.1049@0.23.2048.1049" timestamp="1596022949796" />
     <state width="640" height="476" key="ImportCMakeProjectWizard.topPanel/0.23.2560.1337@0.23.2560.1337" timestamp="1595767626759" />
     <state x="645" y="186" key="SettingsEditor" timestamp="1594217575404">
       <screen x="0" y="23" width="2048" height="1049" />
@@ -250,9 +242,9 @@
           <option name="timeStamp" value="11" />
         </breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/1.main.c</url>
-          <line>153</line>
-          <option name="timeStamp" value="27" />
+          <url>file://$PROJECT_DIR$/src/9.flow.c</url>
+          <line>53</line>
+          <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
