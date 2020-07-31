@@ -126,8 +126,8 @@ int						hash_fun_room(char *str);
 void					free_nei(t_nei **sentenced);
 t_room					*find_room(t_room *room, char *name);
 void					align_links(t_lem_in *lem_in);
-void					create_paths(t_lem_in *lem_in);
-void					flow(t_lem_in *lem_in);
+int						create_paths(t_lem_in *lem_in);
+void					flow(t_lem_in *lem_in, int i, int j);
 
 # define ERR_ANTS_NUM_PARSING	"ERROR: Number of ants is incorrent"
 # define ERR_ROOM_PARSING		"ERROR: Can\'t parse room"

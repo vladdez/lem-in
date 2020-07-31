@@ -150,9 +150,10 @@ void		lem(char **av)
 	/*check_links(lem_in);*/
 	//print_input(input, lem_in->ant_num);
 	//print_links(lem_in->links);
-	create_paths(lem_in);
-	print_paths(lem_in->paths, lem_in->path_num);
-	flow(lem_in);
+	fd = create_paths(lem_in);
+	if (fd != 0)
+		print_paths(lem_in->paths, lem_in->path_num);
+	flow(lem_in, 1, 2);
 	free_input(&input);
 	free_lem_in(&lem_in);
 	
