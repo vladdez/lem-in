@@ -12,7 +12,7 @@
 
 #include "lem-in.h"
 
-void print_hash_table(t_hashtable *hash_table)
+void print_ht_rooms(t_hashtable *ht_rooms)
 {
     int i;
     t_node *tmp;
@@ -20,12 +20,12 @@ void print_hash_table(t_hashtable *hash_table)
     i = 0;
     while (i < TABLE_SIZE)
     {
-        if (hash_table->room[i] != NULL)
+        if (ht_rooms->room[i] != NULL)
         {
-            ft_printf("%s [%d]", hash_table->room[i]->name, hash_table->room[i]->bfs_level);
-            if (hash_table->room[i]->link != NULL)
+            ft_printf("%s [%d]", ht_rooms->room[i]->room_name, ht_rooms->room[i]->bfs_level);
+            if (ht_rooms->room[i]->link != NULL)
             {
-                tmp = hash_table->room[i]->link;
+                tmp = ht_rooms->room[i]->link;
                 while (tmp)
                 {
                     ft_printf("->%s",tmp->node);

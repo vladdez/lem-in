@@ -54,9 +54,9 @@ void        write_coor(t_coordinate *coordinate, char **words)
     t_coordinate *tmp;
     t_coordinate *tmp2;
 
-    if (coordinate->name == NULL)
+    if (coordinate->room_name == NULL)
     {
-        if (!(coordinate->name = ft_strdup(words[0])))
+        if (!(coordinate->room_name = ft_strdup(words[0])))
             terminate(ERR_ROOM_INIT);
         coordinate->x = ft_atoi(words[1]);
         coordinate->y = ft_atoi(words[2]);
@@ -68,7 +68,7 @@ void        write_coor(t_coordinate *coordinate, char **words)
             tmp = tmp->next;
         tmp2 = coordinate_create();
         tmp->next = tmp2;
-        if (!(tmp2->name = ft_strdup(words[0])))
+        if (!(tmp2->room_name = ft_strdup(words[0])))
             terminate(ERR_ROOM_INIT);
         tmp2->x = ft_atoi(words[1]);
         tmp2->y = ft_atoi(words[2]);
@@ -84,10 +84,10 @@ t_room		*create_room(t_coordinate *coordinate, char *tmp)
 		terminate(ERR_ROOM_INIT);
 	if (!(room = (t_room *)malloc(sizeof(t_room))))
 		terminate(ERR_ROOM_INIT);
-	if (!(room->name = ft_strdup(words[0])))
+	if (!(room->room_name = ft_strdup(words[0])))
 		terminate(ERR_ROOM_INIT);
 	write_coor(coordinate, words);
-	room->visit = 0;
+	room->visit = UNVISISTED;
 	room->bfs_level = -1;
 	room->output_links = 0;
 	room->input_links = 0;
@@ -102,12 +102,12 @@ void		add_room(t_lem_in *lem_in, t_room *room)
     int  i;
     t_room *tmp;
 
-    i = sum_ascii(room->name) % TABLE_SIZE;
-    if (lem_in->hash_table->room[i] == NULL)
-        lem_in->hash_table->room[i] = room;
+    i = sum_ascii(room->room_name) % TABLE_SIZE;
+    if (lem_in->ht_rooms->room[i] == NULL)
+        lem_in->ht_rooms->room[i] = room;
     else
     {
-        tmp = lem_in->hash_table->room[i];
+        tmp = lem_in->ht_rooms->room[i];
         while (tmp->next != NULL)
             tmp = tmp->next;
         tmp->next = room;

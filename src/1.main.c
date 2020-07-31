@@ -14,17 +14,17 @@
 
 t_hashtable *ht_create()
 {
-    t_hashtable *hash_table;
+    t_hashtable *ht_rooms;
     int i;
 
     i = 0;
-    if (!(hash_table = malloc(sizeof(t_hashtable))))
+    if (!(ht_rooms = malloc(sizeof(t_hashtable))))
         terminate(ERR_ALLOCATION);
-    if (!(hash_table->room = malloc(sizeof(t_room *) * TABLE_SIZE)))
+    if (!(ht_rooms->room = malloc(sizeof(t_room *) * TABLE_SIZE)))
         terminate(ERR_ALLOCATION);
     while (i < TABLE_SIZE)
-        hash_table->room[i++] = NULL;
-    return(hash_table);
+        ht_rooms->room[i++] = NULL;
+    return(ht_rooms);
 }
 
 t_coordinate *coordinate_create()
@@ -33,7 +33,7 @@ t_coordinate *coordinate_create()
 
     if (!(coordinate = malloc(sizeof(t_coordinate))))
         terminate(ERR_ALLOCATION);
-    coordinate->name = NULL;
+    coordinate->room_name = NULL;
     coordinate->x = -1;
     coordinate->y = -1;
     coordinate->next = NULL;
@@ -50,8 +50,7 @@ t_lem_in	*init_lem_in(void)
 	lem_in->start = NULL;
 	lem_in->end = NULL;
 	lem_in->coordinate = coordinate_create();
-	lem_in->bfs_length = 0;
-	lem_in->hash_table = ht_create();
+	lem_in->ht_rooms = ht_create();
 	return (lem_in);
 }
 
@@ -79,10 +78,10 @@ void		lem(char *av)
 	    fd = 0;
 	lem_in = parse(fd, &input);
 	bfs(lem_in);
-	//if (lem_in->end->visit == -1)
-	 //   terminate(ERR_NO_PATH);
+	if (lem_in->end->visit == UNVISISTED)
+	    terminate(ERR_NO_PATH);
 	//check_links(lem_in);
-	print_hash_table(lem_in->hash_table);
+	print_ht_rooms(lem_in->ht_rooms);
 	print_input(input, lem_in->ant_num);
 	free_input(input);
 	free_lem_in(lem_in);

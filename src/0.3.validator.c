@@ -13,16 +13,16 @@
 #include "lem-in.h"
 
 
-void    validate_name(t_hashtable *hash_table, t_room *room)
+void    validate_name(t_hashtable *ht_rooms, t_room *room)
 {
     int  i;
     t_room *compare;
 
-    i = sum_ascii(room->name) % TABLE_SIZE;
-    compare = hash_table->room[i];
+    i = sum_ascii(room->room_name) % TABLE_SIZE;
+    compare = ht_rooms->room[i];
     while (compare)
     {
-        if (compare != room && !ft_strcmp(compare->name, room->name))
+        if (compare != room && !ft_strcmp(compare->room_name, room->room_name))
             terminate(ERR_ROOM_NAME_DUP);
         compare = compare->next;
     }
@@ -46,7 +46,7 @@ void    validate_coordinate(t_coordinate *coordinate)
 void		validate_room(t_lem_in *lem_in, t_room *room)
 {
 
-    validate_name(lem_in->hash_table, room);
+    validate_name(lem_in->ht_rooms, room);
     validate_coordinate(lem_in->coordinate);
 }
 

@@ -41,18 +41,18 @@ void    add_link(t_node *link, char *toward)
     }
 }
 
-void    find_toward(t_hashtable *hash_table, char *toward, char *start)
+void    find_toward(t_hashtable *ht_rooms, char *toward, char *start)
 {
     t_room *tmp;
     int  i;
 
     i = sum_ascii(toward) % TABLE_SIZE;
-    if (hash_table->room[i] != NULL)
+    if (ht_rooms->room[i] != NULL)
     {
-        tmp = hash_table->room[i];
+        tmp = ht_rooms->room[i];
         while (tmp)
         {
-            if (ft_strcmp(tmp->name, toward) == 0)
+            if (ft_strcmp(tmp->room_name, toward) == 0)
                 return(add_link(tmp->link, start));
             tmp = tmp->next;
         }
@@ -63,20 +63,20 @@ void    find_toward(t_hashtable *hash_table, char *toward, char *start)
         terminate(ERR_LINK_PARSING);
 }
 
-void    find_start(t_hashtable *hash_table, char *start, char *toward)
+void    find_start(t_hashtable *ht_rooms, char *start, char *toward)
 {
     t_room *tmp;
     int  i;
 
     i = sum_ascii(start) % TABLE_SIZE;
-    if (hash_table->room[i] != NULL)
+    if (ht_rooms->room[i] != NULL)
     {
-        tmp = hash_table->room[i];
+        tmp = ht_rooms->room[i];
         while (tmp)
         {
-            if (ft_strcmp(tmp->name, start) == 0)
+            if (ft_strcmp(tmp->room_name, start) == 0)
             {
-                find_toward(hash_table, toward, start);
+                find_toward(ht_rooms, toward, start);
                 return(add_link(tmp->link, toward));
             }
             tmp = tmp->next;
@@ -102,7 +102,7 @@ void    create_link(t_lem_in *lem_in, char *str)
             terminate(ERR_LINK_INIT);
         if (!(toward = ft_strsub(d + 1, 0, ft_strlen(d + 1))))
             terminate(ERR_LINK_INIT);
-        find_start(lem_in->hash_table, start, toward);
+        find_start(lem_in->ht_rooms, start, toward);
     }
     else
         terminate(ERR_LINK_PARSING);

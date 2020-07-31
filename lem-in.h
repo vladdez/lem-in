@@ -29,16 +29,16 @@ typedef struct			s_line
 	struct s_line		*next;
 }						t_line;
 
-typedef struct			s_node   // связыный список для соседей
+typedef struct			s_node
 {
-    char				*node;  //
-    struct s_node	*next;  // узлы одного уровня
+    char				*node;
+    struct s_node	*next;
 }						t_node;
 
 typedef struct			s_room
 {
-	char				*name;
-	int                 visit;      // 0 no 1 yes
+	char				*room_name;
+	int                 visit;
 	int					bfs_level;
 	t_node              *link;
 	int					input_links;
@@ -53,7 +53,7 @@ typedef struct          s_hashtable
 
 typedef struct          s_coordinate
 {
-    char                *name;
+    char                *room_name;
     int					x;
     int					y;
     struct s_coordinate *next;
@@ -67,17 +67,12 @@ typedef struct			s_lem_in
 	t_room				*start;
 	t_room				*end;
 	t_coordinate        *coordinate;
-	t_hashtable         *hash_table;
-	int					bfs_length;
-	/*t_path				*paths;
-	t_location			*locations;
-	t_turn				*turns;
-	t_ant				*ants;*/
+	t_hashtable         *ht_rooms;
 }						t_lem_in;
 
 typedef struct			s_queue
 {
-	char				**room;
+	char				**room_name;
 	int                 toward;
 	int       		    from;
 }						t_queue;
@@ -106,8 +101,8 @@ void					check_links(t_lem_in *lem_in);
 void					free_input(t_line *input);
 void					ft_strsplit_free(char ***strsplit);
 void					print_input(t_line *input, int n);
-int sum_ascii(char *room_name);
-void print_hash_table(t_hashtable *hash_table);
+int                     sum_ascii(char *room_name);
+void                    print_ht_rooms(t_hashtable *ht_rooms);
 
 # define ERR_ANTS_NUM_PARSING	"ERROR: Number of ants is incorrent"
 # define ERR_ROOM_PARSING		"ERROR: Can\'t parse room"
@@ -128,6 +123,9 @@ void print_hash_table(t_hashtable *hash_table);
 # define ROOM 2
 # define COMMAND 3
 # define TABLE_SIZE 10
+# define VISISTED 1
+# define UNVISISTED 0
+
 
 
 
