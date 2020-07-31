@@ -85,7 +85,7 @@ t_room		*find_room(t_room *room, char *name)
 		tmp = room;
 		while (tmp)
 		{
-			if (!ft_strcmp(room->name, name))
+			if (!ft_strcmp(tmp->name, name))
 				return(tmp);
 			else
 				tmp = tmp->next;
