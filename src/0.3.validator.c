@@ -18,7 +18,7 @@ void    validate_name(t_hashtable *ht_rooms, t_room *room)
     int  i;
     t_room *compare;
 
-    i = sum_ascii(room->room_name) % TABLE_SIZE;
+    i = sum_ascii(room->room_name);
     compare = ht_rooms->room[i];
     while (compare)
     {
@@ -50,19 +50,14 @@ void		validate_room(t_lem_in *lem_in, t_room *room)
     validate_coordinate(lem_in->coordinate);
 }
 
-/*void		validate_link(t_lem_in *lem_in, t_link *link)
+int			iswhat(char *str)
 {
-	t_link *compare;
-
-	compare = lem_in->links;
-	while (compare)
-	{
-		if (compare != link &&
-			((!ft_strcmp(link->start->name, compare->start->name) &&
-			!ft_strcmp(link->end->name, compare->end->name)) ||
-			(!ft_strcmp(link->start->name, compare->end->name) &&
-			!ft_strcmp(link->end->name, compare->start->name))))
-			terminate(ERR_LINK_DUP);
-		compare = compare->next;
-	}
-}*/
+	if 	(is_command(str) == 1)
+		return (COMMAND);
+	if (is_room(str) == 1)
+		return (ROOM);
+	if 	(is_comment(str) == COMMAND)
+		return (3);
+	else
+		return (-1);
+}

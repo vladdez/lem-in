@@ -45,6 +45,7 @@ t_node *neighbour_init()
     if (!(link = malloc(sizeof(t_node) * 1)))
         terminate(ERR_ALLOCATION);
     link->node = NULL;
+	link->type = -1;
     link->next = NULL;
     return(link);
 }
@@ -87,7 +88,8 @@ t_room		*create_room(t_coordinate *coordinate, char *tmp)
 	if (!(room->room_name = ft_strdup(words[0])))
 		terminate(ERR_ROOM_INIT);
 	write_coor(coordinate, words);
-	room->visit = UNVISISTED;
+	room->visit = UNVISITED;
+	room->visit2 = UNVISITED;
 	room->bfs_level = -1;
 	room->output_links = 0;
 	room->input_links = 0;
@@ -102,7 +104,7 @@ void		add_room(t_lem_in *lem_in, t_room *room)
     int  i;
     t_room *tmp;
 
-    i = sum_ascii(room->room_name) % TABLE_SIZE;
+    i = sum_ascii(room->room_name);
     if (lem_in->ht_rooms->room[i] == NULL)
         lem_in->ht_rooms->room[i] = room;
     else
@@ -113,7 +115,6 @@ void		add_room(t_lem_in *lem_in, t_room *room)
         tmp->next = room;
     }
 }
-
 
 void start_end(t_lem_in *lem_in, t_room *room, int roomtype)
 {

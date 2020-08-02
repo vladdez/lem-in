@@ -15,12 +15,11 @@
 // Create a queue
 t_queue *create_queue(int room_num)
 {
-    t_queue *q;
-
-    int i;
+    t_queue    *q;
+    int         i;
 
     i = 0;
-    if (!(q = malloc(sizeof(t_queue))))
+    if (!(q = (t_queue *)ft_memalloc(sizeof(t_queue))))
         terminate(ERR_ALLOCATION);
     if (!(q->room_name = malloc(sizeof(t_room *) * (room_num + 1))))
         terminate(ERR_ALLOCATION);
@@ -31,11 +30,10 @@ t_queue *create_queue(int room_num)
     return (q);
 }
 
-
 // Adding elements into queue
-void enqueue(t_queue *q, t_room *room, int room_num)
+void    enqueue(t_queue *q, t_room *room, int room_num)
 {
-    if (q->from == room_num - 1)
+    if (q->from == (room_num - 1))
         printf("\nQueue is Full!!");
     else
         {
@@ -47,7 +45,7 @@ void enqueue(t_queue *q, t_room *room, int room_num)
 }
 
 // Check if the queue is empty
-int is_empty(t_queue *q)
+int     is_empty(t_queue *q)
 {
     if (q->from == -1)
         return 1;
@@ -56,18 +54,19 @@ int is_empty(t_queue *q)
 }
 
 // Removing elements from queue
-char *dequeue(t_queue *q)
+char    *dequeue(t_queue *q)
 {
     char *current_room_name;
 
+    current_room_name = NULL;
     if (is_empty(q))
     {
         printf("Queue is empty");
         //current_room = NULL;
     }
     else
-        {
-            current_room_name = q->room_name[q->toward];
+    {
+        current_room_name = q->room_name[q->toward];
         q->toward++;
         if (q->toward > q->from)
             q->toward = q->from = -1;
@@ -75,36 +74,38 @@ char *dequeue(t_queue *q)
     return (current_room_name);
 }
 
-void	bfs(t_lem_in *lem_in)
+void    bfs(t_lem_in *lem_in)
 {
-    t_queue *q;
-    int i;
-    char *current_room_name;
-    t_node *link;
-    int level;
+    t_queue     *q;
+    int         i;
+    char        *current_room_name;
+    t_node      *link;
+    int         level;
 
     level = 0;
     q = create_queue(lem_in->room_num);
-    i = sum_ascii(lem_in->start->room_name) % TABLE_SIZE;
+    i = sum_ascii(lem_in->start->room_name);
     lem_in->ht_rooms->room[i]->visit = 1;
     lem_in->ht_rooms->room[i]->bfs_level = level;
     enqueue(q, lem_in->ht_rooms->room[i], lem_in->room_num);
     while (!is_empty(q))
     {
         current_room_name = dequeue(q);
-        i = sum_ascii(current_room_name) % TABLE_SIZE;
+        i = sum_ascii(current_room_name);
         link = lem_in->ht_rooms->room[i]->link;
         level++;
         while (link)
         {
-            i =  sum_ascii(link->node) % TABLE_SIZE;
-            if (lem_in->ht_rooms->room[i]->visit == UNVISISTED)
+            i =  sum_ascii(link->node);
+            if (lem_in->ht_rooms->room[i]->visit == UNVISITED)
             {
-                lem_in->ht_rooms->room[i]->visit = VISISTED;
+                lem_in->ht_rooms->room[i]->visit = VISITED;
                 lem_in->ht_rooms->room[i]->bfs_level = level;
                 enqueue(q, lem_in->ht_rooms->room[i], lem_in->room_num);
             }
             link = link->next;
         }
     }
+    free(q);
+    //free_queue(q);
 }

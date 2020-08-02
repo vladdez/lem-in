@@ -46,7 +46,7 @@ void    find_toward(t_hashtable *ht_rooms, char *toward, char *start)
     t_room *tmp;
     int  i;
 
-    i = sum_ascii(toward) % TABLE_SIZE;
+    i = sum_ascii(toward);
     if (ht_rooms->room[i] != NULL)
     {
         tmp = ht_rooms->room[i];
@@ -68,7 +68,7 @@ void    find_start(t_hashtable *ht_rooms, char *start, char *toward)
     t_room *tmp;
     int  i;
 
-    i = sum_ascii(start) % TABLE_SIZE;
+    i = sum_ascii(start);
     if (ht_rooms->room[i] != NULL)
     {
         tmp = ht_rooms->room[i];

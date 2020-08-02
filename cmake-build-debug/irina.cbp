@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="irina"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/kysgramo/irina/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/kysgramo/irina/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/kysgramo/irina/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/kysgramo/irina/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/kysgramo/irina/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/kysgramo/irina/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/kysgramo/irina/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/kysgramo/irina/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/kysgramo/irina/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/kysgramo/irina/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/kysgramo/irina/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/kysgramo/irina/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/kysgramo/irina/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/kysgramo/irina/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/kysgramo/irina/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="irina">
+				<Option output="/Users/kysgramo/irina/cmake-build-debug/irina" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/kysgramo/irina/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/kysgramo/irina/."/>
+					<Add directory="/Users/kysgramo/irina/libft/libft"/>
+					<Add directory="/Users/kysgramo/irina/libft/printf"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/kysgramo/irina/cmake-build-debug/Makefile&quot;  VERBOSE=1 irina"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/kysgramo/irina/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/kysgramo/irina/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/kysgramo/irina/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="irina/fast">
+				<Option output="/Users/kysgramo/irina/cmake-build-debug/irina" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/kysgramo/irina/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/kysgramo/irina/."/>
+					<Add directory="/Users/kysgramo/irina/libft/libft"/>
+					<Add directory="/Users/kysgramo/irina/libft/printf"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/kysgramo/irina/cmake-build-debug/Makefile&quot;  VERBOSE=1 irina/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/kysgramo/irina/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/kysgramo/irina/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/kysgramo/irina/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/kysgramo/irina/lem-in.h">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_atoi.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_bzero.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_isalnum.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_isalpha.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_isascii.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_isdigit.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_isprint.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_itoa.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_lstadd.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_lstdel.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_lstdelone.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_lstiter.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_lstmap.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_lstnew.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_memalloc.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_memccpy.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_memchr.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_memcmp.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_memcpy.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_memdel.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_memmove.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_memset.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_print_bits.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_putchar.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_putchar_fd.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_putendl.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_putendl_fd.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_putnbr.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_putnbr_fd.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_putstr.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_putstr_fd.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_reverse_bits.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_sort_array.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_strcat.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_strchr.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_strclr.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_strcmp.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_strcpy.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_strdel.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_strdup.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_strequ.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_striter.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_striteri.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_strjoin.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_strlcat.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_strlen.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_strmap.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_strmapi.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_strncat.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_strncmp.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_strncpy.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_strndup.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_strnequ.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_strnew.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_strnstr.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_strrchr.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_strrev.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_strsplit.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_strstr.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_strsub.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_strtrim.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_swap_bits.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_tolower.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_toupper.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/ft_words.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/get_next_line.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/libft/libft.h">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/printf/color.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/printf/conversion.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/printf/free.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/printf/ft_printf.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/printf/ft_printf.h">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/printf/multiplier.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/printf/neg_exp.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/printf/prec.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/printf/prec2.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/printf/print_float.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/printf/print_integer.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/printf/print_octal_x.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/printf/print_pointer_char.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/printf/print_string.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/printf/print_unsigned.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/printf/read_format.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/printf/substr.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/printf/sum_char.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/libft/printf/tools.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/src/0.1.errors.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/src/0.2.read_line.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/src/0.3.validator.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/src/0.4.is.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/src/0.5.hash_table.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/src/1.main.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/src/2.parse_ants_rooms.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/src/3.parse_link.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/src/4.bfs.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/src/7.print.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/src/8.create_paths.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/src/9.flow.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/src/let_me_free.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/src/let_me_free_lem.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

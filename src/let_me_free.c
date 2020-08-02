@@ -26,16 +26,20 @@ void	ft_strsplit_free(char ***strsplit)
 	}
 }
 
-
-
-
-void    free_lem_in(t_lem_in *lem_in)
+void	free_queue(t_queue *q)
 {
-	if (lem_in)
+	t_queue	*curr;
+	t_queue	*kill;
+
+	curr = q;
+	while (curr)
 	{
-		free((lem_in));
-		(lem_in) = NULL;
+		kill = curr;
+		free(kill->room_name);
+		free(kill);
 	}
+	q = NULL;
+
 }
 
 void	free_input(t_line *input)

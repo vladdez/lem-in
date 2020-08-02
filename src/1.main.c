@@ -45,8 +45,11 @@ t_lem_in	*init_lem_in(void)
 
 	if (!(lem_in = (t_lem_in*)malloc(sizeof(t_lem_in))))
         terminate(ERR_ALLOCATION);
+	lem_in->ants_start = 0;
+	lem_in->ants_end = 0;
 	lem_in->ant_num = 0;
 	lem_in->room_num = 0;
+	lem_in->path_num = 0;
 	lem_in->start = NULL;
 	lem_in->end = NULL;
 	lem_in->coordinate = coordinate_create();
@@ -67,22 +70,29 @@ t_lem_in	*parse(int fd, t_line **input)
 	return (lem_in);
 }
 
-void		lem(char *av)
+void		lem(char **av)
 {
 	t_lem_in	*lem_in;
 	t_line		*input;                  // это наши входные данные строчка за строчкой в структуре
 	int			fd;
 
 	input = NULL;
-	if ((fd = open(av, O_RDONLY, 0)) == -1)
-	    fd = 0;
+	fd = 0;
+	if (av[1] && (fd = open(av[1], O_RDONLY, 0)) == -1) /// пожалуйста не трогай этот кусок - он ДЕЙСТВИТЕЛЬНО нужен
+	{
+		if (fd == -1)
+			fd = 0;
+	}
 	lem_in = parse(fd, &input);
 	bfs(lem_in);
-	if (lem_in->end->visit == UNVISISTED)
+	if (lem_in->end->visit == UNVISITED)
 	    terminate(ERR_NO_PATH);
-	//check_links(lem_in);
 	print_ht_rooms(lem_in->ht_rooms);
-	print_input(input, lem_in->ant_num);
+	//print_input(input, lem_in->ant_num);
+	fd = create_paths(lem_in);
+	if (fd != 0) // для короткого замыкания
+		print_paths(lem_in->paths, lem_in->path_num);
+	//flow(lem_in, 1, 2);*/
 	free_input(input);
 	free_lem_in(lem_in);
 
@@ -91,6 +101,6 @@ void		lem(char *av)
 int			main(int ac, char **av)
 {
 	if (ac <= 2)
-		lem(av[1]);
+		lem(av);
 	return (0);
 }

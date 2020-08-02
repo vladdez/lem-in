@@ -32,10 +32,11 @@ void print_ht_rooms(t_hashtable *ht_rooms)
                     tmp = tmp->next;
                 }
             }
+            ft_printf("\n");
         }
-        else
-            ft_printf("NULL");
-        ft_printf("\n");
+        // else
+        //     ft_printf("NULL");
+        
         i++;
     }
     ft_putendl ("End of the hashtable\n");
@@ -54,3 +55,27 @@ void	print_input(t_line *input, int n)
 		curr = curr->next;
 	}
 }
+
+
+void print_paths(t_path **paths, int path_num)
+{
+	t_path *curr;
+	int		i;
+
+	i = 1;
+	ft_printf("paths\n");
+	while (i <= path_num)
+	{
+		if (paths[i] != NULL)
+			curr = paths[i];
+		while (curr)
+		{
+			ft_printf("%s-", curr->name);
+			curr = curr->next;
+		}
+		curr = NULL;
+		i++;
+		ft_printf("\n");
+	}
+	
+} 
