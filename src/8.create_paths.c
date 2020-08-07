@@ -23,12 +23,12 @@ int		is_short_circuit(t_lem_in *lem_in)
 	{
 		if (!ft_strcmp(cur->node, lem_in->end->room_name))
 		{
-			ft_printf("\nL%s-%s \n", lem_in->start->room_name, lem_in->end->room_name);
+			ft_printf("\nL%s-%s \n", lem_in->start->room_name, lem_in->end->room_name); // переделать печать здесь
 			return (0);
 		}
 		else
 			cur = cur->next;
-		p++;
+		p++;          // count of nodes
 	}
 	return (p);
 }
@@ -61,76 +61,97 @@ t_path	*create_one_path(t_room *cur)
 	return (pa);
 }
 
-int		find_lowest_bfs(t_node *n, t_hashtable *ht_rooms)
+t_room 	*find_lowest_bfs(t_node *n, t_hashtable *ht_rooms)
 {
 	t_node	*cur;
+	t_room  *TmpRoom;
+    t_room  *LowestBfsRoom;
 	int		lowest;
-	int		i;
-	int		tmp;
-	int		r;
+	int		level;
 
 	lowest = 2147483647;
 	cur = n;
-	r = 0;
-	i = 0;
+    LowestBfsRoom = NULL;
 	while (cur)
 	{
-		
-		i = sum_ascii(cur->node) % TABLE_SIZE;
-		if (ht_rooms->room[i]->visit2 != VISITED)
+        TmpRoom = FindRoomInHashtable(cur->node, ht_rooms);
+		if (TmpRoom->visit2 == UNVISITED)
 		{
-			tmp = ht_rooms->room[i]->bfs_level;
-			if (tmp != -1 && tmp < lowest)
+			level = TmpRoom->bfs_level;
+			if (level < lowest)
 			{
-				lowest = tmp;
-				r = i;
+				lowest = level;
+                LowestBfsRoom = TmpRoom;
 			}
 		}
 		cur = cur->next;
 	}
-	return (r);
+	return (LowestBfsRoom);
 }
 
 
-int		find_best_room(t_room *cur, t_hashtable *ht_rooms)
+t_room 	*find_best_room(t_room *cur, t_hashtable *ht_rooms)
 {
-	int i;
+    t_room *tmp;
 
-	i = 0;
 	if ((len_nei(cur->link) == 1))
-		i = sum_ascii(cur->link->node) % TABLE_SIZE;
+        return(FindRoomInHashtable(cur->link->node, ht_rooms));// если один сосед то сразу ее, в текущем коде сюда не заходит
 	else
-		i = find_lowest_bfs(cur->link, ht_rooms);
-	return (i);
+		tmp = find_lowest_bfs(cur->link, ht_rooms); // иначе по  наименьшему bfs
+	return (tmp);
 }
 
 
-void	create_way(t_lem_in *lem_in, int cut, int i, int j)
+void    DeleteCurrentPath(t_path *path)
+{
+    t_path *tmp;
+
+    tmp = path;
+    while (tmp)
+    {
+        tmp = path->next;
+        free(path);
+        path = tmp;
+    }
+
+}
+
+void	create_way(t_lem_in *lem_in, int cut, int j)
 {
 	t_room	*cur;
 	t_path	*tmp;
 	int		len;
+	t_room *TmpRoom;
 
 	tmp = NULL;
-	while (j <= cut)
+	while (j < cut) // перебор путей по массиву
 	{
 		len = 0;
 		cur = lem_in->end;
-		lem_in->paths[j] = create_one_path(lem_in->end);
-		while (cur != lem_in->start)
+		lem_in->paths[j] = create_one_path(lem_in->end);  // инизализация, важно что первый  это END
+		while (cur != lem_in->start)                      // засись команты в путь по связному списку
 		{
-			i = find_best_room(cur, lem_in->ht_rooms);
-			if (lem_in->ht_rooms->room[i] != lem_in->start &&
-			lem_in->ht_rooms->room[i] != lem_in->end)
-				lem_in->ht_rooms->room[i]->visit2 = VISITED;
-			cur = lem_in->ht_rooms->room[i];
-			tmp = create_one_path(cur);
+			TmpRoom = find_best_room(cur, lem_in->ht_rooms);
+			if (TmpRoom == lem_in->end || TmpRoom == NULL)
+            {
+			    DeleteCurrentPath(lem_in->paths[j]);
+                lem_in->paths[j] = NULL;
+                lem_in->path_num--;
+			    break;
+            }
+			if (TmpRoom != lem_in->start)
+                TmpRoom->visit2 = VISITED;
+			cur = TmpRoom;                 // добавить поиск комнаты по i
+			tmp = create_one_path(cur);   // указатель где начинается путь
 			tmp->next = lem_in->paths[j];
 			lem_in->paths[j] = tmp;
 			len++;
 			tmp = NULL;
+
 		}
-		lem_in->paths[j++]->len = len;
+		if (lem_in->paths[j])
+		    lem_in->paths[j]->len = len;      // !!! здесь потенциальная ошибка так как можем пропустить путь, они не записываются друг за другом
+		j++;
 	}
 }
 
@@ -140,21 +161,18 @@ int		create_paths(t_lem_in *lem_in)
 	int		cut_e;
 	int		cut;
 	int		i;
-	t_room	*cur;
 
 	i = 0;
-	cur = lem_in->start;
-	cut_s = is_short_circuit(lem_in);
+	cut_s = is_short_circuit(lem_in);   // короткое замыкание и протестировать что во free не уходит стурктура путей
 	if (cut_s != 0)
 	{
 		cut_e = len_nei(lem_in->end->link);
-		cut = cut_e > cut_s ? cut_s : cut_e;
-		lem_in->paths = (t_path **)malloc(sizeof(t_path *) * (cut + 1));
-		while (i < (cut))
+		cut = cut_e > cut_s ? cut_s : cut_e; // мак число путей
+		lem_in->paths = (t_path **)malloc(sizeof(t_path *) * (cut + 1));  // проверить без 1
+		while (i < cut + 1)
 			lem_in->paths[i++] = NULL;
-		lem_in->path_num = cut;
-		create_way(lem_in, cut, 0, 1);
+		lem_in->path_num = cut; // мак число путей
+		create_way(lem_in, cut, 0);
 	}
-	printf("%d - cut\n", cut_s);
-	return (cut_s);
+	return (cut_s); // мы это отправлает по делу чтобы отследить короткое замыкание
 }

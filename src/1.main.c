@@ -73,12 +73,12 @@ t_lem_in	*parse(int fd, t_line **input)
 void		lem(char **av)
 {
 	t_lem_in	*lem_in;
-	t_line		*input;                  // это наши входные данные строчка за строчкой в структуре
+	t_line		*input;
 	int			fd;
 
 	input = NULL;
 	fd = 0;
-	if (av[1] && (fd = open(av[1], O_RDONLY, 0)) == -1) /// пожалуйста не трогай этот кусок - он ДЕЙСТВИТЕЛЬНО нужен
+	if (av[1] && (fd = open(av[1], O_RDONLY, 0)) == -1)
 	{
 		if (fd == -1)
 			fd = 0;
@@ -91,10 +91,12 @@ void		lem(char **av)
 	//print_input(input, lem_in->ant_num);
 	fd = create_paths(lem_in);
 	if (fd != 0) // для короткого замыкания
-		print_paths(lem_in->paths, lem_in->path_num);
-	//flow(lem_in, 1, 2);*/
+    {
+		print_paths(lem_in->paths, lem_in->path_num); // это наглядность
+	    //flow(lem_in, 1, 2); // муравьи
+    }
 	free_input(input);
-	free_lem_in(lem_in);
+	free_lem_in(lem_in); // here check the paths structure for short
 
 }
 

@@ -114,10 +114,7 @@ void		parse_link(t_lem_in *lem_in, int fd, t_line **input, t_line **tmp)
 	while ((*tmp) || ((*tmp) = read_line(input, fd)))
 	{
 		if (is_command((*tmp) ->data) != COMMAND && is_comment((*tmp)->data) != 1)
-		{
-			create_link(lem_in, (*tmp)->data);
-			//validate_link(lem_in, link);
-		}
+		    create_link(lem_in, (*tmp)->data);
         (*tmp) = NULL;
 	}
 }

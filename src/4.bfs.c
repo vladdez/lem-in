@@ -62,7 +62,7 @@ char    *dequeue(t_queue *q)
     if (is_empty(q))
     {
         printf("Queue is empty");
-        //current_room = NULL;
+        // подумать тут над рефакторингом
     }
     else
     {
@@ -74,38 +74,64 @@ char    *dequeue(t_queue *q)
     return (current_room_name);
 }
 
+t_node *FindRoomLinks(char *current_room_name, t_hashtable *ht_rooms)
+{
+    int  i;
+    t_room *tmp;
+
+    i = sum_ascii(current_room_name);
+    tmp = ht_rooms->room[i];
+    while (ft_strcmp(tmp->room_name, current_room_name) != 0)
+        tmp = tmp->next;
+    return (tmp->link);
+}
+
+t_room *FindRoomInHashtable(char *room_name, t_hashtable *ht_rooms)
+{
+    int  i;
+    t_room *tmp;
+
+    i = sum_ascii(room_name);
+    tmp = ht_rooms->room[i];
+    while (ft_strcmp(tmp->room_name, room_name) != 0)
+        tmp = tmp->next;
+    return (tmp);
+}
+
+
 void    bfs(t_lem_in *lem_in)
 {
     t_queue     *q;
-    int         i;
     char        *current_room_name;
     t_node      *link;
     int         level;
+    t_room      *tmp;
+    int         i;
 
     level = 0;
+    i = 0;
     q = create_queue(lem_in->room_num);
-    i = sum_ascii(lem_in->start->room_name);
-    lem_in->ht_rooms->room[i]->visit = 1;
-    lem_in->ht_rooms->room[i]->bfs_level = level;
-    enqueue(q, lem_in->ht_rooms->room[i], lem_in->room_num);
+    lem_in->start->visit = VISITED;
+    lem_in->start->bfs_level = level;
+    enqueue(q, lem_in->start, lem_in->room_num);
     while (!is_empty(q))
     {
         current_room_name = dequeue(q);
-        i = sum_ascii(current_room_name);
-        link = lem_in->ht_rooms->room[i]->link;
+        link = FindRoomLinks(current_room_name, lem_in->ht_rooms);
         level++;
         while (link)
         {
-            i =  sum_ascii(link->node);
-            if (lem_in->ht_rooms->room[i]->visit == UNVISITED)
+            tmp = FindRoomInHashtable(link->node, lem_in->ht_rooms);
+            if (tmp->visit == UNVISITED)
             {
-                lem_in->ht_rooms->room[i]->visit = VISITED;
-                lem_in->ht_rooms->room[i]->bfs_level = level;
-                enqueue(q, lem_in->ht_rooms->room[i], lem_in->room_num);
+                i++;
+                tmp->visit = VISITED;
+                tmp->bfs_level = level;
+                enqueue(q, tmp, lem_in->room_num);
             }
             link = link->next;
         }
+        i == 0? level-- : (i = 0);                             // ставим счетчик если вдруг все соседи пройдены и тогда нет смысла повышать level
     }
-    free(q);
-    //free_queue(q);
+    //    free_queue(q); нужна какая-то очистка струкутры q
 }

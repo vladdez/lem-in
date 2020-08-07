@@ -28,18 +28,15 @@ void	ft_strsplit_free(char ***strsplit)
 
 void	free_queue(t_queue *q)
 {
-	t_queue	*curr;
-	t_queue	*kill;
+	char	**curr;
 
-	curr = q;
-	while (curr)
-	{
-		kill = curr;
-		free(kill->room_name);
-		free(kill);
-	}
-	q = NULL;
-
+	curr = q->room_name;
+	if (curr && *curr)
+    {
+	    while(*curr != NULL)
+            free((*(curr++)));
+    }
+    free(q);
 }
 
 void	free_input(t_line *input)

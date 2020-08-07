@@ -16,21 +16,27 @@ void print_ht_rooms(t_hashtable *ht_rooms)
 {
     int i;
     t_node *tmp;
+    t_room *tmp2;
 
     i = 0;
     while (i < TABLE_SIZE)
     {
         if (ht_rooms->room[i] != NULL)
         {
-            ft_printf("%s [%d]", ht_rooms->room[i]->room_name, ht_rooms->room[i]->bfs_level);
-            if (ht_rooms->room[i]->link != NULL)
+            tmp2 = ht_rooms->room[i];
+            while (tmp2)
             {
-                tmp = ht_rooms->room[i]->link;
-                while (tmp)
+                ft_printf(" %s[%d]", tmp2->room_name, tmp2->bfs_level);
+                if (ht_rooms->room[i]->link != NULL)
                 {
-                    ft_printf("->%s",tmp->node);
-                    tmp = tmp->next;
+                    tmp = ht_rooms->room[i]->link;
+                    while (tmp)
+                    {
+                        ft_printf("->%s",tmp->node);
+                        tmp = tmp->next;
+                    }
                 }
+                tmp2 = tmp2->next;
             }
             ft_printf("\n");
         }
@@ -62,7 +68,7 @@ void print_paths(t_path **paths, int path_num)
 	t_path *curr;
 	int		i;
 
-	i = 1;
+	i = 0;
 	ft_printf("paths\n");
 	while (i <= path_num)
 	{

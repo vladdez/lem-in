@@ -124,6 +124,7 @@ int						create_paths(t_lem_in *lem_in);
 void					flow(t_lem_in *lem_in, int i, int j);
 void					free_paths(t_path **pa, int path_num);
 void					free_queue(t_queue *q);
+t_room *FindRoomInHashtable(char *room_name, t_hashtable *ht_rooms);
 # define ERR_ANTS_NUM_PARSING	"ERROR: Number of ants is incorrent"
 # define ERR_ROOM_PARSING		"ERROR: Can\'t parse room"
 # define ERR_ROOM_INIT			"ERROR: Can\'t initialize room"
@@ -146,7 +147,7 @@ void					free_queue(t_queue *q);
 
 # define ROOM 2
 # define COMMAND 3
-# define TABLE_SIZE 10
+# define TABLE_SIZE 100
 # define VISITED 1
 # define UNVISITED 0
 
