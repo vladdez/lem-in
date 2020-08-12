@@ -92,11 +92,11 @@ void		lem(char **av)
 	fd = create_paths(lem_in);
 	if (fd != 0) // для короткого замыкания
     {
-		print_paths(lem_in->paths, lem_in->path_num); // это наглядность
+		print_paths(lem_in->paths, lem_in->path_num); // это наглядность путей
 	    //flow(lem_in, 1, 2); // муравьи
     }
 	free_input(input);
-	free_lem_in(lem_in); // here check the paths structure for short
+	free_lem_in(lem_in);
 
 }
 

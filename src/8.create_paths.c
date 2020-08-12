@@ -12,6 +12,19 @@
 
 #include "lem-in.h"
 
+void    printAntsForShortCircuit(t_lem_in *lem_in)
+{
+    int i;
+
+    i = 1;
+    while (i <= lem_in->ant_num)
+    {
+        ft_printf("L%i-%s ", i, lem_in->end->room_name);
+        i++;
+    }
+    ft_printf("\n");
+}
+
 int		is_short_circuit(t_lem_in *lem_in)
 {
 	t_node	*cur;
@@ -23,7 +36,7 @@ int		is_short_circuit(t_lem_in *lem_in)
 	{
 		if (!ft_strcmp(cur->node, lem_in->end->room_name))
 		{
-			ft_printf("\nL%s-%s \n", lem_in->start->room_name, lem_in->end->room_name); // переделать печать здесь
+			printAntsForShortCircuit(lem_in);
 			return (0);
 		}
 		else
@@ -97,7 +110,7 @@ t_room 	*find_best_room(t_room *cur, t_hashtable *ht_rooms)
 	if ((len_nei(cur->link) == 1))
         return(FindRoomInHashtable(cur->link->node, ht_rooms));// если один сосед то сразу ее, в текущем коде сюда не заходит
 	else
-		tmp = find_lowest_bfs(cur->link, ht_rooms); // иначе по  наименьшему bfs
+		tmp = find_lowest_bfs(cur->link, ht_rooms); // иначе по наименьшему bfs
 	return (tmp);
 }
 
@@ -141,7 +154,7 @@ void	create_way(t_lem_in *lem_in, int cut, int j)
             }
 			if (TmpRoom != lem_in->start)
                 TmpRoom->visit2 = VISITED;
-			cur = TmpRoom;                 // добавить поиск комнаты по i
+			cur = TmpRoom;
 			tmp = create_one_path(cur);   // указатель где начинается путь
 			tmp->next = lem_in->paths[j];
 			lem_in->paths[j] = tmp;
@@ -163,7 +176,7 @@ int		create_paths(t_lem_in *lem_in)
 	int		i;
 
 	i = 0;
-	cut_s = is_short_circuit(lem_in);   // короткое замыкание и протестировать что во free не уходит стурктура путей
+	cut_s = is_short_circuit(lem_in);
 	if (cut_s != 0)
 	{
 		cut_e = len_nei(lem_in->end->link);

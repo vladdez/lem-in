@@ -30,21 +30,22 @@ int		is_room(char *str)
 
 	if (str)
 	{
-		s = ft_strdup(str);
-		q = ft_words(s, ' ');                       // сразу проверить что слова три
-		if (!(words = ft_strsplit(str, ' ')))
-			terminate(ERR_ROOM_PARSING);
-		free(s);
+		if (!(s = ft_strdup(str)))
+            terminate(ERR_ROOM_PARSING);
+		q = ft_words(s, ' ');
 		if (q == 3)
 		{
+		    if (!(words = ft_strsplit(str, ' ')))
+                terminate(ERR_ROOM_PARSING);
 			if ((is_room_name(words[0])) && ft_isint(words[1])
 			&& ft_isint(words[2]))
             {
 			    ft_strsplit_free(&words);
 			    return(ROOM);
             }
+			ft_strsplit_free(&words);
 		}
-		ft_strsplit_free(&words);
+		free(s);
 	}
 	return (0);
 }

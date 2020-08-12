@@ -21,7 +21,8 @@ void	free_paths(t_path **pa, int path_num)
 		}
 		i++;
 	}
-	free(pa);
+	if (pa != NULL)
+	    free(pa);
 } 
 
 void	free_node(t_node **sentenced)

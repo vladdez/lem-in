@@ -15,3 +15,15 @@ int sum_ascii(char *room_name)
     }
     return (sum % TABLE_SIZE);
 }
+
+t_room *FindRoomInHashtable(char *room_name, t_hashtable *ht_rooms)
+{
+    int  i;
+    t_room *tmp;
+
+    i = sum_ascii(room_name);
+    tmp = ht_rooms->room[i];
+    while (ft_strcmp(tmp->room_name, room_name) != 0)
+        tmp = tmp->next;
+    return (tmp);
+}

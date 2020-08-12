@@ -40,9 +40,6 @@ void print_ht_rooms(t_hashtable *ht_rooms)
             }
             ft_printf("\n");
         }
-        // else
-        //     ft_printf("NULL");
-        
         i++;
     }
     ft_putendl ("End of the hashtable\n");

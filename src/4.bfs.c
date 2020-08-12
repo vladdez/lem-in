@@ -86,19 +86,6 @@ t_node *FindRoomLinks(char *current_room_name, t_hashtable *ht_rooms)
     return (tmp->link);
 }
 
-t_room *FindRoomInHashtable(char *room_name, t_hashtable *ht_rooms)
-{
-    int  i;
-    t_room *tmp;
-
-    i = sum_ascii(room_name);
-    tmp = ht_rooms->room[i];
-    while (ft_strcmp(tmp->room_name, room_name) != 0)
-        tmp = tmp->next;
-    return (tmp);
-}
-
-
 void    bfs(t_lem_in *lem_in)
 {
     t_queue     *q;
@@ -131,7 +118,7 @@ void    bfs(t_lem_in *lem_in)
             }
             link = link->next;
         }
-        i == 0? level-- : (i = 0);                             // ставим счетчик если вдруг все соседи пройдены и тогда нет смысла повышать level
+        i == 0? level-- : (i = 0);                             // ставим счетчик, на случи, если все соседи были уже пройдены ранее, тогда переменную level нужно уменьшить на один
     }
     //    free_queue(q); нужна какая-то очистка струкутры q
 }
