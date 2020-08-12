@@ -16,7 +16,7 @@ t_line	*create_line(char *line)
 {
 	t_line *input1;
 
-	if (!(input1 = (t_line *)malloc(sizeof(t_line))))   //   зачем while
+	if (!(input1 = (t_line *)malloc(sizeof(t_line))))
 		terminate(ERR_LINE_INIT);
 	input1->data = line;
 	input1->next = NULL;

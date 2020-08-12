@@ -41,7 +41,7 @@ void    add_link(t_node *link, char *toward)
     }
 }
 
-void    find_toward(t_hashtable *ht_rooms, char *toward, char *start)
+void    FindTowardRoom(t_hashtable *ht_rooms, char *toward, char *start)
 {
     t_room *tmp;
     int  i;
@@ -63,7 +63,7 @@ void    find_toward(t_hashtable *ht_rooms, char *toward, char *start)
         terminate(ERR_LINK_PARSING);
 }
 
-void    find_start(t_hashtable *ht_rooms, char *start, char *toward)
+void    FindStartRoom(t_hashtable *ht_rooms, char *start, char *toward)
 {
     t_room *tmp;
     int  i;
@@ -76,7 +76,7 @@ void    find_start(t_hashtable *ht_rooms, char *start, char *toward)
         {
             if (ft_strcmp(tmp->room_name, start) == 0)
             {
-                find_toward(ht_rooms, toward, start);
+                FindTowardRoom(ht_rooms, toward, start);
                 return(add_link(tmp->link, toward));
             }
             tmp = tmp->next;
@@ -89,20 +89,65 @@ void    find_start(t_hashtable *ht_rooms, char *start, char *toward)
 }
 
 
+int     CountDashesinImput(char *str)
+{
+    int  DashesNumber;
+
+    DashesNumber = 0;
+    while (*str)
+    {
+        if (*str == '-')
+            DashesNumber++;
+        str++;
+    }
+    return (DashesNumber);
+}
+
+void    StartTowardForDashesImput(t_lem_in *lem_in, char *str)
+{
+    t_coordinate *tmp;
+    char	*d;
+    char	*start;
+    char	*toward;
+
+    tmp = lem_in->coordinate;
+    while (tmp)
+    {
+        if ((d = ft_strnstr(str, tmp->room_name, ft_strlen(tmp->room_name))) != NULL)
+        {
+            if (!(start = ft_strsub(str, 0, ft_strlen(tmp->room_name))))
+                terminate(ERR_LINK_INIT);
+            d = d + ft_strlen(tmp->room_name) + 1;
+            if (!(toward = ft_strdup(d)))
+                terminate(ERR_LINK_INIT);
+            FindStartRoom(lem_in->ht_rooms, start, toward);
+            return;
+        }
+        else
+            tmp = tmp->next;
+    }
+    terminate(ERR_LINK_PARSING);
+}
+
 void    create_link(t_lem_in *lem_in, char *str)
 {
     char	*start;
     char	*toward;
     char	*d;
+    int DashesNumber;
 
     d = str;
-    if ((d = ft_strchr(d, '-')))
+    DashesNumber = CountDashesinImput(str);
+    if (DashesNumber > 1)
+        StartTowardForDashesImput(lem_in, str);
+    else if (DashesNumber == 1)
     {
+        d = ft_strchr(d, '-');
         if (!(start = ft_strsub(str, 0, d - str)))
-            terminate(ERR_LINK_INIT);
+                terminate(ERR_LINK_INIT);
         if (!(toward = ft_strsub(d + 1, 0, ft_strlen(d + 1))))
-            terminate(ERR_LINK_INIT);
-        find_start(lem_in->ht_rooms, start, toward);
+                terminate(ERR_LINK_INIT);
+        FindStartRoom(lem_in->ht_rooms, start, toward);
     }
     else
         terminate(ERR_LINK_PARSING);
