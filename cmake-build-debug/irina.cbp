@@ -372,6 +372,9 @@
 		<Unit filename="/Users/irinadeeva/Desktop/lem-i_working_branch/src/4.bfs.c">
 			<Option target="irina"/>
 		</Unit>
+		<Unit filename="/Users/irinadeeva/Desktop/lem-i_working_branch/src/5.find_links_direction.c">
+			<Option target="irina"/>
+		</Unit>
 		<Unit filename="/Users/irinadeeva/Desktop/lem-i_working_branch/src/7.print.c">
 			<Option target="irina"/>
 		</Unit>
@@ -379,6 +382,9 @@
 			<Option target="irina"/>
 		</Unit>
 		<Unit filename="/Users/irinadeeva/Desktop/lem-i_working_branch/src/9.flow.c">
+			<Option target="irina"/>
+		</Unit>
+		<Unit filename="/Users/irinadeeva/Desktop/lem-i_working_branch/src/delete_unused_rooms.c">
 			<Option target="irina"/>
 		</Unit>
 		<Unit filename="/Users/irinadeeva/Desktop/lem-i_working_branch/src/let_me_free.c">

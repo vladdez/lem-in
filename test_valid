@@ -45,3 +45,6 @@ echo -e '\033[1m  maps/valid/difficult/two_names_with_dashes.map  \033[0m'
 
 echo -e '\033[1m  maps/valid/difficult/three_ways.map \033[0m'
 ./lem-in maps/valid/difficult/three_ways.map
+
+echo -e '\033[1m  4short_circuit.map  \033[0m'
+./lem-in 4short_circuit.map

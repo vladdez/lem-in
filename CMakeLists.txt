@@ -108,4 +108,4 @@ add_executable(irina
         src/9.flow.c
         src/let_me_free.c
         src/let_me_free_lem.c
-        lem-in.h)
+        lem-in.h src/delete_unused_rooms.c src/5.find_links_direction.c)

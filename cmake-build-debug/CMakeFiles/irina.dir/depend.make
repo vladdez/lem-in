@@ -307,6 +307,11 @@ CMakeFiles/irina.dir/src/4.bfs.c.o: ../libft/libft/libft.h
 CMakeFiles/irina.dir/src/4.bfs.c.o: ../libft/printf/ft_printf.h
 CMakeFiles/irina.dir/src/4.bfs.c.o: ../src/4.bfs.c
 
+CMakeFiles/irina.dir/src/5.find_links_direction.c.o: ../lem-in.h
+CMakeFiles/irina.dir/src/5.find_links_direction.c.o: ../libft/libft/libft.h
+CMakeFiles/irina.dir/src/5.find_links_direction.c.o: ../libft/printf/ft_printf.h
+CMakeFiles/irina.dir/src/5.find_links_direction.c.o: ../src/5.find_links_direction.c
+
 CMakeFiles/irina.dir/src/7.print.c.o: ../lem-in.h
 CMakeFiles/irina.dir/src/7.print.c.o: ../libft/libft/libft.h
 CMakeFiles/irina.dir/src/7.print.c.o: ../libft/printf/ft_printf.h
@@ -321,6 +326,11 @@ CMakeFiles/irina.dir/src/9.flow.c.o: ../lem-in.h
 CMakeFiles/irina.dir/src/9.flow.c.o: ../libft/libft/libft.h
 CMakeFiles/irina.dir/src/9.flow.c.o: ../libft/printf/ft_printf.h
 CMakeFiles/irina.dir/src/9.flow.c.o: ../src/9.flow.c
+
+CMakeFiles/irina.dir/src/delete_unused_rooms.c.o: ../lem-in.h
+CMakeFiles/irina.dir/src/delete_unused_rooms.c.o: ../libft/libft/libft.h
+CMakeFiles/irina.dir/src/delete_unused_rooms.c.o: ../libft/printf/ft_printf.h
+CMakeFiles/irina.dir/src/delete_unused_rooms.c.o: ../src/delete_unused_rooms.c
 
 CMakeFiles/irina.dir/src/let_me_free.c.o: ../lem-in.h
 CMakeFiles/irina.dir/src/let_me_free.c.o: ../libft/libft/libft.h

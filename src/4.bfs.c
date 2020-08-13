@@ -74,29 +74,16 @@ char    *dequeue(t_queue *q)
     return (current_room_name);
 }
 
-t_node *FindRoomLinks(char *current_room_name, t_hashtable *ht_rooms)
-{
-    int  i;
-    t_room *tmp;
-
-    i = sum_ascii(current_room_name);
-    tmp = ht_rooms->room[i];
-    while (ft_strcmp(tmp->room_name, current_room_name) != 0)
-        tmp = tmp->next;
-    return (tmp->link);
-}
-
 void    bfs(t_lem_in *lem_in)
 {
     t_queue     *q;
     char        *current_room_name;
+    t_room      *currentRoom;
     t_node      *link;
     int         level;
     t_room      *tmp;
-    int         i;
 
     level = 0;
-    i = 0;
     q = create_queue(lem_in->room_num);
     lem_in->start->visit = VISITED;
     lem_in->start->bfs_level = level;
@@ -104,21 +91,21 @@ void    bfs(t_lem_in *lem_in)
     while (!is_empty(q))
     {
         current_room_name = dequeue(q);
+        currentRoom = FindRoomInHashtable(current_room_name, lem_in->ht_rooms);
+        level = currentRoom->bfs_level + 1;
         link = FindRoomLinks(current_room_name, lem_in->ht_rooms);
-        level++;
         while (link)
         {
             tmp = FindRoomInHashtable(link->node, lem_in->ht_rooms);
             if (tmp->visit == UNVISITED)
             {
-                i++;
                 tmp->visit = VISITED;
                 tmp->bfs_level = level;
                 enqueue(q, tmp, lem_in->room_num);
             }
             link = link->next;
         }
-        i == 0? level-- : (i = 0);                             // ставим счетчик, на случи, если все соседи были уже пройдены ранее, тогда переменную level нужно уменьшить на один
     }
+
     //    free_queue(q); нужна какая-то очистка струкутры q
 }

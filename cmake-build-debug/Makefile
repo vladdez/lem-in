@@ -39,10 +39,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /private/var/folders/wb/ylrhwjnd2ys8fwjlnx_m307r0000gn/T/AppTranslocation/A530C296-1E22-4658-96CA-0A868DB61B30/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /private/var/folders/wb/ylrhwjnd2ys8fwjlnx_m307r0000gn/T/AppTranslocation/0F084E67-5863-4FCE-BAAC-37EC4A3D099F/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /private/var/folders/wb/ylrhwjnd2ys8fwjlnx_m307r0000gn/T/AppTranslocation/A530C296-1E22-4658-96CA-0A868DB61B30/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /private/var/folders/wb/ylrhwjnd2ys8fwjlnx_m307r0000gn/T/AppTranslocation/0F084E67-5863-4FCE-BAAC-37EC4A3D099F/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /Users/irinadeeva/Desktop/lem-i_working_branch/cmake-build-de
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/private/var/folders/wb/ylrhwjnd2ys8fwjlnx_m307r0000gn/T/AppTranslocation/A530C296-1E22-4658-96CA-0A868DB61B30/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/private/var/folders/wb/ylrhwjnd2ys8fwjlnx_m307r0000gn/T/AppTranslocation/0F084E67-5863-4FCE-BAAC-37EC4A3D099F/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/private/var/folders/wb/ylrhwjnd2ys8fwjlnx_m307r0000gn/T/AppTranslocation/A530C296-1E22-4658-96CA-0A868DB61B30/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/private/var/folders/wb/ylrhwjnd2ys8fwjlnx_m307r0000gn/T/AppTranslocation/0F084E67-5863-4FCE-BAAC-37EC4A3D099F/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -2634,6 +2634,33 @@ src/4.bfs.c.s:
 	$(MAKE) -f CMakeFiles/irina.dir/build.make CMakeFiles/irina.dir/src/4.bfs.c.s
 .PHONY : src/4.bfs.c.s
 
+src/5.find_links_direction.o: src/5.find_links_direction.c.o
+
+.PHONY : src/5.find_links_direction.o
+
+# target to build an object file
+src/5.find_links_direction.c.o:
+	$(MAKE) -f CMakeFiles/irina.dir/build.make CMakeFiles/irina.dir/src/5.find_links_direction.c.o
+.PHONY : src/5.find_links_direction.c.o
+
+src/5.find_links_direction.i: src/5.find_links_direction.c.i
+
+.PHONY : src/5.find_links_direction.i
+
+# target to preprocess a source file
+src/5.find_links_direction.c.i:
+	$(MAKE) -f CMakeFiles/irina.dir/build.make CMakeFiles/irina.dir/src/5.find_links_direction.c.i
+.PHONY : src/5.find_links_direction.c.i
+
+src/5.find_links_direction.s: src/5.find_links_direction.c.s
+
+.PHONY : src/5.find_links_direction.s
+
+# target to generate assembly for a file
+src/5.find_links_direction.c.s:
+	$(MAKE) -f CMakeFiles/irina.dir/build.make CMakeFiles/irina.dir/src/5.find_links_direction.c.s
+.PHONY : src/5.find_links_direction.c.s
+
 src/7.print.o: src/7.print.c.o
 
 .PHONY : src/7.print.o
@@ -2714,6 +2741,33 @@ src/9.flow.s: src/9.flow.c.s
 src/9.flow.c.s:
 	$(MAKE) -f CMakeFiles/irina.dir/build.make CMakeFiles/irina.dir/src/9.flow.c.s
 .PHONY : src/9.flow.c.s
+
+src/delete_unused_rooms.o: src/delete_unused_rooms.c.o
+
+.PHONY : src/delete_unused_rooms.o
+
+# target to build an object file
+src/delete_unused_rooms.c.o:
+	$(MAKE) -f CMakeFiles/irina.dir/build.make CMakeFiles/irina.dir/src/delete_unused_rooms.c.o
+.PHONY : src/delete_unused_rooms.c.o
+
+src/delete_unused_rooms.i: src/delete_unused_rooms.c.i
+
+.PHONY : src/delete_unused_rooms.i
+
+# target to preprocess a source file
+src/delete_unused_rooms.c.i:
+	$(MAKE) -f CMakeFiles/irina.dir/build.make CMakeFiles/irina.dir/src/delete_unused_rooms.c.i
+.PHONY : src/delete_unused_rooms.c.i
+
+src/delete_unused_rooms.s: src/delete_unused_rooms.c.s
+
+.PHONY : src/delete_unused_rooms.s
+
+# target to generate assembly for a file
+src/delete_unused_rooms.c.s:
+	$(MAKE) -f CMakeFiles/irina.dir/build.make CMakeFiles/irina.dir/src/delete_unused_rooms.c.s
+.PHONY : src/delete_unused_rooms.c.s
 
 src/let_me_free.o: src/let_me_free.c.o
 
@@ -3057,6 +3111,9 @@ help:
 	@echo "... src/4.bfs.o"
 	@echo "... src/4.bfs.i"
 	@echo "... src/4.bfs.s"
+	@echo "... src/5.find_links_direction.o"
+	@echo "... src/5.find_links_direction.i"
+	@echo "... src/5.find_links_direction.s"
 	@echo "... src/7.print.o"
 	@echo "... src/7.print.i"
 	@echo "... src/7.print.s"
@@ -3066,6 +3123,9 @@ help:
 	@echo "... src/9.flow.o"
 	@echo "... src/9.flow.i"
 	@echo "... src/9.flow.s"
+	@echo "... src/delete_unused_rooms.o"
+	@echo "... src/delete_unused_rooms.i"
+	@echo "... src/delete_unused_rooms.s"
 	@echo "... src/let_me_free.o"
 	@echo "... src/let_me_free.i"
 	@echo "... src/let_me_free.s"

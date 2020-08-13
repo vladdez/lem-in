@@ -12,6 +12,48 @@
 
 #include "lem-in.h"
 
+void print_ht_roomsWithDirection(t_hashtable *ht_rooms)
+{
+    int i;
+    t_node *tmp;
+    t_room *tmp2;
+
+    i = 0;
+    while (i < TABLE_SIZE)
+    {
+        if (ht_rooms->room[i] != NULL)
+        {
+            tmp2 = ht_rooms->room[i];
+            while (tmp2)
+            {
+                if (ht_rooms->room[i]->incomingLinks->node != NULL)
+                {
+                    tmp = ht_rooms->room[i]->incomingLinks;
+                    while (tmp)
+                    {
+                        ft_printf("%s->",tmp->node);
+                        tmp = tmp->next;
+                    }
+                }
+                ft_printf("%s[%d]", tmp2->room_name, tmp2->bfs_level);
+                if (ht_rooms->room[i]->outgoingLinks->node != NULL)
+                {
+                    tmp = ht_rooms->room[i]->outgoingLinks;
+                    while (tmp)
+                    {
+                        ft_printf("->%s",tmp->node);
+                        tmp = tmp->next;
+                    }
+                }
+                tmp2 = tmp2->next;
+            }
+            ft_printf("\n");
+        }
+        i++;
+    }
+    ft_putendl ("End of the hashtable\n");
+}
+
 void print_ht_rooms(t_hashtable *ht_rooms)
 {
     int i;
@@ -59,7 +101,6 @@ void	print_input(t_line *input, int n)
 	}
 }
 
-
 void print_paths(t_path **paths, int path_num)
 {
 	t_path *curr;
@@ -67,7 +108,7 @@ void print_paths(t_path **paths, int path_num)
 
 	i = 0;
 	ft_printf("paths\n");
-	while (i <= path_num)
+	while (i < path_num)
 	{
 		if (paths[i] != NULL)
 			curr = paths[i];
@@ -76,9 +117,8 @@ void print_paths(t_path **paths, int path_num)
 			ft_printf("%s-", curr->name);
 			curr = curr->next;
 		}
-		curr = NULL;
-		i++;
-		ft_printf("\n");
+        if (paths[i] != NULL)
+		    ft_printf("\n");
+        i++;
 	}
-	
 } 

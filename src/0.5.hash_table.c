@@ -27,3 +27,15 @@ t_room *FindRoomInHashtable(char *room_name, t_hashtable *ht_rooms)
         tmp = tmp->next;
     return (tmp);
 }
+
+t_node *FindRoomLinks(char *current_room_name, t_hashtable *ht_rooms)
+{
+    int  i;
+    t_room *tmp;
+
+    i = sum_ascii(current_room_name);
+    tmp = ht_rooms->room[i];
+    while (ft_strcmp(tmp->room_name, current_room_name) != 0)
+        tmp = tmp->next;
+    return (tmp->link);
+}

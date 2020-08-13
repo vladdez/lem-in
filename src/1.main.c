@@ -88,12 +88,14 @@ void		lem(char **av)
 	if (lem_in->end->visit == UNVISITED)
 	    terminate(ERR_NO_PATH);
 	print_ht_rooms(lem_in->ht_rooms);
-	//print_input(input, lem_in->ant_num);
+    ImputCleaning(lem_in);
+    findLinkDirection(lem_in->ht_rooms);
+    print_ht_roomsWithDirection(lem_in->ht_rooms);
 	fd = create_paths(lem_in);
-	if (fd != 0) // для короткого замыкания
+	if (fd != 0)                                      // для короткого замыкания
     {
 		print_paths(lem_in->paths, lem_in->path_num); // это наглядность путей
-	    //flow(lem_in, 1, 2); // муравьи
+	    // flow(lem_in, 1, 2);                         // муравьи
     }
 	free_input(input);
 	free_lem_in(lem_in);

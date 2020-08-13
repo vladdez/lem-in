@@ -98,21 +98,25 @@ int		lever(int lev, t_lem_in *lem_in)
 {
 	int		cut;
 	int		i;
+	int     NumberOfPathes;
 
-	i = 0;
-	cut = 0;
 	if (lem_in->path_num == 1)
 		return (1);
 	else
 	{
-		while (cut < lev && i <= lem_in->path_num)
+        i = 0;
+        cut = 0;
+        NumberOfPathes = 0;
+        while (cut < lev && i < lem_in->path_num)
 		{
 		    if (lem_in->paths[i])
+            {
 			    cut += lem_in->paths[i]->len;
+                NumberOfPathes++;
+            }
 			i++;
 		}
-		i--;
-		return (i);
+		return (NumberOfPathes);
 	}
 }
 
@@ -122,42 +126,44 @@ void	count_new_ants(t_lem_in *lem_in, int k, int j, int i)
 
 	while (k <= j)
 	{
-		pa = lem_in->paths[k];
-		if (lem_in->ants_start < lem_in->ant_num)
-		{
-			lem_in->ants_start++;
-			pa->ant_index = lem_in->ants_start;
-		}
-		else
-			pa->ant_index = 0;
-		run_new_ant(pa, lem_in, i);
+	    if (lem_in->paths[k])
+        {
+		    pa = lem_in->paths[k];
+		    if (lem_in->ants_start < lem_in->ant_num)
+		    {
+			    lem_in->ants_start++;
+			    pa->ant_index = lem_in->ants_start;
+		    }
+		    else
+			    pa->ant_index = 0;
+		    run_new_ant(pa, lem_in, i);
+        }
 		k++;
 	}
 }
 
 void	flow(t_lem_in *lem_in, int i, int j) // i сколько узлов нужно протолкнуть, j количество потоков в этот толчок
 {
-	int		lev; // рычаг
-	int		k; // от 1 идет до j, чтобы начинал с короткого пути
-	int		maxk; // сколько потоков было использовано сначала и которые нужно опустошить от муравьев
+	int		LeftAnts;
+	int		k; // от 0 идет до j, чтобы начинал с короткого пути
+	int		usedNumberOfPathes; // сколько потоков было использовано сначала и которые нужно опустошить от муравьев
 
-	lev = lem_in->ant_num;
-	point_heads(lem_in); // поставить начала START путей
-	maxk = -2; // сколько путей для проталкивания
-	while (lem_in->ants_start <= lem_in->ant_num &&
-	lem_in->ant_num != lem_in->ants_end)
+    LeftAnts = lem_in->ant_num;
+	point_heads(lem_in);
+    usedNumberOfPathes = -2; // сколько путей для проталкивания
+	while (lem_in->ants_end != lem_in->ant_num)  // lem_in->ants_start <= lem_in->ant_num &&
 	{
 		if (j > 1)
-			j = lever(lev, lem_in);
-		lev = lev - j; // оставшиеся муровье
-		if (maxk == -2)
-			maxk = j;
-		k = 1;
-		if (i != lem_in->paths[maxk]->len + 1)   // i ограничение по длине пути
+			j = lever(LeftAnts, lem_in);
+        LeftAnts = LeftAnts - j; // оставшиеся муровье
+		if (usedNumberOfPathes == -2)
+            usedNumberOfPathes = j;
+		k = 0;
+		if (i != lem_in->paths[usedNumberOfPathes]->len + 1)   // i ограничение по длине пути
 			i++;
 		count_new_ants(lem_in, k, j, i);     // добавляем новых муравьев
-		if (j != maxk)
-			maxk = push_old_ants(lem_in, maxk, j, i);  // доталкиваем старых
+		if (j != usedNumberOfPathes)
+            usedNumberOfPathes = push_old_ants(lem_in, usedNumberOfPathes, j, i);  // доталкиваем старых
 		ft_printf("\n");
 	}
 }

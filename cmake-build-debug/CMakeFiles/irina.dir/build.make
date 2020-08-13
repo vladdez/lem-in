@@ -34,10 +34,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /private/var/folders/wb/ylrhwjnd2ys8fwjlnx_m307r0000gn/T/AppTranslocation/A530C296-1E22-4658-96CA-0A868DB61B30/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /private/var/folders/wb/ylrhwjnd2ys8fwjlnx_m307r0000gn/T/AppTranslocation/0F084E67-5863-4FCE-BAAC-37EC4A3D099F/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /private/var/folders/wb/ylrhwjnd2ys8fwjlnx_m307r0000gn/T/AppTranslocation/A530C296-1E22-4658-96CA-0A868DB61B30/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /private/var/folders/wb/ylrhwjnd2ys8fwjlnx_m307r0000gn/T/AppTranslocation/0F084E67-5863-4FCE-BAAC-37EC4A3D099F/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -1331,6 +1331,32 @@ CMakeFiles/irina.dir/src/let_me_free_lem.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/irina.dir/src/let_me_free_lem.c.s"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/irinadeeva/Desktop/lem-i_working_branch/src/let_me_free_lem.c -o CMakeFiles/irina.dir/src/let_me_free_lem.c.s
 
+CMakeFiles/irina.dir/src/delete_unused_rooms.c.o: CMakeFiles/irina.dir/flags.make
+CMakeFiles/irina.dir/src/delete_unused_rooms.c.o: ../src/delete_unused_rooms.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/irinadeeva/Desktop/lem-i_working_branch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building C object CMakeFiles/irina.dir/src/delete_unused_rooms.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/irina.dir/src/delete_unused_rooms.c.o   -c /Users/irinadeeva/Desktop/lem-i_working_branch/src/delete_unused_rooms.c
+
+CMakeFiles/irina.dir/src/delete_unused_rooms.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/irina.dir/src/delete_unused_rooms.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/irinadeeva/Desktop/lem-i_working_branch/src/delete_unused_rooms.c > CMakeFiles/irina.dir/src/delete_unused_rooms.c.i
+
+CMakeFiles/irina.dir/src/delete_unused_rooms.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/irina.dir/src/delete_unused_rooms.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/irinadeeva/Desktop/lem-i_working_branch/src/delete_unused_rooms.c -o CMakeFiles/irina.dir/src/delete_unused_rooms.c.s
+
+CMakeFiles/irina.dir/src/5.find_links_direction.c.o: CMakeFiles/irina.dir/flags.make
+CMakeFiles/irina.dir/src/5.find_links_direction.c.o: ../src/5.find_links_direction.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/irinadeeva/Desktop/lem-i_working_branch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building C object CMakeFiles/irina.dir/src/5.find_links_direction.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/irina.dir/src/5.find_links_direction.c.o   -c /Users/irinadeeva/Desktop/lem-i_working_branch/src/5.find_links_direction.c
+
+CMakeFiles/irina.dir/src/5.find_links_direction.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/irina.dir/src/5.find_links_direction.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/irinadeeva/Desktop/lem-i_working_branch/src/5.find_links_direction.c > CMakeFiles/irina.dir/src/5.find_links_direction.c.i
+
+CMakeFiles/irina.dir/src/5.find_links_direction.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/irina.dir/src/5.find_links_direction.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/irinadeeva/Desktop/lem-i_working_branch/src/5.find_links_direction.c -o CMakeFiles/irina.dir/src/5.find_links_direction.c.s
+
 # Object files for target irina
 irina_OBJECTS = \
 "CMakeFiles/irina.dir/libft/libft/ft_atoi.c.o" \
@@ -1430,7 +1456,9 @@ irina_OBJECTS = \
 "CMakeFiles/irina.dir/src/8.create_paths.c.o" \
 "CMakeFiles/irina.dir/src/9.flow.c.o" \
 "CMakeFiles/irina.dir/src/let_me_free.c.o" \
-"CMakeFiles/irina.dir/src/let_me_free_lem.c.o"
+"CMakeFiles/irina.dir/src/let_me_free_lem.c.o" \
+"CMakeFiles/irina.dir/src/delete_unused_rooms.c.o" \
+"CMakeFiles/irina.dir/src/5.find_links_direction.c.o"
 
 # External object files for target irina
 irina_EXTERNAL_OBJECTS =
@@ -1533,9 +1561,11 @@ irina: CMakeFiles/irina.dir/src/8.create_paths.c.o
 irina: CMakeFiles/irina.dir/src/9.flow.c.o
 irina: CMakeFiles/irina.dir/src/let_me_free.c.o
 irina: CMakeFiles/irina.dir/src/let_me_free_lem.c.o
+irina: CMakeFiles/irina.dir/src/delete_unused_rooms.c.o
+irina: CMakeFiles/irina.dir/src/5.find_links_direction.c.o
 irina: CMakeFiles/irina.dir/build.make
 irina: CMakeFiles/irina.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/irinadeeva/Desktop/lem-i_working_branch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Linking C executable irina"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/irinadeeva/Desktop/lem-i_working_branch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Linking C executable irina"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/irina.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

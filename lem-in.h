@@ -43,6 +43,8 @@ typedef struct			s_room
 	int					visit2;
 	int					bfs_level;
 	t_node              *link;
+	t_node              *outgoingLinks;
+    t_node              *incomingLinks;
 	int					input_links;
 	int					output_links;
 	struct s_room		*next;
@@ -118,13 +120,21 @@ void					ft_strsplit_free(char ***strsplit);
 void					print_input(t_line *input, int n);
 int						sum_ascii(char *room_name);
 void					print_ht_rooms(t_hashtable *ht_rooms);
+void findLinkDirection(t_hashtable *ht_rooms);
+void                    ImputCleaning(t_lem_in *lem_in);
+t_node *FindRoomLinks(char *current_room_name, t_hashtable *ht_rooms);
 
 void					print_paths(t_path **paths, int path_num);
 int						create_paths(t_lem_in *lem_in);
 void					flow(t_lem_in *lem_in, int i, int j);
 void					free_paths(t_path **pa, int path_num);
 void					free_queue(t_queue *q);
+char    *dequeue(t_queue *q);
+int     is_empty(t_queue *q);
+void    enqueue(t_queue *q, t_room *room, int room_num);
+t_queue *create_queue(int room_num);
 t_room *FindRoomInHashtable(char *room_name, t_hashtable *ht_rooms);
+void print_ht_roomsWithDirection(t_hashtable *ht_rooms);
 # define ERR_ANTS_NUM_PARSING	"ERROR: Number of ants is incorrent"
 # define ERR_ROOM_PARSING		"ERROR: Can\'t parse room"
 # define ERR_ROOM_INIT			"ERROR: Can\'t initialize room"
@@ -150,5 +160,8 @@ t_room *FindRoomInHashtable(char *room_name, t_hashtable *ht_rooms);
 # define TABLE_SIZE 100
 # define VISITED 1
 # define UNVISITED 0
+# define UNDIFINED 1
+# define DIFINED_DIRECTION 0
+
 
 #endif

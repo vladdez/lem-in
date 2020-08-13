@@ -149,7 +149,7 @@ void	create_way(t_lem_in *lem_in, int cut, int j)
             {
 			    DeleteCurrentPath(lem_in->paths[j]);
                 lem_in->paths[j] = NULL;
-                lem_in->path_num--;
+                //lem_in->path_num--;
 			    break;
             }
 			if (TmpRoom != lem_in->start)
@@ -172,7 +172,7 @@ int		create_paths(t_lem_in *lem_in)
 {
 	int		cut_s;
 	int		cut_e;
-	int		cut;
+	int		maxpath;
 	int		i;
 
 	i = 0;
@@ -180,12 +180,12 @@ int		create_paths(t_lem_in *lem_in)
 	if (cut_s != 0)
 	{
 		cut_e = len_nei(lem_in->end->link);
-		cut = cut_e > cut_s ? cut_s : cut_e; // мак число путей
-		lem_in->paths = (t_path **)malloc(sizeof(t_path *) * (cut + 1));  // проверить без 1
-		while (i < cut + 1)
+        maxpath = cut_e > cut_s ? cut_s : cut_e;
+		lem_in->paths = (t_path **)malloc(sizeof(t_path *) * (maxpath + 1));
+		while (i < maxpath + 1)
 			lem_in->paths[i++] = NULL;
-		lem_in->path_num = cut; // мак число путей
-		create_way(lem_in, cut, 0);
+		lem_in->path_num = maxpath;
+		create_way(lem_in, maxpath, 0);
 	}
-	return (cut_s); // мы это отправлает по делу чтобы отследить короткое замыкание
+	return (cut_s);  // мы это отправлает по делу чтобы отследить короткое замыкание
 }

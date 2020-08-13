@@ -97,9 +97,11 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/irinadeeva/Desktop/lem-i_working_branch/src/2.parse_ants_rooms.c" "/Users/irinadeeva/Desktop/lem-i_working_branch/cmake-build-debug/CMakeFiles/irina.dir/src/2.parse_ants_rooms.c.o"
   "/Users/irinadeeva/Desktop/lem-i_working_branch/src/3.parse_link.c" "/Users/irinadeeva/Desktop/lem-i_working_branch/cmake-build-debug/CMakeFiles/irina.dir/src/3.parse_link.c.o"
   "/Users/irinadeeva/Desktop/lem-i_working_branch/src/4.bfs.c" "/Users/irinadeeva/Desktop/lem-i_working_branch/cmake-build-debug/CMakeFiles/irina.dir/src/4.bfs.c.o"
+  "/Users/irinadeeva/Desktop/lem-i_working_branch/src/5.find_links_direction.c" "/Users/irinadeeva/Desktop/lem-i_working_branch/cmake-build-debug/CMakeFiles/irina.dir/src/5.find_links_direction.c.o"
   "/Users/irinadeeva/Desktop/lem-i_working_branch/src/7.print.c" "/Users/irinadeeva/Desktop/lem-i_working_branch/cmake-build-debug/CMakeFiles/irina.dir/src/7.print.c.o"
   "/Users/irinadeeva/Desktop/lem-i_working_branch/src/8.create_paths.c" "/Users/irinadeeva/Desktop/lem-i_working_branch/cmake-build-debug/CMakeFiles/irina.dir/src/8.create_paths.c.o"
   "/Users/irinadeeva/Desktop/lem-i_working_branch/src/9.flow.c" "/Users/irinadeeva/Desktop/lem-i_working_branch/cmake-build-debug/CMakeFiles/irina.dir/src/9.flow.c.o"
+  "/Users/irinadeeva/Desktop/lem-i_working_branch/src/delete_unused_rooms.c" "/Users/irinadeeva/Desktop/lem-i_working_branch/cmake-build-debug/CMakeFiles/irina.dir/src/delete_unused_rooms.c.o"
   "/Users/irinadeeva/Desktop/lem-i_working_branch/src/let_me_free.c" "/Users/irinadeeva/Desktop/lem-i_working_branch/cmake-build-debug/CMakeFiles/irina.dir/src/let_me_free.c.o"
   "/Users/irinadeeva/Desktop/lem-i_working_branch/src/let_me_free_lem.c" "/Users/irinadeeva/Desktop/lem-i_working_branch/cmake-build-debug/CMakeFiles/irina.dir/src/let_me_free_lem.c.o"
   )
