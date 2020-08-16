@@ -89,8 +89,7 @@ void    free_lem_in(t_lem_in *lem_in)
         free(lem_in->ht_rooms);
 		free_coord(&(lem_in->coordinate));
 		free_paths(lem_in->paths, lem_in->path_num);
-		free((lem_in));
-		
+		free(lem_in);
 		(lem_in) = NULL;
 	}
 }

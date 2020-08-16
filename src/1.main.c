@@ -95,7 +95,7 @@ void		lem(char **av)
 	if (fd != 0)                                      // для короткого замыкания
     {
 		print_paths(lem_in->paths, lem_in->path_num); // это наглядность путей
-	    // flow(lem_in, 1, 2);                         // муравьи
+		flow(lem_in, 1, 2);                         // муравьи
     }
 	free_input(input);
 	free_lem_in(lem_in);
@@ -104,7 +104,7 @@ void		lem(char **av)
 
 int			main(int ac, char **av)
 {
-	if (ac <= 2)
+	if (ac <= 2 && ac != 1)
 		lem(av);
 	return (0);
 }
