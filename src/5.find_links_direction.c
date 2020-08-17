@@ -33,32 +33,32 @@ void MarkDirection(t_node *link, char *room_name)
 void findLinkDirection(t_hashtable *ht_rooms)
 {
     int i;
-    t_node *tmp;
-    t_room *tmp2;
-    t_room *tmp3;
+    t_node *LinksofCurrentRoom;
+    t_room *CurrentRoomInHashTable;
+    t_room *RoomFoundByLinkName;
 
     i = 0;
     while (i < TABLE_SIZE)
     {
         if (ht_rooms->room[i] != NULL)
         {
-            tmp2 = ht_rooms->room[i];
-            while (tmp2)
+            CurrentRoomInHashTable = ht_rooms->room[i];
+            while (CurrentRoomInHashTable)
             {
-                if (ht_rooms->room[i]->link != NULL)
+                if (CurrentRoomInHashTable->link != NULL && CurrentRoomInHashTable->bfs_level != -1)
                 {
-                    tmp = ht_rooms->room[i]->link;
-                    while (tmp)
+                    LinksofCurrentRoom = CurrentRoomInHashTable->link;
+                    while (LinksofCurrentRoom)
                     {
-                        tmp3 = FindRoomInHashtable(tmp->node,ht_rooms);
-                        if (ht_rooms->room[i]->bfs_level > tmp3->bfs_level)
-                            MarkDirection(ht_rooms->room[i]->incomingLinks, tmp3->room_name);
-                        else
-                            MarkDirection(ht_rooms->room[i]->outgoingLinks, tmp3->room_name);
-                        tmp = tmp->next;
+                        RoomFoundByLinkName = FindRoomInHashtable(LinksofCurrentRoom->node, ht_rooms);
+                        if (CurrentRoomInHashTable->bfs_level > RoomFoundByLinkName->bfs_level && RoomFoundByLinkName->bfs_level > -1)
+                            MarkDirection(CurrentRoomInHashTable->incomingLinks, RoomFoundByLinkName->room_name);
+                        if (CurrentRoomInHashTable->bfs_level < RoomFoundByLinkName->bfs_level && RoomFoundByLinkName->bfs_level > -1)
+                            MarkDirection(CurrentRoomInHashTable->outgoingLinks, RoomFoundByLinkName->room_name);
+                        LinksofCurrentRoom = LinksofCurrentRoom->next;
                     }
                 }
-                tmp2 = tmp2->next;
+                CurrentRoomInHashTable = CurrentRoomInHashTable->next;
             }
         }
         i++;

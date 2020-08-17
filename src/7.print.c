@@ -26,9 +26,9 @@ void print_ht_roomsWithDirection(t_hashtable *ht_rooms)
             tmp2 = ht_rooms->room[i];
             while (tmp2)
             {
-                if (ht_rooms->room[i]->incomingLinks->node != NULL)
+                if (tmp2->incomingLinks->node != NULL)
                 {
-                    tmp = ht_rooms->room[i]->incomingLinks;
+                    tmp = tmp2->incomingLinks;
                     while (tmp)
                     {
                         ft_printf("%s->",tmp->node);
@@ -36,15 +36,16 @@ void print_ht_roomsWithDirection(t_hashtable *ht_rooms)
                     }
                 }
                 ft_printf("%s[%d]", tmp2->room_name, tmp2->bfs_level);
-                if (ht_rooms->room[i]->outgoingLinks->node != NULL)
+                if (tmp2->outgoingLinks->node != NULL)
                 {
-                    tmp = ht_rooms->room[i]->outgoingLinks;
+                    tmp = tmp2->outgoingLinks;
                     while (tmp)
                     {
                         ft_printf("->%s",tmp->node);
                         tmp = tmp->next;
                     }
                 }
+                ft_printf("    ");
                 tmp2 = tmp2->next;
             }
             ft_printf("\n");
@@ -69,9 +70,9 @@ void print_ht_rooms(t_hashtable *ht_rooms)
             while (tmp2)
             {
                 ft_printf(" %s[%d]", tmp2->room_name, tmp2->bfs_level);
-                if (ht_rooms->room[i]->link != NULL)
+                if (tmp2->link != NULL)
                 {
-                    tmp = ht_rooms->room[i]->link;
+                    tmp = tmp2->link;
                     while (tmp)
                     {
                         ft_printf("->%s",tmp->node);
@@ -79,6 +80,7 @@ void print_ht_rooms(t_hashtable *ht_rooms)
                     }
                 }
                 tmp2 = tmp2->next;
+                ft_printf("    ");
             }
             ft_printf("\n");
         }

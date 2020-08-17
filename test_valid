@@ -48,3 +48,6 @@ echo -e '\033[1m  maps/valid/difficult/three_ways.map \033[0m'
 
 echo -e '\033[1m  4short_circuit.map  \033[0m'
 ./lem-in 4short_circuit.map
+
+echo -e '\033[1m  map0  \033[0m'
+./lem-in map0
