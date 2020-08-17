@@ -28,6 +28,26 @@ int		ft_printf(const char *format, ...)
 	return (i);
 }
 
+void	print_format_sub(const char *f, va_list ap, t_p *params, int i)
+{
+	if ('{' == f[params->count] && '%' != f[params->count + 1])
+		params->count = params->count + color(&f[params->count]);
+	if ('%' == f[params->count])
+	{
+		params->count++;
+		read_format(f, params, ap);
+		i += print_specificator(params, ap, f[params->count]);
+		clean_list(params);
+		if ('\0' == f[params->count])
+			return ;
+	}
+	else
+		i += write_char(f[params->count]);
+	params->count++;
+	if ('{' == f[params->count] && '%' != f[params->count + 1])
+		params->count = params->count + color(&f[params->count]);
+}
+
 size_t	print_format(const char *f, va_list ap)
 {
 	size_t	i;
@@ -36,22 +56,7 @@ size_t	print_format(const char *f, va_list ap)
 	i = 0;
 	params = create_list();
 	while (f[params->count])
-	{
-		if ('%' == f[params->count])
-		{
-			params->count++;
-			read_format(f, params, ap);
-			i += print_specificator(params, ap, f[params->count]);
-			clean_list(params);
-			if ('\0' == f[params->count])
-				break ;
-		}
-		else
-			i += write_char(f[params->count]);
-		params->count++;
-		if ('{' == f[params->count] && '%' != f[params->count + 1])
-			params->count = params->count + color(&f[params->count]);
-	}
+		print_format_sub(f, ap, params, i);
 	free(params);
 	params = NULL;
 	return (i);

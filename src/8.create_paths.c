@@ -19,7 +19,7 @@ void    printAntsForShortCircuit(t_lem_in *lem_in)
     i = 1;
     while (i <= lem_in->ant_num)
     {
-        ft_printf("L%i-%s ", i, lem_in->end->room_name);
+        ft_printf("{red}L%i-%s{eoc} ", i, lem_in->end->room_name);
         i++;
     }
     ft_printf("\n");

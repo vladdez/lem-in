@@ -123,4 +123,5 @@ void print_paths(t_path **paths, int path_num)
 		    ft_printf("\n");
         i++;
 	}
+    ft_printf("\n");
 } 

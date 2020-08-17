@@ -70,7 +70,7 @@ t_lem_in	*parse(int fd, t_line **input)
 	return (lem_in);
 }
 
-void		lem(char **av)
+void		lem(char **av, int ac)
 {
 	t_lem_in	*lem_in;
 	t_line		*input;
@@ -80,8 +80,10 @@ void		lem(char **av)
 	fd = 0;
 	if (av[1] && (fd = open(av[1], O_RDONLY, 0)) == -1)
 	{
-		if (fd == -1)
+		if (fd == -1 && ac == 1)
 			fd = 0;
+		else
+			terminate(ERR_MAP);
 	}
 	lem_in = parse(fd, &input);
 	bfs(lem_in);
@@ -95,7 +97,7 @@ void		lem(char **av)
 	if (fd != 0)                                      // для короткого замыкания
     {
 		print_paths(lem_in->paths, lem_in->path_num); // это наглядность путей
-	    // flow(lem_in, 1, 2);                         // муравьи
+		flow(lem_in, 1, 2);                         // муравьи
     }
 	free_input(input);
 	free_lem_in(lem_in);
@@ -105,6 +107,6 @@ void		lem(char **av)
 int			main(int ac, char **av)
 {
 	if (ac <= 2)
-		lem(av);
+		lem(av, ac);
 	return (0);
 }
