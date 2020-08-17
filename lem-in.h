@@ -139,6 +139,9 @@ int						push_old_ants(t_lem_in *lem_in, int supermax, int flows, int ant_index)
 void					print_paths_with_ants(t_path *curr, int i);
 void					push_ants_along(t_path *pa, t_lem_in *lem_in, int i);
 int						index_manager(t_lem_in *lem_in, int maxf, int ant_index);
+int						is_short_circuit(t_lem_in *lem_in);
+int						len_nei(t_node *n);
+void					delete_current_path(t_path *path);
 
 # define ERR_ANTS_NUM_PARSING	"ERROR: Number of ants is incorrent"
 # define ERR_ROOM_PARSING		"ERROR: Can\'t parse room"
