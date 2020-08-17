@@ -14,9 +14,9 @@
 
 static int	put_color2(char *color)
 {
-	if (ft_strcmp(color, "magneta") == 0)
+	if (ft_strcmp(color, "magenta") == 0)
 	{
-		ft_putstr(RED);
+		ft_putstr(MAGENTA);
 		return (9);
 	}
 	if (ft_strcmp(color, "cyan") == 0)
