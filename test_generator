@@ -1,0 +1,15 @@
+echo -e '\033[31m flow-one \033[0m'
+
+./generator --flow-one > map; ./lem-in < map | grep -c "\["; tail -n 1 map
+
+echo -e '\033[32m flow-ten \033[0m'
+./generator --flow-ten > map; ./lem-in < map | grep -c "\["; tail -n 1 map
+
+echo -e '\033[33m flow-thousand \033[0m'
+./generator --flow-thousand > map; ./lem-in < map | grep -c "\["; tail -n 1 map
+
+echo -e '\033[34m big \033[0m'
+./generator --big > map; ./lem-in < map | grep -c "\["; tail -n 1 map
+
+echo -e '\033[35m big-superposition \033[0m'
+./generator --big-superposition > map; ./lem-in < map | grep -c "\["; tail -n 1 map
