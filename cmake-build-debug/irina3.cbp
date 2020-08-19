@@ -360,10 +360,22 @@
 		<Unit filename="/Users/bhugo/Downloads/lem-i_working_branch/src/0.5.hash_table.c">
 			<Option target="irina3"/>
 		</Unit>
+		<Unit filename="/Users/bhugo/Downloads/lem-i_working_branch/src/0.6.init_structure.c">
+			<Option target="irina3"/>
+		</Unit>
+		<Unit filename="/Users/bhugo/Downloads/lem-i_working_branch/src/0.7.dashes_in_imput.c">
+			<Option target="irina3"/>
+		</Unit>
+		<Unit filename="/Users/bhugo/Downloads/lem-i_working_branch/src/0.7.write_coordinate.c">
+			<Option target="irina3"/>
+		</Unit>
 		<Unit filename="/Users/bhugo/Downloads/lem-i_working_branch/src/1.main.c">
 			<Option target="irina3"/>
 		</Unit>
-		<Unit filename="/Users/bhugo/Downloads/lem-i_working_branch/src/2.parse_ants_rooms.c">
+		<Unit filename="/Users/bhugo/Downloads/lem-i_working_branch/src/2.1_parse_ants.c">
+			<Option target="irina3"/>
+		</Unit>
+		<Unit filename="/Users/bhugo/Downloads/lem-i_working_branch/src/2.parse_rooms.c">
 			<Option target="irina3"/>
 		</Unit>
 		<Unit filename="/Users/bhugo/Downloads/lem-i_working_branch/src/3.parse_link.c">
@@ -385,6 +397,9 @@
 			<Option target="irina3"/>
 		</Unit>
 		<Unit filename="/Users/bhugo/Downloads/lem-i_working_branch/src/8.create_paths.c">
+			<Option target="irina3"/>
+		</Unit>
+		<Unit filename="/Users/bhugo/Downloads/lem-i_working_branch/src/8.create_paths2.c">
 			<Option target="irina3"/>
 		</Unit>
 		<Unit filename="/Users/bhugo/Downloads/lem-i_working_branch/src/9.flow.c">

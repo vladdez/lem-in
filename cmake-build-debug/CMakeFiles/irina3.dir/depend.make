@@ -332,6 +332,11 @@ CMakeFiles/irina3.dir/src/8.create_paths.c.o: ../libft/libft/libft.h
 CMakeFiles/irina3.dir/src/8.create_paths.c.o: ../libft/printf/ft_printf.h
 CMakeFiles/irina3.dir/src/8.create_paths.c.o: ../src/8.create_paths.c
 
+CMakeFiles/irina3.dir/src/8.create_paths2.c.o: ../lem-in.h
+CMakeFiles/irina3.dir/src/8.create_paths2.c.o: ../libft/libft/libft.h
+CMakeFiles/irina3.dir/src/8.create_paths2.c.o: ../libft/printf/ft_printf.h
+CMakeFiles/irina3.dir/src/8.create_paths2.c.o: ../src/8.create_paths2.c
+
 CMakeFiles/irina3.dir/src/9.flow.c.o: ../lem-in.h
 CMakeFiles/irina3.dir/src/9.flow.c.o: ../libft/libft/libft.h
 CMakeFiles/irina3.dir/src/9.flow.c.o: ../libft/printf/ft_printf.h

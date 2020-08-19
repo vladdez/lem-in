@@ -1247,18 +1247,18 @@ CMakeFiles/irina3.dir/src/1.main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/irina3.dir/src/1.main.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/bhugo/Downloads/lem-i_working_branch/src/1.main.c -o CMakeFiles/irina3.dir/src/1.main.c.s
 
-CMakeFiles/irina3.dir/src/2.parse_ants_rooms.c.o: CMakeFiles/irina3.dir/flags.make
-CMakeFiles/irina3.dir/src/2.parse_ants_rooms.c.o: ../src/2.parse_ants_rooms.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bhugo/Downloads/lem-i_working_branch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object CMakeFiles/irina3.dir/src/2.parse_ants_rooms.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/irina3.dir/src/2.parse_ants_rooms.c.o   -c /Users/bhugo/Downloads/lem-i_working_branch/src/2.parse_ants_rooms.c
+CMakeFiles/irina3.dir/src/2.parse_rooms.c.o: CMakeFiles/irina3.dir/flags.make
+CMakeFiles/irina3.dir/src/2.parse_rooms.c.o: ../src/2.parse_rooms.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bhugo/Downloads/lem-i_working_branch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object CMakeFiles/irina3.dir/src/2.parse_rooms.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/irina3.dir/src/2.parse_rooms.c.o   -c /Users/bhugo/Downloads/lem-i_working_branch/src/2.parse_rooms.c
 
-CMakeFiles/irina3.dir/src/2.parse_ants_rooms.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/irina3.dir/src/2.parse_ants_rooms.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/bhugo/Downloads/lem-i_working_branch/src/2.parse_ants_rooms.c > CMakeFiles/irina3.dir/src/2.parse_ants_rooms.c.i
+CMakeFiles/irina3.dir/src/2.parse_rooms.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/irina3.dir/src/2.parse_rooms.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/bhugo/Downloads/lem-i_working_branch/src/2.parse_rooms.c > CMakeFiles/irina3.dir/src/2.parse_rooms.c.i
 
-CMakeFiles/irina3.dir/src/2.parse_ants_rooms.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/irina3.dir/src/2.parse_ants_rooms.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/bhugo/Downloads/lem-i_working_branch/src/2.parse_ants_rooms.c -o CMakeFiles/irina3.dir/src/2.parse_ants_rooms.c.s
+CMakeFiles/irina3.dir/src/2.parse_rooms.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/irina3.dir/src/2.parse_rooms.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/bhugo/Downloads/lem-i_working_branch/src/2.parse_rooms.c -o CMakeFiles/irina3.dir/src/2.parse_rooms.c.s
 
 CMakeFiles/irina3.dir/src/3.parse_link.c.o: CMakeFiles/irina3.dir/flags.make
 CMakeFiles/irina3.dir/src/3.parse_link.c.o: ../src/3.parse_link.c
@@ -1338,9 +1338,22 @@ CMakeFiles/irina3.dir/src/8.create_paths.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/irina3.dir/src/8.create_paths.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/bhugo/Downloads/lem-i_working_branch/src/8.create_paths.c -o CMakeFiles/irina3.dir/src/8.create_paths.c.s
 
+CMakeFiles/irina3.dir/src/8.create_paths2.c.o: CMakeFiles/irina3.dir/flags.make
+CMakeFiles/irina3.dir/src/8.create_paths2.c.o: ../src/8.create_paths2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bhugo/Downloads/lem-i_working_branch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building C object CMakeFiles/irina3.dir/src/8.create_paths2.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/irina3.dir/src/8.create_paths2.c.o   -c /Users/bhugo/Downloads/lem-i_working_branch/src/8.create_paths2.c
+
+CMakeFiles/irina3.dir/src/8.create_paths2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/irina3.dir/src/8.create_paths2.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/bhugo/Downloads/lem-i_working_branch/src/8.create_paths2.c > CMakeFiles/irina3.dir/src/8.create_paths2.c.i
+
+CMakeFiles/irina3.dir/src/8.create_paths2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/irina3.dir/src/8.create_paths2.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/bhugo/Downloads/lem-i_working_branch/src/8.create_paths2.c -o CMakeFiles/irina3.dir/src/8.create_paths2.c.s
+
 CMakeFiles/irina3.dir/src/9.flow.c.o: CMakeFiles/irina3.dir/flags.make
 CMakeFiles/irina3.dir/src/9.flow.c.o: ../src/9.flow.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bhugo/Downloads/lem-i_working_branch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building C object CMakeFiles/irina3.dir/src/9.flow.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bhugo/Downloads/lem-i_working_branch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building C object CMakeFiles/irina3.dir/src/9.flow.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/irina3.dir/src/9.flow.c.o   -c /Users/bhugo/Downloads/lem-i_working_branch/src/9.flow.c
 
 CMakeFiles/irina3.dir/src/9.flow.c.i: cmake_force
@@ -1353,7 +1366,7 @@ CMakeFiles/irina3.dir/src/9.flow.c.s: cmake_force
 
 CMakeFiles/irina3.dir/src/9.flow2.c.o: CMakeFiles/irina3.dir/flags.make
 CMakeFiles/irina3.dir/src/9.flow2.c.o: ../src/9.flow2.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bhugo/Downloads/lem-i_working_branch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building C object CMakeFiles/irina3.dir/src/9.flow2.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bhugo/Downloads/lem-i_working_branch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building C object CMakeFiles/irina3.dir/src/9.flow2.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/irina3.dir/src/9.flow2.c.o   -c /Users/bhugo/Downloads/lem-i_working_branch/src/9.flow2.c
 
 CMakeFiles/irina3.dir/src/9.flow2.c.i: cmake_force
@@ -1366,7 +1379,7 @@ CMakeFiles/irina3.dir/src/9.flow2.c.s: cmake_force
 
 CMakeFiles/irina3.dir/src/let_me_free.c.o: CMakeFiles/irina3.dir/flags.make
 CMakeFiles/irina3.dir/src/let_me_free.c.o: ../src/let_me_free.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bhugo/Downloads/lem-i_working_branch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building C object CMakeFiles/irina3.dir/src/let_me_free.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bhugo/Downloads/lem-i_working_branch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Building C object CMakeFiles/irina3.dir/src/let_me_free.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/irina3.dir/src/let_me_free.c.o   -c /Users/bhugo/Downloads/lem-i_working_branch/src/let_me_free.c
 
 CMakeFiles/irina3.dir/src/let_me_free.c.i: cmake_force
@@ -1379,7 +1392,7 @@ CMakeFiles/irina3.dir/src/let_me_free.c.s: cmake_force
 
 CMakeFiles/irina3.dir/src/let_me_free_lem.c.o: CMakeFiles/irina3.dir/flags.make
 CMakeFiles/irina3.dir/src/let_me_free_lem.c.o: ../src/let_me_free_lem.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bhugo/Downloads/lem-i_working_branch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Building C object CMakeFiles/irina3.dir/src/let_me_free_lem.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bhugo/Downloads/lem-i_working_branch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_102) "Building C object CMakeFiles/irina3.dir/src/let_me_free_lem.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/irina3.dir/src/let_me_free_lem.c.o   -c /Users/bhugo/Downloads/lem-i_working_branch/src/let_me_free_lem.c
 
 CMakeFiles/irina3.dir/src/let_me_free_lem.c.i: cmake_force
@@ -1392,7 +1405,7 @@ CMakeFiles/irina3.dir/src/let_me_free_lem.c.s: cmake_force
 
 CMakeFiles/irina3.dir/src/6.2.deadlock_cleaning.c.o: CMakeFiles/irina3.dir/flags.make
 CMakeFiles/irina3.dir/src/6.2.deadlock_cleaning.c.o: ../src/6.2.deadlock_cleaning.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bhugo/Downloads/lem-i_working_branch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_102) "Building C object CMakeFiles/irina3.dir/src/6.2.deadlock_cleaning.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bhugo/Downloads/lem-i_working_branch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_103) "Building C object CMakeFiles/irina3.dir/src/6.2.deadlock_cleaning.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/irina3.dir/src/6.2.deadlock_cleaning.c.o   -c /Users/bhugo/Downloads/lem-i_working_branch/src/6.2.deadlock_cleaning.c
 
 CMakeFiles/irina3.dir/src/6.2.deadlock_cleaning.c.i: cmake_force
@@ -1402,6 +1415,58 @@ CMakeFiles/irina3.dir/src/6.2.deadlock_cleaning.c.i: cmake_force
 CMakeFiles/irina3.dir/src/6.2.deadlock_cleaning.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/irina3.dir/src/6.2.deadlock_cleaning.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/bhugo/Downloads/lem-i_working_branch/src/6.2.deadlock_cleaning.c -o CMakeFiles/irina3.dir/src/6.2.deadlock_cleaning.c.s
+
+CMakeFiles/irina3.dir/src/0.6.init_structure.c.o: CMakeFiles/irina3.dir/flags.make
+CMakeFiles/irina3.dir/src/0.6.init_structure.c.o: ../src/0.6.init_structure.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bhugo/Downloads/lem-i_working_branch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_104) "Building C object CMakeFiles/irina3.dir/src/0.6.init_structure.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/irina3.dir/src/0.6.init_structure.c.o   -c /Users/bhugo/Downloads/lem-i_working_branch/src/0.6.init_structure.c
+
+CMakeFiles/irina3.dir/src/0.6.init_structure.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/irina3.dir/src/0.6.init_structure.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/bhugo/Downloads/lem-i_working_branch/src/0.6.init_structure.c > CMakeFiles/irina3.dir/src/0.6.init_structure.c.i
+
+CMakeFiles/irina3.dir/src/0.6.init_structure.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/irina3.dir/src/0.6.init_structure.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/bhugo/Downloads/lem-i_working_branch/src/0.6.init_structure.c -o CMakeFiles/irina3.dir/src/0.6.init_structure.c.s
+
+CMakeFiles/irina3.dir/src/2.1_parse_ants.c.o: CMakeFiles/irina3.dir/flags.make
+CMakeFiles/irina3.dir/src/2.1_parse_ants.c.o: ../src/2.1_parse_ants.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bhugo/Downloads/lem-i_working_branch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_105) "Building C object CMakeFiles/irina3.dir/src/2.1_parse_ants.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/irina3.dir/src/2.1_parse_ants.c.o   -c /Users/bhugo/Downloads/lem-i_working_branch/src/2.1_parse_ants.c
+
+CMakeFiles/irina3.dir/src/2.1_parse_ants.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/irina3.dir/src/2.1_parse_ants.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/bhugo/Downloads/lem-i_working_branch/src/2.1_parse_ants.c > CMakeFiles/irina3.dir/src/2.1_parse_ants.c.i
+
+CMakeFiles/irina3.dir/src/2.1_parse_ants.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/irina3.dir/src/2.1_parse_ants.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/bhugo/Downloads/lem-i_working_branch/src/2.1_parse_ants.c -o CMakeFiles/irina3.dir/src/2.1_parse_ants.c.s
+
+CMakeFiles/irina3.dir/src/0.7.write_coordinate.c.o: CMakeFiles/irina3.dir/flags.make
+CMakeFiles/irina3.dir/src/0.7.write_coordinate.c.o: ../src/0.7.write_coordinate.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bhugo/Downloads/lem-i_working_branch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_106) "Building C object CMakeFiles/irina3.dir/src/0.7.write_coordinate.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/irina3.dir/src/0.7.write_coordinate.c.o   -c /Users/bhugo/Downloads/lem-i_working_branch/src/0.7.write_coordinate.c
+
+CMakeFiles/irina3.dir/src/0.7.write_coordinate.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/irina3.dir/src/0.7.write_coordinate.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/bhugo/Downloads/lem-i_working_branch/src/0.7.write_coordinate.c > CMakeFiles/irina3.dir/src/0.7.write_coordinate.c.i
+
+CMakeFiles/irina3.dir/src/0.7.write_coordinate.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/irina3.dir/src/0.7.write_coordinate.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/bhugo/Downloads/lem-i_working_branch/src/0.7.write_coordinate.c -o CMakeFiles/irina3.dir/src/0.7.write_coordinate.c.s
+
+CMakeFiles/irina3.dir/src/0.7.dashes_in_imput.c.o: CMakeFiles/irina3.dir/flags.make
+CMakeFiles/irina3.dir/src/0.7.dashes_in_imput.c.o: ../src/0.7.dashes_in_imput.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bhugo/Downloads/lem-i_working_branch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_107) "Building C object CMakeFiles/irina3.dir/src/0.7.dashes_in_imput.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/irina3.dir/src/0.7.dashes_in_imput.c.o   -c /Users/bhugo/Downloads/lem-i_working_branch/src/0.7.dashes_in_imput.c
+
+CMakeFiles/irina3.dir/src/0.7.dashes_in_imput.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/irina3.dir/src/0.7.dashes_in_imput.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/bhugo/Downloads/lem-i_working_branch/src/0.7.dashes_in_imput.c > CMakeFiles/irina3.dir/src/0.7.dashes_in_imput.c.i
+
+CMakeFiles/irina3.dir/src/0.7.dashes_in_imput.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/irina3.dir/src/0.7.dashes_in_imput.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/bhugo/Downloads/lem-i_working_branch/src/0.7.dashes_in_imput.c -o CMakeFiles/irina3.dir/src/0.7.dashes_in_imput.c.s
 
 # Object files for target irina3
 irina3_OBJECTS = \
@@ -1495,18 +1560,23 @@ irina3_OBJECTS = \
 "CMakeFiles/irina3.dir/src/0.4.is.c.o" \
 "CMakeFiles/irina3.dir/src/0.5.hash_table.c.o" \
 "CMakeFiles/irina3.dir/src/1.main.c.o" \
-"CMakeFiles/irina3.dir/src/2.parse_ants_rooms.c.o" \
+"CMakeFiles/irina3.dir/src/2.parse_rooms.c.o" \
 "CMakeFiles/irina3.dir/src/3.parse_link.c.o" \
 "CMakeFiles/irina3.dir/src/4.bfs.c.o" \
 "CMakeFiles/irina3.dir/src/5.find_links_direction.c.o" \
 "CMakeFiles/irina3.dir/src/6.imput_cleaning.c.o" \
 "CMakeFiles/irina3.dir/src/7.print.c.o" \
 "CMakeFiles/irina3.dir/src/8.create_paths.c.o" \
+"CMakeFiles/irina3.dir/src/8.create_paths2.c.o" \
 "CMakeFiles/irina3.dir/src/9.flow.c.o" \
 "CMakeFiles/irina3.dir/src/9.flow2.c.o" \
 "CMakeFiles/irina3.dir/src/let_me_free.c.o" \
 "CMakeFiles/irina3.dir/src/let_me_free_lem.c.o" \
-"CMakeFiles/irina3.dir/src/6.2.deadlock_cleaning.c.o"
+"CMakeFiles/irina3.dir/src/6.2.deadlock_cleaning.c.o" \
+"CMakeFiles/irina3.dir/src/0.6.init_structure.c.o" \
+"CMakeFiles/irina3.dir/src/2.1_parse_ants.c.o" \
+"CMakeFiles/irina3.dir/src/0.7.write_coordinate.c.o" \
+"CMakeFiles/irina3.dir/src/0.7.dashes_in_imput.c.o"
 
 # External object files for target irina3
 irina3_EXTERNAL_OBJECTS =
@@ -1601,21 +1671,26 @@ irina3: CMakeFiles/irina3.dir/src/0.3.validator.c.o
 irina3: CMakeFiles/irina3.dir/src/0.4.is.c.o
 irina3: CMakeFiles/irina3.dir/src/0.5.hash_table.c.o
 irina3: CMakeFiles/irina3.dir/src/1.main.c.o
-irina3: CMakeFiles/irina3.dir/src/2.parse_ants_rooms.c.o
+irina3: CMakeFiles/irina3.dir/src/2.parse_rooms.c.o
 irina3: CMakeFiles/irina3.dir/src/3.parse_link.c.o
 irina3: CMakeFiles/irina3.dir/src/4.bfs.c.o
 irina3: CMakeFiles/irina3.dir/src/5.find_links_direction.c.o
 irina3: CMakeFiles/irina3.dir/src/6.imput_cleaning.c.o
 irina3: CMakeFiles/irina3.dir/src/7.print.c.o
 irina3: CMakeFiles/irina3.dir/src/8.create_paths.c.o
+irina3: CMakeFiles/irina3.dir/src/8.create_paths2.c.o
 irina3: CMakeFiles/irina3.dir/src/9.flow.c.o
 irina3: CMakeFiles/irina3.dir/src/9.flow2.c.o
 irina3: CMakeFiles/irina3.dir/src/let_me_free.c.o
 irina3: CMakeFiles/irina3.dir/src/let_me_free_lem.c.o
 irina3: CMakeFiles/irina3.dir/src/6.2.deadlock_cleaning.c.o
+irina3: CMakeFiles/irina3.dir/src/0.6.init_structure.c.o
+irina3: CMakeFiles/irina3.dir/src/2.1_parse_ants.c.o
+irina3: CMakeFiles/irina3.dir/src/0.7.write_coordinate.c.o
+irina3: CMakeFiles/irina3.dir/src/0.7.dashes_in_imput.c.o
 irina3: CMakeFiles/irina3.dir/build.make
 irina3: CMakeFiles/irina3.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/bhugo/Downloads/lem-i_working_branch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_103) "Linking C executable irina3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/bhugo/Downloads/lem-i_working_branch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_108) "Linking C executable irina3"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/irina3.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

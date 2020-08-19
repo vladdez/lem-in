@@ -144,6 +144,11 @@ int						len_nei(t_node *n);
 void					delete_current_path(t_path *path);
 int						check_flow_type(int maxpath, t_lem_in *lem_in);
 void                    clean_deadlock(t_node *deadlock_room_name, t_hashtable *ht_rooms);
+t_room		            *create_room(t_coordinate *coordinate, char *tmp);
+void	                write_coor(t_coordinate *coordinate, char **words);
+void	                find_start_room(t_hashtable *ht_rooms, char *start, char *toward);
+void	                start_toward_for_dashes_imput(t_lem_in *lem_in, char *str);
+int		                count_dashes_in_imput(char *str);
 
 
 # define ERR_ANTS_NUM_PARSING	"ERROR: Number of ants is incorrent"
@@ -169,6 +174,7 @@ void                    clean_deadlock(t_node *deadlock_room_name, t_hashtable *
 
 # define ROOM 2
 # define COMMAND 3
+# define COMMENT 1
 # define TABLE_SIZE 100
 # define VISITED 1
 # define UNVISITED 0

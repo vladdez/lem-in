@@ -52,12 +52,12 @@ void		validate_room(t_lem_in *lem_in, t_room *room)
 
 int			iswhat(char *str)
 {
-	if 	(is_command(str) == 1)
+	if 	(is_command(str) == COMMAND)
 		return (COMMAND);
-	if (is_room(str) == 1)
+	if (is_room(str) == ROOM)
 		return (ROOM);
-	if 	(is_comment(str) == COMMAND)
-		return (3);
+	if 	(is_comment(str) == COMMENT)
+		return (COMMENT);
 	else
-		return (-1);
+		return (0);
 }

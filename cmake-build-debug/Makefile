@@ -2546,6 +2546,87 @@ src/0.5.hash_table.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina3.dir/build.make CMakeFiles/irina3.dir/src/0.5.hash_table.c.s
 .PHONY : src/0.5.hash_table.c.s
 
+src/0.6.init_structure.o: src/0.6.init_structure.c.o
+
+.PHONY : src/0.6.init_structure.o
+
+# target to build an object file
+src/0.6.init_structure.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina3.dir/build.make CMakeFiles/irina3.dir/src/0.6.init_structure.c.o
+.PHONY : src/0.6.init_structure.c.o
+
+src/0.6.init_structure.i: src/0.6.init_structure.c.i
+
+.PHONY : src/0.6.init_structure.i
+
+# target to preprocess a source file
+src/0.6.init_structure.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina3.dir/build.make CMakeFiles/irina3.dir/src/0.6.init_structure.c.i
+.PHONY : src/0.6.init_structure.c.i
+
+src/0.6.init_structure.s: src/0.6.init_structure.c.s
+
+.PHONY : src/0.6.init_structure.s
+
+# target to generate assembly for a file
+src/0.6.init_structure.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina3.dir/build.make CMakeFiles/irina3.dir/src/0.6.init_structure.c.s
+.PHONY : src/0.6.init_structure.c.s
+
+src/0.7.dashes_in_imput.o: src/0.7.dashes_in_imput.c.o
+
+.PHONY : src/0.7.dashes_in_imput.o
+
+# target to build an object file
+src/0.7.dashes_in_imput.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina3.dir/build.make CMakeFiles/irina3.dir/src/0.7.dashes_in_imput.c.o
+.PHONY : src/0.7.dashes_in_imput.c.o
+
+src/0.7.dashes_in_imput.i: src/0.7.dashes_in_imput.c.i
+
+.PHONY : src/0.7.dashes_in_imput.i
+
+# target to preprocess a source file
+src/0.7.dashes_in_imput.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina3.dir/build.make CMakeFiles/irina3.dir/src/0.7.dashes_in_imput.c.i
+.PHONY : src/0.7.dashes_in_imput.c.i
+
+src/0.7.dashes_in_imput.s: src/0.7.dashes_in_imput.c.s
+
+.PHONY : src/0.7.dashes_in_imput.s
+
+# target to generate assembly for a file
+src/0.7.dashes_in_imput.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina3.dir/build.make CMakeFiles/irina3.dir/src/0.7.dashes_in_imput.c.s
+.PHONY : src/0.7.dashes_in_imput.c.s
+
+src/0.7.write_coordinate.o: src/0.7.write_coordinate.c.o
+
+.PHONY : src/0.7.write_coordinate.o
+
+# target to build an object file
+src/0.7.write_coordinate.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina3.dir/build.make CMakeFiles/irina3.dir/src/0.7.write_coordinate.c.o
+.PHONY : src/0.7.write_coordinate.c.o
+
+src/0.7.write_coordinate.i: src/0.7.write_coordinate.c.i
+
+.PHONY : src/0.7.write_coordinate.i
+
+# target to preprocess a source file
+src/0.7.write_coordinate.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina3.dir/build.make CMakeFiles/irina3.dir/src/0.7.write_coordinate.c.i
+.PHONY : src/0.7.write_coordinate.c.i
+
+src/0.7.write_coordinate.s: src/0.7.write_coordinate.c.s
+
+.PHONY : src/0.7.write_coordinate.s
+
+# target to generate assembly for a file
+src/0.7.write_coordinate.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina3.dir/build.make CMakeFiles/irina3.dir/src/0.7.write_coordinate.c.s
+.PHONY : src/0.7.write_coordinate.c.s
+
 src/1.main.o: src/1.main.c.o
 
 .PHONY : src/1.main.o
@@ -2573,32 +2654,59 @@ src/1.main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina3.dir/build.make CMakeFiles/irina3.dir/src/1.main.c.s
 .PHONY : src/1.main.c.s
 
-src/2.parse_ants_rooms.o: src/2.parse_ants_rooms.c.o
+src/2.1_parse_ants.o: src/2.1_parse_ants.c.o
 
-.PHONY : src/2.parse_ants_rooms.o
+.PHONY : src/2.1_parse_ants.o
 
 # target to build an object file
-src/2.parse_ants_rooms.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina3.dir/build.make CMakeFiles/irina3.dir/src/2.parse_ants_rooms.c.o
-.PHONY : src/2.parse_ants_rooms.c.o
+src/2.1_parse_ants.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina3.dir/build.make CMakeFiles/irina3.dir/src/2.1_parse_ants.c.o
+.PHONY : src/2.1_parse_ants.c.o
 
-src/2.parse_ants_rooms.i: src/2.parse_ants_rooms.c.i
+src/2.1_parse_ants.i: src/2.1_parse_ants.c.i
 
-.PHONY : src/2.parse_ants_rooms.i
+.PHONY : src/2.1_parse_ants.i
 
 # target to preprocess a source file
-src/2.parse_ants_rooms.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina3.dir/build.make CMakeFiles/irina3.dir/src/2.parse_ants_rooms.c.i
-.PHONY : src/2.parse_ants_rooms.c.i
+src/2.1_parse_ants.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina3.dir/build.make CMakeFiles/irina3.dir/src/2.1_parse_ants.c.i
+.PHONY : src/2.1_parse_ants.c.i
 
-src/2.parse_ants_rooms.s: src/2.parse_ants_rooms.c.s
+src/2.1_parse_ants.s: src/2.1_parse_ants.c.s
 
-.PHONY : src/2.parse_ants_rooms.s
+.PHONY : src/2.1_parse_ants.s
 
 # target to generate assembly for a file
-src/2.parse_ants_rooms.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina3.dir/build.make CMakeFiles/irina3.dir/src/2.parse_ants_rooms.c.s
-.PHONY : src/2.parse_ants_rooms.c.s
+src/2.1_parse_ants.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina3.dir/build.make CMakeFiles/irina3.dir/src/2.1_parse_ants.c.s
+.PHONY : src/2.1_parse_ants.c.s
+
+src/2.parse_rooms.o: src/2.parse_rooms.c.o
+
+.PHONY : src/2.parse_rooms.o
+
+# target to build an object file
+src/2.parse_rooms.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina3.dir/build.make CMakeFiles/irina3.dir/src/2.parse_rooms.c.o
+.PHONY : src/2.parse_rooms.c.o
+
+src/2.parse_rooms.i: src/2.parse_rooms.c.i
+
+.PHONY : src/2.parse_rooms.i
+
+# target to preprocess a source file
+src/2.parse_rooms.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina3.dir/build.make CMakeFiles/irina3.dir/src/2.parse_rooms.c.i
+.PHONY : src/2.parse_rooms.c.i
+
+src/2.parse_rooms.s: src/2.parse_rooms.c.s
+
+.PHONY : src/2.parse_rooms.s
+
+# target to generate assembly for a file
+src/2.parse_rooms.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina3.dir/build.make CMakeFiles/irina3.dir/src/2.parse_rooms.c.s
+.PHONY : src/2.parse_rooms.c.s
 
 src/3.parse_link.o: src/3.parse_link.c.o
 
@@ -2788,6 +2896,33 @@ src/8.create_paths.s: src/8.create_paths.c.s
 src/8.create_paths.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina3.dir/build.make CMakeFiles/irina3.dir/src/8.create_paths.c.s
 .PHONY : src/8.create_paths.c.s
+
+src/8.create_paths2.o: src/8.create_paths2.c.o
+
+.PHONY : src/8.create_paths2.o
+
+# target to build an object file
+src/8.create_paths2.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina3.dir/build.make CMakeFiles/irina3.dir/src/8.create_paths2.c.o
+.PHONY : src/8.create_paths2.c.o
+
+src/8.create_paths2.i: src/8.create_paths2.c.i
+
+.PHONY : src/8.create_paths2.i
+
+# target to preprocess a source file
+src/8.create_paths2.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina3.dir/build.make CMakeFiles/irina3.dir/src/8.create_paths2.c.i
+.PHONY : src/8.create_paths2.c.i
+
+src/8.create_paths2.s: src/8.create_paths2.c.s
+
+.PHONY : src/8.create_paths2.s
+
+# target to generate assembly for a file
+src/8.create_paths2.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina3.dir/build.make CMakeFiles/irina3.dir/src/8.create_paths2.c.s
+.PHONY : src/8.create_paths2.c.s
 
 src/9.flow.o: src/9.flow.c.o
 
@@ -3173,12 +3308,24 @@ help:
 	@echo "... src/0.5.hash_table.o"
 	@echo "... src/0.5.hash_table.i"
 	@echo "... src/0.5.hash_table.s"
+	@echo "... src/0.6.init_structure.o"
+	@echo "... src/0.6.init_structure.i"
+	@echo "... src/0.6.init_structure.s"
+	@echo "... src/0.7.dashes_in_imput.o"
+	@echo "... src/0.7.dashes_in_imput.i"
+	@echo "... src/0.7.dashes_in_imput.s"
+	@echo "... src/0.7.write_coordinate.o"
+	@echo "... src/0.7.write_coordinate.i"
+	@echo "... src/0.7.write_coordinate.s"
 	@echo "... src/1.main.o"
 	@echo "... src/1.main.i"
 	@echo "... src/1.main.s"
-	@echo "... src/2.parse_ants_rooms.o"
-	@echo "... src/2.parse_ants_rooms.i"
-	@echo "... src/2.parse_ants_rooms.s"
+	@echo "... src/2.1_parse_ants.o"
+	@echo "... src/2.1_parse_ants.i"
+	@echo "... src/2.1_parse_ants.s"
+	@echo "... src/2.parse_rooms.o"
+	@echo "... src/2.parse_rooms.i"
+	@echo "... src/2.parse_rooms.s"
 	@echo "... src/3.parse_link.o"
 	@echo "... src/3.parse_link.i"
 	@echo "... src/3.parse_link.s"
@@ -3200,6 +3347,9 @@ help:
 	@echo "... src/8.create_paths.o"
 	@echo "... src/8.create_paths.i"
 	@echo "... src/8.create_paths.s"
+	@echo "... src/8.create_paths2.o"
+	@echo "... src/8.create_paths2.i"
+	@echo "... src/8.create_paths2.s"
 	@echo "... src/9.flow.o"
 	@echo "... src/9.flow.i"
 	@echo "... src/9.flow.s"

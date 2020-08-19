@@ -93,14 +93,14 @@ void		lem(char **av, int ac)
     ImputCleaning(lem_in);
     findLinkDirection(lem_in->ht_rooms);
     print_ht_roomsWithDirection(lem_in->ht_rooms);
-	fd = create_paths(lem_in);
+	/*fd = create_paths(lem_in);
 	if (fd != 0)                                      // для короткого замыкания
     {
 		print_paths(lem_in->paths, lem_in->path_num); // это наглядность путей
 		flow(lem_in, 1, 2);                         // муравьи
     }
 	free_input(input);
-	free_lem_in(lem_in);
+	free_lem_in(lem_in);*/
 
 }
 
