@@ -12,6 +12,17 @@
 
 #include "lem-in.h"
 
+t_room	*find_best_room(t_room *cur, t_hashtable *ht_rooms)
+{
+	t_room *tmp;
+
+	if ((len_nei(cur->incomingLinks) == 1))
+		return (FindRoomInHashtable(cur->incomingLinks->node, ht_rooms));
+	else
+		tmp = find_lowest_bfs(cur->incomingLinks, ht_rooms);
+	return (tmp);
+}
+
 void	print_ants_for_short_circuit(t_lem_in *lem_in)
 {
 	int i;

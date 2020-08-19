@@ -53,15 +53,32 @@ t_room	*find_lowest_bfs(t_node *n, t_hashtable *ht_rooms)
 	return (lowest_bfs_room);
 }
 
-t_room	*find_best_room(t_room *cur, t_hashtable *ht_rooms)
-{
-	t_room *tmp;
 
-	if ((len_nei(cur->incomingLinks) == 1))
-		return (FindRoomInHashtable(cur->incomingLinks->node, ht_rooms));// если один сосед то сразу ее, в текущем коде сюда не заходит
-	else
-		tmp = find_lowest_bfs(cur->incomingLinks, ht_rooms); // иначе по наименьшему bfs
-	return (tmp);
+int		create_way_sub(t_lem_in *lem_in, t_path *tmp, t_room *cur, int j)
+{
+	t_room	*tmp_room;
+	int		len;
+
+	len = 0;
+	while (cur != lem_in->start)
+	{
+		tmp_room = find_best_room(cur, lem_in->ht_rooms);
+		if (tmp_room == lem_in->end || tmp_room == NULL)
+		{
+			delete_current_path(lem_in->paths[j]);
+			lem_in->paths[j] = NULL;
+			break ;
+		}
+		if (tmp_room != lem_in->start)
+			tmp_room->visit2 = VISITED;
+		cur = tmp_room;
+		tmp = create_one_path(cur);
+		tmp->next = lem_in->paths[j];
+		lem_in->paths[j] = tmp;
+		tmp = NULL;
+		len++;
+	}
+	return (len);
 }
 
 void	create_way(t_lem_in *lem_in, int cut, int j)
@@ -69,34 +86,15 @@ void	create_way(t_lem_in *lem_in, int cut, int j)
 	t_room	*cur;
 	t_path	*tmp;
 	int		len;
-	t_room	*tmp_room;
 
 	tmp = NULL;
 	while (j < cut)
 	{
-		len = 0;
 		cur = lem_in->end;
-		lem_in->paths[j] = create_one_path(lem_in->end);  // инизализация, важно что первый  это END
-		while (cur != lem_in->start)                      // засись команты в путь по связному списку
-		{
-			tmp_room = find_best_room(cur, lem_in->ht_rooms);
-			if (tmp_room == lem_in->end || tmp_room == NULL)
-			{
-				delete_current_path(lem_in->paths[j]);
-				lem_in->paths[j] = NULL;
-				break;
-			}
-			if (tmp_room != lem_in->start)
-				tmp_room->visit2 = VISITED;
-			cur = tmp_room;
-			tmp = create_one_path(cur); // указатель где начинается путь
-			tmp->next = lem_in->paths[j];
-			lem_in->paths[j] = tmp;
-			len++;
-			tmp = NULL;
-		}
+		lem_in->paths[j] = create_one_path(lem_in->end);
+		len = create_way_sub(lem_in, tmp, cur, j);
 		if (lem_in->paths[j])
-			lem_in->paths[j]->len = len; // !!! здесь потенциальная ошибка так как можем пропустить путь, они не записываются друг за другом
+			lem_in->paths[j]->len = len;
 		j++;
 	}
 }
@@ -120,5 +118,5 @@ int		create_paths(t_lem_in *lem_in)
 		lem_in->path_num = maxpath;
 		create_way(lem_in, maxpath, 0);
 	}
-	return (cut_s);  // мы это отправлает по делу чтобы отследить короткое замыкание
+	return (cut_s);
 }

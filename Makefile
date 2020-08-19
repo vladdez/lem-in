@@ -22,8 +22,10 @@ LEMIN_SRC_DIR = src/
 
 HEADER = lem-in.h
 
-CLEMIN =  0.1.errors.c 0.2.read_line.c 0.3.validator.c 0.4.is.c 1.main.c \
-2.parse_ants_rooms.c 3.parse_link.c 4.bfs.c 5.find_links_direction.c 6.imput_cleaning.c 7.print.c\
+CLEMIN =  0.1.errors.c 0.2.read_line.c 0.3.validator.c 0.4.is.c  0.6.init_structure.c \
+0.7.write_coordinate.c 0.8.dashes_in_input.c 1.main.c \
+2.1_parse_ants.c 2.parse_rooms.c \
+3.parse_link.c 4.bfs.c 5.find_links_direction.c 6.input_cleaning.c 7.print.c\
 0.5.hash_table.c 8.create_paths.c 8.create_paths2.c 9.flow.c 9.flow2.c \
 let_me_free.c let_me_free_lem.c 6.2.deadlock_cleaning.c
 

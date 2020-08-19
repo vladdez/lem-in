@@ -149,7 +149,8 @@ void	                write_coor(t_coordinate *coordinate, char **words);
 void	                find_start_room(t_hashtable *ht_rooms, char *start, char *toward);
 void	                start_toward_for_dashes_imput(t_lem_in *lem_in, char *str);
 int		                count_dashes_in_imput(char *str);
-
+t_room					*find_best_room(t_room *cur, t_hashtable *ht_rooms);
+t_room					*find_lowest_bfs(t_node *n, t_hashtable *ht_rooms);
 
 # define ERR_ANTS_NUM_PARSING	"ERROR: Number of ants is incorrent"
 # define ERR_ROOM_PARSING		"ERROR: Can\'t parse room"
