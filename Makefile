@@ -14,6 +14,8 @@ NAME = lem-in
 
 FLAGS = -Wall -Wextra  -I. -I ./libft/libft -I ./libft/printf
 
+OBJCD = ./src/obj/
+
 LIB = -L libft/ -lft 
 
 LEMIN_SRC_DIR = src/
@@ -27,7 +29,7 @@ let_me_free.c let_me_free_lem.c 6.2.deadlock_cleaning.c
 
 LEMIN_SRC = $(addprefix $(LEMIN_SRC_DIR),$(CLEMIN))
 
-LEMIN_OBJ = $(LEMIN_SRC:%.c=%.o)
+LEMIN_OBJ = $(addprefix $(OBJCD),$(LEMIN_SRC:src/%.c=%.o))
 
 
 .PHONY: all clean fclean re
@@ -38,15 +40,19 @@ $(NAME): $(LEMIN_OBJ) $(HEADER)
 	make -C libft
 	gcc $(FLAGS) $(LEMIN_OBJ) -o $(NAME) $(LIB)
 
-$(LEMIN_SRC_DIR)%.o : $(LEMIN_SRC_DIR)%.c $(HEADER)
+
+$(OBJCD)%.o : $(LEMIN_SRC_DIR)%.c $(HEADER)
 	gcc -c $(FLAGS) $< -o $@
 
 
 clean:	
-	@rm -f $(LEMIN_OBJ)
+	@rm -rf $(OBJCD)
+	@mkdir $(OBJCD)
+	make clean -C libft/
 
 fclean: clean	
 	make fclean -C libft/
-	rm -fv $(LEMIN_OBJ)
+	@rm -rf $(OBJCD) $(NAME)
+	@mkdir $(OBJCD)
 
 re: fclean all
