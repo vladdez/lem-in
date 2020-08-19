@@ -36,11 +36,11 @@ SRC_2 =	print_float.c neg_exp.c sum_char.c tools.c substr.c multiplier.c prec.c 
 SRCCD1 = ./libft/
 SRCCD2 = ./printf/
 
-SRC = $(addprefix $(SRCCD1),$(SRC_1))
-SRC += $(addprefix $(SRCCD2),$(SRC_2))
+SRC1 = $(addprefix $(SRCCD1),$(SRC_1))
+SRC2 += $(addprefix $(SRCCD2),$(SRC_2))
 OFILES = $(SRC_1:.c=.o)
 OFILES += $(SRC_2:.c=.o)
-OBJCD = ./obj/
+OBJCD = ./obj_libft/
 OBJ_CLEAN = $(addprefix $(OBJ_CD),$(OFILES)) 
 
 CC = gcc
@@ -52,12 +52,16 @@ all: $(NAME)
 $(NAME):
 	@mkdir $(OBJCD)
 	@echo "\033[1;33mStarting compilation..."
-	@gcc -Wall -Wextra -g -c $(SRC)
+	@gcc -Wall -Wextra -g -c $(SRC1) $(SRC2)
 	@echo "\033[0;31mCreating library..."
 	@ar rc $(NAME) $(OFILES)
 	@echo "\033[0;31mGenerating index..."
 	@ranlib $(NAME)
 	@mv $(OFILES) $(OBJCD)
+
+
+$(OBJCD)%.o : $(SRC_1)%.c $(HEADER)
+	gcc -c $(FLAGS) $< -o $@
 
 clean:
 	@rm -rf $(OBJCD)

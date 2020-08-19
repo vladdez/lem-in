@@ -57,10 +57,10 @@ t_room	*find_best_room(t_room *cur, t_hashtable *ht_rooms)
 {
 	t_room *tmp;
 
-	if ((len_nei(cur->link) == 1))
-		return (FindRoomInHashtable(cur->link->node, ht_rooms));// если один сосед то сразу ее, в текущем коде сюда не заходит
+	if ((len_nei(cur->incomingLinks) == 1))
+		return (FindRoomInHashtable(cur->incomingLinks->node, ht_rooms));// если один сосед то сразу ее, в текущем коде сюда не заходит
 	else
-		tmp = find_lowest_bfs(cur->link, ht_rooms); // иначе по наименьшему bfs
+		tmp = find_lowest_bfs(cur->incomingLinks, ht_rooms); // иначе по наименьшему bfs
 	return (tmp);
 }
 
@@ -112,7 +112,7 @@ int		create_paths(t_lem_in *lem_in)
 	cut_s = is_short_circuit(lem_in);
 	if (cut_s != 0)
 	{
-		cut_e = len_nei(lem_in->end->link);
+		cut_e = len_nei(lem_in->end->incomingLinks);
 		maxpath = cut_e > cut_s ? cut_s : cut_e;
 		lem_in->paths = (t_path **)malloc(sizeof(t_path *) * (maxpath + 1));
 		while (i < maxpath + 1)
