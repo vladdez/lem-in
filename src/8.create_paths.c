@@ -6,60 +6,11 @@
 /*   By: kysgramo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/15 17:40:02 by kysgramo          #+#    #+#             */
-/*   Updated: 2020/07/31 14:30:37 by kysgramo         ###   ########.fr       */
+/*   Updated: 2020/08/17 18:52:14 by kysgramo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "lem-in.h"
-
-void    printAntsForShortCircuit(t_lem_in *lem_in)
-{
-    int i;
-
-    i = 1;
-    while (i <= lem_in->ant_num)
-    {
-        ft_printf("{red}L%i-%s{eoc} ", i, lem_in->end->room_name);
-        i++;
-    }
-    ft_printf("\n");
-}
-
-int		is_short_circuit(t_lem_in *lem_in)
-{
-	t_node	*cur;
-	int		p;
-
-	p = 0;
-	cur = lem_in->start->link;
-	while (cur)
-	{
-		if (!ft_strcmp(cur->node, lem_in->end->room_name))
-		{
-			printAntsForShortCircuit(lem_in);
-			return (0);
-		}
-		else
-			cur = cur->next;
-		p++;          // count of nodes
-	}
-	return (p);
-}
-
-int		len_nei(t_node *n)
-{
-	int		len;
-	t_node	*curr;
-
-	len = 0;
-	curr = n;
-	while (curr)
-	{
-		len++;
-		curr = curr->next;
-	}
-	return (len);
-}
 
 t_path	*create_one_path(t_room *cur)
 {
@@ -74,59 +25,43 @@ t_path	*create_one_path(t_room *cur)
 	return (pa);
 }
 
-t_room 	*find_lowest_bfs(t_node *n, t_hashtable *ht_rooms)
+t_room	*find_lowest_bfs(t_node *n, t_hashtable *ht_rooms)
 {
 	t_node	*cur;
-	t_room  *TmpRoom;
-    t_room  *LowestBfsRoom;
+	t_room	*tmp_room;
+	t_room	*lowest_bfs_room;
 	int		lowest;
 	int		level;
 
 	lowest = 2147483647;
 	cur = n;
-    LowestBfsRoom = NULL;
+	lowest_bfs_room = NULL;
 	while (cur)
 	{
-        TmpRoom = FindRoomInHashtable(cur->node, ht_rooms);
-		if (TmpRoom->visit2 == UNVISITED)
+		tmp_room = FindRoomInHashtable(cur->node, ht_rooms);
+		if (tmp_room->visit2 == UNVISITED)
 		{
-			level = TmpRoom->bfs_level;
+			level = tmp_room->bfs_level;
 			if (level < lowest)
 			{
 				lowest = level;
-                LowestBfsRoom = TmpRoom;
+				lowest_bfs_room = tmp_room;
 			}
 		}
 		cur = cur->next;
 	}
-	return (LowestBfsRoom);
+	return (lowest_bfs_room);
 }
 
-
-t_room 	*find_best_room(t_room *cur, t_hashtable *ht_rooms)
+t_room	*find_best_room(t_room *cur, t_hashtable *ht_rooms)
 {
-    t_room *tmp;
+	t_room *tmp;
 
 	if ((len_nei(cur->link) == 1))
-        return(FindRoomInHashtable(cur->link->node, ht_rooms));// если один сосед то сразу ее, в текущем коде сюда не заходит
+		return (FindRoomInHashtable(cur->link->node, ht_rooms));// если один сосед то сразу ее, в текущем коде сюда не заходит
 	else
 		tmp = find_lowest_bfs(cur->link, ht_rooms); // иначе по наименьшему bfs
 	return (tmp);
-}
-
-
-void    DeleteCurrentPath(t_path *path)
-{
-    t_path *tmp;
-
-    tmp = path;
-    while (tmp)
-    {
-        tmp = path->next;
-        free(path);
-        path = tmp;
-    }
-
 }
 
 void	create_way(t_lem_in *lem_in, int cut, int j)
@@ -134,36 +69,34 @@ void	create_way(t_lem_in *lem_in, int cut, int j)
 	t_room	*cur;
 	t_path	*tmp;
 	int		len;
-	t_room *TmpRoom;
+	t_room	*tmp_room;
 
 	tmp = NULL;
-	while (j < cut) // перебор путей по массиву
+	while (j < cut)
 	{
 		len = 0;
 		cur = lem_in->end;
 		lem_in->paths[j] = create_one_path(lem_in->end);  // инизализация, важно что первый  это END
 		while (cur != lem_in->start)                      // засись команты в путь по связному списку
 		{
-			TmpRoom = find_best_room(cur, lem_in->ht_rooms);
-			if (TmpRoom == lem_in->end || TmpRoom == NULL)
-            {
-			    DeleteCurrentPath(lem_in->paths[j]);
-                lem_in->paths[j] = NULL;
-                //lem_in->path_num--;
-			    break;
-            }
-			if (TmpRoom != lem_in->start)
-                TmpRoom->visit2 = VISITED;
-			cur = TmpRoom;
-			tmp = create_one_path(cur);   // указатель где начинается путь
+			tmp_room = find_best_room(cur, lem_in->ht_rooms);
+			if (tmp_room == lem_in->end || tmp_room == NULL)
+			{
+				delete_current_path(lem_in->paths[j]);
+				lem_in->paths[j] = NULL;
+				break;
+			}
+			if (tmp_room != lem_in->start)
+				tmp_room->visit2 = VISITED;
+			cur = tmp_room;
+			tmp = create_one_path(cur); // указатель где начинается путь
 			tmp->next = lem_in->paths[j];
 			lem_in->paths[j] = tmp;
 			len++;
 			tmp = NULL;
-
 		}
 		if (lem_in->paths[j])
-		    lem_in->paths[j]->len = len;      // !!! здесь потенциальная ошибка так как можем пропустить путь, они не записываются друг за другом
+			lem_in->paths[j]->len = len; // !!! здесь потенциальная ошибка так как можем пропустить путь, они не записываются друг за другом
 		j++;
 	}
 }
@@ -180,7 +113,7 @@ int		create_paths(t_lem_in *lem_in)
 	if (cut_s != 0)
 	{
 		cut_e = len_nei(lem_in->end->link);
-        maxpath = cut_e > cut_s ? cut_s : cut_e;
+		maxpath = cut_e > cut_s ? cut_s : cut_e;
 		lem_in->paths = (t_path **)malloc(sizeof(t_path *) * (maxpath + 1));
 		while (i < maxpath + 1)
 			lem_in->paths[i++] = NULL;

@@ -5,7 +5,7 @@ void	free_paths(t_path **pa, int path_num)
 	int i;
 	t_path *kill;
 
-	i = 1;
+	i = 0;
 
 	while (i <= path_num)
 	{

@@ -37,21 +37,21 @@ void	print_paths_with_ants(t_path *curr, int i)
 void	push_ants_along(t_path *pa, t_lem_in *lem_in, int i)
 {
 	t_path	*curr;
-	int		tmp;
-	int		tmp2;
+	int		changer;
+	int		keeper;
 
 	curr = pa;
-	tmp = 0;
-	tmp2 = 0;
+	changer = 0;
+	keeper = 0;
 	while (curr && i)
 	{
 		if (curr->head == 1)
-			tmp = pa->ant_index;
+			changer = pa->ant_index;
 		else
 		{
-			tmp2 = curr->ant_index;
-			curr->ant_index = tmp;
-			tmp = tmp2;
+			keeper = curr->ant_index;
+			curr->ant_index = changer;
+			changer = keeper;
 			if (curr->next == NULL)
 			{
 				if (curr->ant_index != 0)
@@ -62,7 +62,7 @@ void	push_ants_along(t_path *pa, t_lem_in *lem_in, int i)
 		i--;
 	}
 }
-
+/*
 int		check_emptyness_of_path(t_path *tmp_pa)
 {
 	int		i;
@@ -79,33 +79,7 @@ int		check_emptyness_of_path(t_path *tmp_pa)
 		return (1);
 	else
 		return (0);
-}
-
-int		push_old_ants(t_lem_in *lem_in, int supermax, int flows, int ant_index)
-{
-	t_path	*curr;
-	t_path	*tmp_pa;
-	int		empty_path;
-
-	empty_path = 0;
-	while (flows <= supermax)
-	{
-		tmp_pa = lem_in->paths[flows];
-		if (tmp_pa)
-		{
-			tmp_pa->ant_index = 0;
-			push_ants_along(tmp_pa, lem_in, ant_index);
-			curr = lem_in->paths[flows];
-			print_paths_with_ants(curr, flows);
-			empty_path += check_emptyness_of_path(tmp_pa);
-		}
-		else
-			supermax++;
-		flows++;
-	}
-	supermax -= empty_path;
-	return (supermax);
-}
+}*/
 
 int		index_manager(t_lem_in *lem_in, int maxf, int ant_index)
 {
