@@ -91,21 +91,24 @@ void    bfs(t_lem_in *lem_in)
     while (!is_empty(q))
     {
         current_room_name = dequeue(q);
-        currentRoom = FindRoomInHashtable(current_room_name, lem_in->ht_rooms);
-        level = currentRoom->bfs_level + 1;
-        link = FindRoomLinks(current_room_name, lem_in->ht_rooms);
-        while (link)
+        if (ft_strcmp(current_room_name,lem_in->end->room_name) != 0)
         {
-            tmp = FindRoomInHashtable(link->node, lem_in->ht_rooms);
-            if (tmp->visit == UNVISITED)
+            currentRoom = FindRoomInHashtable(current_room_name, lem_in->ht_rooms);
+            level = currentRoom->bfs_level + 1;
+            link = FindRoomLinks(current_room_name, lem_in->ht_rooms);
+            while (link)
             {
-                tmp->visit = VISITED;
-                tmp->bfs_level = level;
-                enqueue(q, tmp, lem_in->room_num);
+                tmp = FindRoomInHashtable(link->node, lem_in->ht_rooms);
+                if (tmp->visit == UNVISITED)
+                {
+                    tmp->visit = VISITED;
+                    tmp->bfs_level = level;
+                    enqueue(q, tmp, lem_in->room_num);
+                }
+                link = link->next;
             }
-            link = link->next;
         }
     }
-
+    lem_in->end->bfs_level = INT_MAX;
     //    free_queue(q); нужна какая-то очистка струкутры q
 }

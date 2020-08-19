@@ -4,7 +4,7 @@
 
 #include "lem-in.h"
 
-void MarkDirection(t_node *link, char *room_name)
+void add_node(t_node *link, char *room_name)
 {
     t_node *tmp;
 
@@ -30,14 +30,38 @@ void MarkDirection(t_node *link, char *room_name)
     }
 }
 
+int    compare_bfs_level(t_room *CurrentRoomInHashTable, t_hashtable *ht_rooms)
+{
+    t_node *LinksofCurrentRoom;
+    t_room *RoomFoundByLinkName;
+    int deadlock;
+
+    deadlock = 0;
+    LinksofCurrentRoom = CurrentRoomInHashTable->link;
+    while (LinksofCurrentRoom)
+    {
+        RoomFoundByLinkName = FindRoomInHashtable(LinksofCurrentRoom->node, ht_rooms);
+        if (CurrentRoomInHashTable->bfs_level > RoomFoundByLinkName->bfs_level)
+            add_node(CurrentRoomInHashTable->incomingLinks, RoomFoundByLinkName->room_name);
+        else
+        {
+            add_node(CurrentRoomInHashTable->outgoingLinks, RoomFoundByLinkName->room_name);
+            deadlock++;
+        }
+        LinksofCurrentRoom = LinksofCurrentRoom->next;
+    }
+    return (deadlock);
+}
+
 void findLinkDirection(t_hashtable *ht_rooms)
 {
-    int i;
-    t_node *LinksofCurrentRoom;
-    t_room *CurrentRoomInHashTable;
-    t_room *RoomFoundByLinkName;
+    int     i;
+    int     deadlock;
+    t_room  *CurrentRoomInHashTable;
+    t_node  *deadlock_room_name;
 
     i = 0;
+    deadlock_room_name = neighbour_init();
     while (i < TABLE_SIZE)
     {
         if (ht_rooms->room[i] != NULL)
@@ -47,22 +71,16 @@ void findLinkDirection(t_hashtable *ht_rooms)
             {
                 if (CurrentRoomInHashTable->link != NULL && CurrentRoomInHashTable->bfs_level != -1)
                 {
-                    LinksofCurrentRoom = CurrentRoomInHashTable->link;
-                    while (LinksofCurrentRoom)
-                    {
-                        RoomFoundByLinkName = FindRoomInHashtable(LinksofCurrentRoom->node, ht_rooms);
-                        if (CurrentRoomInHashTable->bfs_level > RoomFoundByLinkName->bfs_level && RoomFoundByLinkName->bfs_level > -1)
-                            MarkDirection(CurrentRoomInHashTable->incomingLinks, RoomFoundByLinkName->room_name);
-                        if (CurrentRoomInHashTable->bfs_level < RoomFoundByLinkName->bfs_level && RoomFoundByLinkName->bfs_level > -1)
-                            MarkDirection(CurrentRoomInHashTable->outgoingLinks, RoomFoundByLinkName->room_name);
-                        LinksofCurrentRoom = LinksofCurrentRoom->next;
-                    }
+                    deadlock = compare_bfs_level(CurrentRoomInHashTable, ht_rooms);
+                    if (deadlock == 0 && CurrentRoomInHashTable->bfs_level != INT_MAX )
+                        add_node(deadlock_room_name, CurrentRoomInHashTable->room_name);
                 }
                 CurrentRoomInHashTable = CurrentRoomInHashTable->next;
             }
         }
         i++;
     }
+    clean_deadlock(deadlock_room_name, ht_rooms);
 }
 
 

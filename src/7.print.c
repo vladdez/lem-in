@@ -26,7 +26,7 @@ void print_ht_roomsWithDirection(t_hashtable *ht_rooms)
             tmp2 = ht_rooms->room[i];
             while (tmp2)
             {
-                if (tmp2->incomingLinks->node != NULL)
+                if (tmp2->incomingLinks->node != NULL && tmp2->incomingLinks != NULL)
                 {
                     tmp = tmp2->incomingLinks;
                     while (tmp)

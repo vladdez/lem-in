@@ -45,7 +45,6 @@ t_node *neighbour_init()
     if (!(link = malloc(sizeof(t_node) * 1)))
         terminate(ERR_ALLOCATION);
     link->node = NULL;
-	link->type = -1;
     link->next = NULL;
     return(link);
 }

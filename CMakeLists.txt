@@ -108,6 +108,8 @@ add_executable(irina3
         src/7.print.c
         src/8.create_paths.c
         src/9.flow.c
+        src/9.flow2.c
         src/let_me_free.c
         src/let_me_free_lem.c
+        src/6.2.deadlock_cleaning.c
         lem-in.h)

@@ -143,6 +143,8 @@ int						is_short_circuit(t_lem_in *lem_in);
 int						len_nei(t_node *n);
 void					delete_current_path(t_path *path);
 int						check_flow_type(int maxpath, t_lem_in *lem_in);
+void                    clean_deadlock(t_node *deadlock_room_name, t_hashtable *ht_rooms);
+
 
 # define ERR_ANTS_NUM_PARSING	"ERROR: Number of ants is incorrent"
 # define ERR_ROOM_PARSING		"ERROR: Can\'t parse room"
@@ -170,8 +172,5 @@ int						check_flow_type(int maxpath, t_lem_in *lem_in);
 # define TABLE_SIZE 100
 # define VISITED 1
 # define UNVISITED 0
-# define UNDIFINED 1
-# define DIFINED_DIRECTION 0
-
 
 #endif

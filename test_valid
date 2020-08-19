@@ -1,4 +1,6 @@
 #!/bin/bash
+make && make clean
+
 echo -e '\033[1m 1.map\033[0m'
 ./lem-in 1.map
 
@@ -6,7 +8,7 @@ echo -e '\033[1m 2.map\033[0m'
 ./lem-in 2.map
 
 echo -e '\033[1m 3.map\033[0m'
-./lem-in 2.map
+./lem-in 3.map
 
 echo -e '\033[1m maps/valid/vs/one_way/1.map \033[0m'
 ./lem-in maps/valid/vs/one_way/1.map

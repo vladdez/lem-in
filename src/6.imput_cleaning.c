@@ -12,12 +12,11 @@
 
 #include "lem-in.h"
 
-void    cleanAndFreeLink(t_node *kill)
+void    clean_and_free_link(t_node *kill)
 {
 	free(kill->node);
 	kill->node = NULL;
-	free(kill);
-	kill = NULL;
+	kill->next = NULL;
 }
 
 
@@ -29,8 +28,14 @@ t_node  *DeleteThisLink(t_room *room, char *nameOfLinkToDelete)
 	tmpLink = room->link;
 	if (ft_strcmp(tmpLink->node, nameOfLinkToDelete) == 0)
 	{
-		room->link = tmpLink->next;
-		cleanAndFreeLink(tmpLink);
+		if (tmpLink->next == NULL)
+            clean_and_free_link(room->link);
+		else
+        {
+	        room->link = tmpLink->next;
+            clean_and_free_link(tmpLink);
+            free(tmpLink);
+        }
 		return (room->link);
 	}
 	else
@@ -42,7 +47,7 @@ t_node  *DeleteThisLink(t_room *room, char *nameOfLinkToDelete)
 			if (ft_strcmp(tmpLink->node, nameOfLinkToDelete) == 0)
 			{
 				tmpLaggingLink->next = tmpLink->next;
-				cleanAndFreeLink(tmpLink);
+                clean_and_free_link(tmpLink);
 				return (tmpLaggingLink->next);
 			}
             else
@@ -60,13 +65,15 @@ void    deleteOutgoingLinksforEnd(t_room *EndRoom, t_hashtable *ht_rooms)
 	t_room  *tmpRoom;
 
 	tmpLinkOfEndRoom = EndRoom->link;
-	while (tmpLinkOfEndRoom)
+	while ( tmpLinkOfEndRoom != NULL && tmpLinkOfEndRoom->node != NULL)
 	{
 		tmpRoom = FindRoomInHashtable(tmpLinkOfEndRoom->node, ht_rooms);
-		if (EndRoom->bfs_level < tmpRoom->bfs_level)
+		if (tmpRoom->bfs_level == -1)
 		{
 			tmpLinkOfEndRoom = DeleteThisLink(EndRoom,tmpLinkOfEndRoom->node);
 			DeleteThisLink(tmpRoom, EndRoom->room_name);
+			if (tmpRoom->link->node != NULL)
+                deleteOutgoingLinksforEnd(tmpRoom,ht_rooms);
 		}
 		else
 			tmpLinkOfEndRoom = tmpLinkOfEndRoom->next;
