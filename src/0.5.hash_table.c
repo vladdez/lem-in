@@ -16,7 +16,7 @@ int sum_ascii(char *room_name)
     return (sum % TABLE_SIZE);
 }
 
-t_room *FindRoomInHashtable(char *room_name, t_hashtable *ht_rooms)
+t_room *find_room_in_hashtable(char *room_name, t_hashtable *ht_rooms)
 {
     int  i;
     t_room *tmp;
@@ -28,7 +28,7 @@ t_room *FindRoomInHashtable(char *room_name, t_hashtable *ht_rooms)
     return (tmp);
 }
 
-t_node *FindRoomLinks(char *current_room_name, t_hashtable *ht_rooms)
+t_node *find_room_links(char *current_room_name, t_hashtable *ht_rooms)
 {
     int  i;
     t_room *tmp;

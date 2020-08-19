@@ -40,7 +40,7 @@ int    compare_bfs_level(t_room *CurrentRoomInHashTable, t_hashtable *ht_rooms)
     LinksofCurrentRoom = CurrentRoomInHashTable->link;
     while (LinksofCurrentRoom)
     {
-        RoomFoundByLinkName = FindRoomInHashtable(LinksofCurrentRoom->node, ht_rooms);
+        RoomFoundByLinkName = find_room_in_hashtable(LinksofCurrentRoom->node, ht_rooms);
         if (CurrentRoomInHashTable->bfs_level > RoomFoundByLinkName->bfs_level)
             add_node(CurrentRoomInHashTable->incomingLinks, RoomFoundByLinkName->room_name);
         else

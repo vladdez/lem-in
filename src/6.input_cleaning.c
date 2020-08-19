@@ -67,7 +67,7 @@ void    deleteOutgoingLinksforEnd(t_room *EndRoom, t_hashtable *ht_rooms)
 	tmpLinkOfEndRoom = EndRoom->link;
 	while ( tmpLinkOfEndRoom != NULL && tmpLinkOfEndRoom->node != NULL)
 	{
-		tmpRoom = FindRoomInHashtable(tmpLinkOfEndRoom->node, ht_rooms);
+		tmpRoom = find_room_in_hashtable(tmpLinkOfEndRoom->node, ht_rooms);
 		if (tmpRoom->bfs_level == -1)
 		{
 			tmpLinkOfEndRoom = DeleteThisLink(EndRoom,tmpLinkOfEndRoom->node);

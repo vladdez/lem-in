@@ -38,7 +38,7 @@ t_room	*find_lowest_bfs(t_node *n, t_hashtable *ht_rooms)
 	lowest_bfs_room = NULL;
 	while (cur)
 	{
-		tmp_room = FindRoomInHashtable(cur->node, ht_rooms);
+		tmp_room = find_room_in_hashtable(cur->node, ht_rooms);
 		if (tmp_room->visit2 == UNVISITED)
 		{
 			level = tmp_room->bfs_level;
@@ -52,7 +52,6 @@ t_room	*find_lowest_bfs(t_node *n, t_hashtable *ht_rooms)
 	}
 	return (lowest_bfs_room);
 }
-
 
 int		create_way_sub(t_lem_in *lem_in, t_path *tmp, t_room *cur, int j)
 {

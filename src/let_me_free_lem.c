@@ -92,14 +92,15 @@ void	free_coord(t_coordinate **input)
 	input = NULL;
 }
 
-void	free_lem_in(t_lem_in *lem_in)
+void	free_lem_in(t_lem_in *lem_in, int fd)
 {
 	if (lem_in)
 	{
 		free_ht(lem_in->ht_rooms->room);
 		free(lem_in->ht_rooms);
 		free_coord(&(lem_in->coordinate));
-		free_paths(lem_in->paths, lem_in->path_num);
+		if (fd != 0)
+			free_paths(lem_in->paths, lem_in->path_num);
 		free(lem_in);
 		(lem_in) = NULL;
 	}

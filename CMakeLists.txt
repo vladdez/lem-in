@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.17)
-project(irina3 C)
+project(irina5 C)
 
 set(CMAKE_C_STANDARD 11)
 
@@ -7,7 +7,7 @@ include_directories(.)
 include_directories(libft/libft)
 include_directories(libft/printf)
 
-add_executable(irina3
+add_executable(irina5
         libft/libft/ft_atoi.c
         libft/libft/ft_bzero.c
         libft/libft/ft_isalnum.c
@@ -99,12 +99,18 @@ add_executable(irina3
         src/0.3.validator.c
         src/0.4.is.c
         src/0.5.hash_table.c
+        src/0.6.init_structure.c
+        src/0.7.write_coordinate.c
+        src/0.8.dashes_in_input.c
+        src/1.1.init.c
         src/1.main.c
+        src/2.1_parse_ants.c
         src/2.parse_rooms.c
         src/3.parse_link.c
         src/4.bfs.c
         src/5.find_links_direction.c
-        src/6.imput_cleaning.c
+        src/6.2.deadlock_cleaning.c
+        src/6.input_cleaning.c
         src/7.print.c
         src/8.create_paths.c
         src/8.create_paths2.c
@@ -112,5 +118,4 @@ add_executable(irina3
         src/9.flow2.c
         src/let_me_free.c
         src/let_me_free_lem.c
-        src/6.2.deadlock_cleaning.c
-        lem-in.h src/0.6.init_structure.c src/2.1_parse_ants.c src/0.7.write_coordinate.c src/0.8.dashes_in_imput.c)
+        lem-in.h)

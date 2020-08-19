@@ -89,12 +89,12 @@ void	bfs(t_lem_in *lem_in)
 		current_room_name = dequeue(q);
 		if (ft_strcmp(current_room_name, lem_in->end->room_name) != 0)
 		{
-			current_room = FindRoomInHashtable(current_room_name, lem_in->ht_rooms);
+			current_room = find_room_in_hashtable(current_room_name, lem_in->ht_rooms);
 			level = current_room->bfs_level + 1;
-			link = FindRoomLinks(current_room_name, lem_in->ht_rooms);
+			link = find_room_links(current_room_name, lem_in->ht_rooms);
 			while (link)
 			{
-				tmp = FindRoomInHashtable(link->node, lem_in->ht_rooms);
+				tmp = find_room_in_hashtable(link->node, lem_in->ht_rooms);
 				if (tmp->visit == UNVISITED)
 				{
 					tmp->visit = VISITED;

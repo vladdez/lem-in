@@ -58,7 +58,7 @@ void		lem(int fd)
 		flow(lem_in, 1, 2);
 	}
 	free_input(input);
-	free_lem_in(lem_in);
+	free_lem_in(lem_in, fd);
 }
 
 int			main(int ac, char **av)

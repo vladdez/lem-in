@@ -1,8 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="irina3" targetName="irina3" />
+      <config projectName="irina5" targetName="irina5" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -13,107 +31,149 @@
   <component name="ChangeListManager">
     <list default="true" id="30b215e4-c186-4ee7-a924-0d140b951c90" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/irina3" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/irina3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/C.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_atoi.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_bzero.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_isalnum.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_isalpha.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_isascii.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_isdigit.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_isprint.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_itoa.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_lstadd.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_lstdel.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_lstdelone.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_lstiter.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_lstmap.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_lstnew.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_memalloc.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_memccpy.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_memchr.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_memcmp.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_memcpy.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_memdel.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_memmove.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_memset.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_print_bits.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_putchar.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_putchar_fd.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_putendl.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_putendl_fd.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_putnbr.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_putnbr_fd.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_putstr.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_putstr_fd.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_reverse_bits.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_sort_array.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_strcat.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_strchr.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_strclr.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_strcmp.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_strcpy.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_strdel.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_strdup.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_strequ.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_striter.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_striteri.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_strjoin.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_strlcat.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_strlen.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_strmap.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_strmapi.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_strncat.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_strncmp.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_strncpy.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_strndup.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_strnequ.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_strnew.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_strnstr.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_strrchr.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_strrev.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_strsplit.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_strstr.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_strsub.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_strtrim.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_swap_bits.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_tolower.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_toupper.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/ft_words.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/libft/get_next_line.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/printf/color.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/printf/conversion.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/printf/free.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/printf/ft_printf.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/printf/multiplier.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/printf/neg_exp.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/printf/prec.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/printf/prec2.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/printf/print_float.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/printf/print_integer.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/printf/print_octal_x.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/printf/print_pointer_char.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/printf/print_string.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/printf/print_unsigned.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/printf/read_format.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/printf/substr.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/printf/sum_char.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/libft/printf/tools.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/src/0.1.errors.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/src/0.2.read_line.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/src/0.3.validator.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/src/0.4.is.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/src/0.5.hash_table.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/src/1.main.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/src/2.parse_ants_rooms.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/src/3.parse_link.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/src/4.bfs.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/src/5.find_links_direction.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/src/6.2.deadlock_cleaning.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/src/6.imput_cleaning.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/src/7.print.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/src/8.create_paths.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/src/8.create_paths2.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/src/9.flow.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/src/9.flow2.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/src/let_me_free.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina3.dir/src/let_me_free_lem.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lem-in" beforeDir="false" afterPath="$PROJECT_DIR$/lem-in" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lem-in.h" beforeDir="false" afterPath="$PROJECT_DIR$/lem-in.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/libft.a" beforeDir="false" afterPath="$PROJECT_DIR$/libft/libft.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/color.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/color.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/conversion.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/conversion.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/free.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/free.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_atoi.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_atoi.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_bzero.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_bzero.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_isalnum.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_isalnum.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_isalpha.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_isalpha.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_isascii.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_isascii.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_isdigit.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_isdigit.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_isprint.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_isprint.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_itoa.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_itoa.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_lstadd.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_lstadd.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_lstdel.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_lstdel.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_lstdelone.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_lstdelone.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_lstiter.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_lstiter.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_lstmap.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_lstmap.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_lstnew.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_lstnew.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_memalloc.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_memalloc.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_memccpy.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_memccpy.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_memchr.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_memchr.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_memcmp.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_memcmp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_memcpy.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_memcpy.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_memdel.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_memdel.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_memmove.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_memmove.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_memset.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_memset.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_print_bits.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_print_bits.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_printf.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_printf.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_putchar.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_putchar.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_putchar_fd.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_putchar_fd.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_putendl.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_putendl.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_putendl_fd.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_putendl_fd.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_putnbr.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_putnbr.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_putnbr_fd.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_putnbr_fd.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_putstr.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_putstr.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_putstr_fd.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_putstr_fd.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_reverse_bits.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_reverse_bits.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_sort_array.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_sort_array.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_strcat.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_strcat.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_strchr.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_strchr.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_strclr.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_strclr.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_strcmp.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_strcmp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_strcpy.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_strcpy.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_strdel.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_strdel.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_strdup.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_strdup.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_strequ.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_strequ.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_striter.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_striter.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_striteri.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_striteri.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_strjoin.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_strjoin.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_strlcat.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_strlcat.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_strlen.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_strlen.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_strmap.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_strmap.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_strmapi.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_strmapi.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_strncat.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_strncat.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_strncmp.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_strncmp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_strncpy.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_strncpy.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_strndup.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_strndup.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_strnequ.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_strnequ.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_strnew.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_strnew.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_strnstr.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_strnstr.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_strrchr.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_strrchr.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_strrev.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_strrev.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_strsplit.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_strsplit.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_strstr.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_strstr.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_strsub.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_strsub.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_strtrim.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_strtrim.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_swap_bits.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_swap_bits.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_tolower.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_tolower.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_toupper.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_toupper.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_words.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_words.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/get_next_line.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/get_next_line.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/multiplier.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/multiplier.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/neg_exp.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/neg_exp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/prec.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/prec.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/prec2.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/prec2.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/print_float.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/print_float.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/print_integer.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/print_integer.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/print_octal_x.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/print_octal_x.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/print_pointer_char.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/print_pointer_char.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/print_string.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/print_string.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/print_unsigned.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/print_unsigned.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/read_format.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/read_format.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/substr.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/substr.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/sum_char.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/sum_char.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/tools.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/tools.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/printf/color.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/printf/color.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/printf/ft_printf.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/printf/ft_printf.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/map10" beforeDir="false" afterPath="$PROJECT_DIR$/map10" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map" beforeDir="false" afterPath="$PROJECT_DIR$/map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/0.5.hash_table.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/0.5.hash_table.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/1.main.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/1.main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/1.main.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/1.main.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/7.print.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/7.print.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/7.print.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/7.print.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/4.bfs.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/4.bfs.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/5.find_links_direction.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/5.find_links_direction.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/6.2.deadlock_cleaning.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/6.2.deadlock_cleaning.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/6.input_cleaning.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/6.input_cleaning.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/8.create_paths.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/8.create_paths.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/8.create_paths.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/8.create_paths.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/9.flow.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/9.flow.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/9.flow.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/9.flow.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_invalid" beforeDir="false" afterPath="$PROJECT_DIR$/test_invalid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_valid" beforeDir="false" afterPath="$PROJECT_DIR$/test_valid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/8.create_paths2.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/8.create_paths2.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/let_me_free_lem.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/let_me_free_lem.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/obj/0.5.hash_table.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/obj/0.5.hash_table.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/obj/1.main.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/obj/1.main.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/obj/4.bfs.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/obj/4.bfs.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/obj/5.find_links_direction.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/obj/5.find_links_direction.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/obj/6.2.deadlock_cleaning.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/obj/6.2.deadlock_cleaning.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/obj/6.input_cleaning.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/obj/6.input_cleaning.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/obj/8.create_paths.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/obj/8.create_paths.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/obj/8.create_paths2.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/obj/8.create_paths2.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/obj/let_me_free_lem.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/obj/let_me_free_lem.o" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,31 +213,42 @@
       <recent name="C:\Users\Vladimir\lem_in" />
     </key>
   </component>
-  <component name="RunManager" selected="CMake Application.irina3">
+  <component name="RunManager" selected="CMake Application.irina5">
     <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="irina" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="map0" REDIRECT_INPUT="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="irina3" TARGET_NAME="irina" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="irina3" RUN_TARGET_NAME="irina">
+    <configuration name="irina" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="map0" REDIRECT_INPUT="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="irina5" TARGET_NAME="irina" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="irina5" RUN_TARGET_NAME="irina">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="irina3" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="map10" REDIRECT_INPUT="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="irina3" TARGET_NAME="irina3" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="irina3" RUN_TARGET_NAME="irina3">
+    <configuration name="irina3" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="map10" REDIRECT_INPUT="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="irina5" TARGET_NAME="irina3" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="irina5" RUN_TARGET_NAME="irina3">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="lem_in" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="maps/valid/vs/one_way/1.map" REDIRECT_INPUT="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="irina3" TARGET_NAME="l2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="irina3" RUN_TARGET_NAME="l2">
+    <configuration name="irina5" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="3.map" REDIRECT_INPUT="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="irina5" TARGET_NAME="irina5" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="irina5" RUN_TARGET_NAME="irina5">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="lem_in" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="maps/valid/vs/one_way/1.map" REDIRECT_INPUT="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="irina5" TARGET_NAME="l2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="irina5" RUN_TARGET_NAME="l2">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <list>
       <item itemvalue="CMake Application.irina" />
       <item itemvalue="CMake Application.lem_in" />
       <item itemvalue="CMake Application.irina3" />
+      <item itemvalue="CMake Application.irina5" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -227,6 +298,8 @@
       <workItem from="1597572740191" duration="658000" />
       <workItem from="1597573950407" duration="18457000" />
       <workItem from="1597647554093" duration="1794000" />
+      <workItem from="1597855483887" duration="1015000" />
+      <workItem from="1597856607838" duration="3145000" />
     </task>
     <servers />
   </component>
@@ -250,82 +323,82 @@
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="476" y="300" key="#C/C++/0.23.2560.1337@0.23.2560.1337" timestamp="1597652917633" />
-    <state x="744" y="353" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597652323985">
+    <state x="744" y="353" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597859384942">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="369" y="222" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1594912325660" />
     <state x="595" y="282" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2048.1049@0.23.2048.1049" timestamp="1594641533552" />
-    <state x="744" y="353" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1597652323985" />
+    <state x="744" y="353" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1597859384942" />
     <state x="1067" y="403" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1596374426957">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="1067" y="403" key="#com.intellij.ide.macro.MacrosDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1596374426957" />
-    <state width="1646" height="479" key="GridCell.Tab.0.bottom" timestamp="1597597157060">
+    <state width="1646" height="570" key="GridCell.Tab.0.bottom" timestamp="1597859814760">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="1398" height="329" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1594912894679" />
     <state width="2518" height="335" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1593622321567" />
     <state width="780" height="376" key="GridCell.Tab.0.bottom/0.23.2048.1049@0.23.2048.1049" timestamp="1594642777853" />
-    <state width="1646" height="479" key="GridCell.Tab.0.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1597597157060" />
-    <state width="1646" height="479" key="GridCell.Tab.0.center" timestamp="1597597157059">
+    <state width="1646" height="570" key="GridCell.Tab.0.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1597859814760" />
+    <state width="1646" height="570" key="GridCell.Tab.0.center" timestamp="1597859814759">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="1398" height="329" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1594912894676" />
     <state width="2518" height="335" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1593622321567" />
     <state width="780" height="376" key="GridCell.Tab.0.center/0.23.2048.1049@0.23.2048.1049" timestamp="1594642777853" />
-    <state width="1646" height="479" key="GridCell.Tab.0.center/0.23.2560.1337@0.23.2560.1337" timestamp="1597597157059" />
-    <state width="1646" height="479" key="GridCell.Tab.0.left" timestamp="1597597157059">
+    <state width="1646" height="570" key="GridCell.Tab.0.center/0.23.2560.1337@0.23.2560.1337" timestamp="1597859814759" />
+    <state width="1646" height="570" key="GridCell.Tab.0.left" timestamp="1597859814758">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="1398" height="329" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1594912894675" />
     <state width="2518" height="335" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1593622321566" />
     <state width="780" height="376" key="GridCell.Tab.0.left/0.23.2048.1049@0.23.2048.1049" timestamp="1594642777853" />
-    <state width="1646" height="479" key="GridCell.Tab.0.left/0.23.2560.1337@0.23.2560.1337" timestamp="1597597157059" />
-    <state width="1646" height="479" key="GridCell.Tab.0.right" timestamp="1597597157060">
+    <state width="1646" height="570" key="GridCell.Tab.0.left/0.23.2560.1337@0.23.2560.1337" timestamp="1597859814758" />
+    <state width="1646" height="570" key="GridCell.Tab.0.right" timestamp="1597859814759">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="1398" height="329" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1594912894678" />
     <state width="2518" height="335" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1593622321567" />
     <state width="780" height="376" key="GridCell.Tab.0.right/0.23.2048.1049@0.23.2048.1049" timestamp="1594642777853" />
-    <state width="1646" height="479" key="GridCell.Tab.0.right/0.23.2560.1337@0.23.2560.1337" timestamp="1597597157060" />
-    <state width="1646" height="479" key="GridCell.Tab.1.bottom" timestamp="1597597157061">
+    <state width="1646" height="570" key="GridCell.Tab.0.right/0.23.2560.1337@0.23.2560.1337" timestamp="1597859814759" />
+    <state width="1646" height="570" key="GridCell.Tab.1.bottom" timestamp="1597859815584">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="1398" height="329" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1594912894681" />
     <state width="2518" height="335" key="GridCell.Tab.1.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1593622323000" />
     <state width="780" height="376" key="GridCell.Tab.1.bottom/0.23.2048.1049@0.23.2048.1049" timestamp="1594642777853" />
-    <state width="1646" height="479" key="GridCell.Tab.1.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1597597157061" />
-    <state width="1646" height="479" key="GridCell.Tab.1.center" timestamp="1597597157061">
+    <state width="1646" height="570" key="GridCell.Tab.1.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1597859815584" />
+    <state width="1646" height="570" key="GridCell.Tab.1.center" timestamp="1597859815584">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="1398" height="329" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1594912894680" />
     <state width="2518" height="335" key="GridCell.Tab.1.center/0.0.2560.1440@0.0.2560.1440" timestamp="1593622322999" />
     <state width="780" height="376" key="GridCell.Tab.1.center/0.23.2048.1049@0.23.2048.1049" timestamp="1594642777852" />
-    <state width="1646" height="479" key="GridCell.Tab.1.center/0.23.2560.1337@0.23.2560.1337" timestamp="1597597157061" />
-    <state width="1646" height="479" key="GridCell.Tab.1.left" timestamp="1597597157060">
+    <state width="1646" height="570" key="GridCell.Tab.1.center/0.23.2560.1337@0.23.2560.1337" timestamp="1597859815584" />
+    <state width="1646" height="570" key="GridCell.Tab.1.left" timestamp="1597859815583">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="1398" height="329" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1594912894679" />
     <state width="2518" height="335" key="GridCell.Tab.1.left/0.0.2560.1440@0.0.2560.1440" timestamp="1593622322999" />
     <state width="780" height="376" key="GridCell.Tab.1.left/0.23.2048.1049@0.23.2048.1049" timestamp="1594642777851" />
-    <state width="1646" height="479" key="GridCell.Tab.1.left/0.23.2560.1337@0.23.2560.1337" timestamp="1597597157060" />
-    <state width="1646" height="479" key="GridCell.Tab.1.right" timestamp="1597597157061">
+    <state width="1646" height="570" key="GridCell.Tab.1.left/0.23.2560.1337@0.23.2560.1337" timestamp="1597859815583" />
+    <state width="1646" height="570" key="GridCell.Tab.1.right" timestamp="1597859815584">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="1398" height="329" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1594912894681" />
     <state width="2518" height="335" key="GridCell.Tab.1.right/0.0.2560.1440@0.0.2560.1440" timestamp="1593622323000" />
     <state width="780" height="376" key="GridCell.Tab.1.right/0.23.2048.1049@0.23.2048.1049" timestamp="1594642777852" />
-    <state width="1646" height="479" key="GridCell.Tab.1.right/0.23.2560.1337@0.23.2560.1337" timestamp="1597597157061" />
-    <state width="640" height="204" key="ImportCMakeProjectWizard.bottomPanel" timestamp="1596382186623">
+    <state width="1646" height="570" key="GridCell.Tab.1.right/0.23.2560.1337@0.23.2560.1337" timestamp="1597859815584" />
+    <state width="640" height="204" key="ImportCMakeProjectWizard.bottomPanel" timestamp="1597856603969">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="512" height="160" key="ImportCMakeProjectWizard.bottomPanel/0.23.2048.1049@0.23.2048.1049" timestamp="1594315380421" />
-    <state width="640" height="204" key="ImportCMakeProjectWizard.bottomPanel/0.23.2560.1337@0.23.2560.1337" timestamp="1596382186623" />
-    <state width="640" height="476" key="ImportCMakeProjectWizard.topPanel" timestamp="1596382186623">
+    <state width="640" height="204" key="ImportCMakeProjectWizard.bottomPanel/0.23.2560.1337@0.23.2560.1337" timestamp="1597856603969" />
+    <state width="640" height="476" key="ImportCMakeProjectWizard.topPanel" timestamp="1597856603968">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="512" height="375" key="ImportCMakeProjectWizard.topPanel/0.23.2048.1049@0.23.2048.1049" timestamp="1594315380420" />
-    <state width="640" height="476" key="ImportCMakeProjectWizard.topPanel/0.23.2560.1337@0.23.2560.1337" timestamp="1596382186623" />
+    <state width="640" height="476" key="ImportCMakeProjectWizard.topPanel/0.23.2560.1337@0.23.2560.1337" timestamp="1597856603968" />
     <state x="645" y="186" key="SettingsEditor" timestamp="1594217575404">
       <screen x="0" y="23" width="2048" height="1049" />
     </state>
@@ -343,9 +416,14 @@
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/1.main.c</url>
-          <line>107</line>
-          <option name="timeStamp" value="15" />
+          <url>file://$PROJECT_DIR$/src/8.create_paths.c</url>
+          <line>82</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/8.create_paths2.c</url>
+          <line>21</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

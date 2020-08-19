@@ -17,7 +17,7 @@ t_room	*find_best_room(t_room *cur, t_hashtable *ht_rooms)
 	t_room *tmp;
 
 	if ((len_nei(cur->incomingLinks) == 1))
-		return (FindRoomInHashtable(cur->incomingLinks->node, ht_rooms));
+		return (find_room_in_hashtable(cur->incomingLinks->node, ht_rooms));
 	else
 		tmp = find_lowest_bfs(cur->incomingLinks, ht_rooms);
 	return (tmp);

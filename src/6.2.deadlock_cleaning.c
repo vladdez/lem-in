@@ -105,7 +105,7 @@ void detele_deadlock_to_fork(char  *links_name, char *deadlock_name, t_hashtable
 {
 	t_room *deadlock_neighbour;
 
-	deadlock_neighbour = FindRoomInHashtable(links_name, ht_rooms);
+	deadlock_neighbour = find_room_in_hashtable(links_name, ht_rooms);
 	delete_outgoinglink(deadlock_neighbour, deadlock_name);
 	if (deadlock_neighbour->outgoingLinks->node == NULL)
 		find_links_to_deadlock(deadlock_neighbour->room_name, ht_rooms);
@@ -116,7 +116,7 @@ void find_links_to_deadlock(char *deadlock_name, t_hashtable *ht_rooms)
 	t_room *deadlock_room;
 	t_node *incoming_links_in_deadlock_room;
 
-	deadlock_room = FindRoomInHashtable(deadlock_name, ht_rooms);
+	deadlock_room = find_room_in_hashtable(deadlock_name, ht_rooms);
 	incoming_links_in_deadlock_room = deadlock_room->incomingLinks;
 	while(incoming_links_in_deadlock_room != NULL && incoming_links_in_deadlock_room->node != NULL )
 	{
