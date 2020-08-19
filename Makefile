@@ -47,6 +47,6 @@ clean:
 
 fclean: clean	
 	make fclean -C libft/
-	rm -fv $(LEMIN_OBJ)
+	rm -fv $(LEMIN_OBJ) $(NAME)
 
 re: fclean all
