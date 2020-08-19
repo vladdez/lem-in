@@ -36,9 +36,10 @@ void	run_new_ant(t_path *pa, t_lem_in *lem_in, int i, int f)
 	print_paths_with_ants(curr, f);
 }
 
-void	count_new_ants(t_lem_in *lem_in, int f, int flows_used_this_run, int ant_index)
+void	count_new_ants(t_lem_in *lem_in, int f, int flows_used_this_run,
+int ant_index)
 {
-	t_path	*path_tmp; // конкретный выбранный поток
+	t_path	*path_tmp;
 
 	while (f <= flows_used_this_run)
 	{
@@ -86,9 +87,9 @@ int		lever(int lev, t_lem_in *lem_in)
 	}
 }
 
-void	flow(t_lem_in *lem_in, int ant_index, int flows_used_this_run) // AntIndex номер муравья, FlowsUsedThisRun количество потоков в этот толчок
+void	flow(t_lem_in *lem_in, int ant_index, int flows_used_this_run)
 {
-	int		f; // от 1 идет до FlowsUsedThisRun, чтобы начинал с короткого пути
+	int		f;
 	int		lines;
 	int		supermax;
 

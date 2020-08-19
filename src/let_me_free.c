@@ -6,7 +6,7 @@
 /*   By: kysgramo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/07 18:02:52 by kysgramo          #+#    #+#             */
-/*   Updated: 2020/07/07 18:31:30 by kysgramo         ###   ########.fr       */
+/*   Updated: 2020/08/19 19:15:55 by kysgramo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,11 +32,11 @@ void	free_queue(t_queue *q)
 
 	curr = q->room_name;
 	if (curr && *curr)
-    {
-	    while(*curr != NULL)
-            free((*(curr++)));
-    }
-    free(q);
+	{
+		while (*curr != NULL)
+			free((*(curr++)));
+	}
+	free(q);
 }
 
 void	free_input(t_line *input)

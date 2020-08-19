@@ -62,24 +62,6 @@ void	push_ants_along(t_path *pa, t_lem_in *lem_in, int i)
 		i--;
 	}
 }
-/*
-int		check_emptyness_of_path(t_path *tmp_pa)
-{
-	int		i;
-	t_path	*curr;
-
-	i = 0;
-	curr = tmp_pa;
-	while (curr && curr->ant_index == 0)
-	{
-		i++;
-		curr = curr->next;
-	}
-	if (i == tmp_pa->len)
-		return (1);
-	else
-		return (0);
-}*/
 
 int		index_manager(t_lem_in *lem_in, int maxf, int ant_index)
 {

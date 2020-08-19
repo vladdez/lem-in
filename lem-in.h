@@ -134,7 +134,7 @@ int						is_empty(t_queue *q);
 void					enqueue(t_queue *q, t_room *room, int room_num);
 t_queue					*create_queue(int room_num);
 t_room					*FindRoomInHashtable(char *room_name, t_hashtable *ht_rooms);
-void					print_ht_roomsWithDirection(t_hashtable *ht_rooms);
+void					print_ht_rooms_with_direction(t_hashtable *ht_rooms);
 int						push_old_ants(t_lem_in *lem_in, int supermax, int flows, int ant_index);
 void					print_paths_with_ants(t_path *curr, int i);
 void					push_ants_along(t_path *pa, t_lem_in *lem_in, int i);
@@ -149,8 +149,12 @@ void	                write_coor(t_coordinate *coordinate, char **words);
 void	                find_start_room(t_hashtable *ht_rooms, char *start, char *toward);
 void	                start_toward_for_dashes_imput(t_lem_in *lem_in, char *str);
 int		                count_dashes_in_imput(char *str);
+
 t_room					*find_best_room(t_room *cur, t_hashtable *ht_rooms);
 t_room					*find_lowest_bfs(t_node *n, t_hashtable *ht_rooms);
+t_lem_in				*init_lem_in(void);
+t_coordinate			*coordinate_create(void);
+t_hashtable				*ht_create(void);
 
 # define ERR_ANTS_NUM_PARSING	"ERROR: Number of ants is incorrent"
 # define ERR_ROOM_PARSING		"ERROR: Can\'t parse room"

@@ -6,7 +6,7 @@
 /*   By: kysgramo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/16 12:28:36 by kysgramo          #+#    #+#             */
-/*   Updated: 2020/08/16 12:40:46 by kysgramo         ###   ########.fr       */
+/*   Updated: 2020/08/19 19:23:51 by kysgramo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,13 +29,13 @@ t_node  *DeleteThisLink(t_room *room, char *nameOfLinkToDelete)
 	if (ft_strcmp(tmpLink->node, nameOfLinkToDelete) == 0)
 	{
 		if (tmpLink->next == NULL)
-            clean_and_free_link(room->link);
+			clean_and_free_link(room->link);
 		else
-        {
-	        room->link = tmpLink->next;
-            clean_and_free_link(tmpLink);
-            free(tmpLink);
-        }
+		{
+			room->link = tmpLink->next;
+			clean_and_free_link(tmpLink);
+			free(tmpLink);
+		}
 		return (room->link);
 	}
 	else
@@ -47,14 +47,14 @@ t_node  *DeleteThisLink(t_room *room, char *nameOfLinkToDelete)
 			if (ft_strcmp(tmpLink->node, nameOfLinkToDelete) == 0)
 			{
 				tmpLaggingLink->next = tmpLink->next;
-                clean_and_free_link(tmpLink);
+				clean_and_free_link(tmpLink);
 				return (tmpLaggingLink->next);
 			}
-            else
+			else
 			{
-                tmpLaggingLink = tmpLaggingLink->next;
-			    tmpLink = tmpLink->next;
-            }
+				tmpLaggingLink = tmpLaggingLink->next;
+				tmpLink = tmpLink->next;
+			}
 		}
 	}
 }
@@ -73,7 +73,7 @@ void    deleteOutgoingLinksforEnd(t_room *EndRoom, t_hashtable *ht_rooms)
 			tmpLinkOfEndRoom = DeleteThisLink(EndRoom,tmpLinkOfEndRoom->node);
 			DeleteThisLink(tmpRoom, EndRoom->room_name);
 			if (tmpRoom->link->node != NULL)
-                deleteOutgoingLinksforEnd(tmpRoom,ht_rooms);
+				deleteOutgoingLinksforEnd(tmpRoom,ht_rooms);
 		}
 		else
 			tmpLinkOfEndRoom = tmpLinkOfEndRoom->next;
