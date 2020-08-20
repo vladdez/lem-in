@@ -1,41 +1,52 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   0.5.hash_table.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: bhugo <marvin@42.fr>                       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/08/20 18:57:52 by bhugo             #+#    #+#             */
+/*   Updated: 2020/08/20 19:09:56 by bhugo            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "lem-in.h"
 
-int sum_ascii(char *room_name)
+int		sum_ascii(char *room_name)
 {
-    int i;
-    int sum;
+	int		i;
+	int		sum;
 
-    i = 0;
-    sum = 0;
-    while (room_name[i] != '\0')
-    {
-        sum += (int)(room_name[i]) * 49;
-        i++;
-    }
-    return (sum % TABLE_SIZE);
+	i = 0;
+	sum = 0;
+	while (room_name[i] != '\0')
+	{
+		sum += (int)(room_name[i]) * 49;
+		i++;
+	}
+	return (sum % TABLE_SIZE);
 }
 
-t_room *find_room_in_hashtable(char *room_name, t_hashtable *ht_rooms)
+t_room	*find_room_in_hashtable(char *room_name, t_hashtable *ht_rooms)
 {
-    int  i;
-    t_room *tmp;
+	int		i;
+	t_room	*tmp;
 
-    i = sum_ascii(room_name);
-    tmp = ht_rooms->room[i];
-    while (ft_strcmp(tmp->room_name, room_name) != 0)
-        tmp = tmp->next;
-    return (tmp);
+	i = sum_ascii(room_name);
+	tmp = ht_rooms->room[i];
+	while (ft_strcmp(tmp->room_name, room_name) != 0)
+		tmp = tmp->next;
+	return (tmp);
 }
 
-t_node *find_room_links(char *current_room_name, t_hashtable *ht_rooms)
+t_node	*find_room_links(char *current_room_name, t_hashtable *ht_rooms)
 {
-    int  i;
-    t_room *tmp;
-
-    i = sum_ascii(current_room_name);
-    tmp = ht_rooms->room[i];
-    while (ft_strcmp(tmp->room_name, current_room_name) != 0)
-        tmp = tmp->next;
-    return (tmp->link);
+	int		i;
+	t_room	*tmp;
+	
+	i = sum_ascii(current_room_name);
+	tmp = ht_rooms->room[i];
+	while (ft_strcmp(tmp->room_name, current_room_name) != 0)
+		tmp = tmp->next;
+	return (tmp->link);
 }

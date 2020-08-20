@@ -6,7 +6,7 @@
 /*   By: kysgramo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/29 12:59:24 by kysgramo          #+#    #+#             */
-/*   Updated: 2020/06/29 12:59:33 by kysgramo         ###   ########.fr       */
+/*   Updated: 2020/08/20 19:05:04 by bhugo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,18 +31,18 @@ int		is_room(char *str)
 	if (str)
 	{
 		if (!(s = ft_strdup(str)))
-            terminate(ERR_ROOM_PARSING);
+			terminate(ERR_ROOM_PARSING);
 		q = ft_words(s, ' ');
 		if (q == 3)
 		{
-		    if (!(words = ft_strsplit(str, ' ')))
-                terminate(ERR_ROOM_PARSING);
+			if (!(words = ft_strsplit(str, ' ')))
+				terminate(ERR_ROOM_PARSING);
 			if ((is_room_name(words[0])) && ft_isint(words[1])
-			&& ft_isint(words[2]))
-            {
-			    ft_strsplit_free(&words);
-			    return(ROOM);
-            }
+					&& ft_isint(words[2]))
+			{
+				ft_strsplit_free(&words);
+				return (ROOM);
+			}
 			ft_strsplit_free(&words);
 		}
 		free(s);
@@ -54,8 +54,9 @@ int		is_command(char *str)
 {
 	if (str)
 	{
-		if ((ft_strncmp(str, "##start", 7) == 0) || (ft_strncmp(str, "##end", 5)) == 0)
-		    return (COMMAND);
+		if ((ft_strncmp(str, "##start", 7) == 0) ||
+				(ft_strncmp(str, "##end", 5)) == 0)
+			return (COMMAND);
 	}
 	return (0);
 }
@@ -65,7 +66,7 @@ int		is_comment(char *str)
 	if (str)
 	{
 		if (ft_strlen(str) >= 1 && !is_command(str)
-		&& !ft_strncmp(str, "#", 1))
+				&& !ft_strncmp(str, "#", 1))
 			return (COMMENT);
 	}
 	return (0);
