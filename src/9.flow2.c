@@ -29,8 +29,8 @@ void	print_paths_with_ants(t_path *curr, int i)
 			ft_printf("{blue}L%d-%s{eoc} ", curr->ant_index, curr->name);
 		else if (i == 4)
 			ft_printf("{magenta}L%d-%s{eoc} ", curr->ant_index, curr->name);
-		else if (i == 4)
-			ft_printf("{cian}L%d-%s{eoc} ", curr->ant_index, curr->name);
+		else if (i > 4)
+			ft_printf("{cyan}L%d-%s{eoc} ", curr->ant_index, curr->name);
 	}
 }
 
