@@ -39,7 +39,7 @@ t_room	*find_lowest_bfs(t_node *n, t_hashtable *ht_rooms)
 	while (cur)
 	{
 		tmp_room = find_room_in_hashtable(cur->node, ht_rooms);
-		if (tmp_room->visit2 == UNVISITED)
+		if (tmp_room->visit2 != VISITED)
 		{
 			level = tmp_room->bfs_level;
 			if (level < lowest)
@@ -62,11 +62,12 @@ int		create_way_sub(t_lem_in *lem_in, t_path *tmp, t_room *cur, int j)
 	while (cur != lem_in->start)
 	{
 		tmp_room = find_best_room(cur, lem_in->ht_rooms);
-		if (tmp_room == lem_in->end || tmp_room == NULL)
+		if (tmp_room == lem_in->end || tmp_room == NULL ||
+		tmp_room->visit2 == 1)
 		{
 			delete_current_path(lem_in->paths[j]);
 			lem_in->paths[j] = NULL;
-			break ;
+			return (-1);
 		}
 		if (tmp_room != lem_in->start)
 			tmp_room->visit2 = VISITED;
@@ -87,14 +88,19 @@ void	create_way(t_lem_in *lem_in, int cut, int j)
 	int		len;
 
 	tmp = NULL;
+	len = 0;
 	while (j < cut)
 	{
 		cur = lem_in->end;
 		lem_in->paths[j] = create_one_path(lem_in->end);
 		len = create_way_sub(lem_in, tmp, cur, j);
 		if (lem_in->paths[j])
+		{
 			lem_in->paths[j]->len = len;
-		j++;
+			j++;
+		}
+		else if (len == -1)
+			cut--;
 	}
 }
 
