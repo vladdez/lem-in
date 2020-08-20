@@ -1,14 +1,20 @@
-//
-// Created by Ирина Деева on 17.08.2020.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   6.2.deadlock_cleaning.c                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: bhugo <marvin@42.fr>                       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/08/20 17:31:42 by bhugo             #+#    #+#             */
+/*   Updated: 2020/08/20 17:33:23 by bhugo            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "lem-in.h"
 
-void find_links_to_deadlock(char *deadlock_name, t_hashtable *ht_rooms);
-
-void    print_deadlock(t_node *deadlock_room)
+void	print_deadlock(t_node *deadlock_room)
 {
-	t_node *tmp;
+	t_node	*tmp;
 
 	tmp = deadlock_room;
 	ft_printf("deadlocks\n");
@@ -20,10 +26,10 @@ void    print_deadlock(t_node *deadlock_room)
 	ft_printf("\n");
 }
 
-t_node  *delete_incominglink(t_room *room, char *nameOfLinkToDelete)
+t_node	*delete_incominglink(t_room *room, char *nameOfLinkToDelete)
 {
-	t_node  *tmpLink;
-	t_node  *tmpLaggingLink;
+	t_node	*tmpLink;
+	t_node	*tmpLaggingLink;
 
 	tmpLink = room->incomingLinks;
 	if (ft_strcmp(tmpLink->node, nameOfLinkToDelete) == 0)
@@ -59,11 +65,10 @@ t_node  *delete_incominglink(t_room *room, char *nameOfLinkToDelete)
 	}
 }
 
-
-t_node  *delete_outgoinglink(t_room *room, char *nameOfLinkToDelete)
+t_node	*delete_outgoinglink(t_room *room, char *nameOfLinkToDelete)
 {
-	t_node  *tmpLink;
-	t_node  *tmpLaggingLink;
+	t_node	*tmpLink;
+	t_node	*tmpLaggingLink;
 
 	tmpLink = room->outgoingLinks;
 	if (ft_strcmp(tmpLink->node, nameOfLinkToDelete) == 0)
@@ -100,10 +105,9 @@ t_node  *delete_outgoinglink(t_room *room, char *nameOfLinkToDelete)
 	}
 }
 
-
-void detele_deadlock_to_fork(char  *links_name, char *deadlock_name, t_hashtable *ht_rooms)
+void	detele_deadlock_to_fork(char  *links_name, char *deadlock_name, t_hashtable *ht_rooms)
 {
-	t_room *deadlock_neighbour;
+	t_room	*deadlock_neighbour;
 
 	deadlock_neighbour = find_room_in_hashtable(links_name, ht_rooms);
 	delete_outgoinglink(deadlock_neighbour, deadlock_name);
@@ -111,14 +115,14 @@ void detele_deadlock_to_fork(char  *links_name, char *deadlock_name, t_hashtable
 		find_links_to_deadlock(deadlock_neighbour->room_name, ht_rooms);
 }
 
-void find_links_to_deadlock(char *deadlock_name, t_hashtable *ht_rooms)
+void	find_links_to_deadlock(char *deadlock_name, t_hashtable *ht_rooms)
 {
-	t_room *deadlock_room;
-	t_node *incoming_links_in_deadlock_room;
+	t_room	*deadlock_room;
+	t_node	*incoming_links_in_deadlock_room;
 
 	deadlock_room = find_room_in_hashtable(deadlock_name, ht_rooms);
 	incoming_links_in_deadlock_room = deadlock_room->incomingLinks;
-	while(incoming_links_in_deadlock_room != NULL && incoming_links_in_deadlock_room->node != NULL )
+	while (incoming_links_in_deadlock_room != NULL && incoming_links_in_deadlock_room->node != NULL)
 	{
 		detele_deadlock_to_fork(incoming_links_in_deadlock_room->node, deadlock_name, ht_rooms);
 		delete_incominglink(deadlock_room, incoming_links_in_deadlock_room->node);
@@ -130,13 +134,13 @@ void find_links_to_deadlock(char *deadlock_name, t_hashtable *ht_rooms)
 	//deadlock_room->incomingLinks = NULL;
 }
 
-void clean_deadlock(t_node *deadlock_room_name, t_hashtable *ht_rooms)
+void	clean_deadlock(t_node *deadlock_room_name, t_hashtable *ht_rooms)
 {
-	t_node *current_deadlock_name;
+	t_node	*current_deadlock_name;
 
 	print_deadlock(deadlock_room_name);
 	current_deadlock_name = deadlock_room_name;
-	while(current_deadlock_name && current_deadlock_name->node != NULL )
+	while (current_deadlock_name && current_deadlock_name->node != NULL)
 	{
 		find_links_to_deadlock(current_deadlock_name->node, ht_rooms);
 		current_deadlock_name = current_deadlock_name->next;

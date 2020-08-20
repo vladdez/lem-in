@@ -48,8 +48,8 @@ void		lem(int fd)
 	if (lem_in->end->visit == UNVISITED)
 		terminate(ERR_NO_PATH);
 	print_ht_rooms(lem_in->ht_rooms);
-	ImputCleaning(lem_in);
-	findLinkDirection(lem_in->ht_rooms);
+	imput_cleaning(lem_in);
+	find_link_direction(lem_in->ht_rooms);
 	print_ht_rooms_with_direction(lem_in->ht_rooms);
 	fd = create_paths(lem_in);
 	if (fd != 0)

@@ -120,8 +120,8 @@ void					ft_strsplit_free(char ***strsplit);
 void					print_input(t_line *input, int n);
 int						sum_ascii(char *room_name);
 void					print_ht_rooms(t_hashtable *ht_rooms);
-void					findLinkDirection(t_hashtable *ht_rooms);
-void                    ImputCleaning(t_lem_in *lem_in);
+void					find_link_direction(t_hashtable *ht_rooms);
+void                    imput_cleaning(t_lem_in *lem_in);
 t_node					*find_room_links(char *current_room_name, t_hashtable *ht_rooms);
 
 void					print_paths(t_path **paths, int path_num);
@@ -149,6 +149,8 @@ void	                write_coor(t_coordinate *coordinate, char **words);
 void	                find_start_room(t_hashtable *ht_rooms, char *start, char *toward);
 void	                start_toward_for_dashes_imput(t_lem_in *lem_in, char *str);
 int		                count_dashes_in_imput(char *str);
+t_queue                 *create_queue(int room_num);
+void	                find_links_to_deadlock(char *deadlock_name, t_hashtable *ht_rooms);
 
 t_room					*find_best_room(t_room *cur, t_hashtable *ht_rooms);
 t_room					*find_lowest_bfs(t_node *n, t_hashtable *ht_rooms);

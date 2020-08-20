@@ -47,3 +47,20 @@ t_node	*neighbour_init(void)
 	link->next = NULL;
 	return (link);
 }
+
+t_queue	*create_queue(int room_num)
+{
+	t_queue	*q;
+	int		i;
+
+	i = 0;
+	if (!(q = (t_queue *)ft_memalloc(sizeof(t_queue))))
+		terminate(ERR_ALLOCATION);
+	if (!(q->room_name = malloc(sizeof(t_room *) * (room_num + 1))))
+		terminate(ERR_ALLOCATION);
+	while (i < room_num)
+		q->room_name[i++] = NULL;
+	q->toward = -1;
+	q->from = -1;
+	return (q);
+}
