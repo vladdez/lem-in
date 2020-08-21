@@ -6,7 +6,7 @@
 /*   By: bhugo <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/19 17:26:02 by bhugo             #+#    #+#             */
-/*   Updated: 2020/08/19 17:26:10 by bhugo            ###   ########.fr       */
+/*   Updated: 2020/08/20 19:03:09 by bhugo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ void	start_toward_for_dashes_imput(t_lem_in *lem_in, char *str)
 	while (tmp)
 	{
 		if ((d = ft_strnstr(str,
-		                    tmp->room_name, ft_strlen(tmp->room_name))) != NULL)
+						tmp->room_name, ft_strlen(tmp->room_name))) != NULL)
 		{
 			if (!(start = ft_strsub(str, 0, ft_strlen(tmp->room_name))))
 				terminate(ERR_LINK_INIT);

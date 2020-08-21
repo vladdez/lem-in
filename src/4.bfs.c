@@ -76,7 +76,7 @@ void	handle_queue(t_lem_in *lem_in, t_queue *q, char *current_room_name)
 	}
 }
 
-void	bfs(t_lem_in *lem_in)
+t_queue	*bfs(t_lem_in *lem_in)
 {
 	t_queue	*q;
 	char	*current_room_name;
@@ -92,5 +92,5 @@ void	bfs(t_lem_in *lem_in)
 			handle_queue(lem_in, q, current_room_name);
 	}
 	lem_in->end->bfs_level = INT_MAX;
-	/*    free_queue(q); нужна какая-то очистка струкутры q*/
+	return (q);
 }

@@ -369,6 +369,9 @@
 		<Unit filename="/Users/bhugo/Downloads/lem-i_working_branch/src/0.8.dashes_in_input.c">
 			<Option target="irina5"/>
 		</Unit>
+		<Unit filename="/Users/bhugo/Downloads/lem-i_working_branch/src/0.9.delete_links.c">
+			<Option target="irina5"/>
+		</Unit>
 		<Unit filename="/Users/bhugo/Downloads/lem-i_working_branch/src/1.1.init.c">
 			<Option target="irina5"/>
 		</Unit>
@@ -394,6 +397,9 @@
 			<Option target="irina5"/>
 		</Unit>
 		<Unit filename="/Users/bhugo/Downloads/lem-i_working_branch/src/6.input_cleaning.c">
+			<Option target="irina5"/>
+		</Unit>
+		<Unit filename="/Users/bhugo/Downloads/lem-i_working_branch/src/7.2.print_hashtable.c">
 			<Option target="irina5"/>
 		</Unit>
 		<Unit filename="/Users/bhugo/Downloads/lem-i_working_branch/src/7.print.c">

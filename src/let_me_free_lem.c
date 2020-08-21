@@ -52,6 +52,21 @@ void	free_node(t_node **sentenced)
 		}
 }
 
+void	free_links(t_node *sentenced)
+{
+	t_node *kill;
+
+	if (sentenced)
+		while (sentenced)
+		{
+			kill = sentenced;
+			sentenced = sentenced->next;
+			kill->node = NULL;
+			free(kill);
+			kill = NULL;
+		}
+}
+
 void	free_ht(t_room **ht)
 {
 	int		i;
@@ -68,6 +83,8 @@ void	free_ht(t_room **ht)
 				ht[i] = ht[i]->next;
 				free(kill->room_name);
 				free_node(&kill->link);
+				free_links(kill->incoming_links);
+				free_links(kill->outgoing_links);
 				free(kill);
 			}
 		}

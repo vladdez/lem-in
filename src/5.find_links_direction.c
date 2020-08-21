@@ -6,7 +6,7 @@
 /*   By: bhugo <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/20 17:01:02 by bhugo             #+#    #+#             */
-/*   Updated: 2020/08/20 17:02:24 by bhugo            ###   ########.fr       */
+/*   Updated: 2020/08/21 11:17:10 by bhugo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,10 +50,10 @@ int		compare_bfs_level(t_room *current_room, t_hashtable *ht_rooms)
 	{
 		room_found = find_room_in_hashtable(current_room_links->node, ht_rooms);
 		if (current_room->bfs_level > room_found->bfs_level)
-			add_node(current_room->incomingLinks, room_found->room_name);
+			add_node(current_room->incoming_links, room_found->room_name);
 		else
 		{
-			add_node(current_room->outgoingLinks, room_found->room_name);
+			add_node(current_room->outgoing_links, room_found->room_name);
 			deadlock++;
 		}
 		current_room_links = current_room_links->next;
@@ -61,15 +61,27 @@ int		compare_bfs_level(t_room *current_room, t_hashtable *ht_rooms)
 	return (deadlock);
 }
 
-void	find_link_direction(t_hashtable *ht_rooms)
+void	handle_links(t_room *room, t_hashtable *ht, t_node *deadlock)
+{
+	int	i_deadlock;
+
+	i_deadlock = 0;
+	if (room->link != NULL && room->bfs_level != -1)
+	{
+		i_deadlock = compare_bfs_level(room, ht);
+		if (i_deadlock == 0 && room->bfs_level != INT_MAX)
+			add_node(deadlock, room->room_name);
+	}
+}
+
+t_node	*find_link_direction(t_hashtable *ht_rooms)
 {
 	int		i;
-	int		deadlock;
 	t_room	*current_room;
-	t_node	*deadlock_room_name;
+	t_node	*deadlock_name;
 
 	i = 0;
-	deadlock_room_name = neighbour_init();
+	deadlock_name = neighbour_init();
 	while (i < TABLE_SIZE)
 	{
 		if (ht_rooms->room[i] != NULL)
@@ -77,16 +89,12 @@ void	find_link_direction(t_hashtable *ht_rooms)
 			current_room = ht_rooms->room[i];
 			while (current_room)
 			{
-				if (current_room->link != NULL && current_room->bfs_level != -1)
-				{
-					deadlock = compare_bfs_level(current_room, ht_rooms);
-					if (deadlock == 0 && current_room->bfs_level != INT_MAX)
-						add_node(deadlock_room_name, current_room->room_name);
-				}
+				handle_links(current_room, ht_rooms, deadlock_name);
 				current_room = current_room->next;
 			}
 		}
 		i++;
 	}
-	clean_deadlock(deadlock_room_name, ht_rooms);
+	clean_deadlock(deadlock_name, ht_rooms);
+	return (deadlock_name);
 }

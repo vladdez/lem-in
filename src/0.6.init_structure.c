@@ -6,16 +6,16 @@
 /*   By: bhugo <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/19 17:19:52 by bhugo             #+#    #+#             */
-/*   Updated: 2020/08/19 17:19:55 by bhugo            ###   ########.fr       */
+/*   Updated: 2020/08/20 19:02:06 by bhugo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "lem-in.h"
 
-t_room		*create_room(t_coordinate *coordinate, char *tmp)
+t_room	*create_room(t_coordinate *coordinate, char *tmp)
 {
-	t_room		*room;
-	char		**words;
+	t_room	*room;
+	char	**words;
 
 	if (!(words = ft_strsplit(tmp, ' ')))
 		terminate(ERR_ROOM_INIT);
@@ -31,15 +31,15 @@ t_room		*create_room(t_coordinate *coordinate, char *tmp)
 	room->input_links = 0;
 	room->next = NULL;
 	room->link = neighbour_init();
-	room->outgoingLinks = neighbour_init();
-	room->incomingLinks = neighbour_init();
+	room->outgoing_links = neighbour_init();
+	room->incoming_links = neighbour_init();
 	ft_strsplit_free(&words);
 	return (room);
 }
 
 t_node	*neighbour_init(void)
 {
-	t_node *link;
+	t_node	*link;
 
 	if (!(link = malloc(sizeof(t_node) * 1)))
 		terminate(ERR_ALLOCATION);
