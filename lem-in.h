@@ -32,7 +32,6 @@ typedef struct			s_line
 typedef struct			s_node
 {
     char				*node;
-	int					type;
     struct s_node		*next;
 }						t_node;
 
@@ -121,7 +120,7 @@ void					print_input(t_line *input, int n);
 int						sum_ascii(char *room_name);
 void					print_ht_rooms(t_hashtable *ht_rooms);
 void					find_link_direction(t_hashtable *ht_rooms);
-void                    imput_cleaning(t_lem_in *lem_in);
+void                    input_cleaning(t_lem_in *lem_in);
 t_node					*find_room_links(char *current_room_name, t_hashtable *ht_rooms);
 
 void					print_paths(t_path **paths, int path_num);
@@ -157,6 +156,9 @@ t_room					*find_lowest_bfs(t_node *n, t_hashtable *ht_rooms);
 t_lem_in				*init_lem_in(void);
 t_coordinate			*coordinate_create(void);
 t_hashtable				*ht_create(void);
+t_node	                *delete_this_link(t_room *room, char *name_of_link_to_delete);
+t_node	                *delete_outgoinglink(t_room *room, char *name_of_link_to_delete);
+t_node	                *delete_incominglink(t_room *room, char *name_of_link_to_delete);
 
 # define ERR_ANTS_NUM_PARSING	"ERROR: Number of ants is incorrent"
 # define ERR_ROOM_PARSING		"ERROR: Can\'t parse room"

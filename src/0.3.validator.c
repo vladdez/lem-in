@@ -6,7 +6,7 @@
 /*   By: kysgramo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/01 20:38:11 by kysgramo          #+#    #+#             */
-/*   Updated: 2020/08/20 19:07:25 by bhugo            ###   ########.fr       */
+/*   Updated: 2020/08/21 12:15:51 by bhugo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,8 @@ void	validate_coordinate(t_coordinate *coordinate)
 		compare = compare->next;
 	while (coordinate->next)
 	{
-		if (compare != coordinate && compare->x == coordinate->x && compare->y == coordinate->y)
+		if (compare != coordinate &&
+				compare->x == coordinate->x && compare->y == coordinate->y)
 			terminate(ERR_ROOM_COORDS_DUP);
 		coordinate = coordinate->next;
 	}

@@ -6,7 +6,7 @@
 /*   By: bhugo <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/20 18:57:52 by bhugo             #+#    #+#             */
-/*   Updated: 2020/08/20 19:09:56 by bhugo            ###   ########.fr       */
+/*   Updated: 2020/08/21 12:14:52 by bhugo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ t_node	*find_room_links(char *current_room_name, t_hashtable *ht_rooms)
 {
 	int		i;
 	t_room	*tmp;
-	
+
 	i = sum_ascii(current_room_name);
 	tmp = ht_rooms->room[i];
 	while (ft_strcmp(tmp->room_name, current_room_name) != 0)

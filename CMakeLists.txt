@@ -118,4 +118,4 @@ add_executable(irina5
         src/9.flow2.c
         src/let_me_free.c
         src/let_me_free_lem.c
-        lem-in.h)
+        lem-in.h src/0.9.delete_links.c src/7.2.print_hashtable.c)
