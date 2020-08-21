@@ -50,10 +50,10 @@ int		compare_bfs_level(t_room *current_room, t_hashtable *ht_rooms)
 	{
 		room_found = find_room_in_hashtable(current_room_links->node, ht_rooms);
 		if (current_room->bfs_level > room_found->bfs_level)
-			add_node(current_room->incomingLinks, room_found->room_name);
+			add_node(current_room->incoming_links, room_found->room_name);
 		else
 		{
-			add_node(current_room->outgoingLinks, room_found->room_name);
+			add_node(current_room->outgoing_links, room_found->room_name);
 			deadlock++;
 		}
 		current_room_links = current_room_links->next;
@@ -74,7 +74,7 @@ void	handle_links(t_room *room, t_hashtable *ht, t_node *deadlock)
 	}
 }
 
-void	find_link_direction(t_hashtable *ht_rooms)
+t_node	*find_link_direction(t_hashtable *ht_rooms)
 {
 	int		i;
 	t_room	*current_room;
@@ -96,4 +96,5 @@ void	find_link_direction(t_hashtable *ht_rooms)
 		i++;
 	}
 	clean_deadlock(deadlock_name, ht_rooms);
+	return (deadlock_name);
 }

@@ -16,7 +16,7 @@ void	print_incominglinks(t_room *tmp2)
 {
 	t_node	*tmp;
 
-	tmp = tmp2->incomingLinks;
+	tmp = tmp2->incoming_links;
 	while (tmp)
 	{
 		ft_printf("%s->", tmp->node);
@@ -28,7 +28,7 @@ void	print_outgoinglinks(t_room *tmp2)
 {
 	t_node	*tmp;
 
-	tmp = tmp2->outgoingLinks;
+	tmp = tmp2->outgoing_links;
 	while (tmp)
 	{
 		ft_printf("->%s", tmp->node);
@@ -61,11 +61,11 @@ void	print_ht_rooms_with_direction(t_hashtable *ht_rooms)
 			tmp2 = ht_rooms->room[i];
 			while (tmp2)
 			{
-				if (tmp2->incomingLinks->node != NULL &&
-						tmp2->incomingLinks != NULL)
+				if (tmp2->incoming_links->node != NULL &&
+				    tmp2->incoming_links != NULL)
 					print_incominglinks(tmp2);
 				ft_printf("%s[%d]", tmp2->room_name, tmp2->bfs_level);
-				if (tmp2->outgoingLinks->node != NULL)
+				if (tmp2->outgoing_links->node != NULL)
 					print_outgoinglinks(tmp2);
 				ft_printf("    ");
 				tmp2 = tmp2->next;

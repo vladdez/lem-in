@@ -115,7 +115,7 @@ int		create_paths(t_lem_in *lem_in)
 	cut_s = is_short_circuit(lem_in);
 	if (cut_s != 0)
 	{
-		cut_e = len_nei(lem_in->end->incomingLinks);
+		cut_e = len_nei(lem_in->end->incoming_links);
 		maxpath = cut_e > cut_s ? cut_s : cut_e;
 		lem_in->paths = (t_path **)malloc(sizeof(t_path *) * (maxpath + 1));
 		while (i < maxpath + 1)

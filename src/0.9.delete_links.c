@@ -55,14 +55,14 @@ t_node	*delete_incominglink(t_room *room, char *name_of_link_to_delete)
 {
 	t_node	*tmp_link;
 
-	tmp_link = room->incomingLinks;
+	tmp_link = room->incoming_links;
 	if (ft_strcmp(tmp_link->node, name_of_link_to_delete) == 0)
 	{
 		if (tmp_link->next == NULL)
-			room->incomingLinks->node = NULL;
+			room->incoming_links->node = NULL;
 		else
-			room->incomingLinks = tmp_link->next;
-		return (room->incomingLinks);
+			room->incoming_links = tmp_link->next;
+		return (room->incoming_links);
 	}
 	else
 		return (detele_link(tmp_link, name_of_link_to_delete));
@@ -72,14 +72,14 @@ t_node	*delete_outgoinglink(t_room *room, char *name_of_link_to_delete)
 {
 	t_node	*tmp_link;
 
-	tmp_link = room->outgoingLinks;
+	tmp_link = room->outgoing_links;
 	if (ft_strcmp(tmp_link->node, name_of_link_to_delete) == 0)
 	{
 		if (tmp_link->next == NULL)
-			room->outgoingLinks->node = NULL;
+			room->outgoing_links->node = NULL;
 		else
-			room->outgoingLinks = tmp_link->next;
-		return (room->outgoingLinks);
+			room->outgoing_links = tmp_link->next;
+		return (room->outgoing_links);
 	}
 	else
 		return (detele_link(tmp_link, name_of_link_to_delete));

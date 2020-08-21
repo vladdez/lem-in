@@ -42,8 +42,8 @@ typedef struct			s_room
 	int					visit2;
 	int					bfs_level;
 	t_node              *link;
-	t_node              *outgoingLinks;
-    t_node              *incomingLinks;
+	t_node              *outgoing_links;
+    t_node              *incoming_links;
 	int					input_links;
 	int					output_links;
 	struct s_room		*next;
@@ -111,7 +111,7 @@ int						iswhat(char *str);
 
 t_line					*read_line(t_line **input, int fd);
 void					validate_room(t_lem_in *lem_in, t_room *room);
-void					bfs(t_lem_in *lem_in);
+t_queue 				*bfs(t_lem_in *lem_in);
 void					free_lem_in(t_lem_in *lem_in, int fd);
 void					check_links(t_lem_in *lem_in);
 void					free_input(t_line *input);
@@ -119,7 +119,7 @@ void					ft_strsplit_free(char ***strsplit);
 void					print_input(t_line *input, int n);
 int						sum_ascii(char *room_name);
 void					print_ht_rooms(t_hashtable *ht_rooms);
-void					find_link_direction(t_hashtable *ht_rooms);
+t_node					*find_link_direction(t_hashtable *ht_rooms);
 void                    input_cleaning(t_lem_in *lem_in);
 t_node					*find_room_links(char *current_room_name, t_hashtable *ht_rooms);
 
@@ -159,6 +159,9 @@ t_hashtable				*ht_create(void);
 t_node	                *delete_this_link(t_room *room, char *name_of_link_to_delete);
 t_node	                *delete_outgoinglink(t_room *room, char *name_of_link_to_delete);
 t_node	                *delete_incominglink(t_room *room, char *name_of_link_to_delete);
+void                    free_deadlocks(t_node *deadlock_name);
+void	                free_node(t_node **sentenced);
+void	                free_links(t_node *sentenced);
 
 # define ERR_ANTS_NUM_PARSING	"ERROR: Number of ants is incorrent"
 # define ERR_ROOM_PARSING		"ERROR: Can\'t parse room"

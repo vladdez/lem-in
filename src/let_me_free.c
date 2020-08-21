@@ -28,14 +28,7 @@ void	ft_strsplit_free(char ***strsplit)
 
 void	free_queue(t_queue *q)
 {
-	char	**curr;
-
-	curr = q->room_name;
-	if (curr && *curr)
-	{
-		while (*curr != NULL)
-			free((*(curr++)));
-	}
+	free(q->room_name);
 	free(q);
 }
 
@@ -53,4 +46,9 @@ void	free_input(t_line *input)
 		free(kill);
 	}
 	input = NULL;
+}
+
+void free_deadlocks(t_node *deadlock_name)
+{
+	free_links(deadlock_name);
 }

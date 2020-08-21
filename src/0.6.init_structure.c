@@ -31,8 +31,8 @@ t_room	*create_room(t_coordinate *coordinate, char *tmp)
 	room->input_links = 0;
 	room->next = NULL;
 	room->link = neighbour_init();
-	room->outgoingLinks = neighbour_init();
-	room->incomingLinks = neighbour_init();
+	room->outgoing_links = neighbour_init();
+	room->incoming_links = neighbour_init();
 	ft_strsplit_free(&words);
 	return (room);
 }
