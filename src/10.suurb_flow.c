@@ -79,10 +79,10 @@ t_room	*find_best_room2(t_room *cur, t_hashtable *ht_rooms, t_lem_in *lem_in)
 {
 	t_room *tmp;
 
-	if ((len_nei(cur->incomingLinks) == 1))
+	if ((len_nei(cur->link) == 1))
 		return (find_room_in_hashtable(cur->link->node, ht_rooms));
 	else
-		tmp = find_lowest_bfs2(cur->incomingLinks, ht_rooms, lem_in);
+		tmp = find_lowest_bfs2(cur->incoming_links, ht_rooms, lem_in);
 	return (tmp);
 }
 
@@ -147,6 +147,9 @@ void	second_plan(t_lem_in *lem_in)
 		get_mem(lem_in);
 		ft_printf("NOT ENOUGH - %s\n", lem_in->mem->room_name);
 		free_paths(lem_in->paths, lem_in->path_num);
+		lem_in->paths = (t_path **)malloc(sizeof(t_path *) * (lem_in->path_num + 1));
+		while (i < lem_in->path_num + 1)
+			lem_in->paths[i++] = NULL;
 		create_way2(lem_in, lem_in->path_num, 0);
 		
 	}

@@ -102,8 +102,10 @@ add_executable(irina5
         src/0.6.init_structure.c
         src/0.7.write_coordinate.c
         src/0.8.dashes_in_input.c
+        src/0.9.delete_links.c
         src/1.1.init.c
         src/1.main.c
+        src/10.suurb_flow.c
         src/2.1_parse_ants.c
         src/2.parse_rooms.c
         src/3.parse_link.c
@@ -111,6 +113,7 @@ add_executable(irina5
         src/5.find_links_direction.c
         src/6.2.deadlock_cleaning.c
         src/6.input_cleaning.c
+        src/7.2.print_hashtable.c
         src/7.print.c
         src/8.create_paths.c
         src/8.create_paths2.c
@@ -118,4 +121,4 @@ add_executable(irina5
         src/9.flow2.c
         src/let_me_free.c
         src/let_me_free_lem.c
-        lem-in.h src/0.9.delete_links.c src/7.2.print_hashtable.c)
+        lem-in.h)

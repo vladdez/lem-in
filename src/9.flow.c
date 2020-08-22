@@ -27,11 +27,11 @@ void	point_heads(t_lem_in *lem_in)
 	}
 }
 
-void	run_new_ant(t_path *pa, t_lem_in *lem_in, int i, int f)
+void	run_new_ant(t_path *pa, t_lem_in *lem_in, int ant_index, int f)
 {
 	t_path	*curr;
 
-	push_ants_along(pa, lem_in, i);
+	push_ants_along(pa, lem_in, ant_index);
 	curr = pa;
 	print_paths_with_ants(curr, f);
 }
@@ -61,48 +61,56 @@ int ant_index)
 	}
 }
 
-int		lever(int lev, t_lem_in *lem_in)
+int		lever(int ant_unused, t_lem_in *lem_in, int i)
 {
 	int		cut;
-	int		i;
-	int		empty;
+	int		res;
+	int		dif;
 
-	empty = 0;
-	i = 0;
 	cut = 0;
-	if (lem_in->path_num == 1)
+	res = -1;
+	if (lem_in->path_num == 0)
 		return (0);
+	else if (ant_unused < 0)
+		return (-1);
 	else
 	{
-		while (cut < lev && i <= lem_in->path_num)
+		while (lem_in->paths[i])
 		{
-			if (lem_in->paths[i])
-				cut += lem_in->paths[i]->len;
-			else
-				empty++;
+			dif = (lem_in->paths[i]->len * i) - cut;
+			cut += lem_in->paths[i]->len;
 			i++;
+			ant_unused--;
+			if (ant_unused > dif)
+				res++;
 		}
-		i -= empty;
-		return (i);
+		if (res == -1)
+			res++;
+		return (res);
 	}
 }
 
 void	flow(t_lem_in *lem_in, int ant_index, int flows_used_this_run)
 {
-	int		f;
 	int		lines;
 	int		supermax;
+	int		ant_unused;
 
 	lines = 0;
+	ant_unused = lem_in->ant_num;
 	point_heads(lem_in);
-	flows_used_this_run = lever(lem_in->ant_num, lem_in);
-	supermax = flows_used_this_run;
+	supermax = lever(ant_unused, lem_in, 0);
 	while (lem_in->ants_start <= lem_in->ant_num &&
 			lem_in->ant_num != lem_in->ants_end)
 	{
-		f = 0;
+		flows_used_this_run = lever(ant_unused, lem_in, 0);
 		ant_index = index_manager(lem_in, supermax, ant_index);
-		count_new_ants(lem_in, f, flows_used_this_run, ant_index);
+		ant_unused = ant_unused - 1 - flows_used_this_run;
+		if (flows_used_this_run >= 0)
+			count_new_ants(lem_in, 0, flows_used_this_run, ant_index);
+		if (flows_used_this_run != supermax)
+			supermax = push_old_ants(lem_in, supermax,
+			flows_used_this_run, ant_index);
 		ft_printf("\n");
 		lines++;
 	}

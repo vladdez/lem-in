@@ -104,6 +104,24 @@ void	create_way(t_lem_in *lem_in, int cut, int j)
 	}
 }
 
+int     len_of_actual_paths(t_lem_in *lem_in, int maxpath)
+{
+    int     i;
+    int     j;
+    t_path  **p;
+
+    i = 0;
+    j = 0;
+    p = lem_in->paths;
+    while (i < maxpath)
+    {
+        if (p[i] && p[i]->next)
+            j++;
+        i++;
+    }
+    return (j);
+}
+
 int		create_paths(t_lem_in *lem_in)
 {
 	int		cut_s;
@@ -120,8 +138,11 @@ int		create_paths(t_lem_in *lem_in)
 		lem_in->paths = (t_path **)malloc(sizeof(t_path *) * (maxpath + 1));
 		while (i < maxpath + 1)
 			lem_in->paths[i++] = NULL;
-		lem_in->path_num = maxpath;
 		create_way(lem_in, maxpath, 0);
+		i = len_of_actual_paths(lem_in, maxpath);
+		lem_in->path_num = i;
+		if (maxpath > i && i < 2)
+			second_plan(lem_in);
 	}
 	return (cut_s);
 }

@@ -26,6 +26,7 @@ t_room	*create_room(t_coordinate *coordinate, char *tmp)
 	write_coor(coordinate, words);
 	room->visit = UNVISITED;
 	room->visit2 = UNVISITED;
+	room->visit3 = UNVISITED;
 	room->bfs_level = -1;
 	room->output_links = 0;
 	room->input_links = 0;

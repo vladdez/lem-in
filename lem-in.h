@@ -40,6 +40,7 @@ typedef struct			s_room
 	char				*room_name;
 	int					visit;
 	int					visit2;
+	int					visit3;
 	int					bfs_level;
 	t_node              *link;
 	t_node              *outgoing_links;
@@ -83,6 +84,7 @@ typedef struct			s_lem_in
 	t_coordinate        *coordinate;
 	t_hashtable         *ht_rooms;
 	t_path				**paths;
+	t_room				*mem;
 }						t_lem_in;
 
 typedef struct			s_queue
@@ -134,7 +136,6 @@ void					enqueue(t_queue *q, t_room *room, int room_num);
 t_queue					*create_queue(int room_num);
 t_room					*find_room_in_hashtable(char *room_name, t_hashtable *ht_rooms);
 void					print_ht_rooms_with_direction(t_hashtable *ht_rooms);
-int						push_old_ants(t_lem_in *lem_in, int supermax, int flows, int ant_index);
 void					print_paths_with_ants(t_path *curr, int i);
 void					push_ants_along(t_path *pa, t_lem_in *lem_in, int i);
 int						index_manager(t_lem_in *lem_in, int maxf, int ant_index);
@@ -162,6 +163,17 @@ t_node	                *delete_incominglink(t_room *room, char *name_of_link_to_
 void                    free_deadlocks(t_node *deadlock_name);
 void	                free_node(t_node **sentenced);
 void	                free_links(t_node *sentenced);
+
+t_room					*find_best_room(t_room *cur, t_hashtable *ht_rooms);
+t_room					*find_lowest_bfs(t_node *n, t_hashtable *ht_rooms);
+t_lem_in				*init_lem_in(void);
+t_coordinate			*coordinate_create(void);
+t_hashtable				*ht_create(void);
+void					second_plan(t_lem_in *lem_in);
+void					create_way(t_lem_in *lem_in, int cut, int j);
+t_path					*create_one_path(t_room *cur);
+int						push_old_ants(t_lem_in *lem_in, int supermax,
+int flows_used_this_run, int ant_index);
 
 # define ERR_ANTS_NUM_PARSING	"ERROR: Number of ants is incorrent"
 # define ERR_ROOM_PARSING		"ERROR: Can\'t parse room"

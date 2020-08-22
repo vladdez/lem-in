@@ -53,12 +53,12 @@ void		lem(int fd)
 	//print_ht_rooms(lem_in->ht_rooms);
 	input_cleaning(lem_in);
 	deadlock_name = find_link_direction(lem_in->ht_rooms);
-	print_ht_rooms_with_direction(lem_in->ht_rooms);
+	//print_ht_rooms_with_direction(lem_in->ht_rooms);
 	fd = create_paths(lem_in);
 	if (fd != 0)
 	{
 		print_paths(lem_in->paths, lem_in->path_num);
-		flow(lem_in, 1, 2);
+		flow(lem_in, 1, -1);
 	}
 	free_input(input);
 	free_lem_in(lem_in, fd);

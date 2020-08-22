@@ -6,5 +6,5 @@ C_FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacO
 
 C_DEFINES = 
 
-C_INCLUDES = -I/Users/bhugo/Downloads/lem-i_working_branch/. -I/Users/bhugo/Downloads/lem-i_working_branch/libft/libft -I/Users/bhugo/Downloads/lem-i_working_branch/libft/printf 
+C_INCLUDES = -I/Users/kysgramo/irina5/. -I/Users/kysgramo/irina5/libft/libft -I/Users/kysgramo/irina5/libft/printf 
 

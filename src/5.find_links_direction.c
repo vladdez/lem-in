@@ -49,7 +49,7 @@ int		compare_bfs_level(t_room *current_room, t_hashtable *ht_rooms)
 	while (current_room_links)
 	{
 		room_found = find_room_in_hashtable(current_room_links->node, ht_rooms);
-		if (current_room->bfs_level > room_found->bfs_level)
+		if (current_room->bfs_level >= room_found->bfs_level)
 			add_node(current_room->incoming_links, room_found->room_name);
 		else
 		{
@@ -95,6 +95,6 @@ t_node	*find_link_direction(t_hashtable *ht_rooms)
 		}
 		i++;
 	}
-	clean_deadlock(deadlock_name, ht_rooms);
+	//clean_deadlock(deadlock_name, ht_rooms);
 	return (deadlock_name);
 }

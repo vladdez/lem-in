@@ -1,0 +1,1054 @@
+Index: cmake-build-debug/CMakeFiles/irina5.dir/C.includecache
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>#IncludeRegexLine: ^[ \t]*[#%][ \t]*(include|import)[ \t]*[<\"]([^\">]+)([\">])\n\n#IncludeRegexScan: ^.*$\n\n#IncludeRegexComplain: ^$\n\n#IncludeRegexTransform: \n\n../lem-in.h\nft_printf.h\n../ft_printf.h\nlibft.h\n../libft.h\nstdlib.h\n-\nstdio.h\n-\nsys/types.h\n-\nsys/stat.h\n-\nfcntl.h\n-\nunistd.h\n-\nlimits.h\n-\n\n../libft/libft/libft.h\nstring.h\n-\nstdlib.h\n-\nunistd.h\n-\nlimits.h\n-\n\n../libft/printf/ft_printf.h\nstdarg.h\n-\n../libft/libft.h\n../libft/libft/libft.h\nstdio.h\n../libft/printf/stdio.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_atoi.c\nlibft.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_bzero.c\nlibft.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_isalnum.c\nlibft.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_isalpha.c\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_isascii.c\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_isdigit.c\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_isprint.c\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_itoa.c\nlibft.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_lstadd.c\nlibft.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_lstdel.c\nlibft.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_lstdelone.c\nlibft.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_lstiter.c\nlibft.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_lstmap.c\nlibft.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_lstnew.c\nlibft.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_memalloc.c\nlibft.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_memccpy.c\nlibft.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_memchr.c\nlibft.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_memcmp.c\nlibft.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_memcpy.c\nlibft.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_memdel.c\nlibft.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_memmove.c\nlibft.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_memset.c\nlibft.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_print_bits.c\nlibft.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_putchar.c\nlibft.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_putchar_fd.c\nlibft.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_putendl.c\nlibft.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_putendl_fd.c\nlibft.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_putnbr.c\nlibft.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_putnbr_fd.c\nlibft.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_putstr.c\nlibft.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_putstr_fd.c\nlibft.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_reverse_bits.c\nlibft.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_sort_array.c\nlibft.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strcat.c\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strchr.c\nlibft.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strclr.c\nlibft.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strcmp.c\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strcpy.c\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strdel.c\nlibft.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strdup.c\nlibft.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strequ.c\nlibft.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_striter.c\nlibft.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_striteri.c\nlibft.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strjoin.c\nlibft.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strlcat.c\nlibft.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strlen.c\nlibft.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strmap.c\nlibft.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strmapi.c\nlibft.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strncat.c\nlibft.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strncmp.c\nlibft.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strncpy.c\nlibft.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strndup.c\nlibft.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strnequ.c\nlibft.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strnew.c\nlibft.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strnstr.c\nlibft.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strrchr.c\nlibft.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strrev.c\nlibft.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strsplit.c\nlibft.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\nstdio.h\n-\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strstr.c\nlibft.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strsub.c\nlibft.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strtrim.c\nlibft.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_swap_bits.c\nlibft.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_tolower.c\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_toupper.c\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_words.c\nlibft.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/get_next_line.c\nlibft.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\nstring.h\n-\nstdlib.h\n-\nunistd.h\n-\nlimits.h\n-\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/color.c\nft_printf.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/conversion.c\nft_printf.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/free.c\nft_printf.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.c\nft_printf.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h\nstdio.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/stdio.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h\nstdarg.h\n-\n../libft/libft.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\nstdio.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/stdio.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/multiplier.c\nft_printf.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/neg_exp.c\nft_printf.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/prec.c\nft_printf.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/prec2.c\nft_printf.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/print_float.c\nft_printf.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/print_integer.c\nft_printf.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/print_octal_x.c\nft_printf.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/print_pointer_char.c\nft_printf.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/print_string.c\nft_printf.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/print_unsigned.c\nft_printf.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/read_format.c\nft_printf.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/substr.c\nft_printf.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/sum_char.c\nft_printf.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/tools.c\nft_printf.h\n/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/src/0.1.errors.c\nlem-in.h\n/Users/bhugo/Downloads/lem-i_working_branch/src/lem-in.h\nerrno.h\n-\n\n/Users/bhugo/Downloads/lem-i_working_branch/src/0.2.read_line.c\nlem-in.h\n/Users/bhugo/Downloads/lem-i_working_branch/src/lem-in.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/src/0.3.validator.c\nlem-in.h\n/Users/bhugo/Downloads/lem-i_working_branch/src/lem-in.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/src/0.4.is.c\nlem-in.h\n/Users/bhugo/Downloads/lem-i_working_branch/src/lem-in.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/src/0.5.hash_table.c\nlem-in.h\n/Users/bhugo/Downloads/lem-i_working_branch/src/lem-in.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/src/0.6.init_structure.c\nlem-in.h\n/Users/bhugo/Downloads/lem-i_working_branch/src/lem-in.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/src/0.7.write_coordinate.c\nlem-in.h\n/Users/bhugo/Downloads/lem-i_working_branch/src/lem-in.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/src/0.8.dashes_in_input.c\nlem-in.h\n/Users/bhugo/Downloads/lem-i_working_branch/src/lem-in.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/src/1.1.init.c\nlem-in.h\n/Users/bhugo/Downloads/lem-i_working_branch/src/lem-in.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/src/1.main.c\nlem-in.h\n/Users/bhugo/Downloads/lem-i_working_branch/src/lem-in.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/src/2.1_parse_ants.c\nlem-in.h\n/Users/bhugo/Downloads/lem-i_working_branch/src/lem-in.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/src/2.parse_rooms.c\nlem-in.h\n/Users/bhugo/Downloads/lem-i_working_branch/src/lem-in.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/src/3.parse_link.c\nlem-in.h\n/Users/bhugo/Downloads/lem-i_working_branch/src/lem-in.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/src/4.bfs.c\nlem-in.h\n/Users/bhugo/Downloads/lem-i_working_branch/src/lem-in.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/src/5.find_links_direction.c\nlem-in.h\n/Users/bhugo/Downloads/lem-i_working_branch/src/lem-in.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/src/6.2.deadlock_cleaning.c\nlem-in.h\n/Users/bhugo/Downloads/lem-i_working_branch/src/lem-in.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/src/6.input_cleaning.c\nlem-in.h\n/Users/bhugo/Downloads/lem-i_working_branch/src/lem-in.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/src/7.print.c\nlem-in.h\n/Users/bhugo/Downloads/lem-i_working_branch/src/lem-in.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/src/8.create_paths.c\nlem-in.h\n/Users/bhugo/Downloads/lem-i_working_branch/src/lem-in.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/src/8.create_paths2.c\nlem-in.h\n/Users/bhugo/Downloads/lem-i_working_branch/src/lem-in.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/src/9.flow.c\nlem-in.h\n/Users/bhugo/Downloads/lem-i_working_branch/src/lem-in.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/src/9.flow2.c\nlem-in.h\n/Users/bhugo/Downloads/lem-i_working_branch/src/lem-in.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/src/let_me_free.c\nlem-in.h\n/Users/bhugo/Downloads/lem-i_working_branch/src/lem-in.h\n\n/Users/bhugo/Downloads/lem-i_working_branch/src/let_me_free_lem.c\nlem-in.h\n/Users/bhugo/Downloads/lem-i_working_branch/src/lem-in.h\n\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- cmake-build-debug/CMakeFiles/irina5.dir/C.includecache	(revision b88017468fb616a9b402b4dca79de1e8a8d750e0)
++++ cmake-build-debug/CMakeFiles/irina5.dir/C.includecache	(date 1598030522000)
+@@ -44,441 +44,11 @@
+ stdio.h
+ ../libft/printf/stdio.h
+ 
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_atoi.c
+-libft.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_bzero.c
+-libft.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_isalnum.c
+-libft.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_isalpha.c
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_isascii.c
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_isdigit.c
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_isprint.c
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_itoa.c
+-libft.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_lstadd.c
+-libft.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_lstdel.c
+-libft.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_lstdelone.c
+-libft.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_lstiter.c
+-libft.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_lstmap.c
+-libft.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_lstnew.c
+-libft.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_memalloc.c
+-libft.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_memccpy.c
+-libft.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_memchr.c
+-libft.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_memcmp.c
+-libft.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_memcpy.c
+-libft.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_memdel.c
+-libft.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_memmove.c
+-libft.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_memset.c
+-libft.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_print_bits.c
+-libft.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_putchar.c
+-libft.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_putchar_fd.c
+-libft.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_putendl.c
+-libft.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_putendl_fd.c
+-libft.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_putnbr.c
+-libft.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_putnbr_fd.c
+-libft.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_putstr.c
+-libft.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_putstr_fd.c
+-libft.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_reverse_bits.c
+-libft.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_sort_array.c
+-libft.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strcat.c
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strchr.c
+-libft.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strclr.c
+-libft.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strcmp.c
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strcpy.c
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strdel.c
+-libft.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strdup.c
+-libft.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strequ.c
+-libft.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_striter.c
+-libft.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_striteri.c
+-libft.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strjoin.c
+-libft.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strlcat.c
+-libft.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strlen.c
+-libft.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strmap.c
+-libft.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strmapi.c
+-libft.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strncat.c
+-libft.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strncmp.c
+-libft.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strncpy.c
+-libft.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strndup.c
+-libft.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strnequ.c
+-libft.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strnew.c
+-libft.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strnstr.c
+-libft.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strrchr.c
+-libft.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strrev.c
+-libft.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strsplit.c
+-libft.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+-stdio.h
+--
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strstr.c
+-libft.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strsub.c
+-libft.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strtrim.c
+-libft.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_swap_bits.c
+-libft.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_tolower.c
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_toupper.c
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_words.c
+-libft.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/get_next_line.c
+-libft.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+-string.h
+--
+-stdlib.h
+--
+-unistd.h
+--
+-limits.h
+--
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/color.c
+-ft_printf.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/conversion.c
+-ft_printf.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/free.c
+-ft_printf.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.c
+-ft_printf.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h
+-stdio.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/stdio.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h
+-stdarg.h
+--
+-../libft/libft.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+-stdio.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/stdio.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/multiplier.c
+-ft_printf.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/neg_exp.c
+-ft_printf.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/prec.c
+-ft_printf.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/prec2.c
+-ft_printf.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/print_float.c
+-ft_printf.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/print_integer.c
+-ft_printf.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/print_octal_x.c
+-ft_printf.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/print_pointer_char.c
+-ft_printf.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/print_string.c
+-ft_printf.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/print_unsigned.c
+-ft_printf.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/read_format.c
+-ft_printf.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/substr.c
+-ft_printf.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/sum_char.c
+-ft_printf.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/tools.c
+-ft_printf.h
+-/Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/src/0.1.errors.c
+-lem-in.h
+-/Users/bhugo/Downloads/lem-i_working_branch/src/lem-in.h
+-errno.h
+--
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/src/0.2.read_line.c
+-lem-in.h
+-/Users/bhugo/Downloads/lem-i_working_branch/src/lem-in.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/src/0.3.validator.c
+-lem-in.h
+-/Users/bhugo/Downloads/lem-i_working_branch/src/lem-in.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/src/0.4.is.c
+-lem-in.h
+-/Users/bhugo/Downloads/lem-i_working_branch/src/lem-in.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/src/0.5.hash_table.c
+-lem-in.h
+-/Users/bhugo/Downloads/lem-i_working_branch/src/lem-in.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/src/0.6.init_structure.c
+-lem-in.h
+-/Users/bhugo/Downloads/lem-i_working_branch/src/lem-in.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/src/0.7.write_coordinate.c
+-lem-in.h
+-/Users/bhugo/Downloads/lem-i_working_branch/src/lem-in.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/src/0.8.dashes_in_input.c
+-lem-in.h
+-/Users/bhugo/Downloads/lem-i_working_branch/src/lem-in.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/src/1.1.init.c
+-lem-in.h
+-/Users/bhugo/Downloads/lem-i_working_branch/src/lem-in.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/src/1.main.c
+-lem-in.h
+-/Users/bhugo/Downloads/lem-i_working_branch/src/lem-in.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/src/2.1_parse_ants.c
+-lem-in.h
+-/Users/bhugo/Downloads/lem-i_working_branch/src/lem-in.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/src/2.parse_rooms.c
+-lem-in.h
+-/Users/bhugo/Downloads/lem-i_working_branch/src/lem-in.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/src/3.parse_link.c
+-lem-in.h
+-/Users/bhugo/Downloads/lem-i_working_branch/src/lem-in.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/src/4.bfs.c
+-lem-in.h
+-/Users/bhugo/Downloads/lem-i_working_branch/src/lem-in.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/src/5.find_links_direction.c
+-lem-in.h
+-/Users/bhugo/Downloads/lem-i_working_branch/src/lem-in.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/src/6.2.deadlock_cleaning.c
++/Users/kysgramo/irina5/src/1.main.c
+ lem-in.h
+-/Users/bhugo/Downloads/lem-i_working_branch/src/lem-in.h
++/Users/kysgramo/irina5/src/lem-in.h
+ 
+-/Users/bhugo/Downloads/lem-i_working_branch/src/6.input_cleaning.c
++/Users/kysgramo/irina5/src/10.suurb_flow.c
+ lem-in.h
+-/Users/bhugo/Downloads/lem-i_working_branch/src/lem-in.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/src/7.print.c
+-lem-in.h
+-/Users/bhugo/Downloads/lem-i_working_branch/src/lem-in.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/src/8.create_paths.c
+-lem-in.h
+-/Users/bhugo/Downloads/lem-i_working_branch/src/lem-in.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/src/8.create_paths2.c
+-lem-in.h
+-/Users/bhugo/Downloads/lem-i_working_branch/src/lem-in.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/src/9.flow.c
+-lem-in.h
+-/Users/bhugo/Downloads/lem-i_working_branch/src/lem-in.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/src/9.flow2.c
+-lem-in.h
+-/Users/bhugo/Downloads/lem-i_working_branch/src/lem-in.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/src/let_me_free.c
+-lem-in.h
+-/Users/bhugo/Downloads/lem-i_working_branch/src/lem-in.h
+-
+-/Users/bhugo/Downloads/lem-i_working_branch/src/let_me_free_lem.c
+-lem-in.h
+-/Users/bhugo/Downloads/lem-i_working_branch/src/lem-in.h
++/Users/kysgramo/irina5/src/lem-in.h
+ 
+Index: cmake-build-debug/CMakeFiles/irina5.dir/depend.internal
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># CMAKE generated file: DO NOT EDIT!\n# Generated by \"Unix Makefiles\" Generator, CMake Version 3.17\n\nCMakeFiles/irina5.dir/libft/libft/ft_atoi.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_atoi.c\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\nCMakeFiles/irina5.dir/libft/libft/ft_bzero.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_bzero.c\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\nCMakeFiles/irina5.dir/libft/libft/ft_isalnum.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_isalnum.c\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\nCMakeFiles/irina5.dir/libft/libft/ft_isalpha.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_isalpha.c\nCMakeFiles/irina5.dir/libft/libft/ft_isascii.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_isascii.c\nCMakeFiles/irina5.dir/libft/libft/ft_isdigit.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_isdigit.c\nCMakeFiles/irina5.dir/libft/libft/ft_isprint.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_isprint.c\nCMakeFiles/irina5.dir/libft/libft/ft_itoa.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_itoa.c\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\nCMakeFiles/irina5.dir/libft/libft/ft_lstadd.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_lstadd.c\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\nCMakeFiles/irina5.dir/libft/libft/ft_lstdel.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_lstdel.c\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\nCMakeFiles/irina5.dir/libft/libft/ft_lstdelone.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_lstdelone.c\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\nCMakeFiles/irina5.dir/libft/libft/ft_lstiter.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_lstiter.c\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\nCMakeFiles/irina5.dir/libft/libft/ft_lstmap.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_lstmap.c\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\nCMakeFiles/irina5.dir/libft/libft/ft_lstnew.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_lstnew.c\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\nCMakeFiles/irina5.dir/libft/libft/ft_memalloc.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_memalloc.c\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\nCMakeFiles/irina5.dir/libft/libft/ft_memccpy.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_memccpy.c\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\nCMakeFiles/irina5.dir/libft/libft/ft_memchr.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_memchr.c\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\nCMakeFiles/irina5.dir/libft/libft/ft_memcmp.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_memcmp.c\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\nCMakeFiles/irina5.dir/libft/libft/ft_memcpy.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_memcpy.c\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\nCMakeFiles/irina5.dir/libft/libft/ft_memdel.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_memdel.c\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\nCMakeFiles/irina5.dir/libft/libft/ft_memmove.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_memmove.c\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\nCMakeFiles/irina5.dir/libft/libft/ft_memset.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_memset.c\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\nCMakeFiles/irina5.dir/libft/libft/ft_print_bits.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_print_bits.c\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\nCMakeFiles/irina5.dir/libft/libft/ft_putchar.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_putchar.c\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\nCMakeFiles/irina5.dir/libft/libft/ft_putchar_fd.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_putchar_fd.c\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\nCMakeFiles/irina5.dir/libft/libft/ft_putendl.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_putendl.c\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\nCMakeFiles/irina5.dir/libft/libft/ft_putendl_fd.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_putendl_fd.c\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\nCMakeFiles/irina5.dir/libft/libft/ft_putnbr.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_putnbr.c\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\nCMakeFiles/irina5.dir/libft/libft/ft_putnbr_fd.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_putnbr_fd.c\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\nCMakeFiles/irina5.dir/libft/libft/ft_putstr.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_putstr.c\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\nCMakeFiles/irina5.dir/libft/libft/ft_putstr_fd.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_putstr_fd.c\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\nCMakeFiles/irina5.dir/libft/libft/ft_reverse_bits.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_reverse_bits.c\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\nCMakeFiles/irina5.dir/libft/libft/ft_sort_array.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_sort_array.c\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\nCMakeFiles/irina5.dir/libft/libft/ft_strcat.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strcat.c\nCMakeFiles/irina5.dir/libft/libft/ft_strchr.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strchr.c\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\nCMakeFiles/irina5.dir/libft/libft/ft_strclr.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strclr.c\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\nCMakeFiles/irina5.dir/libft/libft/ft_strcmp.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strcmp.c\nCMakeFiles/irina5.dir/libft/libft/ft_strcpy.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strcpy.c\nCMakeFiles/irina5.dir/libft/libft/ft_strdel.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strdel.c\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\nCMakeFiles/irina5.dir/libft/libft/ft_strdup.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strdup.c\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\nCMakeFiles/irina5.dir/libft/libft/ft_strequ.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strequ.c\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\nCMakeFiles/irina5.dir/libft/libft/ft_striter.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_striter.c\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\nCMakeFiles/irina5.dir/libft/libft/ft_striteri.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_striteri.c\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\nCMakeFiles/irina5.dir/libft/libft/ft_strjoin.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strjoin.c\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\nCMakeFiles/irina5.dir/libft/libft/ft_strlcat.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strlcat.c\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\nCMakeFiles/irina5.dir/libft/libft/ft_strlen.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strlen.c\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\nCMakeFiles/irina5.dir/libft/libft/ft_strmap.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strmap.c\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\nCMakeFiles/irina5.dir/libft/libft/ft_strmapi.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strmapi.c\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\nCMakeFiles/irina5.dir/libft/libft/ft_strncat.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strncat.c\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\nCMakeFiles/irina5.dir/libft/libft/ft_strncmp.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strncmp.c\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\nCMakeFiles/irina5.dir/libft/libft/ft_strncpy.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strncpy.c\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\nCMakeFiles/irina5.dir/libft/libft/ft_strndup.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strndup.c\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\nCMakeFiles/irina5.dir/libft/libft/ft_strnequ.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strnequ.c\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\nCMakeFiles/irina5.dir/libft/libft/ft_strnew.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strnew.c\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\nCMakeFiles/irina5.dir/libft/libft/ft_strnstr.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strnstr.c\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\nCMakeFiles/irina5.dir/libft/libft/ft_strrchr.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strrchr.c\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\nCMakeFiles/irina5.dir/libft/libft/ft_strrev.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strrev.c\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\nCMakeFiles/irina5.dir/libft/libft/ft_strsplit.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strsplit.c\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\nCMakeFiles/irina5.dir/libft/libft/ft_strstr.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strstr.c\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\nCMakeFiles/irina5.dir/libft/libft/ft_strsub.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strsub.c\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\nCMakeFiles/irina5.dir/libft/libft/ft_strtrim.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strtrim.c\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\nCMakeFiles/irina5.dir/libft/libft/ft_swap_bits.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_swap_bits.c\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\nCMakeFiles/irina5.dir/libft/libft/ft_tolower.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_tolower.c\nCMakeFiles/irina5.dir/libft/libft/ft_toupper.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_toupper.c\nCMakeFiles/irina5.dir/libft/libft/ft_words.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_words.c\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\nCMakeFiles/irina5.dir/libft/libft/get_next_line.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/get_next_line.c\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\nCMakeFiles/irina5.dir/libft/printf/color.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/color.c\n /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h\nCMakeFiles/irina5.dir/libft/printf/conversion.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/conversion.c\n /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h\nCMakeFiles/irina5.dir/libft/printf/free.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/free.c\n /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h\nCMakeFiles/irina5.dir/libft/printf/ft_printf.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.c\n /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h\nCMakeFiles/irina5.dir/libft/printf/multiplier.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h\n /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/multiplier.c\nCMakeFiles/irina5.dir/libft/printf/neg_exp.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h\n /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/neg_exp.c\nCMakeFiles/irina5.dir/libft/printf/prec.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h\n /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/prec.c\nCMakeFiles/irina5.dir/libft/printf/prec2.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h\n /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/prec2.c\nCMakeFiles/irina5.dir/libft/printf/print_float.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h\n /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/print_float.c\nCMakeFiles/irina5.dir/libft/printf/print_integer.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h\n /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/print_integer.c\nCMakeFiles/irina5.dir/libft/printf/print_octal_x.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h\n /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/print_octal_x.c\nCMakeFiles/irina5.dir/libft/printf/print_pointer_char.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h\n /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/print_pointer_char.c\nCMakeFiles/irina5.dir/libft/printf/print_string.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h\n /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/print_string.c\nCMakeFiles/irina5.dir/libft/printf/print_unsigned.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h\n /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/print_unsigned.c\nCMakeFiles/irina5.dir/libft/printf/read_format.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h\n /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/read_format.c\nCMakeFiles/irina5.dir/libft/printf/substr.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h\n /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/substr.c\nCMakeFiles/irina5.dir/libft/printf/sum_char.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h\n /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/sum_char.c\nCMakeFiles/irina5.dir/libft/printf/tools.c.o\n /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h\n /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h\n /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/tools.c\nCMakeFiles/irina5.dir/src/0.1.errors.c.o\n ../lem-in.h\n ../libft/libft/libft.h\n ../libft/printf/ft_printf.h\n /Users/bhugo/Downloads/lem-i_working_branch/src/0.1.errors.c\nCMakeFiles/irina5.dir/src/0.2.read_line.c.o\n ../lem-in.h\n ../libft/libft/libft.h\n ../libft/printf/ft_printf.h\n /Users/bhugo/Downloads/lem-i_working_branch/src/0.2.read_line.c\nCMakeFiles/irina5.dir/src/0.3.validator.c.o\n ../lem-in.h\n ../libft/libft/libft.h\n ../libft/printf/ft_printf.h\n /Users/bhugo/Downloads/lem-i_working_branch/src/0.3.validator.c\nCMakeFiles/irina5.dir/src/0.4.is.c.o\n ../lem-in.h\n ../libft/libft/libft.h\n ../libft/printf/ft_printf.h\n /Users/bhugo/Downloads/lem-i_working_branch/src/0.4.is.c\nCMakeFiles/irina5.dir/src/0.5.hash_table.c.o\n ../lem-in.h\n ../libft/libft/libft.h\n ../libft/printf/ft_printf.h\n /Users/bhugo/Downloads/lem-i_working_branch/src/0.5.hash_table.c\nCMakeFiles/irina5.dir/src/0.6.init_structure.c.o\n ../lem-in.h\n ../libft/libft/libft.h\n ../libft/printf/ft_printf.h\n /Users/bhugo/Downloads/lem-i_working_branch/src/0.6.init_structure.c\nCMakeFiles/irina5.dir/src/0.7.write_coordinate.c.o\n ../lem-in.h\n ../libft/libft/libft.h\n ../libft/printf/ft_printf.h\n /Users/bhugo/Downloads/lem-i_working_branch/src/0.7.write_coordinate.c\nCMakeFiles/irina5.dir/src/0.8.dashes_in_input.c.o\n ../lem-in.h\n ../libft/libft/libft.h\n ../libft/printf/ft_printf.h\n /Users/bhugo/Downloads/lem-i_working_branch/src/0.8.dashes_in_input.c\nCMakeFiles/irina5.dir/src/1.1.init.c.o\n ../lem-in.h\n ../libft/libft/libft.h\n ../libft/printf/ft_printf.h\n /Users/bhugo/Downloads/lem-i_working_branch/src/1.1.init.c\nCMakeFiles/irina5.dir/src/1.main.c.o\n ../lem-in.h\n ../libft/libft/libft.h\n ../libft/printf/ft_printf.h\n /Users/bhugo/Downloads/lem-i_working_branch/src/1.main.c\nCMakeFiles/irina5.dir/src/2.1_parse_ants.c.o\n ../lem-in.h\n ../libft/libft/libft.h\n ../libft/printf/ft_printf.h\n /Users/bhugo/Downloads/lem-i_working_branch/src/2.1_parse_ants.c\nCMakeFiles/irina5.dir/src/2.parse_rooms.c.o\n ../lem-in.h\n ../libft/libft/libft.h\n ../libft/printf/ft_printf.h\n /Users/bhugo/Downloads/lem-i_working_branch/src/2.parse_rooms.c\nCMakeFiles/irina5.dir/src/3.parse_link.c.o\n ../lem-in.h\n ../libft/libft/libft.h\n ../libft/printf/ft_printf.h\n /Users/bhugo/Downloads/lem-i_working_branch/src/3.parse_link.c\nCMakeFiles/irina5.dir/src/4.bfs.c.o\n ../lem-in.h\n ../libft/libft/libft.h\n ../libft/printf/ft_printf.h\n /Users/bhugo/Downloads/lem-i_working_branch/src/4.bfs.c\nCMakeFiles/irina5.dir/src/5.find_links_direction.c.o\n ../lem-in.h\n ../libft/libft/libft.h\n ../libft/printf/ft_printf.h\n /Users/bhugo/Downloads/lem-i_working_branch/src/5.find_links_direction.c\nCMakeFiles/irina5.dir/src/6.2.deadlock_cleaning.c.o\n ../lem-in.h\n ../libft/libft/libft.h\n ../libft/printf/ft_printf.h\n /Users/bhugo/Downloads/lem-i_working_branch/src/6.2.deadlock_cleaning.c\nCMakeFiles/irina5.dir/src/6.input_cleaning.c.o\n ../lem-in.h\n ../libft/libft/libft.h\n ../libft/printf/ft_printf.h\n /Users/bhugo/Downloads/lem-i_working_branch/src/6.input_cleaning.c\nCMakeFiles/irina5.dir/src/7.print.c.o\n ../lem-in.h\n ../libft/libft/libft.h\n ../libft/printf/ft_printf.h\n /Users/bhugo/Downloads/lem-i_working_branch/src/7.print.c\nCMakeFiles/irina5.dir/src/8.create_paths.c.o\n ../lem-in.h\n ../libft/libft/libft.h\n ../libft/printf/ft_printf.h\n /Users/bhugo/Downloads/lem-i_working_branch/src/8.create_paths.c\nCMakeFiles/irina5.dir/src/8.create_paths2.c.o\n ../lem-in.h\n ../libft/libft/libft.h\n ../libft/printf/ft_printf.h\n /Users/bhugo/Downloads/lem-i_working_branch/src/8.create_paths2.c\nCMakeFiles/irina5.dir/src/9.flow.c.o\n ../lem-in.h\n ../libft/libft/libft.h\n ../libft/printf/ft_printf.h\n /Users/bhugo/Downloads/lem-i_working_branch/src/9.flow.c\nCMakeFiles/irina5.dir/src/9.flow2.c.o\n ../lem-in.h\n ../libft/libft/libft.h\n ../libft/printf/ft_printf.h\n /Users/bhugo/Downloads/lem-i_working_branch/src/9.flow2.c\nCMakeFiles/irina5.dir/src/let_me_free.c.o\n ../lem-in.h\n ../libft/libft/libft.h\n ../libft/printf/ft_printf.h\n /Users/bhugo/Downloads/lem-i_working_branch/src/let_me_free.c\nCMakeFiles/irina5.dir/src/let_me_free_lem.c.o\n ../lem-in.h\n ../libft/libft/libft.h\n ../libft/printf/ft_printf.h\n /Users/bhugo/Downloads/lem-i_working_branch/src/let_me_free_lem.c\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- cmake-build-debug/CMakeFiles/irina5.dir/depend.internal	(revision b88017468fb616a9b402b4dca79de1e8a8d750e0)
++++ cmake-build-debug/CMakeFiles/irina5.dir/depend.internal	(date 1598030522000)
+@@ -2,383 +2,388 @@
+ # Generated by "Unix Makefiles" Generator, CMake Version 3.17
+ 
+ CMakeFiles/irina5.dir/libft/libft/ft_atoi.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_atoi.c
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/libft/ft_atoi.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
+ CMakeFiles/irina5.dir/libft/libft/ft_bzero.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_bzero.c
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/libft/ft_bzero.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
+ CMakeFiles/irina5.dir/libft/libft/ft_isalnum.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_isalnum.c
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/libft/ft_isalnum.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
+ CMakeFiles/irina5.dir/libft/libft/ft_isalpha.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_isalpha.c
++ /Users/kysgramo/irina5/libft/libft/ft_isalpha.c
+ CMakeFiles/irina5.dir/libft/libft/ft_isascii.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_isascii.c
++ /Users/kysgramo/irina5/libft/libft/ft_isascii.c
+ CMakeFiles/irina5.dir/libft/libft/ft_isdigit.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_isdigit.c
++ /Users/kysgramo/irina5/libft/libft/ft_isdigit.c
+ CMakeFiles/irina5.dir/libft/libft/ft_isprint.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_isprint.c
++ /Users/kysgramo/irina5/libft/libft/ft_isprint.c
+ CMakeFiles/irina5.dir/libft/libft/ft_itoa.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_itoa.c
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/libft/ft_itoa.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
+ CMakeFiles/irina5.dir/libft/libft/ft_lstadd.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_lstadd.c
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/libft/ft_lstadd.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
+ CMakeFiles/irina5.dir/libft/libft/ft_lstdel.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_lstdel.c
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/libft/ft_lstdel.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
+ CMakeFiles/irina5.dir/libft/libft/ft_lstdelone.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_lstdelone.c
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/libft/ft_lstdelone.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
+ CMakeFiles/irina5.dir/libft/libft/ft_lstiter.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_lstiter.c
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/libft/ft_lstiter.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
+ CMakeFiles/irina5.dir/libft/libft/ft_lstmap.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_lstmap.c
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/libft/ft_lstmap.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
+ CMakeFiles/irina5.dir/libft/libft/ft_lstnew.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_lstnew.c
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/libft/ft_lstnew.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
+ CMakeFiles/irina5.dir/libft/libft/ft_memalloc.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_memalloc.c
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/libft/ft_memalloc.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
+ CMakeFiles/irina5.dir/libft/libft/ft_memccpy.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_memccpy.c
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/libft/ft_memccpy.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
+ CMakeFiles/irina5.dir/libft/libft/ft_memchr.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_memchr.c
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/libft/ft_memchr.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
+ CMakeFiles/irina5.dir/libft/libft/ft_memcmp.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_memcmp.c
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/libft/ft_memcmp.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
+ CMakeFiles/irina5.dir/libft/libft/ft_memcpy.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_memcpy.c
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/libft/ft_memcpy.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
+ CMakeFiles/irina5.dir/libft/libft/ft_memdel.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_memdel.c
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/libft/ft_memdel.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
+ CMakeFiles/irina5.dir/libft/libft/ft_memmove.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_memmove.c
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/libft/ft_memmove.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
+ CMakeFiles/irina5.dir/libft/libft/ft_memset.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_memset.c
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/libft/ft_memset.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
+ CMakeFiles/irina5.dir/libft/libft/ft_print_bits.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_print_bits.c
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/libft/ft_print_bits.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
+ CMakeFiles/irina5.dir/libft/libft/ft_putchar.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_putchar.c
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/libft/ft_putchar.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
+ CMakeFiles/irina5.dir/libft/libft/ft_putchar_fd.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_putchar_fd.c
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/libft/ft_putchar_fd.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
+ CMakeFiles/irina5.dir/libft/libft/ft_putendl.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_putendl.c
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/libft/ft_putendl.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
+ CMakeFiles/irina5.dir/libft/libft/ft_putendl_fd.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_putendl_fd.c
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/libft/ft_putendl_fd.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
+ CMakeFiles/irina5.dir/libft/libft/ft_putnbr.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_putnbr.c
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/libft/ft_putnbr.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
+ CMakeFiles/irina5.dir/libft/libft/ft_putnbr_fd.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_putnbr_fd.c
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/libft/ft_putnbr_fd.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
+ CMakeFiles/irina5.dir/libft/libft/ft_putstr.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_putstr.c
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/libft/ft_putstr.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
+ CMakeFiles/irina5.dir/libft/libft/ft_putstr_fd.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_putstr_fd.c
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/libft/ft_putstr_fd.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
+ CMakeFiles/irina5.dir/libft/libft/ft_reverse_bits.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_reverse_bits.c
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/libft/ft_reverse_bits.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
+ CMakeFiles/irina5.dir/libft/libft/ft_sort_array.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_sort_array.c
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/libft/ft_sort_array.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
+ CMakeFiles/irina5.dir/libft/libft/ft_strcat.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strcat.c
++ /Users/kysgramo/irina5/libft/libft/ft_strcat.c
+ CMakeFiles/irina5.dir/libft/libft/ft_strchr.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strchr.c
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/libft/ft_strchr.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
+ CMakeFiles/irina5.dir/libft/libft/ft_strclr.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strclr.c
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/libft/ft_strclr.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
+ CMakeFiles/irina5.dir/libft/libft/ft_strcmp.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strcmp.c
++ /Users/kysgramo/irina5/libft/libft/ft_strcmp.c
+ CMakeFiles/irina5.dir/libft/libft/ft_strcpy.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strcpy.c
++ /Users/kysgramo/irina5/libft/libft/ft_strcpy.c
+ CMakeFiles/irina5.dir/libft/libft/ft_strdel.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strdel.c
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/libft/ft_strdel.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
+ CMakeFiles/irina5.dir/libft/libft/ft_strdup.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strdup.c
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/libft/ft_strdup.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
+ CMakeFiles/irina5.dir/libft/libft/ft_strequ.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strequ.c
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/libft/ft_strequ.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
+ CMakeFiles/irina5.dir/libft/libft/ft_striter.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_striter.c
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/libft/ft_striter.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
+ CMakeFiles/irina5.dir/libft/libft/ft_striteri.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_striteri.c
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/libft/ft_striteri.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
+ CMakeFiles/irina5.dir/libft/libft/ft_strjoin.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strjoin.c
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/libft/ft_strjoin.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
+ CMakeFiles/irina5.dir/libft/libft/ft_strlcat.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strlcat.c
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/libft/ft_strlcat.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
+ CMakeFiles/irina5.dir/libft/libft/ft_strlen.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strlen.c
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/libft/ft_strlen.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
+ CMakeFiles/irina5.dir/libft/libft/ft_strmap.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strmap.c
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/libft/ft_strmap.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
+ CMakeFiles/irina5.dir/libft/libft/ft_strmapi.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strmapi.c
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/libft/ft_strmapi.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
+ CMakeFiles/irina5.dir/libft/libft/ft_strncat.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strncat.c
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/libft/ft_strncat.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
+ CMakeFiles/irina5.dir/libft/libft/ft_strncmp.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strncmp.c
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/libft/ft_strncmp.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
+ CMakeFiles/irina5.dir/libft/libft/ft_strncpy.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strncpy.c
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/libft/ft_strncpy.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
+ CMakeFiles/irina5.dir/libft/libft/ft_strndup.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strndup.c
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/libft/ft_strndup.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
+ CMakeFiles/irina5.dir/libft/libft/ft_strnequ.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strnequ.c
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/libft/ft_strnequ.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
+ CMakeFiles/irina5.dir/libft/libft/ft_strnew.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strnew.c
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/libft/ft_strnew.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
+ CMakeFiles/irina5.dir/libft/libft/ft_strnstr.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strnstr.c
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/libft/ft_strnstr.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
+ CMakeFiles/irina5.dir/libft/libft/ft_strrchr.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strrchr.c
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/libft/ft_strrchr.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
+ CMakeFiles/irina5.dir/libft/libft/ft_strrev.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strrev.c
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/libft/ft_strrev.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
+ CMakeFiles/irina5.dir/libft/libft/ft_strsplit.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strsplit.c
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/libft/ft_strsplit.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
+ CMakeFiles/irina5.dir/libft/libft/ft_strstr.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strstr.c
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/libft/ft_strstr.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
+ CMakeFiles/irina5.dir/libft/libft/ft_strsub.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strsub.c
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/libft/ft_strsub.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
+ CMakeFiles/irina5.dir/libft/libft/ft_strtrim.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_strtrim.c
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/libft/ft_strtrim.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
+ CMakeFiles/irina5.dir/libft/libft/ft_swap_bits.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_swap_bits.c
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/libft/ft_swap_bits.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
+ CMakeFiles/irina5.dir/libft/libft/ft_tolower.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_tolower.c
++ /Users/kysgramo/irina5/libft/libft/ft_tolower.c
+ CMakeFiles/irina5.dir/libft/libft/ft_toupper.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_toupper.c
++ /Users/kysgramo/irina5/libft/libft/ft_toupper.c
+ CMakeFiles/irina5.dir/libft/libft/ft_words.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/ft_words.c
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/libft/ft_words.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
+ CMakeFiles/irina5.dir/libft/libft/get_next_line.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/get_next_line.c
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/libft/get_next_line.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
+ CMakeFiles/irina5.dir/libft/printf/color.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/color.c
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h
++ /Users/kysgramo/irina5/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/printf/color.c
++ /Users/kysgramo/irina5/libft/printf/ft_printf.h
+ CMakeFiles/irina5.dir/libft/printf/conversion.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/conversion.c
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h
++ /Users/kysgramo/irina5/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/printf/conversion.c
++ /Users/kysgramo/irina5/libft/printf/ft_printf.h
+ CMakeFiles/irina5.dir/libft/printf/free.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/free.c
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h
++ /Users/kysgramo/irina5/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/printf/free.c
++ /Users/kysgramo/irina5/libft/printf/ft_printf.h
+ CMakeFiles/irina5.dir/libft/printf/ft_printf.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.c
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h
++ /Users/kysgramo/irina5/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/printf/ft_printf.c
++ /Users/kysgramo/irina5/libft/printf/ft_printf.h
+ CMakeFiles/irina5.dir/libft/printf/multiplier.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/multiplier.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/printf/ft_printf.h
++ /Users/kysgramo/irina5/libft/printf/multiplier.c
+ CMakeFiles/irina5.dir/libft/printf/neg_exp.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/neg_exp.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/printf/ft_printf.h
++ /Users/kysgramo/irina5/libft/printf/neg_exp.c
+ CMakeFiles/irina5.dir/libft/printf/prec.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/prec.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/printf/ft_printf.h
++ /Users/kysgramo/irina5/libft/printf/prec.c
+ CMakeFiles/irina5.dir/libft/printf/prec2.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/prec2.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/printf/ft_printf.h
++ /Users/kysgramo/irina5/libft/printf/prec2.c
+ CMakeFiles/irina5.dir/libft/printf/print_float.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/print_float.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/printf/ft_printf.h
++ /Users/kysgramo/irina5/libft/printf/print_float.c
+ CMakeFiles/irina5.dir/libft/printf/print_integer.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/print_integer.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/printf/ft_printf.h
++ /Users/kysgramo/irina5/libft/printf/print_integer.c
+ CMakeFiles/irina5.dir/libft/printf/print_octal_x.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/print_octal_x.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/printf/ft_printf.h
++ /Users/kysgramo/irina5/libft/printf/print_octal_x.c
+ CMakeFiles/irina5.dir/libft/printf/print_pointer_char.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/print_pointer_char.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/printf/ft_printf.h
++ /Users/kysgramo/irina5/libft/printf/print_pointer_char.c
+ CMakeFiles/irina5.dir/libft/printf/print_string.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/print_string.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/printf/ft_printf.h
++ /Users/kysgramo/irina5/libft/printf/print_string.c
+ CMakeFiles/irina5.dir/libft/printf/print_unsigned.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/print_unsigned.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/printf/ft_printf.h
++ /Users/kysgramo/irina5/libft/printf/print_unsigned.c
+ CMakeFiles/irina5.dir/libft/printf/read_format.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/read_format.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/printf/ft_printf.h
++ /Users/kysgramo/irina5/libft/printf/read_format.c
+ CMakeFiles/irina5.dir/libft/printf/substr.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/substr.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/printf/ft_printf.h
++ /Users/kysgramo/irina5/libft/printf/substr.c
+ CMakeFiles/irina5.dir/libft/printf/sum_char.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/sum_char.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/printf/ft_printf.h
++ /Users/kysgramo/irina5/libft/printf/sum_char.c
+ CMakeFiles/irina5.dir/libft/printf/tools.c.o
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/libft/libft.h
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/ft_printf.h
+- /Users/bhugo/Downloads/lem-i_working_branch/libft/printf/tools.c
++ /Users/kysgramo/irina5/libft/libft/libft.h
++ /Users/kysgramo/irina5/libft/printf/ft_printf.h
++ /Users/kysgramo/irina5/libft/printf/tools.c
+ CMakeFiles/irina5.dir/src/0.1.errors.c.o
+  ../lem-in.h
+  ../libft/libft/libft.h
+  ../libft/printf/ft_printf.h
+- /Users/bhugo/Downloads/lem-i_working_branch/src/0.1.errors.c
++ /Users/kysgramo/irina5/src/0.1.errors.c
+ CMakeFiles/irina5.dir/src/0.2.read_line.c.o
+  ../lem-in.h
+  ../libft/libft/libft.h
+  ../libft/printf/ft_printf.h
+- /Users/bhugo/Downloads/lem-i_working_branch/src/0.2.read_line.c
++ /Users/kysgramo/irina5/src/0.2.read_line.c
+ CMakeFiles/irina5.dir/src/0.3.validator.c.o
+  ../lem-in.h
+  ../libft/libft/libft.h
+  ../libft/printf/ft_printf.h
+- /Users/bhugo/Downloads/lem-i_working_branch/src/0.3.validator.c
++ /Users/kysgramo/irina5/src/0.3.validator.c
+ CMakeFiles/irina5.dir/src/0.4.is.c.o
+  ../lem-in.h
+  ../libft/libft/libft.h
+  ../libft/printf/ft_printf.h
+- /Users/bhugo/Downloads/lem-i_working_branch/src/0.4.is.c
++ /Users/kysgramo/irina5/src/0.4.is.c
+ CMakeFiles/irina5.dir/src/0.5.hash_table.c.o
+  ../lem-in.h
+  ../libft/libft/libft.h
+  ../libft/printf/ft_printf.h
+- /Users/bhugo/Downloads/lem-i_working_branch/src/0.5.hash_table.c
++ /Users/kysgramo/irina5/src/0.5.hash_table.c
+ CMakeFiles/irina5.dir/src/0.6.init_structure.c.o
+  ../lem-in.h
+  ../libft/libft/libft.h
+  ../libft/printf/ft_printf.h
+- /Users/bhugo/Downloads/lem-i_working_branch/src/0.6.init_structure.c
++ /Users/kysgramo/irina5/src/0.6.init_structure.c
+ CMakeFiles/irina5.dir/src/0.7.write_coordinate.c.o
+  ../lem-in.h
+  ../libft/libft/libft.h
+  ../libft/printf/ft_printf.h
+- /Users/bhugo/Downloads/lem-i_working_branch/src/0.7.write_coordinate.c
++ /Users/kysgramo/irina5/src/0.7.write_coordinate.c
+ CMakeFiles/irina5.dir/src/0.8.dashes_in_input.c.o
+  ../lem-in.h
+  ../libft/libft/libft.h
+  ../libft/printf/ft_printf.h
+- /Users/bhugo/Downloads/lem-i_working_branch/src/0.8.dashes_in_input.c
++ /Users/kysgramo/irina5/src/0.8.dashes_in_input.c
+ CMakeFiles/irina5.dir/src/1.1.init.c.o
+  ../lem-in.h
+  ../libft/libft/libft.h
+  ../libft/printf/ft_printf.h
+- /Users/bhugo/Downloads/lem-i_working_branch/src/1.1.init.c
++ /Users/kysgramo/irina5/src/1.1.init.c
+ CMakeFiles/irina5.dir/src/1.main.c.o
+  ../lem-in.h
+  ../libft/libft/libft.h
+  ../libft/printf/ft_printf.h
+- /Users/bhugo/Downloads/lem-i_working_branch/src/1.main.c
++ /Users/kysgramo/irina5/src/1.main.c
++CMakeFiles/irina5.dir/src/10.suurb_flow.c.o
++ ../lem-in.h
++ ../libft/libft/libft.h
++ ../libft/printf/ft_printf.h
++ /Users/kysgramo/irina5/src/10.suurb_flow.c
+ CMakeFiles/irina5.dir/src/2.1_parse_ants.c.o
+  ../lem-in.h
+  ../libft/libft/libft.h
+  ../libft/printf/ft_printf.h
+- /Users/bhugo/Downloads/lem-i_working_branch/src/2.1_parse_ants.c
++ /Users/kysgramo/irina5/src/2.1_parse_ants.c
+ CMakeFiles/irina5.dir/src/2.parse_rooms.c.o
+  ../lem-in.h
+  ../libft/libft/libft.h
+  ../libft/printf/ft_printf.h
+- /Users/bhugo/Downloads/lem-i_working_branch/src/2.parse_rooms.c
++ /Users/kysgramo/irina5/src/2.parse_rooms.c
+ CMakeFiles/irina5.dir/src/3.parse_link.c.o
+  ../lem-in.h
+  ../libft/libft/libft.h
+  ../libft/printf/ft_printf.h
+- /Users/bhugo/Downloads/lem-i_working_branch/src/3.parse_link.c
++ /Users/kysgramo/irina5/src/3.parse_link.c
+ CMakeFiles/irina5.dir/src/4.bfs.c.o
+  ../lem-in.h
+  ../libft/libft/libft.h
+  ../libft/printf/ft_printf.h
+- /Users/bhugo/Downloads/lem-i_working_branch/src/4.bfs.c
++ /Users/kysgramo/irina5/src/4.bfs.c
+ CMakeFiles/irina5.dir/src/5.find_links_direction.c.o
+  ../lem-in.h
+  ../libft/libft/libft.h
+  ../libft/printf/ft_printf.h
+- /Users/bhugo/Downloads/lem-i_working_branch/src/5.find_links_direction.c
++ /Users/kysgramo/irina5/src/5.find_links_direction.c
+ CMakeFiles/irina5.dir/src/6.2.deadlock_cleaning.c.o
+  ../lem-in.h
+  ../libft/libft/libft.h
+  ../libft/printf/ft_printf.h
+- /Users/bhugo/Downloads/lem-i_working_branch/src/6.2.deadlock_cleaning.c
++ /Users/kysgramo/irina5/src/6.2.deadlock_cleaning.c
+ CMakeFiles/irina5.dir/src/6.input_cleaning.c.o
+  ../lem-in.h
+  ../libft/libft/libft.h
+  ../libft/printf/ft_printf.h
+- /Users/bhugo/Downloads/lem-i_working_branch/src/6.input_cleaning.c
++ /Users/kysgramo/irina5/src/6.input_cleaning.c
+ CMakeFiles/irina5.dir/src/7.print.c.o
+  ../lem-in.h
+  ../libft/libft/libft.h
+  ../libft/printf/ft_printf.h
+- /Users/bhugo/Downloads/lem-i_working_branch/src/7.print.c
++ /Users/kysgramo/irina5/src/7.print.c
+ CMakeFiles/irina5.dir/src/8.create_paths.c.o
+  ../lem-in.h
+  ../libft/libft/libft.h
+  ../libft/printf/ft_printf.h
+- /Users/bhugo/Downloads/lem-i_working_branch/src/8.create_paths.c
++ /Users/kysgramo/irina5/src/8.create_paths.c
+ CMakeFiles/irina5.dir/src/8.create_paths2.c.o
+  ../lem-in.h
+  ../libft/libft/libft.h
+  ../libft/printf/ft_printf.h
+- /Users/bhugo/Downloads/lem-i_working_branch/src/8.create_paths2.c
++ /Users/kysgramo/irina5/src/8.create_paths2.c
+ CMakeFiles/irina5.dir/src/9.flow.c.o
+  ../lem-in.h
+  ../libft/libft/libft.h
+  ../libft/printf/ft_printf.h
+- /Users/bhugo/Downloads/lem-i_working_branch/src/9.flow.c
++ /Users/kysgramo/irina5/src/9.flow.c
+ CMakeFiles/irina5.dir/src/9.flow2.c.o
+  ../lem-in.h
+  ../libft/libft/libft.h
+  ../libft/printf/ft_printf.h
+- /Users/bhugo/Downloads/lem-i_working_branch/src/9.flow2.c
++ /Users/kysgramo/irina5/src/9.flow2.c
+ CMakeFiles/irina5.dir/src/let_me_free.c.o
+  ../lem-in.h
+  ../libft/libft/libft.h
+  ../libft/printf/ft_printf.h
+- /Users/bhugo/Downloads/lem-i_working_branch/src/let_me_free.c
++ /Users/kysgramo/irina5/src/let_me_free.c
+ CMakeFiles/irina5.dir/src/let_me_free_lem.c.o
+  ../lem-in.h
+  ../libft/libft/libft.h
+  ../libft/printf/ft_printf.h
+- /Users/bhugo/Downloads/lem-i_working_branch/src/let_me_free_lem.c
++ /Users/kysgramo/irina5/src/let_me_free_lem.c

@@ -34,7 +34,7 @@ void	print_paths_with_ants(t_path *curr, int i)
 	}
 }
 
-void	push_ants_along(t_path *pa, t_lem_in *lem_in, int i)
+void	push_ants_along(t_path *pa, t_lem_in *lem_in, int until)
 {
 	t_path	*curr;
 	int		changer;
@@ -43,7 +43,7 @@ void	push_ants_along(t_path *pa, t_lem_in *lem_in, int i)
 	curr = pa;
 	changer = 0;
 	keeper = 0;
-	while (curr && i)
+	while (curr && until)
 	{
 		if (curr->head == 1)
 			changer = pa->ant_index;
@@ -59,7 +59,7 @@ void	push_ants_along(t_path *pa, t_lem_in *lem_in, int i)
 			}
 		}
 		curr = curr->next;
-		i--;
+		until--;
 	}
 }
 
@@ -70,4 +70,51 @@ int		index_manager(t_lem_in *lem_in, int maxf, int ant_index)
 	if (ant_index != lem_in->paths[maxf]->len + 1)
 		ant_index++;
 	return (ant_index);
+}
+
+int		check_emptyness_of_path(t_path *tmp_pa)
+{
+	int		i;
+	t_path	*curr;
+
+	i = 0;
+	curr = tmp_pa;
+	while (curr && curr->ant_index == 0)
+	{
+		i++;
+		curr = curr->next;
+	}
+	if (i == tmp_pa->len)
+		return (1);
+	else
+		return (0);
+}
+
+int		push_old_ants(t_lem_in *lem_in, int supermax,
+int flows_used_this_run, int ant_index)
+{
+	t_path	*curr;
+	t_path	*pa;
+	int		tmp;
+	int		emp;
+
+	emp = 0;
+	tmp = lem_in->ants_end;
+	if (flows_used_this_run < 0)
+		flows_used_this_run = 0;
+	else
+		flows_used_this_run++;
+	while (flows_used_this_run <= supermax)
+	{
+		pa = lem_in->paths[flows_used_this_run];
+		pa->ant_index = 0;
+		push_ants_along(pa, lem_in, ant_index);
+		curr = lem_in->paths[flows_used_this_run];
+		print_paths_with_ants(curr, flows_used_this_run);
+		if (check_emptyness_of_path(pa) == 1)
+			emp++;
+		flows_used_this_run++;
+	}
+	flows_used_this_run--;
+	return (flows_used_this_run - emp);
 }
