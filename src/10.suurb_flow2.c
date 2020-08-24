@@ -62,6 +62,6 @@ void		create_way3(t_lem_in *lem_in, int cut, int j)
 		}
 		else if (len == -1 && lem_in->paths[j++])
 			cut--;
-		printf("j %d\n", j);
+		//printf("j %d\n", j);
 	}
 }

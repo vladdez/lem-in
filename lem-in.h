@@ -177,12 +177,13 @@ void					create_way(t_lem_in *lem_in, int cut, int j);
 t_path					*create_one_path(t_room *cur);
 int						push_old_ants(t_lem_in *lem_in, int supermax,
 int flows_used_this_run, int ant_index);
-int						len_of_actual_paths(t_lem_in *lem_in, int maxpath);
+int						len_of_actual_paths(t_lem_in *lem_in);
 
 t_queue					*bfs2(t_lem_in *lem_in);
 void					handle_queue2(t_lem_in *lem_in, t_queue *q, char *current_room_name);
 void					create_way3(t_lem_in *lem_in, int cut, int j);
 t_room					*find_lowest_bfs3(t_node *n, t_hashtable *ht_rooms, t_lem_in *lem_in);
+int						create_way_sub2(t_lem_in *lem_in, t_path *tmp, t_room *cur, int j);
 # define ERR_ANTS_NUM_PARSING	"ERROR: Number of ants is incorrent"
 # define ERR_ROOM_PARSING		"ERROR: Can\'t parse room"
 # define ERR_ROOM_INIT			"ERROR: Can\'t initialize room"

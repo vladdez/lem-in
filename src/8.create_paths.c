@@ -104,7 +104,7 @@ void	create_way(t_lem_in *lem_in, int cut, int j)
 	}
 }
 
-int		len_of_actual_paths(t_lem_in *lem_in, int maxpath)
+int		len_of_actual_paths(t_lem_in *lem_in)
 {
 	int		i;
 	int		j;
@@ -132,7 +132,7 @@ void	check_order(t_path **paths, t_lem_in *lem_in, int maxpath)
 	i = 1;
 	curr = paths;
 	tmp = NULL;
-	j = len_of_actual_paths(lem_in, maxpath);
+	j = len_of_actual_paths(lem_in);
 	if (j > 1)
 	{
 		while (curr[i])
@@ -165,7 +165,7 @@ int		create_paths(t_lem_in *lem_in)
 		while (i < maxpath + 1)
 			lem_in->paths[i++] = NULL;
 		create_way(lem_in, maxpath, 0);
-		i = len_of_actual_paths(lem_in, maxpath);
+		i = len_of_actual_paths(lem_in);
 		lem_in->path_num = i;
 		if (maxpath > i && i < 2)
 			second_plan(lem_in, maxpath);

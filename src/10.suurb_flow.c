@@ -163,7 +163,7 @@ void	second_plan(t_lem_in *lem_in, int maxpath)
 		q = bfs2(lem_in);
 		lem_in->bfs_type = 1;
 		create_way3(lem_in, maxpath, 1);
-		lem_in->path_num = len_of_actual_paths(lem_in, maxpath);
+		lem_in->path_num = len_of_actual_paths(lem_in);
 		free(q);
 	}
 	else
