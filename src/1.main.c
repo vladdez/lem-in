@@ -41,8 +41,8 @@ void		lem(int fd)
 {
 	t_lem_in	*lem_in;
 	t_line		*input;
-	t_queue     *q;
-	t_node      *deadlock_name;
+	t_queue		*q;
+	t_node		*deadlock_name;
 
 	input = NULL;
 	lem_in = parse(fd, &input);
@@ -54,6 +54,7 @@ void		lem(int fd)
 	input_cleaning(lem_in);
 	deadlock_name = find_link_direction(lem_in->ht_rooms);
 	//print_ht_rooms_with_direction(lem_in->ht_rooms);
+	free_queue(q);
 	fd = create_paths(lem_in);
 	if (fd != 0)
 	{
@@ -62,7 +63,6 @@ void		lem(int fd)
 	}
 	free_input(input);
 	free_lem_in(lem_in, fd);
-	free_queue(q);
 	free_deadlocks(deadlock_name);
 }
 

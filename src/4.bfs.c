@@ -95,3 +95,45 @@ t_queue	*bfs(t_lem_in *lem_in)
 	lem_in->end->bfs_level = INT_MAX;
 	return (q);
 }
+
+void	handle_queue2(t_lem_in *lem_in, t_queue *q, char *current_room_name)
+{
+	t_room	*current_room;
+	int		level;
+	t_node	*link;
+	t_room	*tmp;
+
+	current_room = find_room_in_hashtable(current_room_name, lem_in->ht_rooms);
+	level = current_room->bfs_level2 + 1;
+	link = find_room_links(current_room_name, lem_in->ht_rooms);
+	while (link)
+	{
+		tmp = find_room_in_hashtable(link->node, lem_in->ht_rooms);
+		if (tmp->visit3 == UNVISITED)
+		{
+			tmp->visit3 = VISITED;
+			tmp->bfs_level2 = level;
+			enqueue(q, tmp, lem_in->room_num);
+		}
+		link = link->next;
+	}
+}
+
+t_queue	*bfs2(t_lem_in *lem_in)
+{
+	t_queue	*q;
+	char	*current_room_name;
+
+	q = create_queue(lem_in->room_num);
+	lem_in->start->visit3 = VISITED;
+	lem_in->start->bfs_level2 = 0;
+	enqueue(q, lem_in->start, lem_in->room_num);
+	while (!is_empty(q))
+	{
+		current_room_name = dequeue(q);
+		if (ft_strcmp(current_room_name, lem_in->end->room_name) != 0)
+			handle_queue2(lem_in, q, current_room_name);
+	}
+	lem_in->end->bfs_level = INT_MAX;
+	return (q);
+}

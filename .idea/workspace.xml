@@ -38,7 +38,7 @@
   <component name="ChangeListManager">
     <list default="true" id="30b215e4-c186-4ee7-a924-0d140b951c90" name="Default Changelist" comment="fixup! serious bags">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2.map" beforeDir="false" afterPath="$PROJECT_DIR$/2.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/C.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/0.3.validator.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/0.3.validator.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/0.5.hash_table.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/0.5.hash_table.c.o" afterDir="false" />
@@ -68,34 +68,12 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/irina5.dSYM/Contents/Resources/DWARF/irina5" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/irina5.dSYM/Contents/Resources/DWARF/irina5" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lem-in" beforeDir="false" afterPath="$PROJECT_DIR$/lem-in" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lem-in.h" beforeDir="false" afterPath="$PROJECT_DIR$/lem-in.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/libft.a" beforeDir="false" afterPath="$PROJECT_DIR$/libft/libft.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/map" beforeDir="false" afterPath="$PROJECT_DIR$/map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/0.6.init_structure.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/0.6.init_structure.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/1.1.init.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/1.1.init.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/1.main.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/1.main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/10.suurb_flow.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/10.suurb_flow.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/4.bfs.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/4.bfs.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/8.create_paths.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/8.create_paths.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/8.create_paths2.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/8.create_paths2.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/9.flow.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/9.flow.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/9.flow2.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/9.flow2.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/obj/0.3.validator.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/obj/0.3.validator.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/obj/0.5.hash_table.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/obj/0.5.hash_table.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/obj/0.6.init_structure.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/obj/0.6.init_structure.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/obj/0.9.delete_links.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/obj/0.9.delete_links.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/obj/1.main.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/obj/1.main.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/obj/10.suurb_flow.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/obj/10.suurb_flow.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/obj/2.parse_rooms.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/obj/2.parse_rooms.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/obj/3.parse_link.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/obj/3.parse_link.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/obj/4.bfs.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/obj/4.bfs.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/obj/5.find_links_direction.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/obj/5.find_links_direction.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/obj/6.2.deadlock_cleaning.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/obj/6.2.deadlock_cleaning.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/obj/6.input_cleaning.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/obj/6.input_cleaning.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/obj/7.2.print_hashtable.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/obj/7.2.print_hashtable.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/obj/8.create_paths.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/obj/8.create_paths.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/obj/8.create_paths2.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/obj/8.create_paths2.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/obj/9.flow.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/obj/9.flow.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/obj/9.flow2.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/obj/9.flow2.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/obj/let_me_free_lem.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/obj/let_me_free_lem.o" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +124,7 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="irina5" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="3.map" REDIRECT_INPUT="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="irina5" TARGET_NAME="irina5" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="irina5" RUN_TARGET_NAME="irina5">
+    <configuration name="irina5" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="maps1" REDIRECT_INPUT="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="irina5" TARGET_NAME="irina5" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="irina5" RUN_TARGET_NAME="irina5">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -221,7 +199,7 @@
       <workItem from="1598032652570" duration="2547000" />
       <workItem from="1598098379106" duration="5576000" />
       <workItem from="1598181099890" duration="13149000" />
-      <workItem from="1598255271459" duration="532000" />
+      <workItem from="1598255271459" duration="4849000" />
     </task>
     <servers />
   </component>
@@ -257,12 +235,12 @@
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="476" y="300" key="#C/C++/0.23.2560.1337@0.23.2560.1337" timestamp="1597652917633" />
-    <state x="744" y="353" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598204479612">
+    <state x="744" y="353" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598268519743">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="369" y="222" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1594912325660" />
     <state x="595" y="282" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2048.1049@0.23.2048.1049" timestamp="1598116460105" />
-    <state x="744" y="353" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1598204479612" />
+    <state x="744" y="353" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1598268519743" />
     <state x="1067" y="403" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1596374426957">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
@@ -271,62 +249,62 @@
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="462" y="286" key="CommitChangelistDialog2/0.23.2560.1337@0.23.2560.1337" timestamp="1597938226161" />
-    <state width="1646" height="489" key="GridCell.Tab.0.bottom" timestamp="1598205436070">
+    <state width="1646" height="523" key="GridCell.Tab.0.bottom" timestamp="1598271907189">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="1398" height="329" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1594912894679" />
     <state width="2518" height="335" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1593622321567" />
     <state width="1646" height="401" key="GridCell.Tab.0.bottom/0.23.2048.1049@0.23.2048.1049" timestamp="1598121939754" />
-    <state width="1646" height="489" key="GridCell.Tab.0.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1598205436070" />
-    <state width="1646" height="489" key="GridCell.Tab.0.center" timestamp="1598205436070">
+    <state width="1646" height="523" key="GridCell.Tab.0.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1598271907189" />
+    <state width="1646" height="523" key="GridCell.Tab.0.center" timestamp="1598271907188">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="1398" height="329" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1594912894676" />
     <state width="2518" height="335" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1593622321567" />
     <state width="1646" height="401" key="GridCell.Tab.0.center/0.23.2048.1049@0.23.2048.1049" timestamp="1598121939753" />
-    <state width="1646" height="489" key="GridCell.Tab.0.center/0.23.2560.1337@0.23.2560.1337" timestamp="1598205436070" />
-    <state width="1646" height="489" key="GridCell.Tab.0.left" timestamp="1598205436069">
+    <state width="1646" height="523" key="GridCell.Tab.0.center/0.23.2560.1337@0.23.2560.1337" timestamp="1598271907188" />
+    <state width="1646" height="523" key="GridCell.Tab.0.left" timestamp="1598271907188">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="1398" height="329" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1594912894675" />
     <state width="2518" height="335" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1593622321566" />
     <state width="1646" height="401" key="GridCell.Tab.0.left/0.23.2048.1049@0.23.2048.1049" timestamp="1598121939752" />
-    <state width="1646" height="489" key="GridCell.Tab.0.left/0.23.2560.1337@0.23.2560.1337" timestamp="1598205436069" />
-    <state width="1646" height="489" key="GridCell.Tab.0.right" timestamp="1598205436070">
+    <state width="1646" height="523" key="GridCell.Tab.0.left/0.23.2560.1337@0.23.2560.1337" timestamp="1598271907188" />
+    <state width="1646" height="523" key="GridCell.Tab.0.right" timestamp="1598271907189">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="1398" height="329" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1594912894678" />
     <state width="2518" height="335" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1593622321567" />
     <state width="1646" height="401" key="GridCell.Tab.0.right/0.23.2048.1049@0.23.2048.1049" timestamp="1598121939753" />
-    <state width="1646" height="489" key="GridCell.Tab.0.right/0.23.2560.1337@0.23.2560.1337" timestamp="1598205436070" />
-    <state width="1646" height="523" key="GridCell.Tab.1.bottom" timestamp="1598205436066">
+    <state width="1646" height="523" key="GridCell.Tab.0.right/0.23.2560.1337@0.23.2560.1337" timestamp="1598271907189" />
+    <state width="1646" height="523" key="GridCell.Tab.1.bottom" timestamp="1598271907190">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="1398" height="329" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1594912894681" />
     <state width="2518" height="335" key="GridCell.Tab.1.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1593622323000" />
     <state width="1646" height="300" key="GridCell.Tab.1.bottom/0.23.2048.1049@0.23.2048.1049" timestamp="1598121939739" />
-    <state width="1646" height="523" key="GridCell.Tab.1.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1598205436066" />
-    <state width="1646" height="523" key="GridCell.Tab.1.center" timestamp="1598205436066">
+    <state width="1646" height="523" key="GridCell.Tab.1.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1598271907190" />
+    <state width="1646" height="523" key="GridCell.Tab.1.center" timestamp="1598271907190">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="1398" height="329" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1594912894680" />
     <state width="2518" height="335" key="GridCell.Tab.1.center/0.0.2560.1440@0.0.2560.1440" timestamp="1593622322999" />
     <state width="1646" height="300" key="GridCell.Tab.1.center/0.23.2048.1049@0.23.2048.1049" timestamp="1598121939739" />
-    <state width="1646" height="523" key="GridCell.Tab.1.center/0.23.2560.1337@0.23.2560.1337" timestamp="1598205436066" />
-    <state width="1646" height="523" key="GridCell.Tab.1.left" timestamp="1598205436066">
+    <state width="1646" height="523" key="GridCell.Tab.1.center/0.23.2560.1337@0.23.2560.1337" timestamp="1598271907190" />
+    <state width="1646" height="523" key="GridCell.Tab.1.left" timestamp="1598271907190">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="1398" height="329" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1594912894679" />
     <state width="2518" height="335" key="GridCell.Tab.1.left/0.0.2560.1440@0.0.2560.1440" timestamp="1593622322999" />
     <state width="1646" height="300" key="GridCell.Tab.1.left/0.23.2048.1049@0.23.2048.1049" timestamp="1598121939738" />
-    <state width="1646" height="523" key="GridCell.Tab.1.left/0.23.2560.1337@0.23.2560.1337" timestamp="1598205436066" />
-    <state width="1646" height="523" key="GridCell.Tab.1.right" timestamp="1598205436066">
+    <state width="1646" height="523" key="GridCell.Tab.1.left/0.23.2560.1337@0.23.2560.1337" timestamp="1598271907190" />
+    <state width="1646" height="523" key="GridCell.Tab.1.right" timestamp="1598271907190">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="1398" height="329" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1594912894681" />
     <state width="2518" height="335" key="GridCell.Tab.1.right/0.0.2560.1440@0.0.2560.1440" timestamp="1593622323000" />
     <state width="1646" height="300" key="GridCell.Tab.1.right/0.23.2048.1049@0.23.2048.1049" timestamp="1598121939739" />
-    <state width="1646" height="523" key="GridCell.Tab.1.right/0.23.2560.1337@0.23.2560.1337" timestamp="1598205436066" />
+    <state width="1646" height="523" key="GridCell.Tab.1.right/0.23.2560.1337@0.23.2560.1337" timestamp="1598271907190" />
     <state width="512" height="160" key="ImportCMakeProjectWizard.bottomPanel" timestamp="1598032648875">
       <screen x="0" y="23" width="2048" height="1049" />
     </state>
@@ -369,13 +347,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/src/10.suurb_flow.c</url>
-          <line>154</line>
-          <option name="timeStamp" value="33" />
+          <line>160</line>
+          <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/8.create_paths.c</url>
-          <line>161</line>
-          <option name="timeStamp" value="34" />
+          <url>file://$PROJECT_DIR$/src/10.suurb_flow.c</url>
+          <line>159</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/10.suurb_flow.c</url>
+          <line>84</line>
+          <option name="timeStamp" value="39" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

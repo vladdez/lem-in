@@ -32,7 +32,6 @@ int		is_room(char *str)
 	{
 		if (!(s = ft_strdup(str)))
 			terminate(ERR_ROOM_PARSING);
-
 		q = ft_words(s, ' ');
 		free(s);
 		if (q == 3)
@@ -47,7 +46,6 @@ int		is_room(char *str)
 			}
 			ft_strsplit_free(&words);
 		}
-
 	}
 	return (0);
 }

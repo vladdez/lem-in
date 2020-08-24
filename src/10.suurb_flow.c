@@ -45,7 +45,7 @@ void	get_mem(t_lem_in *lem_in)
 	lem_in->mem = find_room_in_hashtable(pa->name, lem_in->ht_rooms);
 }
 
-t_room	*find_lowest_bfs2(t_node *n, t_hashtable *ht_rooms, t_lem_in *lem_in)
+t_room		*find_lowest_bfs2(t_node *n, t_hashtable *ht_rooms, t_lem_in *lem_in)
 {
 	t_node	*cur;
 	t_room	*tmp_room;
@@ -77,18 +77,27 @@ t_room	*find_lowest_bfs2(t_node *n, t_hashtable *ht_rooms, t_lem_in *lem_in)
 	return (lowest_bfs_room);
 }
 
-t_room	*find_best_room2(t_room *cur, t_hashtable *ht_rooms, t_lem_in *lem_in)
+t_room		*find_best_room2(t_room *cur, t_hashtable *ht_rooms, t_lem_in *lem_in)
 {
 	t_room *tmp;
 
+	tmp = NULL;
 	if ((len_nei(cur->link) == 1))
-		return (find_room_in_hashtable(cur->link->node, ht_rooms));
+		return (tmp = find_room_in_hashtable(cur->link->node, ht_rooms));
 	else
-		tmp = find_lowest_bfs2(cur->incoming_links, ht_rooms, lem_in);
+	{
+		if (lem_in->bfs_type == 0)
+			tmp = find_lowest_bfs2(cur->incoming_links, ht_rooms, lem_in);
+		else if (lem_in->bfs_type == 1)
+		{
+			tmp = find_lowest_bfs3(cur->link, ht_rooms, lem_in);
+			//printf("lowest_bfs_room %s %d\n", tmp->room_name, tmp->bfs_level);
+		}
+	}
 	return (tmp);
 }
 
-int		create_way_sub2(t_lem_in *lem_in, t_path *tmp, t_room *cur, int j)
+int			create_way_sub2(t_lem_in *lem_in, t_path *tmp, t_room *cur, int j)
 {
 	t_room	*tmp_room;
 	int		len;
@@ -100,14 +109,17 @@ int		create_way_sub2(t_lem_in *lem_in, t_path *tmp, t_room *cur, int j)
 		//if (tmp_room != NULL)
 		//	printf("%s room_name, out %d, in %d \n", tmp_room->room_name, len_nei(tmp_room->outgoing_links), len_nei(tmp_room->incoming_links));
 		if (tmp_room == lem_in->end || tmp_room == NULL ||
-		tmp_room->visit3 == 1)
+		tmp_room->visit4 == 1)
 		{
 			delete_current_path(lem_in->paths[j]);
 			lem_in->paths[j] = NULL;
 			return (-1);
 		}
 		if (tmp_room != lem_in->start)
+		{
 			tmp_room->visit3 = VISITED;
+			tmp_room->visit4 = VISITED;
+		}
 		cur = tmp_room;
 		tmp = create_one_path(cur);
 		tmp->next = lem_in->paths[j];
@@ -119,32 +131,24 @@ int		create_way_sub2(t_lem_in *lem_in, t_path *tmp, t_room *cur, int j)
 	return (len);
 }
 
-void		create_way2(t_lem_in *lem_in, int cut, int j)
+void		create_way2(t_lem_in *lem_in, int j)
 {
 	t_room	*cur;
 	t_path	*tmp;
 	int		len;
 
 	tmp = NULL;
-	len = 0;
-	while (j <= cut)
-	{
-		cur = lem_in->end;
-		lem_in->paths[j] = create_one_path(lem_in->end);
-		len = create_way_sub2(lem_in, tmp, cur, j);
-		if (lem_in->paths[j])
-		{
-			lem_in->paths[j]->len = len;
-			j++;
-		}
-		else if (len == -1 && lem_in->paths[j++])
-			cut--;
-	}
+	cur = lem_in->end;
+	lem_in->paths[j] = create_one_path(lem_in->end);
+	len = create_way_sub2(lem_in, tmp, cur, j);
+	if (lem_in->paths[j])
+		lem_in->paths[j]->len = len;
 }
 
 void	second_plan(t_lem_in *lem_in, int maxpath)
 {
-	int		i;
+	int			i;
+	t_queue		*q;
 
 	i = is_enough(lem_in);
 	if (i != 1)
@@ -155,8 +159,12 @@ void	second_plan(t_lem_in *lem_in, int maxpath)
 		lem_in->paths = (t_path **)malloc(sizeof(t_path *) * (maxpath + 2));
 		while (i <= (maxpath + 1))
 			lem_in->paths[i++] = NULL;
-		create_way2(lem_in, maxpath, 0);
+		create_way2(lem_in, 0);
+		q = bfs2(lem_in);
+		lem_in->bfs_type = 1;
+		create_way3(lem_in, maxpath, 1);
 		lem_in->path_num = len_of_actual_paths(lem_in, maxpath);
+		free(q);
 	}
 	else
 		ft_printf("ENOUGH\n");

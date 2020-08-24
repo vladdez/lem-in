@@ -31,7 +31,7 @@ void	print_paths(t_path **paths, int path_num)
 	int		i;
 
 	i = 0;
-	ft_printf("paths\n");
+	ft_printf("layered network\n\n");
 	while (i < path_num)
 	{
 		if (paths[i] != NULL)

@@ -6,7 +6,7 @@
 /*   By: kysgramo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/15 17:40:02 by kysgramo          #+#    #+#             */
-/*   Updated: 2020/08/17 18:52:14 by kysgramo         ###   ########.fr       */
+/*   Updated: 2020/08/24 20:56:55 by kysgramo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,7 @@ int		create_way_sub(t_lem_in *lem_in, t_path *tmp, t_room *cur, int j)
 	{
 		tmp_room = find_best_room(cur, lem_in->ht_rooms);
 		if (tmp_room == lem_in->end || tmp_room == NULL ||
-		tmp_room->visit2 == 1)
+				tmp_room->visit2 == 1)
 		{
 			delete_current_path(lem_in->paths[j]);
 			lem_in->paths[j] = NULL;
@@ -106,28 +106,28 @@ void	create_way(t_lem_in *lem_in, int cut, int j)
 
 int		len_of_actual_paths(t_lem_in *lem_in, int maxpath)
 {
-    int     i;
-    int     j;
-    t_path  **p;
+	int		i;
+	int		j;
+	t_path	**p;
 
-    i = 0;
-    j = 0;
-    p = lem_in->paths;
-    while (p[i] != NULL)
-    {
-        if (p[i] && p[i]->next)
-            j++;
-        i++;
-    }
-    return (j);
+	i = 0;
+	j = 0;
+	p = lem_in->paths;
+	while (p[i] != NULL)
+	{
+		if (p[i] && p[i]->next)
+			j++;
+		i++;
+	}
+	return (j);
 }
 
 void	check_order(t_path **paths, t_lem_in *lem_in, int maxpath)
 {
 	t_path	**curr;
 	t_path	*tmp;
-	int 	i;
-	int 	j;
+	int		i;
+	int		j;
 
 	i = 1;
 	curr = paths;
@@ -137,11 +137,11 @@ void	check_order(t_path **paths, t_lem_in *lem_in, int maxpath)
 	{
 		while (curr[i])
 		{
-			if (curr[i]->len < curr[i-1]->len)
+			if (curr[i]->len < curr[i - 1]->len)
 			{
 				tmp = curr[i];
-				curr[i] = curr[i-1];
-				curr[i-1] = tmp;
+				curr[i] = curr[i - 1];
+				curr[i - 1] = tmp;
 			}
 			i++;
 		}
