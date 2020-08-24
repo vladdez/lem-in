@@ -104,7 +104,7 @@ void	create_way(t_lem_in *lem_in, int cut, int j)
 	}
 }
 
-int     len_of_actual_paths(t_lem_in *lem_in, int maxpath)
+int		len_of_actual_paths(t_lem_in *lem_in, int maxpath)
 {
     int     i;
     int     j;
@@ -113,13 +113,39 @@ int     len_of_actual_paths(t_lem_in *lem_in, int maxpath)
     i = 0;
     j = 0;
     p = lem_in->paths;
-    while (i < maxpath)
+    while (p[i] != NULL)
     {
         if (p[i] && p[i]->next)
             j++;
         i++;
     }
     return (j);
+}
+
+void	check_order(t_path **paths, t_lem_in *lem_in, int maxpath)
+{
+	t_path	**curr;
+	t_path	*tmp;
+	int 	i;
+	int 	j;
+
+	i = 1;
+	curr = paths;
+	tmp = NULL;
+	j = len_of_actual_paths(lem_in, maxpath);
+	if (j > 1)
+	{
+		while (curr[i])
+		{
+			if (curr[i]->len < curr[i-1]->len)
+			{
+				tmp = curr[i];
+				curr[i] = curr[i-1];
+				curr[i-1] = tmp;
+			}
+			i++;
+		}
+	}
 }
 
 int		create_paths(t_lem_in *lem_in)
@@ -142,7 +168,8 @@ int		create_paths(t_lem_in *lem_in)
 		i = len_of_actual_paths(lem_in, maxpath);
 		lem_in->path_num = i;
 		if (maxpath > i && i < 2)
-			second_plan(lem_in);
+			second_plan(lem_in, maxpath);
+		check_order(lem_in->paths, lem_in, maxpath);
 	}
 	return (cut_s);
 }

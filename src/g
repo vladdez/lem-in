@@ -1,17 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   10.suurb_flow.c                                    :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: kysgramo <marvin@42.fr>                    +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/08/18 16:03:29 by kysgramo          #+#    #+#             */
-/*   Updated: 2020/08/18 16:03:43 by kysgramo         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
-#include "lem-in.h"
-
 int		is_enough(t_lem_in *lem_in)
 {
 	int		p;
@@ -98,7 +84,7 @@ int		create_way_sub2(t_lem_in *lem_in, t_path *tmp, t_room *cur, int j)
 	{
 		tmp_room = find_best_room2(cur, lem_in->ht_rooms, lem_in);
 		//if (tmp_room != NULL)
-		//	printf("%s room_name, out %d, in %d \n", tmp_room->room_name, len_nei(tmp_room->outgoing_links), len_nei(tmp_room->incoming_links));
+			printf("%s room_name, out %d, in %d \n", tmp_room->room_name, len_nei(tmp_room->outgoing_links), len_nei(tmp_room->incoming_links));
 		if (tmp_room == lem_in->end || tmp_room == NULL ||
 		tmp_room->visit3 == 1)
 		{
@@ -127,19 +113,38 @@ void		create_way2(t_lem_in *lem_in, int cut, int j)
 
 	tmp = NULL;
 	len = 0;
-	while (j <= cut)
+	cur = lem_in->end;
+	lem_in->paths[j] = create_one_path(lem_in->end);
+	len = create_way_sub2(lem_in, tmp, cur, j);
+	if (lem_in->paths[j])
 	{
-		cur = lem_in->end;
-		lem_in->paths[j] = create_one_path(lem_in->end);
-		len = create_way_sub2(lem_in, tmp, cur, j);
-		if (lem_in->paths[j])
-		{
-			lem_in->paths[j]->len = len;
-			j++;
-		}
-		else if (len == -1 && lem_in->paths[j++])
-			cut--;
+		lem_in->paths[j]->len = len;
+		j++;
 	}
+	else if (len == -1 && lem_in->paths[j++])
+		cut--;
+}
+
+void		create_way3(t_lem_in *lem_in, int cut, int j)
+{
+	t_queue     *q;
+	t_room	*cur;
+	t_path	*tmp;
+	int		len;
+
+	tmp = NULL;
+	cur = lem_in->end;
+	q = bfs(lem_in, 1);
+	lem_in->paths[j] = create_one_path(lem_in->end);
+	len = create_way_sub2(lem_in, tmp, cur, j);
+	if (lem_in->paths[j])
+	{
+		lem_in->paths[j]->len = len;
+		j++;
+	}
+	else if (len == -1 && lem_in->paths[j++])
+		cut--;
+	free(q);
 }
 
 void	second_plan(t_lem_in *lem_in, int maxpath)
@@ -156,8 +161,69 @@ void	second_plan(t_lem_in *lem_in, int maxpath)
 		while (i <= (maxpath + 1))
 			lem_in->paths[i++] = NULL;
 		create_way2(lem_in, maxpath, 0);
+		create_way3(lem_in, maxpath, 1);
 		lem_in->path_num = len_of_actual_paths(lem_in, maxpath);
 	}
 	else
 		ft_printf("ENOUGH\n");
+}
+
+
+
+
+
+bfs 
+
+
+
+void	handle_queue2(t_lem_in *lem_in, t_queue *q, char *current_room_name)
+{
+	t_room	*current_room;
+	int		level;
+	t_node	*link;
+	t_room	*tmp;
+
+	current_room = find_room_in_hashtable(current_room_name, lem_in->ht_rooms);
+	level = current_room->bfs_level2 + 1;
+	link = find_room_links(current_room_name, lem_in->ht_rooms);
+	while (link)
+	{
+		tmp = find_room_in_hashtable(link->node, lem_in->ht_rooms);
+		if (tmp->visit3 == UNVISITED)
+		{
+			tmp->visit3 = VISITED;
+			tmp->bfs_level2 = level;
+			enqueue(q, tmp, lem_in->room_num);
+		}
+		link = link->next;
+	}
+}
+
+t_queue	*bfs(t_lem_in *lem_in, int sw)
+{
+	t_queue	*q;
+	char	*current_room_name;
+
+	q = create_queue(lem_in->room_num);
+	//lem_in->start->visit = VISITED;
+	//lem_in->start->bfs_level = 0;
+	lem_in->start->visit3 = VISITED;
+	lem_in->start->bfs_level2 = 0;
+	enqueue(q, lem_in->start, lem_in->room_num);
+	while (!is_empty(q))
+	{
+		current_room_name = dequeue(q);
+		if (sw == 0)
+		{
+			if (ft_strcmp(current_room_name, lem_in->end->room_name) != 0)
+				handle_queue(lem_in, q, current_room_name);
+		}
+		else if (sw == 1)
+		{
+			if (ft_strcmp(current_room_name, lem_in->end->room_name) != 0)
+				handle_queue2(lem_in, q, current_room_name);
+		}
+	}
+	lem_in->end->bfs_level = INT_MAX;
+	return (q);
 }

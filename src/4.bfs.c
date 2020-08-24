@@ -53,6 +53,7 @@ char	*dequeue(t_queue *q)
 	return (current_room_name);
 }
 
+
 void	handle_queue(t_lem_in *lem_in, t_queue *q, char *current_room_name)
 {
 	t_room	*current_room;

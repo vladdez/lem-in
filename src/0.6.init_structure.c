@@ -28,6 +28,7 @@ t_room	*create_room(t_coordinate *coordinate, char *tmp)
 	room->visit2 = UNVISITED;
 	room->visit3 = UNVISITED;
 	room->bfs_level = -1;
+	room->bfs_level2 = -1;
 	room->output_links = 0;
 	room->input_links = 0;
 	room->next = NULL;

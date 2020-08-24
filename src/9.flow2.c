@@ -20,17 +20,17 @@ void	print_paths_with_ants(t_path *curr, int i)
 	if (curr->head != 1 && curr->ant_index != 0)
 	{
 		if (i == 0)
-			ft_printf("{red}L%d-%s{eoc} ", curr->ant_index, curr->name);
-		else if (i == 1)
-			ft_printf("{green}L%d-%s{eoc} ", curr->ant_index, curr->name);
-		else if (i == 2)
-			ft_printf("{yellow}L%d-%s{eoc} ", curr->ant_index, curr->name);
-		else if (i == 3)
 			ft_printf("{blue}L%d-%s{eoc} ", curr->ant_index, curr->name);
+		else if (i == 1)
+			ft_printf("{cyan}L%d-%s{eoc} ", curr->ant_index, curr->name);
+		else if (i == 2)
+			ft_printf("{green}L%d-%s{eoc} ", curr->ant_index, curr->name);
+		else if (i == 3)
+			ft_printf("{yellow}L%d-%s{eoc} ", curr->ant_index, curr->name);
 		else if (i == 4)
 			ft_printf("{magenta}L%d-%s{eoc} ", curr->ant_index, curr->name);
 		else if (i > 4)
-			ft_printf("{cyan}L%d-%s{eoc} ", curr->ant_index, curr->name);
+			ft_printf("{red}L%d-%s{eoc} ", curr->ant_index, curr->name);
 	}
 }
 
@@ -43,6 +43,7 @@ void	push_ants_along(t_path *pa, t_lem_in *lem_in, int until)
 	curr = pa;
 	changer = 0;
 	keeper = 0;
+	//ft_printf("untill: %d\n", until);
 	while (curr && until)
 	{
 		if (curr->head == 1)
@@ -96,9 +97,7 @@ int flows_used_this_run, int ant_index)
 	t_path	*curr;
 	t_path	*pa;
 	int		tmp;
-	int		emp;
-
-	emp = 0;
+	
 	tmp = lem_in->ants_end;
 	if (flows_used_this_run < 0)
 		flows_used_this_run = 0;
@@ -111,10 +110,8 @@ int flows_used_this_run, int ant_index)
 		push_ants_along(pa, lem_in, ant_index);
 		curr = lem_in->paths[flows_used_this_run];
 		print_paths_with_ants(curr, flows_used_this_run);
-		if (check_emptyness_of_path(pa) == 1)
-			emp++;
 		flows_used_this_run++;
 	}
 	flows_used_this_run--;
-	return (flows_used_this_run - emp);
+	return (flows_used_this_run);
 }

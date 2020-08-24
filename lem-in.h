@@ -42,11 +42,12 @@ typedef struct			s_room
 	int					visit2;
 	int					visit3;
 	int					bfs_level;
+	int					bfs_level2;
 	t_node              *link;
 	t_node              *outgoing_links;
     t_node              *incoming_links;
-	int					input_links;
 	int					output_links;
+	int					input_links;
 	struct s_room		*next;
 }						t_room;
 
@@ -169,11 +170,12 @@ t_room					*find_lowest_bfs(t_node *n, t_hashtable *ht_rooms);
 t_lem_in				*init_lem_in(void);
 t_coordinate			*coordinate_create(void);
 t_hashtable				*ht_create(void);
-void					second_plan(t_lem_in *lem_in);
+void					second_plan(t_lem_in *lem_in, int maxpath);
 void					create_way(t_lem_in *lem_in, int cut, int j);
 t_path					*create_one_path(t_room *cur);
 int						push_old_ants(t_lem_in *lem_in, int supermax,
 int flows_used_this_run, int ant_index);
+int						len_of_actual_paths(t_lem_in *lem_in, int maxpath);
 
 # define ERR_ANTS_NUM_PARSING	"ERROR: Number of ants is incorrent"
 # define ERR_ROOM_PARSING		"ERROR: Can\'t parse room"

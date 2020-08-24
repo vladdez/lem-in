@@ -30,7 +30,7 @@ void	print_ants_for_short_circuit(t_lem_in *lem_in)
 	i = 1;
 	while (i <= lem_in->ant_num)
 	{
-		ft_printf("{red}L%i-%s{eoc} ", i, lem_in->end->room_name);
+		ft_printf("{blue}L%i-%s{eoc} ", i, lem_in->end->room_name);
 		i++;
 	}
 	ft_printf("\n");
