@@ -27,17 +27,34 @@ t_lem_in	*parse(int fd, t_line **input)
 
 int			find_fd(char **av, int ac, int fd)
 {
-	if (av[1] && (fd = open(av[1], O_RDONLY, 0)) == -1)
-	{
-		if (fd == -1 && ac == 1)
-			fd = 0;
-		else
-			terminate(ERR_MAP);
-	}
+	fd = 0;
+	if (ac >= 2 && av[1][0] != '-')
+		fd = open(av[1], O_RDONLY);
 	return (fd);
 }
 
-void		lem(int fd)
+void		ft_bonus(t_lem_in *lem_in, int fd, char **av, int ac)
+{
+	int i;
+
+	i = 1;
+	while (i < ac)
+	{
+		if (ft_strequ(av[i], "-p") && fd != 0)
+			print_paths(lem_in->paths, lem_in->path_num);
+		else if (ft_strequ(av[i], "-r"))
+			print_ht_rooms(lem_in->ht_rooms);
+		else if (ft_strequ(av[i], "-rd"))
+			print_ht_rooms_with_direction(lem_in->ht_rooms);
+		else if (ft_strequ(av[i], "-l"))
+			ft_printf("\nLines printed: %d\n", lem_in->lines);
+		/*else
+			terminate(ERR_BONUS);*/
+		i++;
+	}
+}
+
+void		lem(int fd, char **av, int ac)
 {
 	t_lem_in	*lem_in;
 	t_line		*input;
@@ -49,21 +66,16 @@ void		lem(int fd)
 	q = bfs(lem_in);
 	if (lem_in->end->visit == UNVISITED)
 		terminate(ERR_NO_PATH);
-	//print_input(input, lem_in->ant_num);
-	//print_ht_rooms(lem_in->ht_rooms);
 	input_cleaning(lem_in);
 	deadlock_name = find_link_direction(lem_in->ht_rooms);
-	//print_ht_rooms_with_direction(lem_in->ht_rooms);
 	free_queue(q);
 	fd = create_paths(lem_in);
+	print_input(input, lem_in->ant_num);
 	if (fd != 0)
-	{
-		print_paths(lem_in->paths, lem_in->path_num);
 		flow(lem_in, 1, -1);
-	}
-	free_input(input);
-	free_lem_in(lem_in, fd);
-	free_deadlocks(deadlock_name);
+	if (ac >= 2)
+		ft_bonus(lem_in, fd, av, ac);
+	free_all(input, lem_in, fd, deadlock_name);
 }
 
 int			main(int ac, char **av)
@@ -71,10 +83,7 @@ int			main(int ac, char **av)
 	int fd;
 
 	fd = -1;
-	if (ac <= 2)
-	{
-		fd = find_fd(av, ac, 0);
-		lem(fd);
-	}
+	fd = find_fd(av, ac, 0);
+	lem(fd, av, ac);
 	return (0);
 }

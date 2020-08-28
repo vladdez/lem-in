@@ -90,13 +90,11 @@ int		lever(int ant_unused, t_lem_in *lem_in, int i)
 	}
 }
 
-void	flow(t_lem_in *lem_in, int ant_index, int flows_used_this_run)
+void		flow(t_lem_in *lem_in, int ant_index, int flows_used_this_run)
 {
-	int		lines;
 	int		supermax;
 	int		ant_unused;
 
-	lines = 0;
 	ant_unused = lem_in->ant_num;
 	point_heads(lem_in);
 	supermax = lever(ant_unused, lem_in, 0);
@@ -113,8 +111,7 @@ void	flow(t_lem_in *lem_in, int ant_index, int flows_used_this_run)
 			supermax = push_old_ants(lem_in, supermax,
 			flows_used_this_run, ant_index);
 		ft_printf("\n");
-		lines++;
+		lem_in->lines++;
 	}
-	ft_printf("\nlem_in->ant_num %d lem_in->ants_end: %d\n", lem_in->ant_num, lem_in->ants_end);
-	ft_printf("\nLines printed: %d\n", lines);
+	//ft_printf("\nlem_in->ant_num %d lem_in->ants_end: %d\n", lem_in->ant_num, lem_in->ants_end);
 }

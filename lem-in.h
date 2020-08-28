@@ -81,6 +81,7 @@ typedef struct			s_lem_in
 	int					room_num;
 	int					path_num;
 	int					ant_num;
+	int					lines;
 	t_room				*start;
 	t_room				*end;
 	t_coordinate		*coordinate;
@@ -184,6 +185,8 @@ void					handle_queue2(t_lem_in *lem_in, t_queue *q, char *current_room_name);
 void					create_way3(t_lem_in *lem_in, int cut, int j);
 t_room					*find_lowest_bfs3(t_node *n, t_hashtable *ht_rooms, t_lem_in *lem_in);
 int						create_way_sub2(t_lem_in *lem_in, t_path *tmp, t_room *cur, int j);
+void					free_all(t_line *input, t_lem_in *lem_in,
+int fd, t_node *deadlock_name);
 # define ERR_ANTS_NUM_PARSING	"ERROR: Number of ants is incorrent"
 # define ERR_ROOM_PARSING		"ERROR: Can\'t parse room"
 # define ERR_ROOM_INIT			"ERROR: Can\'t initialize room"
@@ -203,6 +206,7 @@ int						create_way_sub2(t_lem_in *lem_in, t_path *tmp, t_room *cur, int j);
 # define ERR_NO_PATH			"ERROR: Input has no path from start to end"
 # define ERR_PATH_INIT			"ERROR: Can\t init path"
 # define ERR_MAP				"ERROR"
+# define ERR_BONUS				"\nUse correct bonuses: -l, -p, -r, -rd"
 
 
 # define ROOM 2

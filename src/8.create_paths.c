@@ -122,7 +122,7 @@ int		len_of_actual_paths(t_lem_in *lem_in)
 	return (j);
 }
 
-void	check_order(t_path **paths, t_lem_in *lem_in, int maxpath)
+void	check_order(t_path **paths, t_lem_in *lem_in)
 {
 	t_path	**curr;
 	t_path	*tmp;
@@ -169,7 +169,7 @@ int		create_paths(t_lem_in *lem_in)
 		lem_in->path_num = i;
 		if (maxpath > i && i < 2)
 			second_plan(lem_in, maxpath);
-		check_order(lem_in->paths, lem_in, maxpath);
+		check_order(lem_in->paths, lem_in);
 	}
 	return (cut_s);
 }

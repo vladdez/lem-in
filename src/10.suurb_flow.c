@@ -27,7 +27,7 @@ int		is_enough(t_lem_in *lem_in)
 			totallen += lem_in->paths[p]->len;
 		p++;
 	}
-	ft_printf("totallen %d lem_in->ant_num %d\n", totallen, lem_in->ant_num);
+	//ft_printf("totallen %d lem_in->ant_num %d\n", totallen, lem_in->ant_num);
 	if (lem_in->ant_num > totallen)
 		return (0);
 	else
@@ -154,7 +154,7 @@ void	second_plan(t_lem_in *lem_in, int maxpath)
 	if (i != 1)
 	{
 		get_mem(lem_in);
-		ft_printf("NOT ENOUGH - %s\n", lem_in->mem->room_name);
+		ft_printf("NOT ENOUGH - %s", lem_in->mem->room_name);
 		free_paths(lem_in->paths, lem_in->path_num);
 		lem_in->paths = (t_path **)malloc(sizeof(t_path *) * (maxpath + 2));
 		while (i <= (maxpath + 1))

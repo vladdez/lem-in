@@ -23,6 +23,7 @@ void	print_input(t_line *input, int n)
 		ft_putendl(curr->data);
 		curr = curr->next;
 	}
+	ft_printf("\n");
 }
 
 void	print_paths(t_path **paths, int path_num)

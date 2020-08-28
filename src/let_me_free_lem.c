@@ -12,46 +12,6 @@
 
 #include "lem-in.h"
 
-void	free_paths(t_path **pa, int path_num)
-{
-	int		i;
-	t_path	*kill;
-
-	i = 0;
-	while (i <= path_num)
-	{
-		if (pa[i] != NULL)
-		{
-			while (pa[i])
-			{
-				kill = pa[i];
-				pa[i] = pa[i]->next;
-				free(kill->name);
-				free(kill);
-			}
-		}
-		i++;
-	}
-	if (pa != NULL)
-		free(pa);
-}
-
-void	free_node(t_node **sentenced)
-{
-	t_node *kill;
-
-	if (sentenced)
-		while ((*sentenced))
-		{
-			kill = (*sentenced);
-			(*sentenced) = (*sentenced)->next;
-			free(kill->node);
-			kill->node = NULL;
-			free(kill);
-			kill = NULL;
-		}
-}
-
 void	free_links(t_node *sentenced)
 {
 	t_node *kill;
@@ -121,4 +81,12 @@ void	free_lem_in(t_lem_in *lem_in, int fd)
 		free(lem_in);
 		(lem_in) = NULL;
 	}
+}
+
+void	free_all(t_line *input, t_lem_in *lem_in,
+int fd, t_node *deadlock_name)
+{
+	free_input(input);
+	free_lem_in(lem_in, fd);
+	free_deadlocks(deadlock_name);
 }

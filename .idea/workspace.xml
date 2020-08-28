@@ -37,26 +37,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30b215e4-c186-4ee7-a924-0d140b951c90" name="Default Changelist" comment="fixup! serious bags">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_20_20,_6_46_PM_[Default_Changelist]/0.3.validator.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_20_20,_6_46_PM_[Default_Changelist]/0.4.is.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_20_20,_6_46_PM_[Default_Changelist]/0.5.hash_table.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_20_20,_6_46_PM_[Default_Changelist]/0.8.dashes_in_input.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_20_20,_6_46_PM_[Default_Changelist]/1.main.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_20_20,_6_46_PM_[Default_Changelist]/5.find_links_direction.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_20_20,_6_46_PM_[Default_Changelist]/6.2.deadlock_cleaning.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_20_20,_6_46_PM_[Default_Changelist]/6.input_cleaning.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_20_20,_6_46_PM_[Default_Changelist]/8.create_paths.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_20_20,_6_46_PM_[Default_Changelist]/9.flow.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_20_20,_6_46_PM_[Default_Changelist]/9.flow2.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_20_20,_6_46_PM_[Default_Changelist]/irina5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_20_20,_6_46_PM_[Default_Changelist]/irina51" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_20_20,_6_46_PM_[Default_Changelist]/lem-in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_20_20,_6_46_PM_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_20_20__6_46_PM__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lem-in" beforeDir="false" afterPath="$PROJECT_DIR$/lem-in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/7.print.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/7.print.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/obj/7.print.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/obj/7.print.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/1.main.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/1.main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/8.create_paths.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/8.create_paths.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/obj/1.main.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/obj/1.main.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/obj/8.create_paths.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/obj/8.create_paths.o" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
