@@ -31,14 +31,17 @@ void	print_paths(t_path **paths, int path_num)
 	int		i;
 
 	i = 0;
-	ft_printf("layered network\n\n");
+	ft_printf("LAYERED NETWORK:\n\n");
 	while (i < path_num)
 	{
 		if (paths[i] != NULL)
 			curr = paths[i];
+		ft_printf("{green}way %d, lenght %d:{eoc}\n", i, curr->len);
 		while (curr)
 		{
-			ft_printf("%s-", curr->name);
+			if (curr != paths[i])
+				ft_printf("{red}->{eoc}");
+			ft_printf("{red}%s{eoc}", curr->name);
 			curr = curr->next;
 		}
 		if (paths[i] != NULL)

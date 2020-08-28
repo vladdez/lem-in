@@ -37,43 +37,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30b215e4-c186-4ee7-a924-0d140b951c90" name="Default Changelist" comment="fixup! serious bags">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_20_20,_6_46_PM_[Default_Changelist]/0.3.validator.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_20_20,_6_46_PM_[Default_Changelist]/0.4.is.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_20_20,_6_46_PM_[Default_Changelist]/0.5.hash_table.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_20_20,_6_46_PM_[Default_Changelist]/0.8.dashes_in_input.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_20_20,_6_46_PM_[Default_Changelist]/1.main.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_20_20,_6_46_PM_[Default_Changelist]/5.find_links_direction.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_20_20,_6_46_PM_[Default_Changelist]/6.2.deadlock_cleaning.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_20_20,_6_46_PM_[Default_Changelist]/6.input_cleaning.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_20_20,_6_46_PM_[Default_Changelist]/8.create_paths.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_20_20,_6_46_PM_[Default_Changelist]/9.flow.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_20_20,_6_46_PM_[Default_Changelist]/9.flow2.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_20_20,_6_46_PM_[Default_Changelist]/irina5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_20_20,_6_46_PM_[Default_Changelist]/irina51" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_20_20,_6_46_PM_[Default_Changelist]/lem-in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_20_20,_6_46_PM_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_20_20__6_46_PM__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/C.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/0.3.validator.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/0.3.validator.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/0.5.hash_table.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/0.5.hash_table.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/0.6.init_structure.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/0.6.init_structure.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/0.7.write_coordinate.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/0.7.write_coordinate.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/0.8.dashes_in_input.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/0.8.dashes_in_input.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/0.9.delete_links.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/0.9.delete_links.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/1.1.init.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/1.1.init.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/1.main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/1.main.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/10.suurb_flow.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/10.suurb_flow.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/2.1_parse_ants.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/2.1_parse_ants.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/2.parse_rooms.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/2.parse_rooms.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/3.parse_link.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/3.parse_link.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/4.bfs.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/4.bfs.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/5.find_links_direction.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/5.find_links_direction.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/6.2.deadlock_cleaning.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/6.2.deadlock_cleaning.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/6.input_cleaning.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/6.input_cleaning.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/7.2.print_hashtable.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/7.2.print_hashtable.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/7.print.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/7.print.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/8.create_paths.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/8.create_paths.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/8.create_paths2.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/8.create_paths2.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/9.flow.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/9.flow.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/9.flow2.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/9.flow2.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/let_me_free.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/let_me_free.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/let_me_free_lem.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/let_me_free_lem.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/irina5" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/irina5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/irina5.dSYM/Contents/Resources/DWARF/irina5" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/irina5.dSYM/Contents/Resources/DWARF/irina5" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lem-in" beforeDir="false" afterPath="$PROJECT_DIR$/lem-in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lem-in.h" beforeDir="false" afterPath="$PROJECT_DIR$/lem-in.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/0.6.init_structure.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/0.6.init_structure.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/1.1.init.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/1.1.init.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/1.main.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/1.main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/10.suurb_flow.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/10.suurb_flow.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/4.bfs.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/4.bfs.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/7.print.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/7.print.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/obj/7.print.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/obj/7.print.o" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,6 +97,11 @@
     </key>
   </component>
   <component name="RunManager" selected="CMake Application.irina5">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="irina" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="map0" REDIRECT_INPUT="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="irina5" TARGET_NAME="irina" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="irina5" RUN_TARGET_NAME="irina">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -132,6 +120,11 @@
     <configuration name="lem_in" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="maps/valid/vs/one_way/1.map" REDIRECT_INPUT="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="irina5" TARGET_NAME="l2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="irina5" RUN_TARGET_NAME="l2">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <list>
@@ -200,6 +193,7 @@
       <workItem from="1598098379106" duration="5576000" />
       <workItem from="1598181099890" duration="13149000" />
       <workItem from="1598255271459" duration="4849000" />
+      <workItem from="1598623886920" duration="818000" />
     </task>
     <servers />
   </component>
@@ -305,16 +299,16 @@
     <state width="2518" height="335" key="GridCell.Tab.1.right/0.0.2560.1440@0.0.2560.1440" timestamp="1593622323000" />
     <state width="1646" height="300" key="GridCell.Tab.1.right/0.23.2048.1049@0.23.2048.1049" timestamp="1598121939739" />
     <state width="1646" height="523" key="GridCell.Tab.1.right/0.23.2560.1337@0.23.2560.1337" timestamp="1598271907190" />
-    <state width="512" height="160" key="ImportCMakeProjectWizard.bottomPanel" timestamp="1598032648875">
-      <screen x="0" y="23" width="2048" height="1049" />
+    <state width="640" height="204" key="ImportCMakeProjectWizard.bottomPanel" timestamp="1598624121088">
+      <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="512" height="160" key="ImportCMakeProjectWizard.bottomPanel/0.23.2048.1049@0.23.2048.1049" timestamp="1598032648875" />
-    <state width="640" height="204" key="ImportCMakeProjectWizard.bottomPanel/0.23.2560.1337@0.23.2560.1337" timestamp="1597941320766" />
-    <state width="512" height="375" key="ImportCMakeProjectWizard.topPanel" timestamp="1598032648875">
-      <screen x="0" y="23" width="2048" height="1049" />
+    <state width="640" height="204" key="ImportCMakeProjectWizard.bottomPanel/0.23.2560.1337@0.23.2560.1337" timestamp="1598624121088" />
+    <state width="640" height="476" key="ImportCMakeProjectWizard.topPanel" timestamp="1598624121087">
+      <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="512" height="375" key="ImportCMakeProjectWizard.topPanel/0.23.2048.1049@0.23.2048.1049" timestamp="1598032648875" />
-    <state width="640" height="476" key="ImportCMakeProjectWizard.topPanel/0.23.2560.1337@0.23.2560.1337" timestamp="1597941320766" />
+    <state width="640" height="476" key="ImportCMakeProjectWizard.topPanel/0.23.2560.1337@0.23.2560.1337" timestamp="1598624121087" />
     <state x="95" y="105" width="1953" height="861" key="MergeDialog" timestamp="1598031018562">
       <screen x="0" y="23" width="2048" height="1049" />
     </state>
