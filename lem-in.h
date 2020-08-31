@@ -38,17 +38,15 @@ typedef struct			s_node
 typedef struct			s_room
 {
 	char				*room_name;
-	int					visit;
-	int					visit2;
-	int					visit3;
-	int					visit4;
+	int					bfs_visit;
+	int					ek_visit;
 	int					bfs_level;
-	int					bfs_level2;
 	t_node				*link;
 	t_node				*outgoing_links;
 	t_node				*incoming_links;
 	int					output_links;
 	int					input_links;
+	int					cut;
 	struct s_room		*next;
 }						t_room;
 
@@ -76,6 +74,7 @@ typedef struct			s_path
 
 typedef struct			s_lem_in
 {
+	t_path				**paths;
 	int					ants_start;
 	int					ants_end;
 	int					room_num;
@@ -86,9 +85,8 @@ typedef struct			s_lem_in
 	t_room				*end;
 	t_coordinate		*coordinate;
 	t_hashtable			*ht_rooms;
-	t_path				**paths;
 	t_room				*mem;
-	int					bfs_type;
+	int					bfs_used;
 }						t_lem_in;
 
 typedef struct			s_queue
@@ -114,10 +112,9 @@ int						ft_isint(char *tmp);
 int						is_command(char *str);
 int						iswhat(char *str);
 
-
 t_line					*read_line(t_line **input, int fd);
 void					validate_room(t_lem_in *lem_in, t_room *room);
-t_queue					*bfs(t_lem_in *lem_in);
+void					bfs(t_lem_in *lem_in);
 void					free_lem_in(t_lem_in *lem_in, int fd);
 void					check_links(t_lem_in *lem_in);
 void					free_input(t_line *input);
@@ -125,7 +122,7 @@ void					ft_strsplit_free(char ***strsplit);
 void					print_input(t_line *input, int n);
 int						sum_ascii(char *room_name);
 void					print_ht_rooms(t_hashtable *ht_rooms);
-t_node					*find_link_direction(t_hashtable *ht_rooms);
+void					find_link_direction(t_hashtable *ht_rooms);
 void					input_cleaning(t_lem_in *lem_in);
 t_node					*find_room_links(char *current_room_name, t_hashtable *ht_rooms);
 
@@ -180,13 +177,13 @@ int						push_old_ants(t_lem_in *lem_in, int supermax,
 		int flows_used_this_run, int ant_index);
 int						len_of_actual_paths(t_lem_in *lem_in);
 
-t_queue					*bfs2(t_lem_in *lem_in);
-void					handle_queue2(t_lem_in *lem_in, t_queue *q, char *current_room_name);
 void					create_way3(t_lem_in *lem_in, int cut, int j);
 t_room					*find_lowest_bfs3(t_node *n, t_hashtable *ht_rooms, t_lem_in *lem_in);
 int						create_way_sub2(t_lem_in *lem_in, t_path *tmp, t_room *cur, int j);
-void					free_all(t_line *input, t_lem_in *lem_in,
-int fd, t_node *deadlock_name);
+void					free_all(t_line *input, t_lem_in *lem_in, int fd);
+int		is_enough(t_lem_in *lem_in);
+void	get_mem(t_lem_in *lem_in, int i);
+void	print_links(t_room *tmp2);
 # define ERR_ANTS_NUM_PARSING	"ERROR: Number of ants is incorrent"
 # define ERR_ROOM_PARSING		"ERROR: Can\'t parse room"
 # define ERR_ROOM_INIT			"ERROR: Can\'t initialize room"
@@ -216,4 +213,6 @@ int fd, t_node *deadlock_name);
 # define VISITED 1
 # define UNVISITED 0
 
+# define CUTTED 1
+# define UNCUT 0
 #endif

@@ -94,7 +94,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/irina5.dir/src/0.9.delete_links.c.o"
   "CMakeFiles/irina5.dir/src/1.1.init.c.o"
   "CMakeFiles/irina5.dir/src/1.main.c.o"
-  "CMakeFiles/irina5.dir/src/10.suurb_flow.c.o"
+  "CMakeFiles/irina5.dir/src/10.if_crash.c.o"
+  "CMakeFiles/irina5.dir/src/10.if_crash2.c.o"
   "CMakeFiles/irina5.dir/src/2.1_parse_ants.c.o"
   "CMakeFiles/irina5.dir/src/2.parse_rooms.c.o"
   "CMakeFiles/irina5.dir/src/3.parse_link.c.o"
@@ -110,6 +111,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/irina5.dir/src/9.flow2.c.o"
   "CMakeFiles/irina5.dir/src/let_me_free.c.o"
   "CMakeFiles/irina5.dir/src/let_me_free_lem.c.o"
+  "CMakeFiles/irina5.dir/src/let_me_free_lem2.c.o"
   "irina5"
   "irina5.pdb"
 )

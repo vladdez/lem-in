@@ -24,18 +24,14 @@ t_room	*create_room(t_coordinate *coordinate, char *tmp)
 	if (!(room->room_name = ft_strdup(words[0])))
 		terminate(ERR_ROOM_INIT);
 	write_coor(coordinate, words);
-	room->visit = UNVISITED;
-	room->visit2 = UNVISITED;
-	room->visit3 = UNVISITED;
-	room->visit4 = UNVISITED;
+	room->bfs_visit = UNVISITED;
+	room->ek_visit = UNVISITED;
 	room->bfs_level = -1;
-	room->bfs_level2 = -1;
-	room->output_links = 0;
-	room->input_links = 0;
 	room->next = NULL;
 	room->link = neighbour_init();
 	room->outgoing_links = neighbour_init();
 	room->incoming_links = neighbour_init();
+	room->cut = UNCUT;
 	ft_strsplit_free(&words);
 	return (room);
 }

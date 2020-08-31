@@ -37,11 +37,267 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30b215e4-c186-4ee7-a924-0d140b951c90" name="Default Changelist" comment="fixup! serious bags">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/0.1.errors.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/0.2.read_line.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/0.3.validator.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/0.4.is.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/0.5.hash_table.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/0.6.init_structure.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/0.7.write_coordinate.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/0.8.dashes_in_input.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/1.1.init.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/1.main.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/2.1_parse_ants.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/2.parse_rooms.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/3.parse_link.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/4.bfs.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/5.find_links_direction.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/6.2.deadlock_cleaning.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/6.input_cleaning.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/7.print.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/8.create_paths.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/8.create_paths2.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/9.flow.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/9.flow2.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/color.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/conversion.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/free.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_atoi.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_bzero.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_isalnum.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_isalpha.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_isascii.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_isdigit.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_isprint.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_itoa.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_lstadd.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_lstdel.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_lstdelone.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_lstiter.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_lstmap.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_lstnew.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_memalloc.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_memccpy.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_memchr.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_memcmp.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_memcpy.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_memdel.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_memmove.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_memset.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_print_bits.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_printf.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_putchar.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_putchar_fd.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_putendl.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_putendl_fd.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_putnbr.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_putnbr_fd.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_putstr.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_putstr_fd.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_reverse_bits.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_sort_array.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_strcat.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_strchr.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_strclr.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_strcmp.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_strcpy.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_strdel.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_strdup.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_strequ.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_striter.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_striteri.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_strjoin.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_strlcat.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_strlen.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_strmap.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_strmapi.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_strncat.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_strncmp.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_strncpy.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_strndup.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_strnequ.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_strnew.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_strnstr.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_strrchr.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_strrev.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_strsplit.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_strstr.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_strsub.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_strtrim.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_swap_bits.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_tolower.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_toupper.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/ft_words.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/get_next_line.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/irina5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/lem-in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/let_me_free.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/let_me_free_lem.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/libft.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/multiplier.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/neg_exp.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/prec.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/prec2.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/print_float.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/print_integer.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/print_octal_x.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/print_pointer_char.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/print_string.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/print_unsigned.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/read_format.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/substr.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/sum_char.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20,_8_25_PM_[Default_Changelist]1/tools.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_21_20__8_25_PM__Default_Changelist_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/.gitmodules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/author" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/images/algorithm_align_links.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/images/algorithm_bfs.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/images/algorithm_count_io_links.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/images/algorithm_delete_dead_ends.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/images/algorithm_delete_input_forks.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/images/algorithm_delete_output_forks.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/images/algorithm_delete_useless_links.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/images/algorithm_parse.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/images/lem-in.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/images/lem-in_(verbose_mode).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/images/lem-in_vs_(main_screen).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/images/lem-in_vs_(welcome_screen).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/includes/error_message.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/includes/lem_in.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/includes/vs.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/lem-in.en.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/resources/Minercraftory.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/resources/ant-man.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/resources/background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/resources/lem-in.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/resources/room_middle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/resources/room_start_end.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/resources/vector/ant-man_and_room.ai" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/resources/vector/background.ai" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/resources/vector/lem-in.ai" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/sources/align_links.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/sources/ants.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/sources/ants_locations.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/sources/bfs.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/sources/count_io_links.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/sources/delete_input_forks.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/sources/delete_links.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/sources/delete_output_forks.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/sources/find_ant.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/sources/find_link.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/sources/find_room.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/sources/free.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/sources/free_2.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/sources/is.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/sources/lem_in.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/sources/parse.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/sources/parse_ants.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/sources/parse_links.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/sources/parse_locations.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/sources/parse_rooms.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/sources/parse_turns.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/sources/paths.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/sources/perform_turns.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/sources/perform_turns_utils.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/sources/print.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/sources/read_next_line.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/sources/turn_location.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/sources/utils.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/sources/validate.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/sources/vs.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/sources/vs_clear.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/sources/vs_color.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/sources/vs_create.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/sources/vs_draw.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/sources/vs_draw_scene.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/sources/vs_event.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/sources/vs_init.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/sources/vs_rect.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/sources/vs_shift.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra/sources/vs_utils.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/0.3.validator.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/0.3.validator.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/0.4.is.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/0.4.is.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/0.5.hash_table.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/0.5.hash_table.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/0.6.init_structure.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/0.6.init_structure.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/0.7.write_coordinate.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/0.7.write_coordinate.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/0.8.dashes_in_input.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/0.8.dashes_in_input.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/0.9.delete_links.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/0.9.delete_links.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/1.1.init.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/1.1.init.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/1.main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/1.main.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/10.suurb_flow.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/2.1_parse_ants.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/2.1_parse_ants.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/2.parse_rooms.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/2.parse_rooms.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/3.parse_link.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/3.parse_link.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/4.bfs.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/4.bfs.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/5.find_links_direction.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/5.find_links_direction.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/6.2.deadlock_cleaning.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/6.2.deadlock_cleaning.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/6.input_cleaning.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/6.input_cleaning.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/7.2.print_hashtable.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/7.2.print_hashtable.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/7.print.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/7.print.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/8.create_paths.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/8.create_paths.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/8.create_paths2.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/8.create_paths2.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/9.flow.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/9.flow.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/9.flow2.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/9.flow2.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/let_me_free.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/let_me_free.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/let_me_free_lem.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/let_me_free_lem.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/irina5" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/irina5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/irina5.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/irina5.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/irina5.dSYM/Contents/Resources/DWARF/irina5" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/irina5.dSYM/Contents/Resources/DWARF/irina5" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lem-in" beforeDir="false" afterPath="$PROJECT_DIR$/lem-in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lem-in.dSYM/Contents/Resources/DWARF/lem-in" beforeDir="false" afterPath="$PROJECT_DIR$/lem-in.dSYM/Contents/Resources/DWARF/lem-in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lem-in.h" beforeDir="false" afterPath="$PROJECT_DIR$/lem-in.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/libft.a" beforeDir="false" afterPath="$PROJECT_DIR$/libft/libft.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/0.6.init_structure.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/0.6.init_structure.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/1.1.init.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/1.1.init.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/1.main.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/1.main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/10.suurb_flow.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/10.suurb_flow2.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/4.bfs.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/4.bfs.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/5.find_links_direction.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/5.find_links_direction.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/7.2.print_hashtable.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/7.2.print_hashtable.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/8.create_paths.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/8.create_paths.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/let_me_free.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/let_me_free.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/let_me_free_lem.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/let_me_free_lem.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/obj/0.3.validator.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/obj/0.3.validator.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/obj/0.5.hash_table.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/obj/0.5.hash_table.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/obj/0.6.init_structure.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/obj/0.6.init_structure.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/obj/0.8.dashes_in_input.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/obj/0.8.dashes_in_input.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/obj/0.9.delete_links.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/obj/0.9.delete_links.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/obj/1.1.init.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/obj/1.1.init.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/obj/1.main.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/obj/1.main.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/obj/10.suurb_flow.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/obj/10.suurb_flow2.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/obj/2.1_parse_ants.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/obj/2.1_parse_ants.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/obj/2.parse_rooms.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/obj/2.parse_rooms.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/obj/3.parse_link.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/obj/3.parse_link.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/obj/4.bfs.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/obj/4.bfs.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/obj/5.find_links_direction.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/obj/5.find_links_direction.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/obj/6.2.deadlock_cleaning.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/obj/6.2.deadlock_cleaning.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/obj/6.input_cleaning.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/obj/6.input_cleaning.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/obj/7.2.print_hashtable.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/obj/7.2.print_hashtable.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/obj/8.create_paths.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/obj/8.create_paths.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/obj/8.create_paths2.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/obj/8.create_paths2.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/obj/9.flow.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/obj/9.flow.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/obj/9.flow2.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/obj/9.flow2.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/obj/let_me_free.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/obj/let_me_free.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/obj/let_me_free_lem.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/obj/let_me_free_lem.o" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,9 +338,9 @@
     </key>
   </component>
   <component name="RunManager" selected="CMake Application.irina5">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
       </method>
     </configuration>
     <configuration name="irina" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="map0" REDIRECT_INPUT="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="irina5" TARGET_NAME="irina" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="irina5" RUN_TARGET_NAME="irina">
@@ -179,6 +435,11 @@
       <workItem from="1598181099890" duration="13149000" />
       <workItem from="1598255271459" duration="4849000" />
       <workItem from="1598623886920" duration="818000" />
+      <workItem from="1598778822860" duration="899000" />
+      <workItem from="1598779827356" duration="5005000" />
+      <workItem from="1598790619068" duration="6519000" />
+      <workItem from="1598876927956" duration="8401000" />
+      <workItem from="1598893230152" duration="1591000" />
     </task>
     <servers />
   </component>
@@ -214,12 +475,12 @@
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="476" y="300" key="#C/C++/0.23.2560.1337@0.23.2560.1337" timestamp="1597652917633" />
-    <state x="744" y="353" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598268519743">
+    <state x="744" y="353" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598894994179">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="369" y="222" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1594912325660" />
     <state x="595" y="282" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2048.1049@0.23.2048.1049" timestamp="1598116460105" />
-    <state x="744" y="353" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1598268519743" />
+    <state x="744" y="353" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1598894994179" />
     <state x="1067" y="403" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1596374426957">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
@@ -228,62 +489,62 @@
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="462" y="286" key="CommitChangelistDialog2/0.23.2560.1337@0.23.2560.1337" timestamp="1597938226161" />
-    <state width="1646" height="523" key="GridCell.Tab.0.bottom" timestamp="1598271907189">
+    <state width="1646" height="523" key="GridCell.Tab.0.bottom" timestamp="1598895093152">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="1398" height="329" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1594912894679" />
     <state width="2518" height="335" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1593622321567" />
     <state width="1646" height="401" key="GridCell.Tab.0.bottom/0.23.2048.1049@0.23.2048.1049" timestamp="1598121939754" />
-    <state width="1646" height="523" key="GridCell.Tab.0.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1598271907189" />
-    <state width="1646" height="523" key="GridCell.Tab.0.center" timestamp="1598271907188">
+    <state width="1646" height="523" key="GridCell.Tab.0.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1598895093152" />
+    <state width="1646" height="523" key="GridCell.Tab.0.center" timestamp="1598895093152">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="1398" height="329" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1594912894676" />
     <state width="2518" height="335" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1593622321567" />
     <state width="1646" height="401" key="GridCell.Tab.0.center/0.23.2048.1049@0.23.2048.1049" timestamp="1598121939753" />
-    <state width="1646" height="523" key="GridCell.Tab.0.center/0.23.2560.1337@0.23.2560.1337" timestamp="1598271907188" />
-    <state width="1646" height="523" key="GridCell.Tab.0.left" timestamp="1598271907188">
+    <state width="1646" height="523" key="GridCell.Tab.0.center/0.23.2560.1337@0.23.2560.1337" timestamp="1598895093152" />
+    <state width="1646" height="523" key="GridCell.Tab.0.left" timestamp="1598895093151">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="1398" height="329" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1594912894675" />
     <state width="2518" height="335" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1593622321566" />
     <state width="1646" height="401" key="GridCell.Tab.0.left/0.23.2048.1049@0.23.2048.1049" timestamp="1598121939752" />
-    <state width="1646" height="523" key="GridCell.Tab.0.left/0.23.2560.1337@0.23.2560.1337" timestamp="1598271907188" />
-    <state width="1646" height="523" key="GridCell.Tab.0.right" timestamp="1598271907189">
+    <state width="1646" height="523" key="GridCell.Tab.0.left/0.23.2560.1337@0.23.2560.1337" timestamp="1598895093151" />
+    <state width="1646" height="523" key="GridCell.Tab.0.right" timestamp="1598895093152">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="1398" height="329" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1594912894678" />
     <state width="2518" height="335" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1593622321567" />
     <state width="1646" height="401" key="GridCell.Tab.0.right/0.23.2048.1049@0.23.2048.1049" timestamp="1598121939753" />
-    <state width="1646" height="523" key="GridCell.Tab.0.right/0.23.2560.1337@0.23.2560.1337" timestamp="1598271907189" />
-    <state width="1646" height="523" key="GridCell.Tab.1.bottom" timestamp="1598271907190">
+    <state width="1646" height="523" key="GridCell.Tab.0.right/0.23.2560.1337@0.23.2560.1337" timestamp="1598895093152" />
+    <state width="1646" height="523" key="GridCell.Tab.1.bottom" timestamp="1598895094543">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="1398" height="329" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1594912894681" />
     <state width="2518" height="335" key="GridCell.Tab.1.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1593622323000" />
     <state width="1646" height="300" key="GridCell.Tab.1.bottom/0.23.2048.1049@0.23.2048.1049" timestamp="1598121939739" />
-    <state width="1646" height="523" key="GridCell.Tab.1.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1598271907190" />
-    <state width="1646" height="523" key="GridCell.Tab.1.center" timestamp="1598271907190">
+    <state width="1646" height="523" key="GridCell.Tab.1.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1598895094543" />
+    <state width="1646" height="523" key="GridCell.Tab.1.center" timestamp="1598895094542">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="1398" height="329" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1594912894680" />
     <state width="2518" height="335" key="GridCell.Tab.1.center/0.0.2560.1440@0.0.2560.1440" timestamp="1593622322999" />
     <state width="1646" height="300" key="GridCell.Tab.1.center/0.23.2048.1049@0.23.2048.1049" timestamp="1598121939739" />
-    <state width="1646" height="523" key="GridCell.Tab.1.center/0.23.2560.1337@0.23.2560.1337" timestamp="1598271907190" />
-    <state width="1646" height="523" key="GridCell.Tab.1.left" timestamp="1598271907190">
+    <state width="1646" height="523" key="GridCell.Tab.1.center/0.23.2560.1337@0.23.2560.1337" timestamp="1598895094542" />
+    <state width="1646" height="523" key="GridCell.Tab.1.left" timestamp="1598895094542">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="1398" height="329" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1594912894679" />
     <state width="2518" height="335" key="GridCell.Tab.1.left/0.0.2560.1440@0.0.2560.1440" timestamp="1593622322999" />
     <state width="1646" height="300" key="GridCell.Tab.1.left/0.23.2048.1049@0.23.2048.1049" timestamp="1598121939738" />
-    <state width="1646" height="523" key="GridCell.Tab.1.left/0.23.2560.1337@0.23.2560.1337" timestamp="1598271907190" />
-    <state width="1646" height="523" key="GridCell.Tab.1.right" timestamp="1598271907190">
+    <state width="1646" height="523" key="GridCell.Tab.1.left/0.23.2560.1337@0.23.2560.1337" timestamp="1598895094542" />
+    <state width="1646" height="523" key="GridCell.Tab.1.right" timestamp="1598895094542">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="1398" height="329" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1594912894681" />
     <state width="2518" height="335" key="GridCell.Tab.1.right/0.0.2560.1440@0.0.2560.1440" timestamp="1593622323000" />
     <state width="1646" height="300" key="GridCell.Tab.1.right/0.23.2048.1049@0.23.2048.1049" timestamp="1598121939739" />
-    <state width="1646" height="523" key="GridCell.Tab.1.right/0.23.2560.1337@0.23.2560.1337" timestamp="1598271907190" />
+    <state width="1646" height="523" key="GridCell.Tab.1.right/0.23.2560.1337@0.23.2560.1337" timestamp="1598895094542" />
     <state width="640" height="204" key="ImportCMakeProjectWizard.bottomPanel" timestamp="1598624121088">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
@@ -320,24 +581,9 @@
           <option name="timeStamp" value="11" />
         </breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/9.flow.c</url>
-          <line>93</line>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/10.suurb_flow.c</url>
-          <line>160</line>
-          <option name="timeStamp" value="35" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/10.suurb_flow.c</url>
-          <line>159</line>
-          <option name="timeStamp" value="37" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/10.suurb_flow.c</url>
-          <line>84</line>
-          <option name="timeStamp" value="39" />
+          <url>file://$PROJECT_DIR$/src/10.if_crash.c</url>
+          <line>92</line>
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

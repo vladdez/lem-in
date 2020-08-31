@@ -378,7 +378,10 @@
 		<Unit filename="/Users/kysgramo/irina5/src/1.main.c">
 			<Option target="irina5"/>
 		</Unit>
-		<Unit filename="/Users/kysgramo/irina5/src/10.suurb_flow.c">
+		<Unit filename="/Users/kysgramo/irina5/src/10.if_crash.c">
+			<Option target="irina5"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina5/src/10.if_crash2.c">
 			<Option target="irina5"/>
 		</Unit>
 		<Unit filename="/Users/kysgramo/irina5/src/2.1_parse_ants.c">
@@ -424,6 +427,9 @@
 			<Option target="irina5"/>
 		</Unit>
 		<Unit filename="/Users/kysgramo/irina5/src/let_me_free_lem.c">
+			<Option target="irina5"/>
+		</Unit>
+		<Unit filename="/Users/kysgramo/irina5/src/let_me_free_lem2.c">
 			<Option target="irina5"/>
 		</Unit>
 		<Unit filename="/Users/kysgramo/irina5/CMakeLists.txt">

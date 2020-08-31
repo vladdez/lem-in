@@ -83,6 +83,7 @@ void	print_ht_rooms(t_hashtable *ht_rooms)
 	t_room	*tmp2;
 
 	i = 0;
+	ft_printf("\n");
 	while (i < TABLE_SIZE)
 	{
 		if (ht_rooms->room[i] != NULL)

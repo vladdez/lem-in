@@ -1312,22 +1312,35 @@ CMakeFiles/irina5.dir/src/1.main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/irina5.dir/src/1.main.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/kysgramo/irina5/src/1.main.c -o CMakeFiles/irina5.dir/src/1.main.c.s
 
-CMakeFiles/irina5.dir/src/10.suurb_flow.c.o: CMakeFiles/irina5.dir/flags.make
-CMakeFiles/irina5.dir/src/10.suurb_flow.c.o: ../src/10.suurb_flow.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kysgramo/irina5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building C object CMakeFiles/irina5.dir/src/10.suurb_flow.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/irina5.dir/src/10.suurb_flow.c.o   -c /Users/kysgramo/irina5/src/10.suurb_flow.c
+CMakeFiles/irina5.dir/src/10.if_crash.c.o: CMakeFiles/irina5.dir/flags.make
+CMakeFiles/irina5.dir/src/10.if_crash.c.o: ../src/10.if_crash.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kysgramo/irina5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building C object CMakeFiles/irina5.dir/src/10.if_crash.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/irina5.dir/src/10.if_crash.c.o   -c /Users/kysgramo/irina5/src/10.if_crash.c
 
-CMakeFiles/irina5.dir/src/10.suurb_flow.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/irina5.dir/src/10.suurb_flow.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/kysgramo/irina5/src/10.suurb_flow.c > CMakeFiles/irina5.dir/src/10.suurb_flow.c.i
+CMakeFiles/irina5.dir/src/10.if_crash.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/irina5.dir/src/10.if_crash.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/kysgramo/irina5/src/10.if_crash.c > CMakeFiles/irina5.dir/src/10.if_crash.c.i
 
-CMakeFiles/irina5.dir/src/10.suurb_flow.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/irina5.dir/src/10.suurb_flow.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/kysgramo/irina5/src/10.suurb_flow.c -o CMakeFiles/irina5.dir/src/10.suurb_flow.c.s
+CMakeFiles/irina5.dir/src/10.if_crash.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/irina5.dir/src/10.if_crash.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/kysgramo/irina5/src/10.if_crash.c -o CMakeFiles/irina5.dir/src/10.if_crash.c.s
+
+CMakeFiles/irina5.dir/src/10.if_crash2.c.o: CMakeFiles/irina5.dir/flags.make
+CMakeFiles/irina5.dir/src/10.if_crash2.c.o: ../src/10.if_crash2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kysgramo/irina5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building C object CMakeFiles/irina5.dir/src/10.if_crash2.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/irina5.dir/src/10.if_crash2.c.o   -c /Users/kysgramo/irina5/src/10.if_crash2.c
+
+CMakeFiles/irina5.dir/src/10.if_crash2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/irina5.dir/src/10.if_crash2.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/kysgramo/irina5/src/10.if_crash2.c > CMakeFiles/irina5.dir/src/10.if_crash2.c.i
+
+CMakeFiles/irina5.dir/src/10.if_crash2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/irina5.dir/src/10.if_crash2.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/kysgramo/irina5/src/10.if_crash2.c -o CMakeFiles/irina5.dir/src/10.if_crash2.c.s
 
 CMakeFiles/irina5.dir/src/2.1_parse_ants.c.o: CMakeFiles/irina5.dir/flags.make
 CMakeFiles/irina5.dir/src/2.1_parse_ants.c.o: ../src/2.1_parse_ants.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kysgramo/irina5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building C object CMakeFiles/irina5.dir/src/2.1_parse_ants.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kysgramo/irina5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building C object CMakeFiles/irina5.dir/src/2.1_parse_ants.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/irina5.dir/src/2.1_parse_ants.c.o   -c /Users/kysgramo/irina5/src/2.1_parse_ants.c
 
 CMakeFiles/irina5.dir/src/2.1_parse_ants.c.i: cmake_force
@@ -1340,7 +1353,7 @@ CMakeFiles/irina5.dir/src/2.1_parse_ants.c.s: cmake_force
 
 CMakeFiles/irina5.dir/src/2.parse_rooms.c.o: CMakeFiles/irina5.dir/flags.make
 CMakeFiles/irina5.dir/src/2.parse_rooms.c.o: ../src/2.parse_rooms.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kysgramo/irina5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building C object CMakeFiles/irina5.dir/src/2.parse_rooms.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kysgramo/irina5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building C object CMakeFiles/irina5.dir/src/2.parse_rooms.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/irina5.dir/src/2.parse_rooms.c.o   -c /Users/kysgramo/irina5/src/2.parse_rooms.c
 
 CMakeFiles/irina5.dir/src/2.parse_rooms.c.i: cmake_force
@@ -1353,7 +1366,7 @@ CMakeFiles/irina5.dir/src/2.parse_rooms.c.s: cmake_force
 
 CMakeFiles/irina5.dir/src/3.parse_link.c.o: CMakeFiles/irina5.dir/flags.make
 CMakeFiles/irina5.dir/src/3.parse_link.c.o: ../src/3.parse_link.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kysgramo/irina5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building C object CMakeFiles/irina5.dir/src/3.parse_link.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kysgramo/irina5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building C object CMakeFiles/irina5.dir/src/3.parse_link.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/irina5.dir/src/3.parse_link.c.o   -c /Users/kysgramo/irina5/src/3.parse_link.c
 
 CMakeFiles/irina5.dir/src/3.parse_link.c.i: cmake_force
@@ -1366,7 +1379,7 @@ CMakeFiles/irina5.dir/src/3.parse_link.c.s: cmake_force
 
 CMakeFiles/irina5.dir/src/4.bfs.c.o: CMakeFiles/irina5.dir/flags.make
 CMakeFiles/irina5.dir/src/4.bfs.c.o: ../src/4.bfs.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kysgramo/irina5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building C object CMakeFiles/irina5.dir/src/4.bfs.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kysgramo/irina5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Building C object CMakeFiles/irina5.dir/src/4.bfs.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/irina5.dir/src/4.bfs.c.o   -c /Users/kysgramo/irina5/src/4.bfs.c
 
 CMakeFiles/irina5.dir/src/4.bfs.c.i: cmake_force
@@ -1379,7 +1392,7 @@ CMakeFiles/irina5.dir/src/4.bfs.c.s: cmake_force
 
 CMakeFiles/irina5.dir/src/5.find_links_direction.c.o: CMakeFiles/irina5.dir/flags.make
 CMakeFiles/irina5.dir/src/5.find_links_direction.c.o: ../src/5.find_links_direction.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kysgramo/irina5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Building C object CMakeFiles/irina5.dir/src/5.find_links_direction.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kysgramo/irina5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_102) "Building C object CMakeFiles/irina5.dir/src/5.find_links_direction.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/irina5.dir/src/5.find_links_direction.c.o   -c /Users/kysgramo/irina5/src/5.find_links_direction.c
 
 CMakeFiles/irina5.dir/src/5.find_links_direction.c.i: cmake_force
@@ -1392,7 +1405,7 @@ CMakeFiles/irina5.dir/src/5.find_links_direction.c.s: cmake_force
 
 CMakeFiles/irina5.dir/src/6.2.deadlock_cleaning.c.o: CMakeFiles/irina5.dir/flags.make
 CMakeFiles/irina5.dir/src/6.2.deadlock_cleaning.c.o: ../src/6.2.deadlock_cleaning.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kysgramo/irina5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_102) "Building C object CMakeFiles/irina5.dir/src/6.2.deadlock_cleaning.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kysgramo/irina5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_103) "Building C object CMakeFiles/irina5.dir/src/6.2.deadlock_cleaning.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/irina5.dir/src/6.2.deadlock_cleaning.c.o   -c /Users/kysgramo/irina5/src/6.2.deadlock_cleaning.c
 
 CMakeFiles/irina5.dir/src/6.2.deadlock_cleaning.c.i: cmake_force
@@ -1405,7 +1418,7 @@ CMakeFiles/irina5.dir/src/6.2.deadlock_cleaning.c.s: cmake_force
 
 CMakeFiles/irina5.dir/src/6.input_cleaning.c.o: CMakeFiles/irina5.dir/flags.make
 CMakeFiles/irina5.dir/src/6.input_cleaning.c.o: ../src/6.input_cleaning.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kysgramo/irina5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_103) "Building C object CMakeFiles/irina5.dir/src/6.input_cleaning.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kysgramo/irina5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_104) "Building C object CMakeFiles/irina5.dir/src/6.input_cleaning.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/irina5.dir/src/6.input_cleaning.c.o   -c /Users/kysgramo/irina5/src/6.input_cleaning.c
 
 CMakeFiles/irina5.dir/src/6.input_cleaning.c.i: cmake_force
@@ -1418,7 +1431,7 @@ CMakeFiles/irina5.dir/src/6.input_cleaning.c.s: cmake_force
 
 CMakeFiles/irina5.dir/src/7.2.print_hashtable.c.o: CMakeFiles/irina5.dir/flags.make
 CMakeFiles/irina5.dir/src/7.2.print_hashtable.c.o: ../src/7.2.print_hashtable.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kysgramo/irina5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_104) "Building C object CMakeFiles/irina5.dir/src/7.2.print_hashtable.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kysgramo/irina5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_105) "Building C object CMakeFiles/irina5.dir/src/7.2.print_hashtable.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/irina5.dir/src/7.2.print_hashtable.c.o   -c /Users/kysgramo/irina5/src/7.2.print_hashtable.c
 
 CMakeFiles/irina5.dir/src/7.2.print_hashtable.c.i: cmake_force
@@ -1431,7 +1444,7 @@ CMakeFiles/irina5.dir/src/7.2.print_hashtable.c.s: cmake_force
 
 CMakeFiles/irina5.dir/src/7.print.c.o: CMakeFiles/irina5.dir/flags.make
 CMakeFiles/irina5.dir/src/7.print.c.o: ../src/7.print.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kysgramo/irina5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_105) "Building C object CMakeFiles/irina5.dir/src/7.print.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kysgramo/irina5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_106) "Building C object CMakeFiles/irina5.dir/src/7.print.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/irina5.dir/src/7.print.c.o   -c /Users/kysgramo/irina5/src/7.print.c
 
 CMakeFiles/irina5.dir/src/7.print.c.i: cmake_force
@@ -1444,7 +1457,7 @@ CMakeFiles/irina5.dir/src/7.print.c.s: cmake_force
 
 CMakeFiles/irina5.dir/src/8.create_paths.c.o: CMakeFiles/irina5.dir/flags.make
 CMakeFiles/irina5.dir/src/8.create_paths.c.o: ../src/8.create_paths.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kysgramo/irina5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_106) "Building C object CMakeFiles/irina5.dir/src/8.create_paths.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kysgramo/irina5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_107) "Building C object CMakeFiles/irina5.dir/src/8.create_paths.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/irina5.dir/src/8.create_paths.c.o   -c /Users/kysgramo/irina5/src/8.create_paths.c
 
 CMakeFiles/irina5.dir/src/8.create_paths.c.i: cmake_force
@@ -1457,7 +1470,7 @@ CMakeFiles/irina5.dir/src/8.create_paths.c.s: cmake_force
 
 CMakeFiles/irina5.dir/src/8.create_paths2.c.o: CMakeFiles/irina5.dir/flags.make
 CMakeFiles/irina5.dir/src/8.create_paths2.c.o: ../src/8.create_paths2.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kysgramo/irina5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_107) "Building C object CMakeFiles/irina5.dir/src/8.create_paths2.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kysgramo/irina5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_108) "Building C object CMakeFiles/irina5.dir/src/8.create_paths2.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/irina5.dir/src/8.create_paths2.c.o   -c /Users/kysgramo/irina5/src/8.create_paths2.c
 
 CMakeFiles/irina5.dir/src/8.create_paths2.c.i: cmake_force
@@ -1470,7 +1483,7 @@ CMakeFiles/irina5.dir/src/8.create_paths2.c.s: cmake_force
 
 CMakeFiles/irina5.dir/src/9.flow.c.o: CMakeFiles/irina5.dir/flags.make
 CMakeFiles/irina5.dir/src/9.flow.c.o: ../src/9.flow.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kysgramo/irina5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_108) "Building C object CMakeFiles/irina5.dir/src/9.flow.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kysgramo/irina5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_109) "Building C object CMakeFiles/irina5.dir/src/9.flow.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/irina5.dir/src/9.flow.c.o   -c /Users/kysgramo/irina5/src/9.flow.c
 
 CMakeFiles/irina5.dir/src/9.flow.c.i: cmake_force
@@ -1483,7 +1496,7 @@ CMakeFiles/irina5.dir/src/9.flow.c.s: cmake_force
 
 CMakeFiles/irina5.dir/src/9.flow2.c.o: CMakeFiles/irina5.dir/flags.make
 CMakeFiles/irina5.dir/src/9.flow2.c.o: ../src/9.flow2.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kysgramo/irina5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_109) "Building C object CMakeFiles/irina5.dir/src/9.flow2.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kysgramo/irina5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_110) "Building C object CMakeFiles/irina5.dir/src/9.flow2.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/irina5.dir/src/9.flow2.c.o   -c /Users/kysgramo/irina5/src/9.flow2.c
 
 CMakeFiles/irina5.dir/src/9.flow2.c.i: cmake_force
@@ -1496,7 +1509,7 @@ CMakeFiles/irina5.dir/src/9.flow2.c.s: cmake_force
 
 CMakeFiles/irina5.dir/src/let_me_free.c.o: CMakeFiles/irina5.dir/flags.make
 CMakeFiles/irina5.dir/src/let_me_free.c.o: ../src/let_me_free.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kysgramo/irina5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_110) "Building C object CMakeFiles/irina5.dir/src/let_me_free.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kysgramo/irina5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_111) "Building C object CMakeFiles/irina5.dir/src/let_me_free.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/irina5.dir/src/let_me_free.c.o   -c /Users/kysgramo/irina5/src/let_me_free.c
 
 CMakeFiles/irina5.dir/src/let_me_free.c.i: cmake_force
@@ -1509,7 +1522,7 @@ CMakeFiles/irina5.dir/src/let_me_free.c.s: cmake_force
 
 CMakeFiles/irina5.dir/src/let_me_free_lem.c.o: CMakeFiles/irina5.dir/flags.make
 CMakeFiles/irina5.dir/src/let_me_free_lem.c.o: ../src/let_me_free_lem.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kysgramo/irina5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_111) "Building C object CMakeFiles/irina5.dir/src/let_me_free_lem.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kysgramo/irina5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_112) "Building C object CMakeFiles/irina5.dir/src/let_me_free_lem.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/irina5.dir/src/let_me_free_lem.c.o   -c /Users/kysgramo/irina5/src/let_me_free_lem.c
 
 CMakeFiles/irina5.dir/src/let_me_free_lem.c.i: cmake_force
@@ -1519,6 +1532,19 @@ CMakeFiles/irina5.dir/src/let_me_free_lem.c.i: cmake_force
 CMakeFiles/irina5.dir/src/let_me_free_lem.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/irina5.dir/src/let_me_free_lem.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/kysgramo/irina5/src/let_me_free_lem.c -o CMakeFiles/irina5.dir/src/let_me_free_lem.c.s
+
+CMakeFiles/irina5.dir/src/let_me_free_lem2.c.o: CMakeFiles/irina5.dir/flags.make
+CMakeFiles/irina5.dir/src/let_me_free_lem2.c.o: ../src/let_me_free_lem2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kysgramo/irina5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_113) "Building C object CMakeFiles/irina5.dir/src/let_me_free_lem2.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/irina5.dir/src/let_me_free_lem2.c.o   -c /Users/kysgramo/irina5/src/let_me_free_lem2.c
+
+CMakeFiles/irina5.dir/src/let_me_free_lem2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/irina5.dir/src/let_me_free_lem2.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/kysgramo/irina5/src/let_me_free_lem2.c > CMakeFiles/irina5.dir/src/let_me_free_lem2.c.i
+
+CMakeFiles/irina5.dir/src/let_me_free_lem2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/irina5.dir/src/let_me_free_lem2.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/kysgramo/irina5/src/let_me_free_lem2.c -o CMakeFiles/irina5.dir/src/let_me_free_lem2.c.s
 
 # Object files for target irina5
 irina5_OBJECTS = \
@@ -1617,7 +1643,8 @@ irina5_OBJECTS = \
 "CMakeFiles/irina5.dir/src/0.9.delete_links.c.o" \
 "CMakeFiles/irina5.dir/src/1.1.init.c.o" \
 "CMakeFiles/irina5.dir/src/1.main.c.o" \
-"CMakeFiles/irina5.dir/src/10.suurb_flow.c.o" \
+"CMakeFiles/irina5.dir/src/10.if_crash.c.o" \
+"CMakeFiles/irina5.dir/src/10.if_crash2.c.o" \
 "CMakeFiles/irina5.dir/src/2.1_parse_ants.c.o" \
 "CMakeFiles/irina5.dir/src/2.parse_rooms.c.o" \
 "CMakeFiles/irina5.dir/src/3.parse_link.c.o" \
@@ -1632,7 +1659,8 @@ irina5_OBJECTS = \
 "CMakeFiles/irina5.dir/src/9.flow.c.o" \
 "CMakeFiles/irina5.dir/src/9.flow2.c.o" \
 "CMakeFiles/irina5.dir/src/let_me_free.c.o" \
-"CMakeFiles/irina5.dir/src/let_me_free_lem.c.o"
+"CMakeFiles/irina5.dir/src/let_me_free_lem.c.o" \
+"CMakeFiles/irina5.dir/src/let_me_free_lem2.c.o"
 
 # External object files for target irina5
 irina5_EXTERNAL_OBJECTS =
@@ -1732,7 +1760,8 @@ irina5: CMakeFiles/irina5.dir/src/0.8.dashes_in_input.c.o
 irina5: CMakeFiles/irina5.dir/src/0.9.delete_links.c.o
 irina5: CMakeFiles/irina5.dir/src/1.1.init.c.o
 irina5: CMakeFiles/irina5.dir/src/1.main.c.o
-irina5: CMakeFiles/irina5.dir/src/10.suurb_flow.c.o
+irina5: CMakeFiles/irina5.dir/src/10.if_crash.c.o
+irina5: CMakeFiles/irina5.dir/src/10.if_crash2.c.o
 irina5: CMakeFiles/irina5.dir/src/2.1_parse_ants.c.o
 irina5: CMakeFiles/irina5.dir/src/2.parse_rooms.c.o
 irina5: CMakeFiles/irina5.dir/src/3.parse_link.c.o
@@ -1748,9 +1777,10 @@ irina5: CMakeFiles/irina5.dir/src/9.flow.c.o
 irina5: CMakeFiles/irina5.dir/src/9.flow2.c.o
 irina5: CMakeFiles/irina5.dir/src/let_me_free.c.o
 irina5: CMakeFiles/irina5.dir/src/let_me_free_lem.c.o
+irina5: CMakeFiles/irina5.dir/src/let_me_free_lem2.c.o
 irina5: CMakeFiles/irina5.dir/build.make
 irina5: CMakeFiles/irina5.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/kysgramo/irina5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_112) "Linking C executable irina5"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/kysgramo/irina5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_114) "Linking C executable irina5"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/irina5.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

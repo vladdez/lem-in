@@ -317,11 +317,16 @@ CMakeFiles/irina5.dir/src/1.main.c.o
  ../libft/libft/libft.h
  ../libft/printf/ft_printf.h
  /Users/kysgramo/irina5/src/1.main.c
-CMakeFiles/irina5.dir/src/10.suurb_flow.c.o
+CMakeFiles/irina5.dir/src/10.if_crash.c.o
  ../lem-in.h
  ../libft/libft/libft.h
  ../libft/printf/ft_printf.h
- /Users/kysgramo/irina5/src/10.suurb_flow.c
+ /Users/kysgramo/irina5/src/10.if_crash.c
+CMakeFiles/irina5.dir/src/10.if_crash2.c.o
+ ../lem-in.h
+ ../libft/libft/libft.h
+ ../libft/printf/ft_printf.h
+ /Users/kysgramo/irina5/src/10.if_crash2.c
 CMakeFiles/irina5.dir/src/2.1_parse_ants.c.o
  ../lem-in.h
  ../libft/libft/libft.h
@@ -397,3 +402,8 @@ CMakeFiles/irina5.dir/src/let_me_free_lem.c.o
  ../libft/libft/libft.h
  ../libft/printf/ft_printf.h
  /Users/kysgramo/irina5/src/let_me_free_lem.c
+CMakeFiles/irina5.dir/src/let_me_free_lem2.c.o
+ ../lem-in.h
+ ../libft/libft/libft.h
+ ../libft/printf/ft_printf.h
+ /Users/kysgramo/irina5/src/let_me_free_lem2.c

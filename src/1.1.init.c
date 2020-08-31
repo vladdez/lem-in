@@ -57,6 +57,6 @@ t_lem_in		*init_lem_in(void)
 	lem_in->coordinate = coordinate_create();
 	lem_in->ht_rooms = ht_create();
 	lem_in->mem = NULL;
-	lem_in->bfs_type = 0;
+	lem_in->bfs_used = 0;
 	return (lem_in);
 }

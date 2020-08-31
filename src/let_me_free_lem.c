@@ -84,9 +84,8 @@ void	free_lem_in(t_lem_in *lem_in, int fd)
 }
 
 void	free_all(t_line *input, t_lem_in *lem_in,
-int fd, t_node *deadlock_name)
+int fd)
 {
 	free_input(input);
 	free_lem_in(lem_in, fd);
-	free_deadlocks(deadlock_name);
 }

@@ -58,24 +58,21 @@ void		lem(int fd, char **av, int ac)
 {
 	t_lem_in	*lem_in;
 	t_line		*input;
-	t_queue		*q;
-	t_node		*deadlock_name;
 
 	input = NULL;
 	lem_in = parse(fd, &input);
-	q = bfs(lem_in);
-	if (lem_in->end->visit == UNVISITED)
+	bfs(lem_in);
+	if (lem_in->end->bfs_visit != lem_in->bfs_used)
 		terminate(ERR_NO_PATH);
 	input_cleaning(lem_in);
-	deadlock_name = find_link_direction(lem_in->ht_rooms);
-	free_queue(q);
+	find_link_direction(lem_in->ht_rooms);
 	fd = create_paths(lem_in);
-	print_input(input, lem_in->ant_num);
+	//print_input(input, lem_in->ant_num);
 	if (fd != 0)
 		flow(lem_in, 1, -1);
 	if (ac >= 2)
 		ft_bonus(lem_in, fd, av, ac);
-	free_all(input, lem_in, fd, deadlock_name);
+	free_all(input, lem_in, fd);
 }
 
 int			main(int ac, char **av)

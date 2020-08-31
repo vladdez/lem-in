@@ -47,8 +47,3 @@ void	free_input(t_line *input)
 	}
 	input = NULL;
 }
-
-void	free_deadlocks(t_node *deadlock_name)
-{
-	free_links(deadlock_name);
-}

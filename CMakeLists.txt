@@ -105,7 +105,8 @@ add_executable(irina5
         src/0.9.delete_links.c
         src/1.1.init.c
         src/1.main.c
-        src/10.suurb_flow.c
+        src/10.if_crash.c
+        src/10.if_crash2.c
         src/2.1_parse_ants.c
         src/2.parse_rooms.c
         src/3.parse_link.c
@@ -121,4 +122,5 @@ add_executable(irina5
         src/9.flow2.c
         src/let_me_free.c
         src/let_me_free_lem.c
+        src/let_me_free_lem2.c
         lem-in.h)

@@ -317,10 +317,15 @@ CMakeFiles/irina5.dir/src/1.main.c.o: ../libft/libft/libft.h
 CMakeFiles/irina5.dir/src/1.main.c.o: ../libft/printf/ft_printf.h
 CMakeFiles/irina5.dir/src/1.main.c.o: ../src/1.main.c
 
-CMakeFiles/irina5.dir/src/10.suurb_flow.c.o: ../lem-in.h
-CMakeFiles/irina5.dir/src/10.suurb_flow.c.o: ../libft/libft/libft.h
-CMakeFiles/irina5.dir/src/10.suurb_flow.c.o: ../libft/printf/ft_printf.h
-CMakeFiles/irina5.dir/src/10.suurb_flow.c.o: ../src/10.suurb_flow.c
+CMakeFiles/irina5.dir/src/10.if_crash.c.o: ../lem-in.h
+CMakeFiles/irina5.dir/src/10.if_crash.c.o: ../libft/libft/libft.h
+CMakeFiles/irina5.dir/src/10.if_crash.c.o: ../libft/printf/ft_printf.h
+CMakeFiles/irina5.dir/src/10.if_crash.c.o: ../src/10.if_crash.c
+
+CMakeFiles/irina5.dir/src/10.if_crash2.c.o: ../lem-in.h
+CMakeFiles/irina5.dir/src/10.if_crash2.c.o: ../libft/libft/libft.h
+CMakeFiles/irina5.dir/src/10.if_crash2.c.o: ../libft/printf/ft_printf.h
+CMakeFiles/irina5.dir/src/10.if_crash2.c.o: ../src/10.if_crash2.c
 
 CMakeFiles/irina5.dir/src/2.1_parse_ants.c.o: ../lem-in.h
 CMakeFiles/irina5.dir/src/2.1_parse_ants.c.o: ../libft/libft/libft.h
@@ -396,4 +401,9 @@ CMakeFiles/irina5.dir/src/let_me_free_lem.c.o: ../lem-in.h
 CMakeFiles/irina5.dir/src/let_me_free_lem.c.o: ../libft/libft/libft.h
 CMakeFiles/irina5.dir/src/let_me_free_lem.c.o: ../libft/printf/ft_printf.h
 CMakeFiles/irina5.dir/src/let_me_free_lem.c.o: ../src/let_me_free_lem.c
+
+CMakeFiles/irina5.dir/src/let_me_free_lem2.c.o: ../lem-in.h
+CMakeFiles/irina5.dir/src/let_me_free_lem2.c.o: ../libft/libft/libft.h
+CMakeFiles/irina5.dir/src/let_me_free_lem2.c.o: ../libft/printf/ft_printf.h
+CMakeFiles/irina5.dir/src/let_me_free_lem2.c.o: ../src/let_me_free_lem2.c
 
