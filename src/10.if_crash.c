@@ -214,6 +214,7 @@ void	second_plan(t_lem_in *lem_in, int maxpath)
 	i = is_enough(lem_in);
 	if (i != 1)
 	{
+		lem_in->ek_used++;
 		//print_paths(lem_in->paths, lem_in->path_num);
 		get_mem(lem_in, 1);
 		free_paths(lem_in->paths, lem_in->path_num);

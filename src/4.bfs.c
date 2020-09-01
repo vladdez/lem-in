@@ -67,7 +67,7 @@ void	handle_queue(t_lem_in *lem_in, t_queue *q, char *current_room_name)
 	while (link)
 	{
 		tmp = find_room_in_hashtable(link->node, lem_in->ht_rooms);
-		if (tmp->cut == CUTTED || tmp->ek_visit == 2)
+		if (tmp->cut == CUTTED || tmp->ek_visit == lem_in->ek_used)
 		{
 			tmp->bfs_visit = lem_in->bfs_used;
 			tmp->bfs_level = -1;

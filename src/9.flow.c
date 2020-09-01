@@ -81,7 +81,7 @@ int		lever(int ant_unused, t_lem_in *lem_in, int i)
 			cut += lem_in->paths[i]->len;
 			i++;
 			ant_unused--;
-			if (ant_unused > dif)
+			if (ant_unused >= dif)
 				res++;
 		}
 		if (res == -1)

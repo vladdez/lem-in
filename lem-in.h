@@ -87,6 +87,7 @@ typedef struct			s_lem_in
 	t_hashtable			*ht_rooms;
 	t_room				*mem;
 	int					bfs_used;
+	int					ek_used;
 }						t_lem_in;
 
 typedef struct			s_queue
