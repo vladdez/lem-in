@@ -15,7 +15,7 @@
 void	enqueue(t_queue *q, t_room *room, int room_num)
 {
 	if (q->from == (room_num - 1))
-		printf("\nQueue is Full!!");
+		ft_printf("\nQueue is Full!!");
 	else
 	{
 		if (q->toward == -1)

@@ -38,14 +38,26 @@
   <component name="ChangeListManager">
     <list default="true" id="30b215e4-c186-4ee7-a924-0d140b951c90" name="Default Changelist" comment="fixup! serious bags">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/irina5" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/irina5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lem-in" beforeDir="false" afterPath="$PROJECT_DIR$/lem-in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lem-in.h" beforeDir="false" afterPath="$PROJECT_DIR$/lem-in.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/map" beforeDir="false" afterPath="$PROJECT_DIR$/map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/1.1.init.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/1.1.init.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/1.main.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/1.main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/obj/1.1.init.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/obj/1.1.init.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/obj/1.main.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/irina5.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/irina5.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/irina5.dSYM/Contents/Resources/DWARF/irina5" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/irina5.dSYM/Contents/Resources/DWARF/irina5" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,9 +98,9 @@
     </key>
   </component>
   <component name="RunManager" selected="CMake Application.irina5">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="irina" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="map0" REDIRECT_INPUT="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="irina5" TARGET_NAME="irina" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="irina5" RUN_TARGET_NAME="irina">
@@ -101,7 +113,7 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="irina5" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="maps1" REDIRECT_INPUT="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="irina5" TARGET_NAME="irina5" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="irina5" RUN_TARGET_NAME="irina5">
+    <configuration name="irina5" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="maps4" REDIRECT_INPUT="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="irina5" TARGET_NAME="irina5" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="irina5" RUN_TARGET_NAME="irina5">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -191,7 +203,8 @@
       <workItem from="1598948863482" duration="1334000" />
       <workItem from="1598959999653" duration="495000" />
       <workItem from="1599063519194" duration="503000" />
-      <workItem from="1599138581098" duration="767000" />
+      <workItem from="1599138581098" duration="1301000" />
+      <workItem from="1599143096905" duration="60000" />
     </task>
     <servers />
   </component>
@@ -227,12 +240,12 @@
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="476" y="300" key="#C/C++/0.23.2560.1337@0.23.2560.1337" timestamp="1597652917633" />
-    <state x="744" y="353" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598954572395">
+    <state x="744" y="353" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599143156658">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="369" y="222" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1594912325660" />
     <state x="595" y="282" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2048.1049@0.23.2048.1049" timestamp="1598116460105" />
-    <state x="744" y="353" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1598954572395" />
+    <state x="744" y="353" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1599143156658" />
     <state x="1067" y="403" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1596374426957">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
@@ -241,34 +254,34 @@
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="462" y="286" key="CommitChangelistDialog2/0.23.2560.1337@0.23.2560.1337" timestamp="1597938226161" />
-    <state width="1646" height="523" key="GridCell.Tab.0.bottom" timestamp="1598956456799">
+    <state width="1646" height="489" key="GridCell.Tab.0.bottom" timestamp="1599143128979">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="1398" height="329" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1594912894679" />
     <state width="2518" height="335" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1593622321567" />
     <state width="1646" height="401" key="GridCell.Tab.0.bottom/0.23.2048.1049@0.23.2048.1049" timestamp="1598121939754" />
-    <state width="1646" height="523" key="GridCell.Tab.0.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1598956456799" />
-    <state width="1646" height="523" key="GridCell.Tab.0.center" timestamp="1598956456798">
+    <state width="1646" height="489" key="GridCell.Tab.0.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1599143128979" />
+    <state width="1646" height="489" key="GridCell.Tab.0.center" timestamp="1599143128977">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="1398" height="329" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1594912894676" />
     <state width="2518" height="335" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1593622321567" />
     <state width="1646" height="401" key="GridCell.Tab.0.center/0.23.2048.1049@0.23.2048.1049" timestamp="1598121939753" />
-    <state width="1646" height="523" key="GridCell.Tab.0.center/0.23.2560.1337@0.23.2560.1337" timestamp="1598956456798" />
-    <state width="1646" height="523" key="GridCell.Tab.0.left" timestamp="1598956456798">
+    <state width="1646" height="489" key="GridCell.Tab.0.center/0.23.2560.1337@0.23.2560.1337" timestamp="1599143128977" />
+    <state width="1646" height="489" key="GridCell.Tab.0.left" timestamp="1599143128977">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="1398" height="329" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1594912894675" />
     <state width="2518" height="335" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1593622321566" />
     <state width="1646" height="401" key="GridCell.Tab.0.left/0.23.2048.1049@0.23.2048.1049" timestamp="1598121939752" />
-    <state width="1646" height="523" key="GridCell.Tab.0.left/0.23.2560.1337@0.23.2560.1337" timestamp="1598956456798" />
-    <state width="1646" height="523" key="GridCell.Tab.0.right" timestamp="1598956456799">
+    <state width="1646" height="489" key="GridCell.Tab.0.left/0.23.2560.1337@0.23.2560.1337" timestamp="1599143128977" />
+    <state width="1646" height="489" key="GridCell.Tab.0.right" timestamp="1599143128978">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="1398" height="329" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1594912894678" />
     <state width="2518" height="335" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1593622321567" />
     <state width="1646" height="401" key="GridCell.Tab.0.right/0.23.2048.1049@0.23.2048.1049" timestamp="1598121939753" />
-    <state width="1646" height="523" key="GridCell.Tab.0.right/0.23.2560.1337@0.23.2560.1337" timestamp="1598956456799" />
+    <state width="1646" height="489" key="GridCell.Tab.0.right/0.23.2560.1337@0.23.2560.1337" timestamp="1599143128978" />
     <state width="1646" height="523" key="GridCell.Tab.1.bottom" timestamp="1598956456800">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
@@ -297,16 +310,16 @@
     <state width="2518" height="335" key="GridCell.Tab.1.right/0.0.2560.1440@0.0.2560.1440" timestamp="1593622323000" />
     <state width="1646" height="300" key="GridCell.Tab.1.right/0.23.2048.1049@0.23.2048.1049" timestamp="1598121939739" />
     <state width="1646" height="523" key="GridCell.Tab.1.right/0.23.2560.1337@0.23.2560.1337" timestamp="1598956456800" />
-    <state width="640" height="204" key="ImportCMakeProjectWizard.bottomPanel" timestamp="1598624121088">
+    <state width="640" height="204" key="ImportCMakeProjectWizard.bottomPanel" timestamp="1599143092915">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="512" height="160" key="ImportCMakeProjectWizard.bottomPanel/0.23.2048.1049@0.23.2048.1049" timestamp="1598032648875" />
-    <state width="640" height="204" key="ImportCMakeProjectWizard.bottomPanel/0.23.2560.1337@0.23.2560.1337" timestamp="1598624121088" />
-    <state width="640" height="476" key="ImportCMakeProjectWizard.topPanel" timestamp="1598624121087">
+    <state width="640" height="204" key="ImportCMakeProjectWizard.bottomPanel/0.23.2560.1337@0.23.2560.1337" timestamp="1599143092915" />
+    <state width="640" height="476" key="ImportCMakeProjectWizard.topPanel" timestamp="1599143092914">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="512" height="375" key="ImportCMakeProjectWizard.topPanel/0.23.2048.1049@0.23.2048.1049" timestamp="1598032648875" />
-    <state width="640" height="476" key="ImportCMakeProjectWizard.topPanel/0.23.2560.1337@0.23.2560.1337" timestamp="1598624121087" />
+    <state width="640" height="476" key="ImportCMakeProjectWizard.topPanel/0.23.2560.1337@0.23.2560.1337" timestamp="1599143092914" />
     <state x="95" y="105" width="1953" height="861" key="MergeDialog" timestamp="1598031018562">
       <screen x="0" y="23" width="2048" height="1049" />
     </state>
@@ -332,21 +345,6 @@
         <breakpoint enabled="true" type="CidrWatchpoint">
           <option name="timeStamp" value="11" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/10.if_crash.c</url>
-          <line>92</line>
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/8.create_paths.c</url>
-          <line>103</line>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/10.if_crash.c</url>
-          <line>223</line>
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>

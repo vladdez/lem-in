@@ -59,19 +59,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /private/var/folders/zz/zyxvpxvq6csfxvn_n00019tc000_fl/T/AppTranslocation/93052216-BBC0-4712-9347-864A5B619B81/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /private/var/folders/zz/zyxvpxvq6csfxvn_n00019tc000_fl/T/AppTranslocation/93052216-BBC0-4712-9347-864A5B619B81/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
+RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/bhugo/Desktop/lem-in
+CMAKE_SOURCE_DIR = /Users/kysgramo/irina5
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/bhugo/Desktop/lem-in/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/kysgramo/irina5/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,7 +79,7 @@ CMAKE_BINARY_DIR = /Users/bhugo/Desktop/lem-in/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/private/var/folders/zz/zyxvpxvq6csfxvn_n00019tc000_fl/T/AppTranslocation/93052216-BBC0-4712-9347-864A5B619B81/d/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -90,7 +90,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/private/var/folders/zz/zyxvpxvq6csfxvn_n00019tc000_fl/T/AppTranslocation/93052216-BBC0-4712-9347-864A5B619B81/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -100,9 +100,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhugo/Desktop/lem-in/cmake-build-debug/CMakeFiles /Users/bhugo/Desktop/lem-in/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kysgramo/irina5/cmake-build-debug/CMakeFiles /Users/kysgramo/irina5/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhugo/Desktop/lem-in/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kysgramo/irina5/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -2411,788 +2411,815 @@ libft/printf/tools.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/printf/tools.c.s
 .PHONY : libft/printf/tools.c.s
 
-src/0.1.errors.o: src/0.1.errors.c.o
+src/a_main.o: src/a_main.c.o
 
-.PHONY : src/0.1.errors.o
-
-# target to build an object file
-src/0.1.errors.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/0.1.errors.c.o
-.PHONY : src/0.1.errors.c.o
-
-src/0.1.errors.i: src/0.1.errors.c.i
-
-.PHONY : src/0.1.errors.i
-
-# target to preprocess a source file
-src/0.1.errors.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/0.1.errors.c.i
-.PHONY : src/0.1.errors.c.i
-
-src/0.1.errors.s: src/0.1.errors.c.s
-
-.PHONY : src/0.1.errors.s
-
-# target to generate assembly for a file
-src/0.1.errors.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/0.1.errors.c.s
-.PHONY : src/0.1.errors.c.s
-
-src/0.2.read_line.o: src/0.2.read_line.c.o
-
-.PHONY : src/0.2.read_line.o
+.PHONY : src/a_main.o
 
 # target to build an object file
-src/0.2.read_line.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/0.2.read_line.c.o
-.PHONY : src/0.2.read_line.c.o
+src/a_main.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/a_main.c.o
+.PHONY : src/a_main.c.o
 
-src/0.2.read_line.i: src/0.2.read_line.c.i
+src/a_main.i: src/a_main.c.i
 
-.PHONY : src/0.2.read_line.i
+.PHONY : src/a_main.i
 
 # target to preprocess a source file
-src/0.2.read_line.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/0.2.read_line.c.i
-.PHONY : src/0.2.read_line.c.i
+src/a_main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/a_main.c.i
+.PHONY : src/a_main.c.i
 
-src/0.2.read_line.s: src/0.2.read_line.c.s
+src/a_main.s: src/a_main.c.s
 
-.PHONY : src/0.2.read_line.s
+.PHONY : src/a_main.s
 
 # target to generate assembly for a file
-src/0.2.read_line.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/0.2.read_line.c.s
-.PHONY : src/0.2.read_line.c.s
+src/a_main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/a_main.c.s
+.PHONY : src/a_main.c.s
 
-src/0.3.validator.o: src/0.3.validator.c.o
+src/b_init.o: src/b_init.c.o
 
-.PHONY : src/0.3.validator.o
+.PHONY : src/b_init.o
 
 # target to build an object file
-src/0.3.validator.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/0.3.validator.c.o
-.PHONY : src/0.3.validator.c.o
+src/b_init.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/b_init.c.o
+.PHONY : src/b_init.c.o
 
-src/0.3.validator.i: src/0.3.validator.c.i
+src/b_init.i: src/b_init.c.i
 
-.PHONY : src/0.3.validator.i
+.PHONY : src/b_init.i
 
 # target to preprocess a source file
-src/0.3.validator.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/0.3.validator.c.i
-.PHONY : src/0.3.validator.c.i
+src/b_init.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/b_init.c.i
+.PHONY : src/b_init.c.i
 
-src/0.3.validator.s: src/0.3.validator.c.s
+src/b_init.s: src/b_init.c.s
 
-.PHONY : src/0.3.validator.s
+.PHONY : src/b_init.s
 
 # target to generate assembly for a file
-src/0.3.validator.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/0.3.validator.c.s
-.PHONY : src/0.3.validator.c.s
+src/b_init.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/b_init.c.s
+.PHONY : src/b_init.c.s
 
-src/0.4.is.o: src/0.4.is.c.o
+src/c_parse_ants.o: src/c_parse_ants.c.o
 
-.PHONY : src/0.4.is.o
+.PHONY : src/c_parse_ants.o
 
 # target to build an object file
-src/0.4.is.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/0.4.is.c.o
-.PHONY : src/0.4.is.c.o
+src/c_parse_ants.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/c_parse_ants.c.o
+.PHONY : src/c_parse_ants.c.o
 
-src/0.4.is.i: src/0.4.is.c.i
+src/c_parse_ants.i: src/c_parse_ants.c.i
 
-.PHONY : src/0.4.is.i
+.PHONY : src/c_parse_ants.i
 
 # target to preprocess a source file
-src/0.4.is.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/0.4.is.c.i
-.PHONY : src/0.4.is.c.i
+src/c_parse_ants.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/c_parse_ants.c.i
+.PHONY : src/c_parse_ants.c.i
 
-src/0.4.is.s: src/0.4.is.c.s
+src/c_parse_ants.s: src/c_parse_ants.c.s
 
-.PHONY : src/0.4.is.s
+.PHONY : src/c_parse_ants.s
 
 # target to generate assembly for a file
-src/0.4.is.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/0.4.is.c.s
-.PHONY : src/0.4.is.c.s
+src/c_parse_ants.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/c_parse_ants.c.s
+.PHONY : src/c_parse_ants.c.s
 
-src/0.5.hash_table.o: src/0.5.hash_table.c.o
+src/d_parse_rooms.o: src/d_parse_rooms.c.o
 
-.PHONY : src/0.5.hash_table.o
+.PHONY : src/d_parse_rooms.o
 
 # target to build an object file
-src/0.5.hash_table.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/0.5.hash_table.c.o
-.PHONY : src/0.5.hash_table.c.o
+src/d_parse_rooms.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/d_parse_rooms.c.o
+.PHONY : src/d_parse_rooms.c.o
 
-src/0.5.hash_table.i: src/0.5.hash_table.c.i
+src/d_parse_rooms.i: src/d_parse_rooms.c.i
 
-.PHONY : src/0.5.hash_table.i
+.PHONY : src/d_parse_rooms.i
 
 # target to preprocess a source file
-src/0.5.hash_table.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/0.5.hash_table.c.i
-.PHONY : src/0.5.hash_table.c.i
+src/d_parse_rooms.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/d_parse_rooms.c.i
+.PHONY : src/d_parse_rooms.c.i
 
-src/0.5.hash_table.s: src/0.5.hash_table.c.s
+src/d_parse_rooms.s: src/d_parse_rooms.c.s
 
-.PHONY : src/0.5.hash_table.s
+.PHONY : src/d_parse_rooms.s
 
 # target to generate assembly for a file
-src/0.5.hash_table.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/0.5.hash_table.c.s
-.PHONY : src/0.5.hash_table.c.s
+src/d_parse_rooms.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/d_parse_rooms.c.s
+.PHONY : src/d_parse_rooms.c.s
 
-src/0.6.init_structure.o: src/0.6.init_structure.c.o
+src/e_parse_link.o: src/e_parse_link.c.o
 
-.PHONY : src/0.6.init_structure.o
+.PHONY : src/e_parse_link.o
 
 # target to build an object file
-src/0.6.init_structure.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/0.6.init_structure.c.o
-.PHONY : src/0.6.init_structure.c.o
+src/e_parse_link.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/e_parse_link.c.o
+.PHONY : src/e_parse_link.c.o
 
-src/0.6.init_structure.i: src/0.6.init_structure.c.i
+src/e_parse_link.i: src/e_parse_link.c.i
 
-.PHONY : src/0.6.init_structure.i
+.PHONY : src/e_parse_link.i
 
 # target to preprocess a source file
-src/0.6.init_structure.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/0.6.init_structure.c.i
-.PHONY : src/0.6.init_structure.c.i
+src/e_parse_link.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/e_parse_link.c.i
+.PHONY : src/e_parse_link.c.i
 
-src/0.6.init_structure.s: src/0.6.init_structure.c.s
+src/e_parse_link.s: src/e_parse_link.c.s
 
-.PHONY : src/0.6.init_structure.s
+.PHONY : src/e_parse_link.s
 
 # target to generate assembly for a file
-src/0.6.init_structure.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/0.6.init_structure.c.s
-.PHONY : src/0.6.init_structure.c.s
+src/e_parse_link.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/e_parse_link.c.s
+.PHONY : src/e_parse_link.c.s
 
-src/0.7.write_coordinate.o: src/0.7.write_coordinate.c.o
+src/f_bfs.o: src/f_bfs.c.o
 
-.PHONY : src/0.7.write_coordinate.o
+.PHONY : src/f_bfs.o
 
 # target to build an object file
-src/0.7.write_coordinate.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/0.7.write_coordinate.c.o
-.PHONY : src/0.7.write_coordinate.c.o
+src/f_bfs.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/f_bfs.c.o
+.PHONY : src/f_bfs.c.o
 
-src/0.7.write_coordinate.i: src/0.7.write_coordinate.c.i
+src/f_bfs.i: src/f_bfs.c.i
 
-.PHONY : src/0.7.write_coordinate.i
+.PHONY : src/f_bfs.i
 
 # target to preprocess a source file
-src/0.7.write_coordinate.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/0.7.write_coordinate.c.i
-.PHONY : src/0.7.write_coordinate.c.i
+src/f_bfs.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/f_bfs.c.i
+.PHONY : src/f_bfs.c.i
 
-src/0.7.write_coordinate.s: src/0.7.write_coordinate.c.s
+src/f_bfs.s: src/f_bfs.c.s
 
-.PHONY : src/0.7.write_coordinate.s
+.PHONY : src/f_bfs.s
 
 # target to generate assembly for a file
-src/0.7.write_coordinate.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/0.7.write_coordinate.c.s
-.PHONY : src/0.7.write_coordinate.c.s
+src/f_bfs.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/f_bfs.c.s
+.PHONY : src/f_bfs.c.s
 
-src/0.8.dashes_in_input.o: src/0.8.dashes_in_input.c.o
+src/g_deadlock_cleaning.o: src/g_deadlock_cleaning.c.o
 
-.PHONY : src/0.8.dashes_in_input.o
+.PHONY : src/g_deadlock_cleaning.o
 
 # target to build an object file
-src/0.8.dashes_in_input.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/0.8.dashes_in_input.c.o
-.PHONY : src/0.8.dashes_in_input.c.o
+src/g_deadlock_cleaning.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/g_deadlock_cleaning.c.o
+.PHONY : src/g_deadlock_cleaning.c.o
 
-src/0.8.dashes_in_input.i: src/0.8.dashes_in_input.c.i
+src/g_deadlock_cleaning.i: src/g_deadlock_cleaning.c.i
 
-.PHONY : src/0.8.dashes_in_input.i
+.PHONY : src/g_deadlock_cleaning.i
 
 # target to preprocess a source file
-src/0.8.dashes_in_input.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/0.8.dashes_in_input.c.i
-.PHONY : src/0.8.dashes_in_input.c.i
+src/g_deadlock_cleaning.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/g_deadlock_cleaning.c.i
+.PHONY : src/g_deadlock_cleaning.c.i
 
-src/0.8.dashes_in_input.s: src/0.8.dashes_in_input.c.s
+src/g_deadlock_cleaning.s: src/g_deadlock_cleaning.c.s
 
-.PHONY : src/0.8.dashes_in_input.s
+.PHONY : src/g_deadlock_cleaning.s
 
 # target to generate assembly for a file
-src/0.8.dashes_in_input.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/0.8.dashes_in_input.c.s
-.PHONY : src/0.8.dashes_in_input.c.s
+src/g_deadlock_cleaning.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/g_deadlock_cleaning.c.s
+.PHONY : src/g_deadlock_cleaning.c.s
 
-src/0.9.delete_links.o: src/0.9.delete_links.c.o
+src/h_find_links_direction.o: src/h_find_links_direction.c.o
 
-.PHONY : src/0.9.delete_links.o
+.PHONY : src/h_find_links_direction.o
 
 # target to build an object file
-src/0.9.delete_links.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/0.9.delete_links.c.o
-.PHONY : src/0.9.delete_links.c.o
+src/h_find_links_direction.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/h_find_links_direction.c.o
+.PHONY : src/h_find_links_direction.c.o
 
-src/0.9.delete_links.i: src/0.9.delete_links.c.i
+src/h_find_links_direction.i: src/h_find_links_direction.c.i
 
-.PHONY : src/0.9.delete_links.i
+.PHONY : src/h_find_links_direction.i
 
 # target to preprocess a source file
-src/0.9.delete_links.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/0.9.delete_links.c.i
-.PHONY : src/0.9.delete_links.c.i
+src/h_find_links_direction.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/h_find_links_direction.c.i
+.PHONY : src/h_find_links_direction.c.i
 
-src/0.9.delete_links.s: src/0.9.delete_links.c.s
+src/h_find_links_direction.s: src/h_find_links_direction.c.s
 
-.PHONY : src/0.9.delete_links.s
+.PHONY : src/h_find_links_direction.s
 
 # target to generate assembly for a file
-src/0.9.delete_links.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/0.9.delete_links.c.s
-.PHONY : src/0.9.delete_links.c.s
+src/h_find_links_direction.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/h_find_links_direction.c.s
+.PHONY : src/h_find_links_direction.c.s
 
-src/1.1.init.o: src/1.1.init.c.o
+src/i_print_hashtable.o: src/i_print_hashtable.c.o
 
-.PHONY : src/1.1.init.o
+.PHONY : src/i_print_hashtable.o
 
 # target to build an object file
-src/1.1.init.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/1.1.init.c.o
-.PHONY : src/1.1.init.c.o
+src/i_print_hashtable.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/i_print_hashtable.c.o
+.PHONY : src/i_print_hashtable.c.o
 
-src/1.1.init.i: src/1.1.init.c.i
+src/i_print_hashtable.i: src/i_print_hashtable.c.i
 
-.PHONY : src/1.1.init.i
+.PHONY : src/i_print_hashtable.i
 
 # target to preprocess a source file
-src/1.1.init.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/1.1.init.c.i
-.PHONY : src/1.1.init.c.i
+src/i_print_hashtable.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/i_print_hashtable.c.i
+.PHONY : src/i_print_hashtable.c.i
 
-src/1.1.init.s: src/1.1.init.c.s
+src/i_print_hashtable.s: src/i_print_hashtable.c.s
 
-.PHONY : src/1.1.init.s
+.PHONY : src/i_print_hashtable.s
 
 # target to generate assembly for a file
-src/1.1.init.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/1.1.init.c.s
-.PHONY : src/1.1.init.c.s
+src/i_print_hashtable.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/i_print_hashtable.c.s
+.PHONY : src/i_print_hashtable.c.s
 
-src/1.main.o: src/1.main.c.o
+src/input_cleaning.o: src/input_cleaning.c.o
 
-.PHONY : src/1.main.o
+.PHONY : src/input_cleaning.o
 
 # target to build an object file
-src/1.main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/1.main.c.o
-.PHONY : src/1.main.c.o
+src/input_cleaning.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/input_cleaning.c.o
+.PHONY : src/input_cleaning.c.o
 
-src/1.main.i: src/1.main.c.i
+src/input_cleaning.i: src/input_cleaning.c.i
 
-.PHONY : src/1.main.i
+.PHONY : src/input_cleaning.i
 
 # target to preprocess a source file
-src/1.main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/1.main.c.i
-.PHONY : src/1.main.c.i
+src/input_cleaning.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/input_cleaning.c.i
+.PHONY : src/input_cleaning.c.i
 
-src/1.main.s: src/1.main.c.s
+src/input_cleaning.s: src/input_cleaning.c.s
 
-.PHONY : src/1.main.s
+.PHONY : src/input_cleaning.s
 
 # target to generate assembly for a file
-src/1.main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/1.main.c.s
-.PHONY : src/1.main.c.s
+src/input_cleaning.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/input_cleaning.c.s
+.PHONY : src/input_cleaning.c.s
 
-src/10.if_crash.o: src/10.if_crash.c.o
+src/j_print.o: src/j_print.c.o
 
-.PHONY : src/10.if_crash.o
+.PHONY : src/j_print.o
 
 # target to build an object file
-src/10.if_crash.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/10.if_crash.c.o
-.PHONY : src/10.if_crash.c.o
+src/j_print.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/j_print.c.o
+.PHONY : src/j_print.c.o
 
-src/10.if_crash.i: src/10.if_crash.c.i
+src/j_print.i: src/j_print.c.i
 
-.PHONY : src/10.if_crash.i
+.PHONY : src/j_print.i
 
 # target to preprocess a source file
-src/10.if_crash.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/10.if_crash.c.i
-.PHONY : src/10.if_crash.c.i
+src/j_print.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/j_print.c.i
+.PHONY : src/j_print.c.i
 
-src/10.if_crash.s: src/10.if_crash.c.s
+src/j_print.s: src/j_print.c.s
 
-.PHONY : src/10.if_crash.s
+.PHONY : src/j_print.s
 
 # target to generate assembly for a file
-src/10.if_crash.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/10.if_crash.c.s
-.PHONY : src/10.if_crash.c.s
+src/j_print.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/j_print.c.s
+.PHONY : src/j_print.c.s
 
-src/10.if_crash2.o: src/10.if_crash2.c.o
+src/k_create_paths.o: src/k_create_paths.c.o
 
-.PHONY : src/10.if_crash2.o
+.PHONY : src/k_create_paths.o
 
 # target to build an object file
-src/10.if_crash2.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/10.if_crash2.c.o
-.PHONY : src/10.if_crash2.c.o
+src/k_create_paths.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/k_create_paths.c.o
+.PHONY : src/k_create_paths.c.o
 
-src/10.if_crash2.i: src/10.if_crash2.c.i
+src/k_create_paths.i: src/k_create_paths.c.i
 
-.PHONY : src/10.if_crash2.i
+.PHONY : src/k_create_paths.i
 
 # target to preprocess a source file
-src/10.if_crash2.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/10.if_crash2.c.i
-.PHONY : src/10.if_crash2.c.i
+src/k_create_paths.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/k_create_paths.c.i
+.PHONY : src/k_create_paths.c.i
 
-src/10.if_crash2.s: src/10.if_crash2.c.s
+src/k_create_paths.s: src/k_create_paths.c.s
 
-.PHONY : src/10.if_crash2.s
+.PHONY : src/k_create_paths.s
 
 # target to generate assembly for a file
-src/10.if_crash2.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/10.if_crash2.c.s
-.PHONY : src/10.if_crash2.c.s
+src/k_create_paths.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/k_create_paths.c.s
+.PHONY : src/k_create_paths.c.s
 
-src/2.1_parse_ants.o: src/2.1_parse_ants.c.o
+src/l2_create_paths3.o: src/l2_create_paths3.c.o
 
-.PHONY : src/2.1_parse_ants.o
+.PHONY : src/l2_create_paths3.o
 
 # target to build an object file
-src/2.1_parse_ants.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/2.1_parse_ants.c.o
-.PHONY : src/2.1_parse_ants.c.o
+src/l2_create_paths3.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/l2_create_paths3.c.o
+.PHONY : src/l2_create_paths3.c.o
 
-src/2.1_parse_ants.i: src/2.1_parse_ants.c.i
+src/l2_create_paths3.i: src/l2_create_paths3.c.i
 
-.PHONY : src/2.1_parse_ants.i
+.PHONY : src/l2_create_paths3.i
 
 # target to preprocess a source file
-src/2.1_parse_ants.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/2.1_parse_ants.c.i
-.PHONY : src/2.1_parse_ants.c.i
+src/l2_create_paths3.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/l2_create_paths3.c.i
+.PHONY : src/l2_create_paths3.c.i
 
-src/2.1_parse_ants.s: src/2.1_parse_ants.c.s
+src/l2_create_paths3.s: src/l2_create_paths3.c.s
 
-.PHONY : src/2.1_parse_ants.s
+.PHONY : src/l2_create_paths3.s
 
 # target to generate assembly for a file
-src/2.1_parse_ants.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/2.1_parse_ants.c.s
-.PHONY : src/2.1_parse_ants.c.s
+src/l2_create_paths3.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/l2_create_paths3.c.s
+.PHONY : src/l2_create_paths3.c.s
 
-src/2.parse_rooms.o: src/2.parse_rooms.c.o
+src/l_create_paths2.o: src/l_create_paths2.c.o
 
-.PHONY : src/2.parse_rooms.o
+.PHONY : src/l_create_paths2.o
 
 # target to build an object file
-src/2.parse_rooms.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/2.parse_rooms.c.o
-.PHONY : src/2.parse_rooms.c.o
+src/l_create_paths2.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/l_create_paths2.c.o
+.PHONY : src/l_create_paths2.c.o
 
-src/2.parse_rooms.i: src/2.parse_rooms.c.i
+src/l_create_paths2.i: src/l_create_paths2.c.i
 
-.PHONY : src/2.parse_rooms.i
+.PHONY : src/l_create_paths2.i
 
 # target to preprocess a source file
-src/2.parse_rooms.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/2.parse_rooms.c.i
-.PHONY : src/2.parse_rooms.c.i
+src/l_create_paths2.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/l_create_paths2.c.i
+.PHONY : src/l_create_paths2.c.i
 
-src/2.parse_rooms.s: src/2.parse_rooms.c.s
+src/l_create_paths2.s: src/l_create_paths2.c.s
 
-.PHONY : src/2.parse_rooms.s
+.PHONY : src/l_create_paths2.s
 
 # target to generate assembly for a file
-src/2.parse_rooms.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/2.parse_rooms.c.s
-.PHONY : src/2.parse_rooms.c.s
+src/l_create_paths2.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/l_create_paths2.c.s
+.PHONY : src/l_create_paths2.c.s
 
-src/3.parse_link.o: src/3.parse_link.c.o
+src/m_flow.o: src/m_flow.c.o
 
-.PHONY : src/3.parse_link.o
+.PHONY : src/m_flow.o
 
 # target to build an object file
-src/3.parse_link.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/3.parse_link.c.o
-.PHONY : src/3.parse_link.c.o
+src/m_flow.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/m_flow.c.o
+.PHONY : src/m_flow.c.o
 
-src/3.parse_link.i: src/3.parse_link.c.i
+src/m_flow.i: src/m_flow.c.i
 
-.PHONY : src/3.parse_link.i
+.PHONY : src/m_flow.i
 
 # target to preprocess a source file
-src/3.parse_link.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/3.parse_link.c.i
-.PHONY : src/3.parse_link.c.i
+src/m_flow.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/m_flow.c.i
+.PHONY : src/m_flow.c.i
 
-src/3.parse_link.s: src/3.parse_link.c.s
+src/m_flow.s: src/m_flow.c.s
 
-.PHONY : src/3.parse_link.s
+.PHONY : src/m_flow.s
 
 # target to generate assembly for a file
-src/3.parse_link.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/3.parse_link.c.s
-.PHONY : src/3.parse_link.c.s
+src/m_flow.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/m_flow.c.s
+.PHONY : src/m_flow.c.s
 
-src/4.bfs.o: src/4.bfs.c.o
+src/n_flow2.o: src/n_flow2.c.o
 
-.PHONY : src/4.bfs.o
+.PHONY : src/n_flow2.o
 
 # target to build an object file
-src/4.bfs.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/4.bfs.c.o
-.PHONY : src/4.bfs.c.o
+src/n_flow2.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/n_flow2.c.o
+.PHONY : src/n_flow2.c.o
 
-src/4.bfs.i: src/4.bfs.c.i
+src/n_flow2.i: src/n_flow2.c.i
 
-.PHONY : src/4.bfs.i
+.PHONY : src/n_flow2.i
 
 # target to preprocess a source file
-src/4.bfs.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/4.bfs.c.i
-.PHONY : src/4.bfs.c.i
+src/n_flow2.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/n_flow2.c.i
+.PHONY : src/n_flow2.c.i
 
-src/4.bfs.s: src/4.bfs.c.s
+src/n_flow2.s: src/n_flow2.c.s
 
-.PHONY : src/4.bfs.s
+.PHONY : src/n_flow2.s
 
 # target to generate assembly for a file
-src/4.bfs.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/4.bfs.c.s
-.PHONY : src/4.bfs.c.s
+src/n_flow2.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/n_flow2.c.s
+.PHONY : src/n_flow2.c.s
 
-src/5.find_links_direction.o: src/5.find_links_direction.c.o
+src/o_if_crash.o: src/o_if_crash.c.o
 
-.PHONY : src/5.find_links_direction.o
+.PHONY : src/o_if_crash.o
 
 # target to build an object file
-src/5.find_links_direction.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/5.find_links_direction.c.o
-.PHONY : src/5.find_links_direction.c.o
+src/o_if_crash.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/o_if_crash.c.o
+.PHONY : src/o_if_crash.c.o
 
-src/5.find_links_direction.i: src/5.find_links_direction.c.i
+src/o_if_crash.i: src/o_if_crash.c.i
 
-.PHONY : src/5.find_links_direction.i
+.PHONY : src/o_if_crash.i
 
 # target to preprocess a source file
-src/5.find_links_direction.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/5.find_links_direction.c.i
-.PHONY : src/5.find_links_direction.c.i
+src/o_if_crash.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/o_if_crash.c.i
+.PHONY : src/o_if_crash.c.i
 
-src/5.find_links_direction.s: src/5.find_links_direction.c.s
+src/o_if_crash.s: src/o_if_crash.c.s
 
-.PHONY : src/5.find_links_direction.s
+.PHONY : src/o_if_crash.s
 
 # target to generate assembly for a file
-src/5.find_links_direction.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/5.find_links_direction.c.s
-.PHONY : src/5.find_links_direction.c.s
+src/o_if_crash.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/o_if_crash.c.s
+.PHONY : src/o_if_crash.c.s
 
-src/6.2.deadlock_cleaning.o: src/6.2.deadlock_cleaning.c.o
+src/p_if_crash2.o: src/p_if_crash2.c.o
 
-.PHONY : src/6.2.deadlock_cleaning.o
+.PHONY : src/p_if_crash2.o
 
 # target to build an object file
-src/6.2.deadlock_cleaning.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/6.2.deadlock_cleaning.c.o
-.PHONY : src/6.2.deadlock_cleaning.c.o
+src/p_if_crash2.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/p_if_crash2.c.o
+.PHONY : src/p_if_crash2.c.o
 
-src/6.2.deadlock_cleaning.i: src/6.2.deadlock_cleaning.c.i
+src/p_if_crash2.i: src/p_if_crash2.c.i
 
-.PHONY : src/6.2.deadlock_cleaning.i
+.PHONY : src/p_if_crash2.i
 
 # target to preprocess a source file
-src/6.2.deadlock_cleaning.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/6.2.deadlock_cleaning.c.i
-.PHONY : src/6.2.deadlock_cleaning.c.i
+src/p_if_crash2.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/p_if_crash2.c.i
+.PHONY : src/p_if_crash2.c.i
 
-src/6.2.deadlock_cleaning.s: src/6.2.deadlock_cleaning.c.s
+src/p_if_crash2.s: src/p_if_crash2.c.s
 
-.PHONY : src/6.2.deadlock_cleaning.s
+.PHONY : src/p_if_crash2.s
 
 # target to generate assembly for a file
-src/6.2.deadlock_cleaning.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/6.2.deadlock_cleaning.c.s
-.PHONY : src/6.2.deadlock_cleaning.c.s
+src/p_if_crash2.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/p_if_crash2.c.s
+.PHONY : src/p_if_crash2.c.s
 
-src/6.input_cleaning.o: src/6.input_cleaning.c.o
+src/z_dashes_in_input.o: src/z_dashes_in_input.c.o
 
-.PHONY : src/6.input_cleaning.o
+.PHONY : src/z_dashes_in_input.o
 
 # target to build an object file
-src/6.input_cleaning.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/6.input_cleaning.c.o
-.PHONY : src/6.input_cleaning.c.o
+src/z_dashes_in_input.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/z_dashes_in_input.c.o
+.PHONY : src/z_dashes_in_input.c.o
 
-src/6.input_cleaning.i: src/6.input_cleaning.c.i
+src/z_dashes_in_input.i: src/z_dashes_in_input.c.i
 
-.PHONY : src/6.input_cleaning.i
+.PHONY : src/z_dashes_in_input.i
 
 # target to preprocess a source file
-src/6.input_cleaning.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/6.input_cleaning.c.i
-.PHONY : src/6.input_cleaning.c.i
+src/z_dashes_in_input.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/z_dashes_in_input.c.i
+.PHONY : src/z_dashes_in_input.c.i
 
-src/6.input_cleaning.s: src/6.input_cleaning.c.s
+src/z_dashes_in_input.s: src/z_dashes_in_input.c.s
 
-.PHONY : src/6.input_cleaning.s
+.PHONY : src/z_dashes_in_input.s
 
 # target to generate assembly for a file
-src/6.input_cleaning.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/6.input_cleaning.c.s
-.PHONY : src/6.input_cleaning.c.s
+src/z_dashes_in_input.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/z_dashes_in_input.c.s
+.PHONY : src/z_dashes_in_input.c.s
 
-src/7.2.print_hashtable.o: src/7.2.print_hashtable.c.o
+src/z_delete_links.o: src/z_delete_links.c.o
 
-.PHONY : src/7.2.print_hashtable.o
+.PHONY : src/z_delete_links.o
 
 # target to build an object file
-src/7.2.print_hashtable.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/7.2.print_hashtable.c.o
-.PHONY : src/7.2.print_hashtable.c.o
+src/z_delete_links.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/z_delete_links.c.o
+.PHONY : src/z_delete_links.c.o
 
-src/7.2.print_hashtable.i: src/7.2.print_hashtable.c.i
+src/z_delete_links.i: src/z_delete_links.c.i
 
-.PHONY : src/7.2.print_hashtable.i
+.PHONY : src/z_delete_links.i
 
 # target to preprocess a source file
-src/7.2.print_hashtable.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/7.2.print_hashtable.c.i
-.PHONY : src/7.2.print_hashtable.c.i
+src/z_delete_links.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/z_delete_links.c.i
+.PHONY : src/z_delete_links.c.i
 
-src/7.2.print_hashtable.s: src/7.2.print_hashtable.c.s
+src/z_delete_links.s: src/z_delete_links.c.s
 
-.PHONY : src/7.2.print_hashtable.s
+.PHONY : src/z_delete_links.s
 
 # target to generate assembly for a file
-src/7.2.print_hashtable.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/7.2.print_hashtable.c.s
-.PHONY : src/7.2.print_hashtable.c.s
+src/z_delete_links.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/z_delete_links.c.s
+.PHONY : src/z_delete_links.c.s
 
-src/7.print.o: src/7.print.c.o
+src/z_errors.o: src/z_errors.c.o
 
-.PHONY : src/7.print.o
+.PHONY : src/z_errors.o
 
 # target to build an object file
-src/7.print.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/7.print.c.o
-.PHONY : src/7.print.c.o
+src/z_errors.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/z_errors.c.o
+.PHONY : src/z_errors.c.o
 
-src/7.print.i: src/7.print.c.i
+src/z_errors.i: src/z_errors.c.i
 
-.PHONY : src/7.print.i
+.PHONY : src/z_errors.i
 
 # target to preprocess a source file
-src/7.print.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/7.print.c.i
-.PHONY : src/7.print.c.i
+src/z_errors.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/z_errors.c.i
+.PHONY : src/z_errors.c.i
 
-src/7.print.s: src/7.print.c.s
+src/z_errors.s: src/z_errors.c.s
 
-.PHONY : src/7.print.s
+.PHONY : src/z_errors.s
 
 # target to generate assembly for a file
-src/7.print.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/7.print.c.s
-.PHONY : src/7.print.c.s
+src/z_errors.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/z_errors.c.s
+.PHONY : src/z_errors.c.s
 
-src/8.create_paths.o: src/8.create_paths.c.o
+src/z_hash_table.o: src/z_hash_table.c.o
 
-.PHONY : src/8.create_paths.o
+.PHONY : src/z_hash_table.o
 
 # target to build an object file
-src/8.create_paths.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/8.create_paths.c.o
-.PHONY : src/8.create_paths.c.o
+src/z_hash_table.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/z_hash_table.c.o
+.PHONY : src/z_hash_table.c.o
 
-src/8.create_paths.i: src/8.create_paths.c.i
+src/z_hash_table.i: src/z_hash_table.c.i
 
-.PHONY : src/8.create_paths.i
+.PHONY : src/z_hash_table.i
 
 # target to preprocess a source file
-src/8.create_paths.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/8.create_paths.c.i
-.PHONY : src/8.create_paths.c.i
+src/z_hash_table.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/z_hash_table.c.i
+.PHONY : src/z_hash_table.c.i
 
-src/8.create_paths.s: src/8.create_paths.c.s
+src/z_hash_table.s: src/z_hash_table.c.s
 
-.PHONY : src/8.create_paths.s
+.PHONY : src/z_hash_table.s
 
 # target to generate assembly for a file
-src/8.create_paths.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/8.create_paths.c.s
-.PHONY : src/8.create_paths.c.s
+src/z_hash_table.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/z_hash_table.c.s
+.PHONY : src/z_hash_table.c.s
 
-src/8.create_paths2.o: src/8.create_paths2.c.o
+src/z_init_structure.o: src/z_init_structure.c.o
 
-.PHONY : src/8.create_paths2.o
+.PHONY : src/z_init_structure.o
 
 # target to build an object file
-src/8.create_paths2.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/8.create_paths2.c.o
-.PHONY : src/8.create_paths2.c.o
+src/z_init_structure.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/z_init_structure.c.o
+.PHONY : src/z_init_structure.c.o
 
-src/8.create_paths2.i: src/8.create_paths2.c.i
+src/z_init_structure.i: src/z_init_structure.c.i
 
-.PHONY : src/8.create_paths2.i
+.PHONY : src/z_init_structure.i
 
 # target to preprocess a source file
-src/8.create_paths2.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/8.create_paths2.c.i
-.PHONY : src/8.create_paths2.c.i
+src/z_init_structure.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/z_init_structure.c.i
+.PHONY : src/z_init_structure.c.i
 
-src/8.create_paths2.s: src/8.create_paths2.c.s
+src/z_init_structure.s: src/z_init_structure.c.s
 
-.PHONY : src/8.create_paths2.s
+.PHONY : src/z_init_structure.s
 
 # target to generate assembly for a file
-src/8.create_paths2.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/8.create_paths2.c.s
-.PHONY : src/8.create_paths2.c.s
+src/z_init_structure.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/z_init_structure.c.s
+.PHONY : src/z_init_structure.c.s
 
-src/9.flow.o: src/9.flow.c.o
+src/z_is.o: src/z_is.c.o
 
-.PHONY : src/9.flow.o
+.PHONY : src/z_is.o
 
 # target to build an object file
-src/9.flow.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/9.flow.c.o
-.PHONY : src/9.flow.c.o
+src/z_is.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/z_is.c.o
+.PHONY : src/z_is.c.o
 
-src/9.flow.i: src/9.flow.c.i
+src/z_is.i: src/z_is.c.i
 
-.PHONY : src/9.flow.i
+.PHONY : src/z_is.i
 
 # target to preprocess a source file
-src/9.flow.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/9.flow.c.i
-.PHONY : src/9.flow.c.i
+src/z_is.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/z_is.c.i
+.PHONY : src/z_is.c.i
 
-src/9.flow.s: src/9.flow.c.s
+src/z_is.s: src/z_is.c.s
 
-.PHONY : src/9.flow.s
+.PHONY : src/z_is.s
 
 # target to generate assembly for a file
-src/9.flow.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/9.flow.c.s
-.PHONY : src/9.flow.c.s
+src/z_is.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/z_is.c.s
+.PHONY : src/z_is.c.s
 
-src/9.flow2.o: src/9.flow2.c.o
+src/z_let_me_free.o: src/z_let_me_free.c.o
 
-.PHONY : src/9.flow2.o
+.PHONY : src/z_let_me_free.o
 
 # target to build an object file
-src/9.flow2.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/9.flow2.c.o
-.PHONY : src/9.flow2.c.o
+src/z_let_me_free.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/z_let_me_free.c.o
+.PHONY : src/z_let_me_free.c.o
 
-src/9.flow2.i: src/9.flow2.c.i
+src/z_let_me_free.i: src/z_let_me_free.c.i
 
-.PHONY : src/9.flow2.i
+.PHONY : src/z_let_me_free.i
 
 # target to preprocess a source file
-src/9.flow2.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/9.flow2.c.i
-.PHONY : src/9.flow2.c.i
+src/z_let_me_free.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/z_let_me_free.c.i
+.PHONY : src/z_let_me_free.c.i
 
-src/9.flow2.s: src/9.flow2.c.s
+src/z_let_me_free.s: src/z_let_me_free.c.s
 
-.PHONY : src/9.flow2.s
+.PHONY : src/z_let_me_free.s
 
 # target to generate assembly for a file
-src/9.flow2.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/9.flow2.c.s
-.PHONY : src/9.flow2.c.s
+src/z_let_me_free.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/z_let_me_free.c.s
+.PHONY : src/z_let_me_free.c.s
 
-src/let_me_free.o: src/let_me_free.c.o
+src/z_let_me_free_lem.o: src/z_let_me_free_lem.c.o
 
-.PHONY : src/let_me_free.o
+.PHONY : src/z_let_me_free_lem.o
 
 # target to build an object file
-src/let_me_free.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/let_me_free.c.o
-.PHONY : src/let_me_free.c.o
+src/z_let_me_free_lem.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/z_let_me_free_lem.c.o
+.PHONY : src/z_let_me_free_lem.c.o
 
-src/let_me_free.i: src/let_me_free.c.i
+src/z_let_me_free_lem.i: src/z_let_me_free_lem.c.i
 
-.PHONY : src/let_me_free.i
+.PHONY : src/z_let_me_free_lem.i
 
 # target to preprocess a source file
-src/let_me_free.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/let_me_free.c.i
-.PHONY : src/let_me_free.c.i
+src/z_let_me_free_lem.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/z_let_me_free_lem.c.i
+.PHONY : src/z_let_me_free_lem.c.i
 
-src/let_me_free.s: src/let_me_free.c.s
+src/z_let_me_free_lem.s: src/z_let_me_free_lem.c.s
 
-.PHONY : src/let_me_free.s
+.PHONY : src/z_let_me_free_lem.s
 
 # target to generate assembly for a file
-src/let_me_free.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/let_me_free.c.s
-.PHONY : src/let_me_free.c.s
+src/z_let_me_free_lem.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/z_let_me_free_lem.c.s
+.PHONY : src/z_let_me_free_lem.c.s
 
-src/let_me_free_lem.o: src/let_me_free_lem.c.o
+src/z_let_me_free_lem2.o: src/z_let_me_free_lem2.c.o
 
-.PHONY : src/let_me_free_lem.o
+.PHONY : src/z_let_me_free_lem2.o
 
 # target to build an object file
-src/let_me_free_lem.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/let_me_free_lem.c.o
-.PHONY : src/let_me_free_lem.c.o
+src/z_let_me_free_lem2.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/z_let_me_free_lem2.c.o
+.PHONY : src/z_let_me_free_lem2.c.o
 
-src/let_me_free_lem.i: src/let_me_free_lem.c.i
+src/z_let_me_free_lem2.i: src/z_let_me_free_lem2.c.i
 
-.PHONY : src/let_me_free_lem.i
+.PHONY : src/z_let_me_free_lem2.i
 
 # target to preprocess a source file
-src/let_me_free_lem.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/let_me_free_lem.c.i
-.PHONY : src/let_me_free_lem.c.i
+src/z_let_me_free_lem2.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/z_let_me_free_lem2.c.i
+.PHONY : src/z_let_me_free_lem2.c.i
 
-src/let_me_free_lem.s: src/let_me_free_lem.c.s
+src/z_let_me_free_lem2.s: src/z_let_me_free_lem2.c.s
 
-.PHONY : src/let_me_free_lem.s
+.PHONY : src/z_let_me_free_lem2.s
 
 # target to generate assembly for a file
-src/let_me_free_lem.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/let_me_free_lem.c.s
-.PHONY : src/let_me_free_lem.c.s
+src/z_let_me_free_lem2.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/z_let_me_free_lem2.c.s
+.PHONY : src/z_let_me_free_lem2.c.s
 
-src/let_me_free_lem2.o: src/let_me_free_lem2.c.o
+src/z_read_line.o: src/z_read_line.c.o
 
-.PHONY : src/let_me_free_lem2.o
+.PHONY : src/z_read_line.o
 
 # target to build an object file
-src/let_me_free_lem2.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/let_me_free_lem2.c.o
-.PHONY : src/let_me_free_lem2.c.o
+src/z_read_line.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/z_read_line.c.o
+.PHONY : src/z_read_line.c.o
 
-src/let_me_free_lem2.i: src/let_me_free_lem2.c.i
+src/z_read_line.i: src/z_read_line.c.i
 
-.PHONY : src/let_me_free_lem2.i
+.PHONY : src/z_read_line.i
 
 # target to preprocess a source file
-src/let_me_free_lem2.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/let_me_free_lem2.c.i
-.PHONY : src/let_me_free_lem2.c.i
+src/z_read_line.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/z_read_line.c.i
+.PHONY : src/z_read_line.c.i
 
-src/let_me_free_lem2.s: src/let_me_free_lem2.c.s
+src/z_read_line.s: src/z_read_line.c.s
 
-.PHONY : src/let_me_free_lem2.s
+.PHONY : src/z_read_line.s
 
 # target to generate assembly for a file
-src/let_me_free_lem2.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/let_me_free_lem2.c.s
-.PHONY : src/let_me_free_lem2.c.s
+src/z_read_line.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/z_read_line.c.s
+.PHONY : src/z_read_line.c.s
+
+src/z_validator.o: src/z_validator.c.o
+
+.PHONY : src/z_validator.o
+
+# target to build an object file
+src/z_validator.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/z_validator.c.o
+.PHONY : src/z_validator.c.o
+
+src/z_validator.i: src/z_validator.c.i
+
+.PHONY : src/z_validator.i
+
+# target to preprocess a source file
+src/z_validator.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/z_validator.c.i
+.PHONY : src/z_validator.c.i
+
+src/z_validator.s: src/z_validator.c.s
+
+.PHONY : src/z_validator.s
+
+# target to generate assembly for a file
+src/z_validator.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/z_validator.c.s
+.PHONY : src/z_validator.c.s
+
+src/z_write_coordinate.o: src/z_write_coordinate.c.o
+
+.PHONY : src/z_write_coordinate.o
+
+# target to build an object file
+src/z_write_coordinate.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/z_write_coordinate.c.o
+.PHONY : src/z_write_coordinate.c.o
+
+src/z_write_coordinate.i: src/z_write_coordinate.c.i
+
+.PHONY : src/z_write_coordinate.i
+
+# target to preprocess a source file
+src/z_write_coordinate.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/z_write_coordinate.c.i
+.PHONY : src/z_write_coordinate.c.i
+
+src/z_write_coordinate.s: src/z_write_coordinate.c.s
+
+.PHONY : src/z_write_coordinate.s
+
+# target to generate assembly for a file
+src/z_write_coordinate.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/z_write_coordinate.c.s
+.PHONY : src/z_write_coordinate.c.s
 
 # Help Target
 help:
@@ -3455,93 +3482,96 @@ help:
 	@echo "... libft/printf/tools.o"
 	@echo "... libft/printf/tools.i"
 	@echo "... libft/printf/tools.s"
-	@echo "... src/0.1.errors.o"
-	@echo "... src/0.1.errors.i"
-	@echo "... src/0.1.errors.s"
-	@echo "... src/0.2.read_line.o"
-	@echo "... src/0.2.read_line.i"
-	@echo "... src/0.2.read_line.s"
-	@echo "... src/0.3.validator.o"
-	@echo "... src/0.3.validator.i"
-	@echo "... src/0.3.validator.s"
-	@echo "... src/0.4.is.o"
-	@echo "... src/0.4.is.i"
-	@echo "... src/0.4.is.s"
-	@echo "... src/0.5.hash_table.o"
-	@echo "... src/0.5.hash_table.i"
-	@echo "... src/0.5.hash_table.s"
-	@echo "... src/0.6.init_structure.o"
-	@echo "... src/0.6.init_structure.i"
-	@echo "... src/0.6.init_structure.s"
-	@echo "... src/0.7.write_coordinate.o"
-	@echo "... src/0.7.write_coordinate.i"
-	@echo "... src/0.7.write_coordinate.s"
-	@echo "... src/0.8.dashes_in_input.o"
-	@echo "... src/0.8.dashes_in_input.i"
-	@echo "... src/0.8.dashes_in_input.s"
-	@echo "... src/0.9.delete_links.o"
-	@echo "... src/0.9.delete_links.i"
-	@echo "... src/0.9.delete_links.s"
-	@echo "... src/1.1.init.o"
-	@echo "... src/1.1.init.i"
-	@echo "... src/1.1.init.s"
-	@echo "... src/1.main.o"
-	@echo "... src/1.main.i"
-	@echo "... src/1.main.s"
-	@echo "... src/10.if_crash.o"
-	@echo "... src/10.if_crash.i"
-	@echo "... src/10.if_crash.s"
-	@echo "... src/10.if_crash2.o"
-	@echo "... src/10.if_crash2.i"
-	@echo "... src/10.if_crash2.s"
-	@echo "... src/2.1_parse_ants.o"
-	@echo "... src/2.1_parse_ants.i"
-	@echo "... src/2.1_parse_ants.s"
-	@echo "... src/2.parse_rooms.o"
-	@echo "... src/2.parse_rooms.i"
-	@echo "... src/2.parse_rooms.s"
-	@echo "... src/3.parse_link.o"
-	@echo "... src/3.parse_link.i"
-	@echo "... src/3.parse_link.s"
-	@echo "... src/4.bfs.o"
-	@echo "... src/4.bfs.i"
-	@echo "... src/4.bfs.s"
-	@echo "... src/5.find_links_direction.o"
-	@echo "... src/5.find_links_direction.i"
-	@echo "... src/5.find_links_direction.s"
-	@echo "... src/6.2.deadlock_cleaning.o"
-	@echo "... src/6.2.deadlock_cleaning.i"
-	@echo "... src/6.2.deadlock_cleaning.s"
-	@echo "... src/6.input_cleaning.o"
-	@echo "... src/6.input_cleaning.i"
-	@echo "... src/6.input_cleaning.s"
-	@echo "... src/7.2.print_hashtable.o"
-	@echo "... src/7.2.print_hashtable.i"
-	@echo "... src/7.2.print_hashtable.s"
-	@echo "... src/7.print.o"
-	@echo "... src/7.print.i"
-	@echo "... src/7.print.s"
-	@echo "... src/8.create_paths.o"
-	@echo "... src/8.create_paths.i"
-	@echo "... src/8.create_paths.s"
-	@echo "... src/8.create_paths2.o"
-	@echo "... src/8.create_paths2.i"
-	@echo "... src/8.create_paths2.s"
-	@echo "... src/9.flow.o"
-	@echo "... src/9.flow.i"
-	@echo "... src/9.flow.s"
-	@echo "... src/9.flow2.o"
-	@echo "... src/9.flow2.i"
-	@echo "... src/9.flow2.s"
-	@echo "... src/let_me_free.o"
-	@echo "... src/let_me_free.i"
-	@echo "... src/let_me_free.s"
-	@echo "... src/let_me_free_lem.o"
-	@echo "... src/let_me_free_lem.i"
-	@echo "... src/let_me_free_lem.s"
-	@echo "... src/let_me_free_lem2.o"
-	@echo "... src/let_me_free_lem2.i"
-	@echo "... src/let_me_free_lem2.s"
+	@echo "... src/a_main.o"
+	@echo "... src/a_main.i"
+	@echo "... src/a_main.s"
+	@echo "... src/b_init.o"
+	@echo "... src/b_init.i"
+	@echo "... src/b_init.s"
+	@echo "... src/c_parse_ants.o"
+	@echo "... src/c_parse_ants.i"
+	@echo "... src/c_parse_ants.s"
+	@echo "... src/d_parse_rooms.o"
+	@echo "... src/d_parse_rooms.i"
+	@echo "... src/d_parse_rooms.s"
+	@echo "... src/e_parse_link.o"
+	@echo "... src/e_parse_link.i"
+	@echo "... src/e_parse_link.s"
+	@echo "... src/f_bfs.o"
+	@echo "... src/f_bfs.i"
+	@echo "... src/f_bfs.s"
+	@echo "... src/g_deadlock_cleaning.o"
+	@echo "... src/g_deadlock_cleaning.i"
+	@echo "... src/g_deadlock_cleaning.s"
+	@echo "... src/h_find_links_direction.o"
+	@echo "... src/h_find_links_direction.i"
+	@echo "... src/h_find_links_direction.s"
+	@echo "... src/i_print_hashtable.o"
+	@echo "... src/i_print_hashtable.i"
+	@echo "... src/i_print_hashtable.s"
+	@echo "... src/input_cleaning.o"
+	@echo "... src/input_cleaning.i"
+	@echo "... src/input_cleaning.s"
+	@echo "... src/j_print.o"
+	@echo "... src/j_print.i"
+	@echo "... src/j_print.s"
+	@echo "... src/k_create_paths.o"
+	@echo "... src/k_create_paths.i"
+	@echo "... src/k_create_paths.s"
+	@echo "... src/l2_create_paths3.o"
+	@echo "... src/l2_create_paths3.i"
+	@echo "... src/l2_create_paths3.s"
+	@echo "... src/l_create_paths2.o"
+	@echo "... src/l_create_paths2.i"
+	@echo "... src/l_create_paths2.s"
+	@echo "... src/m_flow.o"
+	@echo "... src/m_flow.i"
+	@echo "... src/m_flow.s"
+	@echo "... src/n_flow2.o"
+	@echo "... src/n_flow2.i"
+	@echo "... src/n_flow2.s"
+	@echo "... src/o_if_crash.o"
+	@echo "... src/o_if_crash.i"
+	@echo "... src/o_if_crash.s"
+	@echo "... src/p_if_crash2.o"
+	@echo "... src/p_if_crash2.i"
+	@echo "... src/p_if_crash2.s"
+	@echo "... src/z_dashes_in_input.o"
+	@echo "... src/z_dashes_in_input.i"
+	@echo "... src/z_dashes_in_input.s"
+	@echo "... src/z_delete_links.o"
+	@echo "... src/z_delete_links.i"
+	@echo "... src/z_delete_links.s"
+	@echo "... src/z_errors.o"
+	@echo "... src/z_errors.i"
+	@echo "... src/z_errors.s"
+	@echo "... src/z_hash_table.o"
+	@echo "... src/z_hash_table.i"
+	@echo "... src/z_hash_table.s"
+	@echo "... src/z_init_structure.o"
+	@echo "... src/z_init_structure.i"
+	@echo "... src/z_init_structure.s"
+	@echo "... src/z_is.o"
+	@echo "... src/z_is.i"
+	@echo "... src/z_is.s"
+	@echo "... src/z_let_me_free.o"
+	@echo "... src/z_let_me_free.i"
+	@echo "... src/z_let_me_free.s"
+	@echo "... src/z_let_me_free_lem.o"
+	@echo "... src/z_let_me_free_lem.i"
+	@echo "... src/z_let_me_free_lem.s"
+	@echo "... src/z_let_me_free_lem2.o"
+	@echo "... src/z_let_me_free_lem2.i"
+	@echo "... src/z_let_me_free_lem2.s"
+	@echo "... src/z_read_line.o"
+	@echo "... src/z_read_line.i"
+	@echo "... src/z_read_line.s"
+	@echo "... src/z_validator.o"
+	@echo "... src/z_validator.i"
+	@echo "... src/z_validator.s"
+	@echo "... src/z_write_coordinate.o"
+	@echo "... src/z_write_coordinate.i"
+	@echo "... src/z_write_coordinate.s"
 .PHONY : help
 
 

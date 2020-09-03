@@ -80,7 +80,7 @@ int			create_way_sub2(t_lem_in *lem_in, t_path *tmp, t_room *cur, int j)
 		tmp = NULL;
 		len++;
 	}
-	printf("\n");
+	ft_printf("\n");
 	return (len);
 }
 
@@ -129,6 +129,4 @@ void		second_plan(t_lem_in *lem_in, int maxpath)
 		create_way3(lem_in, maxpath, 0);
 		lem_in->path_num = len_of_actual_paths(lem_in);
 	}
-	else
-		ft_printf("ENOUGH\n");
 }
