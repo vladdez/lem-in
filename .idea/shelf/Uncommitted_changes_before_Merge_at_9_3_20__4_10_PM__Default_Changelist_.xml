@@ -1,0 +1,54 @@
+<changelist name="Uncommitted_changes_before_Merge_at_9_3_20,_4_10_PM_[Default_Changelist]" date="1599138630415" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_9_3_20,_4_10_PM_[Default_Changelist]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Merge at 9/3/20, 4:10 PM [Default Changelist]" />
+  <binary>
+    <option name="BEFORE_PATH" value="cmake-build-debug/irina5" />
+    <option name="AFTER_PATH" value="cmake-build-debug/irina5" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_9_3_20,_4_10_PM_[Default_Changelist]/irina5" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="cmake-build-debug/CMakeFiles/irina5.dir/src/9.flow.c.o" />
+    <option name="AFTER_PATH" value="cmake-build-debug/CMakeFiles/irina5.dir/src/9.flow.c.o" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_9_3_20,_4_10_PM_[Default_Changelist]/9.flow.c.o" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="cmake-build-debug/CMakeFiles/irina5.dir/src/8.create_paths.c.o" />
+    <option name="AFTER_PATH" value="cmake-build-debug/CMakeFiles/irina5.dir/src/8.create_paths.c.o" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_9_3_20,_4_10_PM_[Default_Changelist]/8.create_paths.c.o" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="src/obj/10.if_crash.o" />
+    <option name="AFTER_PATH" value="src/obj/10.if_crash.o" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_9_3_20,_4_10_PM_[Default_Changelist]/10.if_crash.o" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="lem-in" />
+    <option name="AFTER_PATH" value="lem-in" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_9_3_20,_4_10_PM_[Default_Changelist]/lem-in" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="cmake-build-debug/CMakeFiles/irina5.dir/src/1.main.c.o" />
+    <option name="AFTER_PATH" value="cmake-build-debug/CMakeFiles/irina5.dir/src/1.main.c.o" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_9_3_20,_4_10_PM_[Default_Changelist]/1.main.c.o" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="cmake-build-debug/CMakeFiles/irina5.dir/src/10.if_crash.c.o" />
+    <option name="AFTER_PATH" value="cmake-build-debug/CMakeFiles/irina5.dir/src/10.if_crash.c.o" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_9_3_20,_4_10_PM_[Default_Changelist]/10.if_crash.c.o" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="cmake-build-debug/CMakeFiles/irina5.dir/src/4.bfs.c.o" />
+    <option name="AFTER_PATH" value="cmake-build-debug/CMakeFiles/irina5.dir/src/4.bfs.c.o" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_9_3_20,_4_10_PM_[Default_Changelist]/4.bfs.c.o" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="cmake-build-debug/CMakeFiles/irina5.dir/src/10.if_crash2.c.o" />
+    <option name="AFTER_PATH" value="cmake-build-debug/CMakeFiles/irina5.dir/src/10.if_crash2.c.o" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_9_3_20,_4_10_PM_[Default_Changelist]/10.if_crash2.c.o" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="src/obj/10.if_crash2.o" />
+    <option name="AFTER_PATH" value="src/obj/10.if_crash2.o" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_9_3_20,_4_10_PM_[Default_Changelist]/10.if_crash2.o" />
+  </binary>
+</changelist>

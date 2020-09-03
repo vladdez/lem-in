@@ -22,14 +22,14 @@ LEMIN_SRC_DIR = src/
 
 HEADER = lem-in.h
 
-CLEMIN =  0.1.errors.c 0.2.read_line.c 0.3.validator.c 0.4.is.c 0.5.hash_table.c  0.6.init_structure.c \
-0.7.write_coordinate.c 0.8.dashes_in_input.c 0.9.delete_links.c \
-1.main.c 1.1.init.c \
-2.1_parse_ants.c 2.parse_rooms.c \
-3.parse_link.c 4.bfs.c 5.find_links_direction.c 6.input_cleaning.c 6.2.deadlock_cleaning.c 7.print.c 7.2.print_hashtable.c\
-8.create_paths.c 8.create_paths2.c 9.flow.c 9.flow2.c \
-10.if_crash.c 10.if_crash2.c\
-let_me_free.c let_me_free_lem.c let_me_free_lem2.c 
+CLEMIN =  z_errors.c z_read_line.c z_validator.c z_is.c z_hash_table.c  z_init_structure.c \
+z_write_coordinate.c z_dashes_in_input.c z_delete_links.c \
+a_main.c b_init.c \
+c_parse_ants.c d_parse_rooms.c \
+e_parse_link.c f_bfs.c h_find_links_direction.c g_deadlock_cleaning.c j_print.c i_print_hashtable.c\
+k_create_paths.c l_create_paths2.c l2_create_paths3.c m_flow.c n_flow2.c \
+o_if_crash.c p_if_crash2.c\
+z_let_me_free.c z_let_me_free_lem.c z_let_me_free_lem2.c 
 
 LEMIN_SRC = $(addprefix $(LEMIN_SRC_DIR),$(CLEMIN))
 

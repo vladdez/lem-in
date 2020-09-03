@@ -1,0 +1,8 @@
+		/*if (j == 1 && len < 120)
+		{
+				ft_printf("%d) %s[%d] \n", len, tmp_room->room_name, tmp_room->bfs_level);
+				if (tmp_room->link != NULL)
+					print_links(tmp_room);
+				ft_printf(" \n");
+		}*/
+        

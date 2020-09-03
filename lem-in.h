@@ -182,9 +182,13 @@ void					create_way3(t_lem_in *lem_in, int cut, int j);
 t_room					*find_lowest_bfs3(t_node *n, t_hashtable *ht_rooms, t_lem_in *lem_in);
 int						create_way_sub2(t_lem_in *lem_in, t_path *tmp, t_room *cur, int j);
 void					free_all(t_line *input, t_lem_in *lem_in, int fd);
-int		is_enough(t_lem_in *lem_in);
-void	get_mem(t_lem_in *lem_in, int i);
-void	print_links(t_room *tmp2);
+int						is_enough(t_lem_in *lem_in);
+void					get_mem(t_lem_in *lem_in, int i);
+void					print_links(t_room *tmp2);
+void					check_order(t_path **paths, t_lem_in *lem_in);
+void					upd_visits(t_lem_in *lem_in, t_room	*tmp_room);
+int						are_nei_valid(t_room *tmp_room, t_lem_in *lem_in);
+void					is_cutted(t_lem_in *lem_in);
 # define ERR_ANTS_NUM_PARSING	"ERROR: Number of ants is incorrent"
 # define ERR_ROOM_PARSING		"ERROR: Can\'t parse room"
 # define ERR_ROOM_INIT			"ERROR: Can\'t initialize room"

@@ -38,39 +38,14 @@
   <component name="ChangeListManager">
     <list default="true" id="30b215e4-c186-4ee7-a924-0d140b951c90" name="Default Changelist" comment="fixup! serious bags">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/C.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/0.3.validator.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/0.3.validator.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/0.6.init_structure.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/0.6.init_structure.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/0.8.dashes_in_input.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/0.8.dashes_in_input.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/1.1.init.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/1.1.init.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/1.main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/1.main.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/10.if_crash.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/10.if_crash.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/10.if_crash2.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/10.if_crash2.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/2.1_parse_ants.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/2.1_parse_ants.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/2.parse_rooms.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/2.parse_rooms.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/3.parse_link.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/3.parse_link.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/4.bfs.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/4.bfs.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/6.input_cleaning.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/6.input_cleaning.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/8.create_paths.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/8.create_paths.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/8.create_paths2.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/8.create_paths2.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/9.flow.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/9.flow.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/9.flow2.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/9.flow2.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/let_me_free.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/let_me_free.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/let_me_free_lem.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/irina5.dir/src/let_me_free_lem.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/irina5" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/irina5" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lem-in" beforeDir="false" afterPath="$PROJECT_DIR$/lem-in" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lem-in.h" beforeDir="false" afterPath="$PROJECT_DIR$/lem-in.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/libft.a" beforeDir="false" afterPath="$PROJECT_DIR$/libft/libft.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map" beforeDir="false" afterPath="$PROJECT_DIR$/map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/1.1.init.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/1.1.init.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/1.main.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/1.main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/10.if_crash.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/10.if_crash.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/4.bfs.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/4.bfs.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/8.create_paths.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/8.create_paths.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/obj/1.1.init.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/obj/1.1.init.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/obj/1.main.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/obj/1.main.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/obj/10.if_crash.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/obj/10.if_crash.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/obj/4.bfs.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/obj/4.bfs.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/obj/8.create_paths.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/obj/8.create_paths.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/obj/1.main.o" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,9 +86,9 @@
     </key>
   </component>
   <component name="RunManager" selected="CMake Application.irina5">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
       </method>
     </configuration>
     <configuration name="irina" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="map0" REDIRECT_INPUT="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="irina5" TARGET_NAME="irina" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="irina5" RUN_TARGET_NAME="irina">
@@ -214,6 +189,9 @@
       <workItem from="1598876927956" duration="8401000" />
       <workItem from="1598893230152" duration="1592000" />
       <workItem from="1598948863482" duration="1334000" />
+      <workItem from="1598959999653" duration="495000" />
+      <workItem from="1599063519194" duration="503000" />
+      <workItem from="1599138581098" duration="767000" />
     </task>
     <servers />
   </component>
@@ -342,11 +320,11 @@
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="664" y="433" key="VcsDiffUtil.ChangesDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1597938339455" />
-    <state x="506" y="328" key="git4idea.branch.GitSmartOperationDialog" timestamp="1598030732560">
-      <screen x="0" y="23" width="2048" height="1049" />
+    <state x="632" y="412" key="git4idea.branch.GitSmartOperationDialog" timestamp="1599138622863">
+      <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="506" y="328" key="git4idea.branch.GitSmartOperationDialog/0.23.2048.1049@0.23.2048.1049" timestamp="1598030732560" />
-    <state x="632" y="412" key="git4idea.branch.GitSmartOperationDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1597938369773" />
+    <state x="632" y="412" key="git4idea.branch.GitSmartOperationDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1599138622863" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -363,6 +341,11 @@
           <url>file://$PROJECT_DIR$/src/8.create_paths.c</url>
           <line>103</line>
           <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/10.if_crash.c</url>
+          <line>223</line>
+          <option name="timeStamp" value="29" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
