@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "lem-in.h"
+#include "../inc/lem_in.h"
 
 void	print_incominglinks(t_room *tmp2)
 {

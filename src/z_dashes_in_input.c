@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "lem-in.h"
+#include "../inc/lem_in.h"
 
 int		count_dashes_in_imput(char *str)
 {

@@ -5,7 +5,7 @@ set(CMAKE_C_STANDARD 11)
 
 include_directories(.)
 include_directories(libft/libft)
-include_directories(libft/printf)
+include_directories(libft/ft_printf)
 
 add_executable(irina5
         libft/libft/ft_atoi.c
@@ -75,25 +75,25 @@ add_executable(irina5
         libft/libft/ft_words.c
         libft/libft/get_next_line.c
         libft/libft/libft.h
-        libft/printf/color.c
-        libft/printf/conversion.c
-        libft/printf/free.c
-        libft/printf/ft_printf.c
-        libft/printf/ft_printf.h
-        libft/printf/multiplier.c
-        libft/printf/neg_exp.c
-        libft/printf/prec.c
-        libft/printf/prec2.c
-        libft/printf/print_float.c
-        libft/printf/print_integer.c
-        libft/printf/print_octal_x.c
-        libft/printf/print_pointer_char.c
-        libft/printf/print_string.c
-        libft/printf/print_unsigned.c
-        libft/printf/read_format.c
-        libft/printf/substr.c
-        libft/printf/sum_char.c
-        libft/printf/tools.c
+        libft/ft_printf/color.c
+        libft/ft_printf/conversion.c
+        libft/ft_printf/free.c
+        libft/ft_printf/ft_printf.c
+        libft/ft_printf/ft_printf.h
+        libft/ft_printf/multiplier.c
+        libft/ft_printf/neg_exp.c
+        libft/ft_printf/prec.c
+        libft/ft_printf/prec2.c
+        libft/ft_printf/print_float.c
+        libft/ft_printf/print_integer.c
+        libft/ft_printf/print_octal_x.c
+        libft/ft_printf/print_pointer_char.c
+        libft/ft_printf/print_string.c
+        libft/ft_printf/print_unsigned.c
+        libft/ft_printf/read_format.c
+        libft/ft_printf/substr.c
+        libft/ft_printf/sum_char.c
+        libft/ft_printf/tools.c
         src/a_main.c
         src/b_init.c
         src/c_parse_ants.c
@@ -124,4 +124,4 @@ add_executable(irina5
         src/z_read_line.c
         src/z_validator.c
         src/z_write_coordinate.c
-        lem-in.h)
+        inc/lem_in.h)

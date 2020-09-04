@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "lem-in.h"
+#include "../inc/lem_in.h"
 
 void	clean_and_free_link(t_node *kill)
 {

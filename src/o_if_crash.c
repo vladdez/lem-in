@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "lem-in.h"
+#include "../inc/lem_in.h"
 
 t_room		*find_lowest_bfs2(t_node *n, t_hashtable *ht_rooms,
 t_lem_in *lem_in, int lowest)

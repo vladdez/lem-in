@@ -10,53 +10,57 @@
 #                                                                              #
 # **************************************************************************** #
 
-NAME = lem-in
 
-FLAGS = -Wall -Wextra  -I. -I ./libft/libft -I ./libft/printf
+NAME			=	lem-in
+INC_NAME		=	lem_in.h
 
-OBJCD = ./src/obj/
+LIB_PATH		=	libft/
+LIB_INC_PATH	=	libft/
+LIB_NAME		=	libft.a
 
-LIB = -L libft/ -lft 
+SRC_PATH		=	src/
+INC_PATH		=	inc/
+OBJ_PATH		=	obj/
 
-LEMIN_SRC_DIR = src/
+SRC_NAME		=	z_errors.c z_read_line.c z_validator.c z_is.c z_hash_table.c  z_init_structure.c \
+                    z_write_coordinate.c z_dashes_in_input.c z_delete_links.c \
+                    a_main.c b_init.c \
+                    c_parse_ants.c d_parse_rooms.c \
+                    e_parse_link.c f_bfs.c h_find_links_direction.c g_deadlock_cleaning.c j_print.c i_print_hashtable.c\
+                    k_create_paths.c l_create_paths2.c l2_create_paths3.c m_flow.c n_flow2.c \
+                    o_if_crash.c p_if_crash2.c\
+                    z_let_me_free.c z_let_me_free_lem.c z_let_me_free_lem2.c
 
-HEADER = lem-in.h
+SRC				=	$(addprefix $(SRC_PATH), $(SRC_NAME))
+INC				=	$(addprefix $(INC_PATH), $(INC_NAME))
+OBJ				=	$(addprefix $(OBJ_PATH), $(SRC_NAME:.c=.o))
 
-CLEMIN =  z_errors.c z_read_line.c z_validator.c z_is.c z_hash_table.c  z_init_structure.c \
-z_write_coordinate.c z_dashes_in_input.c z_delete_links.c \
-a_main.c b_init.c \
-c_parse_ants.c d_parse_rooms.c \
-e_parse_link.c f_bfs.c h_find_links_direction.c g_deadlock_cleaning.c j_print.c i_print_hashtable.c\
-k_create_paths.c l_create_paths2.c l2_create_paths3.c m_flow.c n_flow2.c \
-o_if_crash.c p_if_crash2.c\
-z_let_me_free.c z_let_me_free_lem.c z_let_me_free_lem2.c 
+CC				=	gcc
+CFLAGS			=	-Wall -Wextra -Werror
+IFLAGS			=	-I $(INC_PATH). -I $(LIB_PATH).
+LFLAGS			=	-L $(LIB_PATH) -lft
 
-LEMIN_SRC = $(addprefix $(LEMIN_SRC_DIR),$(CLEMIN))
+LIB				=	make -C $(LIB_PATH)
 
-LEMIN_OBJ = $(addprefix $(OBJCD),$(LEMIN_SRC:src/%.c=%.o))
+.PHONY:	all clean fclean re lib
 
+$(OBJ_PATH)%.o:		$(SRC_PATH)%.c $(INC)
+					@mkdir -p $(OBJ_PATH)
+					$(CC) $(CFLAGS) $(IFLAGS) -c -o $@ $<
 
-.PHONY: all clean fclean re
+all:				$(NAME)
 
-all: $(NAME)
+$(NAME):			$(OBJ)
 
-$(NAME): $(LEMIN_OBJ) $(HEADER)
-	make -C libft
-	gcc $(FLAGS) $(LEMIN_OBJ) -o $(NAME) $(LIB)
+					$(LIB)
+					$(CC) $(CFLAGS) $(IFLAGS) -o $@ $^ $(LFLAGS)
 
+clean:
+					make clean -C $(LIB_PATH)
+					rm -rf $(OBJ_PATH)
 
-$(OBJCD)%.o : $(LEMIN_SRC_DIR)%.c $(HEADER)
-	gcc -c $(FLAGS) $< -o $@
+fclean:				clean
+					make fclean -C $(LIB_PATH)
+					rm -f $(NAME)
 
-
-clean:	
-	@rm -rf $(OBJCD)
-	@mkdir $(OBJCD)
-	make clean -C libft/
-
-fclean: clean	
-	make fclean -C libft/
-	@rm -rf $(OBJCD) $(NAME)
-	@mkdir $(OBJCD)
-
-re: fclean all
+re:					fclean all

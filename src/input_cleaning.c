@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "lem-in.h"
+#include "../inc/lem_in.h"
 
 void	delete_outgoing_links_for_end(t_room *end_room, t_hashtable *ht_rooms)
 {

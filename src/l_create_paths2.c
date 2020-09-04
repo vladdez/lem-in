@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "lem-in.h"
+#include "../inc/lem_in.h"
 
 t_room	*find_best_room(t_room *cur, t_hashtable *ht_rooms)
 {
