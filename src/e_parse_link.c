@@ -113,6 +113,8 @@ void	create_link(t_lem_in *lem_in, char *str)
 
 void	parse_link(t_lem_in *lem_in, int fd, t_line **input, t_line **tmp)
 {
+    if ((*tmp) == NULL)
+        terminate(ERR_NO_LINKS);
 	while ((*tmp) || ((*tmp) = read_line(input, fd)))
 	{
 		if (is_command((*tmp)->data) != COMMAND &&
@@ -120,4 +122,6 @@ void	parse_link(t_lem_in *lem_in, int fd, t_line **input, t_line **tmp)
 			create_link(lem_in, (*tmp)->data);
 		(*tmp) = NULL;
 	}
+    if (lem_in->start->link->node == NULL)
+        terminate(ERR_NO_PATH);
 }

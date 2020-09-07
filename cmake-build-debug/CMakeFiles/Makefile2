@@ -55,19 +55,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /private/var/folders/zz/zyxvpxvq6csfxvn_n00019tc000_fl/T/AppTranslocation/CAEFE763-4757-4018-959E-9B927A330976/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /private/var/folders/wb/ylrhwjnd2ys8fwjlnx_m307r0000gn/T/AppTranslocation/13578319-4287-45F5-950F-3AA52986E601/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /private/var/folders/zz/zyxvpxvq6csfxvn_n00019tc000_fl/T/AppTranslocation/CAEFE763-4757-4018-959E-9B927A330976/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
+RM = /private/var/folders/wb/ylrhwjnd2ys8fwjlnx_m307r0000gn/T/AppTranslocation/13578319-4287-45F5-950F-3AA52986E601/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/bhugo/Desktop/lem-in
+CMAKE_SOURCE_DIR = /Users/irinadeeva/Desktop/lem-in
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/bhugo/Desktop/lem-in/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/irinadeeva/Desktop/lem-in/cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -94,14 +94,14 @@ clean: CMakeFiles/irina5.dir/clean
 CMakeFiles/irina5.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/bhugo/Desktop/lem-in/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100 "Built target irina5"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/irinadeeva/Desktop/lem-in/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100 "Built target irina5"
 .PHONY : CMakeFiles/irina5.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/irina5.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhugo/Desktop/lem-in/cmake-build-debug/CMakeFiles 100
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/irinadeeva/Desktop/lem-in/cmake-build-debug/CMakeFiles 100
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/irina5.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhugo/Desktop/lem-in/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/irinadeeva/Desktop/lem-in/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/irina5.dir/rule
 
 # Convenience name for target.

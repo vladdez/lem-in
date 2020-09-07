@@ -59,19 +59,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /private/var/folders/zz/zyxvpxvq6csfxvn_n00019tc000_fl/T/AppTranslocation/CAEFE763-4757-4018-959E-9B927A330976/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /private/var/folders/wb/ylrhwjnd2ys8fwjlnx_m307r0000gn/T/AppTranslocation/13578319-4287-45F5-950F-3AA52986E601/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /private/var/folders/zz/zyxvpxvq6csfxvn_n00019tc000_fl/T/AppTranslocation/CAEFE763-4757-4018-959E-9B927A330976/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
+RM = /private/var/folders/wb/ylrhwjnd2ys8fwjlnx_m307r0000gn/T/AppTranslocation/13578319-4287-45F5-950F-3AA52986E601/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/bhugo/Desktop/lem-in
+CMAKE_SOURCE_DIR = /Users/irinadeeva/Desktop/lem-in
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/bhugo/Desktop/lem-in/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/irinadeeva/Desktop/lem-in/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,7 +79,7 @@ CMAKE_BINARY_DIR = /Users/bhugo/Desktop/lem-in/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/private/var/folders/zz/zyxvpxvq6csfxvn_n00019tc000_fl/T/AppTranslocation/CAEFE763-4757-4018-959E-9B927A330976/d/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/private/var/folders/wb/ylrhwjnd2ys8fwjlnx_m307r0000gn/T/AppTranslocation/13578319-4287-45F5-950F-3AA52986E601/d/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -90,7 +90,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/private/var/folders/zz/zyxvpxvq6csfxvn_n00019tc000_fl/T/AppTranslocation/CAEFE763-4757-4018-959E-9B927A330976/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/private/var/folders/wb/ylrhwjnd2ys8fwjlnx_m307r0000gn/T/AppTranslocation/13578319-4287-45F5-950F-3AA52986E601/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -100,9 +100,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhugo/Desktop/lem-in/cmake-build-debug/CMakeFiles /Users/bhugo/Desktop/lem-in/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/irinadeeva/Desktop/lem-in/cmake-build-debug/CMakeFiles /Users/irinadeeva/Desktop/lem-in/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhugo/Desktop/lem-in/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/irinadeeva/Desktop/lem-in/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -143,2273 +143,2273 @@ irina5/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/build
 .PHONY : irina5/fast
 
-libft/libft/ft_atoi.o: libft/libft/ft_atoi.c.o
+libft/ft_atoi.o: libft/ft_atoi.c.o
 
-.PHONY : libft/libft/ft_atoi.o
+.PHONY : libft/ft_atoi.o
 
 # target to build an object file
-libft/libft/ft_atoi.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_atoi.c.o
-.PHONY : libft/libft/ft_atoi.c.o
+libft/ft_atoi.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_atoi.c.o
+.PHONY : libft/ft_atoi.c.o
 
-libft/libft/ft_atoi.i: libft/libft/ft_atoi.c.i
+libft/ft_atoi.i: libft/ft_atoi.c.i
 
-.PHONY : libft/libft/ft_atoi.i
+.PHONY : libft/ft_atoi.i
 
 # target to preprocess a source file
-libft/libft/ft_atoi.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_atoi.c.i
-.PHONY : libft/libft/ft_atoi.c.i
+libft/ft_atoi.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_atoi.c.i
+.PHONY : libft/ft_atoi.c.i
 
-libft/libft/ft_atoi.s: libft/libft/ft_atoi.c.s
+libft/ft_atoi.s: libft/ft_atoi.c.s
 
-.PHONY : libft/libft/ft_atoi.s
+.PHONY : libft/ft_atoi.s
 
 # target to generate assembly for a file
-libft/libft/ft_atoi.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_atoi.c.s
-.PHONY : libft/libft/ft_atoi.c.s
+libft/ft_atoi.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_atoi.c.s
+.PHONY : libft/ft_atoi.c.s
 
-libft/libft/ft_bzero.o: libft/libft/ft_bzero.c.o
+libft/ft_bzero.o: libft/ft_bzero.c.o
 
-.PHONY : libft/libft/ft_bzero.o
+.PHONY : libft/ft_bzero.o
 
 # target to build an object file
-libft/libft/ft_bzero.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_bzero.c.o
-.PHONY : libft/libft/ft_bzero.c.o
+libft/ft_bzero.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_bzero.c.o
+.PHONY : libft/ft_bzero.c.o
 
-libft/libft/ft_bzero.i: libft/libft/ft_bzero.c.i
+libft/ft_bzero.i: libft/ft_bzero.c.i
 
-.PHONY : libft/libft/ft_bzero.i
+.PHONY : libft/ft_bzero.i
 
 # target to preprocess a source file
-libft/libft/ft_bzero.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_bzero.c.i
-.PHONY : libft/libft/ft_bzero.c.i
+libft/ft_bzero.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_bzero.c.i
+.PHONY : libft/ft_bzero.c.i
 
-libft/libft/ft_bzero.s: libft/libft/ft_bzero.c.s
+libft/ft_bzero.s: libft/ft_bzero.c.s
 
-.PHONY : libft/libft/ft_bzero.s
+.PHONY : libft/ft_bzero.s
 
 # target to generate assembly for a file
-libft/libft/ft_bzero.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_bzero.c.s
-.PHONY : libft/libft/ft_bzero.c.s
+libft/ft_bzero.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_bzero.c.s
+.PHONY : libft/ft_bzero.c.s
 
-libft/libft/ft_isalnum.o: libft/libft/ft_isalnum.c.o
+libft/ft_isalnum.o: libft/ft_isalnum.c.o
 
-.PHONY : libft/libft/ft_isalnum.o
+.PHONY : libft/ft_isalnum.o
 
 # target to build an object file
-libft/libft/ft_isalnum.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_isalnum.c.o
-.PHONY : libft/libft/ft_isalnum.c.o
+libft/ft_isalnum.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_isalnum.c.o
+.PHONY : libft/ft_isalnum.c.o
 
-libft/libft/ft_isalnum.i: libft/libft/ft_isalnum.c.i
+libft/ft_isalnum.i: libft/ft_isalnum.c.i
 
-.PHONY : libft/libft/ft_isalnum.i
+.PHONY : libft/ft_isalnum.i
 
 # target to preprocess a source file
-libft/libft/ft_isalnum.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_isalnum.c.i
-.PHONY : libft/libft/ft_isalnum.c.i
+libft/ft_isalnum.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_isalnum.c.i
+.PHONY : libft/ft_isalnum.c.i
 
-libft/libft/ft_isalnum.s: libft/libft/ft_isalnum.c.s
+libft/ft_isalnum.s: libft/ft_isalnum.c.s
 
-.PHONY : libft/libft/ft_isalnum.s
+.PHONY : libft/ft_isalnum.s
 
 # target to generate assembly for a file
-libft/libft/ft_isalnum.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_isalnum.c.s
-.PHONY : libft/libft/ft_isalnum.c.s
+libft/ft_isalnum.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_isalnum.c.s
+.PHONY : libft/ft_isalnum.c.s
 
-libft/libft/ft_isalpha.o: libft/libft/ft_isalpha.c.o
+libft/ft_isalpha.o: libft/ft_isalpha.c.o
 
-.PHONY : libft/libft/ft_isalpha.o
+.PHONY : libft/ft_isalpha.o
 
 # target to build an object file
-libft/libft/ft_isalpha.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_isalpha.c.o
-.PHONY : libft/libft/ft_isalpha.c.o
+libft/ft_isalpha.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_isalpha.c.o
+.PHONY : libft/ft_isalpha.c.o
 
-libft/libft/ft_isalpha.i: libft/libft/ft_isalpha.c.i
+libft/ft_isalpha.i: libft/ft_isalpha.c.i
 
-.PHONY : libft/libft/ft_isalpha.i
+.PHONY : libft/ft_isalpha.i
 
 # target to preprocess a source file
-libft/libft/ft_isalpha.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_isalpha.c.i
-.PHONY : libft/libft/ft_isalpha.c.i
+libft/ft_isalpha.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_isalpha.c.i
+.PHONY : libft/ft_isalpha.c.i
 
-libft/libft/ft_isalpha.s: libft/libft/ft_isalpha.c.s
+libft/ft_isalpha.s: libft/ft_isalpha.c.s
 
-.PHONY : libft/libft/ft_isalpha.s
+.PHONY : libft/ft_isalpha.s
 
 # target to generate assembly for a file
-libft/libft/ft_isalpha.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_isalpha.c.s
-.PHONY : libft/libft/ft_isalpha.c.s
+libft/ft_isalpha.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_isalpha.c.s
+.PHONY : libft/ft_isalpha.c.s
 
-libft/libft/ft_isascii.o: libft/libft/ft_isascii.c.o
+libft/ft_isascii.o: libft/ft_isascii.c.o
 
-.PHONY : libft/libft/ft_isascii.o
+.PHONY : libft/ft_isascii.o
 
 # target to build an object file
-libft/libft/ft_isascii.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_isascii.c.o
-.PHONY : libft/libft/ft_isascii.c.o
+libft/ft_isascii.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_isascii.c.o
+.PHONY : libft/ft_isascii.c.o
 
-libft/libft/ft_isascii.i: libft/libft/ft_isascii.c.i
+libft/ft_isascii.i: libft/ft_isascii.c.i
 
-.PHONY : libft/libft/ft_isascii.i
+.PHONY : libft/ft_isascii.i
 
 # target to preprocess a source file
-libft/libft/ft_isascii.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_isascii.c.i
-.PHONY : libft/libft/ft_isascii.c.i
+libft/ft_isascii.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_isascii.c.i
+.PHONY : libft/ft_isascii.c.i
 
-libft/libft/ft_isascii.s: libft/libft/ft_isascii.c.s
+libft/ft_isascii.s: libft/ft_isascii.c.s
 
-.PHONY : libft/libft/ft_isascii.s
+.PHONY : libft/ft_isascii.s
 
 # target to generate assembly for a file
-libft/libft/ft_isascii.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_isascii.c.s
-.PHONY : libft/libft/ft_isascii.c.s
+libft/ft_isascii.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_isascii.c.s
+.PHONY : libft/ft_isascii.c.s
 
-libft/libft/ft_isdigit.o: libft/libft/ft_isdigit.c.o
+libft/ft_isdigit.o: libft/ft_isdigit.c.o
 
-.PHONY : libft/libft/ft_isdigit.o
+.PHONY : libft/ft_isdigit.o
 
 # target to build an object file
-libft/libft/ft_isdigit.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_isdigit.c.o
-.PHONY : libft/libft/ft_isdigit.c.o
+libft/ft_isdigit.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_isdigit.c.o
+.PHONY : libft/ft_isdigit.c.o
 
-libft/libft/ft_isdigit.i: libft/libft/ft_isdigit.c.i
+libft/ft_isdigit.i: libft/ft_isdigit.c.i
 
-.PHONY : libft/libft/ft_isdigit.i
+.PHONY : libft/ft_isdigit.i
 
 # target to preprocess a source file
-libft/libft/ft_isdigit.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_isdigit.c.i
-.PHONY : libft/libft/ft_isdigit.c.i
+libft/ft_isdigit.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_isdigit.c.i
+.PHONY : libft/ft_isdigit.c.i
 
-libft/libft/ft_isdigit.s: libft/libft/ft_isdigit.c.s
+libft/ft_isdigit.s: libft/ft_isdigit.c.s
 
-.PHONY : libft/libft/ft_isdigit.s
+.PHONY : libft/ft_isdigit.s
 
 # target to generate assembly for a file
-libft/libft/ft_isdigit.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_isdigit.c.s
-.PHONY : libft/libft/ft_isdigit.c.s
+libft/ft_isdigit.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_isdigit.c.s
+.PHONY : libft/ft_isdigit.c.s
 
-libft/libft/ft_isprint.o: libft/libft/ft_isprint.c.o
+libft/ft_isprint.o: libft/ft_isprint.c.o
 
-.PHONY : libft/libft/ft_isprint.o
+.PHONY : libft/ft_isprint.o
 
 # target to build an object file
-libft/libft/ft_isprint.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_isprint.c.o
-.PHONY : libft/libft/ft_isprint.c.o
+libft/ft_isprint.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_isprint.c.o
+.PHONY : libft/ft_isprint.c.o
 
-libft/libft/ft_isprint.i: libft/libft/ft_isprint.c.i
+libft/ft_isprint.i: libft/ft_isprint.c.i
 
-.PHONY : libft/libft/ft_isprint.i
+.PHONY : libft/ft_isprint.i
 
 # target to preprocess a source file
-libft/libft/ft_isprint.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_isprint.c.i
-.PHONY : libft/libft/ft_isprint.c.i
+libft/ft_isprint.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_isprint.c.i
+.PHONY : libft/ft_isprint.c.i
 
-libft/libft/ft_isprint.s: libft/libft/ft_isprint.c.s
+libft/ft_isprint.s: libft/ft_isprint.c.s
 
-.PHONY : libft/libft/ft_isprint.s
+.PHONY : libft/ft_isprint.s
 
 # target to generate assembly for a file
-libft/libft/ft_isprint.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_isprint.c.s
-.PHONY : libft/libft/ft_isprint.c.s
+libft/ft_isprint.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_isprint.c.s
+.PHONY : libft/ft_isprint.c.s
 
-libft/libft/ft_itoa.o: libft/libft/ft_itoa.c.o
+libft/ft_itoa.o: libft/ft_itoa.c.o
 
-.PHONY : libft/libft/ft_itoa.o
+.PHONY : libft/ft_itoa.o
 
 # target to build an object file
-libft/libft/ft_itoa.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_itoa.c.o
-.PHONY : libft/libft/ft_itoa.c.o
+libft/ft_itoa.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_itoa.c.o
+.PHONY : libft/ft_itoa.c.o
 
-libft/libft/ft_itoa.i: libft/libft/ft_itoa.c.i
+libft/ft_itoa.i: libft/ft_itoa.c.i
 
-.PHONY : libft/libft/ft_itoa.i
+.PHONY : libft/ft_itoa.i
 
 # target to preprocess a source file
-libft/libft/ft_itoa.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_itoa.c.i
-.PHONY : libft/libft/ft_itoa.c.i
+libft/ft_itoa.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_itoa.c.i
+.PHONY : libft/ft_itoa.c.i
 
-libft/libft/ft_itoa.s: libft/libft/ft_itoa.c.s
+libft/ft_itoa.s: libft/ft_itoa.c.s
 
-.PHONY : libft/libft/ft_itoa.s
+.PHONY : libft/ft_itoa.s
 
 # target to generate assembly for a file
-libft/libft/ft_itoa.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_itoa.c.s
-.PHONY : libft/libft/ft_itoa.c.s
+libft/ft_itoa.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_itoa.c.s
+.PHONY : libft/ft_itoa.c.s
 
-libft/libft/ft_lstadd.o: libft/libft/ft_lstadd.c.o
+libft/ft_lstadd.o: libft/ft_lstadd.c.o
 
-.PHONY : libft/libft/ft_lstadd.o
+.PHONY : libft/ft_lstadd.o
 
 # target to build an object file
-libft/libft/ft_lstadd.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_lstadd.c.o
-.PHONY : libft/libft/ft_lstadd.c.o
+libft/ft_lstadd.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_lstadd.c.o
+.PHONY : libft/ft_lstadd.c.o
 
-libft/libft/ft_lstadd.i: libft/libft/ft_lstadd.c.i
+libft/ft_lstadd.i: libft/ft_lstadd.c.i
 
-.PHONY : libft/libft/ft_lstadd.i
+.PHONY : libft/ft_lstadd.i
 
 # target to preprocess a source file
-libft/libft/ft_lstadd.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_lstadd.c.i
-.PHONY : libft/libft/ft_lstadd.c.i
+libft/ft_lstadd.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_lstadd.c.i
+.PHONY : libft/ft_lstadd.c.i
 
-libft/libft/ft_lstadd.s: libft/libft/ft_lstadd.c.s
+libft/ft_lstadd.s: libft/ft_lstadd.c.s
 
-.PHONY : libft/libft/ft_lstadd.s
+.PHONY : libft/ft_lstadd.s
 
 # target to generate assembly for a file
-libft/libft/ft_lstadd.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_lstadd.c.s
-.PHONY : libft/libft/ft_lstadd.c.s
+libft/ft_lstadd.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_lstadd.c.s
+.PHONY : libft/ft_lstadd.c.s
 
-libft/libft/ft_lstdel.o: libft/libft/ft_lstdel.c.o
+libft/ft_lstdel.o: libft/ft_lstdel.c.o
 
-.PHONY : libft/libft/ft_lstdel.o
+.PHONY : libft/ft_lstdel.o
 
 # target to build an object file
-libft/libft/ft_lstdel.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_lstdel.c.o
-.PHONY : libft/libft/ft_lstdel.c.o
+libft/ft_lstdel.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_lstdel.c.o
+.PHONY : libft/ft_lstdel.c.o
 
-libft/libft/ft_lstdel.i: libft/libft/ft_lstdel.c.i
+libft/ft_lstdel.i: libft/ft_lstdel.c.i
 
-.PHONY : libft/libft/ft_lstdel.i
+.PHONY : libft/ft_lstdel.i
 
 # target to preprocess a source file
-libft/libft/ft_lstdel.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_lstdel.c.i
-.PHONY : libft/libft/ft_lstdel.c.i
+libft/ft_lstdel.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_lstdel.c.i
+.PHONY : libft/ft_lstdel.c.i
 
-libft/libft/ft_lstdel.s: libft/libft/ft_lstdel.c.s
+libft/ft_lstdel.s: libft/ft_lstdel.c.s
 
-.PHONY : libft/libft/ft_lstdel.s
+.PHONY : libft/ft_lstdel.s
 
 # target to generate assembly for a file
-libft/libft/ft_lstdel.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_lstdel.c.s
-.PHONY : libft/libft/ft_lstdel.c.s
+libft/ft_lstdel.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_lstdel.c.s
+.PHONY : libft/ft_lstdel.c.s
 
-libft/libft/ft_lstdelone.o: libft/libft/ft_lstdelone.c.o
+libft/ft_lstdelone.o: libft/ft_lstdelone.c.o
 
-.PHONY : libft/libft/ft_lstdelone.o
+.PHONY : libft/ft_lstdelone.o
 
 # target to build an object file
-libft/libft/ft_lstdelone.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_lstdelone.c.o
-.PHONY : libft/libft/ft_lstdelone.c.o
+libft/ft_lstdelone.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_lstdelone.c.o
+.PHONY : libft/ft_lstdelone.c.o
 
-libft/libft/ft_lstdelone.i: libft/libft/ft_lstdelone.c.i
+libft/ft_lstdelone.i: libft/ft_lstdelone.c.i
 
-.PHONY : libft/libft/ft_lstdelone.i
+.PHONY : libft/ft_lstdelone.i
 
 # target to preprocess a source file
-libft/libft/ft_lstdelone.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_lstdelone.c.i
-.PHONY : libft/libft/ft_lstdelone.c.i
+libft/ft_lstdelone.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_lstdelone.c.i
+.PHONY : libft/ft_lstdelone.c.i
 
-libft/libft/ft_lstdelone.s: libft/libft/ft_lstdelone.c.s
+libft/ft_lstdelone.s: libft/ft_lstdelone.c.s
 
-.PHONY : libft/libft/ft_lstdelone.s
+.PHONY : libft/ft_lstdelone.s
 
 # target to generate assembly for a file
-libft/libft/ft_lstdelone.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_lstdelone.c.s
-.PHONY : libft/libft/ft_lstdelone.c.s
+libft/ft_lstdelone.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_lstdelone.c.s
+.PHONY : libft/ft_lstdelone.c.s
 
-libft/libft/ft_lstiter.o: libft/libft/ft_lstiter.c.o
+libft/ft_lstiter.o: libft/ft_lstiter.c.o
 
-.PHONY : libft/libft/ft_lstiter.o
+.PHONY : libft/ft_lstiter.o
 
 # target to build an object file
-libft/libft/ft_lstiter.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_lstiter.c.o
-.PHONY : libft/libft/ft_lstiter.c.o
+libft/ft_lstiter.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_lstiter.c.o
+.PHONY : libft/ft_lstiter.c.o
 
-libft/libft/ft_lstiter.i: libft/libft/ft_lstiter.c.i
+libft/ft_lstiter.i: libft/ft_lstiter.c.i
 
-.PHONY : libft/libft/ft_lstiter.i
+.PHONY : libft/ft_lstiter.i
 
 # target to preprocess a source file
-libft/libft/ft_lstiter.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_lstiter.c.i
-.PHONY : libft/libft/ft_lstiter.c.i
+libft/ft_lstiter.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_lstiter.c.i
+.PHONY : libft/ft_lstiter.c.i
 
-libft/libft/ft_lstiter.s: libft/libft/ft_lstiter.c.s
+libft/ft_lstiter.s: libft/ft_lstiter.c.s
 
-.PHONY : libft/libft/ft_lstiter.s
+.PHONY : libft/ft_lstiter.s
 
 # target to generate assembly for a file
-libft/libft/ft_lstiter.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_lstiter.c.s
-.PHONY : libft/libft/ft_lstiter.c.s
+libft/ft_lstiter.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_lstiter.c.s
+.PHONY : libft/ft_lstiter.c.s
 
-libft/libft/ft_lstmap.o: libft/libft/ft_lstmap.c.o
+libft/ft_lstmap.o: libft/ft_lstmap.c.o
 
-.PHONY : libft/libft/ft_lstmap.o
+.PHONY : libft/ft_lstmap.o
 
 # target to build an object file
-libft/libft/ft_lstmap.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_lstmap.c.o
-.PHONY : libft/libft/ft_lstmap.c.o
+libft/ft_lstmap.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_lstmap.c.o
+.PHONY : libft/ft_lstmap.c.o
 
-libft/libft/ft_lstmap.i: libft/libft/ft_lstmap.c.i
+libft/ft_lstmap.i: libft/ft_lstmap.c.i
 
-.PHONY : libft/libft/ft_lstmap.i
+.PHONY : libft/ft_lstmap.i
 
 # target to preprocess a source file
-libft/libft/ft_lstmap.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_lstmap.c.i
-.PHONY : libft/libft/ft_lstmap.c.i
+libft/ft_lstmap.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_lstmap.c.i
+.PHONY : libft/ft_lstmap.c.i
 
-libft/libft/ft_lstmap.s: libft/libft/ft_lstmap.c.s
+libft/ft_lstmap.s: libft/ft_lstmap.c.s
 
-.PHONY : libft/libft/ft_lstmap.s
+.PHONY : libft/ft_lstmap.s
 
 # target to generate assembly for a file
-libft/libft/ft_lstmap.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_lstmap.c.s
-.PHONY : libft/libft/ft_lstmap.c.s
+libft/ft_lstmap.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_lstmap.c.s
+.PHONY : libft/ft_lstmap.c.s
 
-libft/libft/ft_lstnew.o: libft/libft/ft_lstnew.c.o
+libft/ft_lstnew.o: libft/ft_lstnew.c.o
 
-.PHONY : libft/libft/ft_lstnew.o
+.PHONY : libft/ft_lstnew.o
 
 # target to build an object file
-libft/libft/ft_lstnew.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_lstnew.c.o
-.PHONY : libft/libft/ft_lstnew.c.o
+libft/ft_lstnew.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_lstnew.c.o
+.PHONY : libft/ft_lstnew.c.o
 
-libft/libft/ft_lstnew.i: libft/libft/ft_lstnew.c.i
+libft/ft_lstnew.i: libft/ft_lstnew.c.i
 
-.PHONY : libft/libft/ft_lstnew.i
+.PHONY : libft/ft_lstnew.i
 
 # target to preprocess a source file
-libft/libft/ft_lstnew.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_lstnew.c.i
-.PHONY : libft/libft/ft_lstnew.c.i
+libft/ft_lstnew.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_lstnew.c.i
+.PHONY : libft/ft_lstnew.c.i
 
-libft/libft/ft_lstnew.s: libft/libft/ft_lstnew.c.s
+libft/ft_lstnew.s: libft/ft_lstnew.c.s
 
-.PHONY : libft/libft/ft_lstnew.s
+.PHONY : libft/ft_lstnew.s
 
 # target to generate assembly for a file
-libft/libft/ft_lstnew.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_lstnew.c.s
-.PHONY : libft/libft/ft_lstnew.c.s
+libft/ft_lstnew.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_lstnew.c.s
+.PHONY : libft/ft_lstnew.c.s
 
-libft/libft/ft_memalloc.o: libft/libft/ft_memalloc.c.o
+libft/ft_memalloc.o: libft/ft_memalloc.c.o
 
-.PHONY : libft/libft/ft_memalloc.o
+.PHONY : libft/ft_memalloc.o
 
 # target to build an object file
-libft/libft/ft_memalloc.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_memalloc.c.o
-.PHONY : libft/libft/ft_memalloc.c.o
+libft/ft_memalloc.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_memalloc.c.o
+.PHONY : libft/ft_memalloc.c.o
 
-libft/libft/ft_memalloc.i: libft/libft/ft_memalloc.c.i
+libft/ft_memalloc.i: libft/ft_memalloc.c.i
 
-.PHONY : libft/libft/ft_memalloc.i
+.PHONY : libft/ft_memalloc.i
 
 # target to preprocess a source file
-libft/libft/ft_memalloc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_memalloc.c.i
-.PHONY : libft/libft/ft_memalloc.c.i
+libft/ft_memalloc.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_memalloc.c.i
+.PHONY : libft/ft_memalloc.c.i
 
-libft/libft/ft_memalloc.s: libft/libft/ft_memalloc.c.s
+libft/ft_memalloc.s: libft/ft_memalloc.c.s
 
-.PHONY : libft/libft/ft_memalloc.s
+.PHONY : libft/ft_memalloc.s
 
 # target to generate assembly for a file
-libft/libft/ft_memalloc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_memalloc.c.s
-.PHONY : libft/libft/ft_memalloc.c.s
+libft/ft_memalloc.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_memalloc.c.s
+.PHONY : libft/ft_memalloc.c.s
 
-libft/libft/ft_memccpy.o: libft/libft/ft_memccpy.c.o
+libft/ft_memccpy.o: libft/ft_memccpy.c.o
 
-.PHONY : libft/libft/ft_memccpy.o
+.PHONY : libft/ft_memccpy.o
 
 # target to build an object file
-libft/libft/ft_memccpy.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_memccpy.c.o
-.PHONY : libft/libft/ft_memccpy.c.o
+libft/ft_memccpy.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_memccpy.c.o
+.PHONY : libft/ft_memccpy.c.o
 
-libft/libft/ft_memccpy.i: libft/libft/ft_memccpy.c.i
+libft/ft_memccpy.i: libft/ft_memccpy.c.i
 
-.PHONY : libft/libft/ft_memccpy.i
+.PHONY : libft/ft_memccpy.i
 
 # target to preprocess a source file
-libft/libft/ft_memccpy.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_memccpy.c.i
-.PHONY : libft/libft/ft_memccpy.c.i
+libft/ft_memccpy.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_memccpy.c.i
+.PHONY : libft/ft_memccpy.c.i
 
-libft/libft/ft_memccpy.s: libft/libft/ft_memccpy.c.s
+libft/ft_memccpy.s: libft/ft_memccpy.c.s
 
-.PHONY : libft/libft/ft_memccpy.s
+.PHONY : libft/ft_memccpy.s
 
 # target to generate assembly for a file
-libft/libft/ft_memccpy.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_memccpy.c.s
-.PHONY : libft/libft/ft_memccpy.c.s
+libft/ft_memccpy.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_memccpy.c.s
+.PHONY : libft/ft_memccpy.c.s
 
-libft/libft/ft_memchr.o: libft/libft/ft_memchr.c.o
+libft/ft_memchr.o: libft/ft_memchr.c.o
 
-.PHONY : libft/libft/ft_memchr.o
+.PHONY : libft/ft_memchr.o
 
 # target to build an object file
-libft/libft/ft_memchr.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_memchr.c.o
-.PHONY : libft/libft/ft_memchr.c.o
+libft/ft_memchr.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_memchr.c.o
+.PHONY : libft/ft_memchr.c.o
 
-libft/libft/ft_memchr.i: libft/libft/ft_memchr.c.i
+libft/ft_memchr.i: libft/ft_memchr.c.i
 
-.PHONY : libft/libft/ft_memchr.i
+.PHONY : libft/ft_memchr.i
 
 # target to preprocess a source file
-libft/libft/ft_memchr.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_memchr.c.i
-.PHONY : libft/libft/ft_memchr.c.i
+libft/ft_memchr.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_memchr.c.i
+.PHONY : libft/ft_memchr.c.i
 
-libft/libft/ft_memchr.s: libft/libft/ft_memchr.c.s
+libft/ft_memchr.s: libft/ft_memchr.c.s
 
-.PHONY : libft/libft/ft_memchr.s
+.PHONY : libft/ft_memchr.s
 
 # target to generate assembly for a file
-libft/libft/ft_memchr.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_memchr.c.s
-.PHONY : libft/libft/ft_memchr.c.s
+libft/ft_memchr.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_memchr.c.s
+.PHONY : libft/ft_memchr.c.s
 
-libft/libft/ft_memcmp.o: libft/libft/ft_memcmp.c.o
+libft/ft_memcmp.o: libft/ft_memcmp.c.o
 
-.PHONY : libft/libft/ft_memcmp.o
+.PHONY : libft/ft_memcmp.o
 
 # target to build an object file
-libft/libft/ft_memcmp.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_memcmp.c.o
-.PHONY : libft/libft/ft_memcmp.c.o
+libft/ft_memcmp.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_memcmp.c.o
+.PHONY : libft/ft_memcmp.c.o
 
-libft/libft/ft_memcmp.i: libft/libft/ft_memcmp.c.i
+libft/ft_memcmp.i: libft/ft_memcmp.c.i
 
-.PHONY : libft/libft/ft_memcmp.i
+.PHONY : libft/ft_memcmp.i
 
 # target to preprocess a source file
-libft/libft/ft_memcmp.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_memcmp.c.i
-.PHONY : libft/libft/ft_memcmp.c.i
+libft/ft_memcmp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_memcmp.c.i
+.PHONY : libft/ft_memcmp.c.i
 
-libft/libft/ft_memcmp.s: libft/libft/ft_memcmp.c.s
+libft/ft_memcmp.s: libft/ft_memcmp.c.s
 
-.PHONY : libft/libft/ft_memcmp.s
+.PHONY : libft/ft_memcmp.s
 
 # target to generate assembly for a file
-libft/libft/ft_memcmp.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_memcmp.c.s
-.PHONY : libft/libft/ft_memcmp.c.s
+libft/ft_memcmp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_memcmp.c.s
+.PHONY : libft/ft_memcmp.c.s
 
-libft/libft/ft_memcpy.o: libft/libft/ft_memcpy.c.o
+libft/ft_memcpy.o: libft/ft_memcpy.c.o
 
-.PHONY : libft/libft/ft_memcpy.o
+.PHONY : libft/ft_memcpy.o
 
 # target to build an object file
-libft/libft/ft_memcpy.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_memcpy.c.o
-.PHONY : libft/libft/ft_memcpy.c.o
+libft/ft_memcpy.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_memcpy.c.o
+.PHONY : libft/ft_memcpy.c.o
 
-libft/libft/ft_memcpy.i: libft/libft/ft_memcpy.c.i
+libft/ft_memcpy.i: libft/ft_memcpy.c.i
 
-.PHONY : libft/libft/ft_memcpy.i
+.PHONY : libft/ft_memcpy.i
 
 # target to preprocess a source file
-libft/libft/ft_memcpy.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_memcpy.c.i
-.PHONY : libft/libft/ft_memcpy.c.i
+libft/ft_memcpy.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_memcpy.c.i
+.PHONY : libft/ft_memcpy.c.i
 
-libft/libft/ft_memcpy.s: libft/libft/ft_memcpy.c.s
+libft/ft_memcpy.s: libft/ft_memcpy.c.s
 
-.PHONY : libft/libft/ft_memcpy.s
+.PHONY : libft/ft_memcpy.s
 
 # target to generate assembly for a file
-libft/libft/ft_memcpy.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_memcpy.c.s
-.PHONY : libft/libft/ft_memcpy.c.s
+libft/ft_memcpy.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_memcpy.c.s
+.PHONY : libft/ft_memcpy.c.s
 
-libft/libft/ft_memdel.o: libft/libft/ft_memdel.c.o
+libft/ft_memdel.o: libft/ft_memdel.c.o
 
-.PHONY : libft/libft/ft_memdel.o
+.PHONY : libft/ft_memdel.o
 
 # target to build an object file
-libft/libft/ft_memdel.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_memdel.c.o
-.PHONY : libft/libft/ft_memdel.c.o
+libft/ft_memdel.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_memdel.c.o
+.PHONY : libft/ft_memdel.c.o
 
-libft/libft/ft_memdel.i: libft/libft/ft_memdel.c.i
+libft/ft_memdel.i: libft/ft_memdel.c.i
 
-.PHONY : libft/libft/ft_memdel.i
+.PHONY : libft/ft_memdel.i
 
 # target to preprocess a source file
-libft/libft/ft_memdel.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_memdel.c.i
-.PHONY : libft/libft/ft_memdel.c.i
+libft/ft_memdel.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_memdel.c.i
+.PHONY : libft/ft_memdel.c.i
 
-libft/libft/ft_memdel.s: libft/libft/ft_memdel.c.s
+libft/ft_memdel.s: libft/ft_memdel.c.s
 
-.PHONY : libft/libft/ft_memdel.s
+.PHONY : libft/ft_memdel.s
 
 # target to generate assembly for a file
-libft/libft/ft_memdel.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_memdel.c.s
-.PHONY : libft/libft/ft_memdel.c.s
+libft/ft_memdel.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_memdel.c.s
+.PHONY : libft/ft_memdel.c.s
 
-libft/libft/ft_memmove.o: libft/libft/ft_memmove.c.o
+libft/ft_memmove.o: libft/ft_memmove.c.o
 
-.PHONY : libft/libft/ft_memmove.o
+.PHONY : libft/ft_memmove.o
 
 # target to build an object file
-libft/libft/ft_memmove.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_memmove.c.o
-.PHONY : libft/libft/ft_memmove.c.o
+libft/ft_memmove.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_memmove.c.o
+.PHONY : libft/ft_memmove.c.o
 
-libft/libft/ft_memmove.i: libft/libft/ft_memmove.c.i
+libft/ft_memmove.i: libft/ft_memmove.c.i
 
-.PHONY : libft/libft/ft_memmove.i
+.PHONY : libft/ft_memmove.i
 
 # target to preprocess a source file
-libft/libft/ft_memmove.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_memmove.c.i
-.PHONY : libft/libft/ft_memmove.c.i
+libft/ft_memmove.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_memmove.c.i
+.PHONY : libft/ft_memmove.c.i
 
-libft/libft/ft_memmove.s: libft/libft/ft_memmove.c.s
+libft/ft_memmove.s: libft/ft_memmove.c.s
 
-.PHONY : libft/libft/ft_memmove.s
+.PHONY : libft/ft_memmove.s
 
 # target to generate assembly for a file
-libft/libft/ft_memmove.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_memmove.c.s
-.PHONY : libft/libft/ft_memmove.c.s
+libft/ft_memmove.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_memmove.c.s
+.PHONY : libft/ft_memmove.c.s
 
-libft/libft/ft_memset.o: libft/libft/ft_memset.c.o
+libft/ft_memset.o: libft/ft_memset.c.o
 
-.PHONY : libft/libft/ft_memset.o
+.PHONY : libft/ft_memset.o
 
 # target to build an object file
-libft/libft/ft_memset.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_memset.c.o
-.PHONY : libft/libft/ft_memset.c.o
+libft/ft_memset.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_memset.c.o
+.PHONY : libft/ft_memset.c.o
 
-libft/libft/ft_memset.i: libft/libft/ft_memset.c.i
+libft/ft_memset.i: libft/ft_memset.c.i
 
-.PHONY : libft/libft/ft_memset.i
+.PHONY : libft/ft_memset.i
 
 # target to preprocess a source file
-libft/libft/ft_memset.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_memset.c.i
-.PHONY : libft/libft/ft_memset.c.i
+libft/ft_memset.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_memset.c.i
+.PHONY : libft/ft_memset.c.i
 
-libft/libft/ft_memset.s: libft/libft/ft_memset.c.s
+libft/ft_memset.s: libft/ft_memset.c.s
 
-.PHONY : libft/libft/ft_memset.s
+.PHONY : libft/ft_memset.s
 
 # target to generate assembly for a file
-libft/libft/ft_memset.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_memset.c.s
-.PHONY : libft/libft/ft_memset.c.s
+libft/ft_memset.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_memset.c.s
+.PHONY : libft/ft_memset.c.s
 
-libft/libft/ft_print_bits.o: libft/libft/ft_print_bits.c.o
+libft/ft_print_bits.o: libft/ft_print_bits.c.o
 
-.PHONY : libft/libft/ft_print_bits.o
+.PHONY : libft/ft_print_bits.o
 
 # target to build an object file
-libft/libft/ft_print_bits.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_print_bits.c.o
-.PHONY : libft/libft/ft_print_bits.c.o
+libft/ft_print_bits.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_print_bits.c.o
+.PHONY : libft/ft_print_bits.c.o
 
-libft/libft/ft_print_bits.i: libft/libft/ft_print_bits.c.i
+libft/ft_print_bits.i: libft/ft_print_bits.c.i
 
-.PHONY : libft/libft/ft_print_bits.i
+.PHONY : libft/ft_print_bits.i
 
 # target to preprocess a source file
-libft/libft/ft_print_bits.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_print_bits.c.i
-.PHONY : libft/libft/ft_print_bits.c.i
+libft/ft_print_bits.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_print_bits.c.i
+.PHONY : libft/ft_print_bits.c.i
 
-libft/libft/ft_print_bits.s: libft/libft/ft_print_bits.c.s
+libft/ft_print_bits.s: libft/ft_print_bits.c.s
 
-.PHONY : libft/libft/ft_print_bits.s
+.PHONY : libft/ft_print_bits.s
 
 # target to generate assembly for a file
-libft/libft/ft_print_bits.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_print_bits.c.s
-.PHONY : libft/libft/ft_print_bits.c.s
+libft/ft_print_bits.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_print_bits.c.s
+.PHONY : libft/ft_print_bits.c.s
 
-libft/libft/ft_putchar.o: libft/libft/ft_putchar.c.o
+libft/ft_printf/src/color.o: libft/ft_printf/src/color.c.o
 
-.PHONY : libft/libft/ft_putchar.o
+.PHONY : libft/ft_printf/src/color.o
 
 # target to build an object file
-libft/libft/ft_putchar.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_putchar.c.o
-.PHONY : libft/libft/ft_putchar.c.o
+libft/ft_printf/src/color.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_printf/src/color.c.o
+.PHONY : libft/ft_printf/src/color.c.o
 
-libft/libft/ft_putchar.i: libft/libft/ft_putchar.c.i
+libft/ft_printf/src/color.i: libft/ft_printf/src/color.c.i
 
-.PHONY : libft/libft/ft_putchar.i
+.PHONY : libft/ft_printf/src/color.i
 
 # target to preprocess a source file
-libft/libft/ft_putchar.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_putchar.c.i
-.PHONY : libft/libft/ft_putchar.c.i
+libft/ft_printf/src/color.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_printf/src/color.c.i
+.PHONY : libft/ft_printf/src/color.c.i
 
-libft/libft/ft_putchar.s: libft/libft/ft_putchar.c.s
+libft/ft_printf/src/color.s: libft/ft_printf/src/color.c.s
 
-.PHONY : libft/libft/ft_putchar.s
+.PHONY : libft/ft_printf/src/color.s
 
 # target to generate assembly for a file
-libft/libft/ft_putchar.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_putchar.c.s
-.PHONY : libft/libft/ft_putchar.c.s
+libft/ft_printf/src/color.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_printf/src/color.c.s
+.PHONY : libft/ft_printf/src/color.c.s
 
-libft/libft/ft_putchar_fd.o: libft/libft/ft_putchar_fd.c.o
+libft/ft_printf/src/conversion.o: libft/ft_printf/src/conversion.c.o
 
-.PHONY : libft/libft/ft_putchar_fd.o
+.PHONY : libft/ft_printf/src/conversion.o
 
 # target to build an object file
-libft/libft/ft_putchar_fd.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_putchar_fd.c.o
-.PHONY : libft/libft/ft_putchar_fd.c.o
+libft/ft_printf/src/conversion.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_printf/src/conversion.c.o
+.PHONY : libft/ft_printf/src/conversion.c.o
 
-libft/libft/ft_putchar_fd.i: libft/libft/ft_putchar_fd.c.i
+libft/ft_printf/src/conversion.i: libft/ft_printf/src/conversion.c.i
 
-.PHONY : libft/libft/ft_putchar_fd.i
+.PHONY : libft/ft_printf/src/conversion.i
 
 # target to preprocess a source file
-libft/libft/ft_putchar_fd.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_putchar_fd.c.i
-.PHONY : libft/libft/ft_putchar_fd.c.i
+libft/ft_printf/src/conversion.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_printf/src/conversion.c.i
+.PHONY : libft/ft_printf/src/conversion.c.i
 
-libft/libft/ft_putchar_fd.s: libft/libft/ft_putchar_fd.c.s
+libft/ft_printf/src/conversion.s: libft/ft_printf/src/conversion.c.s
 
-.PHONY : libft/libft/ft_putchar_fd.s
+.PHONY : libft/ft_printf/src/conversion.s
 
 # target to generate assembly for a file
-libft/libft/ft_putchar_fd.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_putchar_fd.c.s
-.PHONY : libft/libft/ft_putchar_fd.c.s
+libft/ft_printf/src/conversion.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_printf/src/conversion.c.s
+.PHONY : libft/ft_printf/src/conversion.c.s
 
-libft/libft/ft_putendl.o: libft/libft/ft_putendl.c.o
+libft/ft_printf/src/free.o: libft/ft_printf/src/free.c.o
 
-.PHONY : libft/libft/ft_putendl.o
+.PHONY : libft/ft_printf/src/free.o
 
 # target to build an object file
-libft/libft/ft_putendl.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_putendl.c.o
-.PHONY : libft/libft/ft_putendl.c.o
+libft/ft_printf/src/free.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_printf/src/free.c.o
+.PHONY : libft/ft_printf/src/free.c.o
 
-libft/libft/ft_putendl.i: libft/libft/ft_putendl.c.i
+libft/ft_printf/src/free.i: libft/ft_printf/src/free.c.i
 
-.PHONY : libft/libft/ft_putendl.i
+.PHONY : libft/ft_printf/src/free.i
 
 # target to preprocess a source file
-libft/libft/ft_putendl.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_putendl.c.i
-.PHONY : libft/libft/ft_putendl.c.i
+libft/ft_printf/src/free.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_printf/src/free.c.i
+.PHONY : libft/ft_printf/src/free.c.i
 
-libft/libft/ft_putendl.s: libft/libft/ft_putendl.c.s
+libft/ft_printf/src/free.s: libft/ft_printf/src/free.c.s
 
-.PHONY : libft/libft/ft_putendl.s
+.PHONY : libft/ft_printf/src/free.s
 
 # target to generate assembly for a file
-libft/libft/ft_putendl.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_putendl.c.s
-.PHONY : libft/libft/ft_putendl.c.s
+libft/ft_printf/src/free.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_printf/src/free.c.s
+.PHONY : libft/ft_printf/src/free.c.s
 
-libft/libft/ft_putendl_fd.o: libft/libft/ft_putendl_fd.c.o
+libft/ft_printf/src/ft_printf.o: libft/ft_printf/src/ft_printf.c.o
 
-.PHONY : libft/libft/ft_putendl_fd.o
+.PHONY : libft/ft_printf/src/ft_printf.o
 
 # target to build an object file
-libft/libft/ft_putendl_fd.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_putendl_fd.c.o
-.PHONY : libft/libft/ft_putendl_fd.c.o
+libft/ft_printf/src/ft_printf.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_printf/src/ft_printf.c.o
+.PHONY : libft/ft_printf/src/ft_printf.c.o
 
-libft/libft/ft_putendl_fd.i: libft/libft/ft_putendl_fd.c.i
+libft/ft_printf/src/ft_printf.i: libft/ft_printf/src/ft_printf.c.i
 
-.PHONY : libft/libft/ft_putendl_fd.i
+.PHONY : libft/ft_printf/src/ft_printf.i
 
 # target to preprocess a source file
-libft/libft/ft_putendl_fd.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_putendl_fd.c.i
-.PHONY : libft/libft/ft_putendl_fd.c.i
+libft/ft_printf/src/ft_printf.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_printf/src/ft_printf.c.i
+.PHONY : libft/ft_printf/src/ft_printf.c.i
 
-libft/libft/ft_putendl_fd.s: libft/libft/ft_putendl_fd.c.s
+libft/ft_printf/src/ft_printf.s: libft/ft_printf/src/ft_printf.c.s
 
-.PHONY : libft/libft/ft_putendl_fd.s
+.PHONY : libft/ft_printf/src/ft_printf.s
 
 # target to generate assembly for a file
-libft/libft/ft_putendl_fd.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_putendl_fd.c.s
-.PHONY : libft/libft/ft_putendl_fd.c.s
+libft/ft_printf/src/ft_printf.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_printf/src/ft_printf.c.s
+.PHONY : libft/ft_printf/src/ft_printf.c.s
 
-libft/libft/ft_putnbr.o: libft/libft/ft_putnbr.c.o
+libft/ft_printf/src/multiplier.o: libft/ft_printf/src/multiplier.c.o
 
-.PHONY : libft/libft/ft_putnbr.o
+.PHONY : libft/ft_printf/src/multiplier.o
 
 # target to build an object file
-libft/libft/ft_putnbr.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_putnbr.c.o
-.PHONY : libft/libft/ft_putnbr.c.o
+libft/ft_printf/src/multiplier.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_printf/src/multiplier.c.o
+.PHONY : libft/ft_printf/src/multiplier.c.o
 
-libft/libft/ft_putnbr.i: libft/libft/ft_putnbr.c.i
+libft/ft_printf/src/multiplier.i: libft/ft_printf/src/multiplier.c.i
 
-.PHONY : libft/libft/ft_putnbr.i
+.PHONY : libft/ft_printf/src/multiplier.i
 
 # target to preprocess a source file
-libft/libft/ft_putnbr.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_putnbr.c.i
-.PHONY : libft/libft/ft_putnbr.c.i
+libft/ft_printf/src/multiplier.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_printf/src/multiplier.c.i
+.PHONY : libft/ft_printf/src/multiplier.c.i
 
-libft/libft/ft_putnbr.s: libft/libft/ft_putnbr.c.s
+libft/ft_printf/src/multiplier.s: libft/ft_printf/src/multiplier.c.s
 
-.PHONY : libft/libft/ft_putnbr.s
+.PHONY : libft/ft_printf/src/multiplier.s
 
 # target to generate assembly for a file
-libft/libft/ft_putnbr.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_putnbr.c.s
-.PHONY : libft/libft/ft_putnbr.c.s
+libft/ft_printf/src/multiplier.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_printf/src/multiplier.c.s
+.PHONY : libft/ft_printf/src/multiplier.c.s
 
-libft/libft/ft_putnbr_fd.o: libft/libft/ft_putnbr_fd.c.o
+libft/ft_printf/src/neg_exp.o: libft/ft_printf/src/neg_exp.c.o
 
-.PHONY : libft/libft/ft_putnbr_fd.o
+.PHONY : libft/ft_printf/src/neg_exp.o
 
 # target to build an object file
-libft/libft/ft_putnbr_fd.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_putnbr_fd.c.o
-.PHONY : libft/libft/ft_putnbr_fd.c.o
+libft/ft_printf/src/neg_exp.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_printf/src/neg_exp.c.o
+.PHONY : libft/ft_printf/src/neg_exp.c.o
 
-libft/libft/ft_putnbr_fd.i: libft/libft/ft_putnbr_fd.c.i
+libft/ft_printf/src/neg_exp.i: libft/ft_printf/src/neg_exp.c.i
 
-.PHONY : libft/libft/ft_putnbr_fd.i
+.PHONY : libft/ft_printf/src/neg_exp.i
 
 # target to preprocess a source file
-libft/libft/ft_putnbr_fd.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_putnbr_fd.c.i
-.PHONY : libft/libft/ft_putnbr_fd.c.i
+libft/ft_printf/src/neg_exp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_printf/src/neg_exp.c.i
+.PHONY : libft/ft_printf/src/neg_exp.c.i
 
-libft/libft/ft_putnbr_fd.s: libft/libft/ft_putnbr_fd.c.s
+libft/ft_printf/src/neg_exp.s: libft/ft_printf/src/neg_exp.c.s
 
-.PHONY : libft/libft/ft_putnbr_fd.s
+.PHONY : libft/ft_printf/src/neg_exp.s
 
 # target to generate assembly for a file
-libft/libft/ft_putnbr_fd.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_putnbr_fd.c.s
-.PHONY : libft/libft/ft_putnbr_fd.c.s
+libft/ft_printf/src/neg_exp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_printf/src/neg_exp.c.s
+.PHONY : libft/ft_printf/src/neg_exp.c.s
 
-libft/libft/ft_putstr.o: libft/libft/ft_putstr.c.o
+libft/ft_printf/src/prec.o: libft/ft_printf/src/prec.c.o
 
-.PHONY : libft/libft/ft_putstr.o
+.PHONY : libft/ft_printf/src/prec.o
 
 # target to build an object file
-libft/libft/ft_putstr.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_putstr.c.o
-.PHONY : libft/libft/ft_putstr.c.o
+libft/ft_printf/src/prec.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_printf/src/prec.c.o
+.PHONY : libft/ft_printf/src/prec.c.o
 
-libft/libft/ft_putstr.i: libft/libft/ft_putstr.c.i
+libft/ft_printf/src/prec.i: libft/ft_printf/src/prec.c.i
 
-.PHONY : libft/libft/ft_putstr.i
+.PHONY : libft/ft_printf/src/prec.i
 
 # target to preprocess a source file
-libft/libft/ft_putstr.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_putstr.c.i
-.PHONY : libft/libft/ft_putstr.c.i
+libft/ft_printf/src/prec.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_printf/src/prec.c.i
+.PHONY : libft/ft_printf/src/prec.c.i
 
-libft/libft/ft_putstr.s: libft/libft/ft_putstr.c.s
+libft/ft_printf/src/prec.s: libft/ft_printf/src/prec.c.s
 
-.PHONY : libft/libft/ft_putstr.s
+.PHONY : libft/ft_printf/src/prec.s
 
 # target to generate assembly for a file
-libft/libft/ft_putstr.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_putstr.c.s
-.PHONY : libft/libft/ft_putstr.c.s
+libft/ft_printf/src/prec.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_printf/src/prec.c.s
+.PHONY : libft/ft_printf/src/prec.c.s
 
-libft/libft/ft_putstr_fd.o: libft/libft/ft_putstr_fd.c.o
+libft/ft_printf/src/prec2.o: libft/ft_printf/src/prec2.c.o
 
-.PHONY : libft/libft/ft_putstr_fd.o
+.PHONY : libft/ft_printf/src/prec2.o
 
 # target to build an object file
-libft/libft/ft_putstr_fd.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_putstr_fd.c.o
-.PHONY : libft/libft/ft_putstr_fd.c.o
+libft/ft_printf/src/prec2.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_printf/src/prec2.c.o
+.PHONY : libft/ft_printf/src/prec2.c.o
 
-libft/libft/ft_putstr_fd.i: libft/libft/ft_putstr_fd.c.i
+libft/ft_printf/src/prec2.i: libft/ft_printf/src/prec2.c.i
 
-.PHONY : libft/libft/ft_putstr_fd.i
+.PHONY : libft/ft_printf/src/prec2.i
 
 # target to preprocess a source file
-libft/libft/ft_putstr_fd.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_putstr_fd.c.i
-.PHONY : libft/libft/ft_putstr_fd.c.i
+libft/ft_printf/src/prec2.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_printf/src/prec2.c.i
+.PHONY : libft/ft_printf/src/prec2.c.i
 
-libft/libft/ft_putstr_fd.s: libft/libft/ft_putstr_fd.c.s
+libft/ft_printf/src/prec2.s: libft/ft_printf/src/prec2.c.s
 
-.PHONY : libft/libft/ft_putstr_fd.s
+.PHONY : libft/ft_printf/src/prec2.s
 
 # target to generate assembly for a file
-libft/libft/ft_putstr_fd.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_putstr_fd.c.s
-.PHONY : libft/libft/ft_putstr_fd.c.s
+libft/ft_printf/src/prec2.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_printf/src/prec2.c.s
+.PHONY : libft/ft_printf/src/prec2.c.s
 
-libft/libft/ft_reverse_bits.o: libft/libft/ft_reverse_bits.c.o
+libft/ft_printf/src/print_float.o: libft/ft_printf/src/print_float.c.o
 
-.PHONY : libft/libft/ft_reverse_bits.o
+.PHONY : libft/ft_printf/src/print_float.o
 
 # target to build an object file
-libft/libft/ft_reverse_bits.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_reverse_bits.c.o
-.PHONY : libft/libft/ft_reverse_bits.c.o
+libft/ft_printf/src/print_float.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_printf/src/print_float.c.o
+.PHONY : libft/ft_printf/src/print_float.c.o
 
-libft/libft/ft_reverse_bits.i: libft/libft/ft_reverse_bits.c.i
+libft/ft_printf/src/print_float.i: libft/ft_printf/src/print_float.c.i
 
-.PHONY : libft/libft/ft_reverse_bits.i
+.PHONY : libft/ft_printf/src/print_float.i
 
 # target to preprocess a source file
-libft/libft/ft_reverse_bits.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_reverse_bits.c.i
-.PHONY : libft/libft/ft_reverse_bits.c.i
+libft/ft_printf/src/print_float.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_printf/src/print_float.c.i
+.PHONY : libft/ft_printf/src/print_float.c.i
 
-libft/libft/ft_reverse_bits.s: libft/libft/ft_reverse_bits.c.s
+libft/ft_printf/src/print_float.s: libft/ft_printf/src/print_float.c.s
 
-.PHONY : libft/libft/ft_reverse_bits.s
+.PHONY : libft/ft_printf/src/print_float.s
 
 # target to generate assembly for a file
-libft/libft/ft_reverse_bits.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_reverse_bits.c.s
-.PHONY : libft/libft/ft_reverse_bits.c.s
+libft/ft_printf/src/print_float.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_printf/src/print_float.c.s
+.PHONY : libft/ft_printf/src/print_float.c.s
 
-libft/libft/ft_sort_array.o: libft/libft/ft_sort_array.c.o
+libft/ft_printf/src/print_integer.o: libft/ft_printf/src/print_integer.c.o
 
-.PHONY : libft/libft/ft_sort_array.o
+.PHONY : libft/ft_printf/src/print_integer.o
 
 # target to build an object file
-libft/libft/ft_sort_array.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_sort_array.c.o
-.PHONY : libft/libft/ft_sort_array.c.o
+libft/ft_printf/src/print_integer.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_printf/src/print_integer.c.o
+.PHONY : libft/ft_printf/src/print_integer.c.o
 
-libft/libft/ft_sort_array.i: libft/libft/ft_sort_array.c.i
+libft/ft_printf/src/print_integer.i: libft/ft_printf/src/print_integer.c.i
 
-.PHONY : libft/libft/ft_sort_array.i
+.PHONY : libft/ft_printf/src/print_integer.i
 
 # target to preprocess a source file
-libft/libft/ft_sort_array.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_sort_array.c.i
-.PHONY : libft/libft/ft_sort_array.c.i
+libft/ft_printf/src/print_integer.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_printf/src/print_integer.c.i
+.PHONY : libft/ft_printf/src/print_integer.c.i
 
-libft/libft/ft_sort_array.s: libft/libft/ft_sort_array.c.s
+libft/ft_printf/src/print_integer.s: libft/ft_printf/src/print_integer.c.s
 
-.PHONY : libft/libft/ft_sort_array.s
+.PHONY : libft/ft_printf/src/print_integer.s
 
 # target to generate assembly for a file
-libft/libft/ft_sort_array.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_sort_array.c.s
-.PHONY : libft/libft/ft_sort_array.c.s
+libft/ft_printf/src/print_integer.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_printf/src/print_integer.c.s
+.PHONY : libft/ft_printf/src/print_integer.c.s
 
-libft/libft/ft_strcat.o: libft/libft/ft_strcat.c.o
+libft/ft_printf/src/print_octal_x.o: libft/ft_printf/src/print_octal_x.c.o
 
-.PHONY : libft/libft/ft_strcat.o
+.PHONY : libft/ft_printf/src/print_octal_x.o
 
 # target to build an object file
-libft/libft/ft_strcat.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strcat.c.o
-.PHONY : libft/libft/ft_strcat.c.o
+libft/ft_printf/src/print_octal_x.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_printf/src/print_octal_x.c.o
+.PHONY : libft/ft_printf/src/print_octal_x.c.o
 
-libft/libft/ft_strcat.i: libft/libft/ft_strcat.c.i
+libft/ft_printf/src/print_octal_x.i: libft/ft_printf/src/print_octal_x.c.i
 
-.PHONY : libft/libft/ft_strcat.i
+.PHONY : libft/ft_printf/src/print_octal_x.i
 
 # target to preprocess a source file
-libft/libft/ft_strcat.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strcat.c.i
-.PHONY : libft/libft/ft_strcat.c.i
+libft/ft_printf/src/print_octal_x.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_printf/src/print_octal_x.c.i
+.PHONY : libft/ft_printf/src/print_octal_x.c.i
 
-libft/libft/ft_strcat.s: libft/libft/ft_strcat.c.s
+libft/ft_printf/src/print_octal_x.s: libft/ft_printf/src/print_octal_x.c.s
 
-.PHONY : libft/libft/ft_strcat.s
+.PHONY : libft/ft_printf/src/print_octal_x.s
 
 # target to generate assembly for a file
-libft/libft/ft_strcat.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strcat.c.s
-.PHONY : libft/libft/ft_strcat.c.s
+libft/ft_printf/src/print_octal_x.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_printf/src/print_octal_x.c.s
+.PHONY : libft/ft_printf/src/print_octal_x.c.s
 
-libft/libft/ft_strchr.o: libft/libft/ft_strchr.c.o
+libft/ft_printf/src/print_pointer_char.o: libft/ft_printf/src/print_pointer_char.c.o
 
-.PHONY : libft/libft/ft_strchr.o
+.PHONY : libft/ft_printf/src/print_pointer_char.o
 
 # target to build an object file
-libft/libft/ft_strchr.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strchr.c.o
-.PHONY : libft/libft/ft_strchr.c.o
+libft/ft_printf/src/print_pointer_char.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_printf/src/print_pointer_char.c.o
+.PHONY : libft/ft_printf/src/print_pointer_char.c.o
 
-libft/libft/ft_strchr.i: libft/libft/ft_strchr.c.i
+libft/ft_printf/src/print_pointer_char.i: libft/ft_printf/src/print_pointer_char.c.i
 
-.PHONY : libft/libft/ft_strchr.i
+.PHONY : libft/ft_printf/src/print_pointer_char.i
 
 # target to preprocess a source file
-libft/libft/ft_strchr.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strchr.c.i
-.PHONY : libft/libft/ft_strchr.c.i
+libft/ft_printf/src/print_pointer_char.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_printf/src/print_pointer_char.c.i
+.PHONY : libft/ft_printf/src/print_pointer_char.c.i
 
-libft/libft/ft_strchr.s: libft/libft/ft_strchr.c.s
+libft/ft_printf/src/print_pointer_char.s: libft/ft_printf/src/print_pointer_char.c.s
 
-.PHONY : libft/libft/ft_strchr.s
+.PHONY : libft/ft_printf/src/print_pointer_char.s
 
 # target to generate assembly for a file
-libft/libft/ft_strchr.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strchr.c.s
-.PHONY : libft/libft/ft_strchr.c.s
+libft/ft_printf/src/print_pointer_char.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_printf/src/print_pointer_char.c.s
+.PHONY : libft/ft_printf/src/print_pointer_char.c.s
 
-libft/libft/ft_strclr.o: libft/libft/ft_strclr.c.o
+libft/ft_printf/src/print_string.o: libft/ft_printf/src/print_string.c.o
 
-.PHONY : libft/libft/ft_strclr.o
+.PHONY : libft/ft_printf/src/print_string.o
 
 # target to build an object file
-libft/libft/ft_strclr.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strclr.c.o
-.PHONY : libft/libft/ft_strclr.c.o
+libft/ft_printf/src/print_string.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_printf/src/print_string.c.o
+.PHONY : libft/ft_printf/src/print_string.c.o
 
-libft/libft/ft_strclr.i: libft/libft/ft_strclr.c.i
+libft/ft_printf/src/print_string.i: libft/ft_printf/src/print_string.c.i
 
-.PHONY : libft/libft/ft_strclr.i
+.PHONY : libft/ft_printf/src/print_string.i
 
 # target to preprocess a source file
-libft/libft/ft_strclr.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strclr.c.i
-.PHONY : libft/libft/ft_strclr.c.i
+libft/ft_printf/src/print_string.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_printf/src/print_string.c.i
+.PHONY : libft/ft_printf/src/print_string.c.i
 
-libft/libft/ft_strclr.s: libft/libft/ft_strclr.c.s
+libft/ft_printf/src/print_string.s: libft/ft_printf/src/print_string.c.s
 
-.PHONY : libft/libft/ft_strclr.s
+.PHONY : libft/ft_printf/src/print_string.s
 
 # target to generate assembly for a file
-libft/libft/ft_strclr.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strclr.c.s
-.PHONY : libft/libft/ft_strclr.c.s
+libft/ft_printf/src/print_string.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_printf/src/print_string.c.s
+.PHONY : libft/ft_printf/src/print_string.c.s
 
-libft/libft/ft_strcmp.o: libft/libft/ft_strcmp.c.o
+libft/ft_printf/src/print_unsigned.o: libft/ft_printf/src/print_unsigned.c.o
 
-.PHONY : libft/libft/ft_strcmp.o
+.PHONY : libft/ft_printf/src/print_unsigned.o
 
 # target to build an object file
-libft/libft/ft_strcmp.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strcmp.c.o
-.PHONY : libft/libft/ft_strcmp.c.o
+libft/ft_printf/src/print_unsigned.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_printf/src/print_unsigned.c.o
+.PHONY : libft/ft_printf/src/print_unsigned.c.o
 
-libft/libft/ft_strcmp.i: libft/libft/ft_strcmp.c.i
+libft/ft_printf/src/print_unsigned.i: libft/ft_printf/src/print_unsigned.c.i
 
-.PHONY : libft/libft/ft_strcmp.i
+.PHONY : libft/ft_printf/src/print_unsigned.i
 
 # target to preprocess a source file
-libft/libft/ft_strcmp.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strcmp.c.i
-.PHONY : libft/libft/ft_strcmp.c.i
+libft/ft_printf/src/print_unsigned.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_printf/src/print_unsigned.c.i
+.PHONY : libft/ft_printf/src/print_unsigned.c.i
 
-libft/libft/ft_strcmp.s: libft/libft/ft_strcmp.c.s
+libft/ft_printf/src/print_unsigned.s: libft/ft_printf/src/print_unsigned.c.s
 
-.PHONY : libft/libft/ft_strcmp.s
+.PHONY : libft/ft_printf/src/print_unsigned.s
 
 # target to generate assembly for a file
-libft/libft/ft_strcmp.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strcmp.c.s
-.PHONY : libft/libft/ft_strcmp.c.s
+libft/ft_printf/src/print_unsigned.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_printf/src/print_unsigned.c.s
+.PHONY : libft/ft_printf/src/print_unsigned.c.s
 
-libft/libft/ft_strcpy.o: libft/libft/ft_strcpy.c.o
+libft/ft_printf/src/read_format.o: libft/ft_printf/src/read_format.c.o
 
-.PHONY : libft/libft/ft_strcpy.o
+.PHONY : libft/ft_printf/src/read_format.o
 
 # target to build an object file
-libft/libft/ft_strcpy.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strcpy.c.o
-.PHONY : libft/libft/ft_strcpy.c.o
+libft/ft_printf/src/read_format.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_printf/src/read_format.c.o
+.PHONY : libft/ft_printf/src/read_format.c.o
 
-libft/libft/ft_strcpy.i: libft/libft/ft_strcpy.c.i
+libft/ft_printf/src/read_format.i: libft/ft_printf/src/read_format.c.i
 
-.PHONY : libft/libft/ft_strcpy.i
+.PHONY : libft/ft_printf/src/read_format.i
 
 # target to preprocess a source file
-libft/libft/ft_strcpy.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strcpy.c.i
-.PHONY : libft/libft/ft_strcpy.c.i
+libft/ft_printf/src/read_format.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_printf/src/read_format.c.i
+.PHONY : libft/ft_printf/src/read_format.c.i
 
-libft/libft/ft_strcpy.s: libft/libft/ft_strcpy.c.s
+libft/ft_printf/src/read_format.s: libft/ft_printf/src/read_format.c.s
 
-.PHONY : libft/libft/ft_strcpy.s
+.PHONY : libft/ft_printf/src/read_format.s
 
 # target to generate assembly for a file
-libft/libft/ft_strcpy.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strcpy.c.s
-.PHONY : libft/libft/ft_strcpy.c.s
+libft/ft_printf/src/read_format.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_printf/src/read_format.c.s
+.PHONY : libft/ft_printf/src/read_format.c.s
 
-libft/libft/ft_strdel.o: libft/libft/ft_strdel.c.o
+libft/ft_printf/src/substr.o: libft/ft_printf/src/substr.c.o
 
-.PHONY : libft/libft/ft_strdel.o
+.PHONY : libft/ft_printf/src/substr.o
 
 # target to build an object file
-libft/libft/ft_strdel.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strdel.c.o
-.PHONY : libft/libft/ft_strdel.c.o
+libft/ft_printf/src/substr.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_printf/src/substr.c.o
+.PHONY : libft/ft_printf/src/substr.c.o
 
-libft/libft/ft_strdel.i: libft/libft/ft_strdel.c.i
+libft/ft_printf/src/substr.i: libft/ft_printf/src/substr.c.i
 
-.PHONY : libft/libft/ft_strdel.i
+.PHONY : libft/ft_printf/src/substr.i
 
 # target to preprocess a source file
-libft/libft/ft_strdel.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strdel.c.i
-.PHONY : libft/libft/ft_strdel.c.i
+libft/ft_printf/src/substr.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_printf/src/substr.c.i
+.PHONY : libft/ft_printf/src/substr.c.i
 
-libft/libft/ft_strdel.s: libft/libft/ft_strdel.c.s
+libft/ft_printf/src/substr.s: libft/ft_printf/src/substr.c.s
 
-.PHONY : libft/libft/ft_strdel.s
+.PHONY : libft/ft_printf/src/substr.s
 
 # target to generate assembly for a file
-libft/libft/ft_strdel.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strdel.c.s
-.PHONY : libft/libft/ft_strdel.c.s
+libft/ft_printf/src/substr.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_printf/src/substr.c.s
+.PHONY : libft/ft_printf/src/substr.c.s
 
-libft/libft/ft_strdup.o: libft/libft/ft_strdup.c.o
+libft/ft_printf/src/sum_char.o: libft/ft_printf/src/sum_char.c.o
 
-.PHONY : libft/libft/ft_strdup.o
+.PHONY : libft/ft_printf/src/sum_char.o
 
 # target to build an object file
-libft/libft/ft_strdup.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strdup.c.o
-.PHONY : libft/libft/ft_strdup.c.o
+libft/ft_printf/src/sum_char.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_printf/src/sum_char.c.o
+.PHONY : libft/ft_printf/src/sum_char.c.o
 
-libft/libft/ft_strdup.i: libft/libft/ft_strdup.c.i
+libft/ft_printf/src/sum_char.i: libft/ft_printf/src/sum_char.c.i
 
-.PHONY : libft/libft/ft_strdup.i
+.PHONY : libft/ft_printf/src/sum_char.i
 
 # target to preprocess a source file
-libft/libft/ft_strdup.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strdup.c.i
-.PHONY : libft/libft/ft_strdup.c.i
+libft/ft_printf/src/sum_char.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_printf/src/sum_char.c.i
+.PHONY : libft/ft_printf/src/sum_char.c.i
 
-libft/libft/ft_strdup.s: libft/libft/ft_strdup.c.s
+libft/ft_printf/src/sum_char.s: libft/ft_printf/src/sum_char.c.s
 
-.PHONY : libft/libft/ft_strdup.s
+.PHONY : libft/ft_printf/src/sum_char.s
 
 # target to generate assembly for a file
-libft/libft/ft_strdup.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strdup.c.s
-.PHONY : libft/libft/ft_strdup.c.s
+libft/ft_printf/src/sum_char.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_printf/src/sum_char.c.s
+.PHONY : libft/ft_printf/src/sum_char.c.s
 
-libft/libft/ft_strequ.o: libft/libft/ft_strequ.c.o
+libft/ft_printf/src/tools.o: libft/ft_printf/src/tools.c.o
 
-.PHONY : libft/libft/ft_strequ.o
+.PHONY : libft/ft_printf/src/tools.o
 
 # target to build an object file
-libft/libft/ft_strequ.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strequ.c.o
-.PHONY : libft/libft/ft_strequ.c.o
+libft/ft_printf/src/tools.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_printf/src/tools.c.o
+.PHONY : libft/ft_printf/src/tools.c.o
 
-libft/libft/ft_strequ.i: libft/libft/ft_strequ.c.i
+libft/ft_printf/src/tools.i: libft/ft_printf/src/tools.c.i
 
-.PHONY : libft/libft/ft_strequ.i
+.PHONY : libft/ft_printf/src/tools.i
 
 # target to preprocess a source file
-libft/libft/ft_strequ.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strequ.c.i
-.PHONY : libft/libft/ft_strequ.c.i
+libft/ft_printf/src/tools.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_printf/src/tools.c.i
+.PHONY : libft/ft_printf/src/tools.c.i
 
-libft/libft/ft_strequ.s: libft/libft/ft_strequ.c.s
+libft/ft_printf/src/tools.s: libft/ft_printf/src/tools.c.s
 
-.PHONY : libft/libft/ft_strequ.s
+.PHONY : libft/ft_printf/src/tools.s
 
 # target to generate assembly for a file
-libft/libft/ft_strequ.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strequ.c.s
-.PHONY : libft/libft/ft_strequ.c.s
+libft/ft_printf/src/tools.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_printf/src/tools.c.s
+.PHONY : libft/ft_printf/src/tools.c.s
 
-libft/libft/ft_striter.o: libft/libft/ft_striter.c.o
+libft/ft_putchar.o: libft/ft_putchar.c.o
 
-.PHONY : libft/libft/ft_striter.o
+.PHONY : libft/ft_putchar.o
 
 # target to build an object file
-libft/libft/ft_striter.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_striter.c.o
-.PHONY : libft/libft/ft_striter.c.o
+libft/ft_putchar.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_putchar.c.o
+.PHONY : libft/ft_putchar.c.o
 
-libft/libft/ft_striter.i: libft/libft/ft_striter.c.i
+libft/ft_putchar.i: libft/ft_putchar.c.i
 
-.PHONY : libft/libft/ft_striter.i
+.PHONY : libft/ft_putchar.i
 
 # target to preprocess a source file
-libft/libft/ft_striter.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_striter.c.i
-.PHONY : libft/libft/ft_striter.c.i
+libft/ft_putchar.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_putchar.c.i
+.PHONY : libft/ft_putchar.c.i
 
-libft/libft/ft_striter.s: libft/libft/ft_striter.c.s
+libft/ft_putchar.s: libft/ft_putchar.c.s
 
-.PHONY : libft/libft/ft_striter.s
+.PHONY : libft/ft_putchar.s
 
 # target to generate assembly for a file
-libft/libft/ft_striter.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_striter.c.s
-.PHONY : libft/libft/ft_striter.c.s
+libft/ft_putchar.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_putchar.c.s
+.PHONY : libft/ft_putchar.c.s
 
-libft/libft/ft_striteri.o: libft/libft/ft_striteri.c.o
+libft/ft_putchar_fd.o: libft/ft_putchar_fd.c.o
 
-.PHONY : libft/libft/ft_striteri.o
+.PHONY : libft/ft_putchar_fd.o
 
 # target to build an object file
-libft/libft/ft_striteri.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_striteri.c.o
-.PHONY : libft/libft/ft_striteri.c.o
+libft/ft_putchar_fd.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_putchar_fd.c.o
+.PHONY : libft/ft_putchar_fd.c.o
 
-libft/libft/ft_striteri.i: libft/libft/ft_striteri.c.i
+libft/ft_putchar_fd.i: libft/ft_putchar_fd.c.i
 
-.PHONY : libft/libft/ft_striteri.i
+.PHONY : libft/ft_putchar_fd.i
 
 # target to preprocess a source file
-libft/libft/ft_striteri.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_striteri.c.i
-.PHONY : libft/libft/ft_striteri.c.i
+libft/ft_putchar_fd.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_putchar_fd.c.i
+.PHONY : libft/ft_putchar_fd.c.i
 
-libft/libft/ft_striteri.s: libft/libft/ft_striteri.c.s
+libft/ft_putchar_fd.s: libft/ft_putchar_fd.c.s
 
-.PHONY : libft/libft/ft_striteri.s
+.PHONY : libft/ft_putchar_fd.s
 
 # target to generate assembly for a file
-libft/libft/ft_striteri.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_striteri.c.s
-.PHONY : libft/libft/ft_striteri.c.s
+libft/ft_putchar_fd.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_putchar_fd.c.s
+.PHONY : libft/ft_putchar_fd.c.s
 
-libft/libft/ft_strjoin.o: libft/libft/ft_strjoin.c.o
+libft/ft_putendl.o: libft/ft_putendl.c.o
 
-.PHONY : libft/libft/ft_strjoin.o
+.PHONY : libft/ft_putendl.o
 
 # target to build an object file
-libft/libft/ft_strjoin.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strjoin.c.o
-.PHONY : libft/libft/ft_strjoin.c.o
+libft/ft_putendl.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_putendl.c.o
+.PHONY : libft/ft_putendl.c.o
 
-libft/libft/ft_strjoin.i: libft/libft/ft_strjoin.c.i
+libft/ft_putendl.i: libft/ft_putendl.c.i
 
-.PHONY : libft/libft/ft_strjoin.i
+.PHONY : libft/ft_putendl.i
 
 # target to preprocess a source file
-libft/libft/ft_strjoin.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strjoin.c.i
-.PHONY : libft/libft/ft_strjoin.c.i
+libft/ft_putendl.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_putendl.c.i
+.PHONY : libft/ft_putendl.c.i
 
-libft/libft/ft_strjoin.s: libft/libft/ft_strjoin.c.s
+libft/ft_putendl.s: libft/ft_putendl.c.s
 
-.PHONY : libft/libft/ft_strjoin.s
+.PHONY : libft/ft_putendl.s
 
 # target to generate assembly for a file
-libft/libft/ft_strjoin.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strjoin.c.s
-.PHONY : libft/libft/ft_strjoin.c.s
+libft/ft_putendl.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_putendl.c.s
+.PHONY : libft/ft_putendl.c.s
 
-libft/libft/ft_strlcat.o: libft/libft/ft_strlcat.c.o
+libft/ft_putendl_fd.o: libft/ft_putendl_fd.c.o
 
-.PHONY : libft/libft/ft_strlcat.o
+.PHONY : libft/ft_putendl_fd.o
 
 # target to build an object file
-libft/libft/ft_strlcat.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strlcat.c.o
-.PHONY : libft/libft/ft_strlcat.c.o
+libft/ft_putendl_fd.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_putendl_fd.c.o
+.PHONY : libft/ft_putendl_fd.c.o
 
-libft/libft/ft_strlcat.i: libft/libft/ft_strlcat.c.i
+libft/ft_putendl_fd.i: libft/ft_putendl_fd.c.i
 
-.PHONY : libft/libft/ft_strlcat.i
+.PHONY : libft/ft_putendl_fd.i
 
 # target to preprocess a source file
-libft/libft/ft_strlcat.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strlcat.c.i
-.PHONY : libft/libft/ft_strlcat.c.i
+libft/ft_putendl_fd.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_putendl_fd.c.i
+.PHONY : libft/ft_putendl_fd.c.i
 
-libft/libft/ft_strlcat.s: libft/libft/ft_strlcat.c.s
+libft/ft_putendl_fd.s: libft/ft_putendl_fd.c.s
 
-.PHONY : libft/libft/ft_strlcat.s
+.PHONY : libft/ft_putendl_fd.s
 
 # target to generate assembly for a file
-libft/libft/ft_strlcat.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strlcat.c.s
-.PHONY : libft/libft/ft_strlcat.c.s
+libft/ft_putendl_fd.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_putendl_fd.c.s
+.PHONY : libft/ft_putendl_fd.c.s
 
-libft/libft/ft_strlen.o: libft/libft/ft_strlen.c.o
+libft/ft_putnbr.o: libft/ft_putnbr.c.o
 
-.PHONY : libft/libft/ft_strlen.o
+.PHONY : libft/ft_putnbr.o
 
 # target to build an object file
-libft/libft/ft_strlen.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strlen.c.o
-.PHONY : libft/libft/ft_strlen.c.o
+libft/ft_putnbr.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_putnbr.c.o
+.PHONY : libft/ft_putnbr.c.o
 
-libft/libft/ft_strlen.i: libft/libft/ft_strlen.c.i
+libft/ft_putnbr.i: libft/ft_putnbr.c.i
 
-.PHONY : libft/libft/ft_strlen.i
+.PHONY : libft/ft_putnbr.i
 
 # target to preprocess a source file
-libft/libft/ft_strlen.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strlen.c.i
-.PHONY : libft/libft/ft_strlen.c.i
+libft/ft_putnbr.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_putnbr.c.i
+.PHONY : libft/ft_putnbr.c.i
 
-libft/libft/ft_strlen.s: libft/libft/ft_strlen.c.s
+libft/ft_putnbr.s: libft/ft_putnbr.c.s
 
-.PHONY : libft/libft/ft_strlen.s
+.PHONY : libft/ft_putnbr.s
 
 # target to generate assembly for a file
-libft/libft/ft_strlen.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strlen.c.s
-.PHONY : libft/libft/ft_strlen.c.s
+libft/ft_putnbr.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_putnbr.c.s
+.PHONY : libft/ft_putnbr.c.s
 
-libft/libft/ft_strmap.o: libft/libft/ft_strmap.c.o
+libft/ft_putnbr_fd.o: libft/ft_putnbr_fd.c.o
 
-.PHONY : libft/libft/ft_strmap.o
+.PHONY : libft/ft_putnbr_fd.o
 
 # target to build an object file
-libft/libft/ft_strmap.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strmap.c.o
-.PHONY : libft/libft/ft_strmap.c.o
+libft/ft_putnbr_fd.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_putnbr_fd.c.o
+.PHONY : libft/ft_putnbr_fd.c.o
 
-libft/libft/ft_strmap.i: libft/libft/ft_strmap.c.i
+libft/ft_putnbr_fd.i: libft/ft_putnbr_fd.c.i
 
-.PHONY : libft/libft/ft_strmap.i
+.PHONY : libft/ft_putnbr_fd.i
 
 # target to preprocess a source file
-libft/libft/ft_strmap.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strmap.c.i
-.PHONY : libft/libft/ft_strmap.c.i
+libft/ft_putnbr_fd.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_putnbr_fd.c.i
+.PHONY : libft/ft_putnbr_fd.c.i
 
-libft/libft/ft_strmap.s: libft/libft/ft_strmap.c.s
+libft/ft_putnbr_fd.s: libft/ft_putnbr_fd.c.s
 
-.PHONY : libft/libft/ft_strmap.s
+.PHONY : libft/ft_putnbr_fd.s
 
 # target to generate assembly for a file
-libft/libft/ft_strmap.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strmap.c.s
-.PHONY : libft/libft/ft_strmap.c.s
+libft/ft_putnbr_fd.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_putnbr_fd.c.s
+.PHONY : libft/ft_putnbr_fd.c.s
 
-libft/libft/ft_strmapi.o: libft/libft/ft_strmapi.c.o
+libft/ft_putstr.o: libft/ft_putstr.c.o
 
-.PHONY : libft/libft/ft_strmapi.o
+.PHONY : libft/ft_putstr.o
 
 # target to build an object file
-libft/libft/ft_strmapi.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strmapi.c.o
-.PHONY : libft/libft/ft_strmapi.c.o
+libft/ft_putstr.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_putstr.c.o
+.PHONY : libft/ft_putstr.c.o
 
-libft/libft/ft_strmapi.i: libft/libft/ft_strmapi.c.i
+libft/ft_putstr.i: libft/ft_putstr.c.i
 
-.PHONY : libft/libft/ft_strmapi.i
+.PHONY : libft/ft_putstr.i
 
 # target to preprocess a source file
-libft/libft/ft_strmapi.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strmapi.c.i
-.PHONY : libft/libft/ft_strmapi.c.i
+libft/ft_putstr.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_putstr.c.i
+.PHONY : libft/ft_putstr.c.i
 
-libft/libft/ft_strmapi.s: libft/libft/ft_strmapi.c.s
+libft/ft_putstr.s: libft/ft_putstr.c.s
 
-.PHONY : libft/libft/ft_strmapi.s
+.PHONY : libft/ft_putstr.s
 
 # target to generate assembly for a file
-libft/libft/ft_strmapi.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strmapi.c.s
-.PHONY : libft/libft/ft_strmapi.c.s
+libft/ft_putstr.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_putstr.c.s
+.PHONY : libft/ft_putstr.c.s
 
-libft/libft/ft_strncat.o: libft/libft/ft_strncat.c.o
+libft/ft_putstr_fd.o: libft/ft_putstr_fd.c.o
 
-.PHONY : libft/libft/ft_strncat.o
+.PHONY : libft/ft_putstr_fd.o
 
 # target to build an object file
-libft/libft/ft_strncat.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strncat.c.o
-.PHONY : libft/libft/ft_strncat.c.o
+libft/ft_putstr_fd.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_putstr_fd.c.o
+.PHONY : libft/ft_putstr_fd.c.o
 
-libft/libft/ft_strncat.i: libft/libft/ft_strncat.c.i
+libft/ft_putstr_fd.i: libft/ft_putstr_fd.c.i
 
-.PHONY : libft/libft/ft_strncat.i
+.PHONY : libft/ft_putstr_fd.i
 
 # target to preprocess a source file
-libft/libft/ft_strncat.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strncat.c.i
-.PHONY : libft/libft/ft_strncat.c.i
+libft/ft_putstr_fd.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_putstr_fd.c.i
+.PHONY : libft/ft_putstr_fd.c.i
 
-libft/libft/ft_strncat.s: libft/libft/ft_strncat.c.s
+libft/ft_putstr_fd.s: libft/ft_putstr_fd.c.s
 
-.PHONY : libft/libft/ft_strncat.s
+.PHONY : libft/ft_putstr_fd.s
 
 # target to generate assembly for a file
-libft/libft/ft_strncat.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strncat.c.s
-.PHONY : libft/libft/ft_strncat.c.s
+libft/ft_putstr_fd.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_putstr_fd.c.s
+.PHONY : libft/ft_putstr_fd.c.s
 
-libft/libft/ft_strncmp.o: libft/libft/ft_strncmp.c.o
+libft/ft_reverse_bits.o: libft/ft_reverse_bits.c.o
 
-.PHONY : libft/libft/ft_strncmp.o
+.PHONY : libft/ft_reverse_bits.o
 
 # target to build an object file
-libft/libft/ft_strncmp.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strncmp.c.o
-.PHONY : libft/libft/ft_strncmp.c.o
+libft/ft_reverse_bits.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_reverse_bits.c.o
+.PHONY : libft/ft_reverse_bits.c.o
 
-libft/libft/ft_strncmp.i: libft/libft/ft_strncmp.c.i
+libft/ft_reverse_bits.i: libft/ft_reverse_bits.c.i
 
-.PHONY : libft/libft/ft_strncmp.i
+.PHONY : libft/ft_reverse_bits.i
 
 # target to preprocess a source file
-libft/libft/ft_strncmp.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strncmp.c.i
-.PHONY : libft/libft/ft_strncmp.c.i
+libft/ft_reverse_bits.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_reverse_bits.c.i
+.PHONY : libft/ft_reverse_bits.c.i
 
-libft/libft/ft_strncmp.s: libft/libft/ft_strncmp.c.s
+libft/ft_reverse_bits.s: libft/ft_reverse_bits.c.s
 
-.PHONY : libft/libft/ft_strncmp.s
+.PHONY : libft/ft_reverse_bits.s
 
 # target to generate assembly for a file
-libft/libft/ft_strncmp.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strncmp.c.s
-.PHONY : libft/libft/ft_strncmp.c.s
+libft/ft_reverse_bits.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_reverse_bits.c.s
+.PHONY : libft/ft_reverse_bits.c.s
 
-libft/libft/ft_strncpy.o: libft/libft/ft_strncpy.c.o
+libft/ft_sort_array.o: libft/ft_sort_array.c.o
 
-.PHONY : libft/libft/ft_strncpy.o
+.PHONY : libft/ft_sort_array.o
 
 # target to build an object file
-libft/libft/ft_strncpy.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strncpy.c.o
-.PHONY : libft/libft/ft_strncpy.c.o
+libft/ft_sort_array.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_sort_array.c.o
+.PHONY : libft/ft_sort_array.c.o
 
-libft/libft/ft_strncpy.i: libft/libft/ft_strncpy.c.i
+libft/ft_sort_array.i: libft/ft_sort_array.c.i
 
-.PHONY : libft/libft/ft_strncpy.i
+.PHONY : libft/ft_sort_array.i
 
 # target to preprocess a source file
-libft/libft/ft_strncpy.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strncpy.c.i
-.PHONY : libft/libft/ft_strncpy.c.i
+libft/ft_sort_array.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_sort_array.c.i
+.PHONY : libft/ft_sort_array.c.i
 
-libft/libft/ft_strncpy.s: libft/libft/ft_strncpy.c.s
+libft/ft_sort_array.s: libft/ft_sort_array.c.s
 
-.PHONY : libft/libft/ft_strncpy.s
+.PHONY : libft/ft_sort_array.s
 
 # target to generate assembly for a file
-libft/libft/ft_strncpy.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strncpy.c.s
-.PHONY : libft/libft/ft_strncpy.c.s
+libft/ft_sort_array.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_sort_array.c.s
+.PHONY : libft/ft_sort_array.c.s
 
-libft/libft/ft_strndup.o: libft/libft/ft_strndup.c.o
+libft/ft_strcat.o: libft/ft_strcat.c.o
 
-.PHONY : libft/libft/ft_strndup.o
+.PHONY : libft/ft_strcat.o
 
 # target to build an object file
-libft/libft/ft_strndup.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strndup.c.o
-.PHONY : libft/libft/ft_strndup.c.o
+libft/ft_strcat.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strcat.c.o
+.PHONY : libft/ft_strcat.c.o
 
-libft/libft/ft_strndup.i: libft/libft/ft_strndup.c.i
+libft/ft_strcat.i: libft/ft_strcat.c.i
 
-.PHONY : libft/libft/ft_strndup.i
+.PHONY : libft/ft_strcat.i
 
 # target to preprocess a source file
-libft/libft/ft_strndup.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strndup.c.i
-.PHONY : libft/libft/ft_strndup.c.i
+libft/ft_strcat.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strcat.c.i
+.PHONY : libft/ft_strcat.c.i
 
-libft/libft/ft_strndup.s: libft/libft/ft_strndup.c.s
+libft/ft_strcat.s: libft/ft_strcat.c.s
 
-.PHONY : libft/libft/ft_strndup.s
+.PHONY : libft/ft_strcat.s
 
 # target to generate assembly for a file
-libft/libft/ft_strndup.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strndup.c.s
-.PHONY : libft/libft/ft_strndup.c.s
+libft/ft_strcat.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strcat.c.s
+.PHONY : libft/ft_strcat.c.s
 
-libft/libft/ft_strnequ.o: libft/libft/ft_strnequ.c.o
+libft/ft_strchr.o: libft/ft_strchr.c.o
 
-.PHONY : libft/libft/ft_strnequ.o
+.PHONY : libft/ft_strchr.o
 
 # target to build an object file
-libft/libft/ft_strnequ.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strnequ.c.o
-.PHONY : libft/libft/ft_strnequ.c.o
+libft/ft_strchr.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strchr.c.o
+.PHONY : libft/ft_strchr.c.o
 
-libft/libft/ft_strnequ.i: libft/libft/ft_strnequ.c.i
+libft/ft_strchr.i: libft/ft_strchr.c.i
 
-.PHONY : libft/libft/ft_strnequ.i
+.PHONY : libft/ft_strchr.i
 
 # target to preprocess a source file
-libft/libft/ft_strnequ.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strnequ.c.i
-.PHONY : libft/libft/ft_strnequ.c.i
+libft/ft_strchr.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strchr.c.i
+.PHONY : libft/ft_strchr.c.i
 
-libft/libft/ft_strnequ.s: libft/libft/ft_strnequ.c.s
+libft/ft_strchr.s: libft/ft_strchr.c.s
 
-.PHONY : libft/libft/ft_strnequ.s
+.PHONY : libft/ft_strchr.s
 
 # target to generate assembly for a file
-libft/libft/ft_strnequ.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strnequ.c.s
-.PHONY : libft/libft/ft_strnequ.c.s
+libft/ft_strchr.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strchr.c.s
+.PHONY : libft/ft_strchr.c.s
 
-libft/libft/ft_strnew.o: libft/libft/ft_strnew.c.o
+libft/ft_strclr.o: libft/ft_strclr.c.o
 
-.PHONY : libft/libft/ft_strnew.o
+.PHONY : libft/ft_strclr.o
 
 # target to build an object file
-libft/libft/ft_strnew.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strnew.c.o
-.PHONY : libft/libft/ft_strnew.c.o
+libft/ft_strclr.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strclr.c.o
+.PHONY : libft/ft_strclr.c.o
 
-libft/libft/ft_strnew.i: libft/libft/ft_strnew.c.i
+libft/ft_strclr.i: libft/ft_strclr.c.i
 
-.PHONY : libft/libft/ft_strnew.i
+.PHONY : libft/ft_strclr.i
 
 # target to preprocess a source file
-libft/libft/ft_strnew.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strnew.c.i
-.PHONY : libft/libft/ft_strnew.c.i
+libft/ft_strclr.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strclr.c.i
+.PHONY : libft/ft_strclr.c.i
 
-libft/libft/ft_strnew.s: libft/libft/ft_strnew.c.s
+libft/ft_strclr.s: libft/ft_strclr.c.s
 
-.PHONY : libft/libft/ft_strnew.s
+.PHONY : libft/ft_strclr.s
 
 # target to generate assembly for a file
-libft/libft/ft_strnew.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strnew.c.s
-.PHONY : libft/libft/ft_strnew.c.s
+libft/ft_strclr.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strclr.c.s
+.PHONY : libft/ft_strclr.c.s
 
-libft/libft/ft_strnstr.o: libft/libft/ft_strnstr.c.o
+libft/ft_strcmp.o: libft/ft_strcmp.c.o
 
-.PHONY : libft/libft/ft_strnstr.o
+.PHONY : libft/ft_strcmp.o
 
 # target to build an object file
-libft/libft/ft_strnstr.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strnstr.c.o
-.PHONY : libft/libft/ft_strnstr.c.o
+libft/ft_strcmp.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strcmp.c.o
+.PHONY : libft/ft_strcmp.c.o
 
-libft/libft/ft_strnstr.i: libft/libft/ft_strnstr.c.i
+libft/ft_strcmp.i: libft/ft_strcmp.c.i
 
-.PHONY : libft/libft/ft_strnstr.i
+.PHONY : libft/ft_strcmp.i
 
 # target to preprocess a source file
-libft/libft/ft_strnstr.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strnstr.c.i
-.PHONY : libft/libft/ft_strnstr.c.i
+libft/ft_strcmp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strcmp.c.i
+.PHONY : libft/ft_strcmp.c.i
 
-libft/libft/ft_strnstr.s: libft/libft/ft_strnstr.c.s
+libft/ft_strcmp.s: libft/ft_strcmp.c.s
 
-.PHONY : libft/libft/ft_strnstr.s
+.PHONY : libft/ft_strcmp.s
 
 # target to generate assembly for a file
-libft/libft/ft_strnstr.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strnstr.c.s
-.PHONY : libft/libft/ft_strnstr.c.s
+libft/ft_strcmp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strcmp.c.s
+.PHONY : libft/ft_strcmp.c.s
 
-libft/libft/ft_strrchr.o: libft/libft/ft_strrchr.c.o
+libft/ft_strcpy.o: libft/ft_strcpy.c.o
 
-.PHONY : libft/libft/ft_strrchr.o
+.PHONY : libft/ft_strcpy.o
 
 # target to build an object file
-libft/libft/ft_strrchr.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strrchr.c.o
-.PHONY : libft/libft/ft_strrchr.c.o
+libft/ft_strcpy.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strcpy.c.o
+.PHONY : libft/ft_strcpy.c.o
 
-libft/libft/ft_strrchr.i: libft/libft/ft_strrchr.c.i
+libft/ft_strcpy.i: libft/ft_strcpy.c.i
 
-.PHONY : libft/libft/ft_strrchr.i
+.PHONY : libft/ft_strcpy.i
 
 # target to preprocess a source file
-libft/libft/ft_strrchr.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strrchr.c.i
-.PHONY : libft/libft/ft_strrchr.c.i
+libft/ft_strcpy.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strcpy.c.i
+.PHONY : libft/ft_strcpy.c.i
 
-libft/libft/ft_strrchr.s: libft/libft/ft_strrchr.c.s
+libft/ft_strcpy.s: libft/ft_strcpy.c.s
 
-.PHONY : libft/libft/ft_strrchr.s
+.PHONY : libft/ft_strcpy.s
 
 # target to generate assembly for a file
-libft/libft/ft_strrchr.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strrchr.c.s
-.PHONY : libft/libft/ft_strrchr.c.s
+libft/ft_strcpy.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strcpy.c.s
+.PHONY : libft/ft_strcpy.c.s
 
-libft/libft/ft_strrev.o: libft/libft/ft_strrev.c.o
+libft/ft_strdel.o: libft/ft_strdel.c.o
 
-.PHONY : libft/libft/ft_strrev.o
+.PHONY : libft/ft_strdel.o
 
 # target to build an object file
-libft/libft/ft_strrev.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strrev.c.o
-.PHONY : libft/libft/ft_strrev.c.o
+libft/ft_strdel.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strdel.c.o
+.PHONY : libft/ft_strdel.c.o
 
-libft/libft/ft_strrev.i: libft/libft/ft_strrev.c.i
+libft/ft_strdel.i: libft/ft_strdel.c.i
 
-.PHONY : libft/libft/ft_strrev.i
+.PHONY : libft/ft_strdel.i
 
 # target to preprocess a source file
-libft/libft/ft_strrev.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strrev.c.i
-.PHONY : libft/libft/ft_strrev.c.i
+libft/ft_strdel.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strdel.c.i
+.PHONY : libft/ft_strdel.c.i
 
-libft/libft/ft_strrev.s: libft/libft/ft_strrev.c.s
+libft/ft_strdel.s: libft/ft_strdel.c.s
 
-.PHONY : libft/libft/ft_strrev.s
+.PHONY : libft/ft_strdel.s
 
 # target to generate assembly for a file
-libft/libft/ft_strrev.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strrev.c.s
-.PHONY : libft/libft/ft_strrev.c.s
+libft/ft_strdel.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strdel.c.s
+.PHONY : libft/ft_strdel.c.s
 
-libft/libft/ft_strsplit.o: libft/libft/ft_strsplit.c.o
+libft/ft_strdup.o: libft/ft_strdup.c.o
 
-.PHONY : libft/libft/ft_strsplit.o
+.PHONY : libft/ft_strdup.o
 
 # target to build an object file
-libft/libft/ft_strsplit.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strsplit.c.o
-.PHONY : libft/libft/ft_strsplit.c.o
+libft/ft_strdup.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strdup.c.o
+.PHONY : libft/ft_strdup.c.o
 
-libft/libft/ft_strsplit.i: libft/libft/ft_strsplit.c.i
+libft/ft_strdup.i: libft/ft_strdup.c.i
 
-.PHONY : libft/libft/ft_strsplit.i
+.PHONY : libft/ft_strdup.i
 
 # target to preprocess a source file
-libft/libft/ft_strsplit.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strsplit.c.i
-.PHONY : libft/libft/ft_strsplit.c.i
+libft/ft_strdup.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strdup.c.i
+.PHONY : libft/ft_strdup.c.i
 
-libft/libft/ft_strsplit.s: libft/libft/ft_strsplit.c.s
+libft/ft_strdup.s: libft/ft_strdup.c.s
 
-.PHONY : libft/libft/ft_strsplit.s
+.PHONY : libft/ft_strdup.s
 
 # target to generate assembly for a file
-libft/libft/ft_strsplit.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strsplit.c.s
-.PHONY : libft/libft/ft_strsplit.c.s
+libft/ft_strdup.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strdup.c.s
+.PHONY : libft/ft_strdup.c.s
 
-libft/libft/ft_strstr.o: libft/libft/ft_strstr.c.o
+libft/ft_strequ.o: libft/ft_strequ.c.o
 
-.PHONY : libft/libft/ft_strstr.o
+.PHONY : libft/ft_strequ.o
 
 # target to build an object file
-libft/libft/ft_strstr.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strstr.c.o
-.PHONY : libft/libft/ft_strstr.c.o
+libft/ft_strequ.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strequ.c.o
+.PHONY : libft/ft_strequ.c.o
 
-libft/libft/ft_strstr.i: libft/libft/ft_strstr.c.i
+libft/ft_strequ.i: libft/ft_strequ.c.i
 
-.PHONY : libft/libft/ft_strstr.i
+.PHONY : libft/ft_strequ.i
 
 # target to preprocess a source file
-libft/libft/ft_strstr.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strstr.c.i
-.PHONY : libft/libft/ft_strstr.c.i
+libft/ft_strequ.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strequ.c.i
+.PHONY : libft/ft_strequ.c.i
 
-libft/libft/ft_strstr.s: libft/libft/ft_strstr.c.s
+libft/ft_strequ.s: libft/ft_strequ.c.s
 
-.PHONY : libft/libft/ft_strstr.s
+.PHONY : libft/ft_strequ.s
 
 # target to generate assembly for a file
-libft/libft/ft_strstr.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strstr.c.s
-.PHONY : libft/libft/ft_strstr.c.s
+libft/ft_strequ.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strequ.c.s
+.PHONY : libft/ft_strequ.c.s
 
-libft/libft/ft_strsub.o: libft/libft/ft_strsub.c.o
+libft/ft_striter.o: libft/ft_striter.c.o
 
-.PHONY : libft/libft/ft_strsub.o
+.PHONY : libft/ft_striter.o
 
 # target to build an object file
-libft/libft/ft_strsub.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strsub.c.o
-.PHONY : libft/libft/ft_strsub.c.o
+libft/ft_striter.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_striter.c.o
+.PHONY : libft/ft_striter.c.o
 
-libft/libft/ft_strsub.i: libft/libft/ft_strsub.c.i
+libft/ft_striter.i: libft/ft_striter.c.i
 
-.PHONY : libft/libft/ft_strsub.i
+.PHONY : libft/ft_striter.i
 
 # target to preprocess a source file
-libft/libft/ft_strsub.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strsub.c.i
-.PHONY : libft/libft/ft_strsub.c.i
+libft/ft_striter.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_striter.c.i
+.PHONY : libft/ft_striter.c.i
 
-libft/libft/ft_strsub.s: libft/libft/ft_strsub.c.s
+libft/ft_striter.s: libft/ft_striter.c.s
 
-.PHONY : libft/libft/ft_strsub.s
+.PHONY : libft/ft_striter.s
 
 # target to generate assembly for a file
-libft/libft/ft_strsub.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strsub.c.s
-.PHONY : libft/libft/ft_strsub.c.s
+libft/ft_striter.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_striter.c.s
+.PHONY : libft/ft_striter.c.s
 
-libft/libft/ft_strtrim.o: libft/libft/ft_strtrim.c.o
+libft/ft_striteri.o: libft/ft_striteri.c.o
 
-.PHONY : libft/libft/ft_strtrim.o
+.PHONY : libft/ft_striteri.o
 
 # target to build an object file
-libft/libft/ft_strtrim.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strtrim.c.o
-.PHONY : libft/libft/ft_strtrim.c.o
+libft/ft_striteri.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_striteri.c.o
+.PHONY : libft/ft_striteri.c.o
 
-libft/libft/ft_strtrim.i: libft/libft/ft_strtrim.c.i
+libft/ft_striteri.i: libft/ft_striteri.c.i
 
-.PHONY : libft/libft/ft_strtrim.i
+.PHONY : libft/ft_striteri.i
 
 # target to preprocess a source file
-libft/libft/ft_strtrim.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strtrim.c.i
-.PHONY : libft/libft/ft_strtrim.c.i
+libft/ft_striteri.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_striteri.c.i
+.PHONY : libft/ft_striteri.c.i
 
-libft/libft/ft_strtrim.s: libft/libft/ft_strtrim.c.s
+libft/ft_striteri.s: libft/ft_striteri.c.s
 
-.PHONY : libft/libft/ft_strtrim.s
+.PHONY : libft/ft_striteri.s
 
 # target to generate assembly for a file
-libft/libft/ft_strtrim.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_strtrim.c.s
-.PHONY : libft/libft/ft_strtrim.c.s
+libft/ft_striteri.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_striteri.c.s
+.PHONY : libft/ft_striteri.c.s
 
-libft/libft/ft_swap_bits.o: libft/libft/ft_swap_bits.c.o
+libft/ft_strjoin.o: libft/ft_strjoin.c.o
 
-.PHONY : libft/libft/ft_swap_bits.o
+.PHONY : libft/ft_strjoin.o
 
 # target to build an object file
-libft/libft/ft_swap_bits.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_swap_bits.c.o
-.PHONY : libft/libft/ft_swap_bits.c.o
+libft/ft_strjoin.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strjoin.c.o
+.PHONY : libft/ft_strjoin.c.o
 
-libft/libft/ft_swap_bits.i: libft/libft/ft_swap_bits.c.i
+libft/ft_strjoin.i: libft/ft_strjoin.c.i
 
-.PHONY : libft/libft/ft_swap_bits.i
+.PHONY : libft/ft_strjoin.i
 
 # target to preprocess a source file
-libft/libft/ft_swap_bits.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_swap_bits.c.i
-.PHONY : libft/libft/ft_swap_bits.c.i
+libft/ft_strjoin.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strjoin.c.i
+.PHONY : libft/ft_strjoin.c.i
 
-libft/libft/ft_swap_bits.s: libft/libft/ft_swap_bits.c.s
+libft/ft_strjoin.s: libft/ft_strjoin.c.s
 
-.PHONY : libft/libft/ft_swap_bits.s
+.PHONY : libft/ft_strjoin.s
 
 # target to generate assembly for a file
-libft/libft/ft_swap_bits.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_swap_bits.c.s
-.PHONY : libft/libft/ft_swap_bits.c.s
+libft/ft_strjoin.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strjoin.c.s
+.PHONY : libft/ft_strjoin.c.s
 
-libft/libft/ft_tolower.o: libft/libft/ft_tolower.c.o
+libft/ft_strlcat.o: libft/ft_strlcat.c.o
 
-.PHONY : libft/libft/ft_tolower.o
+.PHONY : libft/ft_strlcat.o
 
 # target to build an object file
-libft/libft/ft_tolower.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_tolower.c.o
-.PHONY : libft/libft/ft_tolower.c.o
+libft/ft_strlcat.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strlcat.c.o
+.PHONY : libft/ft_strlcat.c.o
 
-libft/libft/ft_tolower.i: libft/libft/ft_tolower.c.i
+libft/ft_strlcat.i: libft/ft_strlcat.c.i
 
-.PHONY : libft/libft/ft_tolower.i
+.PHONY : libft/ft_strlcat.i
 
 # target to preprocess a source file
-libft/libft/ft_tolower.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_tolower.c.i
-.PHONY : libft/libft/ft_tolower.c.i
+libft/ft_strlcat.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strlcat.c.i
+.PHONY : libft/ft_strlcat.c.i
 
-libft/libft/ft_tolower.s: libft/libft/ft_tolower.c.s
+libft/ft_strlcat.s: libft/ft_strlcat.c.s
 
-.PHONY : libft/libft/ft_tolower.s
+.PHONY : libft/ft_strlcat.s
 
 # target to generate assembly for a file
-libft/libft/ft_tolower.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_tolower.c.s
-.PHONY : libft/libft/ft_tolower.c.s
+libft/ft_strlcat.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strlcat.c.s
+.PHONY : libft/ft_strlcat.c.s
 
-libft/libft/ft_toupper.o: libft/libft/ft_toupper.c.o
+libft/ft_strlen.o: libft/ft_strlen.c.o
 
-.PHONY : libft/libft/ft_toupper.o
+.PHONY : libft/ft_strlen.o
 
 # target to build an object file
-libft/libft/ft_toupper.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_toupper.c.o
-.PHONY : libft/libft/ft_toupper.c.o
+libft/ft_strlen.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strlen.c.o
+.PHONY : libft/ft_strlen.c.o
 
-libft/libft/ft_toupper.i: libft/libft/ft_toupper.c.i
+libft/ft_strlen.i: libft/ft_strlen.c.i
 
-.PHONY : libft/libft/ft_toupper.i
+.PHONY : libft/ft_strlen.i
 
 # target to preprocess a source file
-libft/libft/ft_toupper.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_toupper.c.i
-.PHONY : libft/libft/ft_toupper.c.i
+libft/ft_strlen.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strlen.c.i
+.PHONY : libft/ft_strlen.c.i
 
-libft/libft/ft_toupper.s: libft/libft/ft_toupper.c.s
+libft/ft_strlen.s: libft/ft_strlen.c.s
 
-.PHONY : libft/libft/ft_toupper.s
+.PHONY : libft/ft_strlen.s
 
 # target to generate assembly for a file
-libft/libft/ft_toupper.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_toupper.c.s
-.PHONY : libft/libft/ft_toupper.c.s
+libft/ft_strlen.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strlen.c.s
+.PHONY : libft/ft_strlen.c.s
 
-libft/libft/ft_words.o: libft/libft/ft_words.c.o
+libft/ft_strmap.o: libft/ft_strmap.c.o
 
-.PHONY : libft/libft/ft_words.o
+.PHONY : libft/ft_strmap.o
 
 # target to build an object file
-libft/libft/ft_words.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_words.c.o
-.PHONY : libft/libft/ft_words.c.o
+libft/ft_strmap.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strmap.c.o
+.PHONY : libft/ft_strmap.c.o
 
-libft/libft/ft_words.i: libft/libft/ft_words.c.i
+libft/ft_strmap.i: libft/ft_strmap.c.i
 
-.PHONY : libft/libft/ft_words.i
+.PHONY : libft/ft_strmap.i
 
 # target to preprocess a source file
-libft/libft/ft_words.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_words.c.i
-.PHONY : libft/libft/ft_words.c.i
+libft/ft_strmap.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strmap.c.i
+.PHONY : libft/ft_strmap.c.i
 
-libft/libft/ft_words.s: libft/libft/ft_words.c.s
+libft/ft_strmap.s: libft/ft_strmap.c.s
 
-.PHONY : libft/libft/ft_words.s
+.PHONY : libft/ft_strmap.s
 
 # target to generate assembly for a file
-libft/libft/ft_words.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/ft_words.c.s
-.PHONY : libft/libft/ft_words.c.s
+libft/ft_strmap.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strmap.c.s
+.PHONY : libft/ft_strmap.c.s
 
-libft/libft/get_next_line.o: libft/libft/get_next_line.c.o
+libft/ft_strmapi.o: libft/ft_strmapi.c.o
 
-.PHONY : libft/libft/get_next_line.o
+.PHONY : libft/ft_strmapi.o
 
 # target to build an object file
-libft/libft/get_next_line.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/get_next_line.c.o
-.PHONY : libft/libft/get_next_line.c.o
+libft/ft_strmapi.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strmapi.c.o
+.PHONY : libft/ft_strmapi.c.o
 
-libft/libft/get_next_line.i: libft/libft/get_next_line.c.i
+libft/ft_strmapi.i: libft/ft_strmapi.c.i
 
-.PHONY : libft/libft/get_next_line.i
+.PHONY : libft/ft_strmapi.i
 
 # target to preprocess a source file
-libft/libft/get_next_line.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/get_next_line.c.i
-.PHONY : libft/libft/get_next_line.c.i
+libft/ft_strmapi.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strmapi.c.i
+.PHONY : libft/ft_strmapi.c.i
 
-libft/libft/get_next_line.s: libft/libft/get_next_line.c.s
+libft/ft_strmapi.s: libft/ft_strmapi.c.s
 
-.PHONY : libft/libft/get_next_line.s
+.PHONY : libft/ft_strmapi.s
 
 # target to generate assembly for a file
-libft/libft/get_next_line.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/libft/get_next_line.c.s
-.PHONY : libft/libft/get_next_line.c.s
+libft/ft_strmapi.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strmapi.c.s
+.PHONY : libft/ft_strmapi.c.s
 
-libft/printf/color.o: libft/printf/color.c.o
+libft/ft_strncat.o: libft/ft_strncat.c.o
 
-.PHONY : libft/printf/color.o
+.PHONY : libft/ft_strncat.o
 
 # target to build an object file
-libft/printf/color.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/printf/color.c.o
-.PHONY : libft/printf/color.c.o
+libft/ft_strncat.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strncat.c.o
+.PHONY : libft/ft_strncat.c.o
 
-libft/printf/color.i: libft/printf/color.c.i
+libft/ft_strncat.i: libft/ft_strncat.c.i
 
-.PHONY : libft/printf/color.i
+.PHONY : libft/ft_strncat.i
 
 # target to preprocess a source file
-libft/printf/color.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/printf/color.c.i
-.PHONY : libft/printf/color.c.i
+libft/ft_strncat.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strncat.c.i
+.PHONY : libft/ft_strncat.c.i
 
-libft/printf/color.s: libft/printf/color.c.s
+libft/ft_strncat.s: libft/ft_strncat.c.s
 
-.PHONY : libft/printf/color.s
+.PHONY : libft/ft_strncat.s
 
 # target to generate assembly for a file
-libft/printf/color.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/printf/color.c.s
-.PHONY : libft/printf/color.c.s
+libft/ft_strncat.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strncat.c.s
+.PHONY : libft/ft_strncat.c.s
 
-libft/printf/conversion.o: libft/printf/conversion.c.o
+libft/ft_strncmp.o: libft/ft_strncmp.c.o
 
-.PHONY : libft/printf/conversion.o
+.PHONY : libft/ft_strncmp.o
 
 # target to build an object file
-libft/printf/conversion.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/printf/conversion.c.o
-.PHONY : libft/printf/conversion.c.o
+libft/ft_strncmp.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strncmp.c.o
+.PHONY : libft/ft_strncmp.c.o
 
-libft/printf/conversion.i: libft/printf/conversion.c.i
+libft/ft_strncmp.i: libft/ft_strncmp.c.i
 
-.PHONY : libft/printf/conversion.i
+.PHONY : libft/ft_strncmp.i
 
 # target to preprocess a source file
-libft/printf/conversion.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/printf/conversion.c.i
-.PHONY : libft/printf/conversion.c.i
+libft/ft_strncmp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strncmp.c.i
+.PHONY : libft/ft_strncmp.c.i
 
-libft/printf/conversion.s: libft/printf/conversion.c.s
+libft/ft_strncmp.s: libft/ft_strncmp.c.s
 
-.PHONY : libft/printf/conversion.s
+.PHONY : libft/ft_strncmp.s
 
 # target to generate assembly for a file
-libft/printf/conversion.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/printf/conversion.c.s
-.PHONY : libft/printf/conversion.c.s
+libft/ft_strncmp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strncmp.c.s
+.PHONY : libft/ft_strncmp.c.s
 
-libft/printf/free.o: libft/printf/free.c.o
+libft/ft_strncpy.o: libft/ft_strncpy.c.o
 
-.PHONY : libft/printf/free.o
+.PHONY : libft/ft_strncpy.o
 
 # target to build an object file
-libft/printf/free.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/printf/free.c.o
-.PHONY : libft/printf/free.c.o
+libft/ft_strncpy.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strncpy.c.o
+.PHONY : libft/ft_strncpy.c.o
 
-libft/printf/free.i: libft/printf/free.c.i
+libft/ft_strncpy.i: libft/ft_strncpy.c.i
 
-.PHONY : libft/printf/free.i
+.PHONY : libft/ft_strncpy.i
 
 # target to preprocess a source file
-libft/printf/free.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/printf/free.c.i
-.PHONY : libft/printf/free.c.i
+libft/ft_strncpy.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strncpy.c.i
+.PHONY : libft/ft_strncpy.c.i
 
-libft/printf/free.s: libft/printf/free.c.s
+libft/ft_strncpy.s: libft/ft_strncpy.c.s
 
-.PHONY : libft/printf/free.s
+.PHONY : libft/ft_strncpy.s
 
 # target to generate assembly for a file
-libft/printf/free.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/printf/free.c.s
-.PHONY : libft/printf/free.c.s
+libft/ft_strncpy.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strncpy.c.s
+.PHONY : libft/ft_strncpy.c.s
 
-libft/printf/ft_printf.o: libft/printf/ft_printf.c.o
+libft/ft_strndup.o: libft/ft_strndup.c.o
 
-.PHONY : libft/printf/ft_printf.o
+.PHONY : libft/ft_strndup.o
 
 # target to build an object file
-libft/printf/ft_printf.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/printf/ft_printf.c.o
-.PHONY : libft/printf/ft_printf.c.o
+libft/ft_strndup.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strndup.c.o
+.PHONY : libft/ft_strndup.c.o
 
-libft/printf/ft_printf.i: libft/printf/ft_printf.c.i
+libft/ft_strndup.i: libft/ft_strndup.c.i
 
-.PHONY : libft/printf/ft_printf.i
+.PHONY : libft/ft_strndup.i
 
 # target to preprocess a source file
-libft/printf/ft_printf.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/printf/ft_printf.c.i
-.PHONY : libft/printf/ft_printf.c.i
+libft/ft_strndup.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strndup.c.i
+.PHONY : libft/ft_strndup.c.i
 
-libft/printf/ft_printf.s: libft/printf/ft_printf.c.s
+libft/ft_strndup.s: libft/ft_strndup.c.s
 
-.PHONY : libft/printf/ft_printf.s
+.PHONY : libft/ft_strndup.s
 
 # target to generate assembly for a file
-libft/printf/ft_printf.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/printf/ft_printf.c.s
-.PHONY : libft/printf/ft_printf.c.s
+libft/ft_strndup.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strndup.c.s
+.PHONY : libft/ft_strndup.c.s
 
-libft/printf/multiplier.o: libft/printf/multiplier.c.o
+libft/ft_strnequ.o: libft/ft_strnequ.c.o
 
-.PHONY : libft/printf/multiplier.o
+.PHONY : libft/ft_strnequ.o
 
 # target to build an object file
-libft/printf/multiplier.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/printf/multiplier.c.o
-.PHONY : libft/printf/multiplier.c.o
+libft/ft_strnequ.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strnequ.c.o
+.PHONY : libft/ft_strnequ.c.o
 
-libft/printf/multiplier.i: libft/printf/multiplier.c.i
+libft/ft_strnequ.i: libft/ft_strnequ.c.i
 
-.PHONY : libft/printf/multiplier.i
+.PHONY : libft/ft_strnequ.i
 
 # target to preprocess a source file
-libft/printf/multiplier.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/printf/multiplier.c.i
-.PHONY : libft/printf/multiplier.c.i
+libft/ft_strnequ.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strnequ.c.i
+.PHONY : libft/ft_strnequ.c.i
 
-libft/printf/multiplier.s: libft/printf/multiplier.c.s
+libft/ft_strnequ.s: libft/ft_strnequ.c.s
 
-.PHONY : libft/printf/multiplier.s
+.PHONY : libft/ft_strnequ.s
 
 # target to generate assembly for a file
-libft/printf/multiplier.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/printf/multiplier.c.s
-.PHONY : libft/printf/multiplier.c.s
+libft/ft_strnequ.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strnequ.c.s
+.PHONY : libft/ft_strnequ.c.s
 
-libft/printf/neg_exp.o: libft/printf/neg_exp.c.o
+libft/ft_strnew.o: libft/ft_strnew.c.o
 
-.PHONY : libft/printf/neg_exp.o
+.PHONY : libft/ft_strnew.o
 
 # target to build an object file
-libft/printf/neg_exp.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/printf/neg_exp.c.o
-.PHONY : libft/printf/neg_exp.c.o
+libft/ft_strnew.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strnew.c.o
+.PHONY : libft/ft_strnew.c.o
 
-libft/printf/neg_exp.i: libft/printf/neg_exp.c.i
+libft/ft_strnew.i: libft/ft_strnew.c.i
 
-.PHONY : libft/printf/neg_exp.i
+.PHONY : libft/ft_strnew.i
 
 # target to preprocess a source file
-libft/printf/neg_exp.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/printf/neg_exp.c.i
-.PHONY : libft/printf/neg_exp.c.i
+libft/ft_strnew.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strnew.c.i
+.PHONY : libft/ft_strnew.c.i
 
-libft/printf/neg_exp.s: libft/printf/neg_exp.c.s
+libft/ft_strnew.s: libft/ft_strnew.c.s
 
-.PHONY : libft/printf/neg_exp.s
+.PHONY : libft/ft_strnew.s
 
 # target to generate assembly for a file
-libft/printf/neg_exp.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/printf/neg_exp.c.s
-.PHONY : libft/printf/neg_exp.c.s
+libft/ft_strnew.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strnew.c.s
+.PHONY : libft/ft_strnew.c.s
 
-libft/printf/prec.o: libft/printf/prec.c.o
+libft/ft_strnstr.o: libft/ft_strnstr.c.o
 
-.PHONY : libft/printf/prec.o
+.PHONY : libft/ft_strnstr.o
 
 # target to build an object file
-libft/printf/prec.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/printf/prec.c.o
-.PHONY : libft/printf/prec.c.o
+libft/ft_strnstr.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strnstr.c.o
+.PHONY : libft/ft_strnstr.c.o
 
-libft/printf/prec.i: libft/printf/prec.c.i
+libft/ft_strnstr.i: libft/ft_strnstr.c.i
 
-.PHONY : libft/printf/prec.i
+.PHONY : libft/ft_strnstr.i
 
 # target to preprocess a source file
-libft/printf/prec.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/printf/prec.c.i
-.PHONY : libft/printf/prec.c.i
+libft/ft_strnstr.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strnstr.c.i
+.PHONY : libft/ft_strnstr.c.i
 
-libft/printf/prec.s: libft/printf/prec.c.s
+libft/ft_strnstr.s: libft/ft_strnstr.c.s
 
-.PHONY : libft/printf/prec.s
+.PHONY : libft/ft_strnstr.s
 
 # target to generate assembly for a file
-libft/printf/prec.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/printf/prec.c.s
-.PHONY : libft/printf/prec.c.s
+libft/ft_strnstr.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strnstr.c.s
+.PHONY : libft/ft_strnstr.c.s
 
-libft/printf/prec2.o: libft/printf/prec2.c.o
+libft/ft_strrchr.o: libft/ft_strrchr.c.o
 
-.PHONY : libft/printf/prec2.o
+.PHONY : libft/ft_strrchr.o
 
 # target to build an object file
-libft/printf/prec2.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/printf/prec2.c.o
-.PHONY : libft/printf/prec2.c.o
+libft/ft_strrchr.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strrchr.c.o
+.PHONY : libft/ft_strrchr.c.o
 
-libft/printf/prec2.i: libft/printf/prec2.c.i
+libft/ft_strrchr.i: libft/ft_strrchr.c.i
 
-.PHONY : libft/printf/prec2.i
+.PHONY : libft/ft_strrchr.i
 
 # target to preprocess a source file
-libft/printf/prec2.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/printf/prec2.c.i
-.PHONY : libft/printf/prec2.c.i
+libft/ft_strrchr.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strrchr.c.i
+.PHONY : libft/ft_strrchr.c.i
 
-libft/printf/prec2.s: libft/printf/prec2.c.s
+libft/ft_strrchr.s: libft/ft_strrchr.c.s
 
-.PHONY : libft/printf/prec2.s
+.PHONY : libft/ft_strrchr.s
 
 # target to generate assembly for a file
-libft/printf/prec2.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/printf/prec2.c.s
-.PHONY : libft/printf/prec2.c.s
+libft/ft_strrchr.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strrchr.c.s
+.PHONY : libft/ft_strrchr.c.s
 
-libft/printf/print_float.o: libft/printf/print_float.c.o
+libft/ft_strrev.o: libft/ft_strrev.c.o
 
-.PHONY : libft/printf/print_float.o
+.PHONY : libft/ft_strrev.o
 
 # target to build an object file
-libft/printf/print_float.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/printf/print_float.c.o
-.PHONY : libft/printf/print_float.c.o
+libft/ft_strrev.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strrev.c.o
+.PHONY : libft/ft_strrev.c.o
 
-libft/printf/print_float.i: libft/printf/print_float.c.i
+libft/ft_strrev.i: libft/ft_strrev.c.i
 
-.PHONY : libft/printf/print_float.i
+.PHONY : libft/ft_strrev.i
 
 # target to preprocess a source file
-libft/printf/print_float.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/printf/print_float.c.i
-.PHONY : libft/printf/print_float.c.i
+libft/ft_strrev.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strrev.c.i
+.PHONY : libft/ft_strrev.c.i
 
-libft/printf/print_float.s: libft/printf/print_float.c.s
+libft/ft_strrev.s: libft/ft_strrev.c.s
 
-.PHONY : libft/printf/print_float.s
+.PHONY : libft/ft_strrev.s
 
 # target to generate assembly for a file
-libft/printf/print_float.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/printf/print_float.c.s
-.PHONY : libft/printf/print_float.c.s
+libft/ft_strrev.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strrev.c.s
+.PHONY : libft/ft_strrev.c.s
 
-libft/printf/print_integer.o: libft/printf/print_integer.c.o
+libft/ft_strsplit.o: libft/ft_strsplit.c.o
 
-.PHONY : libft/printf/print_integer.o
+.PHONY : libft/ft_strsplit.o
 
 # target to build an object file
-libft/printf/print_integer.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/printf/print_integer.c.o
-.PHONY : libft/printf/print_integer.c.o
+libft/ft_strsplit.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strsplit.c.o
+.PHONY : libft/ft_strsplit.c.o
 
-libft/printf/print_integer.i: libft/printf/print_integer.c.i
+libft/ft_strsplit.i: libft/ft_strsplit.c.i
 
-.PHONY : libft/printf/print_integer.i
+.PHONY : libft/ft_strsplit.i
 
 # target to preprocess a source file
-libft/printf/print_integer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/printf/print_integer.c.i
-.PHONY : libft/printf/print_integer.c.i
+libft/ft_strsplit.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strsplit.c.i
+.PHONY : libft/ft_strsplit.c.i
 
-libft/printf/print_integer.s: libft/printf/print_integer.c.s
+libft/ft_strsplit.s: libft/ft_strsplit.c.s
 
-.PHONY : libft/printf/print_integer.s
+.PHONY : libft/ft_strsplit.s
 
 # target to generate assembly for a file
-libft/printf/print_integer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/printf/print_integer.c.s
-.PHONY : libft/printf/print_integer.c.s
+libft/ft_strsplit.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strsplit.c.s
+.PHONY : libft/ft_strsplit.c.s
 
-libft/printf/print_octal_x.o: libft/printf/print_octal_x.c.o
+libft/ft_strstr.o: libft/ft_strstr.c.o
 
-.PHONY : libft/printf/print_octal_x.o
+.PHONY : libft/ft_strstr.o
 
 # target to build an object file
-libft/printf/print_octal_x.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/printf/print_octal_x.c.o
-.PHONY : libft/printf/print_octal_x.c.o
+libft/ft_strstr.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strstr.c.o
+.PHONY : libft/ft_strstr.c.o
 
-libft/printf/print_octal_x.i: libft/printf/print_octal_x.c.i
+libft/ft_strstr.i: libft/ft_strstr.c.i
 
-.PHONY : libft/printf/print_octal_x.i
+.PHONY : libft/ft_strstr.i
 
 # target to preprocess a source file
-libft/printf/print_octal_x.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/printf/print_octal_x.c.i
-.PHONY : libft/printf/print_octal_x.c.i
+libft/ft_strstr.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strstr.c.i
+.PHONY : libft/ft_strstr.c.i
 
-libft/printf/print_octal_x.s: libft/printf/print_octal_x.c.s
+libft/ft_strstr.s: libft/ft_strstr.c.s
 
-.PHONY : libft/printf/print_octal_x.s
+.PHONY : libft/ft_strstr.s
 
 # target to generate assembly for a file
-libft/printf/print_octal_x.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/printf/print_octal_x.c.s
-.PHONY : libft/printf/print_octal_x.c.s
+libft/ft_strstr.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strstr.c.s
+.PHONY : libft/ft_strstr.c.s
 
-libft/printf/print_pointer_char.o: libft/printf/print_pointer_char.c.o
+libft/ft_strsub.o: libft/ft_strsub.c.o
 
-.PHONY : libft/printf/print_pointer_char.o
+.PHONY : libft/ft_strsub.o
 
 # target to build an object file
-libft/printf/print_pointer_char.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/printf/print_pointer_char.c.o
-.PHONY : libft/printf/print_pointer_char.c.o
+libft/ft_strsub.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strsub.c.o
+.PHONY : libft/ft_strsub.c.o
 
-libft/printf/print_pointer_char.i: libft/printf/print_pointer_char.c.i
+libft/ft_strsub.i: libft/ft_strsub.c.i
 
-.PHONY : libft/printf/print_pointer_char.i
+.PHONY : libft/ft_strsub.i
 
 # target to preprocess a source file
-libft/printf/print_pointer_char.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/printf/print_pointer_char.c.i
-.PHONY : libft/printf/print_pointer_char.c.i
+libft/ft_strsub.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strsub.c.i
+.PHONY : libft/ft_strsub.c.i
 
-libft/printf/print_pointer_char.s: libft/printf/print_pointer_char.c.s
+libft/ft_strsub.s: libft/ft_strsub.c.s
 
-.PHONY : libft/printf/print_pointer_char.s
+.PHONY : libft/ft_strsub.s
 
 # target to generate assembly for a file
-libft/printf/print_pointer_char.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/printf/print_pointer_char.c.s
-.PHONY : libft/printf/print_pointer_char.c.s
+libft/ft_strsub.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strsub.c.s
+.PHONY : libft/ft_strsub.c.s
 
-libft/printf/print_string.o: libft/printf/print_string.c.o
+libft/ft_strtrim.o: libft/ft_strtrim.c.o
 
-.PHONY : libft/printf/print_string.o
+.PHONY : libft/ft_strtrim.o
 
 # target to build an object file
-libft/printf/print_string.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/printf/print_string.c.o
-.PHONY : libft/printf/print_string.c.o
+libft/ft_strtrim.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strtrim.c.o
+.PHONY : libft/ft_strtrim.c.o
 
-libft/printf/print_string.i: libft/printf/print_string.c.i
+libft/ft_strtrim.i: libft/ft_strtrim.c.i
 
-.PHONY : libft/printf/print_string.i
+.PHONY : libft/ft_strtrim.i
 
 # target to preprocess a source file
-libft/printf/print_string.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/printf/print_string.c.i
-.PHONY : libft/printf/print_string.c.i
+libft/ft_strtrim.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strtrim.c.i
+.PHONY : libft/ft_strtrim.c.i
 
-libft/printf/print_string.s: libft/printf/print_string.c.s
+libft/ft_strtrim.s: libft/ft_strtrim.c.s
 
-.PHONY : libft/printf/print_string.s
+.PHONY : libft/ft_strtrim.s
 
 # target to generate assembly for a file
-libft/printf/print_string.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/printf/print_string.c.s
-.PHONY : libft/printf/print_string.c.s
+libft/ft_strtrim.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_strtrim.c.s
+.PHONY : libft/ft_strtrim.c.s
 
-libft/printf/print_unsigned.o: libft/printf/print_unsigned.c.o
+libft/ft_swap_bits.o: libft/ft_swap_bits.c.o
 
-.PHONY : libft/printf/print_unsigned.o
+.PHONY : libft/ft_swap_bits.o
 
 # target to build an object file
-libft/printf/print_unsigned.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/printf/print_unsigned.c.o
-.PHONY : libft/printf/print_unsigned.c.o
+libft/ft_swap_bits.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_swap_bits.c.o
+.PHONY : libft/ft_swap_bits.c.o
 
-libft/printf/print_unsigned.i: libft/printf/print_unsigned.c.i
+libft/ft_swap_bits.i: libft/ft_swap_bits.c.i
 
-.PHONY : libft/printf/print_unsigned.i
+.PHONY : libft/ft_swap_bits.i
 
 # target to preprocess a source file
-libft/printf/print_unsigned.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/printf/print_unsigned.c.i
-.PHONY : libft/printf/print_unsigned.c.i
+libft/ft_swap_bits.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_swap_bits.c.i
+.PHONY : libft/ft_swap_bits.c.i
 
-libft/printf/print_unsigned.s: libft/printf/print_unsigned.c.s
+libft/ft_swap_bits.s: libft/ft_swap_bits.c.s
 
-.PHONY : libft/printf/print_unsigned.s
+.PHONY : libft/ft_swap_bits.s
 
 # target to generate assembly for a file
-libft/printf/print_unsigned.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/printf/print_unsigned.c.s
-.PHONY : libft/printf/print_unsigned.c.s
+libft/ft_swap_bits.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_swap_bits.c.s
+.PHONY : libft/ft_swap_bits.c.s
 
-libft/printf/read_format.o: libft/printf/read_format.c.o
+libft/ft_tolower.o: libft/ft_tolower.c.o
 
-.PHONY : libft/printf/read_format.o
+.PHONY : libft/ft_tolower.o
 
 # target to build an object file
-libft/printf/read_format.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/printf/read_format.c.o
-.PHONY : libft/printf/read_format.c.o
+libft/ft_tolower.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_tolower.c.o
+.PHONY : libft/ft_tolower.c.o
 
-libft/printf/read_format.i: libft/printf/read_format.c.i
+libft/ft_tolower.i: libft/ft_tolower.c.i
 
-.PHONY : libft/printf/read_format.i
+.PHONY : libft/ft_tolower.i
 
 # target to preprocess a source file
-libft/printf/read_format.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/printf/read_format.c.i
-.PHONY : libft/printf/read_format.c.i
+libft/ft_tolower.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_tolower.c.i
+.PHONY : libft/ft_tolower.c.i
 
-libft/printf/read_format.s: libft/printf/read_format.c.s
+libft/ft_tolower.s: libft/ft_tolower.c.s
 
-.PHONY : libft/printf/read_format.s
+.PHONY : libft/ft_tolower.s
 
 # target to generate assembly for a file
-libft/printf/read_format.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/printf/read_format.c.s
-.PHONY : libft/printf/read_format.c.s
+libft/ft_tolower.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_tolower.c.s
+.PHONY : libft/ft_tolower.c.s
 
-libft/printf/substr.o: libft/printf/substr.c.o
+libft/ft_toupper.o: libft/ft_toupper.c.o
 
-.PHONY : libft/printf/substr.o
+.PHONY : libft/ft_toupper.o
 
 # target to build an object file
-libft/printf/substr.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/printf/substr.c.o
-.PHONY : libft/printf/substr.c.o
+libft/ft_toupper.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_toupper.c.o
+.PHONY : libft/ft_toupper.c.o
 
-libft/printf/substr.i: libft/printf/substr.c.i
+libft/ft_toupper.i: libft/ft_toupper.c.i
 
-.PHONY : libft/printf/substr.i
+.PHONY : libft/ft_toupper.i
 
 # target to preprocess a source file
-libft/printf/substr.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/printf/substr.c.i
-.PHONY : libft/printf/substr.c.i
+libft/ft_toupper.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_toupper.c.i
+.PHONY : libft/ft_toupper.c.i
 
-libft/printf/substr.s: libft/printf/substr.c.s
+libft/ft_toupper.s: libft/ft_toupper.c.s
 
-.PHONY : libft/printf/substr.s
+.PHONY : libft/ft_toupper.s
 
 # target to generate assembly for a file
-libft/printf/substr.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/printf/substr.c.s
-.PHONY : libft/printf/substr.c.s
+libft/ft_toupper.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_toupper.c.s
+.PHONY : libft/ft_toupper.c.s
 
-libft/printf/sum_char.o: libft/printf/sum_char.c.o
+libft/ft_words.o: libft/ft_words.c.o
 
-.PHONY : libft/printf/sum_char.o
+.PHONY : libft/ft_words.o
 
 # target to build an object file
-libft/printf/sum_char.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/printf/sum_char.c.o
-.PHONY : libft/printf/sum_char.c.o
+libft/ft_words.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_words.c.o
+.PHONY : libft/ft_words.c.o
 
-libft/printf/sum_char.i: libft/printf/sum_char.c.i
+libft/ft_words.i: libft/ft_words.c.i
 
-.PHONY : libft/printf/sum_char.i
+.PHONY : libft/ft_words.i
 
 # target to preprocess a source file
-libft/printf/sum_char.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/printf/sum_char.c.i
-.PHONY : libft/printf/sum_char.c.i
+libft/ft_words.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_words.c.i
+.PHONY : libft/ft_words.c.i
 
-libft/printf/sum_char.s: libft/printf/sum_char.c.s
+libft/ft_words.s: libft/ft_words.c.s
 
-.PHONY : libft/printf/sum_char.s
+.PHONY : libft/ft_words.s
 
 # target to generate assembly for a file
-libft/printf/sum_char.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/printf/sum_char.c.s
-.PHONY : libft/printf/sum_char.c.s
+libft/ft_words.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/ft_words.c.s
+.PHONY : libft/ft_words.c.s
 
-libft/printf/tools.o: libft/printf/tools.c.o
+libft/get_next_line.o: libft/get_next_line.c.o
 
-.PHONY : libft/printf/tools.o
+.PHONY : libft/get_next_line.o
 
 # target to build an object file
-libft/printf/tools.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/printf/tools.c.o
-.PHONY : libft/printf/tools.c.o
+libft/get_next_line.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/get_next_line.c.o
+.PHONY : libft/get_next_line.c.o
 
-libft/printf/tools.i: libft/printf/tools.c.i
+libft/get_next_line.i: libft/get_next_line.c.i
 
-.PHONY : libft/printf/tools.i
+.PHONY : libft/get_next_line.i
 
 # target to preprocess a source file
-libft/printf/tools.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/printf/tools.c.i
-.PHONY : libft/printf/tools.c.i
+libft/get_next_line.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/get_next_line.c.i
+.PHONY : libft/get_next_line.c.i
 
-libft/printf/tools.s: libft/printf/tools.c.s
+libft/get_next_line.s: libft/get_next_line.c.s
 
-.PHONY : libft/printf/tools.s
+.PHONY : libft/get_next_line.s
 
 # target to generate assembly for a file
-libft/printf/tools.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/printf/tools.c.s
-.PHONY : libft/printf/tools.c.s
+libft/get_next_line.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/libft/get_next_line.c.s
+.PHONY : libft/get_next_line.c.s
 
 src/a_main.o: src/a_main.c.o
 
@@ -3230,258 +3230,258 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... irina5"
-	@echo "... libft/libft/ft_atoi.o"
-	@echo "... libft/libft/ft_atoi.i"
-	@echo "... libft/libft/ft_atoi.s"
-	@echo "... libft/libft/ft_bzero.o"
-	@echo "... libft/libft/ft_bzero.i"
-	@echo "... libft/libft/ft_bzero.s"
-	@echo "... libft/libft/ft_isalnum.o"
-	@echo "... libft/libft/ft_isalnum.i"
-	@echo "... libft/libft/ft_isalnum.s"
-	@echo "... libft/libft/ft_isalpha.o"
-	@echo "... libft/libft/ft_isalpha.i"
-	@echo "... libft/libft/ft_isalpha.s"
-	@echo "... libft/libft/ft_isascii.o"
-	@echo "... libft/libft/ft_isascii.i"
-	@echo "... libft/libft/ft_isascii.s"
-	@echo "... libft/libft/ft_isdigit.o"
-	@echo "... libft/libft/ft_isdigit.i"
-	@echo "... libft/libft/ft_isdigit.s"
-	@echo "... libft/libft/ft_isprint.o"
-	@echo "... libft/libft/ft_isprint.i"
-	@echo "... libft/libft/ft_isprint.s"
-	@echo "... libft/libft/ft_itoa.o"
-	@echo "... libft/libft/ft_itoa.i"
-	@echo "... libft/libft/ft_itoa.s"
-	@echo "... libft/libft/ft_lstadd.o"
-	@echo "... libft/libft/ft_lstadd.i"
-	@echo "... libft/libft/ft_lstadd.s"
-	@echo "... libft/libft/ft_lstdel.o"
-	@echo "... libft/libft/ft_lstdel.i"
-	@echo "... libft/libft/ft_lstdel.s"
-	@echo "... libft/libft/ft_lstdelone.o"
-	@echo "... libft/libft/ft_lstdelone.i"
-	@echo "... libft/libft/ft_lstdelone.s"
-	@echo "... libft/libft/ft_lstiter.o"
-	@echo "... libft/libft/ft_lstiter.i"
-	@echo "... libft/libft/ft_lstiter.s"
-	@echo "... libft/libft/ft_lstmap.o"
-	@echo "... libft/libft/ft_lstmap.i"
-	@echo "... libft/libft/ft_lstmap.s"
-	@echo "... libft/libft/ft_lstnew.o"
-	@echo "... libft/libft/ft_lstnew.i"
-	@echo "... libft/libft/ft_lstnew.s"
-	@echo "... libft/libft/ft_memalloc.o"
-	@echo "... libft/libft/ft_memalloc.i"
-	@echo "... libft/libft/ft_memalloc.s"
-	@echo "... libft/libft/ft_memccpy.o"
-	@echo "... libft/libft/ft_memccpy.i"
-	@echo "... libft/libft/ft_memccpy.s"
-	@echo "... libft/libft/ft_memchr.o"
-	@echo "... libft/libft/ft_memchr.i"
-	@echo "... libft/libft/ft_memchr.s"
-	@echo "... libft/libft/ft_memcmp.o"
-	@echo "... libft/libft/ft_memcmp.i"
-	@echo "... libft/libft/ft_memcmp.s"
-	@echo "... libft/libft/ft_memcpy.o"
-	@echo "... libft/libft/ft_memcpy.i"
-	@echo "... libft/libft/ft_memcpy.s"
-	@echo "... libft/libft/ft_memdel.o"
-	@echo "... libft/libft/ft_memdel.i"
-	@echo "... libft/libft/ft_memdel.s"
-	@echo "... libft/libft/ft_memmove.o"
-	@echo "... libft/libft/ft_memmove.i"
-	@echo "... libft/libft/ft_memmove.s"
-	@echo "... libft/libft/ft_memset.o"
-	@echo "... libft/libft/ft_memset.i"
-	@echo "... libft/libft/ft_memset.s"
-	@echo "... libft/libft/ft_print_bits.o"
-	@echo "... libft/libft/ft_print_bits.i"
-	@echo "... libft/libft/ft_print_bits.s"
-	@echo "... libft/libft/ft_putchar.o"
-	@echo "... libft/libft/ft_putchar.i"
-	@echo "... libft/libft/ft_putchar.s"
-	@echo "... libft/libft/ft_putchar_fd.o"
-	@echo "... libft/libft/ft_putchar_fd.i"
-	@echo "... libft/libft/ft_putchar_fd.s"
-	@echo "... libft/libft/ft_putendl.o"
-	@echo "... libft/libft/ft_putendl.i"
-	@echo "... libft/libft/ft_putendl.s"
-	@echo "... libft/libft/ft_putendl_fd.o"
-	@echo "... libft/libft/ft_putendl_fd.i"
-	@echo "... libft/libft/ft_putendl_fd.s"
-	@echo "... libft/libft/ft_putnbr.o"
-	@echo "... libft/libft/ft_putnbr.i"
-	@echo "... libft/libft/ft_putnbr.s"
-	@echo "... libft/libft/ft_putnbr_fd.o"
-	@echo "... libft/libft/ft_putnbr_fd.i"
-	@echo "... libft/libft/ft_putnbr_fd.s"
-	@echo "... libft/libft/ft_putstr.o"
-	@echo "... libft/libft/ft_putstr.i"
-	@echo "... libft/libft/ft_putstr.s"
-	@echo "... libft/libft/ft_putstr_fd.o"
-	@echo "... libft/libft/ft_putstr_fd.i"
-	@echo "... libft/libft/ft_putstr_fd.s"
-	@echo "... libft/libft/ft_reverse_bits.o"
-	@echo "... libft/libft/ft_reverse_bits.i"
-	@echo "... libft/libft/ft_reverse_bits.s"
-	@echo "... libft/libft/ft_sort_array.o"
-	@echo "... libft/libft/ft_sort_array.i"
-	@echo "... libft/libft/ft_sort_array.s"
-	@echo "... libft/libft/ft_strcat.o"
-	@echo "... libft/libft/ft_strcat.i"
-	@echo "... libft/libft/ft_strcat.s"
-	@echo "... libft/libft/ft_strchr.o"
-	@echo "... libft/libft/ft_strchr.i"
-	@echo "... libft/libft/ft_strchr.s"
-	@echo "... libft/libft/ft_strclr.o"
-	@echo "... libft/libft/ft_strclr.i"
-	@echo "... libft/libft/ft_strclr.s"
-	@echo "... libft/libft/ft_strcmp.o"
-	@echo "... libft/libft/ft_strcmp.i"
-	@echo "... libft/libft/ft_strcmp.s"
-	@echo "... libft/libft/ft_strcpy.o"
-	@echo "... libft/libft/ft_strcpy.i"
-	@echo "... libft/libft/ft_strcpy.s"
-	@echo "... libft/libft/ft_strdel.o"
-	@echo "... libft/libft/ft_strdel.i"
-	@echo "... libft/libft/ft_strdel.s"
-	@echo "... libft/libft/ft_strdup.o"
-	@echo "... libft/libft/ft_strdup.i"
-	@echo "... libft/libft/ft_strdup.s"
-	@echo "... libft/libft/ft_strequ.o"
-	@echo "... libft/libft/ft_strequ.i"
-	@echo "... libft/libft/ft_strequ.s"
-	@echo "... libft/libft/ft_striter.o"
-	@echo "... libft/libft/ft_striter.i"
-	@echo "... libft/libft/ft_striter.s"
-	@echo "... libft/libft/ft_striteri.o"
-	@echo "... libft/libft/ft_striteri.i"
-	@echo "... libft/libft/ft_striteri.s"
-	@echo "... libft/libft/ft_strjoin.o"
-	@echo "... libft/libft/ft_strjoin.i"
-	@echo "... libft/libft/ft_strjoin.s"
-	@echo "... libft/libft/ft_strlcat.o"
-	@echo "... libft/libft/ft_strlcat.i"
-	@echo "... libft/libft/ft_strlcat.s"
-	@echo "... libft/libft/ft_strlen.o"
-	@echo "... libft/libft/ft_strlen.i"
-	@echo "... libft/libft/ft_strlen.s"
-	@echo "... libft/libft/ft_strmap.o"
-	@echo "... libft/libft/ft_strmap.i"
-	@echo "... libft/libft/ft_strmap.s"
-	@echo "... libft/libft/ft_strmapi.o"
-	@echo "... libft/libft/ft_strmapi.i"
-	@echo "... libft/libft/ft_strmapi.s"
-	@echo "... libft/libft/ft_strncat.o"
-	@echo "... libft/libft/ft_strncat.i"
-	@echo "... libft/libft/ft_strncat.s"
-	@echo "... libft/libft/ft_strncmp.o"
-	@echo "... libft/libft/ft_strncmp.i"
-	@echo "... libft/libft/ft_strncmp.s"
-	@echo "... libft/libft/ft_strncpy.o"
-	@echo "... libft/libft/ft_strncpy.i"
-	@echo "... libft/libft/ft_strncpy.s"
-	@echo "... libft/libft/ft_strndup.o"
-	@echo "... libft/libft/ft_strndup.i"
-	@echo "... libft/libft/ft_strndup.s"
-	@echo "... libft/libft/ft_strnequ.o"
-	@echo "... libft/libft/ft_strnequ.i"
-	@echo "... libft/libft/ft_strnequ.s"
-	@echo "... libft/libft/ft_strnew.o"
-	@echo "... libft/libft/ft_strnew.i"
-	@echo "... libft/libft/ft_strnew.s"
-	@echo "... libft/libft/ft_strnstr.o"
-	@echo "... libft/libft/ft_strnstr.i"
-	@echo "... libft/libft/ft_strnstr.s"
-	@echo "... libft/libft/ft_strrchr.o"
-	@echo "... libft/libft/ft_strrchr.i"
-	@echo "... libft/libft/ft_strrchr.s"
-	@echo "... libft/libft/ft_strrev.o"
-	@echo "... libft/libft/ft_strrev.i"
-	@echo "... libft/libft/ft_strrev.s"
-	@echo "... libft/libft/ft_strsplit.o"
-	@echo "... libft/libft/ft_strsplit.i"
-	@echo "... libft/libft/ft_strsplit.s"
-	@echo "... libft/libft/ft_strstr.o"
-	@echo "... libft/libft/ft_strstr.i"
-	@echo "... libft/libft/ft_strstr.s"
-	@echo "... libft/libft/ft_strsub.o"
-	@echo "... libft/libft/ft_strsub.i"
-	@echo "... libft/libft/ft_strsub.s"
-	@echo "... libft/libft/ft_strtrim.o"
-	@echo "... libft/libft/ft_strtrim.i"
-	@echo "... libft/libft/ft_strtrim.s"
-	@echo "... libft/libft/ft_swap_bits.o"
-	@echo "... libft/libft/ft_swap_bits.i"
-	@echo "... libft/libft/ft_swap_bits.s"
-	@echo "... libft/libft/ft_tolower.o"
-	@echo "... libft/libft/ft_tolower.i"
-	@echo "... libft/libft/ft_tolower.s"
-	@echo "... libft/libft/ft_toupper.o"
-	@echo "... libft/libft/ft_toupper.i"
-	@echo "... libft/libft/ft_toupper.s"
-	@echo "... libft/libft/ft_words.o"
-	@echo "... libft/libft/ft_words.i"
-	@echo "... libft/libft/ft_words.s"
-	@echo "... libft/libft/get_next_line.o"
-	@echo "... libft/libft/get_next_line.i"
-	@echo "... libft/libft/get_next_line.s"
-	@echo "... libft/printf/color.o"
-	@echo "... libft/printf/color.i"
-	@echo "... libft/printf/color.s"
-	@echo "... libft/printf/conversion.o"
-	@echo "... libft/printf/conversion.i"
-	@echo "... libft/printf/conversion.s"
-	@echo "... libft/printf/free.o"
-	@echo "... libft/printf/free.i"
-	@echo "... libft/printf/free.s"
-	@echo "... libft/printf/ft_printf.o"
-	@echo "... libft/printf/ft_printf.i"
-	@echo "... libft/printf/ft_printf.s"
-	@echo "... libft/printf/multiplier.o"
-	@echo "... libft/printf/multiplier.i"
-	@echo "... libft/printf/multiplier.s"
-	@echo "... libft/printf/neg_exp.o"
-	@echo "... libft/printf/neg_exp.i"
-	@echo "... libft/printf/neg_exp.s"
-	@echo "... libft/printf/prec.o"
-	@echo "... libft/printf/prec.i"
-	@echo "... libft/printf/prec.s"
-	@echo "... libft/printf/prec2.o"
-	@echo "... libft/printf/prec2.i"
-	@echo "... libft/printf/prec2.s"
-	@echo "... libft/printf/print_float.o"
-	@echo "... libft/printf/print_float.i"
-	@echo "... libft/printf/print_float.s"
-	@echo "... libft/printf/print_integer.o"
-	@echo "... libft/printf/print_integer.i"
-	@echo "... libft/printf/print_integer.s"
-	@echo "... libft/printf/print_octal_x.o"
-	@echo "... libft/printf/print_octal_x.i"
-	@echo "... libft/printf/print_octal_x.s"
-	@echo "... libft/printf/print_pointer_char.o"
-	@echo "... libft/printf/print_pointer_char.i"
-	@echo "... libft/printf/print_pointer_char.s"
-	@echo "... libft/printf/print_string.o"
-	@echo "... libft/printf/print_string.i"
-	@echo "... libft/printf/print_string.s"
-	@echo "... libft/printf/print_unsigned.o"
-	@echo "... libft/printf/print_unsigned.i"
-	@echo "... libft/printf/print_unsigned.s"
-	@echo "... libft/printf/read_format.o"
-	@echo "... libft/printf/read_format.i"
-	@echo "... libft/printf/read_format.s"
-	@echo "... libft/printf/substr.o"
-	@echo "... libft/printf/substr.i"
-	@echo "... libft/printf/substr.s"
-	@echo "... libft/printf/sum_char.o"
-	@echo "... libft/printf/sum_char.i"
-	@echo "... libft/printf/sum_char.s"
-	@echo "... libft/printf/tools.o"
-	@echo "... libft/printf/tools.i"
-	@echo "... libft/printf/tools.s"
+	@echo "... libft/ft_atoi.o"
+	@echo "... libft/ft_atoi.i"
+	@echo "... libft/ft_atoi.s"
+	@echo "... libft/ft_bzero.o"
+	@echo "... libft/ft_bzero.i"
+	@echo "... libft/ft_bzero.s"
+	@echo "... libft/ft_isalnum.o"
+	@echo "... libft/ft_isalnum.i"
+	@echo "... libft/ft_isalnum.s"
+	@echo "... libft/ft_isalpha.o"
+	@echo "... libft/ft_isalpha.i"
+	@echo "... libft/ft_isalpha.s"
+	@echo "... libft/ft_isascii.o"
+	@echo "... libft/ft_isascii.i"
+	@echo "... libft/ft_isascii.s"
+	@echo "... libft/ft_isdigit.o"
+	@echo "... libft/ft_isdigit.i"
+	@echo "... libft/ft_isdigit.s"
+	@echo "... libft/ft_isprint.o"
+	@echo "... libft/ft_isprint.i"
+	@echo "... libft/ft_isprint.s"
+	@echo "... libft/ft_itoa.o"
+	@echo "... libft/ft_itoa.i"
+	@echo "... libft/ft_itoa.s"
+	@echo "... libft/ft_lstadd.o"
+	@echo "... libft/ft_lstadd.i"
+	@echo "... libft/ft_lstadd.s"
+	@echo "... libft/ft_lstdel.o"
+	@echo "... libft/ft_lstdel.i"
+	@echo "... libft/ft_lstdel.s"
+	@echo "... libft/ft_lstdelone.o"
+	@echo "... libft/ft_lstdelone.i"
+	@echo "... libft/ft_lstdelone.s"
+	@echo "... libft/ft_lstiter.o"
+	@echo "... libft/ft_lstiter.i"
+	@echo "... libft/ft_lstiter.s"
+	@echo "... libft/ft_lstmap.o"
+	@echo "... libft/ft_lstmap.i"
+	@echo "... libft/ft_lstmap.s"
+	@echo "... libft/ft_lstnew.o"
+	@echo "... libft/ft_lstnew.i"
+	@echo "... libft/ft_lstnew.s"
+	@echo "... libft/ft_memalloc.o"
+	@echo "... libft/ft_memalloc.i"
+	@echo "... libft/ft_memalloc.s"
+	@echo "... libft/ft_memccpy.o"
+	@echo "... libft/ft_memccpy.i"
+	@echo "... libft/ft_memccpy.s"
+	@echo "... libft/ft_memchr.o"
+	@echo "... libft/ft_memchr.i"
+	@echo "... libft/ft_memchr.s"
+	@echo "... libft/ft_memcmp.o"
+	@echo "... libft/ft_memcmp.i"
+	@echo "... libft/ft_memcmp.s"
+	@echo "... libft/ft_memcpy.o"
+	@echo "... libft/ft_memcpy.i"
+	@echo "... libft/ft_memcpy.s"
+	@echo "... libft/ft_memdel.o"
+	@echo "... libft/ft_memdel.i"
+	@echo "... libft/ft_memdel.s"
+	@echo "... libft/ft_memmove.o"
+	@echo "... libft/ft_memmove.i"
+	@echo "... libft/ft_memmove.s"
+	@echo "... libft/ft_memset.o"
+	@echo "... libft/ft_memset.i"
+	@echo "... libft/ft_memset.s"
+	@echo "... libft/ft_print_bits.o"
+	@echo "... libft/ft_print_bits.i"
+	@echo "... libft/ft_print_bits.s"
+	@echo "... libft/ft_printf/src/color.o"
+	@echo "... libft/ft_printf/src/color.i"
+	@echo "... libft/ft_printf/src/color.s"
+	@echo "... libft/ft_printf/src/conversion.o"
+	@echo "... libft/ft_printf/src/conversion.i"
+	@echo "... libft/ft_printf/src/conversion.s"
+	@echo "... libft/ft_printf/src/free.o"
+	@echo "... libft/ft_printf/src/free.i"
+	@echo "... libft/ft_printf/src/free.s"
+	@echo "... libft/ft_printf/src/ft_printf.o"
+	@echo "... libft/ft_printf/src/ft_printf.i"
+	@echo "... libft/ft_printf/src/ft_printf.s"
+	@echo "... libft/ft_printf/src/multiplier.o"
+	@echo "... libft/ft_printf/src/multiplier.i"
+	@echo "... libft/ft_printf/src/multiplier.s"
+	@echo "... libft/ft_printf/src/neg_exp.o"
+	@echo "... libft/ft_printf/src/neg_exp.i"
+	@echo "... libft/ft_printf/src/neg_exp.s"
+	@echo "... libft/ft_printf/src/prec.o"
+	@echo "... libft/ft_printf/src/prec.i"
+	@echo "... libft/ft_printf/src/prec.s"
+	@echo "... libft/ft_printf/src/prec2.o"
+	@echo "... libft/ft_printf/src/prec2.i"
+	@echo "... libft/ft_printf/src/prec2.s"
+	@echo "... libft/ft_printf/src/print_float.o"
+	@echo "... libft/ft_printf/src/print_float.i"
+	@echo "... libft/ft_printf/src/print_float.s"
+	@echo "... libft/ft_printf/src/print_integer.o"
+	@echo "... libft/ft_printf/src/print_integer.i"
+	@echo "... libft/ft_printf/src/print_integer.s"
+	@echo "... libft/ft_printf/src/print_octal_x.o"
+	@echo "... libft/ft_printf/src/print_octal_x.i"
+	@echo "... libft/ft_printf/src/print_octal_x.s"
+	@echo "... libft/ft_printf/src/print_pointer_char.o"
+	@echo "... libft/ft_printf/src/print_pointer_char.i"
+	@echo "... libft/ft_printf/src/print_pointer_char.s"
+	@echo "... libft/ft_printf/src/print_string.o"
+	@echo "... libft/ft_printf/src/print_string.i"
+	@echo "... libft/ft_printf/src/print_string.s"
+	@echo "... libft/ft_printf/src/print_unsigned.o"
+	@echo "... libft/ft_printf/src/print_unsigned.i"
+	@echo "... libft/ft_printf/src/print_unsigned.s"
+	@echo "... libft/ft_printf/src/read_format.o"
+	@echo "... libft/ft_printf/src/read_format.i"
+	@echo "... libft/ft_printf/src/read_format.s"
+	@echo "... libft/ft_printf/src/substr.o"
+	@echo "... libft/ft_printf/src/substr.i"
+	@echo "... libft/ft_printf/src/substr.s"
+	@echo "... libft/ft_printf/src/sum_char.o"
+	@echo "... libft/ft_printf/src/sum_char.i"
+	@echo "... libft/ft_printf/src/sum_char.s"
+	@echo "... libft/ft_printf/src/tools.o"
+	@echo "... libft/ft_printf/src/tools.i"
+	@echo "... libft/ft_printf/src/tools.s"
+	@echo "... libft/ft_putchar.o"
+	@echo "... libft/ft_putchar.i"
+	@echo "... libft/ft_putchar.s"
+	@echo "... libft/ft_putchar_fd.o"
+	@echo "... libft/ft_putchar_fd.i"
+	@echo "... libft/ft_putchar_fd.s"
+	@echo "... libft/ft_putendl.o"
+	@echo "... libft/ft_putendl.i"
+	@echo "... libft/ft_putendl.s"
+	@echo "... libft/ft_putendl_fd.o"
+	@echo "... libft/ft_putendl_fd.i"
+	@echo "... libft/ft_putendl_fd.s"
+	@echo "... libft/ft_putnbr.o"
+	@echo "... libft/ft_putnbr.i"
+	@echo "... libft/ft_putnbr.s"
+	@echo "... libft/ft_putnbr_fd.o"
+	@echo "... libft/ft_putnbr_fd.i"
+	@echo "... libft/ft_putnbr_fd.s"
+	@echo "... libft/ft_putstr.o"
+	@echo "... libft/ft_putstr.i"
+	@echo "... libft/ft_putstr.s"
+	@echo "... libft/ft_putstr_fd.o"
+	@echo "... libft/ft_putstr_fd.i"
+	@echo "... libft/ft_putstr_fd.s"
+	@echo "... libft/ft_reverse_bits.o"
+	@echo "... libft/ft_reverse_bits.i"
+	@echo "... libft/ft_reverse_bits.s"
+	@echo "... libft/ft_sort_array.o"
+	@echo "... libft/ft_sort_array.i"
+	@echo "... libft/ft_sort_array.s"
+	@echo "... libft/ft_strcat.o"
+	@echo "... libft/ft_strcat.i"
+	@echo "... libft/ft_strcat.s"
+	@echo "... libft/ft_strchr.o"
+	@echo "... libft/ft_strchr.i"
+	@echo "... libft/ft_strchr.s"
+	@echo "... libft/ft_strclr.o"
+	@echo "... libft/ft_strclr.i"
+	@echo "... libft/ft_strclr.s"
+	@echo "... libft/ft_strcmp.o"
+	@echo "... libft/ft_strcmp.i"
+	@echo "... libft/ft_strcmp.s"
+	@echo "... libft/ft_strcpy.o"
+	@echo "... libft/ft_strcpy.i"
+	@echo "... libft/ft_strcpy.s"
+	@echo "... libft/ft_strdel.o"
+	@echo "... libft/ft_strdel.i"
+	@echo "... libft/ft_strdel.s"
+	@echo "... libft/ft_strdup.o"
+	@echo "... libft/ft_strdup.i"
+	@echo "... libft/ft_strdup.s"
+	@echo "... libft/ft_strequ.o"
+	@echo "... libft/ft_strequ.i"
+	@echo "... libft/ft_strequ.s"
+	@echo "... libft/ft_striter.o"
+	@echo "... libft/ft_striter.i"
+	@echo "... libft/ft_striter.s"
+	@echo "... libft/ft_striteri.o"
+	@echo "... libft/ft_striteri.i"
+	@echo "... libft/ft_striteri.s"
+	@echo "... libft/ft_strjoin.o"
+	@echo "... libft/ft_strjoin.i"
+	@echo "... libft/ft_strjoin.s"
+	@echo "... libft/ft_strlcat.o"
+	@echo "... libft/ft_strlcat.i"
+	@echo "... libft/ft_strlcat.s"
+	@echo "... libft/ft_strlen.o"
+	@echo "... libft/ft_strlen.i"
+	@echo "... libft/ft_strlen.s"
+	@echo "... libft/ft_strmap.o"
+	@echo "... libft/ft_strmap.i"
+	@echo "... libft/ft_strmap.s"
+	@echo "... libft/ft_strmapi.o"
+	@echo "... libft/ft_strmapi.i"
+	@echo "... libft/ft_strmapi.s"
+	@echo "... libft/ft_strncat.o"
+	@echo "... libft/ft_strncat.i"
+	@echo "... libft/ft_strncat.s"
+	@echo "... libft/ft_strncmp.o"
+	@echo "... libft/ft_strncmp.i"
+	@echo "... libft/ft_strncmp.s"
+	@echo "... libft/ft_strncpy.o"
+	@echo "... libft/ft_strncpy.i"
+	@echo "... libft/ft_strncpy.s"
+	@echo "... libft/ft_strndup.o"
+	@echo "... libft/ft_strndup.i"
+	@echo "... libft/ft_strndup.s"
+	@echo "... libft/ft_strnequ.o"
+	@echo "... libft/ft_strnequ.i"
+	@echo "... libft/ft_strnequ.s"
+	@echo "... libft/ft_strnew.o"
+	@echo "... libft/ft_strnew.i"
+	@echo "... libft/ft_strnew.s"
+	@echo "... libft/ft_strnstr.o"
+	@echo "... libft/ft_strnstr.i"
+	@echo "... libft/ft_strnstr.s"
+	@echo "... libft/ft_strrchr.o"
+	@echo "... libft/ft_strrchr.i"
+	@echo "... libft/ft_strrchr.s"
+	@echo "... libft/ft_strrev.o"
+	@echo "... libft/ft_strrev.i"
+	@echo "... libft/ft_strrev.s"
+	@echo "... libft/ft_strsplit.o"
+	@echo "... libft/ft_strsplit.i"
+	@echo "... libft/ft_strsplit.s"
+	@echo "... libft/ft_strstr.o"
+	@echo "... libft/ft_strstr.i"
+	@echo "... libft/ft_strstr.s"
+	@echo "... libft/ft_strsub.o"
+	@echo "... libft/ft_strsub.i"
+	@echo "... libft/ft_strsub.s"
+	@echo "... libft/ft_strtrim.o"
+	@echo "... libft/ft_strtrim.i"
+	@echo "... libft/ft_strtrim.s"
+	@echo "... libft/ft_swap_bits.o"
+	@echo "... libft/ft_swap_bits.i"
+	@echo "... libft/ft_swap_bits.s"
+	@echo "... libft/ft_tolower.o"
+	@echo "... libft/ft_tolower.i"
+	@echo "... libft/ft_tolower.s"
+	@echo "... libft/ft_toupper.o"
+	@echo "... libft/ft_toupper.i"
+	@echo "... libft/ft_toupper.s"
+	@echo "... libft/ft_words.o"
+	@echo "... libft/ft_words.i"
+	@echo "... libft/ft_words.s"
+	@echo "... libft/get_next_line.o"
+	@echo "... libft/get_next_line.i"
+	@echo "... libft/get_next_line.s"
 	@echo "... src/a_main.o"
 	@echo "... src/a_main.i"
 	@echo "... src/a_main.s"

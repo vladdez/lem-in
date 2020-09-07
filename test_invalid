@@ -5,12 +5,14 @@ echo -e '\033[1mERROR ANTS\033[0m'
 ./lem-in maps/error/ants/empty_line.map
 ./lem-in maps/error/ants/space.map
 ./lem-in maps/error/ants/zero.map
+./lem-in maps/error/ants/no_ants.map
 
 echo -e '\033[1mERROR LINKS\033[0m'
 ./lem-in maps/error/links/invalid_end_name.map
 ./lem-in maps/error/links/invalid_start_name.map
 ./lem-in maps/error/links/link_exact_duplicate.map
 ./lem-in maps/error/links/link_reverse_duplicate.map
+./lem-in maps/error/links/no_links.map
 
 echo -e '\033[1mERROR ROOMS\033[0m'
 ./lem-in maps/error/rooms/coordinates_duplicate.map

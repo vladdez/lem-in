@@ -62,7 +62,6 @@ void		lem(int fd, char **av, int ac)
 	bfs(lem_in);
 	if (lem_in->end->bfs_visit != lem_in->bfs_used)
 		terminate(ERR_NO_PATH);
-	find_link_direction(lem_in->ht_rooms);
 	print_input(input, lem_in->ant_num);
 	fd = create_paths(lem_in);
 	if (fd != 0)
