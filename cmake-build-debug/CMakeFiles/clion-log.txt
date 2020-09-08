@@ -1,7 +1,4 @@
-/private/var/folders/wb/ylrhwjnd2ys8fwjlnx_m307r0000gn/T/AppTranslocation/D7D5F7AA-88AD-4949-9EAF-36C9BBB02F57/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/irinadeeva/Desktop/lem-in
-CMake Error at CMakeLists.txt:1 (cmake_minimum_required):
-  CMake 3.17 or higher is required.  You are running version 3.16.5
-
-
--- Configuring incomplete, errors occurred!
-See also "/Users/irinadeeva/Desktop/lem-in/cmake-build-debug/CMakeFiles/CMakeOutput.log".
+/private/var/folders/zz/zyxvpxvq6csfxvn_n00019tc000_fl/T/AppTranslocation/018618C0-3E46-4E58-B168-613351920F66/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/bhugo/Desktop/lem-in
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/bhugo/Desktop/lem-in/cmake-build-debug

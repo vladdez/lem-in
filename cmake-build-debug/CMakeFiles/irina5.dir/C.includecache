@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/Users/irinadeeva/Desktop/lem-in/inc/lem_in.h
+/Users/bhugo/Desktop/lem-in/inc/lem_in.h
 ../libft/ft_printf/inc/ft_printf.h
-/Users/irinadeeva/Desktop/lem-in/libft/ft_printf/inc/ft_printf.h
+/Users/bhugo/Desktop/lem-in/libft/ft_printf/inc/ft_printf.h
 ../libft/libft.h
-/Users/irinadeeva/Desktop/lem-in/libft/libft.h
+/Users/bhugo/Desktop/lem-in/libft/libft.h
 stdlib.h
 -
 stdio.h
@@ -26,15 +26,15 @@ unistd.h
 limits.h
 -
 
-/Users/irinadeeva/Desktop/lem-in/libft/ft_printf/inc/ft_printf.h
+/Users/bhugo/Desktop/lem-in/libft/ft_printf/inc/ft_printf.h
 stdarg.h
 -
 ../../libft.h
-/Users/irinadeeva/Desktop/lem-in/libft/libft.h
+/Users/bhugo/Desktop/lem-in/libft/libft.h
 stdio.h
 -
 
-/Users/irinadeeva/Desktop/lem-in/libft/libft.h
+/Users/bhugo/Desktop/lem-in/libft/libft.h
 string.h
 -
 stdlib.h
@@ -44,129 +44,137 @@ unistd.h
 limits.h
 -
 
-/Users/irinadeeva/Desktop/lem-in/src/a_main.c
+/Users/bhugo/Desktop/lem-in/src/a_main.c
 ../inc/lem_in.h
-/Users/irinadeeva/Desktop/lem-in/inc/lem_in.h
+/Users/bhugo/Desktop/lem-in/inc/lem_in.h
 
-/Users/irinadeeva/Desktop/lem-in/src/b_init.c
+/Users/bhugo/Desktop/lem-in/src/b_init.c
 ../inc/lem_in.h
-/Users/irinadeeva/Desktop/lem-in/inc/lem_in.h
+/Users/bhugo/Desktop/lem-in/inc/lem_in.h
 
-/Users/irinadeeva/Desktop/lem-in/src/c_parse_ants.c
+/Users/bhugo/Desktop/lem-in/src/c_parse_ants.c
 ../inc/lem_in.h
-/Users/irinadeeva/Desktop/lem-in/inc/lem_in.h
+/Users/bhugo/Desktop/lem-in/inc/lem_in.h
 
-/Users/irinadeeva/Desktop/lem-in/src/d_parse_rooms.c
+/Users/bhugo/Desktop/lem-in/src/d_parse_rooms.c
 ../inc/lem_in.h
-/Users/irinadeeva/Desktop/lem-in/inc/lem_in.h
+/Users/bhugo/Desktop/lem-in/inc/lem_in.h
 
-/Users/irinadeeva/Desktop/lem-in/src/e_parse_link.c
+/Users/bhugo/Desktop/lem-in/src/e_parse_link.c
 ../inc/lem_in.h
-/Users/irinadeeva/Desktop/lem-in/inc/lem_in.h
+/Users/bhugo/Desktop/lem-in/inc/lem_in.h
 
-/Users/irinadeeva/Desktop/lem-in/src/f_bfs.c
+/Users/bhugo/Desktop/lem-in/src/f_bfs.c
 ../inc/lem_in.h
-/Users/irinadeeva/Desktop/lem-in/inc/lem_in.h
+/Users/bhugo/Desktop/lem-in/inc/lem_in.h
 
-/Users/irinadeeva/Desktop/lem-in/src/g_deadlock_cleaning.c
+/Users/bhugo/Desktop/lem-in/src/g_deadlock_cleaning.c
 ../inc/lem_in.h
-/Users/irinadeeva/Desktop/lem-in/inc/lem_in.h
+/Users/bhugo/Desktop/lem-in/inc/lem_in.h
 
-/Users/irinadeeva/Desktop/lem-in/src/h_find_links_direction.c
+/Users/bhugo/Desktop/lem-in/src/h_find_links_direction.c
 ../inc/lem_in.h
-/Users/irinadeeva/Desktop/lem-in/inc/lem_in.h
+/Users/bhugo/Desktop/lem-in/inc/lem_in.h
 
-/Users/irinadeeva/Desktop/lem-in/src/i_print_hashtable.c
+/Users/bhugo/Desktop/lem-in/src/i_print_hashtable.c
 ../inc/lem_in.h
-/Users/irinadeeva/Desktop/lem-in/inc/lem_in.h
+/Users/bhugo/Desktop/lem-in/inc/lem_in.h
 
-/Users/irinadeeva/Desktop/lem-in/src/input_cleaning.c
+/Users/bhugo/Desktop/lem-in/src/input_cleaning.c
 ../inc/lem_in.h
-/Users/irinadeeva/Desktop/lem-in/inc/lem_in.h
+/Users/bhugo/Desktop/lem-in/inc/lem_in.h
 
-/Users/irinadeeva/Desktop/lem-in/src/j_print.c
+/Users/bhugo/Desktop/lem-in/src/j_print.c
 ../inc/lem_in.h
-/Users/irinadeeva/Desktop/lem-in/inc/lem_in.h
+/Users/bhugo/Desktop/lem-in/inc/lem_in.h
 
-/Users/irinadeeva/Desktop/lem-in/src/k_create_paths.c
+/Users/bhugo/Desktop/lem-in/src/k2_dup_room.c
 ../inc/lem_in.h
-/Users/irinadeeva/Desktop/lem-in/inc/lem_in.h
+/Users/bhugo/Desktop/lem-in/inc/lem_in.h
 
-/Users/irinadeeva/Desktop/lem-in/src/k_suurballe.c
+/Users/bhugo/Desktop/lem-in/src/k_create_paths.c
 ../inc/lem_in.h
-/Users/irinadeeva/Desktop/lem-in/inc/lem_in.h
+/Users/bhugo/Desktop/lem-in/inc/lem_in.h
 
-/Users/irinadeeva/Desktop/lem-in/src/l2_create_paths3.c
+/Users/bhugo/Desktop/lem-in/src/k_suurballe.c
 ../inc/lem_in.h
-/Users/irinadeeva/Desktop/lem-in/inc/lem_in.h
+/Users/bhugo/Desktop/lem-in/inc/lem_in.h
 
-/Users/irinadeeva/Desktop/lem-in/src/l_create_paths2.c
+/Users/bhugo/Desktop/lem-in/src/k_turn_around.c
 ../inc/lem_in.h
-/Users/irinadeeva/Desktop/lem-in/inc/lem_in.h
+/Users/bhugo/Desktop/lem-in/inc/lem_in.h
 
-/Users/irinadeeva/Desktop/lem-in/src/m_flow.c
+/Users/bhugo/Desktop/lem-in/src/l2_create_paths3.c
 ../inc/lem_in.h
-/Users/irinadeeva/Desktop/lem-in/inc/lem_in.h
+/Users/bhugo/Desktop/lem-in/inc/lem_in.h
 
-/Users/irinadeeva/Desktop/lem-in/src/n_flow2.c
+/Users/bhugo/Desktop/lem-in/src/l_create_paths2.c
 ../inc/lem_in.h
-/Users/irinadeeva/Desktop/lem-in/inc/lem_in.h
+/Users/bhugo/Desktop/lem-in/inc/lem_in.h
 
-/Users/irinadeeva/Desktop/lem-in/src/o_if_crash.c
+/Users/bhugo/Desktop/lem-in/src/m_flow.c
 ../inc/lem_in.h
-/Users/irinadeeva/Desktop/lem-in/inc/lem_in.h
+/Users/bhugo/Desktop/lem-in/inc/lem_in.h
 
-/Users/irinadeeva/Desktop/lem-in/src/p_if_crash2.c
+/Users/bhugo/Desktop/lem-in/src/n_flow2.c
 ../inc/lem_in.h
-/Users/irinadeeva/Desktop/lem-in/inc/lem_in.h
+/Users/bhugo/Desktop/lem-in/inc/lem_in.h
 
-/Users/irinadeeva/Desktop/lem-in/src/z_dashes_in_input.c
+/Users/bhugo/Desktop/lem-in/src/o_if_crash.c
 ../inc/lem_in.h
-/Users/irinadeeva/Desktop/lem-in/inc/lem_in.h
+/Users/bhugo/Desktop/lem-in/inc/lem_in.h
 
-/Users/irinadeeva/Desktop/lem-in/src/z_delete_links.c
+/Users/bhugo/Desktop/lem-in/src/p_if_crash2.c
 ../inc/lem_in.h
-/Users/irinadeeva/Desktop/lem-in/inc/lem_in.h
+/Users/bhugo/Desktop/lem-in/inc/lem_in.h
 
-/Users/irinadeeva/Desktop/lem-in/src/z_errors.c
+/Users/bhugo/Desktop/lem-in/src/z_dashes_in_input.c
 ../inc/lem_in.h
-/Users/irinadeeva/Desktop/lem-in/inc/lem_in.h
+/Users/bhugo/Desktop/lem-in/inc/lem_in.h
+
+/Users/bhugo/Desktop/lem-in/src/z_delete_links.c
+../inc/lem_in.h
+/Users/bhugo/Desktop/lem-in/inc/lem_in.h
+
+/Users/bhugo/Desktop/lem-in/src/z_errors.c
+../inc/lem_in.h
+/Users/bhugo/Desktop/lem-in/inc/lem_in.h
 errno.h
 -
 
-/Users/irinadeeva/Desktop/lem-in/src/z_hash_table.c
+/Users/bhugo/Desktop/lem-in/src/z_hash_table.c
 ../inc/lem_in.h
-/Users/irinadeeva/Desktop/lem-in/inc/lem_in.h
+/Users/bhugo/Desktop/lem-in/inc/lem_in.h
 
-/Users/irinadeeva/Desktop/lem-in/src/z_init_structure.c
+/Users/bhugo/Desktop/lem-in/src/z_init_structure.c
 ../inc/lem_in.h
-/Users/irinadeeva/Desktop/lem-in/inc/lem_in.h
+/Users/bhugo/Desktop/lem-in/inc/lem_in.h
 
-/Users/irinadeeva/Desktop/lem-in/src/z_is.c
+/Users/bhugo/Desktop/lem-in/src/z_is.c
 ../inc/lem_in.h
-/Users/irinadeeva/Desktop/lem-in/inc/lem_in.h
+/Users/bhugo/Desktop/lem-in/inc/lem_in.h
 
-/Users/irinadeeva/Desktop/lem-in/src/z_let_me_free.c
+/Users/bhugo/Desktop/lem-in/src/z_let_me_free.c
 ../inc/lem_in.h
-/Users/irinadeeva/Desktop/lem-in/inc/lem_in.h
+/Users/bhugo/Desktop/lem-in/inc/lem_in.h
 
-/Users/irinadeeva/Desktop/lem-in/src/z_let_me_free_lem.c
+/Users/bhugo/Desktop/lem-in/src/z_let_me_free_lem.c
 ../inc/lem_in.h
-/Users/irinadeeva/Desktop/lem-in/inc/lem_in.h
+/Users/bhugo/Desktop/lem-in/inc/lem_in.h
 
-/Users/irinadeeva/Desktop/lem-in/src/z_let_me_free_lem2.c
+/Users/bhugo/Desktop/lem-in/src/z_let_me_free_lem2.c
 ../inc/lem_in.h
-/Users/irinadeeva/Desktop/lem-in/inc/lem_in.h
+/Users/bhugo/Desktop/lem-in/inc/lem_in.h
 
-/Users/irinadeeva/Desktop/lem-in/src/z_read_line.c
+/Users/bhugo/Desktop/lem-in/src/z_read_line.c
 ../inc/lem_in.h
-/Users/irinadeeva/Desktop/lem-in/inc/lem_in.h
+/Users/bhugo/Desktop/lem-in/inc/lem_in.h
 
-/Users/irinadeeva/Desktop/lem-in/src/z_validator.c
+/Users/bhugo/Desktop/lem-in/src/z_validator.c
 ../inc/lem_in.h
-/Users/irinadeeva/Desktop/lem-in/inc/lem_in.h
+/Users/bhugo/Desktop/lem-in/inc/lem_in.h
 
-/Users/irinadeeva/Desktop/lem-in/src/z_write_coordinate.c
+/Users/bhugo/Desktop/lem-in/src/z_write_coordinate.c
 ../inc/lem_in.h
-/Users/irinadeeva/Desktop/lem-in/inc/lem_in.h
+/Users/bhugo/Desktop/lem-in/inc/lem_in.h
 

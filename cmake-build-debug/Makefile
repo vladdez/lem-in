@@ -59,19 +59,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /private/var/folders/wb/ylrhwjnd2ys8fwjlnx_m307r0000gn/T/AppTranslocation/13578319-4287-45F5-950F-3AA52986E601/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /private/var/folders/zz/zyxvpxvq6csfxvn_n00019tc000_fl/T/AppTranslocation/018618C0-3E46-4E58-B168-613351920F66/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /private/var/folders/wb/ylrhwjnd2ys8fwjlnx_m307r0000gn/T/AppTranslocation/13578319-4287-45F5-950F-3AA52986E601/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
+RM = /private/var/folders/zz/zyxvpxvq6csfxvn_n00019tc000_fl/T/AppTranslocation/018618C0-3E46-4E58-B168-613351920F66/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/irinadeeva/Desktop/lem-in
+CMAKE_SOURCE_DIR = /Users/bhugo/Desktop/lem-in
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/irinadeeva/Desktop/lem-in/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/bhugo/Desktop/lem-in/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,7 +79,7 @@ CMAKE_BINARY_DIR = /Users/irinadeeva/Desktop/lem-in/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/private/var/folders/wb/ylrhwjnd2ys8fwjlnx_m307r0000gn/T/AppTranslocation/13578319-4287-45F5-950F-3AA52986E601/d/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/private/var/folders/zz/zyxvpxvq6csfxvn_n00019tc000_fl/T/AppTranslocation/018618C0-3E46-4E58-B168-613351920F66/d/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -90,7 +90,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/private/var/folders/wb/ylrhwjnd2ys8fwjlnx_m307r0000gn/T/AppTranslocation/13578319-4287-45F5-950F-3AA52986E601/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/private/var/folders/zz/zyxvpxvq6csfxvn_n00019tc000_fl/T/AppTranslocation/018618C0-3E46-4E58-B168-613351920F66/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -100,9 +100,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/irinadeeva/Desktop/lem-in/cmake-build-debug/CMakeFiles /Users/irinadeeva/Desktop/lem-in/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhugo/Desktop/lem-in/cmake-build-debug/CMakeFiles /Users/bhugo/Desktop/lem-in/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/irinadeeva/Desktop/lem-in/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhugo/Desktop/lem-in/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -2708,6 +2708,33 @@ src/j_print.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/j_print.c.s
 .PHONY : src/j_print.c.s
 
+src/k2_dup_room.o: src/k2_dup_room.c.o
+
+.PHONY : src/k2_dup_room.o
+
+# target to build an object file
+src/k2_dup_room.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/k2_dup_room.c.o
+.PHONY : src/k2_dup_room.c.o
+
+src/k2_dup_room.i: src/k2_dup_room.c.i
+
+.PHONY : src/k2_dup_room.i
+
+# target to preprocess a source file
+src/k2_dup_room.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/k2_dup_room.c.i
+.PHONY : src/k2_dup_room.c.i
+
+src/k2_dup_room.s: src/k2_dup_room.c.s
+
+.PHONY : src/k2_dup_room.s
+
+# target to generate assembly for a file
+src/k2_dup_room.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/k2_dup_room.c.s
+.PHONY : src/k2_dup_room.c.s
+
 src/k_create_paths.o: src/k_create_paths.c.o
 
 .PHONY : src/k_create_paths.o
@@ -2761,6 +2788,33 @@ src/k_suurballe.s: src/k_suurballe.c.s
 src/k_suurballe.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/k_suurballe.c.s
 .PHONY : src/k_suurballe.c.s
+
+src/k_turn_around.o: src/k_turn_around.c.o
+
+.PHONY : src/k_turn_around.o
+
+# target to build an object file
+src/k_turn_around.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/k_turn_around.c.o
+.PHONY : src/k_turn_around.c.o
+
+src/k_turn_around.i: src/k_turn_around.c.i
+
+.PHONY : src/k_turn_around.i
+
+# target to preprocess a source file
+src/k_turn_around.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/k_turn_around.c.i
+.PHONY : src/k_turn_around.c.i
+
+src/k_turn_around.s: src/k_turn_around.c.s
+
+.PHONY : src/k_turn_around.s
+
+# target to generate assembly for a file
+src/k_turn_around.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irina5.dir/build.make CMakeFiles/irina5.dir/src/k_turn_around.c.s
+.PHONY : src/k_turn_around.c.s
 
 src/l2_create_paths3.o: src/l2_create_paths3.c.o
 
@@ -3542,12 +3596,18 @@ help:
 	@echo "... src/j_print.o"
 	@echo "... src/j_print.i"
 	@echo "... src/j_print.s"
+	@echo "... src/k2_dup_room.o"
+	@echo "... src/k2_dup_room.i"
+	@echo "... src/k2_dup_room.s"
 	@echo "... src/k_create_paths.o"
 	@echo "... src/k_create_paths.i"
 	@echo "... src/k_create_paths.s"
 	@echo "... src/k_suurballe.o"
 	@echo "... src/k_suurballe.i"
 	@echo "... src/k_suurballe.s"
+	@echo "... src/k_turn_around.o"
+	@echo "... src/k_turn_around.i"
+	@echo "... src/k_turn_around.s"
 	@echo "... src/l2_create_paths3.o"
 	@echo "... src/l2_create_paths3.i"
 	@echo "... src/l2_create_paths3.s"

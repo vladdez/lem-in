@@ -317,6 +317,11 @@ CMakeFiles/irina5.dir/src/j_print.c.o: ../libft/ft_printf/inc/ft_printf.h
 CMakeFiles/irina5.dir/src/j_print.c.o: ../libft/libft.h
 CMakeFiles/irina5.dir/src/j_print.c.o: ../src/j_print.c
 
+CMakeFiles/irina5.dir/src/k2_dup_room.c.o: ../inc/lem_in.h
+CMakeFiles/irina5.dir/src/k2_dup_room.c.o: ../libft/ft_printf/inc/ft_printf.h
+CMakeFiles/irina5.dir/src/k2_dup_room.c.o: ../libft/libft.h
+CMakeFiles/irina5.dir/src/k2_dup_room.c.o: ../src/k2_dup_room.c
+
 CMakeFiles/irina5.dir/src/k_create_paths.c.o: ../inc/lem_in.h
 CMakeFiles/irina5.dir/src/k_create_paths.c.o: ../libft/ft_printf/inc/ft_printf.h
 CMakeFiles/irina5.dir/src/k_create_paths.c.o: ../libft/libft.h
@@ -326,6 +331,11 @@ CMakeFiles/irina5.dir/src/k_suurballe.c.o: ../inc/lem_in.h
 CMakeFiles/irina5.dir/src/k_suurballe.c.o: ../libft/ft_printf/inc/ft_printf.h
 CMakeFiles/irina5.dir/src/k_suurballe.c.o: ../libft/libft.h
 CMakeFiles/irina5.dir/src/k_suurballe.c.o: ../src/k_suurballe.c
+
+CMakeFiles/irina5.dir/src/k_turn_around.c.o: ../inc/lem_in.h
+CMakeFiles/irina5.dir/src/k_turn_around.c.o: ../libft/ft_printf/inc/ft_printf.h
+CMakeFiles/irina5.dir/src/k_turn_around.c.o: ../libft/libft.h
+CMakeFiles/irina5.dir/src/k_turn_around.c.o: ../src/k_turn_around.c
 
 CMakeFiles/irina5.dir/src/l2_create_paths3.c.o: ../inc/lem_in.h
 CMakeFiles/irina5.dir/src/l2_create_paths3.c.o: ../libft/ft_printf/inc/ft_printf.h

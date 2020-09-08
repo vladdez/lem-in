@@ -24,7 +24,7 @@ t_room	*create_room(t_coordinate *coordinate, char *tmp)
 	if (!(room->room_name = ft_strdup(words[0])))
 		terminate(ERR_ROOM_INIT);
 	write_coor(coordinate, words);
-	room->int_out = UNDEFINED;
+	room->in_out = IN_OUT;
 	room->bfs_visit = UNVISITED;
 	room->ek_visit = UNVISITED;
 	room->bfs_level = -1;
@@ -44,7 +44,8 @@ t_node	*neighbour_init(void)
 	if (!(link = malloc(sizeof(t_node) * 1)))
 		terminate(ERR_ALLOCATION);
 	link->node = NULL;
-	link->price = TOSTART;
+	link->price = ONE;
+	link->direction = BOTH_STREAM;
 	link->next = NULL;
 	return (link);
 }

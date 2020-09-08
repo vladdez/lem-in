@@ -33,13 +33,14 @@ typedef struct			s_node
 {
 	char				*node;
 	int                 price;  //0 -1 1
+	int                 direction;
 	struct s_node		*next;
 }						t_node;
 
 typedef struct			s_room
 {
 	char				*room_name;
-	int                 int_out;
+	int                 in_out;
 	int					bfs_visit;
 	int					ek_visit;
 	int					bfs_level;
@@ -203,6 +204,10 @@ void					upd_visits(t_lem_in *lem_in, t_room	*tmp_room);
 int						are_nei_valid(t_room *tmp_room, t_lem_in *lem_in);
 void					is_cutted(t_lem_in *lem_in);
 void                    algorithm_suurballe(t_lem_in *lem_in, int maxpath);
+void    change_link_direction(t_room *room, char *link_name);
+void    change_link_price(t_room *room, char *link_name);
+void    turn_around_links(t_lem_in *lem_in, t_path *path);
+void    dub_rooms(t_lem_in *lem_in, t_path *path);
 
 # define ERR_ANTS_NUM_PARSING	"ERROR: Number of ants is incorrent"
 # define ERR_ROOM_PARSING		"ERROR: Can\'t parse room"
@@ -235,10 +240,23 @@ void                    algorithm_suurballe(t_lem_in *lem_in, int maxpath);
 # define CUTTED 1
 # define UNCUT 0
 
-# define UNDEFINED -2   // для out_int
 
-# define TOEND -1       // цена линка
-# define BACKUP 0       // цена линка
-# define TOSTART 1      // цена линка
+
+
+# define IN_OUT -2
+# define IN 1          // для flag out_int room
+# define OUT 0         // для flag out_int room
+
+# define BOTH_STREAM -1       // в оба направления
+# define DOWNSTREAM 0       // по течению
+# define UPSTREAM 1      // против течения
+
+
+# define MINUS_ONE -1       // цена линка при повороте
+# define ZERO 0       // цена линка между дублерами
+# define ONE 1      // цена линка изначально
+
+
+
 
 #endif
