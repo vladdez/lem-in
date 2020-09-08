@@ -32,7 +32,6 @@ typedef struct			s_line
 typedef struct			s_node
 {
 	char				*node;
-	int                 direction;  // 1 по течению -1 против
 	int                 price;  //0 -1 1
 	struct s_node		*next;
 }						t_node;
@@ -45,8 +44,8 @@ typedef struct			s_room
 	int					ek_visit;
 	int					bfs_level;
 	t_node				*link;
-	t_node				*outgoing_links;   // удалить на будущие
-	t_node				*incoming_links;   // удалить на будущие
+	t_node				*outgoing_links;   // нельзя удалять
+	t_node				*incoming_links;   // нельзя удалять
 	int					cut;
 	struct s_room		*next;
 }						t_room;
@@ -203,6 +202,7 @@ void					check_order(t_path **paths, t_lem_in *lem_in);
 void					upd_visits(t_lem_in *lem_in, t_room	*tmp_room);
 int						are_nei_valid(t_room *tmp_room, t_lem_in *lem_in);
 void					is_cutted(t_lem_in *lem_in);
+void                    algorithm_suurballe(t_lem_in *lem_in, int maxpath);
 
 # define ERR_ANTS_NUM_PARSING	"ERROR: Number of ants is incorrent"
 # define ERR_ROOM_PARSING		"ERROR: Can\'t parse room"
@@ -235,6 +235,10 @@ void					is_cutted(t_lem_in *lem_in);
 # define CUTTED 1
 # define UNCUT 0
 
-# define UNDEFINED -2
+# define UNDEFINED -2   // для out_int
+
+# define TOEND -1       // цена линка
+# define BACKUP 0       // цена линка
+# define TOSTART 1      // цена линка
 
 #endif

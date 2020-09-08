@@ -21,6 +21,7 @@ t_lem_in	*parse(int fd, t_line **input)
 	parse_ants(lem_in, fd);
 	parse_room(lem_in, fd, input, &tmp);
 	parse_link(lem_in, fd, input, &tmp);
+
 	free_input(tmp);
 	return (lem_in);
 }
@@ -59,9 +60,11 @@ void		lem(int fd, char **av, int ac)
 
 	input = NULL;
 	lem_in = parse(fd, &input);
+
 	bfs(lem_in);
 	if (lem_in->end->bfs_visit != lem_in->bfs_used)
 		terminate(ERR_NO_PATH);
+	find_link_direction(lem_in->ht_rooms);
 	print_input(input, lem_in->ant_num);
 	fd = create_paths(lem_in);
 	if (fd != 0)

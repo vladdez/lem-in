@@ -124,9 +124,12 @@ int		create_paths(t_lem_in *lem_in)
 		create_way(lem_in, maxpath, 0);
 		i = len_of_actual_paths(lem_in);
 		lem_in->path_num = i;
-		if (maxpath > i && i < 2)
-			second_plan(lem_in, maxpath);
 		check_order(lem_in->paths, lem_in);
+		if (maxpath > i && i < 2)   // подумать над условием
+		{
+            //algorithm_suurballe(lem_in, maxpath);
+			//second_plan(lem_in, maxpath);
+		}
 	}
 	return (cut_s);
 }

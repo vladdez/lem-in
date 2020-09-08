@@ -322,6 +322,11 @@ CMakeFiles/irina5.dir/src/k_create_paths.c.o: ../libft/ft_printf/inc/ft_printf.h
 CMakeFiles/irina5.dir/src/k_create_paths.c.o: ../libft/libft.h
 CMakeFiles/irina5.dir/src/k_create_paths.c.o: ../src/k_create_paths.c
 
+CMakeFiles/irina5.dir/src/k_suurballe.c.o: ../inc/lem_in.h
+CMakeFiles/irina5.dir/src/k_suurballe.c.o: ../libft/ft_printf/inc/ft_printf.h
+CMakeFiles/irina5.dir/src/k_suurballe.c.o: ../libft/libft.h
+CMakeFiles/irina5.dir/src/k_suurballe.c.o: ../src/k_suurballe.c
+
 CMakeFiles/irina5.dir/src/l2_create_paths3.c.o: ../inc/lem_in.h
 CMakeFiles/irina5.dir/src/l2_create_paths3.c.o: ../libft/ft_printf/inc/ft_printf.h
 CMakeFiles/irina5.dir/src/l2_create_paths3.c.o: ../libft/libft.h

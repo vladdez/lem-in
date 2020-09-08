@@ -27,7 +27,7 @@ SRC_NAME		=	z_errors.c z_read_line.c z_validator.c z_is.c z_hash_table.c  z_init
                     a_main.c b_init.c \
                     c_parse_ants.c d_parse_rooms.c \
                     e_parse_link.c f_bfs.c h_find_links_direction.c g_deadlock_cleaning.c j_print.c i_print_hashtable.c\
-                    k_create_paths.c l_create_paths2.c l2_create_paths3.c m_flow.c n_flow2.c \
+                    k_create_paths.c k_suurballe.c l_create_paths2.c l2_create_paths3.c m_flow.c n_flow2.c \
                     o_if_crash.c p_if_crash2.c\
                     z_let_me_free.c z_let_me_free_lem.c z_let_me_free_lem2.c
 
