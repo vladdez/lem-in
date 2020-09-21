@@ -39,7 +39,7 @@ char	*dequeue(t_queue *q)
 
 	current_room_name = NULL;
 	if (is_empty(q))
-		printf("Queue is empty");
+		ft_printf("Queue is empty");
 	else
 	{
 		current_room_name = q->room_name[q->toward];

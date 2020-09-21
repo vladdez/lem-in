@@ -79,6 +79,7 @@ typedef struct			s_lem_in
 	int					ants_start;
 	int					ants_end;
 	int					room_num;
+	int                 edge_num;
 	int					path_num;
 	int					ant_num;
 	int					lines;

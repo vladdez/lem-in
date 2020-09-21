@@ -49,6 +49,7 @@ t_lem_in		*init_lem_in(void)
 	lem_in->ants_start = 0;
 	lem_in->ants_end = 0;
 	lem_in->ant_num = 0;
+	lem_in->edge_num = 0;
 	lem_in->lines = 0;
 	lem_in->room_num = 0;
 	lem_in->path_num = 0;

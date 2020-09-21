@@ -121,6 +121,7 @@ void	parse_link(t_lem_in *lem_in, int fd, t_line **input, t_line **tmp)
 			is_comment((*tmp)->data) != 1)
 			create_link(lem_in, (*tmp)->data);
 		(*tmp) = NULL;
+		lem_in->edge_num++;
 	}
     if (lem_in->start->link->node == NULL)
         terminate(ERR_NO_PATH);

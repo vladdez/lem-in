@@ -67,7 +67,6 @@ void    amend_links_in_direction_from_end(char *room_name, char *link_name, t_ha
 void    turn_around_links(t_lem_in *lem_in, t_path *path)
 {
 	t_path *tmp;
-	t_room *current_room;
 
 	tmp = path;
 	while (ft_strcmp(tmp->name, lem_in->end->room_name) != 0)
