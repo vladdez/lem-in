@@ -7,6 +7,7 @@
 typedef struct s_queue_bf
 {
 	char    *room_name;
+	int     type_room;    // INT или OUT
 	int     accumulated_value;
 	struct s_queue_bf *parrent;
 	struct s_queue_bf *next;
@@ -48,6 +49,18 @@ t_queue_bf *find_end_of_queue(t_queue_bf *belmon_ford)
 	return (tmp);
 }
 
+int     check_conditions_for_belmon_ford_queue(t_node *link,t_queue_bf *belmon_ford, t_room *room)
+{
+	if (link->direction == UPSTREAM)
+		return (0);
+	if (belmon_ford->parrent != NULL && ft_strcmp(link->node, belmon_ford->parrent->room_name) == 0)  // parrent
+		return (0);
+	if (ft_strcmp(link->node, room->room_name) == 0)  //  dub room
+		return (0);
+	else
+		return (1);
+}
+
 void    add_links_to_belmon_ford_queue(t_room *tmp_room, t_queue_bf *belmon_ford)
 {
 	t_node *tmp_link;
@@ -58,7 +71,7 @@ void    add_links_to_belmon_ford_queue(t_room *tmp_room, t_queue_bf *belmon_ford
 	end_queue = find_end_of_queue(belmon_ford);
 	while (tmp_link)
 	{
-		if (tmp_link->direction != UPSTREAM && (belmon_ford->parrent == NULL || ft_strcmp(tmp_link->node, belmon_ford->parrent->room_name) != 0))
+		if (check_conditions_for_belmon_ford_queue(tmp_link,belmon_ford,tmp_room)) //  1 - проходит, 0 - нет
 		{
 			tmp_queue = init_belmon_ford();
 			put_data_in_queue(tmp_queue, belmon_ford, tmp_link);
@@ -73,12 +86,12 @@ void    algorithm_belmon_ford(t_lem_in *lem_in) {
 	t_queue_bf *belmon_ford;
 	t_room *tmp;
 
-	belmon_ford = init_belmon_ford();
+	belmon_ford = init_belmon_ford();                                             // need to be freed
 	put_start_data(belmon_ford, lem_in->start);
 	while (ft_strcmp(belmon_ford->room_name, lem_in->end->room_name) != 0)
 	{
-		tmp = find_room_in_hashtable(belmon_ford->room_name,lem_in->ht_rooms);
-		add_links_to_belmon_ford_queue(tmp, belmon_ford);                         // проблема что сейчас он хочет добавить 4out а это цикл - нужно чтоб он его не  добавлял
+		tmp = find_room_in_hashtable(belmon_ford->room_name,lem_in->ht_rooms);     // найти нужно комнату либо IN OUT or IN_OUT
+		add_links_to_belmon_ford_queue(tmp, belmon_ford);                         //
 		belmon_ford = belmon_ford->next;
 	}
 }
@@ -88,6 +101,9 @@ void    algorithm_suurballe(t_lem_in *lem_in, int maxpath)
 	turn_around_links(lem_in, lem_in->paths[0]);
 	dub_rooms(lem_in, lem_in->paths[0]);
 	algorithm_belmon_ford(lem_in);
+
+
+
 	/*while (maxpath > lem_in)
 	{
 		algorithm_belmon_ford(lem_in); прошли по  минимальной стоимости до END

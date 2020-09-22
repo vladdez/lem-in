@@ -19,6 +19,7 @@ t_path	*create_one_path(t_room *cur)
 	if (!(pa = (t_path *)ft_memalloc(sizeof(t_path))))
 		terminate(ERR_PATH_INIT);
 	pa->name = ft_strdup(cur->room_name);
+	pa->typeroom = IN_OUT;
 	pa->len = -1;
 	pa->ant_index = 0;
 	pa->head = 0;

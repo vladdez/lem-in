@@ -45,6 +45,7 @@ t_node	*neighbour_init(void)
 		terminate(ERR_ALLOCATION);
 	link->node = NULL;
 	link->price = ONE;
+	link->type_room = IN_OUT;
 	link->direction = BOTH_STREAM;
 	link->next = NULL;
 	return (link);
