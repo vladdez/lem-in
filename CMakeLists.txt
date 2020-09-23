@@ -124,4 +124,4 @@ add_executable(irina5
         src/z_read_line.c
         src/z_validator.c
         src/z_write_coordinate.c
-        inc/lem_in.h src/k_suurballe.c src/k_turn_around.c src/k2_dup_room.c)
+        inc/lem_in.h src/k_suurballe.c src/k_turn_around.c src/k2_dup_room.c src/z_write_a_path.c src/k_belmon_ford_queue.c src/z_delete_dup_link..c)

@@ -185,7 +185,7 @@ void    create_link_dup(t_room *out, t_node *link_to_copy, t_hashtable *ht)
 	t_room *tmp_room;
 	t_node *tmp_link;
 
-	tmp_room = find_room_with_type_in_hashtable(link_to_copy->node, link_to_copy->type_room, ht); // поиск пойдет по флагу так как команты будет дублироваться
+	tmp_room = find_room_with_type_in_hashtable(link_to_copy->node, link_to_copy->type_room, ht);
 	tmp_link = tmp_room->link;
 	while(tmp_link->next != NULL)
 		tmp_link = tmp_link->next;
@@ -213,9 +213,8 @@ void    split_link_for_room_out(t_room *out, t_node *link_to_copy, t_hashtable *
 	tmp->node = link_to_copy->node;
 	tmp->price = link_to_copy->price;
 	tmp->direction = DOWNSTREAM;
-	tmp->type_room = link_to_copy->type_room;                                      // Надо считывать у команты а не  довать автоматически так как команты будет переходит в статус
-	// создаем вторую связь и сказать что она  входит в  аут
-	create_link_dup(out, tmp, ht);
+	tmp->type_room = link_to_copy->type_room;
+	create_link_dup(out, tmp, ht);// создаем вторую связь и сказать что она  входит в  аут
 }
 
 void    create_and_classify_links(t_room *in, t_room *out, t_hashtable *ht)
@@ -257,8 +256,11 @@ void    dub_rooms(t_lem_in *lem_in, t_path *path)
 	while (ft_strcmp(tmp->name, lem_in->end->room_name) != 0)
 	{
 		current_room = find_room_with_type_in_hashtable(tmp->name, tmp->typeroom, lem_in->ht_rooms);
-		current_room->in_out = IN;
-		create_room_out_and_classify_links(current_room, lem_in->ht_rooms);
+		if (current_room->in_out == IN_OUT)
+		{
+			current_room->in_out = IN;
+			create_room_out_and_classify_links(current_room, lem_in->ht_rooms);
+		}
 		tmp = tmp->next;
 	}
 }

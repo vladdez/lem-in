@@ -381,6 +381,9 @@
 		<Unit filename="/Users/bhugo/Desktop/lem-in/src/k2_dup_room.c">
 			<Option target="irina5"/>
 		</Unit>
+		<Unit filename="/Users/bhugo/Desktop/lem-in/src/k_belmon_ford_queue.c">
+			<Option target="irina5"/>
+		</Unit>
 		<Unit filename="/Users/bhugo/Desktop/lem-in/src/k_create_paths.c">
 			<Option target="irina5"/>
 		</Unit>
@@ -411,6 +414,9 @@
 		<Unit filename="/Users/bhugo/Desktop/lem-in/src/z_dashes_in_input.c">
 			<Option target="irina5"/>
 		</Unit>
+		<Unit filename="/Users/bhugo/Desktop/lem-in/src/z_delete_dup_link..c">
+			<Option target="irina5"/>
+		</Unit>
 		<Unit filename="/Users/bhugo/Desktop/lem-in/src/z_delete_links.c">
 			<Option target="irina5"/>
 		</Unit>
@@ -439,6 +445,9 @@
 			<Option target="irina5"/>
 		</Unit>
 		<Unit filename="/Users/bhugo/Desktop/lem-in/src/z_validator.c">
+			<Option target="irina5"/>
+		</Unit>
+		<Unit filename="/Users/bhugo/Desktop/lem-in/src/z_write_a_path.c">
 			<Option target="irina5"/>
 		</Unit>
 		<Unit filename="/Users/bhugo/Desktop/lem-in/src/z_write_coordinate.c">

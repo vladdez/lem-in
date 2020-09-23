@@ -54,10 +54,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /private/var/folders/zz/zyxvpxvq6csfxvn_n00019tc000_fl/T/AppTranslocation/DADFBDF3-8631-4794-B3C0-B5CABAF6F0E2/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /private/var/folders/zz/zyxvpxvq6csfxvn_n00019tc000_fl/T/AppTranslocation/03C39595-F015-4D98-A36F-DE30A5D1EB5C/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /private/var/folders/zz/zyxvpxvq6csfxvn_n00019tc000_fl/T/AppTranslocation/DADFBDF3-8631-4794-B3C0-B5CABAF6F0E2/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
+RM = /private/var/folders/zz/zyxvpxvq6csfxvn_n00019tc000_fl/T/AppTranslocation/03C39595-F015-4D98-A36F-DE30A5D1EB5C/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -1598,6 +1598,45 @@ CMakeFiles/irina5.dir/src/k2_dup_room.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/irina5.dir/src/k2_dup_room.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/bhugo/Desktop/lem-in/src/k2_dup_room.c -o CMakeFiles/irina5.dir/src/k2_dup_room.c.s
 
+CMakeFiles/irina5.dir/src/z_write_a_path.c.o: CMakeFiles/irina5.dir/flags.make
+CMakeFiles/irina5.dir/src/z_write_a_path.c.o: ../src/z_write_a_path.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bhugo/Desktop/lem-in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_118) "Building C object CMakeFiles/irina5.dir/src/z_write_a_path.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/irina5.dir/src/z_write_a_path.c.o   -c /Users/bhugo/Desktop/lem-in/src/z_write_a_path.c
+
+CMakeFiles/irina5.dir/src/z_write_a_path.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/irina5.dir/src/z_write_a_path.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/bhugo/Desktop/lem-in/src/z_write_a_path.c > CMakeFiles/irina5.dir/src/z_write_a_path.c.i
+
+CMakeFiles/irina5.dir/src/z_write_a_path.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/irina5.dir/src/z_write_a_path.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/bhugo/Desktop/lem-in/src/z_write_a_path.c -o CMakeFiles/irina5.dir/src/z_write_a_path.c.s
+
+CMakeFiles/irina5.dir/src/k_belmon_ford_queue.c.o: CMakeFiles/irina5.dir/flags.make
+CMakeFiles/irina5.dir/src/k_belmon_ford_queue.c.o: ../src/k_belmon_ford_queue.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bhugo/Desktop/lem-in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_119) "Building C object CMakeFiles/irina5.dir/src/k_belmon_ford_queue.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/irina5.dir/src/k_belmon_ford_queue.c.o   -c /Users/bhugo/Desktop/lem-in/src/k_belmon_ford_queue.c
+
+CMakeFiles/irina5.dir/src/k_belmon_ford_queue.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/irina5.dir/src/k_belmon_ford_queue.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/bhugo/Desktop/lem-in/src/k_belmon_ford_queue.c > CMakeFiles/irina5.dir/src/k_belmon_ford_queue.c.i
+
+CMakeFiles/irina5.dir/src/k_belmon_ford_queue.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/irina5.dir/src/k_belmon_ford_queue.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/bhugo/Desktop/lem-in/src/k_belmon_ford_queue.c -o CMakeFiles/irina5.dir/src/k_belmon_ford_queue.c.s
+
+CMakeFiles/irina5.dir/src/z_delete_dup_link..c.o: CMakeFiles/irina5.dir/flags.make
+CMakeFiles/irina5.dir/src/z_delete_dup_link..c.o: ../src/z_delete_dup_link..c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bhugo/Desktop/lem-in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_120) "Building C object CMakeFiles/irina5.dir/src/z_delete_dup_link..c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/irina5.dir/src/z_delete_dup_link..c.o   -c /Users/bhugo/Desktop/lem-in/src/z_delete_dup_link..c
+
+CMakeFiles/irina5.dir/src/z_delete_dup_link..c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/irina5.dir/src/z_delete_dup_link..c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/bhugo/Desktop/lem-in/src/z_delete_dup_link..c > CMakeFiles/irina5.dir/src/z_delete_dup_link..c.i
+
+CMakeFiles/irina5.dir/src/z_delete_dup_link..c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/irina5.dir/src/z_delete_dup_link..c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/bhugo/Desktop/lem-in/src/z_delete_dup_link..c -o CMakeFiles/irina5.dir/src/z_delete_dup_link..c.s
+
 # Object files for target irina5
 irina5_OBJECTS = \
 "CMakeFiles/irina5.dir/libft/ft_atoi.c.o" \
@@ -1716,7 +1755,10 @@ irina5_OBJECTS = \
 "CMakeFiles/irina5.dir/src/z_write_coordinate.c.o" \
 "CMakeFiles/irina5.dir/src/k_suurballe.c.o" \
 "CMakeFiles/irina5.dir/src/k_turn_around.c.o" \
-"CMakeFiles/irina5.dir/src/k2_dup_room.c.o"
+"CMakeFiles/irina5.dir/src/k2_dup_room.c.o" \
+"CMakeFiles/irina5.dir/src/z_write_a_path.c.o" \
+"CMakeFiles/irina5.dir/src/k_belmon_ford_queue.c.o" \
+"CMakeFiles/irina5.dir/src/z_delete_dup_link..c.o"
 
 # External object files for target irina5
 irina5_EXTERNAL_OBJECTS =
@@ -1838,9 +1880,12 @@ irina5: CMakeFiles/irina5.dir/src/z_write_coordinate.c.o
 irina5: CMakeFiles/irina5.dir/src/k_suurballe.c.o
 irina5: CMakeFiles/irina5.dir/src/k_turn_around.c.o
 irina5: CMakeFiles/irina5.dir/src/k2_dup_room.c.o
+irina5: CMakeFiles/irina5.dir/src/z_write_a_path.c.o
+irina5: CMakeFiles/irina5.dir/src/k_belmon_ford_queue.c.o
+irina5: CMakeFiles/irina5.dir/src/z_delete_dup_link..c.o
 irina5: CMakeFiles/irina5.dir/build.make
 irina5: CMakeFiles/irina5.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/bhugo/Desktop/lem-in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_118) "Linking C executable irina5"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/bhugo/Desktop/lem-in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_121) "Linking C executable irina5"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/irina5.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

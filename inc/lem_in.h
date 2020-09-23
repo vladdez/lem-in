@@ -101,6 +101,15 @@ typedef struct			s_queue
 	int					from;
 }						t_queue;
 
+typedef struct s_queue_bf
+{
+	char    *room_name;
+	int     type_room;    // INT или OUT
+	int     accumulated_value;
+	struct s_queue_bf *parrent;
+	struct s_queue_bf *next;
+}              t_queue_bf;
+
 int						main(int ac, char **av);
 void					*terminate(char *er);
 
@@ -207,11 +216,13 @@ void					upd_visits(t_lem_in *lem_in, t_room	*tmp_room);
 int						are_nei_valid(t_room *tmp_room, t_lem_in *lem_in);
 void					is_cutted(t_lem_in *lem_in);
 void                    algorithm_suurballe(t_lem_in *lem_in, int maxpath);
-void    change_link_direction(t_room *room, char *link_name);
-void    change_link_price(t_room *room, char *link_name);
 void    turn_around_links(t_lem_in *lem_in, t_path *path);
 void    dub_rooms(t_lem_in *lem_in, t_path *path);
 t_room	*find_room_with_type_in_hashtable(char *room_name, int typeroom, t_hashtable *ht_rooms);
+t_path    *put_belmon_ford_to_the_path(t_lem_in *lem_in, t_queue_bf *belmon_ford);
+t_queue_bf    *algorithm_belmon_ford(t_lem_in *lem_in);
+void    delete_dup_link_in_both_room(t_room *room, t_path *link, t_hashtable *ht);
+int    check_condition_to_delete_dup_links(int roomtype, int linktype);
 
 # define ERR_ANTS_NUM_PARSING	"ERROR: Number of ants is incorrent"
 # define ERR_ROOM_PARSING		"ERROR: Can\'t parse room"

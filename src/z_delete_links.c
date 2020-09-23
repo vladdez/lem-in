@@ -14,9 +14,9 @@
 
 void	clean_and_free_link(t_node *kill)
 {
-	free(kill->node);
 	kill->node = NULL;
 	kill->next = NULL;
+	free(kill);
 }
 
 t_node	*detele_link(t_node *tmp_link, char *name_of_link_to_delete)

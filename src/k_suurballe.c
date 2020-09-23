@@ -4,105 +4,55 @@
 
 #include "../inc/lem_in.h"
 
-typedef struct s_queue_bf
+
+void	clean_all_current_pathes(t_path **pa, int path_num)
 {
-	char    *room_name;
-	int     type_room;    // INT или OUT
-	int     accumulated_value;
-	struct s_queue_bf *parrent;
-	struct s_queue_bf *next;
-}              t_queue_bf;
+	int		i;
+	t_path	*kill;
 
-t_queue_bf	*init_belmon_ford(void)
-{
-	t_queue_bf *belmon_ford;
-
-	if (!(belmon_ford = malloc(sizeof(t_queue_bf) * 1)))
-		terminate(ERR_ALLOCATION);
-	belmon_ford->room_name = NULL;
-	belmon_ford->accumulated_value = 0;
-	belmon_ford->parrent = NULL;
-	belmon_ford->next = NULL;
-	return (belmon_ford);
-}
-
-void put_start_data(t_queue_bf *belmon_ford, t_room* start)
-{
-	belmon_ford->room_name = start->room_name;
-}
-
-void put_data_in_queue(t_queue_bf *tmp_queue, t_queue_bf *belmon_ford, t_node *link)
-{
-	tmp_queue->room_name = link->node;
-	tmp_queue->parrent = belmon_ford;
-	tmp_queue->accumulated_value = belmon_ford->accumulated_value + link->price;
-
-}
-
-t_queue_bf *find_end_of_queue(t_queue_bf *belmon_ford)
-{
-	t_queue_bf *tmp;
-
-	tmp = belmon_ford;
-	while(tmp->next != NULL)
-		tmp = tmp->next;
-	return (tmp);
-}
-
-int     check_conditions_for_belmon_ford_queue(t_node *link,t_queue_bf *belmon_ford, t_room *room)
-{
-	if (link->direction == UPSTREAM)
-		return (0);
-	if (belmon_ford->parrent != NULL && ft_strcmp(link->node, belmon_ford->parrent->room_name) == 0)  // parrent
-		return (0);
-	if (ft_strcmp(link->node, room->room_name) == 0)  //  dub room
-		return (0);
-	else
-		return (1);
-}
-
-void    add_links_to_belmon_ford_queue(t_room *tmp_room, t_queue_bf *belmon_ford)
-{
-	t_node *tmp_link;
-	t_queue_bf *tmp_queue;
-	t_queue_bf *end_queue;
-
-	tmp_link = tmp_room->link;
-	end_queue = find_end_of_queue(belmon_ford);
-	while (tmp_link)
+	i = 0;
+	while (i <= path_num)
 	{
-		if (check_conditions_for_belmon_ford_queue(tmp_link,belmon_ford,tmp_room)) //  1 - проходит, 0 - нет
+		if (pa[i] != NULL)
 		{
-			tmp_queue = init_belmon_ford();
-			put_data_in_queue(tmp_queue, belmon_ford, tmp_link);
-			end_queue->next = tmp_queue;
-			end_queue = end_queue->next;
+			while (pa[i])
+			{
+				kill = pa[i];
+				pa[i] = pa[i]->next;
+				kill->name = NULL;
+				free(kill);
+			}
 		}
-		tmp_link = tmp_link->next;
+		i++;
 	}
 }
 
-void    algorithm_belmon_ford(t_lem_in *lem_in) {
-	t_queue_bf *belmon_ford;
-	t_room *tmp;
 
-	belmon_ford = init_belmon_ford();                                             // need to be freed
-	put_start_data(belmon_ford, lem_in->start);
-	while (ft_strcmp(belmon_ford->room_name, lem_in->end->room_name) != 0)
-	{
-		tmp = find_room_in_hashtable(belmon_ford->room_name,lem_in->ht_rooms);     // найти нужно комнату либо IN OUT or IN_OUT
-		add_links_to_belmon_ford_queue(tmp, belmon_ford);                         //
-		belmon_ford = belmon_ford->next;
-	}
+void    count_pathes(t_lem_in *lem_in)
+{
+	clean_all_current_pathes(lem_in->paths, lem_in->path_num);
+	lem_in->path_num = 0;
+	//edmon_karts_by_link_price(lem_in);
 }
 
 void    algorithm_suurballe(t_lem_in *lem_in, int maxpath)
 {
-	turn_around_links(lem_in, lem_in->paths[0]);
-	dub_rooms(lem_in, lem_in->paths[0]);
-	algorithm_belmon_ford(lem_in);
+	t_queue_bf *belmon_ford;
+	t_path *tmp_path;
 
+	tmp_path = lem_in->paths[0];
 
+	turn_around_links(lem_in, tmp_path );  // поворот по самому короткому 1ому пути
+	dub_rooms(lem_in, tmp_path);          // дубль по самому короткому 1ому пути
+
+	belmon_ford = algorithm_belmon_ford(lem_in); // поиск нового пути
+	tmp_path = put_belmon_ford_to_the_path(lem_in, belmon_ford); // перенос его в структуру path
+
+	turn_around_links(lem_in, tmp_path); // поворот нового пути
+	dub_rooms(lem_in, tmp_path); // дублирование нового пути
+
+	count_pathes(lem_in); // нашли пути из END
+	// maxpath or is_enough();
 
 	/*while (maxpath > lem_in)
 	{
@@ -111,6 +61,6 @@ void    algorithm_suurballe(t_lem_in *lem_in, int maxpath)
 	    turn_around(lem_in);
 		dub_rooms(); при дублирование комнаты сплит линков надо удалить
 		count_pathes(); нашли пути из END
-	    is_enough();
+
 	}*/
 }
