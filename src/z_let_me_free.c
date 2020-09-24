@@ -47,3 +47,20 @@ void	free_input(t_line *input)
 	}
 	input = NULL;
 }
+
+void    free_queue_belmon_ford(t_queue_bf *belmon_ford)
+{
+	t_queue_bf *kill;
+
+	if (belmon_ford != NULL)
+	{
+		while (belmon_ford)
+		{
+			kill = belmon_ford;
+			belmon_ford = belmon_ford->next;
+			free(kill->room_name);
+			free(kill);
+		}
+	}
+
+}

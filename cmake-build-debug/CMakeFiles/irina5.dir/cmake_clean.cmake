@@ -106,7 +106,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/irina5.dir/src/o_if_crash.c.o"
   "CMakeFiles/irina5.dir/src/p_if_crash2.c.o"
   "CMakeFiles/irina5.dir/src/z_dashes_in_input.c.o"
-  "CMakeFiles/irina5.dir/src/z_delete_dup_link..c.o"
+  "CMakeFiles/irina5.dir/src/z_delete_dup_link.c.o"
   "CMakeFiles/irina5.dir/src/z_delete_links.c.o"
   "CMakeFiles/irina5.dir/src/z_errors.c.o"
   "CMakeFiles/irina5.dir/src/z_hash_table.c.o"

@@ -20,8 +20,8 @@ t_queue_bf	*init_belmon_ford(void)
 
 void put_start_data(t_queue_bf *belmon_ford, t_room* start)
 {
-	belmon_ford->room_name = start->room_name;
-
+	if (!(belmon_ford->room_name = ft_strdup(start->room_name)))
+		terminate(ERR_ALLOCATION);
 }
 
 void put_data_in_queue(t_queue_bf *tmp_queue, t_queue_bf *belmon_ford, t_node *link)

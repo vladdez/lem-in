@@ -30,7 +30,7 @@ t_room  *create_room_out(t_room *room)
 	tmp = room;
 	while (tmp->next != NULL)
 		tmp = tmp->next;
-	tmp->next = create_room_out_dup(room->room_name);   // free
+	tmp->next = create_room_out_dup(room->room_name);   //  why not free ???
 	tmp = tmp->next;
 	return (tmp);
 }
@@ -41,7 +41,10 @@ void	add_link_with_zero_price(t_node *link, char *toward)
 
 	tmp = link;
 	if (tmp->node == NULL)
-		tmp->node = toward;
+	{
+		if (!(tmp->node = ft_strdup(toward)))
+			terminate(ERR_ROOM_INIT);
+	}
 	else
 	{
 		while (tmp)
@@ -50,7 +53,8 @@ void	add_link_with_zero_price(t_node *link, char *toward)
 			{
 				tmp->next = neighbour_init();
 				tmp = tmp->next;
-				tmp->node = toward;
+				if (!(tmp->node = ft_strdup(toward)))
+					terminate(ERR_ROOM_INIT);
 				break ;
 			}
 			tmp = tmp->next;
@@ -149,7 +153,8 @@ void    move_not_first_link_of_room_in(t_room *in, t_room *out, char *link_name)
 	tmp->next = NULL;
 	find_place_for_link_in_room_out(out, tmp);
 }
-void    move_first_link_of_room_in(t_room *in, t_room *out, char *link_name)
+
+void    move_first_link_of_room_in(t_room *in, t_room *out)
 {
 	t_node *tmp;
 
@@ -165,7 +170,7 @@ void    move_first_link_of_room_in(t_room *in, t_room *out, char *link_name)
 void    move_link_to_room_out(t_room *in, t_room *out, char *link_name)
 {
 	if (ft_strcmp(in->link->node, link_name) == 0)
-		move_first_link_of_room_in(in, out, link_name);
+		move_first_link_of_room_in(in, out);
 	else
 		move_not_first_link_of_room_in(in, out, link_name);
 }
@@ -187,12 +192,13 @@ void    create_link_dup(t_room *out, t_node *link_to_copy, t_hashtable *ht)
 
 	tmp_room = find_room_with_type_in_hashtable(link_to_copy->node, link_to_copy->type_room, ht);
 	tmp_link = tmp_room->link;
-	while(tmp_link->next != NULL)
+	while (tmp_link->next != NULL)
 		tmp_link = tmp_link->next;
 	tmp_link->next = neighbour_init();
 	tmp_link = tmp_link->next;
 	tmp_link->type_room = OUT;
-	tmp_link->node = out->room_name;
+	if (!(tmp_link->node = ft_strdup(out->room_name)))
+		terminate(ERR_ALLOCATION);
 	tmp_link->price = link_to_copy->price;
 	tmp_link->direction = UPSTREAM;
 }
@@ -210,7 +216,8 @@ void    split_link_for_room_out(t_room *out, t_node *link_to_copy, t_hashtable *
 			tmp = tmp->next;
 		tmp->next = neighbour_init();
 	}
-	tmp->node = link_to_copy->node;
+	if (!(tmp->node = ft_strdup(link_to_copy->node)))
+		terminate(ERR_ROOM_INIT);
 	tmp->price = link_to_copy->price;
 	tmp->direction = DOWNSTREAM;
 	tmp->type_room = link_to_copy->type_room;

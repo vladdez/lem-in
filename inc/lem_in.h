@@ -215,7 +215,7 @@ void					check_order(t_path **paths, t_lem_in *lem_in);
 void					upd_visits(t_lem_in *lem_in, t_room	*tmp_room);
 int						are_nei_valid(t_room *tmp_room, t_lem_in *lem_in);
 void					is_cutted(t_lem_in *lem_in);
-void                    algorithm_suurballe(t_lem_in *lem_in, int maxpath);
+void                    algorithm_suurballe(t_lem_in *lem_in, int *maxpath);
 void    turn_around_links(t_lem_in *lem_in, t_path *path);
 void    dub_rooms(t_lem_in *lem_in, t_path *path);
 t_room	*find_room_with_type_in_hashtable(char *room_name, int typeroom, t_hashtable *ht_rooms);
@@ -223,6 +223,7 @@ t_path    *put_belmon_ford_to_the_path(t_lem_in *lem_in, t_queue_bf *belmon_ford
 t_queue_bf    *algorithm_belmon_ford(t_lem_in *lem_in);
 void    delete_dup_link_in_both_room(t_room *room, t_path *link, t_hashtable *ht);
 int    check_condition_to_delete_dup_links(int roomtype, int linktype);
+void    free_queue_belmon_ford(t_queue_bf *belmon_ford);
 
 # define ERR_ANTS_NUM_PARSING	"ERROR: Number of ants is incorrent"
 # define ERR_ROOM_PARSING		"ERROR: Can\'t parse room"
@@ -248,7 +249,7 @@ int    check_condition_to_delete_dup_links(int roomtype, int linktype);
 # define ROOM 2
 # define COMMAND 3
 # define COMMENT 1
-# define TABLE_SIZE 100
+# define TABLE_SIZE 10
 # define VISITED 1
 # define UNVISITED 0
 

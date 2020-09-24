@@ -377,10 +377,10 @@ CMakeFiles/irina5.dir/src/z_dashes_in_input.c.o: ../libft/ft_printf/inc/ft_print
 CMakeFiles/irina5.dir/src/z_dashes_in_input.c.o: ../libft/libft.h
 CMakeFiles/irina5.dir/src/z_dashes_in_input.c.o: ../src/z_dashes_in_input.c
 
-CMakeFiles/irina5.dir/src/z_delete_dup_link..c.o: ../inc/lem_in.h
-CMakeFiles/irina5.dir/src/z_delete_dup_link..c.o: ../libft/ft_printf/inc/ft_printf.h
-CMakeFiles/irina5.dir/src/z_delete_dup_link..c.o: ../libft/libft.h
-CMakeFiles/irina5.dir/src/z_delete_dup_link..c.o: ../src/z_delete_dup_link..c
+CMakeFiles/irina5.dir/src/z_delete_dup_link.c.o: ../inc/lem_in.h
+CMakeFiles/irina5.dir/src/z_delete_dup_link.c.o: ../libft/ft_printf/inc/ft_printf.h
+CMakeFiles/irina5.dir/src/z_delete_dup_link.c.o: ../libft/libft.h
+CMakeFiles/irina5.dir/src/z_delete_dup_link.c.o: ../src/z_delete_dup_link.c
 
 CMakeFiles/irina5.dir/src/z_delete_links.c.o: ../inc/lem_in.h
 CMakeFiles/irina5.dir/src/z_delete_links.c.o: ../libft/ft_printf/inc/ft_printf.h

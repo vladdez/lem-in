@@ -8,7 +8,7 @@
 
 void	clean_and_free_dub_link(t_node *kill)
 {
-	kill->node = NULL;
+	free(kill->node);
 	kill->next = NULL;
 	free(kill);
 }
