@@ -30,7 +30,7 @@ t_room  *create_room_out(t_room *room)
 	tmp = room;
 	while (tmp->next != NULL)
 		tmp = tmp->next;
-	tmp->next = create_room_out_dup(room->room_name);   //  why not free ???
+	tmp->next = create_room_out_dup(room->room_name);   //  why not free
 	tmp = tmp->next;
 	return (tmp);
 }
@@ -117,10 +117,10 @@ void    change_roomtype_to_out_duprooms(t_room *in, char *link_name, t_hashtable
 
 void create_links_with_zero_price(t_room *room_in, t_room *room_out, t_hashtable *ht)
 {
-	add_link_with_zero_price(room_in->link, room_out->room_name);
-	change_roomtype_to_out_duprooms(room_in, room_out->room_name, ht);
-	add_link_with_zero_price(room_out->link, room_in->room_name);
-	change_roomtype_to_in_duprooms(room_out, room_in->room_name, ht);
+	add_link_with_zero_price(room_in->link, room_out->room_name);        // mistake
+	change_roomtype_to_out_duprooms(room_in, room_out->room_name, ht);   // // mistake
+	add_link_with_zero_price(room_out->link, room_in->room_name);        // // mistake
+	change_roomtype_to_in_duprooms(room_out, room_in->room_name, ht);   // // mistake
 }
 
 void    find_place_for_link_in_room_out(t_room *out, t_node *tmp)
