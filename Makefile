@@ -36,7 +36,7 @@ INC				=	$(addprefix $(INC_PATH), $(INC_NAME))
 OBJ				=	$(addprefix $(OBJ_PATH), $(SRC_NAME:.c=.o))
 
 CC				=	gcc
-CFLAGS			=	-Wall -Wextra -Werror -o2
+CFLAGS			=	-Wall -Wextra -Werror -O2 -march=native
 IFLAGS			=	-I $(INC_PATH). -I $(LIB_PATH).
 LFLAGS			=	-L $(LIB_PATH) -lft
 

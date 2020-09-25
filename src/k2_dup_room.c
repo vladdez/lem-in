@@ -91,36 +91,32 @@ void    change_roomtype_to_out(t_room *out, t_node *link, t_hashtable *ht)
 }
 
 
-void    change_roomtype_to_in_duprooms(t_room *out, char *link_name, t_hashtable *ht)
+void    change_roomtype_to_in_duprooms(t_room *out)
 {
-	t_room *tmp;
 	t_node *tmp_link;
 
-	tmp = find_room_with_type_in_hashtable(link_name, OUT , ht);
-	tmp_link = tmp->link;
+	tmp_link = out->link;
 	while (ft_strcmp(tmp_link->node, out->room_name) != 0)
 		tmp_link = tmp_link->next;
 	tmp_link->type_room = IN;
 }
 
-void    change_roomtype_to_out_duprooms(t_room *in, char *link_name, t_hashtable *ht)
+void    change_roomtype_to_out_duprooms(t_room *in)
 {
-	t_room *tmp;
 	t_node *tmp_link;
 
-	tmp = find_room_with_type_in_hashtable(link_name, IN, ht);
-	tmp_link = tmp->link;
+	tmp_link = in->link;
 	while (ft_strcmp(tmp_link->node, in->room_name) != 0)
 		tmp_link = tmp_link->next;
 	tmp_link->type_room = OUT;
 }
 
-void create_links_with_zero_price(t_room *room_in, t_room *room_out, t_hashtable *ht)
+void create_links_with_zero_price(t_room *room_in, t_room *room_out)
 {
-	add_link_with_zero_price(room_in->link, room_out->room_name);        // mistake
-	change_roomtype_to_out_duprooms(room_in, room_out->room_name, ht);   // // mistake
-	add_link_with_zero_price(room_out->link, room_in->room_name);        // // mistake
-	change_roomtype_to_in_duprooms(room_out, room_in->room_name, ht);   // // mistake
+	add_link_with_zero_price(room_in->link, room_out->room_name);
+	change_roomtype_to_out_duprooms(room_in);   // // mistake
+	add_link_with_zero_price(room_out->link, room_in->room_name);        // //  2 round mistake
+	change_roomtype_to_in_duprooms(room_out);   // // mistake
 }
 
 void    find_place_for_link_in_room_out(t_room *out, t_node *tmp)
@@ -215,6 +211,7 @@ void    split_link_for_room_out(t_room *out, t_node *link_to_copy, t_hashtable *
 		while (tmp->next != NULL)
 			tmp = tmp->next;
 		tmp->next = neighbour_init();
+		tmp = tmp->next;
 	}
 	if (!(tmp->node = ft_strdup(link_to_copy->node)))
 		terminate(ERR_ROOM_INIT);
@@ -243,7 +240,7 @@ void    create_and_classify_links(t_room *in, t_room *out, t_hashtable *ht)
 		}
 		tmp = tmp->next;
 	}
-	create_links_with_zero_price(in, out, ht);
+	create_links_with_zero_price(in, out);
 }
 
 void    create_room_out_and_classify_links(t_room *room_in, t_hashtable *ht)

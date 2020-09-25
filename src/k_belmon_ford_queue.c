@@ -61,18 +61,20 @@ void    add_links_to_belmon_ford_queue(t_room *tmp_room, t_queue_bf *belmon_ford
 	t_queue_bf *tmp_queue;
 	t_queue_bf *end_queue;
 
-	tmp_link = tmp_room->link;
-	end_queue = find_end_of_queue(belmon_ford);
-	while (tmp_link)
+	if (tmp_room != NULL && tmp_room->link != NULL && tmp_room->link->node != NULL)
 	{
-		if (check_conditions_for_belmon_ford_queue(tmp_link,belmon_ford,tmp_room)) //  1 - проходит, 0 - нет
-		{
-			tmp_queue = init_belmon_ford();
-			put_data_in_queue(tmp_queue, belmon_ford, tmp_link);
-			end_queue->next = tmp_queue;
-			end_queue = end_queue->next;
+		tmp_link = tmp_room->link;
+		end_queue = find_end_of_queue(belmon_ford);
+		while (tmp_link) {
+			if (check_conditions_for_belmon_ford_queue(tmp_link, belmon_ford, tmp_room)) //  1 - проходит, 0 - нет
+			{
+				tmp_queue = init_belmon_ford();
+				put_data_in_queue(tmp_queue, belmon_ford, tmp_link);
+				end_queue->next = tmp_queue;
+				end_queue = end_queue->next;
+			}
+			tmp_link = tmp_link->next;
 		}
-		tmp_link = tmp_link->next;
 	}
 }
 

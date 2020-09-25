@@ -95,6 +95,6 @@ void	find_link_direction(t_hashtable *ht_rooms)
 		}
 		i++;
 	}
-	// вернуть про тупики
+	//clean_deadlock(deadlock_name, ht_rooms);
 	free_links(deadlock_name);
 }

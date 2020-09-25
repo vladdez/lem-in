@@ -1,4 +1,4 @@
-/private/var/folders/zz/zyxvpxvq6csfxvn_n00019tc000_fl/T/AppTranslocation/FBB4DEC1-DB15-4BC5-AC71-D8D71801FD2E/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/bhugo/Desktop/lem-in
+/private/var/folders/zz/zyxvpxvq6csfxvn_n00019tc000_fl/T/AppTranslocation/022892A3-3977-455C-98AB-7B459DF7E8D9/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/bhugo/Desktop/lem-in
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /Users/bhugo/Desktop/lem-in/cmake-build-debug

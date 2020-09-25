@@ -2,13 +2,13 @@
 make && make clean
 
 echo -e '\033[1m 1.map\033[0m'
-./lem-in 1.map
+./lem-in maps/1.map
 
 echo -e '\033[1m 2.map\033[0m'
 ./lem-in 2.map
 
 echo -e '\033[1m 3.map\033[0m'
-./lem-in 3.map
+./lem-in maps/3.map
 
 echo -e '\033[1m maps/valid/vs/one_way/1.map \033[0m'
 ./lem-in maps/valid/vs/one_way/1.map
@@ -49,7 +49,7 @@ echo -e '\033[1m  maps/valid/difficult/three_ways.map \033[0m'
 ./lem-in maps/valid/difficult/three_ways.map
 
 echo -e '\033[1m  4short_circuit.map  \033[0m'
-./lem-in 4short_circuit.map
+./lem-in maps/4short_circuit.map
 
 echo -e '\033[1m  map0  \033[0m'
-./lem-in map0
+./lem-in maps/map0
