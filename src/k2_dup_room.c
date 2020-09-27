@@ -66,7 +66,7 @@ void	add_link_with_zero_price(t_node *link, char *toward)
 }
 
 
-void    change_roomtype_to_in(t_room *in, t_node *link, t_hashtable *ht)
+void    change_roomtype_to_in_and_direction(t_room *in, t_node *link, t_hashtable *ht)
 {
 	t_room *tmp;
 	t_node *tmp_link;
@@ -76,6 +76,7 @@ void    change_roomtype_to_in(t_room *in, t_node *link, t_hashtable *ht)
 	while (ft_strcmp(tmp_link->node, in->room_name) != 0)
 		tmp_link = tmp_link->next;
 	tmp_link->type_room = IN;
+	tmp_link->direction = DOWNSTREAM;
 }
 
 void    change_roomtype_to_out(t_room *out, t_node *link, t_hashtable *ht)
@@ -224,18 +225,26 @@ void    split_link_for_room_out(t_room *out, t_node *link_to_copy, t_hashtable *
 void    create_and_classify_links(t_room *in, t_room *out, t_hashtable *ht)
 {
 	t_node  *tmp;
+	t_node  *tmp_next;
 
+	tmp_next = NULL;
 	tmp = in->link; // потому что room_in по дефолту
 	while (tmp)
 	{
 		if (tmp->price == MINUS_ONE && tmp->direction == UPSTREAM)
+		{
+			if (tmp->next != NULL)
+				tmp_next = tmp->next;
 			move_link(in, out, tmp, ht);
+			if (tmp_next != NULL)
+				tmp = tmp_next;
+		}
 		if (tmp->price == MINUS_ONE && tmp->direction == DOWNSTREAM)
-			change_roomtype_to_in(in, tmp, ht);
+			change_roomtype_to_in_and_direction(in, tmp, ht);
 		if (tmp->price == ONE && tmp->direction == BOTH_STREAM)
 		{
 			tmp->direction = UPSTREAM;
-			change_roomtype_to_in(in, tmp, ht);
+			change_roomtype_to_in_and_direction(in, tmp, ht);
 			split_link_for_room_out(out, tmp, ht);
 		}
 		tmp = tmp->next;
