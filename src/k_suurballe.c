@@ -163,16 +163,15 @@ void    algorithm_suurballe(t_lem_in *lem_in, int *maxpath)
 	t_queue_bf *belmon_ford;
 	t_path *tmp_path;
 
-	//clean_all_edmon_karts_marks(lem_in);
+	clean_all_edmon_karts_marks(lem_in);                   // чистить до модификации так как потом комнат такого типа не будет а будет IN OUT IN_OUT
 	tmp_path = lem_in->paths[0];
-	turn_around_links(lem_in, tmp_path );  // поворот по самому короткому 1ому пути
-	dub_rooms(lem_in, tmp_path);          // дубль по самому короткому 1ому пути
+	turn_around_links(lem_in, tmp_path);                 // поворот по самому короткому 1ому пути
+	dub_rooms(lem_in, tmp_path);                          // дубль по самому короткому 1ому пути
 	while (*maxpath > lem_in->path_num)
 	{
-		//clean_all_edmon_karts_marks(lem_in);
 		belmon_ford = algorithm_belmon_ford(lem_in); // поиск нового пути
 		tmp_path = put_belmon_ford_to_the_path(lem_in, belmon_ford); // перенос его в структуру path
-		turn_around_links(lem_in, tmp_path); // поворот нового пути
+		turn_around_links(lem_in, tmp_path); // поворот нового пути                                      !поворот после второго пути и удаляется не та линка
 		dub_rooms(lem_in, tmp_path); // дублирование нового пути
 		count_pathes(lem_in, maxpath); // нашли пути из END
 		if (is_enough(lem_in) == 1)

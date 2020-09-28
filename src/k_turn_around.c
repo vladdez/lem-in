@@ -75,7 +75,10 @@ void    find_and_delete_dup_links(t_path *lagged, t_path *tmp, t_path *next, t_h
 		    while (link_tmp2)
 		    {
 			    if (ft_strcmp(link_tmp2->node, seeking_link) == 0)
+			    {
 				    delete_dup_links_not_on_the_way_but_neibours(room_tmp, seeking_link, ht);
+				    break;
+			    }
 		    	link_tmp2 = link_tmp2->next;
 		    }
 	    }
@@ -140,8 +143,11 @@ void    turn_around_links(t_lem_in *lem_in, t_path *path)
 	tmp = path;
 	while (ft_strcmp(tmp->name, lem_in->end->room_name) != 0)
 	{
-		amend_links_in_direction_from_start(tmp, tmp->next, lem_in->ht_rooms);
-		amend_links_in_direction_from_end(tmp->next, tmp, lem_in->ht_rooms);
+		if (ft_strcmp(tmp->name, tmp->next->name) != 0)
+		{
+			amend_links_in_direction_from_start(tmp, tmp->next, lem_in->ht_rooms);
+			amend_links_in_direction_from_end(tmp->next, tmp, lem_in->ht_rooms);
+		}
 		tmp = tmp->next;
 	}
 	analyse_dup_links_not_on_the_way_but_neibours(path, lem_in);

@@ -13,7 +13,7 @@ t_room   *create_room_out_dup(char *name)
 		terminate(ERR_ROOM_INIT);
 	room->in_out = OUT;
 	room->next = NULL;
-	room->link = neighbour_init();
+	room->link = NULL;
 	room->bfs_visit = UNVISITED;         // do not care
 	room->ek_visit = UNVISITED;           // do not care
 	room->bfs_level = -1;               //  should i copy it ?
@@ -40,9 +40,10 @@ void	add_link_with_zero_price(t_node *link, char *toward)
 	t_node	*tmp;
 
 	tmp = link;
-	if (tmp->node == NULL)
+	if (tmp == NULL)
 	{
-		if (!(tmp->node = ft_strdup(toward)))
+		link = neighbour_init();
+		if (!(link->node = ft_strdup(toward)))
 			terminate(ERR_ROOM_INIT);
 	}
 	else
@@ -62,11 +63,23 @@ void	add_link_with_zero_price(t_node *link, char *toward)
 	}
 	tmp->direction = BOTH_STREAM;
 	tmp->price = ZERO;
-	tmp->next = NULL;
 }
 
 
-void    change_roomtype_to_in_and_direction(t_room *in, t_node *link, t_hashtable *ht)
+void    change_roomtype_to_in_and_upstream_direction(t_room *in, t_node *link, t_hashtable *ht)
+{
+	t_room *tmp;
+	t_node *tmp_link;
+
+	tmp = find_room_with_type_in_hashtable(link->node, link->type_room, ht);
+	tmp_link = tmp->link;
+	while (ft_strcmp(tmp_link->node, in->room_name) != 0)
+		tmp_link = tmp_link->next;
+	tmp_link->type_room = IN;
+	tmp_link->direction = UPSTREAM;
+}
+
+void    change_roomtype_to_in_and_downstream_direction(t_room *in, t_node *link, t_hashtable *ht)
 {
 	t_room *tmp;
 	t_node *tmp_link;
@@ -115,16 +128,16 @@ void    change_roomtype_to_out_duprooms(t_room *in)
 void create_links_with_zero_price(t_room *room_in, t_room *room_out)
 {
 	add_link_with_zero_price(room_in->link, room_out->room_name);
-	change_roomtype_to_out_duprooms(room_in);   // // mistake
-	add_link_with_zero_price(room_out->link, room_in->room_name);        // //  2 round mistake
-	change_roomtype_to_in_duprooms(room_out);   // // mistake
+	change_roomtype_to_out_duprooms(room_in);
+	add_link_with_zero_price(room_out->link, room_in->room_name);
+	change_roomtype_to_in_duprooms(room_out);
 }
 
 void    find_place_for_link_in_room_out(t_room *out, t_node *tmp)
 {
 	t_node *tmp2;
 
-	if (out->link->node == NULL)
+	if (out->link == NULL)
 		out->link = tmp;
 	else
 	{
@@ -204,8 +217,11 @@ void    split_link_for_room_out(t_room *out, t_node *link_to_copy, t_hashtable *
 {
 	t_node *tmp;
 
-	if (out->link->node == NULL)
+	if (out->link == NULL)
+	{
+		out->link = neighbour_init();
 		tmp = out->link;
+	}
 	else
 	{
 		tmp = out->link;
@@ -240,12 +256,20 @@ void    create_and_classify_links(t_room *in, t_room *out, t_hashtable *ht)
 				tmp = tmp_next;
 		}
 		if (tmp->price == MINUS_ONE && tmp->direction == DOWNSTREAM)
-			change_roomtype_to_in_and_direction(in, tmp, ht);
+			change_roomtype_to_in_and_upstream_direction(in, tmp, ht);
 		if (tmp->price == ONE && tmp->direction == BOTH_STREAM)
 		{
 			tmp->direction = UPSTREAM;
-			change_roomtype_to_in_and_direction(in, tmp, ht);
+			change_roomtype_to_in_and_downstream_direction(in, tmp, ht);
 			split_link_for_room_out(out, tmp, ht);
+		}
+		if (tmp->type_room == IN && tmp->direction == UPSTREAM)
+		{
+			if (tmp->next != NULL)
+				tmp_next = tmp->next;
+			move_link(in, out, tmp, ht);
+			if (tmp_next != NULL)
+				tmp = tmp_next;
 		}
 		tmp = tmp->next;
 	}
