@@ -111,6 +111,7 @@ t_queue_bf    *algorithm_belmon_ford(t_lem_in *lem_in)
 		tmp = find_room_with_type_in_hashtable(belmon_ford->room_name, belmon_ford->type_room, lem_in->ht_rooms);
 		add_links_to_belmon_ford_queue(tmp, belmon_ford, lem_in->start->room_name);
 		belmon_ford = belmon_ford->next;
+		//printf("cycle");
 	}
 	// нужно продумать какой путь выбирать  что делать дальше если у нас есть еще end  как в примере в тетради
 	return (belmon_ford);

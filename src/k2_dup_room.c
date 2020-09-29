@@ -254,6 +254,8 @@ void    create_and_classify_links(t_room *in, t_room *out, t_hashtable *ht)
 			move_link(in, out, tmp, ht);
 			if (tmp_next != NULL)
 				tmp = tmp_next;
+			else
+				break;
 		}
 		if (tmp->price == MINUS_ONE && tmp->direction == DOWNSTREAM)
 			change_roomtype_to_in_and_upstream_direction(in, tmp, ht);

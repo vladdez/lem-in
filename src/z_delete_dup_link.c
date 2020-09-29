@@ -50,24 +50,47 @@ void    delete_dup_link(t_room *room, char *name_of_link_to_delete, int link_typ
 		detele_link_with_type(tmp_link, name_of_link_to_delete, link_typeroom);
 }
 
-void    delete_dup_link_in_both_room(t_room *room, t_path *link, t_hashtable *ht)
+int    define_room_type(int room_type)
 {
-	t_room *tmp;
 	int type;
 
 	type = IN_OUT;
-	if (link->typeroom == IN)
+	if (room_type == IN)
 		type = OUT;
-	if (link->typeroom == OUT)
+	if (room_type == OUT)
 		type = IN;
-	delete_dup_link(room, link->name, type);
-	tmp = find_room_with_type_in_hashtable(link->name, type, ht);
-	type = IN_OUT;
-	if (room->in_out == IN)
-		type = OUT;
+	return (type);
+}
+
+void    delete_dup_link_with_out_room(t_room *room, t_path *link, t_hashtable *ht)
+{
+	t_room *tmp;
+	int roomtype_to_delete;
+
+	roomtype_to_delete = define_room_type(link->typeroom);
+	delete_dup_link(room, link->name, roomtype_to_delete);
+	tmp = find_room_with_type_in_hashtable(link->name, roomtype_to_delete, ht);
+	roomtype_to_delete = define_room_type(room->in_out);
+	delete_dup_link(tmp, room->room_name, roomtype_to_delete);
+}
+
+void    delete_dup_link_with_in_room(t_room *room, t_path *link, t_hashtable *ht)
+{
+	t_room *tmp;
+
+	tmp = find_room_with_type_in_hashtable(room->room_name, IN, ht);           // находим дублера
+	delete_dup_link(tmp, link->name, link->typeroom);                          // удаляем связь между  дублером и следующей комнатой
+	tmp = find_room_with_type_in_hashtable(link->name, link->typeroom, ht);    // находим следующую команату
+	delete_dup_link(tmp, room->room_name, IN);                                 // удаляем у нее связь с дублером
+}
+
+void    delete_dup_link_in_both_room(t_room *room, t_path *link, t_hashtable *ht)
+{
+
+	if (room->in_out == IN_OUT)
+		delete_dup_link_with_out_room(room, link, ht);
 	if (room->in_out == OUT)
-		type = IN;
-	delete_dup_link(tmp, room->room_name, type);
+		delete_dup_link_with_in_room(room, link, ht);
 }
 
 int    check_condition_to_delete_dup_links(int roomtype, int linktype)

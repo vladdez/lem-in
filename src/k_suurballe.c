@@ -18,21 +18,17 @@ void    clean_all_edmon_karts_marks(t_lem_in *lem_in)
 			tmp = lem_in->paths[i];
 			while (tmp)
 			{
-
 				tmp_room = find_room_with_type_in_hashtable(tmp->name, tmp->typeroom, lem_in->ht_rooms);
 				if (tmp_room != NULL)
-				{
 					tmp_room->ek_visit = UNVISITED;
-					tmp = tmp->next;
-				}
 				else
 					{
 					tmp_room = find_room_with_type_in_hashtable(tmp->name, IN, lem_in->ht_rooms);
 					tmp_room->ek_visit = UNVISITED;
-					tmp_room = tmp_room->next;
+					tmp_room = find_room_with_type_in_hashtable(tmp->name, OUT, lem_in->ht_rooms);
 					tmp_room->ek_visit = UNVISITED;
-					tmp = tmp->next;
 				}
+				tmp = tmp->next;
 			}
 		}
 		i++;
@@ -83,7 +79,8 @@ t_room	*find_best_link_with_price(t_node *cur, t_hashtable *ht)
 		cur = cur->next;
 	}
 		dub_room = find_room_with_type_in_hashtable(dub_link->node, dub_link->type_room, ht);
-		if (dub_room != NULL) {
+		if (dub_room != NULL)
+		{
 			dub_room->ek_visit = VISITED;
 			return (find_best_link_with_price(dub_room->link, ht));
 		}
@@ -117,7 +114,22 @@ int		create_way_sub_with_price(t_lem_in *lem_in, t_path *tmp, t_room *cur, int j
 	return (len);
 }
 
-void	create_way_with_price(t_lem_in *lem_in, int *maxpath)
+
+int    find_posible_ways_number(t_node *link)
+{
+	int i;
+
+	i = 0;
+	while (link)
+	{
+		if (link->direction == DOWNSTREAM)
+			i++;
+		link = link->next;
+	}
+	return (i);
+}
+
+void	edmon_karts_by_link_price(t_lem_in *lem_in)
 {
 	t_room	*tmp_room;
 	t_path	*tmp_path;
@@ -128,7 +140,7 @@ void	create_way_with_price(t_lem_in *lem_in, int *maxpath)
 	tmp_path = NULL;
 	len = 0;
 	i = 0;
-	max = *maxpath;
+	max = find_posible_ways_number(lem_in->end->link);
 	while (i < max)
 	{
 		tmp_room = lem_in->end;
@@ -145,17 +157,12 @@ void	create_way_with_price(t_lem_in *lem_in, int *maxpath)
 	}
 }
 
-void    edmon_karts_by_link_price(t_lem_in *lem_in, int *maxpath)
-{
-	create_way_with_price(lem_in, maxpath);
-}
-
-void    count_pathes(t_lem_in *lem_in, int *maxpath)
+void    count_pathes(t_lem_in *lem_in)
 {
 	clean_all_edmon_karts_marks(lem_in); // очистить все метки
 	clean_all_current_pathes(lem_in->paths, lem_in->path_num);
 	lem_in->path_num = 0;
-	edmon_karts_by_link_price(lem_in, maxpath);
+	edmon_karts_by_link_price(lem_in);
 }
 
 void    algorithm_suurballe(t_lem_in *lem_in, int *maxpath)
@@ -163,17 +170,19 @@ void    algorithm_suurballe(t_lem_in *lem_in, int *maxpath)
 	t_queue_bf *belmon_ford;
 	t_path *tmp_path;
 
-	clean_all_edmon_karts_marks(lem_in);                   // чистить до модификации так как потом комнат такого типа не будет а будет IN OUT IN_OUT
+	clean_all_edmon_karts_marks(lem_in); // чистить до модификации так как потом комнат такого типа не будет а будет IN OUT IN_OUT
 	tmp_path = lem_in->paths[0];
 	turn_around_links(lem_in, tmp_path);                 // поворот по самому короткому 1ому пути
-	dub_rooms(lem_in, tmp_path);                          // дубль по самому короткому 1ому пути
+	dub_rooms(lem_in, tmp_path);
+	clean_all_current_pathes(lem_in->paths, lem_in->path_num);// дубль по самому короткому 1ому пути
 	while (*maxpath > lem_in->path_num)
 	{
 		belmon_ford = algorithm_belmon_ford(lem_in); // поиск нового пути
 		tmp_path = put_belmon_ford_to_the_path(lem_in, belmon_ford); // перенос его в структуру path
 		turn_around_links(lem_in, tmp_path); // поворот нового пути                                      !поворот после второго пути и удаляется не та линка
 		dub_rooms(lem_in, tmp_path); // дублирование нового пути
-		count_pathes(lem_in, maxpath); // нашли пути из END
+
+		count_pathes(lem_in); // нашли пути из END
 		if (is_enough(lem_in) == 1)
 			break;
 

@@ -2,54 +2,54 @@
 make && make clean
 
 echo -e '\033[1m 1.map\033[0m'
-./lem-in maps/1.map
+./lem-in maps/1.map -p
 
 echo -e '\033[1m 2.map\033[0m'
-./lem-in 2.map
+./lem-in 2.map -p
 
 echo -e '\033[1m 3.map\033[0m'
-./lem-in maps/3.map
+./lem-in maps/3.map -p
 
 echo -e '\033[1m maps/valid/vs/one_way/1.map \033[0m'
-./lem-in maps/valid/vs/one_way/1.map
+./lem-in maps/valid/vs/one_way/1.map -p
 echo -e '\033[1m maps/valid/vs/one_way/2.map \033[0m'
-./lem-in maps/valid/vs/one_way/2.map
+./lem-in maps/valid/vs/one_way/2.map -p
 echo -e '\033[1m maps/valid/vs/one_way/3.map \033[0m'
-./lem-in maps/valid/vs/one_way/3.map
+./lem-in maps/valid/vs/one_way/3.map -p
 echo -e '\033[1m maps/valid/vs/one_way/4.map \033[0m'
-./lem-in maps/valid/vs/one_way/4.map
+./lem-in maps/valid/vs/one_way/4.map -p
 echo -e '\033[1m maps/valid/vs/one_way/5.map \033[0m'
-./lem-in maps/valid/vs/one_way/5.map
+./lem-in maps/valid/vs/one_way/5.map -p
 
 echo -e '\033[1m  maps/valid/vs/multiple_ways/1.map \033[0m'
- ./lem-in maps/valid/vs/multiple_ways/1.map
+ ./lem-in maps/valid/vs/multiple_ways/1.map -p
 echo -e '\033[1m  maps/valid/vs/multiple_ways/2.map \033[0m'
-  ./lem-in maps/valid/vs/multiple_ways/2.map
+  ./lem-in maps/valid/vs/multiple_ways/2.map -p
 echo -e '\033[1m  maps/valid/vs/multiple_ways/3.map \033[0m'
-   ./lem-in maps/valid/vs/multiple_ways/3.map
+   ./lem-in maps/valid/vs/multiple_ways/3.map -p
 echo -e '\033[1m  maps/valid/vs/multiple_ways/4.map \033[0m'
-    ./lem-in maps/valid/vs/multiple_ways/4.map
+    ./lem-in maps/valid/vs/multiple_ways/4.map -p
 echo -e '\033[1m  maps/valid/vs/multiple_ways/5.map \033[0m'
-     ./lem-in maps/valid/vs/multiple_ways/5.map
+     ./lem-in maps/valid/vs/multiple_ways/5.map -p
 echo -e '\033[1m  maps/valid/vs/multiple_ways/6.map \033[0m'
-      ./lem-in maps/valid/vs/multiple_ways/6.map
+      ./lem-in maps/valid/vs/multiple_ways/6.map -p
 echo -e '\033[1m  maps/valid/vs/multiple_ways/7.map \033[0m'
-       ./lem-in maps/valid/vs/multiple_ways/7.map
+       ./lem-in maps/valid/vs/multiple_ways/7.map -p
 echo -e '\033[1m  maps/valid/vs/multiple_ways/8.map \033[0m'
-        ./lem-in maps/valid/vs/multiple_ways/8.map
+        ./lem-in maps/valid/vs/multiple_ways/8.map -p
 
 
 echo -e '\033[1m  maps/valid/difficult/one_name_with_dashes.map \033[0m'
-./lem-in maps/valid/difficult/one_name_with_dashes.map
+./lem-in maps/valid/difficult/one_name_with_dashes.map -p
 
 echo -e '\033[1m  maps/valid/difficult/two_names_with_dashes.map  \033[0m'
-./lem-in maps/valid/difficult/two_names_with_dashes.map
+./lem-in maps/valid/difficult/two_names_with_dashes.map -p
 
 echo -e '\033[1m  maps/valid/difficult/three_ways.map \033[0m'
-./lem-in maps/valid/difficult/three_ways.map
+./lem-in maps/valid/difficult/three_ways.map -p
 
 echo -e '\033[1m  4short_circuit.map  \033[0m'
-./lem-in maps/4short_circuit.map
+./lem-in maps/4short_circuit.map -p
 
 echo -e '\033[1m  map0  \033[0m'
-./lem-in maps/map0
+./lem-in maps/map0 -p
