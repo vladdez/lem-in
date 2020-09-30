@@ -54,6 +54,8 @@ void    free_queue_belmon_ford(t_queue_bf *belmon_ford)
 
 	if (belmon_ford != NULL)
 	{
+		while (belmon_ford->parrent != NULL)
+			belmon_ford = belmon_ford->parrent;
 		while (belmon_ford)
 		{
 			kill = belmon_ford;

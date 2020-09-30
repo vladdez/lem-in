@@ -81,7 +81,10 @@ t_room	*find_best_link_with_price(t_node *cur, t_hashtable *ht)
 		dub_room = find_room_with_type_in_hashtable(dub_link->node, dub_link->type_room, ht);
 		if (dub_room != NULL)
 		{
-			dub_room->ek_visit = VISITED;
+			if (dub_room->ek_visit == UNVISITED )
+				dub_room->ek_visit = VISITED;
+			else
+				return (NULL);
 			return (find_best_link_with_price(dub_room->link, ht));
 		}
 		else
@@ -165,12 +168,43 @@ void    count_pathes(t_lem_in *lem_in)
 	edmon_karts_by_link_price(lem_in);
 }
 
+int check_found_way(t_queue_bf *belmon_ford)
+{
+	if (belmon_ford == NULL)
+		return (1);
+	else
+		return (0);
+}
+
+
+void    clean_all_edmon_karts_marks_in_line(t_room *tmp)
+{
+	while (tmp)
+	{
+		tmp->ek_visit = UNVISITED;
+		tmp =tmp->next;
+	}
+}
+
+void    clean_all_edmon_karts_marks_in_all_ht(t_hashtable *ht)
+{
+	int		i;
+
+	i = 0;
+	while (i < TABLE_SIZE)
+	{
+		if (ht->room[i] != NULL)
+			clean_all_edmon_karts_marks_in_line(ht->room[i]);
+		i++;
+	}
+}
+
 void    algorithm_suurballe(t_lem_in *lem_in, int *maxpath)
 {
 	t_queue_bf *belmon_ford;
 	t_path *tmp_path;
 
-	clean_all_edmon_karts_marks(lem_in); // чистить до модификации так как потом комнат такого типа не будет а будет IN OUT IN_OUT
+	clean_all_edmon_karts_marks_in_all_ht(lem_in->ht_rooms); // чистить до модификации так как потом комнат такого типа не будет а будет IN OUT IN_OUT
 	tmp_path = lem_in->paths[0];
 	turn_around_links(lem_in, tmp_path);                 // поворот по самому короткому 1ому пути
 	dub_rooms(lem_in, tmp_path);
@@ -178,15 +212,18 @@ void    algorithm_suurballe(t_lem_in *lem_in, int *maxpath)
 	while (*maxpath > lem_in->path_num)
 	{
 		belmon_ford = algorithm_belmon_ford(lem_in); // поиск нового пути
+		if (check_found_way(belmon_ford) == 1)
+			break;
 		tmp_path = put_belmon_ford_to_the_path(lem_in, belmon_ford); // перенос его в структуру path
+		free_queue_belmon_ford(belmon_ford);   // free the bf_queue
 		turn_around_links(lem_in, tmp_path); // поворот нового пути                                      !поворот после второго пути и удаляется не та линка
 		dub_rooms(lem_in, tmp_path); // дублирование нового пути
-
+		free_found_path(tmp_path);
 		count_pathes(lem_in); // нашли пути из END
 		if (is_enough(lem_in) == 1)
 			break;
 
-		//free_queue_belmon_ford(belmon_ford);   // free the bf_queue
+
 	}
 
 	// maxpath or is_enough();

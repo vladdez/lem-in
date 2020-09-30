@@ -225,6 +225,7 @@ void    delete_dup_link_in_both_room(t_room *room, t_path *link, t_hashtable *ht
 int    check_condition_to_delete_dup_links(int roomtype, int linktype);
 void    free_queue_belmon_ford(t_queue_bf *belmon_ford);
 void    delete_dup_link(t_room *room, char *name_of_link_to_delete, int link_typeroom);
+void    free_found_path(t_path *path);
 
 # define ERR_ANTS_NUM_PARSING	"ERROR: Number of ants is incorrent"
 # define ERR_ROOM_PARSING		"ERROR: Can\'t parse room"

@@ -242,11 +242,14 @@ void    create_and_classify_links(t_room *in, t_room *out, t_hashtable *ht)
 {
 	t_node  *tmp;
 	t_node  *tmp_next;
+	int     i;
 
 	tmp_next = NULL;
 	tmp = in->link; // потому что room_in по дефолту
+	i = 0;
 	while (tmp)
 	{
+		i = 0;
 		if (tmp->price == MINUS_ONE && tmp->direction == UPSTREAM)
 		{
 			if (tmp->next != NULL)
@@ -268,12 +271,16 @@ void    create_and_classify_links(t_room *in, t_room *out, t_hashtable *ht)
 		if (tmp->type_room == IN && tmp->direction == UPSTREAM)
 		{
 			if (tmp->next != NULL)
+			{
 				tmp_next = tmp->next;
+				i++;
+			}
 			move_link(in, out, tmp, ht);
 			if (tmp_next != NULL)
 				tmp = tmp_next;
 		}
-		tmp = tmp->next;
+
+		i == 0 ? (tmp = tmp->next) : 0;
 	}
 	create_links_with_zero_price(in, out);
 }

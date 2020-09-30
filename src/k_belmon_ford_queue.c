@@ -26,7 +26,8 @@ void put_start_data(t_queue_bf *belmon_ford, t_room* start)
 
 void put_data_in_queue(t_queue_bf *tmp_queue, t_queue_bf *belmon_ford, t_node *link)
 {
-	tmp_queue->room_name = link->node;
+	if (!(tmp_queue->room_name  = ft_strdup(link->node)))
+		terminate(ERR_ROOM_INIT);
 	tmp_queue->type_room = link->type_room;
 	tmp_queue->parrent = belmon_ford;
 	tmp_queue->accumulated_value = belmon_ford->accumulated_value + link->price;
@@ -106,7 +107,7 @@ t_queue_bf    *algorithm_belmon_ford(t_lem_in *lem_in)
 
 	belmon_ford = init_belmon_ford();                                             // need to be freed
 	put_start_data(belmon_ford, lem_in->start);
-	while (ft_strcmp(belmon_ford->room_name, lem_in->end->room_name) != 0)
+	while (belmon_ford != NULL && ft_strcmp(belmon_ford->room_name, lem_in->end->room_name) != 0)
 	{
 		tmp = find_room_with_type_in_hashtable(belmon_ford->room_name, belmon_ford->type_room, lem_in->ht_rooms);
 		add_links_to_belmon_ford_queue(tmp, belmon_ford, lem_in->start->room_name);

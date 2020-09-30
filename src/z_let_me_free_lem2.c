@@ -12,6 +12,20 @@
 
 #include "../inc/lem_in.h"
 
+
+void    free_found_path(t_path *path)
+{
+	t_path *tmp;
+
+	while(path)
+	{
+		tmp = path->next;
+		free(path->name);
+		free(path);
+		path = tmp;
+	}
+}
+
 void	free_paths(t_path **pa, int path_num)
 {
 	int		i;
