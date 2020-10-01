@@ -222,8 +222,6 @@ void    algorithm_suurballe(t_lem_in *lem_in, int *maxpath)
 		count_pathes(lem_in); // нашли пути из END
 		if (is_enough(lem_in) == 1)
 			break;
-
-
 	}
 
 	// maxpath or is_enough();

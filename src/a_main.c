@@ -60,7 +60,6 @@ void		lem(int fd, char **av, int ac)
 
 	input = NULL;
 	lem_in = parse(fd, &input);
-
 	bfs(lem_in);
 	if (lem_in->end->bfs_visit != lem_in->bfs_used)
 		terminate(ERR_NO_PATH);

@@ -104,11 +104,20 @@ t_queue_bf    *algorithm_belmon_ford(t_lem_in *lem_in)
 {
 	t_queue_bf *belmon_ford;
 	t_room *tmp;
+	int    v;
 
 	belmon_ford = init_belmon_ford();                                             // need to be freed
 	put_start_data(belmon_ford, lem_in->start);
+	v = lem_in->room_num * 2;
 	while (belmon_ford != NULL && ft_strcmp(belmon_ford->room_name, lem_in->end->room_name) != 0)
 	{
+		v--;
+		if (v < 0)
+		{
+			v = lem_in->room_num * 2;
+			belmon_ford = belmon_ford->next;
+			break;
+		}
 		tmp = find_room_with_type_in_hashtable(belmon_ford->room_name, belmon_ford->type_room, lem_in->ht_rooms);
 		add_links_to_belmon_ford_queue(tmp, belmon_ford, lem_in->start->room_name);
 		belmon_ford = belmon_ford->next;

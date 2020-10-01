@@ -1,0 +1,11 @@
+#!/bin/bash
+make
+
+echo -e '\033[1m  maps/valid/difficult/one_name_with_dashes.map \033[0m'
+./lem-in maps/valid/difficult/one_name_with_dashes.map -p
+
+echo -e '\033[1m  maps/valid/difficult/two_names_with_dashes.map  \033[0m'
+./lem-in maps/valid/difficult/two_names_with_dashes.map -p
+
+echo -e '\033[1m  maps/valid/difficult/three_ways.map \033[0m'
+./lem-in maps/valid/difficult/three_ways.map -p
