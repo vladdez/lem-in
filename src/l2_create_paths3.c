@@ -36,22 +36,29 @@ void	check_order(t_path **paths, t_lem_in *lem_in)
 	t_path	*tmp;
 	int		i;
 	int		j;
+	int		k;
 
 	i = 1;
+	k = 0;
 	curr = paths;
 	tmp = NULL;
 	j = len_of_actual_paths(lem_in);
 	if (j > 1)
 	{
-		while (curr[i])
+		while (k < j)
 		{
-			if (curr[i]->len < curr[i - 1]->len)
+			i = 1;
+			while (curr[i])
 			{
-				tmp = curr[i];
-				curr[i] = curr[i - 1];
-				curr[i - 1] = tmp;
+				if (curr[i]->len < curr[i - 1]->len)
+				{
+					tmp = curr[i];
+					curr[i] = curr[i - 1];
+					curr[i - 1] = tmp;
+				}
+				i++;
 			}
-			i++;
+			k++;
 		}
 	}
 }

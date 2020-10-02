@@ -100,7 +100,7 @@ void	flow(t_lem_in *lem_in, int ant_index, int flows_used_this_run)
 	supermax = lever(ant_unused, lem_in, 0);
 	while (lem_in->ants_start <= lem_in->ant_num &&
 			lem_in->ant_num != lem_in->ants_end)
-	//while (lem_in->lines != 95)
+	//while (lem_in->lines != 100)
 	{
 		flows_used_this_run = lever(ant_unused, lem_in, 0);
 		ant_index = index_manager(lem_in, supermax, ant_index);

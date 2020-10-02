@@ -1,10 +1,6 @@
 #!/bin/bash
 make
 
-echo -e '\033[1m  mapbig  \033[0m'
-./lem-in maps/mapbig -p
-echo -e '\033[1m  mapch  \033[0m'
-./lem-in maps/mapch -p
 echo -e '\033[1m  maps1  \033[0m'
 ./lem-in maps/maps1 -p
 echo -e '\033[1m  maps2  \033[0m'

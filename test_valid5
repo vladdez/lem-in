@@ -2,9 +2,6 @@
 make
 
 
-echo -e '\033[1m  map  \033[0m'
-./lem-in map -p
-
 echo -e '\033[1m  2.map \033[0m'
 ./lem-in 2.map -p
 
