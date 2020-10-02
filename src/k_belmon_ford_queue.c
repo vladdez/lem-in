@@ -44,6 +44,20 @@ t_queue_bf *find_end_of_queue(t_queue_bf *belmon_ford)
 	return (tmp);
 }
 
+int   is_loop(char *node, t_queue_bf *belmon_ford)
+{
+	t_queue_bf *tmp;
+
+	tmp = belmon_ford;
+	while (tmp)
+	{
+		if (ft_strcmp(node, tmp->room_name) == 0)
+			return (0);
+		tmp = tmp->parrent;
+	}
+	return (1);
+}
+
 int     check_conditions_for_belmon_ford_queue(t_node *link, t_queue_bf *belmon_ford, t_room *room, char *start_name)
 {
 	if (link->direction == UPSTREAM)
@@ -53,6 +67,8 @@ int     check_conditions_for_belmon_ford_queue(t_node *link, t_queue_bf *belmon_
 	if (ft_strcmp(link->node, room->room_name) == 0)  //  dub room
 		return (0);
 	if (ft_strcmp(link->node, start_name) == 0)  //  start room => cycle
+		return (0);
+	if (is_loop(link->node, belmon_ford) == 0)
 		return (0);
 	else
 		return (1);
@@ -104,25 +120,26 @@ t_queue_bf    *algorithm_belmon_ford(t_lem_in *lem_in)
 {
 	t_queue_bf *belmon_ford;
 	t_room *tmp;
-	int    v;
+	//int    v;
 
 	belmon_ford = init_belmon_ford();                                             // need to be freed
 	put_start_data(belmon_ford, lem_in->start);
-	v = lem_in->room_num * 2;
+	//v = lem_in->room_num * 3;
 	while (belmon_ford != NULL && ft_strcmp(belmon_ford->room_name, lem_in->end->room_name) != 0)
 	{
-		v--;
-		if (v < 0)
-		{
-			v = lem_in->room_num * 2;
+		/*v--;
+		//if (v < 0)
+		//{
+			ft_printf("%d\n", v);
+			v = lem_in->room_num * 3;
 			belmon_ford = belmon_ford->next;
-			break;
-		}
+			//break;
+		}*/
 		tmp = find_room_with_type_in_hashtable(belmon_ford->room_name, belmon_ford->type_room, lem_in->ht_rooms);
 		add_links_to_belmon_ford_queue(tmp, belmon_ford, lem_in->start->room_name);
 		belmon_ford = belmon_ford->next;
-		//printf("cycle");
 	}
-	// нужно продумать какой путь выбирать  что делать дальше если у нас есть еще end  как в примере в тетради
+	//нужно продумать какой путь выбирать  что делать дальше если у нас есть еще end  как в примере в тетради
+	//ft_printf(" end of cycle and  v = %d\n", v);
 	return (belmon_ford);
 }

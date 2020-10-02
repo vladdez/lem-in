@@ -63,6 +63,7 @@ t_room	*find_best_link_with_price(t_node *cur, t_hashtable *ht)
 	t_room *dub_room;
 	t_room *room;
 
+	dub_link = NULL;
 	while (cur)
 	{
 		if (cur->direction == DOWNSTREAM && cur->price == MINUS_ONE)
@@ -78,10 +79,12 @@ t_room	*find_best_link_with_price(t_node *cur, t_hashtable *ht)
 			dub_link = cur;
 		cur = cur->next;
 	}
+	if (dub_link != NULL)
+	{
 		dub_room = find_room_with_type_in_hashtable(dub_link->node, dub_link->type_room, ht);
 		if (dub_room != NULL)
 		{
-			if (dub_room->ek_visit == UNVISITED )
+			if (dub_room->ek_visit == UNVISITED)
 				dub_room->ek_visit = VISITED;
 			else
 				return (NULL);
@@ -89,6 +92,9 @@ t_room	*find_best_link_with_price(t_node *cur, t_hashtable *ht)
 		}
 		else
 			return (NULL);
+	}
+	else
+		return (NULL);
 }
 
 int		create_way_sub_with_price(t_lem_in *lem_in, t_path *tmp, t_room *cur, int j)
@@ -117,7 +123,6 @@ int		create_way_sub_with_price(t_lem_in *lem_in, t_path *tmp, t_room *cur, int j
 	return (len);
 }
 
-
 int    find_posible_ways_number(t_node *link)
 {
 	int i;
@@ -141,7 +146,6 @@ void	edmon_karts_by_link_price(t_lem_in *lem_in)
 	int     max;
 
 	tmp_path = NULL;
-	len = 0;
 	i = 0;
 	max = find_posible_ways_number(lem_in->end->link);
 	while (i < max)
@@ -170,6 +174,7 @@ void    count_pathes(t_lem_in *lem_in)
 
 int check_found_way(t_queue_bf *belmon_ford)
 {
+
 	if (belmon_ford == NULL)
 		return (1);
 	else
@@ -223,15 +228,4 @@ void    algorithm_suurballe(t_lem_in *lem_in, int *maxpath)
 		if (is_enough(lem_in) == 1)
 			break;
 	}
-
-	// maxpath or is_enough();
-	/*while (maxpath > lem_in)
-	{
-		algorithm_belmon_ford(lem_in); прошли по  минимальной стоимости до END
-	    собрали по ссылкам в очереди путь от start
-	    turn_around(lem_in);
-		dub_rooms(); при дублирование комнаты сплит линков надо удалить
-		count_pathes(); нашли пути из END
-
-	}*/
 }

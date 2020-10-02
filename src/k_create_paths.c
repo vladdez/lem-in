@@ -129,7 +129,9 @@ int		create_paths(t_lem_in *lem_in)
 		if (maxpath > i)   // подумать над условием
 		{
             algorithm_suurballe(lem_in, &maxpath);
+			check_order(lem_in->paths, lem_in);
 			//second_plan(lem_in, maxpath);
+			//check_order(lem_in->paths, lem_in);
 		}
 	}
 	return (cut_s);

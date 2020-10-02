@@ -98,9 +98,9 @@ void	flow(t_lem_in *lem_in, int ant_index, int flows_used_this_run)
 	ant_unused = lem_in->ant_num;
 	point_heads(lem_in);
 	supermax = lever(ant_unused, lem_in, 0);
-	//while (lem_in->ants_start <= lem_in->ant_num &&
-	//		lem_in->ant_num != lem_in->ants_end)
-	while (lem_in->lines != 30)
+	while (lem_in->ants_start <= lem_in->ant_num &&
+			lem_in->ant_num != lem_in->ants_end)
+	//while (lem_in->lines != 95)
 	{
 		flows_used_this_run = lever(ant_unused, lem_in, 0);
 		ant_index = index_manager(lem_in, supermax, ant_index);
@@ -113,5 +113,5 @@ void	flow(t_lem_in *lem_in, int ant_index, int flows_used_this_run)
 		ft_printf("\n");
 		lem_in->lines++;
 	}
-	ft_printf("start %d end %d \n", lem_in->ants_start,  lem_in->ants_end);
+	//ft_printf("start %d end %d \n", lem_in->ants_start,  lem_in->ants_end);
 }
