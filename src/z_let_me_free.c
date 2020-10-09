@@ -6,7 +6,7 @@
 /*   By: kysgramo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/07 18:02:52 by kysgramo          #+#    #+#             */
-/*   Updated: 2020/08/19 19:15:55 by kysgramo         ###   ########.fr       */
+/*   Updated: 2020/10/09 20:02:50 by kysgramo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ void	free_input(t_line *input)
 	input = NULL;
 }
 
-void    free_queue_belmon_ford(t_queue_bf *belmon_ford)
+void	free_queue_belmon_ford(t_queue_bf *belmon_ford)
 {
 	t_queue_bf *kill;
 
@@ -64,5 +64,4 @@ void    free_queue_belmon_ford(t_queue_bf *belmon_ford)
 			free(kill);
 		}
 	}
-
 }

@@ -1,14 +1,22 @@
-//
-// Created by Ирина Деева on 07.09.2020.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   k_suurballe.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: kysgramo <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/10/09 20:36:56 by kysgramo          #+#    #+#             */
+/*   Updated: 2020/10/09 20:37:11 by kysgramo         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "../inc/lem_in.h"
 
-void    clean_all_edmon_karts_marks(t_lem_in *lem_in)
+void	clean_all_edmon_karts_marks(t_lem_in *lem_in)
 {
-	t_path *tmp;
-	t_room *tmp_room;
-	int     i;
+	t_path	*tmp;
+	t_room	*tmp_room;
+	int		i;
 
 	i = 0;
 	while (i <= lem_in->path_num)
@@ -18,14 +26,17 @@ void    clean_all_edmon_karts_marks(t_lem_in *lem_in)
 			tmp = lem_in->paths[i];
 			while (tmp)
 			{
-				tmp_room = find_room_with_type_in_hashtable(tmp->name, tmp->typeroom, lem_in->ht_rooms);
+				tmp_room = find_room_with_type_in_hashtable(tmp->name,
+				tmp->typeroom, lem_in->ht_rooms);
 				if (tmp_room != NULL)
 					tmp_room->ek_visit = UNVISITED;
 				else
-					{
-					tmp_room = find_room_with_type_in_hashtable(tmp->name, IN, lem_in->ht_rooms);
+				{
+					tmp_room = find_room_with_type_in_hashtable(tmp->name,
+					IN, lem_in->ht_rooms);
 					tmp_room->ek_visit = UNVISITED;
-					tmp_room = find_room_with_type_in_hashtable(tmp->name, OUT, lem_in->ht_rooms);
+					tmp_room = find_room_with_type_in_hashtable(tmp->name,
+					OUT, lem_in->ht_rooms);
 					tmp_room->ek_visit = UNVISITED;
 				}
 				tmp = tmp->next;
@@ -59,16 +70,17 @@ void	clean_all_current_pathes(t_path **pa, int path_num)
 
 t_room	*find_best_link_with_price(t_node *cur, t_hashtable *ht)
 {
-	t_node *dub_link;
-	t_room *dub_room;
-	t_room *room;
+	t_node	*dub_link;
+	t_room	*dub_room;
+	t_room	*room;
 
 	dub_link = NULL;
 	while (cur)
 	{
 		if (cur->direction == DOWNSTREAM && cur->price == MINUS_ONE)
 		{
-			room = find_room_with_type_in_hashtable(cur->node, cur->type_room, ht);
+			room = find_room_with_type_in_hashtable(cur->node,
+			cur->type_room, ht);
 			if (room->ek_visit == UNVISITED)
 			{
 				room->ek_visit = VISITED;
@@ -81,7 +93,8 @@ t_room	*find_best_link_with_price(t_node *cur, t_hashtable *ht)
 	}
 	if (dub_link != NULL)
 	{
-		dub_room = find_room_with_type_in_hashtable(dub_link->node, dub_link->type_room, ht);
+		dub_room = find_room_with_type_in_hashtable(dub_link->node,
+		dub_link->type_room, ht);
 		if (dub_room != NULL)
 		{
 			if (dub_room->ek_visit == UNVISITED)
@@ -97,7 +110,8 @@ t_room	*find_best_link_with_price(t_node *cur, t_hashtable *ht)
 		return (NULL);
 }
 
-int		create_way_sub_with_price(t_lem_in *lem_in, t_path *tmp, t_room *cur, int j)
+int		create_way_sub_with_price(t_lem_in *lem_in,
+t_path *tmp, t_room *cur, int j)
 {
 	t_room	*tmp_room;
 	int		len;
@@ -123,7 +137,7 @@ int		create_way_sub_with_price(t_lem_in *lem_in, t_path *tmp, t_room *cur, int j
 	return (len);
 }
 
-int    find_posible_ways_number(t_node *link)
+int		find_posible_ways_number(t_node *link)
 {
 	int i;
 
@@ -142,8 +156,8 @@ void	edmon_karts_by_link_price(t_lem_in *lem_in)
 	t_room	*tmp_room;
 	t_path	*tmp_path;
 	int		len;
-	int     i;
-	int     max;
+	int		i;
+	int		max;
 
 	tmp_path = NULL;
 	i = 0;
@@ -164,36 +178,34 @@ void	edmon_karts_by_link_price(t_lem_in *lem_in)
 	}
 }
 
-void    count_pathes(t_lem_in *lem_in)
+void		count_pathes(t_lem_in *lem_in)
 {
-	clean_all_edmon_karts_marks(lem_in); // очистить все метки
+	clean_all_edmon_karts_marks(lem_in);
 	clean_all_current_pathes(lem_in->paths, lem_in->path_num);
 	lem_in->path_num = 0;
 	edmon_karts_by_link_price(lem_in);
 }
 
-int check_found_way(t_queue_bf *belmon_ford)
+int		check_found_way(t_queue_bf *belmon_ford)
 {
-
 	if (belmon_ford == NULL)
 		return (1);
 	else
 		return (0);
 }
 
-
-void    clean_all_edmon_karts_marks_in_line(t_room *tmp)
+void	clean_all_edmon_karts_marks_in_line(t_room *tmp)
 {
 	while (tmp)
 	{
 		tmp->ek_visit = UNVISITED;
-		tmp =tmp->next;
+		tmp = tmp->next;
 	}
 }
 
-void    clean_all_edmon_karts_marks_in_all_ht(t_hashtable *ht)
+void	clean_all_edmon_karts_marks_in_all_ht(t_hashtable *ht)
 {
-	int		i;
+	int	i;
 
 	i = 0;
 	while (i < TABLE_SIZE)
@@ -204,28 +216,40 @@ void    clean_all_edmon_karts_marks_in_all_ht(t_hashtable *ht)
 	}
 }
 
-void    algorithm_suurballe(t_lem_in *lem_in, int *maxpath)
+void	algorithm_suurballe(t_lem_in *lem_in, int *maxpath)
 {
-	t_queue_bf *belmon_ford;
-	t_path *tmp_path;
+	t_queue_bf	*belmon_ford;
+	t_path		*tmp_path;
 
-	clean_all_edmon_karts_marks_in_all_ht(lem_in->ht_rooms); // чистить до модификации так как потом комнат такого типа не будет а будет IN OUT IN_OUT
+	clean_all_edmon_karts_marks_in_all_ht(lem_in->ht_rooms);
 	tmp_path = lem_in->paths[0];
-	turn_around_links(lem_in, tmp_path);                 // поворот по самому короткому 1ому пути
+	turn_around_links(lem_in, tmp_path);
 	dub_rooms(lem_in, tmp_path);
-	clean_all_current_pathes(lem_in->paths, lem_in->path_num);// дубль по самому короткому 1ому пути
+	clean_all_current_pathes(lem_in->paths, lem_in->path_num);
 	while (*maxpath > lem_in->path_num)
 	{
-		belmon_ford = algorithm_belmon_ford(lem_in); // поиск нового пути
+		belmon_ford = algorithm_belmon_ford(lem_in);
 		if (check_found_way(belmon_ford) == 1)
-			break;
-		tmp_path = put_belmon_ford_to_the_path(lem_in, belmon_ford); // перенос его в структуру path
-		free_queue_belmon_ford(belmon_ford);   // free the bf_queue
-		turn_around_links(lem_in, tmp_path); // поворот нового пути                                      !поворот после второго пути и удаляется не та линка
-		dub_rooms(lem_in, tmp_path); // дублирование нового пути
+			break ;
+		tmp_path = put_belmon_ford_to_the_path(lem_in, belmon_ford);
+		free_queue_belmon_ford(belmon_ford);
+		turn_around_links(lem_in, tmp_path);
+		dub_rooms(lem_in, tmp_path);
 		free_found_path(tmp_path);
-		count_pathes(lem_in); // нашли пути из END
+		count_pathes(lem_in);
 		if (is_enough(lem_in) == 1)
-			break;
+			break ;
 	}
 }
+/*
+**  чистить до модификации так как потом комнат такого типа не будет
+** а будет IN OUT IN_OUT
+** поворот по самому короткому 1ому пути
+** дубль по самому короткому 1ому пути
+** поиск нового пути
+** перенос его в структуру path
+** free the bf_queue
+** поворот нового пути	поворот после второго пути и удаляется не та линка
+** дублирование нового пути
+** нашли пути из END
+*/

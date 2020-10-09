@@ -21,7 +21,6 @@ t_lem_in	*parse(int fd, t_line **input)
 	parse_ants(lem_in, fd);
 	parse_room(lem_in, fd, input, &tmp);
 	parse_link(lem_in, fd, input, &tmp);
-
 	free_input(tmp);
 	return (lem_in);
 }

@@ -27,7 +27,8 @@ int		sum_ascii(char *room_name)
 	return (sum % TABLE_SIZE);
 }
 
-t_room	*find_room_with_type_in_hashtable(char *room_name, int typeroom, t_hashtable *ht_rooms)
+t_room	*find_room_with_type_in_hashtable(char *room_name,
+int typeroom, t_hashtable *ht_rooms)
 {
 	int		i;
 	t_room	*tmp;
@@ -36,7 +37,8 @@ t_room	*find_room_with_type_in_hashtable(char *room_name, int typeroom, t_hashta
 	tmp = ht_rooms->room[i];
 	while (tmp)
 	{
-		if (ft_strcmp(tmp->room_name, room_name) == 0 && (tmp->in_out == typeroom))
+		if (ft_strcmp(tmp->room_name, room_name) == 0 &&
+		(tmp->in_out == typeroom))
 			break ;
 		tmp = tmp->next;
 	}

@@ -6,18 +6,17 @@
 /*   By: kysgramo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/28 21:52:33 by kysgramo          #+#    #+#             */
-/*   Updated: 2020/08/28 21:52:37 by kysgramo         ###   ########.fr       */
+/*   Updated: 2020/10/09 20:03:36 by kysgramo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/lem_in.h"
 
-
-void    free_found_path(t_path *path)
+void	free_found_path(t_path *path)
 {
 	t_path *tmp;
 
-	while(path)
+	while (path)
 	{
 		tmp = path->next;
 		free(path->name);

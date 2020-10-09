@@ -6,7 +6,7 @@
 /*   By: kysgramo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/04 13:01:00 by kysgramo          #+#    #+#             */
-/*   Updated: 2020/08/19 17:21:17 by bhugo            ###   ########.fr       */
+/*   Updated: 2020/10/09 20:07:15 by kysgramo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -113,16 +113,16 @@ void	create_link(t_lem_in *lem_in, char *str)
 
 void	parse_link(t_lem_in *lem_in, int fd, t_line **input, t_line **tmp)
 {
-    if ((*tmp) == NULL)
-        terminate(ERR_NO_LINKS);
+	if ((*tmp) == NULL)
+		terminate(ERR_NO_LINKS);
 	while ((*tmp) || ((*tmp) = read_line(input, fd)))
 	{
 		if (is_command((*tmp)->data) != COMMAND &&
-			is_comment((*tmp)->data) != 1)
+				is_comment((*tmp)->data) != 1)
 			create_link(lem_in, (*tmp)->data);
 		(*tmp) = NULL;
 		lem_in->edge_num++;
 	}
-    if (lem_in->start->link->node == NULL)
-        terminate(ERR_NO_PATH);
+	if (lem_in->start->link->node == NULL)
+		terminate(ERR_NO_PATH);
 }
