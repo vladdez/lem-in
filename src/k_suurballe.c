@@ -12,104 +12,6 @@
 
 #include "../inc/lem_in.h"
 
-void	clean_all_edmon_karts_marks(t_lem_in *lem_in)
-{
-	t_path	*tmp;
-	t_room	*tmp_room;
-	int		i;
-
-	i = 0;
-	while (i <= lem_in->path_num)
-	{
-		if (lem_in->paths[i] != NULL)
-		{
-			tmp = lem_in->paths[i];
-			while (tmp)
-			{
-				tmp_room = find_room_with_type_in_hashtable(tmp->name,
-				tmp->typeroom, lem_in->ht_rooms);
-				if (tmp_room != NULL)
-					tmp_room->ek_visit = UNVISITED;
-				else
-				{
-					tmp_room = find_room_with_type_in_hashtable(tmp->name,
-					IN, lem_in->ht_rooms);
-					tmp_room->ek_visit = UNVISITED;
-					tmp_room = find_room_with_type_in_hashtable(tmp->name,
-					OUT, lem_in->ht_rooms);
-					tmp_room->ek_visit = UNVISITED;
-				}
-				tmp = tmp->next;
-			}
-		}
-		i++;
-	}
-}
-
-void	clean_all_current_pathes(t_path **pa, int path_num)
-{
-	int		i;
-	t_path	*kill;
-
-	i = 0;
-	while (i <= path_num)
-	{
-		if (pa[i] != NULL)
-		{
-			while (pa[i])
-			{
-				kill = pa[i];
-				pa[i] = pa[i]->next;
-				free(kill->name);
-				free(kill);
-			}
-		}
-		i++;
-	}
-}
-
-t_room	*find_best_link_with_price(t_node *cur, t_hashtable *ht)
-{
-	t_node	*dub_link;
-	t_room	*dub_room;
-	t_room	*room;
-
-	dub_link = NULL;
-	while (cur)
-	{
-		if (cur->direction == DOWNSTREAM && cur->price == MINUS_ONE)
-		{
-			room = find_room_with_type_in_hashtable(cur->node,
-			cur->type_room, ht);
-			if (room->ek_visit == UNVISITED)
-			{
-				room->ek_visit = VISITED;
-				return (room);
-			}
-		}
-		if (cur->price == ZERO)
-			dub_link = cur;
-		cur = cur->next;
-	}
-	if (dub_link != NULL)
-	{
-		dub_room = find_room_with_type_in_hashtable(dub_link->node,
-		dub_link->type_room, ht);
-		if (dub_room != NULL)
-		{
-			if (dub_room->ek_visit == UNVISITED)
-				dub_room->ek_visit = VISITED;
-			else
-				return (NULL);
-			return (find_best_link_with_price(dub_room->link, ht));
-		}
-		else
-			return (NULL);
-	}
-	else
-		return (NULL);
-}
-
 int		create_way_sub_with_price(t_lem_in *lem_in,
 t_path *tmp, t_room *cur, int j)
 {
@@ -151,34 +53,7 @@ int		find_posible_ways_number(t_node *link)
 	return (i);
 }
 
-void	edmon_karts_by_link_price(t_lem_in *lem_in)
-{
-	t_room	*tmp_room;
-	t_path	*tmp_path;
-	int		len;
-	int		i;
-	int		max;
-
-	tmp_path = NULL;
-	i = 0;
-	max = find_posible_ways_number(lem_in->end->link);
-	while (i < max)
-	{
-		tmp_room = lem_in->end;
-		lem_in->paths[i] = create_one_path(lem_in->end);
-		len = create_way_sub_with_price(lem_in, tmp_path, tmp_room, i);
-		if (lem_in->paths[i])
-		{
-			lem_in->paths[i]->len = len;
-			i++;
-			lem_in->path_num++;
-		}
-		else if (len == -1)
-			max--;
-	}
-}
-
-void		count_pathes(t_lem_in *lem_in)
+void	count_pathes(t_lem_in *lem_in)
 {
 	clean_all_edmon_karts_marks(lem_in);
 	clean_all_current_pathes(lem_in->paths, lem_in->path_num);
@@ -192,28 +67,6 @@ int		check_found_way(t_queue_bf *belmon_ford)
 		return (1);
 	else
 		return (0);
-}
-
-void	clean_all_edmon_karts_marks_in_line(t_room *tmp)
-{
-	while (tmp)
-	{
-		tmp->ek_visit = UNVISITED;
-		tmp = tmp->next;
-	}
-}
-
-void	clean_all_edmon_karts_marks_in_all_ht(t_hashtable *ht)
-{
-	int	i;
-
-	i = 0;
-	while (i < TABLE_SIZE)
-	{
-		if (ht->room[i] != NULL)
-			clean_all_edmon_karts_marks_in_line(ht->room[i]);
-		i++;
-	}
 }
 
 void	algorithm_suurballe(t_lem_in *lem_in, int *maxpath)

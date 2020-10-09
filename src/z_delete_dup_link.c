@@ -84,17 +84,6 @@ t_hashtable *ht)
 	delete_dup_link(tmp, room->room_name, roomtype_to_delete);
 }
 
-void	delete_dup_link_with_in_room(t_room *room, t_path *link,
-t_hashtable *ht)
-{
-	t_room *tmp;
-
-	tmp = find_room_with_type_in_hashtable(room->room_name, IN, ht);
-	delete_dup_link(tmp, link->name, link->typeroom);
-	tmp = find_room_with_type_in_hashtable(link->name, link->typeroom, ht);
-	delete_dup_link(tmp, room->room_name, IN);
-}
-
 /*
 ** находим дублера
 ** удаляем связь между  дублером и следующей комнатой
@@ -102,22 +91,3 @@ t_hashtable *ht)
 ** находим следующую команату
 ** удаляем у нее связь с дублером
 */
-
-void	delete_dup_link_in_both_room(t_room *room, t_path *link,
-t_hashtable *ht)
-{
-	if (room->in_out == IN_OUT)
-		delete_dup_link_with_out_room(room, link, ht);
-	if (room->in_out == OUT)
-		delete_dup_link_with_in_room(room, link, ht);
-}
-
-int		check_condition_to_delete_dup_links(int roomtype, int linktype)
-{
-	if (roomtype == IN_OUT && linktype != IN_OUT)
-		return (1);
-	if (roomtype != IN_OUT && linktype == IN_OUT)
-		return (1);
-	else
-		return (0);
-}

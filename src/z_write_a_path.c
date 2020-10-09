@@ -35,3 +35,33 @@ t_path	*put_belmon_ford_to_the_path(t_lem_in *lem_in, t_queue_bf *belmon_ford)
 	tmp_path = point_path;
 	return (tmp_path);
 }
+
+int		check_condition_to_delete_dup_links(int roomtype, int linktype)
+{
+	if (roomtype == IN_OUT && linktype != IN_OUT)
+		return (1);
+	if (roomtype != IN_OUT && linktype == IN_OUT)
+		return (1);
+	else
+		return (0);
+}
+
+void	delete_dup_link_in_both_room(t_room *room, t_path *link,
+t_hashtable *ht)
+{
+	if (room->in_out == IN_OUT)
+		delete_dup_link_with_out_room(room, link, ht);
+	if (room->in_out == OUT)
+		delete_dup_link_with_in_room(room, link, ht);
+}
+
+void	delete_dup_link_with_in_room(t_room *room, t_path *link,
+t_hashtable *ht)
+{
+	t_room *tmp;
+
+	tmp = find_room_with_type_in_hashtable(room->room_name, IN, ht);
+	delete_dup_link(tmp, link->name, link->typeroom);
+	tmp = find_room_with_type_in_hashtable(link->name, link->typeroom, ht);
+	delete_dup_link(tmp, room->room_name, IN);
+}

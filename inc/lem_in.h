@@ -215,17 +215,64 @@ void					check_order(t_path **paths, t_lem_in *lem_in);
 void					upd_visits(t_lem_in *lem_in, t_room	*tmp_room);
 int						are_nei_valid(t_room *tmp_room, t_lem_in *lem_in);
 void					is_cutted(t_lem_in *lem_in);
-void                    algorithm_suurballe(t_lem_in *lem_in, int *maxpath);
-void    turn_around_links(t_lem_in *lem_in, t_path *path);
-void    dub_rooms(t_lem_in *lem_in, t_path *path);
-t_room	*find_room_with_type_in_hashtable(char *room_name, int typeroom, t_hashtable *ht_rooms);
-t_path    *put_belmon_ford_to_the_path(t_lem_in *lem_in, t_queue_bf *belmon_ford);
-t_queue_bf    *algorithm_belmon_ford(t_lem_in *lem_in);
-void    delete_dup_link_in_both_room(t_room *room, t_path *link, t_hashtable *ht);
-int    check_condition_to_delete_dup_links(int roomtype, int linktype);
-void    free_queue_belmon_ford(t_queue_bf *belmon_ford);
-void    delete_dup_link(t_room *room, char *name_of_link_to_delete, int link_typeroom);
-void    free_found_path(t_path *path);
+void					algorithm_suurballe(t_lem_in *lem_in, int *maxpath);
+void					turn_around_links(t_lem_in *lem_in, t_path *path);
+void					dub_rooms(t_lem_in *lem_in, t_path *path);
+t_room					*find_room_with_type_in_hashtable(char *room_name, int typeroom, t_hashtable *ht_rooms);
+t_path					*put_belmon_ford_to_the_path(t_lem_in *lem_in, t_queue_bf *belmon_ford);
+t_queue_bf				*algorithm_belmon_ford(t_lem_in *lem_in);
+void					delete_dup_link_in_both_room(t_room *room, t_path *link, t_hashtable *ht);
+int						check_condition_to_delete_dup_links(int roomtype, int linktype);
+void					free_queue_belmon_ford(t_queue_bf *belmon_ford);
+void					delete_dup_link(t_room *room, char *name_of_link_to_delete, int link_typeroom);
+void					free_found_path(t_path *path);
+void					find_place_for_link_in_room_out(t_room *out, t_node *tmp);
+void					move_first_link_of_room_in(t_room *in, t_room *out);
+void					move_not_first_link_of_room_in(t_room *in, t_room *out, char *link_name);
+void					create_and_classify_links(t_room *in, t_room *out, t_hashtable *ht);
+t_room	*create_room_out(t_room *room);
+void					change_roomtype_to_out(t_room *out, t_node *link, t_hashtable *ht);
+void					add_link_with_zero_price(t_node *link, char *toward);
+void					create_links_with_zero_price(t_room *room_in, t_room *room_out);
+void					change_roomtype_to_out_duprooms(t_room *in);
+void					change_roomtype_to_out(t_room *out, t_node *link, t_hashtable *ht);
+void					change_roomtype_to_in_and_downstream_direction(t_room *in,
+t_node *link, t_hashtable *ht);
+void					create_room_out_and_classify_links(t_room *room_in, t_hashtable *ht);
+void					split_link_for_room_out(t_room *out, t_node *link_to_copy,
+t_hashtable *ht);
+void					change_roomtype_to_in_duprooms(t_room *out);
+void					move_link(t_room *in, t_room *out, t_node *link, t_hashtable *ht);
+void					change_roomtype_to_in_and_upstream_direction(t_room *in,
+t_node *link, t_hashtable *ht);
+t_room					*find_best_link_with_price(t_node *cur, t_hashtable *ht);
+void					clean_all_edmon_karts_marks(t_lem_in *lem_in);
+void					clean_all_current_pathes(t_path **pa, int path_num);
+void					edmon_karts_by_link_price(t_lem_in *lem_in);
+void					clean_all_edmon_karts_marks(t_lem_in *lem_in);
+void					clean_all_current_pathes(t_path **pa, int path_num);
+void					clean_all_edmon_karts_marks_in_all_ht(t_hashtable *ht);
+int						find_posible_ways_number(t_node *link);
+int						create_way_sub_with_price(t_lem_in *lem_in,
+t_path *tmp, t_room *cur, int j);
+int						check_condition_to_delete_dup_links(int roomtype, int linktype);
+void					delete_dup_link_in_both_room(t_room *room, t_path *link,
+t_hashtable *ht);
+void					delete_dup_link_with_in_room(t_room *room, t_path *link,
+t_hashtable *ht);
+void					delete_dup_link_with_out_room(t_room *room, t_path *link,
+t_hashtable *ht);
+void					find_and_delete_dup_links(t_path *lagged, t_path *tmp,
+t_path *next, t_hashtable *ht);
+void					change_link_direction(t_room *room, char *link_name, int link_typeroom);
+void					change_link_direction2(t_room *room, char *link_name, int link_typeroom);
+int						check_conditions_for_belmon_ford_queue(t_node *link,
+t_queue_bf *belmon_ford, t_room *room, char *start_name);
+t_queue_bf				*find_end_of_queue(t_queue_bf *belmon_ford);
+void					put_data_in_queue(t_queue_bf *tmp_queue,
+t_queue_bf *belmon_ford, t_node *link);
+void					put_start_data(t_queue_bf *belmon_ford, t_room *start);
+
 
 # define ERR_ANTS_NUM_PARSING	"ERROR: Number of ants is incorrent"
 # define ERR_ROOM_PARSING		"ERROR: Can\'t parse room"
