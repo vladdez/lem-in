@@ -211,7 +211,7 @@ void					free_all(t_line *input, t_lem_in *lem_in, int fd);
 int						is_enough(t_lem_in *lem_in);
 void					get_mem(t_lem_in *lem_in, int i);
 void					print_links(t_room *tmp2);
-void					check_order(t_path **paths, t_lem_in *lem_in);
+void					check_order(t_path **paths, t_lem_in *lem_in, int i, int k);
 void					upd_visits(t_lem_in *lem_in, t_room	*tmp_room);
 int						are_nei_valid(t_room *tmp_room, t_lem_in *lem_in);
 void					is_cutted(t_lem_in *lem_in);

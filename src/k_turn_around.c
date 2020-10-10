@@ -69,6 +69,21 @@ char *name_of_link_to_delete, t_hashtable *ht)
 	change_link_direction2(tmp, room_tmp->room_name, room_tmp->in_out);
 }
 
+void	find_and_delete_dup_links2(t_hashtable *ht, t_node *link_tmp2,
+t_room *room_tmp, char *seeking_link)
+{
+	while (link_tmp2)
+	{
+		if (ft_strcmp(link_tmp2->node, seeking_link) == 0)
+		{
+			delete_dup_links_not_on_the_way_but_neibours(room_tmp,
+			seeking_link, ht);
+			break ;
+		}
+		link_tmp2 = link_tmp2->next;
+	}
+}
+
 void	find_and_delete_dup_links(t_path *lagged, t_path *tmp,
 t_path *next, t_hashtable *ht)
 {
@@ -86,16 +101,7 @@ t_path *next, t_hashtable *ht)
 		{
 			seeking_link = link_tmp->node;
 			link_tmp2 = link_tmp->next;
-			while (link_tmp2)
-			{
-				if (ft_strcmp(link_tmp2->node, seeking_link) == 0)
-				{
-					delete_dup_links_not_on_the_way_but_neibours(room_tmp,
-					seeking_link, ht);
-					break ;
-				}
-				link_tmp2 = link_tmp2->next;
-			}
+			find_and_delete_dup_links2(ht, link_tmp2, room_tmp, seeking_link);
 		}
 		link_tmp = link_tmp->next;
 	}

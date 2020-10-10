@@ -30,16 +30,12 @@ int		len_of_actual_paths(t_lem_in *lem_in)
 	return (j);
 }
 
-void	check_order(t_path **paths, t_lem_in *lem_in)
+void	check_order(t_path **paths, t_lem_in *lem_in, int i, int k)
 {
 	t_path	**curr;
 	t_path	*tmp;
-	int		i;
 	int		j;
-	int		k;
 
-	i = 1;
-	k = 0;
 	curr = paths;
 	tmp = NULL;
 	j = len_of_actual_paths(lem_in);

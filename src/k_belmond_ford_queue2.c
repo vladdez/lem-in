@@ -38,16 +38,20 @@ t_queue_bf	*find_end_of_queue(t_queue_bf *belmon_ford)
 	return (tmp);
 }
 
-int			is_loop(char *node, t_queue_bf *belmon_ford)
+int			is_loop(char *node, t_queue_bf *belmman_ford)
 {
-	t_queue_bf *tmp;
+	t_queue_bf	*tmp;
+	int			i;
 
-	tmp = belmon_ford;
+	tmp = belmman_ford;
+	i = 0;
 	while (tmp)
 	{
 		if (ft_strcmp(node, tmp->room_name) == 0)
-			return (0);
+			i++;
 		tmp = tmp->parrent;
+		if (i > 5)
+			return (0);
 	}
 	return (1);
 }
@@ -59,18 +63,18 @@ int			is_loop(char *node, t_queue_bf *belmon_ford)
 */
 
 int			check_conditions_for_belmon_ford_queue(t_node *link,
-t_queue_bf *belmon_ford, t_room *room, char *start_name)
+t_queue_bf *belmman_ford, t_room *room, char *start_name)
 {
 	if (link->direction == UPSTREAM)
 		return (0);
-	if (belmon_ford->parrent != NULL && ft_strcmp(link->node,
-	belmon_ford->parrent->room_name) == 0)
+	if (belmman_ford->parrent != NULL && ft_strcmp(link->node,
+	belmman_ford->parrent->room_name) == 0)
 		return (0);
 	if (ft_strcmp(link->node, room->room_name) == 0)
 		return (0);
 	if (ft_strcmp(link->node, start_name) == 0)
 		return (0);
-	if (is_loop(link->node, belmon_ford) == 0)
+	if (is_loop(link->node, belmman_ford) == 0)
 	{
 		ft_printf("room %s\n", room->room_name);
 		ft_printf("link %s\n", link->node);

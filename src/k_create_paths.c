@@ -125,13 +125,13 @@ int		create_paths(t_lem_in *lem_in)
 		create_way(lem_in, maxpath, 0);
 		i = len_of_actual_paths(lem_in);
 		lem_in->path_num = i;
-		check_order(lem_in->paths, lem_in);
+		check_order(lem_in->paths, lem_in, 1, 0);
 		if (maxpath > i)
 		{
 			algorithm_suurballe(lem_in, &maxpath);
-			check_order(lem_in->paths, lem_in);
+			check_order(lem_in->paths, lem_in, 1, 0);
 			//second_plan(lem_in, maxpath);
-			//check_order(lem_in->paths, lem_in);
+			//check_order(lem_in->paths, lem_in, 1, 0);
 		}
 	}
 	return (cut_s);
