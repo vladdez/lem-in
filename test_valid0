@@ -1,0 +1,19 @@
+#!/bin/bash
+make
+
+echo -e '\033[1m 1.map\033[0m'
+./lem-in maps/1.map -p
+echo -e '\033[1m 2.map\033[0m'
+./lem-in 2.map -p
+echo -e '\033[1m 3.map\033[0m'
+./lem-in maps/3.map -p
+echo -e '\033[1m  4short_circuit.map  \033[0m'
+./lem-in maps/4short_circuit.map -p
+echo -e '\033[1m  5.map  \033[0m'
+./lem-in maps/5.map -p
+echo -e '\033[1m  map  \033[0m'
+./lem-in maps/map -p
+echo -e '\033[1m  map0  \033[0m'
+./lem-in maps/map0 -p
+echo -e '\033[1m  map10  \033[0m'
+./lem-in maps/map10 -p

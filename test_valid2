@@ -1,0 +1,13 @@
+#!/bin/bash
+make
+
+echo -e '\033[1m maps/valid/vs/one_way/1.map \033[0m'
+./lem-in maps/valid/vs/one_way/1.map -p
+echo -e '\033[1m maps/valid/vs/one_way/2.map \033[0m'
+./lem-in maps/valid/vs/one_way/2.map -p
+echo -e '\033[1m maps/valid/vs/one_way/3.map \033[0m'
+./lem-in maps/valid/vs/one_way/3.map -p
+echo -e '\033[1m maps/valid/vs/one_way/4.map \033[0m'
+./lem-in maps/valid/vs/one_way/4.map -p
+echo -e '\033[1m maps/valid/vs/one_way/5.map \033[0m'
+./lem-in maps/valid/vs/one_way/5.map -p

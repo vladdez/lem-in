@@ -1,0 +1,9 @@
+#!/bin/bash
+make
+
+bash test_valid0
+bash test_valid1
+bash test_valid2
+bash test_valid3
+bash test_valid4
+bash test_valid5

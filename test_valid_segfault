@@ -1,0 +1,11 @@
+#!/bin/bash
+make
+
+echo -e '\033[1m  mapbig  \033[0m'
+./lem-in maps/mapbig -p
+
+echo -e '\033[1m  mapch  \033[0m'
+./lem-in maps/mapch -p
+
+echo -e '\033[1m  map  \033[0m'
+./lem-in map -p

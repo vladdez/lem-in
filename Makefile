@@ -10,43 +10,58 @@
 #                                                                              #
 # **************************************************************************** #
 
-NAME = lem-in
 
-FLAGS = -Wall -Wextra  -I. -I ./libft/libft -I ./libft/printf
+NAME			=	lem-in
+INC_NAME		=	lem_in.h
 
-LIB = -L libft/ -lft 
+LIB_PATH		=	libft/
+LIB_INC_PATH	=	libft/
+LIB_NAME		=	libft.a
 
-LEMIN_SRC_DIR = src/
+SRC_PATH		=	src/
+INC_PATH		=	inc/
+OBJ_PATH		=	obj/
 
-HEADER = lem-in.h
+SRC_NAME		=	z_errors.c z_read_line.c z_validator.c z_is.c z_hash_table.c  z_init_structure.c \
+                    z_write_coordinate.c z_dashes_in_input.c z_delete_links.c \
+                    a_main.c b_init.c \
+                    c_parse_ants.c d_parse_rooms.c \
+                    e_parse_link.c f_bfs.c h_find_links_direction.c g_deadlock_cleaning.c j_print.c i_print_hashtable.c\
+                    k_create_paths.c  \
+					l_create_paths2.c  l2_create_paths3.c m_flow.c n_flow2.c \
+                    o_if_crash.c p_if_crash2.c\
+                    z_let_me_free.c z_let_me_free_lem.c z_let_me_free_lem2.c
 
-CLEMIN =  0.1.errors.c 0.2.read_line.c 0.3.validator.c 0.4.is.c 1.main.c \
-2.parse_ants_rooms.c 3.parse_link.c \
-4.bfs.c 5.cut_links.c 7.print.c\
-let_me_free.c 
+SRC				=	$(addprefix $(SRC_PATH), $(SRC_NAME))
+INC				=	$(addprefix $(INC_PATH), $(INC_NAME))
+OBJ				=	$(addprefix $(OBJ_PATH), $(SRC_NAME:.c=.o))
 
-LEMIN_SRC = $(addprefix $(LEMIN_SRC_DIR),$(CLEMIN))
+CC				=	gcc
+CFLAGS			=	-Wall -Wextra -Werror -O2 -march=native
+IFLAGS			=	-I $(INC_PATH). -I $(LIB_PATH).
+LFLAGS			=	-L $(LIB_PATH) -lft
 
-LEMIN_OBJ = $(LEMIN_SRC:%.c=%.o)
+LIB				=	make -C $(LIB_PATH)
 
+.PHONY:	all clean fclean re lib
 
-.PHONY: all clean fclean re
+$(OBJ_PATH)%.o:		$(SRC_PATH)%.c $(INC)
+					@mkdir -p $(OBJ_PATH)
+					$(CC) $(CFLAGS) $(IFLAGS) -c -o $@ $<
 
-all: $(NAME)
+all:				$(NAME)
 
-$(NAME): $(LEMIN_OBJ) $(HEADER)
-	make -C libft
-	gcc $(FLAGS) $(LEMIN_OBJ) -o $(NAME) $(LIB)
+$(NAME):			$(OBJ)
 
-$(LEMIN_SRC_DIR)%.o : $(LEMIN_SRC_DIR)%.c $(HEADER)
-	gcc -c $(FLAGS) $< -o $@
+					$(LIB)
+					$(CC) $(CFLAGS) $(IFLAGS) -o $@ $^ $(LFLAGS)
 
+clean:
+					make clean -C $(LIB_PATH)
+					rm -rf $(OBJ_PATH)
 
-clean:	
-	@rm -f $(LEMIN_OBJ)
+fclean:				clean
+					make fclean -C $(LIB_PATH)
+					rm -f $(NAME)
 
-fclean: clean	
-	make fclean -C libft/
-	rm -fv $(LEMIN_OBJ)
-
-re: fclean all
+re:					fclean all

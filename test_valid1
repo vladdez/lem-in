@@ -1,0 +1,15 @@
+#!/bin/bash
+make
+
+echo -e '\033[1m  maps1  \033[0m'
+./lem-in maps/maps1 -p
+echo -e '\033[1m  maps2  \033[0m'
+./lem-in maps/maps2 -p
+echo -e '\033[1m  maps3  \033[0m'
+./lem-in maps/maps3 -p
+echo -e '\033[1m  maps4  \033[0m'
+./lem-in maps/maps4 -p
+echo -e '\033[1m  mapsuper  \033[0m'
+./lem-in maps/mapsuper -p
+echo -e '\033[1m  mapth  \033[0m'
+./lem-in maps/mapth -p

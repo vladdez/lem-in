@@ -1,0 +1,36 @@
+#!/bin/bash
+echo -e '\033[1mERROR ANTS\033[0m'
+./lem-in maps/error/ants/alpha_chars.map
+./lem-in maps/error/ants/alphanum_chars.map
+./lem-in maps/error/ants/empty_line.map
+./lem-in maps/error/ants/space.map
+./lem-in maps/error/ants/zero.map
+./lem-in maps/error/ants/no_ants.map
+
+echo -e '\033[1mERROR LINKS\033[0m'
+./lem-in maps/error/links/invalid_end_name.map
+./lem-in maps/error/links/invalid_start_name.map
+./lem-in maps/error/links/link_exact_duplicate.map
+./lem-in maps/error/links/link_reverse_duplicate.map
+./lem-in maps/error/links/no_links.map
+
+echo -e '\033[1mERROR ROOMS\033[0m'
+./lem-in maps/error/rooms/coordinates_duplicate.map
+./lem-in maps/error/rooms/multiple_ends.map
+./lem-in maps/error/rooms/multiple_starts.map
+./lem-in maps/error/rooms/name_duplicate.map
+./lem-in maps/error/rooms/name_with_L.map
+./lem-in maps/error/rooms/name_with_octothorpe.map
+./lem-in maps/error/rooms/no_end_room.map
+./lem-in maps/error/rooms/no_rooms.map
+./lem-in maps/error/rooms/no_start_room.map
+
+echo -e '\033[1mERROR LOCATIONS\033[0m'
+./lem-in maps/error/locations/ant_number_negative.map
+./lem-in maps/error/locations/ant_number_too_big.map
+./lem-in maps/error/locations/ant_number_zero.map
+./lem-in maps/error/locations/invalid_name.map
+./lem-in maps/error/locations/no_empty_line.map
+
+echo -e '\033[1mERROR PATH\033[0m'
+./lem-in maps/error/links/no_path.map

@@ -1,0 +1,9 @@
+#!/bin/bash
+make
+
+
+echo -e '\033[1m  2.map \033[0m'
+./lem-in 2.map -p
+
+echo -e '\033[1m  max_map \033[0m'
+./lem-in max_map -p

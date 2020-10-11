@@ -1,0 +1,19 @@
+#!/bin/bash
+make
+
+echo -e '\033[1m  maps/valid/vs/multiple_ways/1.map \033[0m'
+    ./lem-in maps/valid/vs/multiple_ways/1.map -p
+echo -e '\033[1m  maps/valid/vs/multiple_ways/2.map \033[0m'
+  ./lem-in maps/valid/vs/multiple_ways/2.map -p
+echo -e '\033[1m  maps/valid/vs/multiple_ways/3.map \033[0m'
+   ./lem-in maps/valid/vs/multiple_ways/3.map -p
+echo -e '\033[1m  maps/valid/vs/multiple_ways/4.map \033[0m'
+    ./lem-in maps/valid/vs/multiple_ways/4.map -p
+echo -e '\033[1m  maps/valid/vs/multiple_ways/5.map \033[0m'
+./lem-in maps/valid/vs/multiple_ways/5.map -p
+echo -e '\033[1m  maps/valid/vs/multiple_ways/6.map \033[0m'
+      ./lem-in maps/valid/vs/multiple_ways/6.map -p
+echo -e '\033[1m  maps/valid/vs/multiple_ways/7.map \033[0m'
+       ./lem-in maps/valid/vs/multiple_ways/7.map -p
+echo -e '\033[1m  maps/valid/vs/multiple_ways/8.map \033[0m'
+        ./lem-in maps/valid/vs/multiple_ways/8.map -p
